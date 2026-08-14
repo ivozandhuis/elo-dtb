@@ -1,0 +1,21 @@
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX picom: <https://personsincontext.org/model#>
+PREFIX sdo: <https://schema.org/>
+PREFIX picot_roles: <https://terms.personsincontext.org/roles/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+CONSTRUCT {
+	?groom picom:isWidOf ?deceased_spouse .
+    ?deceased_spouse sdo:gender sdo:Female ;
+		picom:deceased "true"^^xsd:boolean .
+}
+WHERE {
+    ?deceased_spouse a picom:PersonObservation ;
+    	prov:hadPrimarySource ?src ;
+    	sdo:description ?desc .
+    FILTER(CONTAINS(LCASE(?desc), "relatie tot bruidegom: wed."))
+    ?groom a picom:PersonObservation ; 
+    	prov:hadPrimarySource ?src ;
+    	picom:hasRole picot_roles:574 ;
+    	sdo:gender sdo:Male .
+}

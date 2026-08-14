@@ -1,0 +1,21 @@
+[data]
+NAME         = elo-dtb
+DESCRIPTION  = PiCo-M representation of elo_dtb_trouwen dataset
+
+[index]
+INPUT_FILES      = data/*.nt.gz
+CAT_INPUT_FILES  = gunzip -c ${INPUT_FILES}
+SETTINGS_JSON    = { "num-triples-per-batch": 1000000 }
+PARALLEL_PARSING = false
+
+[server]
+PORT         = 7654
+ACCESS_TOKEN = 
+
+[runtime]
+SYSTEM = native
+IMAGE  = docker.io/adfreiburg/qlever:latest
+
+[ui]
+UI_PORT   = 8176
+UI_CONFIG = default

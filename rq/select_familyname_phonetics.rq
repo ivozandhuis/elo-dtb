@@ -1,0 +1,20 @@
+PREFIX sdo: <https://schema.org/>
+PREFIX picom: <https://personsincontext.org/model#>
+PREFIX pnv: <https://w3id.org/pnv#>
+
+SELECT DISTINCT ?famname ?famname_norm ?dmp1 ?dmp2 ?dm WHERE {
+  ?po a picom:PersonObservation ;
+      sdo:additionalName/pnv:baseSurname ?famname .
+  OPTIONAL {
+    ?po <https://example.org/iz/vocabulary/normalized_Familyname> ?famname_norm .
+  }
+  OPTIONAL {
+    ?po <https://example.org/iz/vocabulary/doubleMetaphone_Familyname> ?dmp1 .
+  }
+  OPTIONAL {
+    ?po <https://example.org/iz/vocabulary/doubleMetaphonePronounced_Familyname> ?dmp2 .
+  }
+  OPTIONAL {
+    ?po <https://example.org/iz/vocabulary/daitchMokotoff_Familyname> ?dm .
+  }
+} LIMIT 100

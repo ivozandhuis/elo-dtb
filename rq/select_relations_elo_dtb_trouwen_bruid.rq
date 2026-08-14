@@ -1,0 +1,19 @@
+PREFIX sdo: <https://schema.org/>
+PREFIX oa: <https://www.openarchieven.nl/id/>
+PREFIX sdo: <https://schema.org/>
+PREFIX picot_sourcetypes: <https://terms.personsincontext.org/sourcetypes/>
+PREFIX picot_roles: <https://terms.personsincontext.org/roles/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX picom: <https://personsincontext.org/model#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+
+SELECT ?relation (COUNT(?relation) AS ?relationCount)
+WHERE {
+  ?person_observation a picom:PersonObservation ;
+                      picom:hasRole picot_roles:573 ;
+                      sdo:description ?description .
+  FILTER (CONTAINS(LCASE(?description), "relatie tot de bruid: "))
+  BIND (replace(LCASE(?description), ".*relatie tot de bruid: ([a-z]*).*", "$1") AS ?relation)
+}
+GROUP BY ?relation
+ORDER BY DESC(?relationCount)

@@ -1,0 +1,8 @@
+etl/extracted/
+etl/transformed/
+etl/serialized/
+additions/normalizations/
+additions/improvements/
+qlever/elo-dtb.*
+a2a-to-pico/*
+!a2a-to-pico/PUT-CODE-HERE.md

@@ -1,0 +1,27 @@
+PREFIX sdo: <https://schema.org/>
+PREFIX oa: <https://www.openarchieven.nl/id/>
+PREFIX sdo: <https://schema.org/>
+PREFIX picot_sourcetypes: <https://terms.personsincontext.org/sourcetypes/>
+PREFIX picot_roles: <https://terms.personsincontext.org/roles/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX picom: <https://personsincontext.org/model#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+
+CONSTRUCT {
+  ?source sdo:dateCreated ?event_date ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/549> .
+
+  ?event_uri a picom:LifeEvent ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/99> ;
+    picom:eventPlace ?event_place ;
+    picom:eventDate ?event_date .
+}
+WHERE {
+  ?source a sdo:ArchiveComponent ;
+          sdo:holdingArchive oa:elo ;
+          sdo:locationCreated ?event_place ;
+          sdo:description ?description .
+  FILTER (CONTAINS(?description, "Datum ondertrouw: "))
+  BIND (replace(?description, ".*Datum ondertrouw: (\\d\\d)-(\\d\\d)-(\\d\\d\\d\\d).*", "$3-$2-$1") AS ?event_date)
+  BIND (IRI(CONCAT(STR(?source), "_ondertrouw_event")) AS ?event_uri)
+}

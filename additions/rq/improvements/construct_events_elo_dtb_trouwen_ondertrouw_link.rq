@@ -1,0 +1,22 @@
+PREFIX sdo: <https://schema.org/>
+PREFIX oa: <https://www.openarchieven.nl/id/>
+PREFIX sdo: <https://schema.org/>
+PREFIX picot_sourcetypes: <https://terms.personsincontext.org/sourcetypes/>
+PREFIX picot_roles: <https://terms.personsincontext.org/roles/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX picom: <https://personsincontext.org/model#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+
+CONSTRUCT {
+  ?party picom:hasLifeEvent ?event_uri .
+}
+WHERE {
+  ?source a sdo:ArchiveComponent ;
+          sdo:holdingArchive oa:elo ;
+          sdo:description ?description .
+  FILTER (CONTAINS(?description, "Datum ondertrouw: "))
+    ?party a picom:PersonObservation ; 
+        prov:hadPrimarySource ?source ;
+        picom:hasRole picot_roles:574 .
+  BIND(IRI(CONCAT(STR(?source), "_ondertrouw_event")) AS ?event_uri)
+}

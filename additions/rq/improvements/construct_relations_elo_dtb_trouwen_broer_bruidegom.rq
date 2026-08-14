@@ -1,0 +1,19 @@
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX picom: <https://personsincontext.org/model#>
+PREFIX sdo: <https://schema.org/>
+PREFIX picot_roles: <https://terms.personsincontext.org/roles/>
+
+CONSTRUCT {
+	?groom sdo:sibling ?witness .
+    ?witness sdo:gender sdo:Male .
+}
+WHERE {
+    ?witness a picom:PersonObservation ;
+    	prov:hadPrimarySource ?src ;
+    	sdo:description ?desc .
+    FILTER(CONTAINS(LCASE(?desc), "relatie tot de bruidegom: broer"))
+    ?groom a picom:PersonObservation ; 
+    	prov:hadPrimarySource ?src ;
+    	picom:hasRole picot_roles:574 ;
+    	sdo:gender sdo:Male .
+}
