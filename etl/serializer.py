@@ -4,11 +4,13 @@ from pathlib import Path
 from rdflib import Graph
 import gzip
 
-amount = 0 # if 0, than all records are handled. For testing purpose
+# set = "dtb_trouwen"
+set = "dtb_dopen"
+amount = 0 # if 0, than all records are handled
 
-ext_path = Path("transformed")
+ext_path = Path(set + "/transformed")
 for src_file in ext_path.glob("**/*.rdf"):
-    out_file = Path('serialized') / src_file.name
+    out_file = Path(set + "/serialized").joinpath(*src_file.parts[2:])
     out_file = out_file.with_suffix('.nt.gz')
     out_file.parent.mkdir(parents=True, exist_ok=True)
 

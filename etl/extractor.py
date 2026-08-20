@@ -5,6 +5,10 @@ from pathlib import Path
 from lxml import etree
 from datetime import datetime
 
+# set = "dtb_trouwen"
+set = "dtb_dopen"
+amount = 0 # if 0, than all records are handled
+
 def to_balanced_path(number: str, extension: str, depth: int = 3) -> Path:
     # credit for this idea: https://www.linkedin.com/in/martijnschiedon
     parts = list(number[-depth:][::-1])
@@ -34,7 +38,7 @@ def oai_request(endpoint: str, payload: dict):
 
 
 def find_youngest_file_date(path: Path):
-    last_mod_date = None
+    last_mod_date = "1970-01-01"
     if path.exists():
         for file in path.glob("**/*.xml"):
             mtime = file.stat().st_mtime
@@ -51,13 +55,11 @@ oai_endpoint          = "https://webservices.memorix.nl/a2a/20a181d4-c896-489f-9
 oai_identifier_prefix = None
 oai_payload           = { 'verb': 'ListRecords',
                             'metadataPrefix': 'a2a',
-                            'set': 'dtb_trouwen' }
-ext_path              = Path("extracted")
+                            'set': set }
+ext_path              = Path(set + "/extracted")
 NS                    = { "oai": "http://www.openarchives.org/OAI/2.0/",
                           "a2a": "http://Mindbus.nl/A2A" }
 
-# break after 'amount' requests, amounts = 0 means the script will run until resumptionTokens run out
-amount = 0
 
 # only request new records
 # (that is: records that are available on the endpoint after the last file_date of the target directory)

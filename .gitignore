@@ -1,6 +1,5 @@
-etl/extracted/
-etl/transformed/
-etl/serialized/
+etl/dtb_trouwen/
+etl/dtb_dopen/
 additions/normalizations/
 additions/improvements/
 qlever/elo-dtb.*
