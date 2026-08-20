@@ -1,0 +1,9 @@
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX picom: <https://personsincontext.org/model#>
+PREFIX sdo: <https://schema.org/>
+PREFIX picot_roles: <https://terms.personsincontext.org/roles/>
+
+SELECT * WHERE {
+  ?po prov:hadPrimarySource <https://ex.org/Source:7adcc50e-082b-04b4-8a91-17ea03827bee> ;
+      sdo:name ?name .
+}

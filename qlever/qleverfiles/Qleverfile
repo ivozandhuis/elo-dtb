@@ -1,11 +1,11 @@
 [data]
 NAME         = elo-dtb
-DESCRIPTION  = PiCo-M representation of elo_dtb_trouwen dataset
+DESCRIPTION  = PiCo-M representation of elo_dtb datasets
 
 [index]
 INPUT_FILES      = data/*.nt.gz
 CAT_INPUT_FILES  = gunzip -c ${INPUT_FILES}
-SETTINGS_JSON    = { "num-triples-per-batch": 1000000 }
+SETTINGS_JSON    = { "num-triples-per-batch": 200000 }
 PARALLEL_PARSING = false
 
 [server]

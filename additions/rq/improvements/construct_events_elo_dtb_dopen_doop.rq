@@ -1,0 +1,26 @@
+PREFIX sdo: <https://schema.org/>
+PREFIX oa: <https://www.openarchieven.nl/id/>
+PREFIX sdo: <https://schema.org/>
+PREFIX picot_sourcetypes: <https://terms.personsincontext.org/sourcetypes/>
+PREFIX picot_roles: <https://terms.personsincontext.org/roles/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX picom: <https://personsincontext.org/model#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+
+CONSTRUCT {
+  ?source sdo:holdingArchive oa:elo ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548> .
+  
+  ?event_uri a picom:LifeEvent ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> ;
+    picom:eventPlace ?event_place ;
+    picom:eventDate ?event_date .
+}
+WHERE {
+  ?source a sdo:ArchiveComponent ;
+          sdo:locationCreated ?event_place ;
+          sdo:description ?description .
+  FILTER (CONTAINS(?description, "Doopdatum: "))
+  BIND (replace(?description, ".*Doopdatum: (\\d\\d)-(\\d\\d)-(\\d\\d\\d\\d).*", "$3-$2-$1") AS ?event_date)
+  BIND (IRI(CONCAT(STR(?source), "_doop_event")) AS ?event_uri)
+}

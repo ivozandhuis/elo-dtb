@@ -2,6 +2,7 @@ etl/dtb_trouwen/
 etl/dtb_dopen/
 additions/normalizations/
 additions/improvements/
+qlever/data/*.nt.gz
 qlever/elo-dtb.*
 a2a-to-pico/*
 !a2a-to-pico/PUT-CODE-HERE.md

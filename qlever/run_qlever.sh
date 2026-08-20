@@ -1,12 +1,12 @@
-echo "=== run python script" 
-cd ../additions
-./familyname_phonetics.py
+# echo "=== run python script" 
+# cd ../additions
+# ./familyname_phonetics.py
 
-cd ../qlever
+# cd ../qlever
 
-echo "=== collect data" 
+# echo "=== collect data" 
 
-find ../additions/normalizations -name '*.nt.gz' | xargs cat > data/normalizations.nt.gz
+# find ../additions/normalizations -name '*.nt.gz' | xargs cat > data/normalizations.nt.gz
 
 echo "=== do clever"
 sudo qlever -q qleverfiles/Qleverfile stop
