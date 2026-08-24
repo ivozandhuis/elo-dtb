@@ -8,9 +8,6 @@ PREFIX picom: <https://personsincontext.org/model#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 
 CONSTRUCT {
-  ?source sdo:holdingArchive oa:elo ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548> .
-  
   ?event_uri a picom:LifeEvent ;
     picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> ;
     picom:eventPlace ?event_place ;

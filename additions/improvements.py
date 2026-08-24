@@ -11,6 +11,8 @@ QLEVER_ENDPOINT = "http://localhost:7654"
 
 amount = 0  # if 0, than all records are handled. For testing purpose
 
+# set = "dtb_trouwen"
+set = "dtb_dopen"
 
 def to_term(value):
     """Convert a CSV cell from a CONSTRUCT query result into the right
@@ -23,9 +25,10 @@ def to_term(value):
     return Literal(value)
 
 
-ext_path = Path("rq/improvements")
+ext_path = Path("rq/improvements/" + set)
+print(ext_path)
 for src_file in ext_path.glob("**/*.rq"):
-    out_file = Path('improvements') / src_file.name
+    out_file = Path('improvements/' + set) / src_file.name
     out_file = out_file.with_suffix('.nt.gz')
     out_file.parent.mkdir(parents=True, exist_ok=True)
 
