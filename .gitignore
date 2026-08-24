@@ -3,7 +3,5 @@ etl/dtb_dopen/
 additions/normalizations/
 additions/improvements/
 qlever/elo-dtb.*
-qlever/data/
-!qlever/data/data-collector.sh
 a2a-to-pico/*
 !a2a-to-pico/PUT-CODE-HERE.md
