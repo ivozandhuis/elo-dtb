@@ -4,12 +4,13 @@ PREFIX sdo: <https://schema.org/>
 PREFIX picot_roles: <https://terms.personsincontext.org/roles/>
 
 CONSTRUCT {
-   ?parent sdo:knows ?witness .
+   ?father sdo:knows ?witness .
 }
 WHERE {
-   ?parent a picom:PersonObservation ;
-       prov:hadPrimarySource ?src ;
-	   sdo:children ?child .
+   ?father a picom:PersonObservation ;
+      prov:hadPrimarySource ?src ;
+	   sdo:children ?child ;
+      sdo:gender sdo:Male .
    ?witness a picom:PersonObservation ;
        prov:hadPrimarySource ?src ;
        picom:hasRole picot_roles:573 .       

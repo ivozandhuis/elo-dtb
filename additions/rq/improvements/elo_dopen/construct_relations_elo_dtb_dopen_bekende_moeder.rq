@@ -1,0 +1,17 @@
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX picom: <https://personsincontext.org/model#>
+PREFIX sdo: <https://schema.org/>
+PREFIX picot_roles: <https://terms.personsincontext.org/roles/>
+
+CONSTRUCT {
+   ?mother sdo:knows ?witness .
+}
+WHERE {
+   ?mother a picom:PersonObservation ;
+      prov:hadPrimarySource ?src ;
+	   sdo:children ?child ;
+      sdo:gender sdo:Female .
+   ?witness a picom:PersonObservation ;
+       prov:hadPrimarySource ?src ;
+       picom:hasRole picot_roles:573 .       
+}

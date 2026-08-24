@@ -1,0 +1,11 @@
+PREFIX sdo: <https://schema.org/>
+PREFIX picom: <https://personsincontext.org/model#>
+PREFIX pnv: <https://w3id.org/pnv#>
+
+SELECT ?rel (COUNT(?rel) AS ?relCount) WHERE {
+  ?po1 ?rel ?po2 .
+  ?po1 a picom:PersonObservation .
+  ?po2 a picom:PersonObservation .
+} 
+GROUP BY ?rel
+ORDER BY DESC(?relCount)
