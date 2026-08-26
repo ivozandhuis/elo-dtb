@@ -4,7 +4,7 @@ PREFIX pnv: <https://w3id.org/pnv#>
 PREFIX bloothooft: <https://linkeddata.cultureelerfgoed.nl/clariahnames/vocab/>
 
 CONSTRUCT {
-  ?po <https://ex.com/vocabulary/iz/bloothooftGivenName> ?gn_uri .
+  ?po <https://example.org/iz/vocabulary/bloothooftGivenName> ?gn_uri .
 }
 WHERE {
   {

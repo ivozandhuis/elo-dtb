@@ -14,7 +14,4 @@ SELECT DISTINCT ?famname ?famname_norm ?dmp1 ?dmp2 ?dm WHERE {
   OPTIONAL {
     ?po <https://example.org/iz/vocabulary/doubleMetaphonePronounced_Familyname> ?dmp2 .
   }
-  OPTIONAL {
-    ?po <https://example.org/iz/vocabulary/daitchMokotoff_Familyname> ?dm .
-  }
 } LIMIT 100
