@@ -1,0 +1,11 @@
+PREFIX sdo: <https://schema.org/>
+PREFIX picom: <https://personsincontext.org/model#>
+PREFIX pnv: <https://w3id.org/pnv#>
+
+SELECT ?gname (COUNT(?gname) AS ?gnameCount) WHERE {
+  ?po a picom:PersonObservation ;
+      sdo:additionalName/pnv:givenName ?gname .
+} 
+GROUP BY ?gname
+ORDER BY DESC(?gnameCount)
+LIMIT 100

@@ -1,0 +1,11 @@
+PREFIX sdo: <https://schema.org/>
+PREFIX picom: <https://personsincontext.org/model#>
+PREFIX pnv: <https://w3id.org/pnv#>
+
+SELECT ?prof (COUNT(?prof) AS ?profCount) WHERE {
+  ?po a picom:PersonObservation ;
+      sdo:hasOccupation ?prof .
+} 
+GROUP BY ?prof
+ORDER BY DESC(?profCount)
+LIMIT 100
