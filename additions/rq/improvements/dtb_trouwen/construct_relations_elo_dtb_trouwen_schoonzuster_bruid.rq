@@ -1,0 +1,35 @@
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX picom: <https://personsincontext.org/model#>
+PREFIX sdo: <https://schema.org/>
+PREFIX picot_roles: <https://terms.personsincontext.org/roles/>
+PREFIX ql: <http://qlever.cs.uni-freiburg.de/builtin-functions/>
+
+CONSTRUCT {
+	?bride picom:hasSibling-in-law ?witness .
+    ?witness sdo:gender sdo:Female .
+}
+WHERE {
+    {
+        ?text ql:contains-word "bruid schoonzuster" .
+        ?text ql:contains-entity ?desc .
+        FILTER(CONTAINS(LCASE(?desc), "relatie tot de bruid: schoonzuster")
+            || CONTAINS(LCASE(?desc), "relatie tot de bruid: toekomstig schoonzuster"))
+    } UNION {
+        ?text ql:contains-word "bruid snaar" .
+        ?text ql:contains-entity ?desc .
+        FILTER(CONTAINS(LCASE(?desc), "relatie tot de bruid: snaar")
+            || CONTAINS(LCASE(?desc), "relatie tot de bruid: toekomstig snaar"))
+    } UNION {
+        ?text ql:contains-word "bruid aanbehuwdzuster" .
+        ?text ql:contains-entity ?desc .
+        FILTER(CONTAINS(LCASE(?desc), "relatie tot de bruid: aanbehuwdzuster")
+            || CONTAINS(LCASE(?desc), "relatie tot de bruid: toekomstig aanbehuwdzuster"))
+    }
+    ?witness a picom:PersonObservation ;
+    	prov:hadPrimarySource ?src ;
+    	sdo:description ?desc .
+    ?bride a picom:PersonObservation ; 
+    	prov:hadPrimarySource ?src ;
+    	picom:hasRole picot_roles:574 ;
+    	sdo:gender sdo:Female .
+}
