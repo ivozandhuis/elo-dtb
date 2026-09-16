@@ -9,12 +9,20 @@ CONSTRUCT {
     ?witness sdo:gender sdo:Male .
 }
 WHERE {
-    ?text ql:contains-word "bruidegom schoonvader" .
-    ?text ql:contains-entity ?desc .
+    {
+        ?text ql:contains-word "bruidegom schoonvader" .
+        ?text ql:contains-entity ?desc .
+        FILTER(CONTAINS(LCASE(?desc), "relatie tot de bruidegom: schoonvader")
+            || CONTAINS(LCASE(?desc), "relatie tot de bruidegom: toekomstig schoonvader"))
+    } UNION {
+        ?text ql:contains-word "bruidegom aanbehuwdvader" .
+        ?text ql:contains-entity ?desc .
+        FILTER(CONTAINS(LCASE(?desc), "relatie tot de bruidegom: aanbehuwdvader")
+            || CONTAINS(LCASE(?desc), "relatie tot de bruidegom: toekomstig aanbehuwdvader"))
+    }
     ?witness a picom:PersonObservation ;
     	prov:hadPrimarySource ?src ;
     	sdo:description ?desc .
-    FILTER(CONTAINS(LCASE(?desc), "relatie tot de bruidegom: schoonvader"))
     ?groom a picom:PersonObservation ; 
     	prov:hadPrimarySource ?src ;
     	picom:hasRole picot_roles:574 ;

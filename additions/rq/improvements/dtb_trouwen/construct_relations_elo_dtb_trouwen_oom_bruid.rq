@@ -14,7 +14,8 @@ WHERE {
     ?witness a picom:PersonObservation ;
     	prov:hadPrimarySource ?src ;
     	sdo:description ?desc .
-    FILTER(CONTAINS(LCASE(?desc), "relatie tot de bruid: oom"))
+    FILTER(CONTAINS(LCASE(?desc), "relatie tot de bruid: oom")
+        || CONTAINS(LCASE(?desc), "relatie tot de bruid: toekomstig oom"))
     ?bride a picom:PersonObservation ; 
     	prov:hadPrimarySource ?src ;
     	picom:hasRole picot_roles:574 ;
