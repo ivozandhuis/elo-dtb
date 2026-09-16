@@ -2,12 +2,15 @@ PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX picom: <https://personsincontext.org/model#>
 PREFIX sdo: <https://schema.org/>
 PREFIX picot_roles: <https://terms.personsincontext.org/roles/>
+PREFIX ql: <http://qlever.cs.uni-freiburg.de/builtin-functions/>
 
 CONSTRUCT {
 	?bride picom:hasParent-in-law ?witness ;
 		sdo:gender sdo:Female .
 }
 WHERE {
+    ?text ql:contains-word "bruid schoonmoeder" .
+    ?text ql:contains-entity ?desc .
     ?witness a picom:PersonObservation ;
     	prov:hadPrimarySource ?src ;
     	sdo:description ?desc .
