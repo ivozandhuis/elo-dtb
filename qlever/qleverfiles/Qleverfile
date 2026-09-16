@@ -7,6 +7,7 @@ INPUT_FILES      = data/*.nt.gz
 CAT_INPUT_FILES  = gunzip -c ${INPUT_FILES}
 SETTINGS_JSON    = { "num-triples-per-batch": 200000 }
 PARALLEL_PARSING = false
+TEXT_INDEX       = from_literals
 
 [server]
 PORT         = 7654
