@@ -5,8 +5,8 @@ PREFIX picot_roles: <https://terms.personsincontext.org/roles/>
 PREFIX ql: <http://qlever.cs.uni-freiburg.de/builtin-functions/>
 
 CONSTRUCT {
-	?groom picom:hasParent-in-law ?witness ;
-		sdo:gender sdo:Male .
+	?groom picom:hasParent-in-law ?witness .
+    ?witness sdo:gender sdo:Male .
 }
 WHERE {
     ?text ql:contains-word "bruidegom schoonvader" .
