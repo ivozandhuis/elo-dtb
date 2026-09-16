@@ -21,4 +21,4 @@ WHERE {
         prov:hadPrimarySource ?source ;
         picom:hasRole picot_roles:575 .
   BIND(IRI(CONCAT(STR(?source), "_doop_event")) AS ?event_uri)
-} LIMIT 10
+}
