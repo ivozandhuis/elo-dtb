@@ -3,6 +3,7 @@ PREFIX picom: <https://personsincontext.org/model#>
 PREFIX sdo: <https://schema.org/>
 PREFIX picot_roles: <https://terms.personsincontext.org/roles/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX ql: <http://qlever.cs.uni-freiburg.de/builtin-functions/>
 
 CONSTRUCT {
 	?groom picom:isWidOf ?deceased_spouse .
@@ -10,6 +11,8 @@ CONSTRUCT {
 		picom:deceased "true"^^xsd:boolean .
 }
 WHERE {
+    ?text ql:contains-word "bruidegom wed" .
+    ?text ql:contains-entity ?desc .
     ?deceased_spouse a picom:PersonObservation ;
     	prov:hadPrimarySource ?src ;
     	sdo:description ?desc .

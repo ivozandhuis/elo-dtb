@@ -2,16 +2,20 @@ PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX picom: <https://personsincontext.org/model#>
 PREFIX sdo: <https://schema.org/>
 PREFIX picot_roles: <https://terms.personsincontext.org/roles/>
+PREFIX ql: <http://qlever.cs.uni-freiburg.de/builtin-functions/>
 
 CONSTRUCT {
 	?bride sdo:sibling ?witness .
     ?witness sdo:gender sdo:Female .
 }
 WHERE {
+    ?text ql:contains-word "bruid zuster*" .
+    ?text ql:contains-entity ?desc .
     ?witness a picom:PersonObservation ;
     	prov:hadPrimarySource ?src ;
     	sdo:description ?desc .
-    FILTER(CONTAINS(LCASE(?desc), "relatie tot de bruid: zuster"))
+    FILTER(CONTAINS(LCASE(?desc), "relatie tot de bruid: zuster")
+        || CONTAINS(LCASE(?desc), "relatie tot de bruid: toekomstig zuster"))
     ?bride a picom:PersonObservation ; 
     	prov:hadPrimarySource ?src ;
     	picom:hasRole picot_roles:574 ;

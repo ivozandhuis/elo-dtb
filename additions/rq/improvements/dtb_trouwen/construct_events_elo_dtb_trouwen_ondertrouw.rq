@@ -6,6 +6,7 @@ PREFIX picot_roles: <https://terms.personsincontext.org/roles/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX picom: <https://personsincontext.org/model#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX ql: <http://qlever.cs.uni-freiburg.de/builtin-functions/>
 
 CONSTRUCT {
   ?source sdo:dateCreated ?event_date ;
@@ -17,6 +18,8 @@ CONSTRUCT {
     picom:eventDate ?event_date .
 }
 WHERE {
+  ?text ql:contains-word "ondertrouw" .
+  ?text ql:contains-entity ?description .
   ?source a sdo:ArchiveComponent ;
           sdo:holdingArchive oa:elo ;
           sdo:locationCreated ?event_place ;

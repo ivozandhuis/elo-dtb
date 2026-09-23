@@ -2,16 +2,20 @@ PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX picom: <https://personsincontext.org/model#>
 PREFIX sdo: <https://schema.org/>
 PREFIX picot_roles: <https://terms.personsincontext.org/roles/>
+PREFIX ql: <http://qlever.cs.uni-freiburg.de/builtin-functions/>
 
 CONSTRUCT {
 	?groom sdo:parent ?witness .
     ?witness sdo:gender sdo:Male .
 }
 WHERE {
+    ?text ql:contains-word "bruidegom vader" .
+    ?text ql:contains-entity ?desc .
     ?witness a picom:PersonObservation ;
     	prov:hadPrimarySource ?src ;
     	sdo:description ?desc .
-    FILTER(CONTAINS(LCASE(?desc), "relatie tot de bruidegom: vader"))
+    FILTER(CONTAINS(LCASE(?desc), "relatie tot de bruidegom: vader")
+        || CONTAINS(LCASE(?desc), "relatie tot de bruidegom: toekomstig vader"))
     ?groom a picom:PersonObservation ; 
     	prov:hadPrimarySource ?src ;
     	picom:hasRole picot_roles:574 ;

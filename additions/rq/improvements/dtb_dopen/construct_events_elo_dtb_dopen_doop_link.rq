@@ -6,11 +6,14 @@ PREFIX picot_roles: <https://terms.personsincontext.org/roles/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX picom: <https://personsincontext.org/model#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX ql: <http://qlever.cs.uni-freiburg.de/builtin-functions/>
 
 CONSTRUCT {
   ?party picom:hasLifeEvent ?event_uri .
 }
 WHERE {
+  ?text ql:contains-word "doopdatum" .
+  ?text ql:contains-entity ?description .
   ?source a sdo:ArchiveComponent ;
           sdo:description ?description .
   FILTER (CONTAINS(?description, "Doopdatum: "))
@@ -18,4 +21,4 @@ WHERE {
         prov:hadPrimarySource ?source ;
         picom:hasRole picot_roles:575 .
   BIND(IRI(CONCAT(STR(?source), "_doop_event")) AS ?event_uri)
-} LIMIT 10
+}

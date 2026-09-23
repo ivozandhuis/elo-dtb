@@ -3,6 +3,7 @@
 from pathlib import Path
 from rdflib import Graph, URIRef, BNode, Literal
 import gzip
+import itertools
 import csv
 import io
 import requests
@@ -45,7 +46,12 @@ for src_file in ext_path.glob("**/*.rq"):
 
     # read values of the csv and transform them to triples
     reader = csv.reader(io.StringIO(response.text))
-    next(reader, None)  # skip header row (?s,?p,?o)
+    # A CONSTRUCT result has no header row (a SELECT does), so only skip a real one.
+    # In RDF a subject is always an IRI or a blank node, so a first cell that is
+    # neither is a header; anything else is already a triple and must be kept.
+    first = next(reader, None)
+    if first is not None and first and (first[0].startswith('<') or first[0].startswith('_:')):
+        reader = itertools.chain([first], reader)
 
     g = Graph()
     for row in reader:
