@@ -1,0 +1,17 @@
+# In de data is soms aangegeven dat een straat/steeg etc. in Leiden was. 
+# Dit is de basis voor een lookup-table voor Leidse adressen.
+PREFIX sdo: <https://schema.org/>
+PREFIX picom: <https://personsincontext.org/model#>
+
+SELECT DISTINCT ?street 
+WHERE {
+    ?po a picom:PersonObservation ;
+        sdo:address ?residence .
+    FILTER(CONTAINS(?residence, ", Leiden") || CONTAINS(?residence, "Leiden, "))
+    BIND(
+      IF(CONTAINS(?residence, ", Leiden"),
+         REPLACE(STR(?residence), ", Leiden", ""),
+         REPLACE(STR(?residence), "Leiden, ", ""))
+      AS ?street
+    )
+}

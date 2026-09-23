@@ -1,0 +1,15 @@
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX picom: <https://personsincontext.org/model#>
+PREFIX sdo: <https://schema.org/>
+PREFIX picot_roles: <https://terms.personsincontext.org/roles/>
+
+CONSTRUCT {
+    ?po sdo:address ?address .
+} 
+  WHERE {
+    ?po a picom:PersonObservation ;
+    	prov:hadPrimarySource ?src ;
+    	sdo:description ?desc .
+    FILTER(CONTAINS(LCASE(?desc), "adres: "))
+    BIND (REPLACE(?desc, ".*[Aa]dres: (.*)", "$1") AS ?address)
+}

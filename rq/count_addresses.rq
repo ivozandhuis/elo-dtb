@@ -2,9 +2,10 @@ PREFIX sdo: <https://schema.org/>
 PREFIX picom: <https://personsincontext.org/model#>
 PREFIX pnv: <https://w3id.org/pnv#>
 
-SELECT ?residence (COUNT(?residence) AS ?residenceCount) WHERE {
+SELECT ?address (COUNT(?address) AS ?addressCount) WHERE {
   ?po a picom:PersonObservation ;
       sdo:address ?residence .
+  BIND(STR(?residence) AS ?address) # count language agnostic
 } 
-GROUP BY ?residence
-ORDER BY DESC(?residenceCount)
+GROUP BY ?address
+ORDER BY DESC(?addressCount)
