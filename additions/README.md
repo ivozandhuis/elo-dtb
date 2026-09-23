@@ -12,7 +12,7 @@ todo: places.
 Python script ```familynames_phonetics.py``` calculates various phonetic standardizations. Results in extra statements that can be added to the endpoint.
 
 ### Standardized givennames
-Download Bloothoofts givennames standardizations from (https://linkeddata.cultureelerfgoed.nl/rce/CLARIAH-Given-Names/)[https://linkeddata.cultureelerfgoed.nl/rce/CLARIAH-Given-Names/] and reindex the data in qlever. This enables SPARQL queries to find standardized givennames. Todo: create CONSTRUCT queries to link standardized names to the personobservations.
+Download Bloothoofts givennames standardizations from (https://linkeddata.cultureelerfgoed.nl/rce/dutch-given-names)[https://linkeddata.cultureelerfgoed.nl/rce/dutch-given-names] and reindex the data in qlever. This enables SPARQL queries to find standardized givennames. Todo: create CONSTRUCT queries to link standardized names to the personobservations.
 
 ### Standardized patronymix
 Todo. Maybe compare sdo:Male names from Bloothooft + ("s" or "z" or "sz" or "sdr" or ...)?

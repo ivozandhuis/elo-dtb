@@ -31,5 +31,5 @@ WHERE {
 
 Dit is de basis voor een lookup-table voor Leidse adressen. In de CSV file is een kolom toegevoegd met een gestandaardiseerde spelling, zoveel mogelijk naar de spelwijze zoals deze nu gangbaar is. Work-in-progress.
 
-## Ricks lijst met Liedse adressen
+## Ricks lijst met Leidse adressen
 In de toponiemenlijst van Rick zitten ook straatnamen. Hier heb ik nog niet naar gekeken.
