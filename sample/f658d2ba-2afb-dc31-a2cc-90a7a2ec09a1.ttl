@@ -1,0 +1,63 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:96d4d3a5-7036-461c-e28c-3a40cedc4262> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:f658d2ba-2afb-dc31-a2cc-90a7a2ec09a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Reijnier"@nl ;
+            pnv:literalName "Reijnier Woutersz"@nl ;
+            pnv:patronym "Woutersz"@nl ] ;
+    sdo:givenName "Reijnier"@nl ;
+    sdo:name "Reijnier Woutersz"@nl .
+
+<https://ex.org/Person:f017daa3-6159-cdf1-c9f3-58c73d90e31c> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:f658d2ba-2afb-dc31-a2cc-90a7a2ec09a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Jannetje"@nl ;
+            pnv:literalName "Jannetje Gijsberts"@nl ;
+            pnv:patronym "Gijsberts"@nl ] ;
+    sdo:givenName "Jannetje"@nl ;
+    sdo:name "Jannetje Gijsberts"@nl .
+
+<https://ex.org/Person:8c80719d-ecef-29d3-bb56-7c19e121c2f1> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:f658d2ba-2afb-dc31-a2cc-90a7a2ec09a1> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 22-12-1658"@nl ;
+    sdo:givenName "Barbara"@nl ;
+    sdo:name "Barbara"@nl ;
+    sdo:parent <https://ex.org/Person:a4ce23cc-7f65-e831-8922-7c3ef8857cab> .
+
+<https://ex.org/Person:a4ce23cc-7f65-e831-8922-7c3ef8857cab> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:f658d2ba-2afb-dc31-a2cc-90a7a2ec09a1> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Jan"@nl ;
+            pnv:literalName "Jan Claesz"@nl ;
+            pnv:patronym "Claesz"@nl ] ;
+    sdo:children <https://ex.org/Person:8c80719d-ecef-29d3-bb56-7c19e121c2f1> ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jan"@nl ;
+    sdo:name "Jan Claesz"@nl .
+
+<https://ex.org/Source:f658d2ba-2afb-dc31-a2cc-90a7a2ec09a1> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/305ca36a-f21b-44e7-8be9-364c310f1228/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/f658d2ba-2afb-dc31-a2cc-90a7a2ec09a1"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/305ca36a-f21b-44e7-8be9-364c310f1228/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1658-12-22"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1652-1659"@nl,
+        "236"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 22-12-1658<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/236\">Inventarisnummer 236 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 236, Periode: 1..., (toegangsnr. 1004), inv.nr. 236, Doopboek van de Hooglandse Kerk (NH) te Leiden, 13 augustus 1652 - 29 juni 1659., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/f658d2ba-2afb-dc31-a2cc-90a7a2ec09a1"^^xsd:anyURI .
+

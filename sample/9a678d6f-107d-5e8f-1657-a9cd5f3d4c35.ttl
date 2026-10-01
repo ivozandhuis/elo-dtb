@@ -1,0 +1,78 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:41ca1711-c26b-8344-eaed-fb251f953879> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:9a678d6f-107d-5e8f-1657-a9cd5f3d4c35> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:description "getuige van de bruid, relatie tot de bruid: moeder, adres: Ouden Rhijn by de Donkersteeg"@nl ;
+    sdo:familyName "Smit"@nl ;
+    sdo:givenName "Jacoba"@nl ;
+    sdo:name "Jacoba Smit"@nl .
+
+<https://ex.org/Person:a604232b-2a07-d555-d8cd-3d3265e0a0e6> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:9a678d6f-107d-5e8f-1657-a9cd5f3d4c35> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Duijvenvoorde"@nl ;
+            pnv:givenName "Kniertje"@nl ;
+            pnv:literalName "Kniertje Dirksz van Duijvenvoorde"@nl ;
+            pnv:patronym "Dirksz"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:description "getuige van de bruidegom, relatie tot de bruidegom: moei, adres: Hoogstraat"@nl ;
+    sdo:familyName "van Duijvenvoorde"@nl ;
+    sdo:givenName "Kniertje"@nl ;
+    sdo:name "Kniertje Dirksz van Duijvenvoorde"@nl .
+
+<https://ex.org/Person:40c6b731-f787-1910-0aa0-1d0ab622aa6a> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:9a678d6f-107d-5e8f-1657-a9cd5f3d4c35> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Dam"@nl ;
+            pnv:givenName "Maria"@nl ;
+            pnv:literalName "Maria van Dam"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:address "Rhijn, Ouden by de Donkersteeg"@nl ;
+    sdo:birthPlace "Leyden"@nl ;
+    sdo:familyName "van Dam"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Maria"@nl ;
+    sdo:name "Maria van Dam"@nl ;
+    sdo:spouse <https://ex.org/Person:cce9ef00-293c-6309-9e31-31d88a68bf29> .
+
+<https://ex.org/Person:cce9ef00-293c-6309-9e31-31d88a68bf29> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:9a678d6f-107d-5e8f-1657-a9cd5f3d4c35> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Plas"@nl ;
+            pnv:givenName "Willebordus"@nl ;
+            pnv:literalName "Willebordus van der Plas"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:address "Hoogstraat"@nl ;
+    sdo:birthPlace "Catwijk aan Zee"@nl ;
+    sdo:familyName "van der Plas"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Willebordus"@nl ;
+    sdo:hasOccupation "herbergier"@nl ;
+    sdo:name "Willebordus van der Plas"@nl ;
+    sdo:spouse <https://ex.org/Person:40c6b731-f787-1910-0aa0-1d0ab622aa6a> .
+
+<https://ex.org/Source:9a678d6f-107d-5e8f-1657-a9cd5f3d4c35> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/03f55988-66b6-4a8d-afd8-514ebe6fe5e1/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/9a678d6f-107d-5e8f-1657-a9cd5f3d4c35"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/03f55988-66b6-4a8d-afd8-514ebe6fe5e1/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1772-1778"@nl,
+        "44"@nl,
+        "Bruydegom heeft consent van vader vertoont.<br>Datum ondertrouw: 10-11-1775<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/44\">Inventarisnummer 44 van archiefnummer 1004 in Archieven</a>"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 44, Periode: 17..., (toegangsnr. 1004), inv.nr. 44, VV. Kerkelijk ondertrouwboek (NH) van Leiden, september 1772 - 1778., 149v, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/9a678d6f-107d-5e8f-1657-a9cd5f3d4c35"^^xsd:anyURI .
+

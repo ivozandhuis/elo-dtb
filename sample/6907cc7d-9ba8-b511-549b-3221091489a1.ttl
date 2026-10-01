@@ -1,0 +1,71 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:6a0a5786-674e-31ef-6236-d0a181151cf8> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:6907cc7d-9ba8-b511-549b-3221091489a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Paschier"@nl ;
+    sdo:givenName "Jakobus"@nl ;
+    sdo:name "Jakobus Paschier"@nl .
+
+<https://ex.org/Person:c139bdfd-4551-56a3-9230-117bdc69441e> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:6907cc7d-9ba8-b511-549b-3221091489a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Steegen"@nl ;
+            pnv:givenName "Dirkje"@nl ;
+            pnv:literalName "Dirkje ter Steegen"@nl ;
+            pnv:surnamePrefix "ter"@nl ] ;
+    sdo:familyName "ter Steegen"@nl ;
+    sdo:givenName "Dirkje"@nl ;
+    sdo:name "Dirkje ter Steegen"@nl .
+
+<https://ex.org/Person:0eaa4156-40b0-5422-77d0-20b6e4bdfd5e> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:6907cc7d-9ba8-b511-549b-3221091489a1> ;
+    sdo:children <https://ex.org/Person:c9c9d725-7706-e981-e37b-c2f9b2ad55ae> ;
+    sdo:familyName "Paschier"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Dirk"@nl ;
+    sdo:name "Dirk Paschier"@nl ;
+    sdo:spouse <https://ex.org/Person:35055152-df7d-df1a-42c5-a888900b3b7c> .
+
+<https://ex.org/Person:35055152-df7d-df1a-42c5-a888900b3b7c> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:6907cc7d-9ba8-b511-549b-3221091489a1> ;
+    sdo:children <https://ex.org/Person:c9c9d725-7706-e981-e37b-c2f9b2ad55ae> ;
+    sdo:familyName "Ammeraal"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Josijntje"@nl ;
+    sdo:name "Josijntje Ammeraal"@nl ;
+    sdo:spouse <https://ex.org/Person:0eaa4156-40b0-5422-77d0-20b6e4bdfd5e> .
+
+<https://ex.org/Person:c9c9d725-7706-e981-e37b-c2f9b2ad55ae> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:6907cc7d-9ba8-b511-549b-3221091489a1> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 08-08-1784"@nl ;
+    sdo:familyName "Paschier"@nl ;
+    sdo:givenName "Gerrit"@nl ;
+    sdo:name "Gerrit Paschier"@nl ;
+    sdo:parent <https://ex.org/Person:0eaa4156-40b0-5422-77d0-20b6e4bdfd5e>,
+        <https://ex.org/Person:35055152-df7d-df1a-42c5-a888900b3b7c> .
+
+<https://ex.org/Source:6907cc7d-9ba8-b511-549b-3221091489a1> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/ec43a0c0-99da-43c6-aaf6-4f354f9efc65/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/6907cc7d-9ba8-b511-549b-3221091489a1"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/ec43a0c0-99da-43c6-aaf6-4f354f9efc65/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1784-08-08"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1"@nl,
+        "1621-1811"@nl,
+        "Doop-, Trouw- en Begraafregisters (retroacta B.S.) Noordwijk"@nl,
+        "Doopdatum: 08-08-1784<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/0910/file/1\">Inventarisnummer 1 van archiefnummer 0910 in Archieven</a>"@nl ;
+    sdo:locationCreated "Noordwijk"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, Trouw- en Begraafregisters (retroacta B.S.) Noordwijk, Deel: 1, Periode: 1621..., (toegangsnr. 0910), inv.nr. 1, Doopboek (NH) van Noordwijk-Binnen, 1621 maart 14 - 1807 oktober 10 en vervolgens een ingehecht katern met doopinschrijvingen, 1807 oktober 27 - 1811., 171v, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/6907cc7d-9ba8-b511-549b-3221091489a1"^^xsd:anyURI .
+

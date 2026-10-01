@@ -1,0 +1,71 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:37e34a7e-a644-bd64-efd8-3fb699b1d248> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:ac583302-1d84-8484-b4ff-658f054d2bee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Maasman"@nl ;
+    sdo:givenName "Ariaantie"@nl ;
+    sdo:name "Ariaantie Maasman"@nl .
+
+<https://ex.org/Person:e80f7b26-9a12-9f53-9e27-217c73df4b07> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:ac583302-1d84-8484-b4ff-658f054d2bee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Aa"@nl ;
+            pnv:givenName "Hendrik"@nl ;
+            pnv:literalName "Hendrik van der Aa"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:familyName "van der Aa"@nl ;
+    sdo:givenName "Hendrik"@nl ;
+    sdo:name "Hendrik van der Aa"@nl .
+
+<https://ex.org/Person:19f24623-f772-433e-3e36-bfc682cf56c2> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:ac583302-1d84-8484-b4ff-658f054d2bee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Bruin"@nl ;
+            pnv:givenName "Fijtie"@nl ;
+            pnv:literalName "Fijtie de Bruin"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:children <https://ex.org/Person:570d07f7-efe0-1635-8201-2a16d13434cc> ;
+    sdo:familyName "de Bruin"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Fijtie"@nl ;
+    sdo:name "Fijtie de Bruin"@nl ;
+    sdo:spouse <https://ex.org/Person:77a704ec-e5b9-fd00-4525-39ce5047f1b0> .
+
+<https://ex.org/Person:570d07f7-efe0-1635-8201-2a16d13434cc> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:ac583302-1d84-8484-b4ff-658f054d2bee> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 15-05-1718"@nl ;
+    sdo:familyName "Backers"@nl ;
+    sdo:givenName "Marijtie"@nl ;
+    sdo:name "Marijtie Backers"@nl ;
+    sdo:parent <https://ex.org/Person:19f24623-f772-433e-3e36-bfc682cf56c2>,
+        <https://ex.org/Person:77a704ec-e5b9-fd00-4525-39ce5047f1b0> .
+
+<https://ex.org/Person:77a704ec-e5b9-fd00-4525-39ce5047f1b0> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:ac583302-1d84-8484-b4ff-658f054d2bee> ;
+    sdo:children <https://ex.org/Person:570d07f7-efe0-1635-8201-2a16d13434cc> ;
+    sdo:familyName "Backers"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Krijn"@nl ;
+    sdo:name "Krijn Backers"@nl ;
+    sdo:spouse <https://ex.org/Person:19f24623-f772-433e-3e36-bfc682cf56c2> .
+
+<https://ex.org/Source:ac583302-1d84-8484-b4ff-658f054d2bee> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:dateCreated "1718-05-15"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1711-1718"@nl,
+        "247"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 15-05-1718<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/247\">Inventarisnummer 247 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 247, Periode: 1..., (toegangsnr. 1004), inv.nr. 247, Doopboek van de Hooglandse Kerk (NH) te Leiden, 1711 - 29 september 1718., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/ac583302-1d84-8484-b4ff-658f054d2bee"^^xsd:anyURI .
+

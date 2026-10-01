@@ -1,0 +1,52 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:3d406f81-3c5b-1f5a-41fd-b433a0d60d16> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:9cbad3b0-3a13-5ee5-76fe-2d76427debee> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:birthDate "1810-08-15"^^xsd:date ;
+    sdo:description "Doopdatum: 19-08-1810"@nl ;
+    sdo:familyName "Staffeleu"@nl ;
+    sdo:givenName "Elsje"@nl ;
+    sdo:name "Elsje Staffeleu"@nl ;
+    sdo:parent <https://ex.org/Person:54227237-9fd8-2eaa-4107-8bae6bdabac0>,
+        <https://ex.org/Person:a09fcaca-5f1d-ad37-d9c5-dcacc1486ed3> .
+
+<https://ex.org/Person:54227237-9fd8-2eaa-4107-8bae6bdabac0> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:9cbad3b0-3a13-5ee5-76fe-2d76427debee> ;
+    sdo:children <https://ex.org/Person:3d406f81-3c5b-1f5a-41fd-b433a0d60d16> ;
+    sdo:familyName "Staffeleu"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Daniel"@nl ;
+    sdo:name "Daniel Staffeleu"@nl ;
+    sdo:spouse <https://ex.org/Person:a09fcaca-5f1d-ad37-d9c5-dcacc1486ed3> .
+
+<https://ex.org/Person:a09fcaca-5f1d-ad37-d9c5-dcacc1486ed3> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:9cbad3b0-3a13-5ee5-76fe-2d76427debee> ;
+    sdo:children <https://ex.org/Person:3d406f81-3c5b-1f5a-41fd-b433a0d60d16> ;
+    sdo:familyName "Poelgeest"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Maria"@nl ;
+    sdo:name "Maria Poelgeest"@nl ;
+    sdo:spouse <https://ex.org/Person:54227237-9fd8-2eaa-4107-8bae6bdabac0> .
+
+<https://ex.org/Source:9cbad3b0-3a13-5ee5-76fe-2d76427debee> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/ff7ae74e-3df4-46a0-b83f-63fb160dfa66/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/9cbad3b0-3a13-5ee5-76fe-2d76427debee"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/ff7ae74e-3df4-46a0-b83f-63fb160dfa66/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1810-08-19"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1766-1811"@nl,
+        "264"@nl,
+        "Buitenechtelijk kind<br>Doopdatum: 19-08-1810<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/264\">Inventarisnummer 264 van archiefnummer 1004 in Archieven</a>"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 264, Periode: 1..., (toegangsnr. 1004), inv.nr. 264, Doopboek van de Nieuwe- of Marekerk (NH) te Leiden, 21 september 1766 - 1811., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/9cbad3b0-3a13-5ee5-76fe-2d76427debee"^^xsd:anyURI .
+

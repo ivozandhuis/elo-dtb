@@ -1,0 +1,67 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:60054c5f-76a7-d1b3-3743-6cc5a759595f> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:91ec2675-c79a-17f2-8721-ba7fb1ced9a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Fevers"@nl ;
+            pnv:givenName "Judith"@nl ;
+            pnv:literalName "Judith le Fevers"@nl ;
+            pnv:surnamePrefix "le"@nl ] ;
+    sdo:familyName "le Fevers"@nl ;
+    sdo:givenName "Judith"@nl ;
+    sdo:name "Judith le Fevers"@nl .
+
+<https://ex.org/Person:016770db-e0d5-3a0d-8248-545b60395f82> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:91ec2675-c79a-17f2-8721-ba7fb1ced9a1> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Lijsbeth"@nl ;
+            pnv:literalName "Lijsbeth Oliviers"@nl ;
+            pnv:patronym "Oliviers"@nl ] ;
+    sdo:children <https://ex.org/Person:f3361883-8b40-ceca-f6cb-f4defcc98709> ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Lijsbeth"@nl ;
+    sdo:name "Lijsbeth Oliviers"@nl ;
+    sdo:spouse <https://ex.org/Person:4215df07-2c89-3411-2f24-caebf178fcaf> .
+
+<https://ex.org/Person:4215df07-2c89-3411-2f24-caebf178fcaf> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:91ec2675-c79a-17f2-8721-ba7fb1ced9a1> ;
+    sdo:children <https://ex.org/Person:f3361883-8b40-ceca-f6cb-f4defcc98709> ;
+    sdo:familyName "Boon"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Frans"@nl ;
+    sdo:name "Frans Boon"@nl ;
+    sdo:spouse <https://ex.org/Person:016770db-e0d5-3a0d-8248-545b60395f82> .
+
+<https://ex.org/Person:f3361883-8b40-ceca-f6cb-f4defcc98709> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:91ec2675-c79a-17f2-8721-ba7fb1ced9a1> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 05-10-1692"@nl ;
+    sdo:familyName "Boon"@nl ;
+    sdo:givenName "Anna Elijsabeth"@nl ;
+    sdo:name "Anna Elijsabeth Boon"@nl ;
+    sdo:parent <https://ex.org/Person:016770db-e0d5-3a0d-8248-545b60395f82>,
+        <https://ex.org/Person:4215df07-2c89-3411-2f24-caebf178fcaf> .
+
+<https://ex.org/Source:91ec2675-c79a-17f2-8721-ba7fb1ced9a1> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/d90d5db9-f934-4962-b64c-a171881388fe/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/91ec2675-c79a-17f2-8721-ba7fb1ced9a1"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/d90d5db9-f934-4962-b64c-a171881388fe/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1692-10-05"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1684-1700"@nl,
+        "260"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 05-10-1692<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/260\">Inventarisnummer 260 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 260, Periode: 1..., (toegangsnr. 1004), inv.nr. 260, Doopboek van de Nieuwe- of Marekerk (NH) te Leiden, 3 december 1684 - 1700., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/91ec2675-c79a-17f2-8721-ba7fb1ced9a1"^^xsd:anyURI .
+

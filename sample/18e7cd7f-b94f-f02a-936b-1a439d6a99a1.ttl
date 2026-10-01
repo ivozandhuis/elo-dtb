@@ -1,0 +1,69 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:a409c571-21ab-6d38-f5b4-527dcc0c50aa> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:18e7cd7f-b94f-f02a-936b-1a439d6a99a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Woldere"@nl ;
+            pnv:givenName "Catrina"@nl ;
+            pnv:literalName "Catrina van Woldere"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:familyName "van Woldere"@nl ;
+    sdo:givenName "Catrina"@nl ;
+    sdo:name "Catrina van Woldere"@nl .
+
+<https://ex.org/Person:6cfbcabe-59cb-6a74-3e3c-42dbb6c2276c> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:18e7cd7f-b94f-f02a-936b-1a439d6a99a1> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 27-05-1701"@nl ;
+    sdo:familyName "Beket"@nl ;
+    sdo:givenName "Hendrik"@nl ;
+    sdo:name "Hendrik Beket"@nl ;
+    sdo:parent <https://ex.org/Person:75a327ff-a18c-d592-0ad5-67dde2829738>,
+        <https://ex.org/Person:dcd563aa-2a79-c552-d111-622e7b39b088> .
+
+<https://ex.org/Person:75a327ff-a18c-d592-0ad5-67dde2829738> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:18e7cd7f-b94f-f02a-936b-1a439d6a99a1> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Woldere"@nl ;
+            pnv:givenName "Elisabeth"@nl ;
+            pnv:literalName "Elisabeth van Woldere"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:children <https://ex.org/Person:6cfbcabe-59cb-6a74-3e3c-42dbb6c2276c> ;
+    sdo:familyName "van Woldere"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Elisabeth"@nl ;
+    sdo:name "Elisabeth van Woldere"@nl ;
+    sdo:spouse <https://ex.org/Person:dcd563aa-2a79-c552-d111-622e7b39b088> .
+
+<https://ex.org/Person:dcd563aa-2a79-c552-d111-622e7b39b088> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:18e7cd7f-b94f-f02a-936b-1a439d6a99a1> ;
+    sdo:children <https://ex.org/Person:6cfbcabe-59cb-6a74-3e3c-42dbb6c2276c> ;
+    sdo:familyName "Beket"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Hendrik"@nl ;
+    sdo:name "Hendrik Beket"@nl ;
+    sdo:spouse <https://ex.org/Person:75a327ff-a18c-d592-0ad5-67dde2829738> .
+
+<https://ex.org/Source:18e7cd7f-b94f-f02a-936b-1a439d6a99a1> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/beabbb85-a30d-4d59-a5f6-2eb2070b8203/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/18e7cd7f-b94f-f02a-936b-1a439d6a99a1"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/beabbb85-a30d-4d59-a5f6-2eb2070b8203/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1701-05-27"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1699-1710"@nl,
+        "226"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 27-05-1701<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/226\">Inventarisnummer 226 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 226, Periode: 1..., (toegangsnr. 1004), inv.nr. 226, Doopboek van de Pieterskerk (NH) te Leiden, 1699 - 30 april 1710., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/18e7cd7f-b94f-f02a-936b-1a439d6a99a1"^^xsd:anyURI .
+

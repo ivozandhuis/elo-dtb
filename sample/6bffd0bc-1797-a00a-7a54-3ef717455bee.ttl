@@ -1,0 +1,91 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:72cd4857-f313-76ad-8284-ac9983ae67fa> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:6bffd0bc-1797-a00a-7a54-3ef717455bee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Hidde"@nl ;
+            pnv:givenName "Neeltgen"@nl ;
+            pnv:literalName "Neeltgen Arentsdr. van Hidde"@nl ;
+            pnv:patronym "Arentsdr."@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:familyName "van Hidde"@nl ;
+    sdo:givenName "Neeltgen"@nl ;
+    sdo:name "Neeltgen Arentsdr. van Hidde"@nl .
+
+<https://ex.org/Person:bffbbce1-8306-e201-fe7d-4a8a1bf5a6f6> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:6bffd0bc-1797-a00a-7a54-3ef717455bee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Schagen"@nl ;
+            pnv:givenName "Geertgen"@nl ;
+            pnv:literalName "Geertgen Dicksd van Schagen"@nl ;
+            pnv:patronym "Dicksd"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:familyName "van Schagen"@nl ;
+    sdo:givenName "Geertgen"@nl ;
+    sdo:name "Geertgen Dicksd van Schagen"@nl .
+
+<https://ex.org/Person:e4cf703c-a3ac-416a-5dc0-62563efdb729> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:6bffd0bc-1797-a00a-7a54-3ef717455bee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Schagen"@nl ;
+            pnv:givenName "Jan"@nl ;
+            pnv:literalName "Jan Dircksz van Schagen"@nl ;
+            pnv:patronym "Dircksz"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:familyName "van Schagen"@nl ;
+    sdo:givenName "Jan"@nl ;
+    sdo:name "Jan Dircksz van Schagen"@nl .
+
+<https://ex.org/Person:4d980858-4f19-3718-bd03-ad5f13c3a62f> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:6bffd0bc-1797-a00a-7a54-3ef717455bee> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Hidde"@nl ;
+            pnv:givenName "Maertgen"@nl ;
+            pnv:literalName "Maertgen van Hidde"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:description "Doopdatum: 10-11-1633"@nl ;
+    sdo:familyName "van Hidde"@nl ;
+    sdo:givenName "Maertgen"@nl ;
+    sdo:name "Maertgen van Hidde"@nl ;
+    sdo:parent <https://ex.org/Person:de955071-b176-5c14-0145-ee022d088750> .
+
+<https://ex.org/Person:de955071-b176-5c14-0145-ee022d088750> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:6bffd0bc-1797-a00a-7a54-3ef717455bee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Hidde"@nl ;
+            pnv:givenName "Jan"@nl ;
+            pnv:literalName "Jan Arentsz van Hidde"@nl ;
+            pnv:patronym "Arentsz"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:children <https://ex.org/Person:4d980858-4f19-3718-bd03-ad5f13c3a62f> ;
+    sdo:familyName "van Hidde"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jan"@nl ;
+    sdo:name "Jan Arentsz van Hidde"@nl .
+
+<https://ex.org/Source:6bffd0bc-1797-a00a-7a54-3ef717455bee> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/cd2f543e-7444-41a0-8e59-1f3ae7218201/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/6bffd0bc-1797-a00a-7a54-3ef717455bee"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/cd2f543e-7444-41a0-8e59-1f3ae7218201/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1633-11-10"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1628-1635"@nl,
+        "233"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 10-11-1633<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/233\">Inventarisnummer 233 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 233, Periode: 1..., (toegangsnr. 1004), inv.nr. 233, Doopboek van de Hooglandse Kerk (NH) te Leiden, 20 augustus 1628 - 1635., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/6bffd0bc-1797-a00a-7a54-3ef717455bee"^^xsd:anyURI .
+

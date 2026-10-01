@@ -1,0 +1,79 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:0da74053-1d31-c29e-29b1-7c297cdbaac2> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:f1e68173-f005-c41f-6b1a-4eccde229bee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Anna"@nl ;
+            pnv:literalName "Anna Crispijns"@nl ;
+            pnv:patronym "Crispijns"@nl ] ;
+    sdo:givenName "Anna"@nl ;
+    sdo:name "Anna Crispijns"@nl .
+
+<https://ex.org/Person:37e70a7f-8c6c-258d-eba8-89e58c97d248> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:f1e68173-f005-c41f-6b1a-4eccde229bee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Houtie"@nl ;
+            pnv:givenName "Guiljaam"@nl ;
+            pnv:literalName "Guiljaam van Houtie"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:familyName "van Houtie"@nl ;
+    sdo:givenName "Guiljaam"@nl ;
+    sdo:name "Guiljaam van Houtie"@nl .
+
+<https://ex.org/Person:3a1df625-6da4-1214-7105-9d2a6f2f8ae3> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:f1e68173-f005-c41f-6b1a-4eccde229bee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Man"@nl ;
+            pnv:givenName "Sara"@nl ;
+            pnv:literalName "Sara de Man"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:children <https://ex.org/Person:e208e68a-8952-1c06-bea5-53e313738df7> ;
+    sdo:familyName "de Man"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Sara"@nl ;
+    sdo:name "Sara de Man"@nl ;
+    sdo:spouse <https://ex.org/Person:9a8bef8b-70de-82dc-e1ca-415fce02a774> .
+
+<https://ex.org/Person:9a8bef8b-70de-82dc-e1ca-415fce02a774> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:f1e68173-f005-c41f-6b1a-4eccde229bee> ;
+    sdo:children <https://ex.org/Person:e208e68a-8952-1c06-bea5-53e313738df7> ;
+    sdo:familyName "Lens"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Johannes"@nl ;
+    sdo:name "Johannes Lens"@nl ;
+    sdo:spouse <https://ex.org/Person:3a1df625-6da4-1214-7105-9d2a6f2f8ae3> .
+
+<https://ex.org/Person:e208e68a-8952-1c06-bea5-53e313738df7> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:f1e68173-f005-c41f-6b1a-4eccde229bee> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 07-11-1717"@nl ;
+    sdo:familyName "Lens"@nl ;
+    sdo:givenName "Anna"@nl ;
+    sdo:name "Anna Lens"@nl ;
+    sdo:parent <https://ex.org/Person:3a1df625-6da4-1214-7105-9d2a6f2f8ae3>,
+        <https://ex.org/Person:9a8bef8b-70de-82dc-e1ca-415fce02a774> .
+
+<https://ex.org/Source:f1e68173-f005-c41f-6b1a-4eccde229bee> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/79b9b0ba-b402-4f39-a8fe-903e913e9bd4/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/f1e68173-f005-c41f-6b1a-4eccde229bee"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/79b9b0ba-b402-4f39-a8fe-903e913e9bd4/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1717-11-07"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1711-1718"@nl,
+        "247"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 07-11-1717<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/247\">Inventarisnummer 247 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 247, Periode: 1..., (toegangsnr. 1004), inv.nr. 247, Doopboek van de Hooglandse Kerk (NH) te Leiden, 1711 - 29 september 1718., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/f1e68173-f005-c41f-6b1a-4eccde229bee"^^xsd:anyURI .
+

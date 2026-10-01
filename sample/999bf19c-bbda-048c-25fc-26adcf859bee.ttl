@@ -1,0 +1,82 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:8b9dadc2-ad71-8e71-a216-ebe36bc84365> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:999bf19c-bbda-048c-25fc-26adcf859bee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Tombe"@nl ;
+            pnv:givenName "Sebastien"@nl ;
+            pnv:literalName "Sebastien de Tombe"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:familyName "de Tombe"@nl ;
+    sdo:givenName "Sebastien"@nl ;
+    sdo:name "Sebastien de Tombe"@nl .
+
+<https://ex.org/Person:9c2444e8-30e7-45da-c9ee-81870218b967> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:999bf19c-bbda-048c-25fc-26adcf859bee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Bervais"@nl ;
+    sdo:givenName "Jeanne"@nl ;
+    sdo:name "Jeanne Bervais"@nl .
+
+<https://ex.org/Person:02df8aaf-1035-9dee-7751-9a8e7773463f> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:999bf19c-bbda-048c-25fc-26adcf859bee> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Tombe"@nl ;
+            pnv:givenName "Sebastien"@nl ;
+            pnv:literalName "Sebastien de Tombe"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:birthDate "1694-08-04"^^xsd:date ;
+    sdo:description "Doopdatum: 04-08-1694"@nl ;
+    sdo:familyName "de Tombe"@nl ;
+    sdo:givenName "Sebastien"@nl ;
+    sdo:name "Sebastien de Tombe"@nl ;
+    sdo:parent <https://ex.org/Person:27ba2f16-1955-fbaf-7ee8-7d17eeea7d3c>,
+        <https://ex.org/Person:641a7d10-d5d7-8c5d-c1b4-c4e4a7396dd1> .
+
+<https://ex.org/Person:27ba2f16-1955-fbaf-7ee8-7d17eeea7d3c> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:999bf19c-bbda-048c-25fc-26adcf859bee> ;
+    sdo:children <https://ex.org/Person:02df8aaf-1035-9dee-7751-9a8e7773463f> ;
+    sdo:familyName "Penquin"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Jeanne"@nl ;
+    sdo:name "Jeanne Penquin"@nl ;
+    sdo:spouse <https://ex.org/Person:641a7d10-d5d7-8c5d-c1b4-c4e4a7396dd1> .
+
+<https://ex.org/Person:641a7d10-d5d7-8c5d-c1b4-c4e4a7396dd1> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:999bf19c-bbda-048c-25fc-26adcf859bee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Tombe"@nl ;
+            pnv:givenName "Christophe"@nl ;
+            pnv:literalName "Christophe de Tombe"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:children <https://ex.org/Person:02df8aaf-1035-9dee-7751-9a8e7773463f> ;
+    sdo:familyName "de Tombe"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Christophe"@nl ;
+    sdo:name "Christophe de Tombe"@nl ;
+    sdo:spouse <https://ex.org/Person:27ba2f16-1955-fbaf-7ee8-7d17eeea7d3c> .
+
+<https://ex.org/Source:999bf19c-bbda-048c-25fc-26adcf859bee> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/3482f07d-2c05-4d8e-8fdd-beb3bae431da/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/999bf19c-bbda-048c-25fc-26adcf859bee"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/3482f07d-2c05-4d8e-8fdd-beb3bae431da/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1694-08-04"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1670-1695"@nl,
+        "274"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "voornaam vader moet zijn Charles<br>Doopdatum: 04-08-1694<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/274\">Inventarisnummer 274 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 274, Periode: 1..., (toegangsnr. 1004), inv.nr. 274, Doopboek van de Vrouwekerk (Waals, NH) te Leiden, 1670 - 1695., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/999bf19c-bbda-048c-25fc-26adcf859bee"^^xsd:anyURI .
+

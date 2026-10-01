@@ -1,0 +1,91 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:05d69cbb-77f6-8a49-50c2-118e029a45f9> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:7adcc50e-082b-04b4-8a91-17ea03827bee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Aeltje"@nl ;
+            pnv:literalName "Aeltje Frans"@nl ;
+            pnv:patronym "Frans"@nl ] ;
+    sdo:givenName "Aeltje"@nl ;
+    sdo:name "Aeltje Frans"@nl .
+
+<https://ex.org/Person:782336f9-5ac7-75d1-a0e1-1d6411b975d9> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:7adcc50e-082b-04b4-8a91-17ea03827bee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Isaac"@nl ;
+            pnv:literalName "Isaac Meijndertsz"@nl ;
+            pnv:patronym "Meijndertsz"@nl ] ;
+    sdo:givenName "Isaac"@nl ;
+    sdo:name "Isaac Meijndertsz"@nl .
+
+<https://ex.org/Person:bf22cdb0-3e2e-1cf3-f177-5a7b1a4fa15a> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:7adcc50e-082b-04b4-8a91-17ea03827bee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Caljerijn"@nl ;
+    sdo:givenName "Abraham"@nl ;
+    sdo:name "Abraham Caljerijn"@nl .
+
+<https://ex.org/Person:e11dd7de-e038-5dc3-87db-317bd7c12758> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:7adcc50e-082b-04b4-8a91-17ea03827bee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Eijnhoudt"@nl ;
+    sdo:givenName "Lijvijntje"@nl ;
+    sdo:name "Lijvijntje Eijnhoudt"@nl .
+
+<https://ex.org/Person:4155d9a1-72b8-6d94-c94c-9d1fe175e612> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:7adcc50e-082b-04b4-8a91-17ea03827bee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Jacomijntje"@nl ;
+            pnv:literalName "Jacomijntje Isaax"@nl ;
+            pnv:patronym "Isaax"@nl ] ;
+    sdo:children <https://ex.org/Person:503e750b-9404-e3fb-3dca-31f0bec5c9b2> ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Jacomijntje"@nl ;
+    sdo:name "Jacomijntje Isaax"@nl ;
+    sdo:spouse <https://ex.org/Person:46714952-9221-e86d-3981-e1bb20f96a6f> .
+
+<https://ex.org/Person:46714952-9221-e86d-3981-e1bb20f96a6f> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:7adcc50e-082b-04b4-8a91-17ea03827bee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Francois"@nl ;
+            pnv:literalName "Francois Pietersz"@nl ;
+            pnv:patronym "Pietersz"@nl ] ;
+    sdo:children <https://ex.org/Person:503e750b-9404-e3fb-3dca-31f0bec5c9b2> ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Francois"@nl ;
+    sdo:name "Francois Pietersz"@nl ;
+    sdo:spouse <https://ex.org/Person:4155d9a1-72b8-6d94-c94c-9d1fe175e612> .
+
+<https://ex.org/Person:503e750b-9404-e3fb-3dca-31f0bec5c9b2> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:7adcc50e-082b-04b4-8a91-17ea03827bee> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 28-09-1655"@nl ;
+    sdo:givenName "Francois"@nl ;
+    sdo:name "Francois"@nl ;
+    sdo:parent <https://ex.org/Person:4155d9a1-72b8-6d94-c94c-9d1fe175e612>,
+        <https://ex.org/Person:46714952-9221-e86d-3981-e1bb20f96a6f> .
+
+<https://ex.org/Source:7adcc50e-082b-04b4-8a91-17ea03827bee> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/18bab02a-27df-4fed-abe7-f3bfc85448c9/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/7adcc50e-082b-04b4-8a91-17ea03827bee"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/18bab02a-27df-4fed-abe7-f3bfc85448c9/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1655-09-28"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1650-1669"@nl,
+        "258"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 28-09-1655<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/258\">Inventarisnummer 258 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 258, Periode: 1..., (toegangsnr. 1004), inv.nr. 258, Doopboek van de Nieuwe- of Marekerk (NH) te Leiden, 17 april 1650 - 1669., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/7adcc50e-082b-04b4-8a91-17ea03827bee"^^xsd:anyURI .
+

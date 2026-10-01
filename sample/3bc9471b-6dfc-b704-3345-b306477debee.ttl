@@ -1,0 +1,81 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:17e26c0f-175b-5de2-8c88-3cf4b2adbabb> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:3bc9471b-6dfc-b704-3345-b306477debee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Post"@nl ;
+    sdo:givenName "Moses"@nl ;
+    sdo:name "Moses Post"@nl .
+
+<https://ex.org/Person:6cc3e651-e78c-6f7c-30e8-a82a1414ba4d> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:3bc9471b-6dfc-b704-3345-b306477debee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Linden"@nl ;
+            pnv:givenName "Jannetje"@nl ;
+            pnv:literalName "Jannetje van der Linden"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:familyName "van der Linden"@nl ;
+    sdo:givenName "Jannetje"@nl ;
+    sdo:name "Jannetje van der Linden"@nl .
+
+<https://ex.org/Person:1e6546aa-73ab-9227-1961-2e670e862ced> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:3bc9471b-6dfc-b704-3345-b306477debee> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Linden"@nl ;
+            pnv:givenName "Willem"@nl ;
+            pnv:literalName "Willem van der Linden"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:description "Doopdatum: 27-02-1752"@nl ;
+    sdo:familyName "van der Linden"@nl ;
+    sdo:givenName "Willem"@nl ;
+    sdo:name "Willem van der Linden"@nl ;
+    sdo:parent <https://ex.org/Person:58cc475f-4569-8496-a638-fc1313f261f0>,
+        <https://ex.org/Person:c14d623b-5fa8-8ab4-f322-a2bdb7a56c2c> .
+
+<https://ex.org/Person:58cc475f-4569-8496-a638-fc1313f261f0> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:3bc9471b-6dfc-b704-3345-b306477debee> ;
+    sdo:children <https://ex.org/Person:1e6546aa-73ab-9227-1961-2e670e862ced> ;
+    sdo:familyName "Outveer"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Elisabet"@nl ;
+    sdo:name "Elisabet Outveer"@nl ;
+    sdo:spouse <https://ex.org/Person:c14d623b-5fa8-8ab4-f322-a2bdb7a56c2c> .
+
+<https://ex.org/Person:c14d623b-5fa8-8ab4-f322-a2bdb7a56c2c> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:3bc9471b-6dfc-b704-3345-b306477debee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Linden"@nl ;
+            pnv:givenName "Pieter"@nl ;
+            pnv:literalName "Pieter van der Linden"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:children <https://ex.org/Person:1e6546aa-73ab-9227-1961-2e670e862ced> ;
+    sdo:familyName "van der Linden"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Pieter"@nl ;
+    sdo:name "Pieter van der Linden"@nl ;
+    sdo:spouse <https://ex.org/Person:58cc475f-4569-8496-a638-fc1313f261f0> .
+
+<https://ex.org/Source:3bc9471b-6dfc-b704-3345-b306477debee> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/06d3f40a-64aa-4eea-96e1-5f0567c837c9/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/3bc9471b-6dfc-b704-3345-b306477debee"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/06d3f40a-64aa-4eea-96e1-5f0567c837c9/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1752-02-27"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1740-1792"@nl,
+        "268"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 27-02-1752<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/268\">Inventarisnummer 268 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 268, Periode: 1..., (toegangsnr. 1004), inv.nr. 268, Doopboek van de Loots- of Oosterkerk (NH) te Leiden, 2 oktober 1740 - 1792., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/3bc9471b-6dfc-b704-3345-b306477debee"^^xsd:anyURI .
+

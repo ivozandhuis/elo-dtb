@@ -1,0 +1,81 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:4b9d7c0f-0470-d954-6794-2ddc3e8c5b1c> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:e0b6b543-c802-9a7d-0e59-0db2596eabee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Bilot"@nl ;
+    sdo:givenName "Sara"@nl ;
+    sdo:name "Sara Bilot"@nl .
+
+<https://ex.org/Person:9d6d9d61-718a-d527-d69e-c7f2624aeddc> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:e0b6b543-c802-9a7d-0e59-0db2596eabee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Pereau"@nl ;
+    sdo:givenName "Jean François"@nl ;
+    sdo:name "Jean François Pereau"@nl .
+
+<https://ex.org/Person:0d0cbccb-4c63-65e4-2325-7112d3aa1f1d> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:e0b6b543-c802-9a7d-0e59-0db2596eabee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Grostes"@nl ;
+            pnv:givenName "Anne"@nl ;
+            pnv:literalName "Anne de Grostes"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:children <https://ex.org/Person:47b594cf-86b2-78b3-a341-541a404d28cd> ;
+    sdo:familyName "de Grostes"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Anne"@nl ;
+    sdo:name "Anne de Grostes"@nl ;
+    sdo:spouse <https://ex.org/Person:d8fa7012-fc70-5457-e7b0-8e3b8fa843ea> .
+
+<https://ex.org/Person:47b594cf-86b2-78b3-a341-541a404d28cd> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:e0b6b543-c802-9a7d-0e59-0db2596eabee> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Coufle"@nl ;
+            pnv:givenName "Anna"@nl ;
+            pnv:literalName "Anna de Coufle"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:description "Doopdatum: 26-02-1687"@nl ;
+    sdo:familyName "de Coufle"@nl ;
+    sdo:givenName "Anna"@nl ;
+    sdo:name "Anna de Coufle"@nl ;
+    sdo:parent <https://ex.org/Person:0d0cbccb-4c63-65e4-2325-7112d3aa1f1d>,
+        <https://ex.org/Person:d8fa7012-fc70-5457-e7b0-8e3b8fa843ea> .
+
+<https://ex.org/Person:d8fa7012-fc70-5457-e7b0-8e3b8fa843ea> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:e0b6b543-c802-9a7d-0e59-0db2596eabee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Coufle"@nl ;
+            pnv:givenName "Philippe"@nl ;
+            pnv:literalName "Philippe de Coufle"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:children <https://ex.org/Person:47b594cf-86b2-78b3-a341-541a404d28cd> ;
+    sdo:familyName "de Coufle"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Philippe"@nl ;
+    sdo:name "Philippe de Coufle"@nl ;
+    sdo:spouse <https://ex.org/Person:0d0cbccb-4c63-65e4-2325-7112d3aa1f1d> .
+
+<https://ex.org/Source:e0b6b543-c802-9a7d-0e59-0db2596eabee> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/29902c40-c8c4-45ff-afbd-c4e5ab74f486/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/e0b6b543-c802-9a7d-0e59-0db2596eabee"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/29902c40-c8c4-45ff-afbd-c4e5ab74f486/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1687-02-26"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1683-1811"@nl,
+        "305"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 26-02-1687<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/305\">Inventarisnummer 305 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 305, Periode: 1..., (toegangsnr. 1004), inv.nr. 305, Doopboek van de kerk De Zon (RK) te Leiden, 3 oktober 1683 - 1811., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/e0b6b543-c802-9a7d-0e59-0db2596eabee"^^xsd:anyURI .
+

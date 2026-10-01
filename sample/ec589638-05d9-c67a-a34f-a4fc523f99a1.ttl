@@ -1,0 +1,84 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:206e7750-51ff-d5cd-4fc1-eeccf4f60981> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:ec589638-05d9-c67a-a34f-a4fc523f99a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Klerck"@nl ;
+            pnv:givenName "Lijsbeth"@nl ;
+            pnv:literalName "Lijsbeth de Klerck"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:familyName "de Klerck"@nl ;
+    sdo:givenName "Lijsbeth"@nl ;
+    sdo:name "Lijsbeth de Klerck"@nl .
+
+<https://ex.org/Person:c7889462-1ea0-6799-259c-058210ea6f1f> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:ec589638-05d9-c67a-a34f-a4fc523f99a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Kuijsten"@nl ;
+    sdo:givenName "Claas"@nl ;
+    sdo:name "Claas Kuijsten"@nl .
+
+<https://ex.org/Person:399b0a6f-57c3-4528-6b07-0e32929f9981> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:ec589638-05d9-c67a-a34f-a4fc523f99a1> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Klerck"@nl ;
+            pnv:givenName "Hendrick"@nl ;
+            pnv:literalName "Hendrick de Klerck"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:children <https://ex.org/Person:7bb6c2ea-4257-d8e3-4765-0db638227f6e> ;
+    sdo:familyName "de Klerck"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Hendrick"@nl ;
+    sdo:name "Hendrick de Klerck"@nl ;
+    sdo:spouse <https://ex.org/Person:b7593dde-92ac-cdf2-2b9d-1d181544e3e6> .
+
+<https://ex.org/Person:7bb6c2ea-4257-d8e3-4765-0db638227f6e> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:ec589638-05d9-c67a-a34f-a4fc523f99a1> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Klerck"@nl ;
+            pnv:givenName "Johannes"@nl ;
+            pnv:literalName "Johannes de Klerck"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:description "Doopdatum: 04-11-1681"@nl ;
+    sdo:familyName "de Klerck"@nl ;
+    sdo:givenName "Johannes"@nl ;
+    sdo:name "Johannes de Klerck"@nl ;
+    sdo:parent <https://ex.org/Person:399b0a6f-57c3-4528-6b07-0e32929f9981>,
+        <https://ex.org/Person:b7593dde-92ac-cdf2-2b9d-1d181544e3e6> .
+
+<https://ex.org/Person:b7593dde-92ac-cdf2-2b9d-1d181544e3e6> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:ec589638-05d9-c67a-a34f-a4fc523f99a1> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Beelijtje"@nl ;
+            pnv:literalName "Beelijtje Pietersdr"@nl ;
+            pnv:patronym "Pietersdr"@nl ] ;
+    sdo:children <https://ex.org/Person:7bb6c2ea-4257-d8e3-4765-0db638227f6e> ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Beelijtje"@nl ;
+    sdo:name "Beelijtje Pietersdr"@nl ;
+    sdo:spouse <https://ex.org/Person:399b0a6f-57c3-4528-6b07-0e32929f9981> .
+
+<https://ex.org/Source:ec589638-05d9-c67a-a34f-a4fc523f99a1> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/8dcee40b-87af-4093-8426-41be8d1747ae/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/ec589638-05d9-c67a-a34f-a4fc523f99a1"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/8dcee40b-87af-4093-8426-41be8d1747ae/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1681-11-04"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1680-1683"@nl,
+        "240"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 04-11-1681<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/240\">Inventarisnummer 240 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 240, Periode: 1..., (toegangsnr. 1004), inv.nr. 240, Doopboek van de Hooglandse Kerk (NH) te Leiden, 1680 - 1683., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/ec589638-05d9-c67a-a34f-a4fc523f99a1"^^xsd:anyURI .
+

@@ -1,0 +1,91 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:4dcca5c4-df0a-94ef-fcb6-6f163bd0f336> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b68fbe36-780b-ed86-c5f2-a2f6ae5539a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Walle"@nl ;
+            pnv:givenName "Wijntje"@nl ;
+            pnv:literalName "Wijntje van der Walle"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:familyName "van der Walle"@nl ;
+    sdo:givenName "Wijntje"@nl ;
+    sdo:name "Wijntje van der Walle"@nl .
+
+<https://ex.org/Person:6ca3ff44-7072-3c61-7b06-e51464319f1c> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b68fbe36-780b-ed86-c5f2-a2f6ae5539a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Eijkhof"@nl ;
+            pnv:givenName "Susanna"@nl ;
+            pnv:literalName "Susanna van Eijkhof"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:familyName "van Eijkhof"@nl ;
+    sdo:givenName "Susanna"@nl ;
+    sdo:name "Susanna van Eijkhof"@nl .
+
+<https://ex.org/Person:8e9d3e75-8d72-efc6-5f78-b2003866bf50> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b68fbe36-780b-ed86-c5f2-a2f6ae5539a1> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Es"@nl ;
+            pnv:givenName "Helena"@nl ;
+            pnv:literalName "Helena van Es"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:children <https://ex.org/Person:c795089d-3e6d-18cf-5888-35e14dfb0b28> ;
+    sdo:familyName "van Es"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Helena"@nl ;
+    sdo:name "Helena van Es"@nl ;
+    sdo:spouse <https://ex.org/Person:ab5baf5c-6696-600f-5a11-b3bb741d26f0> .
+
+<https://ex.org/Person:ab5baf5c-6696-600f-5a11-b3bb741d26f0> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b68fbe36-780b-ed86-c5f2-a2f6ae5539a1> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Walle"@nl ;
+            pnv:givenName "Jakobus"@nl ;
+            pnv:literalName "Jakobus van der Walle"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:children <https://ex.org/Person:c795089d-3e6d-18cf-5888-35e14dfb0b28> ;
+    sdo:familyName "van der Walle"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jakobus"@nl ;
+    sdo:name "Jakobus van der Walle"@nl ;
+    sdo:spouse <https://ex.org/Person:8e9d3e75-8d72-efc6-5f78-b2003866bf50> .
+
+<https://ex.org/Person:c795089d-3e6d-18cf-5888-35e14dfb0b28> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b68fbe36-780b-ed86-c5f2-a2f6ae5539a1> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Walle"@nl ;
+            pnv:givenName "Jakob"@nl ;
+            pnv:literalName "Jakob van der Walle"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:description "Doopdatum: 01-07-1710"@nl ;
+    sdo:familyName "van der Walle"@nl ;
+    sdo:givenName "Jakob"@nl ;
+    sdo:name "Jakob van der Walle"@nl ;
+    sdo:parent <https://ex.org/Person:8e9d3e75-8d72-efc6-5f78-b2003866bf50>,
+        <https://ex.org/Person:ab5baf5c-6696-600f-5a11-b3bb741d26f0> .
+
+<https://ex.org/Source:b68fbe36-780b-ed86-c5f2-a2f6ae5539a1> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/d6959322-2bed-40c6-8ba4-d4161aa66df8/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/b68fbe36-780b-ed86-c5f2-a2f6ae5539a1"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/d6959322-2bed-40c6-8ba4-d4161aa66df8/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1710-07-01"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1705-1710"@nl,
+        "246"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 01-07-1710<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/246\">Inventarisnummer 246 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 246, Periode: 1..., (toegangsnr. 1004), inv.nr. 246, Doopboek van de Hooglandse Kerk (NH) te Leiden, 10 oktober 1705 - 1710., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/b68fbe36-780b-ed86-c5f2-a2f6ae5539a1"^^xsd:anyURI .
+

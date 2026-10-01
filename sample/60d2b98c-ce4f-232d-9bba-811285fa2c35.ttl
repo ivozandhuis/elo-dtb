@@ -1,0 +1,73 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:8ca69ea5-7cba-7255-38c9-e2b1c2cf5695> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:60d2b98c-ce4f-232d-9bba-811285fa2c35> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Mettere"@nl ;
+            pnv:givenName "Pieter"@nl ;
+            pnv:literalName "Pieter de Mettere"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:description "getuige van de bruidegom, relatie tot de bruidegom: bekende, adres: Westdwersgraft"@nl ;
+    sdo:familyName "de Mettere"@nl ;
+    sdo:givenName "Pieter"@nl ;
+    sdo:name "Pieter de Mettere"@nl .
+
+<https://ex.org/Person:9168fcf4-ca9a-3d2d-9afe-ffb435df41b3> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:60d2b98c-ce4f-232d-9bba-811285fa2c35> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Aegie"@nl ;
+            pnv:literalName "Aegie Fransse"@nl ;
+            pnv:patronym "Fransse"@nl ] ;
+    sdo:description "getuige van de bruid, relatie tot de bruid: nicht, adres: Hogewoert"@nl ;
+    sdo:givenName "Aegie"@nl ;
+    sdo:name "Aegie Fransse"@nl .
+
+<https://ex.org/Person:699c095d-e400-e29f-344a-03fc6a50e15d> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:60d2b98c-ce4f-232d-9bba-811285fa2c35> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Neeltge"@nl ;
+            pnv:literalName "Neeltge Joris"@nl ;
+            pnv:patronym "Joris"@nl ] ;
+    sdo:address "Hoochlantse Kerckgraft"@nl ;
+    sdo:birthPlace "Leyden"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Neeltge"@nl ;
+    sdo:name "Neeltge Joris"@nl ;
+    sdo:spouse <https://ex.org/Person:90ebc854-60f3-ed51-4ae2-f0b49a6e2af8> .
+
+<https://ex.org/Person:90ebc854-60f3-ed51-4ae2-f0b49a6e2af8> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:60d2b98c-ce4f-232d-9bba-811285fa2c35> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:address "Beestemarct"@nl ;
+    sdo:birthPlace "Leyden"@nl ;
+    sdo:familyName "Halewijn"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Frederick"@nl ;
+    sdo:hasOccupation "greinwerker"@nl ;
+    sdo:name "Frederick Halewijn"@nl ;
+    sdo:spouse <https://ex.org/Person:699c095d-e400-e29f-344a-03fc6a50e15d> .
+
+<https://ex.org/Source:60d2b98c-ce4f-232d-9bba-811285fa2c35> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/83734993-9239-418b-a647-61617d3f6153/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/60d2b98c-ce4f-232d-9bba-811285fa2c35"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/83734993-9239-418b-a647-61617d3f6153/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1678-1681"@nl,
+        "22"@nl,
+        "Datum ondertrouw: 13-10-1679<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/22\">Inventarisnummer 22 van archiefnummer 1004 in Archieven</a>"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 22, Periode: 16..., (toegangsnr. 1004), inv.nr. 22, X. Kerkelijk ondertrouwboek (NH) van Leiden, januari 1678 - 1681., 110, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/60d2b98c-ce4f-232d-9bba-811285fa2c35"^^xsd:anyURI .
+

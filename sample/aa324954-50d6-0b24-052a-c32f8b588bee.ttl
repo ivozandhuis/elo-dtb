@@ -1,0 +1,76 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:3845ea75-ce0d-ef5f-8a21-0898ec1a64e3> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:aa324954-50d6-0b24-052a-c32f8b588bee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Eeden"@nl ;
+            pnv:givenName "Antje"@nl ;
+            pnv:literalName "Antje van Eeden"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:familyName "van Eeden"@nl ;
+    sdo:givenName "Antje"@nl ;
+    sdo:name "Antje van Eeden"@nl .
+
+<https://ex.org/Person:f19d274b-b65f-1b28-a9c9-87e9d34d8cdd> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:aa324954-50d6-0b24-052a-c32f8b588bee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Hogenboom"@nl ;
+    sdo:givenName "Jan"@nl ;
+    sdo:name "Jan Hogenboom"@nl .
+
+<https://ex.org/Person:41f2b735-8ae1-e7a1-0079-00fe3eceffb7> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:aa324954-50d6-0b24-052a-c32f8b588bee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Meulen"@nl ;
+            pnv:givenName "Marijtje"@nl ;
+            pnv:literalName "Marijtje van der Meulen"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:children <https://ex.org/Person:d14b9ef4-9984-24f9-954a-2850a689ca02> ;
+    sdo:familyName "van der Meulen"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Marijtje"@nl ;
+    sdo:name "Marijtje van der Meulen"@nl ;
+    sdo:spouse <https://ex.org/Person:e05cc5b3-bfc7-ea2f-e9cb-f27fb2207b66> .
+
+<https://ex.org/Person:d14b9ef4-9984-24f9-954a-2850a689ca02> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:aa324954-50d6-0b24-052a-c32f8b588bee> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 28-02-1759"@nl ;
+    sdo:familyName "Hogenboom"@nl ;
+    sdo:givenName "Jan"@nl ;
+    sdo:name "Jan Hogenboom"@nl ;
+    sdo:parent <https://ex.org/Person:41f2b735-8ae1-e7a1-0079-00fe3eceffb7>,
+        <https://ex.org/Person:e05cc5b3-bfc7-ea2f-e9cb-f27fb2207b66> .
+
+<https://ex.org/Person:e05cc5b3-bfc7-ea2f-e9cb-f27fb2207b66> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:aa324954-50d6-0b24-052a-c32f8b588bee> ;
+    sdo:children <https://ex.org/Person:d14b9ef4-9984-24f9-954a-2850a689ca02> ;
+    sdo:familyName "Hogenboom"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jacob"@nl ;
+    sdo:name "Jacob Hogenboom"@nl ;
+    sdo:spouse <https://ex.org/Person:41f2b735-8ae1-e7a1-0079-00fe3eceffb7> .
+
+<https://ex.org/Source:aa324954-50d6-0b24-052a-c32f8b588bee> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/3b94ec3c-180a-4d6f-ba02-eb94b4413fc5/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/aa324954-50d6-0b24-052a-c32f8b588bee"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/3b94ec3c-180a-4d6f-ba02-eb94b4413fc5/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1759-02-28"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1741-1769"@nl,
+        "229"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 28-02-1759<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/229\">Inventarisnummer 229 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 229, Periode: 1..., (toegangsnr. 1004), inv.nr. 229, Doopboek van de Pieterskerk (NH) te Leiden, 1741 - 1769., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/aa324954-50d6-0b24-052a-c32f8b588bee"^^xsd:anyURI .
+

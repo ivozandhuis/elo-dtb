@@ -1,0 +1,51 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:5c6ba5fb-857a-a174-d08e-d62b7e6e0ff9> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:dc8dace6-6405-2c8d-615a-4cdfe48f2c35> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Stoff"@nl ;
+            pnv:givenName "Claes"@nl ;
+            pnv:literalName "Claes van der Stoff"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:address "Langegragt omtrent Oostdwersgragt"@nl ;
+    sdo:birthPlace "Leyden"@nl ;
+    sdo:familyName "van der Stoff"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Claes"@nl ;
+    sdo:hasOccupation "lakenwr"@nl ;
+    sdo:name "Claes van der Stoff"@nl ;
+    sdo:spouse <https://ex.org/Person:d2223e2a-658c-a7ff-b5d0-a5a8428eeb38> .
+
+<https://ex.org/Person:d2223e2a-658c-a7ff-b5d0-a5a8428eeb38> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:dc8dace6-6405-2c8d-615a-4cdfe48f2c35> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:address "Langegragt omtrent de Houtmarkt"@nl ;
+    sdo:birthPlace "Leyden"@nl ;
+    sdo:familyName "Misdruff"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Lysbet"@nl ;
+    sdo:name "Lysbet Misdruff"@nl ;
+    sdo:spouse <https://ex.org/Person:5c6ba5fb-857a-a174-d08e-d62b7e6e0ff9> .
+
+<https://ex.org/Source:dc8dace6-6405-2c8d-615a-4cdfe48f2c35> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/d603f1c1-cfaa-4692-a287-87b26c6b4e49/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/dc8dace6-6405-2c8d-615a-4cdfe48f2c35"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/d603f1c1-cfaa-4692-a287-87b26c6b4e49/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1725-1737"@nl,
+        "206"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Getuigen bruidegom: Lysbet  Macka moeder Langegragt omtrent Oostdwersgragt - Getuigen bruid: Catharina  Entelingh moeder Langegragt omtrent de Houtmarkt -  Bruidegom ged 4-2-1709 de Zon. Vader bruidegom: André Christoffel<br>Datum trouwen: 24-12-1733<br>Datum ondertrouw: 05-12-1733<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/206\">Inventarisnummer 206 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 206, Periode: 1..., (toegangsnr. 1004), inv.nr. 206, K. Ondertrouwboek en trouwboek voor schepenen van Leiden, 1725 - juli 1737., 187v, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/dc8dace6-6405-2c8d-615a-4cdfe48f2c35"^^xsd:anyURI .
+

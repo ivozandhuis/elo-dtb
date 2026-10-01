@@ -1,0 +1,78 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:0c1c2d4d-21d0-0923-25c0-0604fa8343bd> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:375aeb18-76ac-4965-25f4-8636d01b19a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Boudet"@nl ;
+    sdo:givenName "Anthoine"@nl ;
+    sdo:name "Anthoine Boudet"@nl .
+
+<https://ex.org/Person:4c7f1aa9-d874-7116-cf08-bd06a8947513> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:375aeb18-76ac-4965-25f4-8636d01b19a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Jordain"@nl ;
+    sdo:givenName "Joseph"@nl ;
+    sdo:name "Joseph Jordain"@nl .
+
+<https://ex.org/Person:bd7d98e2-7939-fd4b-6e82-62f67088b056> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:375aeb18-76ac-4965-25f4-8636d01b19a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:givenName "Marie"@nl ;
+    sdo:name "Marie"@nl .
+
+<https://ex.org/Person:f8935524-467a-02f7-ccba-d4c2044e8e0c> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:375aeb18-76ac-4965-25f4-8636d01b19a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Jordain"@nl ;
+    sdo:givenName "Magdaleine"@nl ;
+    sdo:name "Magdaleine Jordain"@nl .
+
+<https://ex.org/Person:9b1d1025-2ac7-9859-5f8a-2550665123d8> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:375aeb18-76ac-4965-25f4-8636d01b19a1> ;
+    sdo:children <https://ex.org/Person:a5ab92cd-7f8f-5e57-eed5-77dbd86940cc> ;
+    sdo:familyName "Paigneau"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Samson"@nl ;
+    sdo:name "Samson Paigneau"@nl ;
+    sdo:spouse <https://ex.org/Person:c03d06b9-68b9-df57-6f2d-0e48511f83a4> .
+
+<https://ex.org/Person:a5ab92cd-7f8f-5e57-eed5-77dbd86940cc> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:375aeb18-76ac-4965-25f4-8636d01b19a1> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 10-12-1659"@nl ;
+    sdo:familyName "Paigneau"@nl ;
+    sdo:givenName "Joseph"@nl ;
+    sdo:name "Joseph Paigneau"@nl ;
+    sdo:parent <https://ex.org/Person:9b1d1025-2ac7-9859-5f8a-2550665123d8>,
+        <https://ex.org/Person:c03d06b9-68b9-df57-6f2d-0e48511f83a4> .
+
+<https://ex.org/Person:c03d06b9-68b9-df57-6f2d-0e48511f83a4> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:375aeb18-76ac-4965-25f4-8636d01b19a1> ;
+    sdo:children <https://ex.org/Person:a5ab92cd-7f8f-5e57-eed5-77dbd86940cc> ;
+    sdo:familyName "Jordain"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Ester"@nl ;
+    sdo:name "Ester Jordain"@nl ;
+    sdo:spouse <https://ex.org/Person:9b1d1025-2ac7-9859-5f8a-2550665123d8> .
+
+<https://ex.org/Source:375aeb18-76ac-4965-25f4-8636d01b19a1> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/4de4db07-513c-4e17-80b8-1afc22a568b3/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/375aeb18-76ac-4965-25f4-8636d01b19a1"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/4de4db07-513c-4e17-80b8-1afc22a568b3/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1659-12-10"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1655-1669"@nl,
+        "273"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 10-12-1659<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/273\">Inventarisnummer 273 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 273, Periode: 1..., (toegangsnr. 1004), inv.nr. 273, Doopboek van de Vrouwekerk (Waals, NH) te Leiden, 2 mei 1655 - 1669., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/375aeb18-76ac-4965-25f4-8636d01b19a1"^^xsd:anyURI .
+

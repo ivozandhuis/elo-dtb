@@ -1,0 +1,81 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:961d333b-1247-eff3-4d33-54ee5419bea4> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b8b58ada-38b2-feb0-76ba-de4ba14ae9a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Ven"@nl ;
+            pnv:givenName "Gillis"@nl ;
+            pnv:literalName "Gillis van der Ven"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:familyName "van der Ven"@nl ;
+    sdo:givenName "Gillis"@nl ;
+    sdo:name "Gillis van der Ven"@nl .
+
+<https://ex.org/Person:d192d1a0-0e83-c6e1-0982-8714ec1d999d> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b8b58ada-38b2-feb0-76ba-de4ba14ae9a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Ven"@nl ;
+            pnv:givenName "Marijtie"@nl ;
+            pnv:literalName "Marijtie van der Ven"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:familyName "van der Ven"@nl ;
+    sdo:givenName "Marijtie"@nl ;
+    sdo:name "Marijtie van der Ven"@nl .
+
+<https://ex.org/Person:08effd14-6e85-0ab0-0a1b-58e388cca213> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b8b58ada-38b2-feb0-76ba-de4ba14ae9a1> ;
+    sdo:children <https://ex.org/Person:daae02e1-2ecf-add0-eea0-6770dae7716c> ;
+    sdo:familyName "Busjouw"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jan"@nl ;
+    sdo:name "Jan Busjouw"@nl ;
+    sdo:spouse <https://ex.org/Person:bf0fbb01-3289-d323-50da-e0bb78c323b8> .
+
+<https://ex.org/Person:bf0fbb01-3289-d323-50da-e0bb78c323b8> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b8b58ada-38b2-feb0-76ba-de4ba14ae9a1> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Ven"@nl ;
+            pnv:givenName "Francijntie"@nl ;
+            pnv:literalName "Francijntie van der Ven"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:children <https://ex.org/Person:daae02e1-2ecf-add0-eea0-6770dae7716c> ;
+    sdo:familyName "van der Ven"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Francijntie"@nl ;
+    sdo:name "Francijntie van der Ven"@nl ;
+    sdo:spouse <https://ex.org/Person:08effd14-6e85-0ab0-0a1b-58e388cca213> .
+
+<https://ex.org/Person:daae02e1-2ecf-add0-eea0-6770dae7716c> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b8b58ada-38b2-feb0-76ba-de4ba14ae9a1> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 05-10-1710"@nl ;
+    sdo:familyName "Busjouw"@nl ;
+    sdo:givenName "Judith"@nl ;
+    sdo:name "Judith Busjouw"@nl ;
+    sdo:parent <https://ex.org/Person:08effd14-6e85-0ab0-0a1b-58e388cca213>,
+        <https://ex.org/Person:bf0fbb01-3289-d323-50da-e0bb78c323b8> .
+
+<https://ex.org/Source:b8b58ada-38b2-feb0-76ba-de4ba14ae9a1> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/23824542-4d64-4a10-bc55-59df9b5e3ab7/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/b8b58ada-38b2-feb0-76ba-de4ba14ae9a1"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/23824542-4d64-4a10-bc55-59df9b5e3ab7/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1710-10-05"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1705-1710"@nl,
+        "246"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 05-10-1710<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/246\">Inventarisnummer 246 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 246, Periode: 1..., (toegangsnr. 1004), inv.nr. 246, Doopboek van de Hooglandse Kerk (NH) te Leiden, 10 oktober 1705 - 1710., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/b8b58ada-38b2-feb0-76ba-de4ba14ae9a1"^^xsd:anyURI .
+

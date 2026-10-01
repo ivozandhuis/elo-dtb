@@ -1,0 +1,92 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:0580b825-ccdb-340c-32bc-a42d64cf9b90> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:9a2c1587-c2db-c949-ed59-947cda3dbbee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Maertgen"@nl ;
+            pnv:literalName "Maertgen Martenszen"@nl ;
+            pnv:patronym "Martenszen"@nl ] ;
+    sdo:givenName "Maertgen"@nl ;
+    sdo:name "Maertgen Martenszen"@nl .
+
+<https://ex.org/Person:40a30fa8-2f3a-88a2-06db-4e673af989f4> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:9a2c1587-c2db-c949-ed59-947cda3dbbee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Sara"@nl ;
+            pnv:literalName "Sara Symonszen"@nl ;
+            pnv:patronym "Symonszen"@nl ] ;
+    sdo:givenName "Sara"@nl ;
+    sdo:name "Sara Symonszen"@nl .
+
+<https://ex.org/Person:4680d39a-b65c-a0ec-f89b-70770cbe2d85> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:9a2c1587-c2db-c949-ed59-947cda3dbbee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Valiant"@nl ;
+    sdo:givenName "Claes"@nl ;
+    sdo:name "Claes Valiant"@nl .
+
+<https://ex.org/Person:021b3f69-215c-0ff6-4763-0fcf2c1a5cea> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:9a2c1587-c2db-c949-ed59-947cda3dbbee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Mary"@nl ;
+            pnv:literalName "Mary Symonszen"@nl ;
+            pnv:patronym "Symonszen"@nl ] ;
+    sdo:children <https://ex.org/Person:76456c51-2c64-f390-fb89-72eec44956d6> ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Mary"@nl ;
+    sdo:name "Mary Symonszen"@nl ;
+    sdo:spouse <https://ex.org/Person:0d4b2cca-0f05-39c0-9193-c4d2a0598e1f> .
+
+<https://ex.org/Person:0d4b2cca-0f05-39c0-9193-c4d2a0598e1f> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:9a2c1587-c2db-c949-ed59-947cda3dbbee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Bueren"@nl ;
+            pnv:givenName "Frans"@nl ;
+            pnv:literalName "Frans van Bueren"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:children <https://ex.org/Person:76456c51-2c64-f390-fb89-72eec44956d6> ;
+    sdo:familyName "van Bueren"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Frans"@nl ;
+    sdo:name "Frans van Bueren"@nl ;
+    sdo:spouse <https://ex.org/Person:021b3f69-215c-0ff6-4763-0fcf2c1a5cea> .
+
+<https://ex.org/Person:76456c51-2c64-f390-fb89-72eec44956d6> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:9a2c1587-c2db-c949-ed59-947cda3dbbee> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Bueren"@nl ;
+            pnv:givenName "Sara"@nl ;
+            pnv:literalName "Sara van Bueren"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:description "Doopdatum: 15-07-1635"@nl ;
+    sdo:familyName "van Bueren"@nl ;
+    sdo:givenName "Sara"@nl ;
+    sdo:name "Sara van Bueren"@nl ;
+    sdo:parent <https://ex.org/Person:021b3f69-215c-0ff6-4763-0fcf2c1a5cea>,
+        <https://ex.org/Person:0d4b2cca-0f05-39c0-9193-c4d2a0598e1f> .
+
+<https://ex.org/Source:9a2c1587-c2db-c949-ed59-947cda3dbbee> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/6e2b0b0d-a36c-43cb-8e5e-78ffe8cdd816/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/9a2c1587-c2db-c949-ed59-947cda3dbbee"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/6e2b0b0d-a36c-43cb-8e5e-78ffe8cdd816/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1635-07-15"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1628-1635"@nl,
+        "233"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 15-07-1635<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/233\">Inventarisnummer 233 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 233, Periode: 1..., (toegangsnr. 1004), inv.nr. 233, Doopboek van de Hooglandse Kerk (NH) te Leiden, 20 augustus 1628 - 1635., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/9a2c1587-c2db-c949-ed59-947cda3dbbee"^^xsd:anyURI .
+

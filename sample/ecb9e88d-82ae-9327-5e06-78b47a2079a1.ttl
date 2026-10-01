@@ -1,0 +1,60 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:19a7ef19-e026-1871-7162-d7df89dd6bb8> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:ecb9e88d-82ae-9327-5e06-78b47a2079a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Katelijntje"@nl ;
+            pnv:literalName "Katelijntje Adriaens"@nl ;
+            pnv:patronym "Adriaens"@nl ] ;
+    sdo:givenName "Katelijntje"@nl ;
+    sdo:name "Katelijntje Adriaens"@nl .
+
+<https://ex.org/Person:68e7c494-4cfe-188a-b3b9-bc61ff43d8d6> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:ecb9e88d-82ae-9327-5e06-78b47a2079a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Verbiest"@nl ;
+    sdo:givenName "Hendrick"@nl ;
+    sdo:name "Hendrick Verbiest"@nl .
+
+<https://ex.org/Person:9e4dea46-5b33-b5e5-0be2-c51d17c4a250> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:ecb9e88d-82ae-9327-5e06-78b47a2079a1> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 14-09-1653"@nl ;
+    sdo:givenName "Jacomijntje"@nl ;
+    sdo:name "Jacomijntje"@nl ;
+    sdo:parent <https://ex.org/Person:fbe88327-8f4c-1ccc-c4b3-5355f949b4fa> .
+
+<https://ex.org/Person:fbe88327-8f4c-1ccc-c4b3-5355f949b4fa> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:ecb9e88d-82ae-9327-5e06-78b47a2079a1> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Pieter"@nl ;
+            pnv:literalName "Pieter Thomassen"@nl ;
+            pnv:patronym "Thomassen"@nl ] ;
+    sdo:children <https://ex.org/Person:9e4dea46-5b33-b5e5-0be2-c51d17c4a250> ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Pieter"@nl ;
+    sdo:name "Pieter Thomassen"@nl .
+
+<https://ex.org/Source:ecb9e88d-82ae-9327-5e06-78b47a2079a1> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/09372621-a4cc-49a1-b68e-e386ab12d29c/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/ecb9e88d-82ae-9327-5e06-78b47a2079a1"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/09372621-a4cc-49a1-b68e-e386ab12d29c/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1653-09-14"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1652-1659"@nl,
+        "236"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 14-09-1653<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/236\">Inventarisnummer 236 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 236, Periode: 1..., (toegangsnr. 1004), inv.nr. 236, Doopboek van de Hooglandse Kerk (NH) te Leiden, 13 augustus 1652 - 29 juni 1659., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/ecb9e88d-82ae-9327-5e06-78b47a2079a1"^^xsd:anyURI .
+

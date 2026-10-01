@@ -1,0 +1,95 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:7d74896f-e60e-f7c9-e814-9d5681a8a330> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:7ac9aa02-5ee3-31dc-53b7-8666431169a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Claesje"@nl ;
+            pnv:literalName "Claesje Dircks"@nl ;
+            pnv:patronym "Dircks"@nl ] ;
+    sdo:givenName "Claesje"@nl ;
+    sdo:name "Claesje Dircks"@nl .
+
+<https://ex.org/Person:af74b143-8f41-a548-4580-724af52dcef4> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:7ac9aa02-5ee3-31dc-53b7-8666431169a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Grietje"@nl ;
+            pnv:literalName "Grietje Cornelis"@nl ;
+            pnv:patronym "Cornelis"@nl ] ;
+    sdo:givenName "Grietje"@nl ;
+    sdo:name "Grietje Cornelis"@nl .
+
+<https://ex.org/Person:d5ba1d25-c4e2-1077-ab6b-b8a861f12299> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:7ac9aa02-5ee3-31dc-53b7-8666431169a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Immerzeel"@nl ;
+            pnv:givenName "Jacob"@nl ;
+            pnv:literalName "Jacob Leendertsz van Immerzeel"@nl ;
+            pnv:patronym "Leendertsz"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:familyName "van Immerzeel"@nl ;
+    sdo:givenName "Jacob"@nl ;
+    sdo:name "Jacob Leendertsz van Immerzeel"@nl .
+
+<https://ex.org/Person:17f86426-de52-6b7d-73ac-b5d7eedf8717> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:7ac9aa02-5ee3-31dc-53b7-8666431169a1> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Tol"@nl ;
+            pnv:givenName "Cornelia"@nl ;
+            pnv:literalName "Cornelia van Tol"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:description "Doopdatum: 22-12-1652"@nl ;
+    sdo:familyName "van Tol"@nl ;
+    sdo:givenName "Cornelia"@nl ;
+    sdo:name "Cornelia van Tol"@nl ;
+    sdo:parent <https://ex.org/Person:d25d2144-eb00-837c-0f16-b2df23b2c4aa>,
+        <https://ex.org/Person:ffa88001-a4c4-326b-f5a4-3051d882cda0> .
+
+<https://ex.org/Person:d25d2144-eb00-837c-0f16-b2df23b2c4aa> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:7ac9aa02-5ee3-31dc-53b7-8666431169a1> ;
+    sdo:children <https://ex.org/Person:17f86426-de52-6b7d-73ac-b5d7eedf8717> ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Nn"@nl ;
+    sdo:name "Nn"@nl ;
+    sdo:spouse <https://ex.org/Person:ffa88001-a4c4-326b-f5a4-3051d882cda0> .
+
+<https://ex.org/Person:ffa88001-a4c4-326b-f5a4-3051d882cda0> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:7ac9aa02-5ee3-31dc-53b7-8666431169a1> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Tol"@nl ;
+            pnv:givenName "Jacob"@nl ;
+            pnv:literalName "Jacob Dircksz van Tol"@nl ;
+            pnv:patronym "Dircksz"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:children <https://ex.org/Person:17f86426-de52-6b7d-73ac-b5d7eedf8717> ;
+    sdo:familyName "van Tol"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jacob"@nl ;
+    sdo:name "Jacob Dircksz van Tol"@nl ;
+    sdo:spouse <https://ex.org/Person:d25d2144-eb00-837c-0f16-b2df23b2c4aa> .
+
+<https://ex.org/Source:7ac9aa02-5ee3-31dc-53b7-8666431169a1> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/49f802fa-fb5d-418f-afb3-94874d3cf7e0/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/7ac9aa02-5ee3-31dc-53b7-8666431169a1"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/49f802fa-fb5d-418f-afb3-94874d3cf7e0/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1652-12-22"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1652-1659"@nl,
+        "236"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 22-12-1652<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/236\">Inventarisnummer 236 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 236, Periode: 1..., (toegangsnr. 1004), inv.nr. 236, Doopboek van de Hooglandse Kerk (NH) te Leiden, 13 augustus 1652 - 29 juni 1659., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/7ac9aa02-5ee3-31dc-53b7-8666431169a1"^^xsd:anyURI .
+

@@ -1,0 +1,86 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:3cce11b8-20a2-ff8e-2ef5-cb531ebb90ee> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b85c5fe2-90b7-1cd5-8dc0-3942ea8b2bee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Delft"@nl ;
+            pnv:givenName "Gijsje"@nl ;
+            pnv:literalName "Gijsje van Delft"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:familyName "van Delft"@nl ;
+    sdo:givenName "Gijsje"@nl ;
+    sdo:name "Gijsje van Delft"@nl .
+
+<https://ex.org/Person:b0a3c87b-2ffb-a55f-ce4e-339d027a155c> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b85c5fe2-90b7-1cd5-8dc0-3942ea8b2bee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Delft"@nl ;
+            pnv:givenName "Cornelis"@nl ;
+            pnv:literalName "Cornelis van Delft"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:familyName "van Delft"@nl ;
+    sdo:givenName "Cornelis"@nl ;
+    sdo:name "Cornelis van Delft"@nl .
+
+<https://ex.org/Person:58cb6453-cf51-50db-28ef-abeea8656dbe> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b85c5fe2-90b7-1cd5-8dc0-3942ea8b2bee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Zwaan"@nl ;
+            pnv:givenName "Jan"@nl ;
+            pnv:literalName "Jan Jansz Zwaan"@nl ;
+            pnv:patronym "Jansz"@nl ] ;
+    sdo:children <https://ex.org/Person:62b249f1-f61d-eca5-ce02-c38d3fa29896> ;
+    sdo:familyName "Zwaan"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jan"@nl ;
+    sdo:name "Jan Jansz Zwaan"@nl ;
+    sdo:spouse <https://ex.org/Person:e2983f86-2c27-96d6-047c-7eed7a0e64ab> .
+
+<https://ex.org/Person:62b249f1-f61d-eca5-ce02-c38d3fa29896> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b85c5fe2-90b7-1cd5-8dc0-3942ea8b2bee> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 20-05-1770"@nl ;
+    sdo:familyName "Zwaan"@nl ;
+    sdo:givenName "Jannetje"@nl ;
+    sdo:name "Jannetje Zwaan"@nl ;
+    sdo:parent <https://ex.org/Person:58cb6453-cf51-50db-28ef-abeea8656dbe>,
+        <https://ex.org/Person:e2983f86-2c27-96d6-047c-7eed7a0e64ab> .
+
+<https://ex.org/Person:e2983f86-2c27-96d6-047c-7eed7a0e64ab> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b85c5fe2-90b7-1cd5-8dc0-3942ea8b2bee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Delft"@nl ;
+            pnv:givenName "Trijntje"@nl ;
+            pnv:literalName "Trijntje van Delft"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:children <https://ex.org/Person:62b249f1-f61d-eca5-ce02-c38d3fa29896> ;
+    sdo:familyName "van Delft"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Trijntje"@nl ;
+    sdo:name "Trijntje van Delft"@nl ;
+    sdo:spouse <https://ex.org/Person:58cb6453-cf51-50db-28ef-abeea8656dbe> .
+
+<https://ex.org/Source:b85c5fe2-90b7-1cd5-8dc0-3942ea8b2bee> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/a222ab15-6407-4b14-aebd-e83e322f2046/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/b85c5fe2-90b7-1cd5-8dc0-3942ea8b2bee"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/a222ab15-6407-4b14-aebd-e83e322f2046/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1770-05-20"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1214"@nl,
+        "1713-1837"@nl,
+        "Ambachts-, Dorps- en Gemeentebestuur van Rijnsburg"@nl,
+        "Doopdatum: 20-05-1770<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/0700/file/1214\">Inventarisnummer 1214 van archiefnummer 0700 in Archieven</a>"@nl ;
+    sdo:locationCreated "Rijnsburg"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Ambachts-, Dorps- en Gemeentebestuur van Rijnsburg, Deel: 1214, Periode: 1713-1837, (toegangsnr. 0700), inv.nr. 1214, Doopboek (NH) van Rijnsburg, 1713 - 1787., 39, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/b85c5fe2-90b7-1cd5-8dc0-3942ea8b2bee"^^xsd:anyURI .
+

@@ -1,0 +1,87 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:2088fda4-8f19-6e26-f5f6-0a2c4bdcea63> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:6717e9ff-3711-cd19-8f62-b0bfbda79bee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Maria"@nl ;
+            pnv:literalName "Maria Claasdr"@nl ;
+            pnv:patronym "Claasdr"@nl ] ;
+    sdo:givenName "Maria"@nl ;
+    sdo:name "Maria Claasdr"@nl .
+
+<https://ex.org/Person:269366b9-cc9c-be15-65d9-9d4e32cc6c72> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:6717e9ff-3711-cd19-8f62-b0bfbda79bee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Jacob"@nl ;
+            pnv:literalName "Jacob Claasz"@nl ;
+            pnv:patronym "Claasz"@nl ] ;
+    sdo:givenName "Jacob"@nl ;
+    sdo:name "Jacob Claasz"@nl .
+
+<https://ex.org/Person:ebe723a9-abee-291f-65c2-0864fe29f81b> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:6717e9ff-3711-cd19-8f62-b0bfbda79bee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Dogt"@nl ;
+            pnv:givenName "Cornelis"@nl ;
+            pnv:literalName "Cornelis van Dogt"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:familyName "van Dogt"@nl ;
+    sdo:givenName "Cornelis"@nl ;
+    sdo:name "Cornelis van Dogt"@nl .
+
+<https://ex.org/Person:2d34387b-da6b-958b-f4ea-1525582243c0> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:6717e9ff-3711-cd19-8f62-b0bfbda79bee> ;
+    sdo:children <https://ex.org/Person:6a268693-f026-d8a9-bf22-57b46d9f0110> ;
+    sdo:familyName "Bedon"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jan"@nl ;
+    sdo:name "Jan Bedon"@nl ;
+    sdo:spouse <https://ex.org/Person:7d49f5ef-b251-abe0-e390-a52a14c68ca1> .
+
+<https://ex.org/Person:6a268693-f026-d8a9-bf22-57b46d9f0110> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:6717e9ff-3711-cd19-8f62-b0bfbda79bee> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 01-06-1683"@nl ;
+    sdo:familyName "Bedon"@nl ;
+    sdo:givenName "Claas"@nl ;
+    sdo:name "Claas Bedon"@nl ;
+    sdo:parent <https://ex.org/Person:2d34387b-da6b-958b-f4ea-1525582243c0>,
+        <https://ex.org/Person:7d49f5ef-b251-abe0-e390-a52a14c68ca1> .
+
+<https://ex.org/Person:7d49f5ef-b251-abe0-e390-a52a14c68ca1> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:6717e9ff-3711-cd19-8f62-b0bfbda79bee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Maria"@nl ;
+            pnv:literalName "Maria Claasdr"@nl ;
+            pnv:patronym "Claasdr"@nl ] ;
+    sdo:children <https://ex.org/Person:6a268693-f026-d8a9-bf22-57b46d9f0110> ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Maria"@nl ;
+    sdo:name "Maria Claasdr"@nl ;
+    sdo:spouse <https://ex.org/Person:2d34387b-da6b-958b-f4ea-1525582243c0> .
+
+<https://ex.org/Source:6717e9ff-3711-cd19-8f62-b0bfbda79bee> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/1ac71481-0afe-455c-985a-1c6b1f10e4dd/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/6717e9ff-3711-cd19-8f62-b0bfbda79bee"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/1ac71481-0afe-455c-985a-1c6b1f10e4dd/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1683-06-01"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1680-1683"@nl,
+        "240"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "aant. J.Badon zie kerk.ondertr.reg. V fol.110<br>Doopdatum: 01-06-1683<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/240\">Inventarisnummer 240 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 240, Periode: 1..., (toegangsnr. 1004), inv.nr. 240, Doopboek van de Hooglandse Kerk (NH) te Leiden, 1680 - 1683., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/6717e9ff-3711-cd19-8f62-b0bfbda79bee"^^xsd:anyURI .
+

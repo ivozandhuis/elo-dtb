@@ -1,0 +1,64 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:4426b2b6-3fe6-a444-b93a-bb6763338400> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:c17b8757-e7e2-dd9e-2188-94636df439a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Delmans"@nl ;
+    sdo:givenName "Lijntje"@nl ;
+    sdo:name "Lijntje Delmans"@nl .
+
+<https://ex.org/Person:050202c8-4357-f589-f7c8-e1f2e9890538> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:c17b8757-e7e2-dd9e-2188-94636df439a1> ;
+    sdo:children <https://ex.org/Person:52bfb06e-33cd-6090-2a6d-f336f108573f> ;
+    sdo:familyName "Rijgenbach"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Hendrik"@nl ;
+    sdo:name "Hendrik Rijgenbach"@nl ;
+    sdo:spouse <https://ex.org/Person:5d3e862a-a631-ad97-a443-de82999cc635> .
+
+<https://ex.org/Person:52bfb06e-33cd-6090-2a6d-f336f108573f> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:c17b8757-e7e2-dd9e-2188-94636df439a1> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 01-04-1728"@nl ;
+    sdo:familyName "Rijgenbach"@nl ;
+    sdo:givenName "Hendrik"@nl ;
+    sdo:name "Hendrik Rijgenbach"@nl ;
+    sdo:parent <https://ex.org/Person:050202c8-4357-f589-f7c8-e1f2e9890538>,
+        <https://ex.org/Person:5d3e862a-a631-ad97-a443-de82999cc635> .
+
+<https://ex.org/Person:5d3e862a-a631-ad97-a443-de82999cc635> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:c17b8757-e7e2-dd9e-2188-94636df439a1> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Aken"@nl ;
+            pnv:givenName "Adriana"@nl ;
+            pnv:literalName "Adriana van Aken"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:children <https://ex.org/Person:52bfb06e-33cd-6090-2a6d-f336f108573f> ;
+    sdo:familyName "van Aken"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Adriana"@nl ;
+    sdo:name "Adriana van Aken"@nl ;
+    sdo:spouse <https://ex.org/Person:050202c8-4357-f589-f7c8-e1f2e9890538> .
+
+<https://ex.org/Source:c17b8757-e7e2-dd9e-2188-94636df439a1> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/6647d56b-7a8d-4fb6-acb3-7e54106ee4ff/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/c17b8757-e7e2-dd9e-2188-94636df439a1"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/6647d56b-7a8d-4fb6-acb3-7e54106ee4ff/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1728-04-01"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1726-1733"@nl,
+        "249"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 01-04-1728<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/249\">Inventarisnummer 249 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 249, Periode: 1..., (toegangsnr. 1004), inv.nr. 249, Doopboek van de Hooglandse Kerk (NH) te Leiden, 3 maart 1726 - 28 april 1733., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/c17b8757-e7e2-dd9e-2188-94636df439a1"^^xsd:anyURI .
+

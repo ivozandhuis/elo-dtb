@@ -1,0 +1,88 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:5310a8d5-6205-bad9-dbda-e245f0505847> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:861d850f-6e5b-2e36-0fb5-b5c01e21bbee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Meer"@nl ;
+            pnv:givenName "Lijb"@nl ;
+            pnv:literalName "Lijb Cornelisse van der Meer"@nl ;
+            pnv:patronym "Cornelisse"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:familyName "van der Meer"@nl ;
+    sdo:givenName "Lijb"@nl ;
+    sdo:name "Lijb Cornelisse van der Meer"@nl .
+
+<https://ex.org/Person:bbdb33e6-c3c0-b099-f581-b37a0010d6b0> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:861d850f-6e5b-2e36-0fb5-b5c01e21bbee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Tijs"@nl ;
+            pnv:givenName "Gerret"@nl ;
+            pnv:literalName "Gerret Dirkse Tijs"@nl ;
+            pnv:patronym "Dirkse"@nl ] ;
+    sdo:familyName "Tijs"@nl ;
+    sdo:givenName "Gerret"@nl ;
+    sdo:name "Gerret Dirkse Tijs"@nl .
+
+<https://ex.org/Person:0ef43a76-ea44-779b-cd6a-f627db2c8536> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:861d850f-6e5b-2e36-0fb5-b5c01e21bbee> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:birthPlace "Nieuwe Wetering"@nl ;
+    sdo:description "Doopdatum: 16-07-1765"@nl ;
+    sdo:familyName "Nieuwkamp"@nl ;
+    sdo:givenName "Maria"@nl ;
+    sdo:name "Maria Nieuwkamp"@nl ;
+    sdo:parent <https://ex.org/Person:b136a0ba-fa22-b5ab-73c2-1a4e8cef2310>,
+        <https://ex.org/Person:fda08907-1e39-d5ce-e04b-65696d33a67d> .
+
+<https://ex.org/Person:b136a0ba-fa22-b5ab-73c2-1a4e8cef2310> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:861d850f-6e5b-2e36-0fb5-b5c01e21bbee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Nieuwkamp"@nl ;
+            pnv:givenName "Hermen"@nl ;
+            pnv:literalName "Hermen Janse Nieuwkamp"@nl ;
+            pnv:patronym "Janse"@nl ] ;
+    sdo:children <https://ex.org/Person:0ef43a76-ea44-779b-cd6a-f627db2c8536> ;
+    sdo:familyName "Nieuwkamp"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Hermen"@nl ;
+    sdo:name "Hermen Janse Nieuwkamp"@nl ;
+    sdo:spouse <https://ex.org/Person:fda08907-1e39-d5ce-e04b-65696d33a67d> .
+
+<https://ex.org/Person:fda08907-1e39-d5ce-e04b-65696d33a67d> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:861d850f-6e5b-2e36-0fb5-b5c01e21bbee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Kiewit"@nl ;
+            pnv:givenName "Martje"@nl ;
+            pnv:literalName "Martje Pieters Kiewit"@nl ;
+            pnv:patronym "Pieters"@nl ] ;
+    sdo:children <https://ex.org/Person:0ef43a76-ea44-779b-cd6a-f627db2c8536> ;
+    sdo:familyName "Kiewit"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Martje"@nl ;
+    sdo:name "Martje Pieters Kiewit"@nl ;
+    sdo:spouse <https://ex.org/Person:b136a0ba-fa22-b5ab-73c2-1a4e8cef2310> .
+
+<https://ex.org/Source:861d850f-6e5b-2e36-0fb5-b5c01e21bbee> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/b71f3fe8-006a-4f1e-937d-0080c3024e15/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/861d850f-6e5b-2e36-0fb5-b5c01e21bbee"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/b71f3fe8-006a-4f1e-937d-0080c3024e15/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1765-07-16"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1748-1770"@nl,
+        "19"@nl,
+        "Doop-, trouw- en begraafregisters van Alkemade"@nl,
+        "Doopdatum: 16-07-1765<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/170.1.05/file/19\">Inventarisnummer 19 van archiefnummer 170.1.05 in Archieven</a>"@nl ;
+    sdo:locationCreated "Alkemade"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw- en begraafregisters van Alkemade, Deel: 19, Periode: 1748-1770, (toegangsnr. 170.1.05), inv.nr. 19, Doopboek en trouwboek (RK) van Rijpwetering, 23 juni 1748 - 14 mei 1770;, 112, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/861d850f-6e5b-2e36-0fb5-b5c01e21bbee"^^xsd:anyURI .
+

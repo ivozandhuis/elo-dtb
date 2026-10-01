@@ -1,0 +1,76 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:e411af78-f812-6ed5-ec40-34dc1fb8985d> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:d87b9fbf-7b97-ec74-022b-99049fa6dbee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Pompe Van Meerdervoort"@nl ;
+    sdo:givenName "Johan"@nl ;
+    sdo:name "Johan Pompe Van Meerdervoort"@nl .
+
+<https://ex.org/Person:e46e6728-52f9-0cdb-024f-2f665a28ca84> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:d87b9fbf-7b97-ec74-022b-99049fa6dbee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Cunaeus"@nl ;
+    sdo:givenName "Maria Elisabeth"@nl ;
+    sdo:name "Maria Elisabeth Cunaeus"@nl .
+
+<https://ex.org/Person:5456e18f-522d-5667-967e-4d0da60caa2b> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:d87b9fbf-7b97-ec74-022b-99049fa6dbee> ;
+    sdo:children <https://ex.org/Person:9253f775-8186-4ee9-ea61-6d3564930f20> ;
+    sdo:familyName "Cunaeus"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Hillegonda Francoise"@nl ;
+    sdo:name "Hillegonda Francoise Cunaeus"@nl ;
+    sdo:spouse <https://ex.org/Person:fce1281c-5ff8-799c-bd4d-adce9059c6a0> .
+
+<https://ex.org/Person:9253f775-8186-4ee9-ea61-6d3564930f20> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:d87b9fbf-7b97-ec74-022b-99049fa6dbee> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Meer"@nl ;
+            pnv:givenName "Johanna Maria"@nl ;
+            pnv:literalName "Johanna Maria van der Meer"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:description "Doopdatum: 11-04-1764"@nl ;
+    sdo:familyName "van der Meer"@nl ;
+    sdo:givenName "Johanna Maria"@nl ;
+    sdo:name "Johanna Maria van der Meer"@nl ;
+    sdo:parent <https://ex.org/Person:5456e18f-522d-5667-967e-4d0da60caa2b>,
+        <https://ex.org/Person:fce1281c-5ff8-799c-bd4d-adce9059c6a0> .
+
+<https://ex.org/Person:fce1281c-5ff8-799c-bd4d-adce9059c6a0> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:d87b9fbf-7b97-ec74-022b-99049fa6dbee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Meer"@nl ;
+            pnv:givenName "Jacob"@nl ;
+            pnv:literalName "Jacob van der Meer"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:children <https://ex.org/Person:9253f775-8186-4ee9-ea61-6d3564930f20> ;
+    sdo:familyName "van der Meer"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jacob"@nl ;
+    sdo:name "Jacob van der Meer"@nl ;
+    sdo:spouse <https://ex.org/Person:5456e18f-522d-5667-967e-4d0da60caa2b> .
+
+<https://ex.org/Source:d87b9fbf-7b97-ec74-022b-99049fa6dbee> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/fc115f6d-592f-42b0-96af-54d069787c3e/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/d87b9fbf-7b97-ec74-022b-99049fa6dbee"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/fc115f6d-592f-42b0-96af-54d069787c3e/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1764-04-11"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1741-1769"@nl,
+        "229"@nl,
+        "De vader wordt Hr. genoemd, Heere van Hoogeveen, Raad in de Vroedschap en ou Scheepen der Stad Leijden etc. De moeder wordt Vrouwe genoemd. De Hr. Mr. J. Pompe van Meerdervoort, veertig in Raaden der Stad Leijden etc.Vrouwe M.E. Cunaeus is huisvrouwe van den voorz. Heere Pompe van Meerdervoort<br>Doopdatum: 11-04-1764<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/229\">Inventarisnummer 229 van archiefnummer 1004 in Archieven</a>"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 229, Periode: 1..., (toegangsnr. 1004), inv.nr. 229, Doopboek van de Pieterskerk (NH) te Leiden, 1741 - 1769., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/d87b9fbf-7b97-ec74-022b-99049fa6dbee"^^xsd:anyURI .
+

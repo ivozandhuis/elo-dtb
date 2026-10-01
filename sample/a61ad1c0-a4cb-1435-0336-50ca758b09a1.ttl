@@ -1,0 +1,77 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:0b66cdcc-1075-fc68-6354-92d56c254b57> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:a61ad1c0-a4cb-1435-0336-50ca758b09a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Brinet"@nl ;
+    sdo:givenName "Jacques"@nl ;
+    sdo:name "Jacques Brinet"@nl .
+
+<https://ex.org/Person:5ce1d26d-62c7-680c-2a0a-3bdb49a5af7d> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:a61ad1c0-a4cb-1435-0336-50ca758b09a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Jacquelijne"@nl ;
+            pnv:literalName "Jacquelijne Martijn"@nl ;
+            pnv:patronym "Martijn"@nl ] ;
+    sdo:givenName "Jacquelijne"@nl ;
+    sdo:name "Jacquelijne Martijn"@nl .
+
+<https://ex.org/Person:82a045cd-8338-0f68-7aeb-2b8513aa2915> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:a61ad1c0-a4cb-1435-0336-50ca758b09a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Robecq"@nl ;
+            pnv:givenName "Jan"@nl ;
+            pnv:literalName "Jan de Robecq"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:familyName "de Robecq"@nl ;
+    sdo:givenName "Jan"@nl ;
+    sdo:name "Jan de Robecq"@nl .
+
+<https://ex.org/Person:ea0e7ace-855a-ccac-90e9-ae80016c059c> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:a61ad1c0-a4cb-1435-0336-50ca758b09a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Theliez"@nl ;
+    sdo:givenName "Francoise"@nl ;
+    sdo:name "Francoise Theliez"@nl .
+
+<https://ex.org/Person:188bbaae-5a3f-24d1-87c3-d1048788b5b6> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:a61ad1c0-a4cb-1435-0336-50ca758b09a1> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 02-1641"@nl ;
+    sdo:familyName "Codrou"@nl ;
+    sdo:givenName "Catelijne"@nl ;
+    sdo:name "Catelijne Codrou"@nl ;
+    sdo:parent <https://ex.org/Person:29cde2df-6ce5-73e0-892c-5997d6edf932> .
+
+<https://ex.org/Person:29cde2df-6ce5-73e0-892c-5997d6edf932> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:a61ad1c0-a4cb-1435-0336-50ca758b09a1> ;
+    sdo:children <https://ex.org/Person:188bbaae-5a3f-24d1-87c3-d1048788b5b6> ;
+    sdo:familyName "Codrou"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jan"@nl ;
+    sdo:name "Jan Codrou"@nl .
+
+<https://ex.org/Source:a61ad1c0-a4cb-1435-0336-50ca758b09a1> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/ff24fcb1-f1e6-4124-a67a-42d74ffa4c79/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/a61ad1c0-a4cb-1435-0336-50ca758b09a1"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/ff24fcb1-f1e6-4124-a67a-42d74ffa4c79/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1641-02"^^xsd:gYearMonth ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1627-1646"@nl,
+        "271"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "dopen 7 en 10 Februari<br>Doopdatum: 02-1641<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/271\">Inventarisnummer 271 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 271, Periode: 1..., (toegangsnr. 1004), inv.nr. 271, Doopboek van de Vrouwekerk (Waals, NH) te Leiden, 1 augustus 1627 - 1646., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/a61ad1c0-a4cb-1435-0336-50ca758b09a1"^^xsd:anyURI .
+

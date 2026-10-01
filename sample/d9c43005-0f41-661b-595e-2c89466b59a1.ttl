@@ -1,0 +1,87 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:61eb92a5-c698-2a45-ca87-a6df1cb5e6d6> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:d9c43005-0f41-661b-595e-2c89466b59a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Zanden"@nl ;
+            pnv:givenName "Elizabeth"@nl ;
+            pnv:literalName "Elizabeth van der Zanden"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:familyName "van der Zanden"@nl ;
+    sdo:givenName "Elizabeth"@nl ;
+    sdo:name "Elizabeth van der Zanden"@nl .
+
+<https://ex.org/Person:87e1c2ae-6a9f-aff1-e75b-636eeeb5a942> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:d9c43005-0f41-661b-595e-2c89466b59a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Wouter"@nl ;
+            pnv:literalName "Wouter Gerretse"@nl ;
+            pnv:patronym "Gerretse"@nl ] ;
+    sdo:givenName "Wouter"@nl ;
+    sdo:name "Wouter Gerretse"@nl .
+
+<https://ex.org/Person:4b251992-e656-163a-7899-d9dc6656c99b> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:d9c43005-0f41-661b-595e-2c89466b59a1> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Sanden"@nl ;
+            pnv:givenName "Gerardus"@nl ;
+            pnv:literalName "Gerardus van der Sanden"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:description "Doopdatum: 27-08-1780"@nl ;
+    sdo:familyName "van der Sanden"@nl ;
+    sdo:givenName "Gerardus"@nl ;
+    sdo:name "Gerardus van der Sanden"@nl ;
+    sdo:parent <https://ex.org/Person:4f73f08c-3fd9-ce76-9144-c8c4fe99a0e7>,
+        <https://ex.org/Person:7c720788-f23b-0d82-9ab4-fd3256dc5e70> .
+
+<https://ex.org/Person:4f73f08c-3fd9-ce76-9144-c8c4fe99a0e7> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:d9c43005-0f41-661b-595e-2c89466b59a1> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Maria"@nl ;
+            pnv:literalName "Maria Gerretse"@nl ;
+            pnv:patronym "Gerretse"@nl ] ;
+    sdo:children <https://ex.org/Person:4b251992-e656-163a-7899-d9dc6656c99b> ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Maria"@nl ;
+    sdo:name "Maria Gerretse"@nl ;
+    sdo:spouse <https://ex.org/Person:7c720788-f23b-0d82-9ab4-fd3256dc5e70> .
+
+<https://ex.org/Person:7c720788-f23b-0d82-9ab4-fd3256dc5e70> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:d9c43005-0f41-661b-595e-2c89466b59a1> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Sanden"@nl ;
+            pnv:givenName "Arnold"@nl ;
+            pnv:literalName "Arnold van der Sanden"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:children <https://ex.org/Person:4b251992-e656-163a-7899-d9dc6656c99b> ;
+    sdo:familyName "van der Sanden"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Arnold"@nl ;
+    sdo:name "Arnold van der Sanden"@nl ;
+    sdo:spouse <https://ex.org/Person:4f73f08c-3fd9-ce76-9144-c8c4fe99a0e7> .
+
+<https://ex.org/Source:d9c43005-0f41-661b-595e-2c89466b59a1> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/9a7397c8-68fb-40d3-abd7-9f6d4ac3b44c/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/d9c43005-0f41-661b-595e-2c89466b59a1"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/9a7397c8-68fb-40d3-abd7-9f6d4ac3b44c/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1780-08-27"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1757-1811"@nl,
+        "294"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 27-08-1780<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/294\">Inventarisnummer 294 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 294, Periode: 1..., (toegangsnr. 1004), inv.nr. 294, Doopboek en trouwboek van de kerk aan de Bakkersteeg (RK) te Leiden, 1757 - 1811., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/d9c43005-0f41-661b-595e-2c89466b59a1"^^xsd:anyURI .
+

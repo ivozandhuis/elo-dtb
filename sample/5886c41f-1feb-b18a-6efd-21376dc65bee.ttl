@@ -1,0 +1,76 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:33218993-ca9b-1884-e1af-d885cdb65ef8> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:5886c41f-1feb-b18a-6efd-21376dc65bee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Galjaar"@nl ;
+    sdo:givenName "Rachel"@nl ;
+    sdo:name "Rachel Galjaar"@nl .
+
+<https://ex.org/Person:523595f4-e210-e0b0-df0a-2294f7460114> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:5886c41f-1feb-b18a-6efd-21376dc65bee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Piket"@nl ;
+    sdo:givenName "Carel"@nl ;
+    sdo:name "Carel Piket"@nl .
+
+<https://ex.org/Person:0d240c5f-6a45-71a7-7db4-d71b067c9135> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:5886c41f-1feb-b18a-6efd-21376dc65bee> ;
+    sdo:children <https://ex.org/Person:72143e0e-74f4-a6d1-90fc-7b7a76b2ee1a> ;
+    sdo:familyName "Galjaar"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Judik"@nl ;
+    sdo:name "Judik Galjaar"@nl ;
+    sdo:spouse <https://ex.org/Person:488e917a-9987-ce54-8223-ddb0e00ea361> .
+
+<https://ex.org/Person:488e917a-9987-ce54-8223-ddb0e00ea361> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:5886c41f-1feb-b18a-6efd-21376dc65bee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Vink"@nl ;
+            pnv:givenName "Jacobus"@nl ;
+            pnv:literalName "Jacobus de Vink"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:children <https://ex.org/Person:72143e0e-74f4-a6d1-90fc-7b7a76b2ee1a> ;
+    sdo:familyName "de Vink"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jacobus"@nl ;
+    sdo:name "Jacobus de Vink"@nl ;
+    sdo:spouse <https://ex.org/Person:0d240c5f-6a45-71a7-7db4-d71b067c9135> .
+
+<https://ex.org/Person:72143e0e-74f4-a6d1-90fc-7b7a76b2ee1a> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:5886c41f-1feb-b18a-6efd-21376dc65bee> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Vink"@nl ;
+            pnv:givenName "Carel"@nl ;
+            pnv:literalName "Carel de Vink"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:description "Doopdatum: 01-09-1765"@nl ;
+    sdo:familyName "de Vink"@nl ;
+    sdo:givenName "Carel"@nl ;
+    sdo:name "Carel de Vink"@nl ;
+    sdo:parent <https://ex.org/Person:0d240c5f-6a45-71a7-7db4-d71b067c9135>,
+        <https://ex.org/Person:488e917a-9987-ce54-8223-ddb0e00ea361> .
+
+<https://ex.org/Source:5886c41f-1feb-b18a-6efd-21376dc65bee> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/7c18ef5e-ac45-47b8-afd2-d25925aaf3c7/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/5886c41f-1feb-b18a-6efd-21376dc65bee"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/7c18ef5e-ac45-47b8-afd2-d25925aaf3c7/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1765-09-01"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1738-1766"@nl,
+        "263"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Extract uit het doopboek afgegeven op 03-08-1782<br>Doopdatum: 01-09-1765<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/263\">Inventarisnummer 263 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 263, Periode: 1..., (toegangsnr. 1004), inv.nr. 263, Doopboek van de Nieuwe- of Marekerk (NH) te Leiden, 1738 - 31 augustus 1766., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/5886c41f-1feb-b18a-6efd-21376dc65bee"^^xsd:anyURI .
+

@@ -1,0 +1,73 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:13e2bad9-71be-52ad-3c40-1ece4e5def4c> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b0a51415-2959-fa00-8ffc-ef0d4382bc35> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:description "getuige van de bruidegom, relatie tot de bruidegom: bekende, adres: Havestraet"@nl ;
+    sdo:familyName "Marchant"@nl ;
+    sdo:givenName "Pierre"@nl ;
+    sdo:name "Pierre Marchant"@nl .
+
+<https://ex.org/Person:ca0c7599-9cd7-d0ed-c066-3d03a8e264ee> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b0a51415-2959-fa00-8ffc-ef0d4382bc35> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Elysabeth"@nl ;
+            pnv:literalName "Elysabeth Jans"@nl ;
+            pnv:patronym "Jans"@nl ] ;
+    sdo:description "getuige van de bruid, relatie tot de bruid: moeder, adres: Haverstraet"@nl ;
+    sdo:givenName "Elysabeth"@nl ;
+    sdo:name "Elysabeth Jans"@nl .
+
+<https://ex.org/Person:002bda07-5f26-8d56-00cf-2f3c693ad0a2> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b0a51415-2959-fa00-8ffc-ef0d4382bc35> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Horst"@nl ;
+            pnv:givenName "Jan"@nl ;
+            pnv:literalName "Jan Jansz Horst"@nl ;
+            pnv:patronym "Jansz"@nl ] ;
+    sdo:address "Havestraet"@nl ;
+    sdo:birthPlace "Deventer"@nl ;
+    sdo:familyName "Horst"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jan"@nl ;
+    sdo:hasOccupation "lakenwerker"@nl ;
+    sdo:name "Jan Jansz Horst"@nl ;
+    sdo:spouse <https://ex.org/Person:78647ef2-da6d-e8f9-f54c-696f6b50b77f> .
+
+<https://ex.org/Person:78647ef2-da6d-e8f9-f54c-696f6b50b77f> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b0a51415-2959-fa00-8ffc-ef0d4382bc35> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Annetgen"@nl ;
+            pnv:literalName "Annetgen Tijsse"@nl ;
+            pnv:patronym "Tijsse"@nl ] ;
+    sdo:address "Haverstraet"@nl ;
+    sdo:birthPlace "Leyden"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Annetgen"@nl ;
+    sdo:name "Annetgen Tijsse"@nl ;
+    sdo:spouse <https://ex.org/Person:002bda07-5f26-8d56-00cf-2f3c693ad0a2> .
+
+<https://ex.org/Source:b0a51415-2959-fa00-8ffc-ef0d4382bc35> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/a21a495a-95b9-42c1-a1cf-88a278976da0/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/b0a51415-2959-fa00-8ffc-ef0d4382bc35"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/a21a495a-95b9-42c1-a1cf-88a278976da0/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1661-1664"@nl,
+        "17"@nl,
+        "Datum ondertrouw: 24-01-1664<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/17\">Inventarisnummer 17 van archiefnummer 1004 in Archieven</a>"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 17, Periode: 16..., (toegangsnr. 1004), inv.nr. 17, R. Kerkelijk ondertrouwboek (NH) van Leiden, februari 1661 - mei 1664., 234, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/b0a51415-2959-fa00-8ffc-ef0d4382bc35"^^xsd:anyURI .
+

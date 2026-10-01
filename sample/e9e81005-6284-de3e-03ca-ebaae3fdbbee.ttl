@@ -1,0 +1,81 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:019db92f-f0b6-9055-43d1-34dd6d87cf85> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:e9e81005-6284-de3e-03ca-ebaae3fdbbee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Pol"@nl ;
+            pnv:givenName "Hendrik"@nl ;
+            pnv:literalName "Hendrik van der Pol"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:familyName "van der Pol"@nl ;
+    sdo:givenName "Hendrik"@nl ;
+    sdo:name "Hendrik van der Pol"@nl .
+
+<https://ex.org/Person:d557b38d-d564-174d-eb4a-4ff942be0bd1> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:e9e81005-6284-de3e-03ca-ebaae3fdbbee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Dort"@nl ;
+            pnv:givenName "Lijsbeth"@nl ;
+            pnv:literalName "Lijsbeth van Dort"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:familyName "van Dort"@nl ;
+    sdo:givenName "Lijsbeth"@nl ;
+    sdo:name "Lijsbeth van Dort"@nl .
+
+<https://ex.org/Person:2e52eaa7-36df-2392-a206-6fddda0d9623> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:e9e81005-6284-de3e-03ca-ebaae3fdbbee> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 11-06-1730"@nl ;
+    sdo:familyName "Cornilje"@nl ;
+    sdo:givenName "Daniel"@nl ;
+    sdo:name "Daniel Cornilje"@nl ;
+    sdo:parent <https://ex.org/Person:ba172560-1aff-52ef-216e-f22a3226f46b>,
+        <https://ex.org/Person:d7325192-530a-532c-ea2f-1d8dc710889a> .
+
+<https://ex.org/Person:ba172560-1aff-52ef-216e-f22a3226f46b> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:e9e81005-6284-de3e-03ca-ebaae3fdbbee> ;
+    sdo:children <https://ex.org/Person:2e52eaa7-36df-2392-a206-6fddda0d9623> ;
+    sdo:familyName "Cornilje"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "David"@nl ;
+    sdo:name "David Cornilje"@nl ;
+    sdo:spouse <https://ex.org/Person:d7325192-530a-532c-ea2f-1d8dc710889a> .
+
+<https://ex.org/Person:d7325192-530a-532c-ea2f-1d8dc710889a> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:e9e81005-6284-de3e-03ca-ebaae3fdbbee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Pol"@nl ;
+            pnv:givenName "Dina"@nl ;
+            pnv:literalName "Dina van der Pol"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:children <https://ex.org/Person:2e52eaa7-36df-2392-a206-6fddda0d9623> ;
+    sdo:familyName "van der Pol"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Dina"@nl ;
+    sdo:name "Dina van der Pol"@nl ;
+    sdo:spouse <https://ex.org/Person:ba172560-1aff-52ef-216e-f22a3226f46b> .
+
+<https://ex.org/Source:e9e81005-6284-de3e-03ca-ebaae3fdbbee> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/258f62ee-ea4b-4319-bc84-b6cbc8321335/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/e9e81005-6284-de3e-03ca-ebaae3fdbbee"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/258f62ee-ea4b-4319-bc84-b6cbc8321335/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1730-06-11"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1714-1737"@nl,
+        "262"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Extract uit doopboek afgegeven op 1-7-1749<br>Doopdatum: 11-06-1730<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/262\">Inventarisnummer 262 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 262, Periode: 1..., (toegangsnr. 1004), inv.nr. 262, Doopboek van de Nieuwe- of Marekerk (NH) te Leiden, 1714 - 1737., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/e9e81005-6284-de3e-03ca-ebaae3fdbbee"^^xsd:anyURI .
+

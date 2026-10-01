@@ -1,0 +1,68 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:5fc827f0-dde6-6afa-2e79-19c0e7e93142> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:1f2821f2-f637-9b88-b803-9c3a7851ec35> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Leeuwen"@nl ;
+            pnv:givenName "Anna"@nl ;
+            pnv:literalName "Anna van Leeuwen"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:description "getuige van de bruidegom, relatie tot de bruidegom: moeder, adres: Levendaal"@nl ;
+    sdo:familyName "van Leeuwen"@nl ;
+    sdo:givenName "Anna"@nl ;
+    sdo:name "Anna van Leeuwen"@nl .
+
+<https://ex.org/Person:d67e1e7e-989c-6ab3-6ac7-a1a37bf3123c> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:1f2821f2-f637-9b88-b803-9c3a7851ec35> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:address "Den Haag"@nl ;
+    sdo:description "getuige van de bruid, relatie tot de bruid: zuster"@nl ;
+    sdo:familyName "Verhage"@nl ;
+    sdo:givenName "Rachel"@nl ;
+    sdo:name "Rachel Verhage"@nl .
+
+<https://ex.org/Person:4109ea8f-b6d9-b270-c2c3-10eff9ceeeee> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:1f2821f2-f637-9b88-b803-9c3a7851ec35> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:address "Binnevestgragt bij Rhynsburgerpoort"@nl ;
+    sdo:birthPlace "Leyden"@nl ;
+    sdo:familyName "Verhagen"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Jannetje"@nl ;
+    sdo:name "Jannetje Verhagen"@nl ;
+    sdo:spouse <https://ex.org/Person:46dbafb3-3adc-1629-8b78-35e2216dfe91> .
+
+<https://ex.org/Person:46dbafb3-3adc-1629-8b78-35e2216dfe91> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:1f2821f2-f637-9b88-b803-9c3a7851ec35> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:address "Binnevestgragt bij Rhynsburgerpoort"@nl ;
+    sdo:birthPlace "Soeterwoude"@nl ;
+    sdo:familyName "Schoonhoven"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Gerrit"@nl ;
+    sdo:hasOccupation "daggelder"@nl ;
+    sdo:name "Gerrit Schoonhoven"@nl ;
+    sdo:spouse <https://ex.org/Person:4109ea8f-b6d9-b270-c2c3-10eff9ceeeee> .
+
+<https://ex.org/Source:1f2821f2-f637-9b88-b803-9c3a7851ec35> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/1b983202-2eb5-4606-a40c-520a316e0920/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/1f2821f2-f637-9b88-b803-9c3a7851ec35"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/1b983202-2eb5-4606-a40c-520a316e0920/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1803-1805"@nl,
+        "213"@nl,
+        "Datum trouwen: 21-04-1804<br>Datum ondertrouw: 06-04-1804<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/213\">Inventarisnummer 213 van archiefnummer 1004 in Archieven</a>"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 213, Periode: 1..., (toegangsnr. 1004), inv.nr. 213, C. Ondertrouwboek en trouwboek voor schepen van Leiden (alle gezindt), 1803 - 1805., 93, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/1f2821f2-f637-9b88-b803-9c3a7851ec35"^^xsd:anyURI .
+

@@ -1,0 +1,74 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:32f907f6-dd36-7187-89a6-0b8a76cbc44e> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:81c5f70b-bb1a-c678-ed74-d02b51674c35> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Robbert"@nl ;
+            pnv:literalName "Robbert Thomasz"@nl ;
+            pnv:patronym "Thomasz"@nl ] ;
+    sdo:description "getuige van de bruidegom, relatie tot de bruidegom: bekende, adres: Verwerstraet"@nl ;
+    sdo:givenName "Robbert"@nl ;
+    sdo:name "Robbert Thomasz"@nl .
+
+<https://ex.org/Person:89b065bc-8a10-9a56-2fed-2f1f645830e7> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:81c5f70b-bb1a-c678-ed74-d02b51674c35> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Lijsbeth"@nl ;
+            pnv:literalName "Lijsbeth Adriaens"@nl ;
+            pnv:patronym "Adriaens"@nl ] ;
+    sdo:description "getuige van de bruid, relatie tot de bruid: bekende, adres: Kalvermart"@nl ;
+    sdo:givenName "Lijsbeth"@nl ;
+    sdo:name "Lijsbeth Adriaens"@nl .
+
+<https://ex.org/Person:ad4ce080-5292-ee7a-895d-edf272dc9bd7> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:81c5f70b-bb1a-c678-ed74-d02b51674c35> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Aertge"@nl ;
+            pnv:literalName "Aertge Robberts"@nl ;
+            pnv:patronym "Robberts"@nl ] ;
+    sdo:address "Verwerstraet"@nl ;
+    sdo:birthPlace "Leyden"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Aertge"@nl ;
+    sdo:name "Aertge Robberts"@nl ;
+    sdo:spouse <https://ex.org/Person:b72cc2df-ee80-f3ff-f6a8-793aa73142b3> .
+
+<https://ex.org/Person:b72cc2df-ee80-f3ff-f6a8-793aa73142b3> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:81c5f70b-bb1a-c678-ed74-d02b51674c35> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Olyvier"@nl ;
+            pnv:literalName "Olyvier Lourens"@nl ;
+            pnv:patronym "Lourens"@nl ] ;
+    sdo:address "Verwerstraet"@nl ;
+    sdo:birthPlace "Amsterdam"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Olyvier"@nl ;
+    sdo:hasOccupation "lakenwerker"@nl ;
+    sdo:name "Olyvier Lourens"@nl ;
+    sdo:spouse <https://ex.org/Person:ad4ce080-5292-ee7a-895d-edf272dc9bd7> .
+
+<https://ex.org/Source:81c5f70b-bb1a-c678-ed74-d02b51674c35> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/9abe25f1-4076-4cde-a02f-ef337dbc752d/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/81c5f70b-bb1a-c678-ed74-d02b51674c35"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/9abe25f1-4076-4cde-a02f-ef337dbc752d/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1678-1681"@nl,
+        "22"@nl,
+        "Datum ondertrouw: 10-05-1681<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/22\">Inventarisnummer 22 van archiefnummer 1004 in Archieven</a>"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 22, Periode: 16..., (toegangsnr. 1004), inv.nr. 22, X. Kerkelijk ondertrouwboek (NH) van Leiden, januari 1678 - 1681., 248, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/81c5f70b-bb1a-c678-ed74-d02b51674c35"^^xsd:anyURI .
+

@@ -1,0 +1,71 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:0c2a278d-592f-e794-78f0-976a26c3b848> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:d8d21e29-216e-de23-0910-913253006bee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Buuren"@nl ;
+            pnv:givenName "Beatrix"@nl ;
+            pnv:literalName "Beatrix van Buuren"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:familyName "van Buuren"@nl ;
+    sdo:givenName "Beatrix"@nl ;
+    sdo:name "Beatrix van Buuren"@nl .
+
+<https://ex.org/Person:7a94353d-709b-288f-db77-a1ece39d73e3> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:d8d21e29-216e-de23-0910-913253006bee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Lagalie"@nl ;
+    sdo:givenName "Andries"@nl ;
+    sdo:name "Andries Lagalie"@nl .
+
+<https://ex.org/Person:b2727747-d69c-c7a8-c57f-d2c5b150f170> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:d8d21e29-216e-de23-0910-913253006bee> ;
+    sdo:children <https://ex.org/Person:fc616bc5-95cd-b50e-4fd4-a5045a5f1bf5> ;
+    sdo:familyName "Lagalie"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Andries Johannes"@nl ;
+    sdo:name "Andries Johannes Lagalie"@nl ;
+    sdo:spouse <https://ex.org/Person:b4cfd438-05eb-e5f8-0a7c-872931aef499> .
+
+<https://ex.org/Person:b4cfd438-05eb-e5f8-0a7c-872931aef499> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:d8d21e29-216e-de23-0910-913253006bee> ;
+    sdo:children <https://ex.org/Person:fc616bc5-95cd-b50e-4fd4-a5045a5f1bf5> ;
+    sdo:familyName "Herrewij"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Maria"@nl ;
+    sdo:name "Maria Herrewij"@nl ;
+    sdo:spouse <https://ex.org/Person:b2727747-d69c-c7a8-c57f-d2c5b150f170> .
+
+<https://ex.org/Person:fc616bc5-95cd-b50e-4fd4-a5045a5f1bf5> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:d8d21e29-216e-de23-0910-913253006bee> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 15-04-1778"@nl ;
+    sdo:familyName "Lagalie"@nl ;
+    sdo:givenName "Maria Beatrix"@nl ;
+    sdo:name "Maria Beatrix Lagalie"@nl ;
+    sdo:parent <https://ex.org/Person:b2727747-d69c-c7a8-c57f-d2c5b150f170>,
+        <https://ex.org/Person:b4cfd438-05eb-e5f8-0a7c-872931aef499> .
+
+<https://ex.org/Source:d8d21e29-216e-de23-0910-913253006bee> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/2823c8a8-a939-4754-9164-531ce9ade0d8/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/d8d21e29-216e-de23-0910-913253006bee"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/2823c8a8-a939-4754-9164-531ce9ade0d8/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1778-04-15"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1770-1795"@nl,
+        "230"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 15-04-1778<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/230\">Inventarisnummer 230 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 230, Periode: 1..., (toegangsnr. 1004), inv.nr. 230, Doopboek van de Pieterskerk (NH) te Leiden, 1770 - 1795, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/d8d21e29-216e-de23-0910-913253006bee"^^xsd:anyURI .
+

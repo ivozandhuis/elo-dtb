@@ -1,0 +1,97 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:6a4422be-5103-eedb-ccb7-777b0e54ffef> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:56652804-3e80-daab-24e7-fc4eef93dc35> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Doe"@nl ;
+            pnv:givenName "Reynoult"@nl ;
+            pnv:literalName "Reynoult Henricxz Doe"@nl ;
+            pnv:patronym "Henricxz"@nl ] ;
+    sdo:description "getuige van de bruidegom, relatie tot de bruidegom: oom, adres: Broertgensgraft"@nl ;
+    sdo:familyName "Doe"@nl ;
+    sdo:givenName "Reynoult"@nl ;
+    sdo:name "Reynoult Henricxz Doe"@nl .
+
+<https://ex.org/Person:8e29dd99-8945-87b9-5bf1-eb90e986458d> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:56652804-3e80-daab-24e7-fc4eef93dc35> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Milde"@nl ;
+            pnv:givenName "Bastiaen"@nl ;
+            pnv:literalName "Bastiaen Huyberts van der Milde"@nl ;
+            pnv:patronym "Huyberts"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:address "Claeswael"@nl ;
+    sdo:description "getuige van de bruidegom, relatie tot de bruidegom: vader"@nl ;
+    sdo:familyName "van der Milde"@nl ;
+    sdo:givenName "Bastiaen"@nl ;
+    sdo:name "Bastiaen Huyberts van der Milde"@nl .
+
+<https://ex.org/Person:a23d82fe-42c8-0625-a8d6-896b41382bdc> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:56652804-3e80-daab-24e7-fc4eef93dc35> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Gerritgen"@nl ;
+            pnv:literalName "Gerritgen Corssendr"@nl ;
+            pnv:patronym "Corssendr"@nl ] ;
+    sdo:description "getuige van de bruid, relatie tot de bruid: moeder, adres: Broertgensgraft"@nl ;
+    sdo:givenName "Gerritgen"@nl ;
+    sdo:name "Gerritgen Corssendr"@nl .
+
+<https://ex.org/Person:71944655-3068-e7ac-ac0d-c8592238e022> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:56652804-3e80-daab-24e7-fc4eef93dc35> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Milde"@nl ;
+            pnv:givenName "Jan"@nl ;
+            pnv:literalName "Jan Bastiaensz van der Milde"@nl ;
+            pnv:patronym "Bastiaensz"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:address "Claeswael"@nl ;
+    sdo:birthPlace "Claeswael"@nl ;
+    sdo:familyName "van der Milde"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jan"@nl ;
+    sdo:hasOccupation "schoenmaker"@nl ;
+    sdo:name "Jan Bastiaensz van der Milde"@nl ;
+    sdo:spouse <https://ex.org/Person:ceb1d675-820f-b386-07f3-1de79aefee04> .
+
+<https://ex.org/Person:ceb1d675-820f-b386-07f3-1de79aefee04> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:56652804-3e80-daab-24e7-fc4eef93dc35> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Loopenduyn"@nl ;
+            pnv:givenName "Maertgen"@nl ;
+            pnv:literalName "Maertgen Dircx van Loopenduyn"@nl ;
+            pnv:patronym "Dircx"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:address "Broertgensgraft"@nl ;
+    sdo:birthPlace "Leyden"@nl ;
+    sdo:familyName "van Loopenduyn"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Maertgen"@nl ;
+    sdo:name "Maertgen Dircx van Loopenduyn"@nl ;
+    sdo:spouse <https://ex.org/Person:71944655-3068-e7ac-ac0d-c8592238e022> .
+
+<https://ex.org/Source:56652804-3e80-daab-24e7-fc4eef93dc35> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/816536c0-4c46-434e-bee3-2c1494ec16d2/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/56652804-3e80-daab-24e7-fc4eef93dc35"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/816536c0-4c46-434e-bee3-2c1494ec16d2/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "11"@nl,
+        "1633-1637"@nl,
+        "Datum ondertrouw: 09-03-1635<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/11\">Inventarisnummer 11 van archiefnummer 1004 in Archieven</a>"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 11, Periode: 16..., (toegangsnr. 1004), inv.nr. 11, L. Kerkelijk ondertrouwboek (NH) van Leiden, augustus 1633 - 1637., 77v, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/56652804-3e80-daab-24e7-fc4eef93dc35"^^xsd:anyURI .
+

@@ -1,0 +1,87 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:2cddc74d-454a-1455-3028-f2dd8d0c11c8> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:9b6c0e38-91b1-6eeb-86a5-05aa1e08fbee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Kooning"@nl ;
+            pnv:givenName "Jaap"@nl ;
+            pnv:literalName "Jaap de Kooning"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:familyName "de Kooning"@nl ;
+    sdo:givenName "Jaap"@nl ;
+    sdo:name "Jaap de Kooning"@nl .
+
+<https://ex.org/Person:a74ac508-5b27-ea46-7300-7b2e954e16ff> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:9b6c0e38-91b1-6eeb-86a5-05aa1e08fbee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Kooning"@nl ;
+            pnv:givenName "Jannetje"@nl ;
+            pnv:literalName "Jannetje de Kooning"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:familyName "de Kooning"@nl ;
+    sdo:givenName "Jannetje"@nl ;
+    sdo:name "Jannetje de Kooning"@nl .
+
+<https://ex.org/Person:56d69b9f-c179-f678-acb7-9694ee2a4a7b> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:9b6c0e38-91b1-6eeb-86a5-05aa1e08fbee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Koek"@nl ;
+            pnv:givenName "Jan"@nl ;
+            pnv:literalName "Jan Janse Koek"@nl ;
+            pnv:patronym "Janse"@nl ] ;
+    sdo:children <https://ex.org/Person:967be4f6-513e-8381-4534-b71cf3ea16e6> ;
+    sdo:familyName "Koek"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jan"@nl ;
+    sdo:name "Jan Janse Koek"@nl ;
+    sdo:spouse <https://ex.org/Person:c90531a5-a7a8-3e16-19d5-b0818f686641> .
+
+<https://ex.org/Person:967be4f6-513e-8381-4534-b71cf3ea16e6> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:9b6c0e38-91b1-6eeb-86a5-05aa1e08fbee> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:birthPlace "Roelofarendsveen"@nl ;
+    sdo:description "Doopdatum: 22-02-1809"@nl ;
+    sdo:familyName "Koek"@nl ;
+    sdo:givenName "Jaapik"@nl ;
+    sdo:name "Jaapik Koek"@nl ;
+    sdo:parent <https://ex.org/Person:56d69b9f-c179-f678-acb7-9694ee2a4a7b>,
+        <https://ex.org/Person:c90531a5-a7a8-3e16-19d5-b0818f686641> .
+
+<https://ex.org/Person:c90531a5-a7a8-3e16-19d5-b0818f686641> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:9b6c0e38-91b1-6eeb-86a5-05aa1e08fbee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Tol"@nl ;
+            pnv:givenName "Leena"@nl ;
+            pnv:literalName "Leena van Tol"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:children <https://ex.org/Person:967be4f6-513e-8381-4534-b71cf3ea16e6> ;
+    sdo:familyName "van Tol"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Leena"@nl ;
+    sdo:name "Leena van Tol"@nl ;
+    sdo:spouse <https://ex.org/Person:56d69b9f-c179-f678-acb7-9694ee2a4a7b> .
+
+<https://ex.org/Source:9b6c0e38-91b1-6eeb-86a5-05aa1e08fbee> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/4199ac3b-bdd8-45ee-9042-0652fed82328/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/9b6c0e38-91b1-6eeb-86a5-05aa1e08fbee"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/4199ac3b-bdd8-45ee-9042-0652fed82328/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1809-02-22"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "14"@nl,
+        "1776-1812"@nl,
+        "Doop-, trouw- en begraafregisters van Alkemade"@nl,
+        "Doopdatum: 22-02-1809<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/170.1.05/file/14\">Inventarisnummer 14 van archiefnummer 170.1.05 in Archieven</a>"@nl ;
+    sdo:locationCreated "Alkemade"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw- en begraafregisters van Alkemade, Deel: 14, Periode: 1776-1812, (toegangsnr. 170.1.05), inv.nr. 14, Doopboek (RK) van Roelofarendsveen, 1776 - 1812., 151, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/9b6c0e38-91b1-6eeb-86a5-05aa1e08fbee"^^xsd:anyURI .
+

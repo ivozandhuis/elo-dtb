@@ -1,0 +1,76 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:07354e5f-15b8-ee7d-5a62-e464aa8a97ac> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:06827146-844c-c846-483b-9b6e62a20bee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Noordeloos"@nl ;
+    sdo:givenName "Hendrik"@nl ;
+    sdo:name "Hendrik Noordeloos"@nl .
+
+<https://ex.org/Person:c141428e-ba38-90f1-fb78-d999357d22b4> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:06827146-844c-c846-483b-9b6e62a20bee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Egmont"@nl ;
+            pnv:givenName "Catrina"@nl ;
+            pnv:literalName "Catrina van Egmont"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:familyName "van Egmont"@nl ;
+    sdo:givenName "Catrina"@nl ;
+    sdo:name "Catrina van Egmont"@nl .
+
+<https://ex.org/Person:198be1ec-a38b-ce34-16db-0c7cf7656d1a> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:06827146-844c-c846-483b-9b6e62a20bee> ;
+    sdo:children <https://ex.org/Person:a94f5866-8dc3-b64d-38c4-ff33addb2d3d> ;
+    sdo:familyName "Noordeloos"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "David"@nl ;
+    sdo:name "David Noordeloos"@nl ;
+    sdo:spouse <https://ex.org/Person:cc1f830e-f7d6-4070-5054-6ccd617de7b6> .
+
+<https://ex.org/Person:a94f5866-8dc3-b64d-38c4-ff33addb2d3d> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:06827146-844c-c846-483b-9b6e62a20bee> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 03-07-1763"@nl ;
+    sdo:familyName "Noordeloos"@nl ;
+    sdo:givenName "Josina"@nl ;
+    sdo:name "Josina Noordeloos"@nl ;
+    sdo:parent <https://ex.org/Person:198be1ec-a38b-ce34-16db-0c7cf7656d1a>,
+        <https://ex.org/Person:cc1f830e-f7d6-4070-5054-6ccd617de7b6> .
+
+<https://ex.org/Person:cc1f830e-f7d6-4070-5054-6ccd617de7b6> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:06827146-844c-c846-483b-9b6e62a20bee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Dorp"@nl ;
+            pnv:givenName "Maria"@nl ;
+            pnv:literalName "Maria van den Dorp"@nl ;
+            pnv:surnamePrefix "van den"@nl ] ;
+    sdo:children <https://ex.org/Person:a94f5866-8dc3-b64d-38c4-ff33addb2d3d> ;
+    sdo:familyName "van den Dorp"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Maria"@nl ;
+    sdo:name "Maria van den Dorp"@nl ;
+    sdo:spouse <https://ex.org/Person:198be1ec-a38b-ce34-16db-0c7cf7656d1a> .
+
+<https://ex.org/Source:06827146-844c-c846-483b-9b6e62a20bee> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/311ee415-265b-44f6-836d-be0c76ef9061/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/06827146-844c-c846-483b-9b6e62a20bee"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/311ee415-265b-44f6-836d-be0c76ef9061/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1763-07-03"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1755-1767"@nl,
+        "252"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 03-07-1763<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/252\">Inventarisnummer 252 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 252, Periode: 1..., (toegangsnr. 1004), inv.nr. 252, Doopboek van de Hooglandse Kerk (NH) te Leiden, 1755 - 28 juni 1767., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/06827146-844c-c846-483b-9b6e62a20bee"^^xsd:anyURI .
+

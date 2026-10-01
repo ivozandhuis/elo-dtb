@@ -1,0 +1,77 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:356a61eb-50ea-e34f-3ec6-1e49f8dc650c> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:5e2b46bd-f4b9-8415-01be-116a6a9109a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Maertie"@nl ;
+            pnv:literalName "Maertie Pieters"@nl ;
+            pnv:patronym "Pieters"@nl ] ;
+    sdo:givenName "Maertie"@nl ;
+    sdo:name "Maertie Pieters"@nl .
+
+<https://ex.org/Person:febf10d7-ecc1-883a-a538-032946035783> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:5e2b46bd-f4b9-8415-01be-116a6a9109a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Cornelis"@nl ;
+            pnv:literalName "Cornelis Cornelisz"@nl ;
+            pnv:patronym "Cornelisz"@nl ] ;
+    sdo:givenName "Cornelis"@nl ;
+    sdo:name "Cornelis Cornelisz"@nl .
+
+<https://ex.org/Person:069738e8-cebf-1a21-89f4-dd0ff5fa80fe> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:5e2b46bd-f4b9-8415-01be-116a6a9109a1> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 17-01-1676"@nl ;
+    sdo:givenName "Petrus"@nl ;
+    sdo:name "Petrus"@nl ;
+    sdo:parent <https://ex.org/Person:1d817e4d-92fe-4147-297c-e761ba7d3c57>,
+        <https://ex.org/Person:2cc5aeb4-8fe9-f7c5-5bd9-384f1d9a6552> .
+
+<https://ex.org/Person:1d817e4d-92fe-4147-297c-e761ba7d3c57> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:5e2b46bd-f4b9-8415-01be-116a6a9109a1> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Jannetie"@nl ;
+            pnv:literalName "Jannetie Jacobs"@nl ;
+            pnv:patronym "Jacobs"@nl ] ;
+    sdo:children <https://ex.org/Person:069738e8-cebf-1a21-89f4-dd0ff5fa80fe> ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Jannetie"@nl ;
+    sdo:name "Jannetie Jacobs"@nl ;
+    sdo:spouse <https://ex.org/Person:2cc5aeb4-8fe9-f7c5-5bd9-384f1d9a6552> .
+
+<https://ex.org/Person:2cc5aeb4-8fe9-f7c5-5bd9-384f1d9a6552> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:5e2b46bd-f4b9-8415-01be-116a6a9109a1> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Phlips"@nl ;
+            pnv:literalName "Phlips Pietersz"@nl ;
+            pnv:patronym "Pietersz"@nl ] ;
+    sdo:children <https://ex.org/Person:069738e8-cebf-1a21-89f4-dd0ff5fa80fe> ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Phlips"@nl ;
+    sdo:name "Phlips Pietersz"@nl ;
+    sdo:spouse <https://ex.org/Person:1d817e4d-92fe-4147-297c-e761ba7d3c57> .
+
+<https://ex.org/Source:5e2b46bd-f4b9-8415-01be-116a6a9109a1> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/7ae730a4-6b36-4340-b8f2-c0a67f40efbc/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/5e2b46bd-f4b9-8415-01be-116a6a9109a1"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/7ae730a4-6b36-4340-b8f2-c0a67f40efbc/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1676-01-17"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "16"@nl,
+        "1675-1732"@nl,
+        "Doop-, trouw- en begraafregisters van Alkemade"@nl,
+        "Doopdatum: 17-01-1676<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/170.1.05/file/16\">Inventarisnummer 16 van archiefnummer 170.1.05 in Archieven</a>"@nl ;
+    sdo:locationCreated "Alkemade"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw- en begraafregisters van Alkemade, Deel: 16, Periode: 1675-1732, (toegangsnr. 170.1.05), inv.nr. 16, Doopboek (RK) van Rijpwetering, mei 1675 - 1732;, 7, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/5e2b46bd-f4b9-8415-01be-116a6a9109a1"^^xsd:anyURI .
+

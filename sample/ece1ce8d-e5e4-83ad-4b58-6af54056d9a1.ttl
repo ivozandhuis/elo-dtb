@@ -1,0 +1,75 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:1ef3c95b-04e3-6fb7-b4b1-03c90568bf57> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:ece1ce8d-e5e4-83ad-4b58-6af54056d9a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Jannetje"@nl ;
+            pnv:literalName "Jannetje Klaas"@nl ;
+            pnv:patronym "Klaas"@nl ] ;
+    sdo:givenName "Jannetje"@nl ;
+    sdo:name "Jannetje Klaas"@nl .
+
+<https://ex.org/Person:ca9044a4-bf02-20dc-c61e-a29f7e1e6e35> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:ece1ce8d-e5e4-83ad-4b58-6af54056d9a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Dirk"@nl ;
+            pnv:literalName "Dirk Dirksz"@nl ;
+            pnv:patronym "Dirksz"@nl ] ;
+    sdo:givenName "Dirk"@nl ;
+    sdo:name "Dirk Dirksz"@nl .
+
+<https://ex.org/Person:371dbc62-f5d7-94eb-d15e-31cbf000f218> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:ece1ce8d-e5e4-83ad-4b58-6af54056d9a1> ;
+    sdo:children <https://ex.org/Person:848f99de-b27d-9a93-3e0c-8225cbbd2785> ;
+    sdo:familyName "Schrijver"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jan"@nl ;
+    sdo:name "Jan Schrijver"@nl ;
+    sdo:spouse <https://ex.org/Person:39d388a9-8d3e-8012-07c4-bc36893eef23> .
+
+<https://ex.org/Person:39d388a9-8d3e-8012-07c4-bc36893eef23> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:ece1ce8d-e5e4-83ad-4b58-6af54056d9a1> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Anna"@nl ;
+            pnv:literalName "Anna Dirks"@nl ;
+            pnv:patronym "Dirks"@nl ] ;
+    sdo:children <https://ex.org/Person:848f99de-b27d-9a93-3e0c-8225cbbd2785> ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Anna"@nl ;
+    sdo:name "Anna Dirks"@nl ;
+    sdo:spouse <https://ex.org/Person:371dbc62-f5d7-94eb-d15e-31cbf000f218> .
+
+<https://ex.org/Person:848f99de-b27d-9a93-3e0c-8225cbbd2785> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:ece1ce8d-e5e4-83ad-4b58-6af54056d9a1> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 30-08-1711"@nl ;
+    sdo:familyName "Schrijver"@nl ;
+    sdo:givenName "Joannes"@nl ;
+    sdo:name "Joannes Schrijver"@nl ;
+    sdo:parent <https://ex.org/Person:371dbc62-f5d7-94eb-d15e-31cbf000f218>,
+        <https://ex.org/Person:39d388a9-8d3e-8012-07c4-bc36893eef23> .
+
+<https://ex.org/Source:ece1ce8d-e5e4-83ad-4b58-6af54056d9a1> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/9a3f3b70-b0b9-4a4b-b122-d1e9fd2c2474/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/ece1ce8d-e5e4-83ad-4b58-6af54056d9a1"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/9a3f3b70-b0b9-4a4b-b122-d1e9fd2c2474/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1711-08-30"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1707-1740"@nl,
+        "267"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 30-08-1711<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/267\">Inventarisnummer 267 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 267, Periode: 1..., (toegangsnr. 1004), inv.nr. 267, Doopboek van de Loots- of Oosterkerk (NH) te Leiden, 4 juli 1707 - 18 september 1740., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/ece1ce8d-e5e4-83ad-4b58-6af54056d9a1"^^xsd:anyURI .
+

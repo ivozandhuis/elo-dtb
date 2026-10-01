@@ -1,0 +1,92 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:8752732c-3304-7cc1-6b00-13e8a4b4d40e> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:99bc38a8-0047-b11c-4097-076cff5f79a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Jean"@nl ;
+            pnv:literalName "Jean Paul"@nl ;
+            pnv:patronym "Paul"@nl ] ;
+    sdo:givenName "Jean"@nl ;
+    sdo:name "Jean Paul"@nl .
+
+<https://ex.org/Person:ba1f6578-4cdc-5da3-fbda-9e5cf613182e> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:99bc38a8-0047-b11c-4097-076cff5f79a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Jeane"@nl ;
+            pnv:literalName "Jeane Jansen"@nl ;
+            pnv:patronym "Jansen"@nl ] ;
+    sdo:givenName "Jeane"@nl ;
+    sdo:name "Jeane Jansen"@nl .
+
+<https://ex.org/Person:d0f15703-9537-af64-ee59-4fb9f2c06c55> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:99bc38a8-0047-b11c-4097-076cff5f79a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Jean"@nl ;
+            pnv:literalName "Jean Pieter"@nl ;
+            pnv:patronym "Pieter"@nl ] ;
+    sdo:givenName "Jean"@nl ;
+    sdo:name "Jean Pieter"@nl .
+
+<https://ex.org/Person:f196024c-9495-cc76-d35e-cb44f8ab2bdf> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:99bc38a8-0047-b11c-4097-076cff5f79a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Jeane"@nl ;
+            pnv:literalName "Jeane Bauduin"@nl ;
+            pnv:patronym "Bauduin"@nl ] ;
+    sdo:givenName "Jeane"@nl ;
+    sdo:name "Jeane Bauduin"@nl .
+
+<https://ex.org/Person:0b70f5e0-9e49-1ab6-b636-1627b7448672> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:99bc38a8-0047-b11c-4097-076cff5f79a1> ;
+    sdo:children <https://ex.org/Person:31ff52ea-e6d0-73df-1636-1fb52b7100b0> ;
+    sdo:familyName "Chalar"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Moyse"@nl ;
+    sdo:name "Moyse Chalar"@nl ;
+    sdo:spouse <https://ex.org/Person:288236d5-52af-f885-9281-7a0865c1033d> .
+
+<https://ex.org/Person:288236d5-52af-f885-9281-7a0865c1033d> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:99bc38a8-0047-b11c-4097-076cff5f79a1> ;
+    sdo:children <https://ex.org/Person:31ff52ea-e6d0-73df-1636-1fb52b7100b0> ;
+    sdo:familyName "Penquen"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Marie"@nl ;
+    sdo:name "Marie Penquen"@nl ;
+    sdo:spouse <https://ex.org/Person:0b70f5e0-9e49-1ab6-b636-1627b7448672> .
+
+<https://ex.org/Person:31ff52ea-e6d0-73df-1636-1fb52b7100b0> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:99bc38a8-0047-b11c-4097-076cff5f79a1> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 24-11-1658"@nl ;
+    sdo:familyName "Chalar"@nl ;
+    sdo:givenName "Pierre"@nl ;
+    sdo:name "Pierre Chalar"@nl ;
+    sdo:parent <https://ex.org/Person:0b70f5e0-9e49-1ab6-b636-1627b7448672>,
+        <https://ex.org/Person:288236d5-52af-f885-9281-7a0865c1033d> .
+
+<https://ex.org/Source:99bc38a8-0047-b11c-4097-076cff5f79a1> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/b9d64c71-3bb1-4fc0-aebb-d85ac6ee0134/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/99bc38a8-0047-b11c-4097-076cff5f79a1"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/b9d64c71-3bb1-4fc0-aebb-d85ac6ee0134/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1658-11-24"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1655-1669"@nl,
+        "273"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 24-11-1658<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/273\">Inventarisnummer 273 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 273, Periode: 1..., (toegangsnr. 1004), inv.nr. 273, Doopboek van de Vrouwekerk (Waals, NH) te Leiden, 2 mei 1655 - 1669., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/99bc38a8-0047-b11c-4097-076cff5f79a1"^^xsd:anyURI .
+

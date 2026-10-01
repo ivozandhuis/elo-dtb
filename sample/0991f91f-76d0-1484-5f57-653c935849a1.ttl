@@ -1,0 +1,57 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:0a86960e-b002-7921-bab5-39ddd8c557d2> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:0991f91f-76d0-1484-5f57-653c935849a1> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Warbout"@nl ;
+            pnv:literalName "Warbout Janse"@nl ;
+            pnv:patronym "Janse"@nl ] ;
+    sdo:children <https://ex.org/Person:4fbd4e50-2eba-62d5-7f95-dff82693c984> ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Warbout"@nl ;
+    sdo:name "Warbout Janse"@nl ;
+    sdo:spouse <https://ex.org/Person:e72e3a4f-6c8d-923e-2a55-05c89d3df6b4> .
+
+<https://ex.org/Person:4fbd4e50-2eba-62d5-7f95-dff82693c984> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:0991f91f-76d0-1484-5f57-653c935849a1> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 13-09-1684"@nl ;
+    sdo:givenName "Jeroen"@nl ;
+    sdo:name "Jeroen"@nl ;
+    sdo:parent <https://ex.org/Person:0a86960e-b002-7921-bab5-39ddd8c557d2>,
+        <https://ex.org/Person:e72e3a4f-6c8d-923e-2a55-05c89d3df6b4> .
+
+<https://ex.org/Person:e72e3a4f-6c8d-923e-2a55-05c89d3df6b4> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:0991f91f-76d0-1484-5f57-653c935849a1> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Neeltie"@nl ;
+            pnv:literalName "Neeltie Jeroens"@nl ;
+            pnv:patronym "Jeroens"@nl ] ;
+    sdo:children <https://ex.org/Person:4fbd4e50-2eba-62d5-7f95-dff82693c984> ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Neeltie"@nl ;
+    sdo:name "Neeltie Jeroens"@nl ;
+    sdo:spouse <https://ex.org/Person:0a86960e-b002-7921-bab5-39ddd8c557d2> .
+
+<https://ex.org/Source:0991f91f-76d0-1484-5f57-653c935849a1> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/702ca6be-da1e-4eed-b916-5f0c0543787a/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/0991f91f-76d0-1484-5f57-653c935849a1"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/702ca6be-da1e-4eed-b916-5f0c0543787a/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1684-09-13"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1678-1733"@nl,
+        "7"@nl,
+        "Doop-, Trouw- en Begraafregisters (retroacta B.S.) Noordwijk"@nl,
+        "Doopdatum: 13-09-1684<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/0910/file/7\">Inventarisnummer 7 van archiefnummer 0910 in Archieven</a>"@nl ;
+    sdo:locationCreated "Noordwijk"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, Trouw- en Begraafregisters (retroacta B.S.) Noordwijk, Deel: 7, Periode: 1678..., (toegangsnr. 0910), inv.nr. 7, Doopboek en trouwboek (RK) van Noordwijk-Binnen en Noordwijk aan Zee, 1678-1733., 53, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/0991f91f-76d0-1484-5f57-653c935849a1"^^xsd:anyURI .
+

@@ -1,0 +1,73 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:04e7ffee-8cce-61b6-74c6-f8800978454a> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:8dab5030-19d9-e54a-266d-5990bc312c35> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Kock"@nl ;
+            pnv:givenName "Gerritje"@nl ;
+            pnv:literalName "Gerritje de Kock"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:description "getuige van de bruidegom"@nl ;
+    sdo:familyName "de Kock"@nl ;
+    sdo:givenName "Gerritje"@nl ;
+    sdo:name "Gerritje de Kock"@nl .
+
+<https://ex.org/Person:f4cc1d8f-7fa0-535a-3efd-b9986eb050ab> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:8dab5030-19d9-e54a-266d-5990bc312c35> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Sys"@nl ;
+            pnv:givenName "Cornelia"@nl ;
+            pnv:literalName "Cornelia van der Sys"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:description "getuige van de bruidegom"@nl ;
+    sdo:familyName "van der Sys"@nl ;
+    sdo:givenName "Cornelia"@nl ;
+    sdo:name "Cornelia van der Sys"@nl .
+
+<https://ex.org/Person:367ff8d0-10be-acfb-f568-fa8a710d3bc3> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:8dab5030-19d9-e54a-266d-5990bc312c35> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Moo"@nl ;
+            pnv:givenName "Ruth"@nl ;
+            pnv:literalName "Ruth Dircksen van Moo"@nl ;
+            pnv:patronym "Dircksen"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:familyName "van Moo"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Ruth"@nl ;
+    sdo:name "Ruth Dircksen van Moo"@nl ;
+    sdo:spouse <https://ex.org/Person:78e8b11c-a846-005b-351d-a6542e48f725> .
+
+<https://ex.org/Person:78e8b11c-a846-005b-351d-a6542e48f725> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:8dab5030-19d9-e54a-266d-5990bc312c35> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:familyName "Backers"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Geertruyd"@nl ;
+    sdo:name "Geertruyd Backers"@nl ;
+    sdo:spouse <https://ex.org/Person:367ff8d0-10be-acfb-f568-fa8a710d3bc3> .
+
+<https://ex.org/Source:8dab5030-19d9-e54a-266d-5990bc312c35> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/257511dc-2d8b-4239-8a52-0a2c92f8cdbb/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/8dab5030-19d9-e54a-266d-5990bc312c35"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/257511dc-2d8b-4239-8a52-0a2c92f8cdbb/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1670-1802"@nl,
+        "295"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Statie: Jorissteeg<br>Datum trouwen: 02-06-1685<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/295\">Inventarisnummer 295 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 295, Periode: 1..., (toegangsnr. 1004), inv.nr. 295, Doopboek en trouwboek van de kerk aan de St. Jorissteeg (RK) te Leiden, 1670 - 1802, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/8dab5030-19d9-e54a-266d-5990bc312c35"^^xsd:anyURI .
+

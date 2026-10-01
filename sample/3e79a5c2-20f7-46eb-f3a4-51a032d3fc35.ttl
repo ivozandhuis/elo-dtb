@@ -1,0 +1,71 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:3a867557-3d0d-443c-7a09-ec44d0e16a0e> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:3e79a5c2-20f7-46eb-f3a4-51a032d3fc35> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Trijntge"@nl ;
+            pnv:literalName "Trijntge Jans"@nl ;
+            pnv:patronym "Jans"@nl ] ;
+    sdo:description "getuige van de bruid, relatie tot de bruid: moei"@nl ;
+    sdo:givenName "Trijntge"@nl ;
+    sdo:name "Trijntge Jans"@nl .
+
+<https://ex.org/Person:72c4e35b-07d7-eb54-9c32-47538d1b7312> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:3e79a5c2-20f7-46eb-f3a4-51a032d3fc35> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Maerten"@nl ;
+            pnv:literalName "Maerten Gerritsz"@nl ;
+            pnv:patronym "Gerritsz"@nl ] ;
+    sdo:description "getuige van de bruidegom, relatie tot de bruidegom: stiefvader"@nl ;
+    sdo:givenName "Maerten"@nl ;
+    sdo:name "Maerten Gerritsz"@nl .
+
+<https://ex.org/Person:8569a68a-5017-5df8-928f-fcda7129659e> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:3e79a5c2-20f7-46eb-f3a4-51a032d3fc35> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Maertgen"@nl ;
+            pnv:literalName "Maertgen Louweris"@nl ;
+            pnv:patronym "Louweris"@nl ] ;
+    sdo:birthPlace "Leyden"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Maertgen"@nl ;
+    sdo:name "Maertgen Louweris"@nl ;
+    sdo:spouse <https://ex.org/Person:dda146c8-bef8-060b-7ee0-490da0ba65b5> .
+
+<https://ex.org/Person:dda146c8-bef8-060b-7ee0-490da0ba65b5> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:3e79a5c2-20f7-46eb-f3a4-51a032d3fc35> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Kors"@nl ;
+            pnv:literalName "Kors Jacobsz"@nl ;
+            pnv:patronym "Jacobsz"@nl ] ;
+    sdo:birthPlace "Voorhout"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Kors"@nl ;
+    sdo:name "Kors Jacobsz"@nl ;
+    sdo:spouse <https://ex.org/Person:8569a68a-5017-5df8-928f-fcda7129659e> .
+
+<https://ex.org/Source:3e79a5c2-20f7-46eb-f3a4-51a032d3fc35> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/7444a7e6-f6ba-4e4b-81c2-9471b1102597/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/3e79a5c2-20f7-46eb-f3a4-51a032d3fc35"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/7444a7e6-f6ba-4e4b-81c2-9471b1102597/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1592-1611"@nl,
+        "197"@nl,
+        "Datum trouwen: 12-04-1594<br>Datum ondertrouw: 26-01-1594<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/197\">Inventarisnummer 197 van archiefnummer 1004 in Archieven</a>"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 197, Periode: 1..., (toegangsnr. 1004), inv.nr. 197, A. Ondertrouwboek en trouwboek voor schepenen van Leiden, 1592 - juni 1611., 15v, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/3e79a5c2-20f7-46eb-f3a4-51a032d3fc35"^^xsd:anyURI .
+

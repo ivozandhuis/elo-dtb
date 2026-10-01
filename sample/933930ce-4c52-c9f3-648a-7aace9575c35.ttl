@@ -1,0 +1,59 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:62068ee4-1745-d564-0ca0-76c646926a94> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:933930ce-4c52-c9f3-648a-7aace9575c35> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Roosenbergh"@nl ;
+    sdo:givenName "Adriana"@nl ;
+    sdo:name "Adriana Roosenbergh"@nl .
+
+<https://ex.org/Person:653a90ca-9bd1-b023-3b6e-4698161c9c89> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:933930ce-4c52-c9f3-648a-7aace9575c35> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Elisabeth"@nl ;
+            pnv:literalName "Elisabeth Noldes"@nl ;
+            pnv:patronym "Noldes"@nl ] ;
+    sdo:givenName "Elisabeth"@nl ;
+    sdo:name "Elisabeth Noldes"@nl .
+
+<https://ex.org/Person:a20edeaa-e23e-c89f-95e9-53640f520793> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:933930ce-4c52-c9f3-648a-7aace9575c35> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:familyName "Screus"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Christina"@nl ;
+    sdo:name "Christina Screus"@nl ;
+    sdo:spouse <https://ex.org/Person:a5581dde-2292-9136-9f21-db9852b4b02f> .
+
+<https://ex.org/Person:a5581dde-2292-9136-9f21-db9852b4b02f> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:933930ce-4c52-c9f3-648a-7aace9575c35> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:familyName "Lerrie"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Petrus"@nl ;
+    sdo:name "Petrus Lerrie"@nl ;
+    sdo:spouse <https://ex.org/Person:a20edeaa-e23e-c89f-95e9-53640f520793> .
+
+<https://ex.org/Source:933930ce-4c52-c9f3-648a-7aace9575c35> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/6cf834fb-a34a-4e16-bd1c-6a3f5e7c3a5b/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/933930ce-4c52-c9f3-648a-7aace9575c35"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/6cf834fb-a34a-4e16-bd1c-6a3f5e7c3a5b/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1705-1757"@nl,
+        "293"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        """Zie:  Schepenhuwelijken Arch.1004 Inv. 204 blad H-229
+Pieter Lourije X Christina Schreus<br>Datum trouwen: 14-05-1712<br/><br/><a href="/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/293">Inventarisnummer 293 van archiefnummer 1004 in Archieven</a>"""@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 293, Periode: 1..., (toegangsnr. 1004), inv.nr. 293, Doopboek en trouwboek van de kerk aan de Bakkersteeg (RK) te Leiden, 1705 - 1757., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/933930ce-4c52-c9f3-648a-7aace9575c35"^^xsd:anyURI .
+

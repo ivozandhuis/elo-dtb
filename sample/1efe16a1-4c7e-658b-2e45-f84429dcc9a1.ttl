@@ -1,0 +1,88 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:4a964d5a-f041-5299-fe7c-6113fbf5ddb1> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:1efe16a1-4c7e-658b-2e45-f84429dcc9a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Meershoek"@nl ;
+    sdo:givenName "Dirk"@nl ;
+    sdo:name "Dirk Meershoek"@nl .
+
+<https://ex.org/Person:67281094-541b-8818-b194-44f88b069355> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:1efe16a1-4c7e-658b-2e45-f84429dcc9a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Roo"@nl ;
+            pnv:givenName "Sarah"@nl ;
+            pnv:literalName "Sarah de Roo"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:familyName "de Roo"@nl ;
+    sdo:givenName "Sarah"@nl ;
+    sdo:name "Sarah de Roo"@nl .
+
+<https://ex.org/Person:6851017c-5cd8-9367-282c-6cf7166fd264> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:1efe16a1-4c7e-658b-2e45-f84429dcc9a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Tombe"@nl ;
+            pnv:givenName "Geraard"@nl ;
+            pnv:literalName "Geraard del Tombe"@nl ;
+            pnv:surnamePrefix "del"@nl ] ;
+    sdo:familyName "del Tombe"@nl ;
+    sdo:givenName "Geraard"@nl ;
+    sdo:name "Geraard del Tombe"@nl .
+
+<https://ex.org/Person:084ef201-6ddb-ac08-2b42-987fc980b2fa> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:1efe16a1-4c7e-658b-2e45-f84429dcc9a1> ;
+    sdo:children <https://ex.org/Person:8c3719c8-1738-cbe7-7c57-a7319c128e3a> ;
+    sdo:familyName "Johnson"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Isaak"@nl ;
+    sdo:name "Isaak Johnson"@nl ;
+    sdo:spouse <https://ex.org/Person:9cc166fc-44b9-2a0e-230f-fe1babcc8364> .
+
+<https://ex.org/Person:8c3719c8-1738-cbe7-7c57-a7319c128e3a> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:1efe16a1-4c7e-658b-2e45-f84429dcc9a1> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 04-04-1688"@nl ;
+    sdo:familyName "Johnson"@nl ;
+    sdo:givenName "Thomas"@nl ;
+    sdo:name "Thomas Johnson"@nl ;
+    sdo:parent <https://ex.org/Person:084ef201-6ddb-ac08-2b42-987fc980b2fa>,
+        <https://ex.org/Person:9cc166fc-44b9-2a0e-230f-fe1babcc8364> .
+
+<https://ex.org/Person:9cc166fc-44b9-2a0e-230f-fe1babcc8364> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:1efe16a1-4c7e-658b-2e45-f84429dcc9a1> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Tombe"@nl ;
+            pnv:givenName "Esther"@nl ;
+            pnv:literalName "Esther del Tombe"@nl ;
+            pnv:surnamePrefix "del"@nl ] ;
+    sdo:children <https://ex.org/Person:8c3719c8-1738-cbe7-7c57-a7319c128e3a> ;
+    sdo:familyName "del Tombe"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Esther"@nl ;
+    sdo:name "Esther del Tombe"@nl ;
+    sdo:spouse <https://ex.org/Person:084ef201-6ddb-ac08-2b42-987fc980b2fa> .
+
+<https://ex.org/Source:1efe16a1-4c7e-658b-2e45-f84429dcc9a1> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/95010e7a-e05d-4f49-9b81-4a17d278a0f9/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/1efe16a1-4c7e-658b-2e45-f84429dcc9a1"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/95010e7a-e05d-4f49-9b81-4a17d278a0f9/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1688-04-04"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1684-1700"@nl,
+        "260"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 04-04-1688<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/260\">Inventarisnummer 260 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 260, Periode: 1..., (toegangsnr. 1004), inv.nr. 260, Doopboek van de Nieuwe- of Marekerk (NH) te Leiden, 3 december 1684 - 1700., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/1efe16a1-4c7e-658b-2e45-f84429dcc9a1"^^xsd:anyURI .
+

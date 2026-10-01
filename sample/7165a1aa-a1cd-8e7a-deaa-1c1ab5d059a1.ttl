@@ -1,0 +1,58 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:95ee7730-a94c-3dc6-7f6c-f6c6efb1e830> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:7165a1aa-a1cd-8e7a-deaa-1c1ab5d059a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Schroef"@nl ;
+    sdo:givenName "Pieternella"@nl ;
+    sdo:name "Pieternella Schroef"@nl .
+
+<https://ex.org/Person:262311c4-e7f4-efb1-d8ba-0ad8dffa9eda> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:7165a1aa-a1cd-8e7a-deaa-1c1ab5d059a1> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 11-10-1795"@nl ;
+    sdo:familyName "Haseveld"@nl ;
+    sdo:givenName "Willem Frederik"@nl ;
+    sdo:name "Willem Frederik Haseveld"@nl ;
+    sdo:parent <https://ex.org/Person:837c16db-1b12-683b-ec7d-e07dfd7fec18>,
+        <https://ex.org/Person:cc63bad4-9593-07f3-c580-7a5802f93d5c> .
+
+<https://ex.org/Person:837c16db-1b12-683b-ec7d-e07dfd7fec18> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:7165a1aa-a1cd-8e7a-deaa-1c1ab5d059a1> ;
+    sdo:children <https://ex.org/Person:262311c4-e7f4-efb1-d8ba-0ad8dffa9eda> ;
+    sdo:familyName "Haseveld"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Dirk"@nl ;
+    sdo:name "Dirk Haseveld"@nl ;
+    sdo:spouse <https://ex.org/Person:cc63bad4-9593-07f3-c580-7a5802f93d5c> .
+
+<https://ex.org/Person:cc63bad4-9593-07f3-c580-7a5802f93d5c> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:7165a1aa-a1cd-8e7a-deaa-1c1ab5d059a1> ;
+    sdo:children <https://ex.org/Person:262311c4-e7f4-efb1-d8ba-0ad8dffa9eda> ;
+    sdo:familyName "Wingers"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Rachel"@nl ;
+    sdo:name "Rachel Wingers"@nl ;
+    sdo:spouse <https://ex.org/Person:837c16db-1b12-683b-ec7d-e07dfd7fec18> .
+
+<https://ex.org/Source:7165a1aa-a1cd-8e7a-deaa-1c1ab5d059a1> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/3f0a3e9a-c239-42b4-b0b4-ba1c0f8c9ee7/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/7165a1aa-a1cd-8e7a-deaa-1c1ab5d059a1"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/3f0a3e9a-c239-42b4-b0b4-ba1c0f8c9ee7/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1795-10-11"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1789-1796"@nl,
+        "255"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 11-10-1795<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/255\">Inventarisnummer 255 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 255, Periode: 1..., (toegangsnr. 1004), inv.nr. 255, Doopboek van de Hooglandse Kerk (NH) te Leiden, 1 oktober 1789 - 30 juni 1796., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/7165a1aa-a1cd-8e7a-deaa-1c1ab5d059a1"^^xsd:anyURI .
+

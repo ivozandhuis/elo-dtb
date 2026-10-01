@@ -1,0 +1,74 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:2dc9b8ff-8d10-8bf2-2af3-9f680117ef29> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:bc1ba5fd-7229-cac4-66e2-d0bcd2ac1bee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Anneken"@nl ;
+            pnv:literalName "Anneken Joosten"@nl ;
+            pnv:patronym "Joosten"@nl ] ;
+    sdo:givenName "Anneken"@nl ;
+    sdo:name "Anneken Joosten"@nl .
+
+<https://ex.org/Person:e87578b0-ce8e-1488-0e2a-447241b5ccf2> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:bc1ba5fd-7229-cac4-66e2-d0bcd2ac1bee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Christiaen"@nl ;
+            pnv:literalName "Christiaen Hendrickxsz"@nl ;
+            pnv:patronym "Hendrickxsz"@nl ] ;
+    sdo:givenName "Christiaen"@nl ;
+    sdo:name "Christiaen Hendrickxsz"@nl .
+
+<https://ex.org/Person:2096a0a8-a2c5-0aa8-b981-09012fa6025e> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:bc1ba5fd-7229-cac4-66e2-d0bcd2ac1bee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Herman"@nl ;
+            pnv:literalName "Herman Lambertsz"@nl ;
+            pnv:patronym "Lambertsz"@nl ] ;
+    sdo:children <https://ex.org/Person:20d14f76-0f68-0335-9eec-71a12600ea97> ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Herman"@nl ;
+    sdo:name "Herman Lambertsz"@nl ;
+    sdo:spouse <https://ex.org/Person:55f611e9-e91a-5871-37a0-ef6e3a2f55f7> .
+
+<https://ex.org/Person:20d14f76-0f68-0335-9eec-71a12600ea97> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:bc1ba5fd-7229-cac4-66e2-d0bcd2ac1bee> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 24-09-1651"@nl ;
+    sdo:givenName "Johannes"@nl ;
+    sdo:name "Johannes"@nl ;
+    sdo:parent <https://ex.org/Person:2096a0a8-a2c5-0aa8-b981-09012fa6025e>,
+        <https://ex.org/Person:55f611e9-e91a-5871-37a0-ef6e3a2f55f7> .
+
+<https://ex.org/Person:55f611e9-e91a-5871-37a0-ef6e3a2f55f7> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:bc1ba5fd-7229-cac4-66e2-d0bcd2ac1bee> ;
+    sdo:children <https://ex.org/Person:20d14f76-0f68-0335-9eec-71a12600ea97> ;
+    sdo:familyName "Mefaut"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Anna"@nl ;
+    sdo:name "Anna Mefaut"@nl ;
+    sdo:spouse <https://ex.org/Person:2096a0a8-a2c5-0aa8-b981-09012fa6025e> .
+
+<https://ex.org/Source:bc1ba5fd-7229-cac4-66e2-d0bcd2ac1bee> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/371d6c69-02bf-402d-b3c0-b739d15e2d99/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/bc1ba5fd-7229-cac4-66e2-d0bcd2ac1bee"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/371d6c69-02bf-402d-b3c0-b739d15e2d99/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1651-09-24"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1644-1652"@nl,
+        "235"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 24-09-1651<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/235\">Inventarisnummer 235 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 235, Periode: 1..., (toegangsnr. 1004), inv.nr. 235, Doopboek van de Hooglandse Kerk (NH) te Leiden, 11 december 1644 - 11 augustus 1652., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/bc1ba5fd-7229-cac4-66e2-d0bcd2ac1bee"^^xsd:anyURI .
+

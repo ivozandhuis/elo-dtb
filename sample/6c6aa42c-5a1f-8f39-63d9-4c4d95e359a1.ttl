@@ -1,0 +1,78 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:b36c164d-7b78-0b39-d297-31b75a43bac4> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:6c6aa42c-5a1f-8f39-63d9-4c4d95e359a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Koster"@nl ;
+    sdo:givenName "Sijmetje"@nl ;
+    sdo:name "Sijmetje Koster"@nl .
+
+<https://ex.org/Person:da42d22e-dd71-bf06-f806-336164399883> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:6c6aa42c-5a1f-8f39-63d9-4c4d95e359a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Slingeland"@nl ;
+            pnv:givenName "Gerrit"@nl ;
+            pnv:literalName "Gerrit van Slingeland"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:familyName "van Slingeland"@nl ;
+    sdo:givenName "Gerrit"@nl ;
+    sdo:name "Gerrit van Slingeland"@nl .
+
+<https://ex.org/Person:812940e6-beb0-e8a1-605d-8404d38f02a0> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:6c6aa42c-5a1f-8f39-63d9-4c4d95e359a1> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Slingeland"@nl ;
+            pnv:givenName "Dirkje"@nl ;
+            pnv:literalName "Dirkje Jacob van Slingeland"@nl ;
+            pnv:patronym "Jacob"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:children <https://ex.org/Person:c1a4ac9e-e46d-aee0-1397-0e6d165e9c6d> ;
+    sdo:familyName "van Slingeland"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Dirkje"@nl ;
+    sdo:name "Dirkje Jacob van Slingeland"@nl ;
+    sdo:spouse <https://ex.org/Person:b8769721-b4ac-b000-b103-85184e0fd6db> .
+
+<https://ex.org/Person:b8769721-b4ac-b000-b103-85184e0fd6db> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:6c6aa42c-5a1f-8f39-63d9-4c4d95e359a1> ;
+    sdo:children <https://ex.org/Person:c1a4ac9e-e46d-aee0-1397-0e6d165e9c6d> ;
+    sdo:description "Alias: Kerklaan"@nl ;
+    sdo:familyName "Berk"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jan"@nl ;
+    sdo:name "Jan Berk"@nl ;
+    sdo:spouse <https://ex.org/Person:812940e6-beb0-e8a1-605d-8404d38f02a0> .
+
+<https://ex.org/Person:c1a4ac9e-e46d-aee0-1397-0e6d165e9c6d> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:6c6aa42c-5a1f-8f39-63d9-4c4d95e359a1> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 14-01-1799"@nl ;
+    sdo:familyName "Berk"@nl ;
+    sdo:givenName "Pieter"@nl ;
+    sdo:name "Pieter Berk"@nl ;
+    sdo:parent <https://ex.org/Person:812940e6-beb0-e8a1-605d-8404d38f02a0>,
+        <https://ex.org/Person:b8769721-b4ac-b000-b103-85184e0fd6db> .
+
+<https://ex.org/Source:6c6aa42c-5a1f-8f39-63d9-4c4d95e359a1> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/f70df16b-a551-4fc0-87b5-c33553168296/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/6c6aa42c-5a1f-8f39-63d9-4c4d95e359a1"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/f70df16b-a551-4fc0-87b5-c33553168296/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1799-01-14"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1034"@nl,
+        "1777-1812"@nl,
+        "Gemeentebestuur van Zoeterwoude (tot 1803: de Municipaliteit) (1734-1960)"@nl,
+        "Op Zoeterwoude 't Watertje<br>Doopdatum: 14-01-1799<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/0500B/file/1034\">Inventarisnummer 1034 van archiefnummer 0500B in Archieven</a>"@nl ;
+    sdo:locationCreated "Zoeterwoude"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Gemeentebestuur van Zoeterwoude (tot 1803: de Municipaliteit) (1734-1960), Deel: 103..., (toegangsnr. 0500B), inv.nr. 1034, Doopboek en trouwboek van de parochie van St. Jans's Onthoofding (RK) van Zoeterwoude, 1777-1812, 47, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/6c6aa42c-5a1f-8f39-63d9-4c4d95e359a1"^^xsd:anyURI .
+

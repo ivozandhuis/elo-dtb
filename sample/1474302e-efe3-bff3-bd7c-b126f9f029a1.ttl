@@ -1,0 +1,76 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:737a5ad8-af37-8e6f-587b-52360e184b6f> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:1474302e-efe3-bff3-bd7c-b126f9f029a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Broomans"@nl ;
+    sdo:givenName "Trijntje"@nl ;
+    sdo:name "Trijntje Broomans"@nl .
+
+<https://ex.org/Person:c696d156-ef3d-482a-48ee-87f9fe30783f> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:1474302e-efe3-bff3-bd7c-b126f9f029a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Boom"@nl ;
+    sdo:givenName "Jan"@nl ;
+    sdo:name "Jan Boom"@nl .
+
+<https://ex.org/Person:3a4e5b6f-a299-31db-07d4-75dea3d363c5> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:1474302e-efe3-bff3-bd7c-b126f9f029a1> ;
+    sdo:children <https://ex.org/Person:3f2b7b93-7aca-368f-8ef0-6c97e76bcc11> ;
+    sdo:familyName "Boom"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Marijtje"@nl ;
+    sdo:name "Marijtje Boom"@nl ;
+    sdo:spouse <https://ex.org/Person:88e6c77e-a550-5a9d-48cc-3d2016b2461b> .
+
+<https://ex.org/Person:3f2b7b93-7aca-368f-8ef0-6c97e76bcc11> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:1474302e-efe3-bff3-bd7c-b126f9f029a1> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Roo"@nl ;
+            pnv:givenName "Marijtje"@nl ;
+            pnv:literalName "Marijtje de Roo"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:description "Doopdatum: 23-01-1737"@nl ;
+    sdo:familyName "de Roo"@nl ;
+    sdo:givenName "Marijtje"@nl ;
+    sdo:name "Marijtje de Roo"@nl ;
+    sdo:parent <https://ex.org/Person:3a4e5b6f-a299-31db-07d4-75dea3d363c5>,
+        <https://ex.org/Person:88e6c77e-a550-5a9d-48cc-3d2016b2461b> .
+
+<https://ex.org/Person:88e6c77e-a550-5a9d-48cc-3d2016b2461b> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:1474302e-efe3-bff3-bd7c-b126f9f029a1> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Roo"@nl ;
+            pnv:givenName "Willem"@nl ;
+            pnv:literalName "Willem de Roo"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:children <https://ex.org/Person:3f2b7b93-7aca-368f-8ef0-6c97e76bcc11> ;
+    sdo:familyName "de Roo"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Willem"@nl ;
+    sdo:name "Willem de Roo"@nl ;
+    sdo:spouse <https://ex.org/Person:3a4e5b6f-a299-31db-07d4-75dea3d363c5> .
+
+<https://ex.org/Source:1474302e-efe3-bff3-bd7c-b126f9f029a1> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/8abffbc9-7664-40aa-bc78-73c7a8427473/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/1474302e-efe3-bff3-bd7c-b126f9f029a1"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/8abffbc9-7664-40aa-bc78-73c7a8427473/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1737-01-23"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1725-1740"@nl,
+        "228"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 23-01-1737<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/228\">Inventarisnummer 228 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 228, Periode: 1..., (toegangsnr. 1004), inv.nr. 228, Doopboek van de Pieterskerk (NH) te Leiden, 1725 - 1740., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/1474302e-efe3-bff3-bd7c-b126f9f029a1"^^xsd:anyURI .
+

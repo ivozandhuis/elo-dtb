@@ -1,0 +1,53 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:10449e06-9f77-70d0-ba82-8a8d466809f7> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:d39d6a0c-4c02-21f2-c88b-115b680fabee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Maertgen"@nl ;
+            pnv:literalName "Maertgen Willemsdr"@nl ;
+            pnv:patronym "Willemsdr"@nl ] ;
+    sdo:givenName "Maertgen"@nl ;
+    sdo:name "Maertgen Willemsdr"@nl .
+
+<https://ex.org/Person:21ee7348-b78d-5db3-f4c2-7870a298cae5> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:d39d6a0c-4c02-21f2-c88b-115b680fabee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Willem"@nl ;
+            pnv:literalName "Willem Willemsz"@nl ;
+            pnv:patronym "Willemsz"@nl ] ;
+    sdo:children <https://ex.org/Person:65c6f052-a8c2-bb63-39fa-09997253b8f0> ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Willem"@nl ;
+    sdo:name "Willem Willemsz"@nl .
+
+<https://ex.org/Person:65c6f052-a8c2-bb63-39fa-09997253b8f0> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:d39d6a0c-4c02-21f2-c88b-115b680fabee> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 26-05-1648"@nl ;
+    sdo:givenName "Maria"@nl ;
+    sdo:name "Maria"@nl ;
+    sdo:parent <https://ex.org/Person:21ee7348-b78d-5db3-f4c2-7870a298cae5> .
+
+<https://ex.org/Source:d39d6a0c-4c02-21f2-c88b-115b680fabee> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/ac5f6135-f22f-47b3-84f9-dc6c29d94a5f/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/d39d6a0c-4c02-21f2-c88b-115b680fabee"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/ac5f6135-f22f-47b3-84f9-dc6c29d94a5f/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1648-05-26"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1644-1652"@nl,
+        "235"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 26-05-1648<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/235\">Inventarisnummer 235 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 235, Periode: 1..., (toegangsnr. 1004), inv.nr. 235, Doopboek van de Hooglandse Kerk (NH) te Leiden, 11 december 1644 - 11 augustus 1652., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/d39d6a0c-4c02-21f2-c88b-115b680fabee"^^xsd:anyURI .
+
