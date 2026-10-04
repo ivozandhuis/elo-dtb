@@ -18,6 +18,29 @@ for subdir in dopen_sample:
 
         g = Graph()
         g.parse(src_file, format="xml")
+
+        # run all sparql-CONSTRUCT queries from directory ../additions/rq/improvements/dtb_dopen
+        # and add the result to graph 'g'
+        rq_dir = Path("../additions/rq/improvements/dtb_dopen")
+        for rq_file in sorted(rq_dir.glob("*.rq")):
+            # read SPARQL CONSTRUCT query
+            query = rq_file.read_text(encoding="utf-8")
+
+            # remove all lines containing qlever specific properties with the prefix "ql:"
+            query = "\n".join(
+                line for line in query.splitlines() if "ql:" not in line
+            )
+
+            # execute query
+            result = g.query(query)
+
+            # add result
+            constructed = list(result)
+            for triple in constructed:
+                g.add(triple)
+
+            print(f"  {rq_file.name}: added {len(constructed)} triples")
+
         g.serialize(destination=out_file)
 
         print("written: " + str(out_file))
@@ -34,6 +57,29 @@ for subdir in trouwen_sample:
 
         g = Graph()
         g.parse(src_file, format="xml")
+
+        # run all sparql-CONSTRUCT queries from directory ../additions/rq/improvements/dtb_trouwen
+        # and add the result to graph 'g'
+        rq_dir = Path("../additions/rq/improvements/dtb_trouwen")
+        for rq_file in sorted(rq_dir.glob("*.rq")):
+            # read SPARQL CONSTRUCT query
+            query = rq_file.read_text(encoding="utf-8")
+
+            # remove all lines containing qlever specific properties with the prefix "ql:"
+            query = "\n".join(
+                line for line in query.splitlines() if "ql:" not in line
+            )
+
+            # execute query
+            result = g.query(query)
+
+            # add result
+            constructed = list(result)
+            for triple in constructed:
+                g.add(triple)
+
+            print(f"  {rq_file.name}: added {len(constructed)} triples")
+
         g.serialize(destination=out_file)
 
         print("written: " + str(out_file))

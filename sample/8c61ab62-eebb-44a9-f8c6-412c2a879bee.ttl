@@ -5,6 +5,11 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:8c61ab62-eebb-44a9-f8c6-412c2a879bee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1669-10-08"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Person:10458363-21ba-444f-0178-ee91e685a7e7> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:8c61ab62-eebb-44a9-f8c6-412c2a879bee> ;
     picom:hasRole picot_roles:573 ;
@@ -29,13 +34,6 @@
     sdo:givenName "Sara"@nl ;
     sdo:name "Sara Bauman"@nl .
 
-<https://ex.org/Person:ba50a86b-f987-a28f-5812-5eb2f73f5361> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:8c61ab62-eebb-44a9-f8c6-412c2a879bee> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:familyName "Hercke"@nl ;
-    sdo:givenName "Johannes"@nl ;
-    sdo:name "Johannes Hercke"@nl .
-
 <https://ex.org/Person:47addbbf-dfe8-41fd-e472-09ceae380a2b> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:8c61ab62-eebb-44a9-f8c6-412c2a879bee> ;
     sdo:additionalName [ a pnv:PersonName ;
@@ -45,11 +43,16 @@
     sdo:children <https://ex.org/Person:7437642b-caa8-1992-945d-7fb656dc7220> ;
     sdo:gender sdo:Female ;
     sdo:givenName "Catharina"@nl ;
+    sdo:knows <https://ex.org/Person:10458363-21ba-444f-0178-ee91e685a7e7>,
+        <https://ex.org/Person:3d86daef-2faa-a196-131b-921f14f0513c>,
+        <https://ex.org/Person:459c525b-4197-271c-e73f-80055d179319>,
+        <https://ex.org/Person:ba50a86b-f987-a28f-5812-5eb2f73f5361> ;
     sdo:name "Catharina Claesdr"@nl ;
     sdo:spouse <https://ex.org/Person:e319fbfb-5246-e6d7-9ab5-f176a45888a9> .
 
 <https://ex.org/Person:7437642b-caa8-1992-945d-7fb656dc7220> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:8c61ab62-eebb-44a9-f8c6-412c2a879bee> ;
+    picom:hasLifeEvent <https://ex.org/Source:8c61ab62-eebb-44a9-f8c6-412c2a879bee_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 08-10-1669"@nl ;
     sdo:familyName "Deldijk"@nl ;
@@ -58,17 +61,29 @@
     sdo:parent <https://ex.org/Person:47addbbf-dfe8-41fd-e472-09ceae380a2b>,
         <https://ex.org/Person:e319fbfb-5246-e6d7-9ab5-f176a45888a9> .
 
+<https://ex.org/Person:ba50a86b-f987-a28f-5812-5eb2f73f5361> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:8c61ab62-eebb-44a9-f8c6-412c2a879bee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Hercke"@nl ;
+    sdo:givenName "Johannes"@nl ;
+    sdo:name "Johannes Hercke"@nl .
+
 <https://ex.org/Person:e319fbfb-5246-e6d7-9ab5-f176a45888a9> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:8c61ab62-eebb-44a9-f8c6-412c2a879bee> ;
     sdo:children <https://ex.org/Person:7437642b-caa8-1992-945d-7fb656dc7220> ;
     sdo:familyName "Deldijk"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Johannes"@nl ;
+    sdo:knows <https://ex.org/Person:10458363-21ba-444f-0178-ee91e685a7e7>,
+        <https://ex.org/Person:3d86daef-2faa-a196-131b-921f14f0513c>,
+        <https://ex.org/Person:459c525b-4197-271c-e73f-80055d179319>,
+        <https://ex.org/Person:ba50a86b-f987-a28f-5812-5eb2f73f5361> ;
     sdo:name "Johannes Deldijk"@nl ;
     sdo:spouse <https://ex.org/Person:47addbbf-dfe8-41fd-e472-09ceae380a2b> .
 
 <https://ex.org/Source:8c61ab62-eebb-44a9-f8c6-412c2a879bee> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/173b1db7-b4a7-4977-8e0e-e2f938d7c769/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/8c61ab62-eebb-44a9-f8c6-412c2a879bee"^^xsd:anyURI ;

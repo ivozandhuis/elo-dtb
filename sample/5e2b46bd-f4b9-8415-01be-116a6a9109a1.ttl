@@ -5,6 +5,49 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:5e2b46bd-f4b9-8415-01be-116a6a9109a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1676-01-17"@nl ;
+    picom:eventPlace "Alkemade"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
+<https://ex.org/Person:069738e8-cebf-1a21-89f4-dd0ff5fa80fe> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:5e2b46bd-f4b9-8415-01be-116a6a9109a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:5e2b46bd-f4b9-8415-01be-116a6a9109a1_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 17-01-1676"@nl ;
+    sdo:givenName "Petrus"@nl ;
+    sdo:name "Petrus"@nl ;
+    sdo:parent <https://ex.org/Person:1d817e4d-92fe-4147-297c-e761ba7d3c57>,
+        <https://ex.org/Person:2cc5aeb4-8fe9-f7c5-5bd9-384f1d9a6552> .
+
+<https://ex.org/Person:1d817e4d-92fe-4147-297c-e761ba7d3c57> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:5e2b46bd-f4b9-8415-01be-116a6a9109a1> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Jannetie"@nl ;
+            pnv:literalName "Jannetie Jacobs"@nl ;
+            pnv:patronym "Jacobs"@nl ] ;
+    sdo:children <https://ex.org/Person:069738e8-cebf-1a21-89f4-dd0ff5fa80fe> ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Jannetie"@nl ;
+    sdo:knows <https://ex.org/Person:356a61eb-50ea-e34f-3ec6-1e49f8dc650c>,
+        <https://ex.org/Person:febf10d7-ecc1-883a-a538-032946035783> ;
+    sdo:name "Jannetie Jacobs"@nl ;
+    sdo:spouse <https://ex.org/Person:2cc5aeb4-8fe9-f7c5-5bd9-384f1d9a6552> .
+
+<https://ex.org/Person:2cc5aeb4-8fe9-f7c5-5bd9-384f1d9a6552> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:5e2b46bd-f4b9-8415-01be-116a6a9109a1> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Phlips"@nl ;
+            pnv:literalName "Phlips Pietersz"@nl ;
+            pnv:patronym "Pietersz"@nl ] ;
+    sdo:children <https://ex.org/Person:069738e8-cebf-1a21-89f4-dd0ff5fa80fe> ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Phlips"@nl ;
+    sdo:knows <https://ex.org/Person:356a61eb-50ea-e34f-3ec6-1e49f8dc650c>,
+        <https://ex.org/Person:febf10d7-ecc1-883a-a538-032946035783> ;
+    sdo:name "Phlips Pietersz"@nl ;
+    sdo:spouse <https://ex.org/Person:1d817e4d-92fe-4147-297c-e761ba7d3c57> .
+
 <https://ex.org/Person:356a61eb-50ea-e34f-3ec6-1e49f8dc650c> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:5e2b46bd-f4b9-8415-01be-116a6a9109a1> ;
     picom:hasRole picot_roles:573 ;
@@ -25,41 +68,9 @@
     sdo:givenName "Cornelis"@nl ;
     sdo:name "Cornelis Cornelisz"@nl .
 
-<https://ex.org/Person:069738e8-cebf-1a21-89f4-dd0ff5fa80fe> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:5e2b46bd-f4b9-8415-01be-116a6a9109a1> ;
-    picom:hasRole picot_roles:575 ;
-    sdo:description "Doopdatum: 17-01-1676"@nl ;
-    sdo:givenName "Petrus"@nl ;
-    sdo:name "Petrus"@nl ;
-    sdo:parent <https://ex.org/Person:1d817e4d-92fe-4147-297c-e761ba7d3c57>,
-        <https://ex.org/Person:2cc5aeb4-8fe9-f7c5-5bd9-384f1d9a6552> .
-
-<https://ex.org/Person:1d817e4d-92fe-4147-297c-e761ba7d3c57> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:5e2b46bd-f4b9-8415-01be-116a6a9109a1> ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:givenName "Jannetie"@nl ;
-            pnv:literalName "Jannetie Jacobs"@nl ;
-            pnv:patronym "Jacobs"@nl ] ;
-    sdo:children <https://ex.org/Person:069738e8-cebf-1a21-89f4-dd0ff5fa80fe> ;
-    sdo:gender sdo:Female ;
-    sdo:givenName "Jannetie"@nl ;
-    sdo:name "Jannetie Jacobs"@nl ;
-    sdo:spouse <https://ex.org/Person:2cc5aeb4-8fe9-f7c5-5bd9-384f1d9a6552> .
-
-<https://ex.org/Person:2cc5aeb4-8fe9-f7c5-5bd9-384f1d9a6552> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:5e2b46bd-f4b9-8415-01be-116a6a9109a1> ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:givenName "Phlips"@nl ;
-            pnv:literalName "Phlips Pietersz"@nl ;
-            pnv:patronym "Pietersz"@nl ] ;
-    sdo:children <https://ex.org/Person:069738e8-cebf-1a21-89f4-dd0ff5fa80fe> ;
-    sdo:gender sdo:Male ;
-    sdo:givenName "Phlips"@nl ;
-    sdo:name "Phlips Pietersz"@nl ;
-    sdo:spouse <https://ex.org/Person:1d817e4d-92fe-4147-297c-e761ba7d3c57> .
-
 <https://ex.org/Source:5e2b46bd-f4b9-8415-01be-116a6a9109a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/7ae730a4-6b36-4340-b8f2-c0a67f40efbc/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/5e2b46bd-f4b9-8415-01be-116a6a9109a1"^^xsd:anyURI ;

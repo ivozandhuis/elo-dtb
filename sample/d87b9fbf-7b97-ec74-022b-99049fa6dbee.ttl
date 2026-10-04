@@ -5,6 +5,38 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:d87b9fbf-7b97-ec74-022b-99049fa6dbee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1764-04-11"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
+<https://ex.org/Person:5456e18f-522d-5667-967e-4d0da60caa2b> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:d87b9fbf-7b97-ec74-022b-99049fa6dbee> ;
+    sdo:children <https://ex.org/Person:9253f775-8186-4ee9-ea61-6d3564930f20> ;
+    sdo:familyName "Cunaeus"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Hillegonda Francoise"@nl ;
+    sdo:knows <https://ex.org/Person:e411af78-f812-6ed5-ec40-34dc1fb8985d>,
+        <https://ex.org/Person:e46e6728-52f9-0cdb-024f-2f665a28ca84> ;
+    sdo:name "Hillegonda Francoise Cunaeus"@nl ;
+    sdo:spouse <https://ex.org/Person:fce1281c-5ff8-799c-bd4d-adce9059c6a0> .
+
+<https://ex.org/Person:9253f775-8186-4ee9-ea61-6d3564930f20> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:d87b9fbf-7b97-ec74-022b-99049fa6dbee> ;
+    picom:hasLifeEvent <https://ex.org/Source:d87b9fbf-7b97-ec74-022b-99049fa6dbee_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Meer"@nl ;
+            pnv:givenName "Johanna Maria"@nl ;
+            pnv:literalName "Johanna Maria van der Meer"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:description "Doopdatum: 11-04-1764"@nl ;
+    sdo:familyName "van der Meer"@nl ;
+    sdo:givenName "Johanna Maria"@nl ;
+    sdo:name "Johanna Maria van der Meer"@nl ;
+    sdo:parent <https://ex.org/Person:5456e18f-522d-5667-967e-4d0da60caa2b>,
+        <https://ex.org/Person:fce1281c-5ff8-799c-bd4d-adce9059c6a0> .
+
 <https://ex.org/Person:e411af78-f812-6ed5-ec40-34dc1fb8985d> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:d87b9fbf-7b97-ec74-022b-99049fa6dbee> ;
     picom:hasRole picot_roles:573 ;
@@ -19,30 +51,6 @@
     sdo:givenName "Maria Elisabeth"@nl ;
     sdo:name "Maria Elisabeth Cunaeus"@nl .
 
-<https://ex.org/Person:5456e18f-522d-5667-967e-4d0da60caa2b> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:d87b9fbf-7b97-ec74-022b-99049fa6dbee> ;
-    sdo:children <https://ex.org/Person:9253f775-8186-4ee9-ea61-6d3564930f20> ;
-    sdo:familyName "Cunaeus"@nl ;
-    sdo:gender sdo:Female ;
-    sdo:givenName "Hillegonda Francoise"@nl ;
-    sdo:name "Hillegonda Francoise Cunaeus"@nl ;
-    sdo:spouse <https://ex.org/Person:fce1281c-5ff8-799c-bd4d-adce9059c6a0> .
-
-<https://ex.org/Person:9253f775-8186-4ee9-ea61-6d3564930f20> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:d87b9fbf-7b97-ec74-022b-99049fa6dbee> ;
-    picom:hasRole picot_roles:575 ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:baseSurname "Meer"@nl ;
-            pnv:givenName "Johanna Maria"@nl ;
-            pnv:literalName "Johanna Maria van der Meer"@nl ;
-            pnv:surnamePrefix "van der"@nl ] ;
-    sdo:description "Doopdatum: 11-04-1764"@nl ;
-    sdo:familyName "van der Meer"@nl ;
-    sdo:givenName "Johanna Maria"@nl ;
-    sdo:name "Johanna Maria van der Meer"@nl ;
-    sdo:parent <https://ex.org/Person:5456e18f-522d-5667-967e-4d0da60caa2b>,
-        <https://ex.org/Person:fce1281c-5ff8-799c-bd4d-adce9059c6a0> .
-
 <https://ex.org/Person:fce1281c-5ff8-799c-bd4d-adce9059c6a0> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:d87b9fbf-7b97-ec74-022b-99049fa6dbee> ;
     sdo:additionalName [ a pnv:PersonName ;
@@ -54,11 +62,14 @@
     sdo:familyName "van der Meer"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Jacob"@nl ;
+    sdo:knows <https://ex.org/Person:e411af78-f812-6ed5-ec40-34dc1fb8985d>,
+        <https://ex.org/Person:e46e6728-52f9-0cdb-024f-2f665a28ca84> ;
     sdo:name "Jacob van der Meer"@nl ;
     sdo:spouse <https://ex.org/Person:5456e18f-522d-5667-967e-4d0da60caa2b> .
 
 <https://ex.org/Source:d87b9fbf-7b97-ec74-022b-99049fa6dbee> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/fc115f6d-592f-42b0-96af-54d069787c3e/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/d87b9fbf-7b97-ec74-022b-99049fa6dbee"^^xsd:anyURI ;

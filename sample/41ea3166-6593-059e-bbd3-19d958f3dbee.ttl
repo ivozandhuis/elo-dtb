@@ -5,6 +5,11 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:41ea3166-6593-059e-bbd3-19d958f3dbee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1685-08-28"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Person:049349da-e35f-32fe-8feb-f492dd85cdce> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:41ea3166-6593-059e-bbd3-19d958f3dbee> ;
     picom:hasRole picot_roles:573 ;
@@ -14,6 +19,28 @@
             pnv:patronym "Alberts"@nl ] ;
     sdo:givenName "Marijtje"@nl ;
     sdo:name "Marijtje Alberts"@nl .
+
+<https://ex.org/Person:173a5b51-f7d0-543b-fe36-f6040ef6177a> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:41ea3166-6593-059e-bbd3-19d958f3dbee> ;
+    sdo:children <https://ex.org/Person:7f6b447b-882b-7ff2-3f11-4fa5fce0a779> ;
+    sdo:familyName "Reket"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Annetje"@nl ;
+    sdo:knows <https://ex.org/Person:049349da-e35f-32fe-8feb-f492dd85cdce>,
+        <https://ex.org/Person:4cc6c0d5-1a0b-b350-a4ad-434b802894ce> ;
+    sdo:name "Annetje Reket"@nl ;
+    sdo:spouse <https://ex.org/Person:205c37fd-1958-4280-5064-6773d00f5950> .
+
+<https://ex.org/Person:205c37fd-1958-4280-5064-6773d00f5950> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:41ea3166-6593-059e-bbd3-19d958f3dbee> ;
+    sdo:children <https://ex.org/Person:7f6b447b-882b-7ff2-3f11-4fa5fce0a779> ;
+    sdo:familyName "Andel"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jan"@nl ;
+    sdo:knows <https://ex.org/Person:049349da-e35f-32fe-8feb-f492dd85cdce>,
+        <https://ex.org/Person:4cc6c0d5-1a0b-b350-a4ad-434b802894ce> ;
+    sdo:name "Jan Andel"@nl ;
+    sdo:spouse <https://ex.org/Person:173a5b51-f7d0-543b-fe36-f6040ef6177a> .
 
 <https://ex.org/Person:4cc6c0d5-1a0b-b350-a4ad-434b802894ce> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:41ea3166-6593-059e-bbd3-19d958f3dbee> ;
@@ -25,26 +52,9 @@
     sdo:givenName "Willemtje"@nl ;
     sdo:name "Willemtje Alberts"@nl .
 
-<https://ex.org/Person:173a5b51-f7d0-543b-fe36-f6040ef6177a> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:41ea3166-6593-059e-bbd3-19d958f3dbee> ;
-    sdo:children <https://ex.org/Person:7f6b447b-882b-7ff2-3f11-4fa5fce0a779> ;
-    sdo:familyName "Reket"@nl ;
-    sdo:gender sdo:Female ;
-    sdo:givenName "Annetje"@nl ;
-    sdo:name "Annetje Reket"@nl ;
-    sdo:spouse <https://ex.org/Person:205c37fd-1958-4280-5064-6773d00f5950> .
-
-<https://ex.org/Person:205c37fd-1958-4280-5064-6773d00f5950> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:41ea3166-6593-059e-bbd3-19d958f3dbee> ;
-    sdo:children <https://ex.org/Person:7f6b447b-882b-7ff2-3f11-4fa5fce0a779> ;
-    sdo:familyName "Andel"@nl ;
-    sdo:gender sdo:Male ;
-    sdo:givenName "Jan"@nl ;
-    sdo:name "Jan Andel"@nl ;
-    sdo:spouse <https://ex.org/Person:173a5b51-f7d0-543b-fe36-f6040ef6177a> .
-
 <https://ex.org/Person:7f6b447b-882b-7ff2-3f11-4fa5fce0a779> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:41ea3166-6593-059e-bbd3-19d958f3dbee> ;
+    picom:hasLifeEvent <https://ex.org/Source:41ea3166-6593-059e-bbd3-19d958f3dbee_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 28-08-1685"@nl ;
     sdo:familyName "Andel"@nl ;
@@ -54,7 +64,8 @@
         <https://ex.org/Person:205c37fd-1958-4280-5064-6773d00f5950> .
 
 <https://ex.org/Source:41ea3166-6593-059e-bbd3-19d958f3dbee> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/a1c78a7e-d279-4672-86b4-c33067c95c5a/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/41ea3166-6593-059e-bbd3-19d958f3dbee"^^xsd:anyURI ;

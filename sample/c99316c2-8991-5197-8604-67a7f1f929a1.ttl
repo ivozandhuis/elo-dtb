@@ -5,19 +5,10 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ex.org/Person:8a3d6907-37c6-6f76-7795-833968a62b34> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:c99316c2-8991-5197-8604-67a7f1f929a1> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:familyName "Nod"@nl ;
-    sdo:givenName "Rebecca"@nl ;
-    sdo:name "Rebecca Nod"@nl .
-
-<https://ex.org/Person:d048e97d-e0d9-2b6d-2716-927cc98b439d> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:c99316c2-8991-5197-8604-67a7f1f929a1> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:familyName "Lues"@nl ;
-    sdo:givenName "Magdaleentje"@nl ;
-    sdo:name "Magdaleentje Lues"@nl .
+<https://ex.org/Source:c99316c2-8991-5197-8604-67a7f1f929a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1694-09-26"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
 
 <https://ex.org/Person:39ec88a1-a034-7c3e-e0f3-9cd94137ddd7> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:c99316c2-8991-5197-8604-67a7f1f929a1> ;
@@ -25,6 +16,8 @@
     sdo:familyName "Nod"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName "Susanna"@nl ;
+    sdo:knows <https://ex.org/Person:8a3d6907-37c6-6f76-7795-833968a62b34>,
+        <https://ex.org/Person:d048e97d-e0d9-2b6d-2716-927cc98b439d> ;
     sdo:name "Susanna Nod"@nl ;
     sdo:spouse <https://ex.org/Person:44629cda-0403-eac3-2fde-29de5b8dc6d2> .
 
@@ -39,11 +32,14 @@
     sdo:familyName "van Wingen"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Cornelis"@nl ;
+    sdo:knows <https://ex.org/Person:8a3d6907-37c6-6f76-7795-833968a62b34>,
+        <https://ex.org/Person:d048e97d-e0d9-2b6d-2716-927cc98b439d> ;
     sdo:name "Cornelis van Wingen"@nl ;
     sdo:spouse <https://ex.org/Person:39ec88a1-a034-7c3e-e0f3-9cd94137ddd7> .
 
 <https://ex.org/Person:54ed2244-220e-b7c1-607f-06ccf5dcfede> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:c99316c2-8991-5197-8604-67a7f1f929a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:c99316c2-8991-5197-8604-67a7f1f929a1_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:baseSurname "Wingen"@nl ;
@@ -57,8 +53,23 @@
     sdo:parent <https://ex.org/Person:39ec88a1-a034-7c3e-e0f3-9cd94137ddd7>,
         <https://ex.org/Person:44629cda-0403-eac3-2fde-29de5b8dc6d2> .
 
+<https://ex.org/Person:8a3d6907-37c6-6f76-7795-833968a62b34> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:c99316c2-8991-5197-8604-67a7f1f929a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Nod"@nl ;
+    sdo:givenName "Rebecca"@nl ;
+    sdo:name "Rebecca Nod"@nl .
+
+<https://ex.org/Person:d048e97d-e0d9-2b6d-2716-927cc98b439d> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:c99316c2-8991-5197-8604-67a7f1f929a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Lues"@nl ;
+    sdo:givenName "Magdaleentje"@nl ;
+    sdo:name "Magdaleentje Lues"@nl .
+
 <https://ex.org/Source:c99316c2-8991-5197-8604-67a7f1f929a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/95f95958-d326-47f4-8ed0-0b9b0123cfad/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/c99316c2-8991-5197-8604-67a7f1f929a1"^^xsd:anyURI ;

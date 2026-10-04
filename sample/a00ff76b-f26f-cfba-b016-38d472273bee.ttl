@@ -5,6 +5,28 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:a00ff76b-f26f-cfba-b016-38d472273bee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1673-12-13"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
+<https://ex.org/Person:5cd3ff59-a37a-6a79-75b8-74d20fc06f05> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:a00ff76b-f26f-cfba-b016-38d472273bee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Beunje"@nl ;
+            pnv:givenName "Jacobus"@nl ;
+            pnv:literalName "Jacobus de Beunje"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:children <https://ex.org/Person:9088c854-f31e-c9d5-10bd-a24388bf382f> ;
+    sdo:familyName "de Beunje"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jacobus"@nl ;
+    sdo:knows <https://ex.org/Person:74dbf179-f7db-d8ad-9ab2-d979f004f057>,
+        <https://ex.org/Person:945137f7-97b6-5149-6f27-1511c40a51c3>,
+        <https://ex.org/Person:968b07de-57b9-eaa2-49ac-78387e88fd55> ;
+    sdo:name "Jacobus de Beunje"@nl ;
+    sdo:spouse <https://ex.org/Person:9e2270a9-ea62-8481-4bf1-acbc19da708f> .
+
 <https://ex.org/Person:74dbf179-f7db-d8ad-9ab2-d979f004f057> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:a00ff76b-f26f-cfba-b016-38d472273bee> ;
     picom:hasRole picot_roles:573 ;
@@ -16,6 +38,22 @@
     sdo:familyName "de Beunje"@nl ;
     sdo:givenName "Jannetie"@nl ;
     sdo:name "Jannetie de Beunje"@nl .
+
+<https://ex.org/Person:9088c854-f31e-c9d5-10bd-a24388bf382f> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:a00ff76b-f26f-cfba-b016-38d472273bee> ;
+    picom:hasLifeEvent <https://ex.org/Source:a00ff76b-f26f-cfba-b016-38d472273bee_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Beunje"@nl ;
+            pnv:givenName "Adriana"@nl ;
+            pnv:literalName "Adriana de Beunje"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:description "Doopdatum: 13-12-1673"@nl ;
+    sdo:familyName "de Beunje"@nl ;
+    sdo:givenName "Adriana"@nl ;
+    sdo:name "Adriana de Beunje"@nl ;
+    sdo:parent <https://ex.org/Person:5cd3ff59-a37a-6a79-75b8-74d20fc06f05>,
+        <https://ex.org/Person:9e2270a9-ea62-8481-4bf1-acbc19da708f> .
 
 <https://ex.org/Person:945137f7-97b6-5149-6f27-1511c40a51c3> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:a00ff76b-f26f-cfba-b016-38d472273bee> ;
@@ -39,35 +77,6 @@
     sdo:givenName "Johannes"@nl ;
     sdo:name "Johannes de Beunje"@nl .
 
-<https://ex.org/Person:5cd3ff59-a37a-6a79-75b8-74d20fc06f05> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:a00ff76b-f26f-cfba-b016-38d472273bee> ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:baseSurname "Beunje"@nl ;
-            pnv:givenName "Jacobus"@nl ;
-            pnv:literalName "Jacobus de Beunje"@nl ;
-            pnv:surnamePrefix "de"@nl ] ;
-    sdo:children <https://ex.org/Person:9088c854-f31e-c9d5-10bd-a24388bf382f> ;
-    sdo:familyName "de Beunje"@nl ;
-    sdo:gender sdo:Male ;
-    sdo:givenName "Jacobus"@nl ;
-    sdo:name "Jacobus de Beunje"@nl ;
-    sdo:spouse <https://ex.org/Person:9e2270a9-ea62-8481-4bf1-acbc19da708f> .
-
-<https://ex.org/Person:9088c854-f31e-c9d5-10bd-a24388bf382f> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:a00ff76b-f26f-cfba-b016-38d472273bee> ;
-    picom:hasRole picot_roles:575 ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:baseSurname "Beunje"@nl ;
-            pnv:givenName "Adriana"@nl ;
-            pnv:literalName "Adriana de Beunje"@nl ;
-            pnv:surnamePrefix "de"@nl ] ;
-    sdo:description "Doopdatum: 13-12-1673"@nl ;
-    sdo:familyName "de Beunje"@nl ;
-    sdo:givenName "Adriana"@nl ;
-    sdo:name "Adriana de Beunje"@nl ;
-    sdo:parent <https://ex.org/Person:5cd3ff59-a37a-6a79-75b8-74d20fc06f05>,
-        <https://ex.org/Person:9e2270a9-ea62-8481-4bf1-acbc19da708f> .
-
 <https://ex.org/Person:9e2270a9-ea62-8481-4bf1-acbc19da708f> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:a00ff76b-f26f-cfba-b016-38d472273bee> ;
     sdo:additionalName [ a pnv:PersonName ;
@@ -79,11 +88,15 @@
     sdo:familyName "van Acker"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName "Maritie"@nl ;
+    sdo:knows <https://ex.org/Person:74dbf179-f7db-d8ad-9ab2-d979f004f057>,
+        <https://ex.org/Person:945137f7-97b6-5149-6f27-1511c40a51c3>,
+        <https://ex.org/Person:968b07de-57b9-eaa2-49ac-78387e88fd55> ;
     sdo:name "Maritie van Acker"@nl ;
     sdo:spouse <https://ex.org/Person:5cd3ff59-a37a-6a79-75b8-74d20fc06f05> .
 
 <https://ex.org/Source:a00ff76b-f26f-cfba-b016-38d472273bee> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/72b14dd3-41b4-41f5-8932-1eec83902636/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/a00ff76b-f26f-cfba-b016-38d472273bee"^^xsd:anyURI ;

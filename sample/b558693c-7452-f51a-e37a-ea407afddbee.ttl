@@ -5,6 +5,11 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:b558693c-7452-f51a-e37a-ea407afddbee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1674-05-06"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Person:2217d1c2-ffcc-d8ff-7de8-904906416341> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:b558693c-7452-f51a-e37a-ea407afddbee> ;
     picom:hasRole picot_roles:573 ;
@@ -16,6 +21,17 @@
     sdo:familyName "du Pré"@nl ;
     sdo:givenName "Laurens"@nl ;
     sdo:name "Laurens du Pré"@nl .
+
+<https://ex.org/Person:3adb6696-caff-9a7e-c4be-228c835936f3> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b558693c-7452-f51a-e37a-ea407afddbee> ;
+    picom:hasLifeEvent <https://ex.org/Source:b558693c-7452-f51a-e37a-ea407afddbee_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 06-05-1674"@nl ;
+    sdo:familyName "Tiljé"@nl ;
+    sdo:givenName "Abraham"@nl ;
+    sdo:name "Abraham Tiljé"@nl ;
+    sdo:parent <https://ex.org/Person:8cf1720d-1fd5-f161-b7ab-2e33cac23028>,
+        <https://ex.org/Person:e1be8c53-cb50-d785-efa2-456387763019> .
 
 <https://ex.org/Person:4231f11f-7f1a-d49c-423b-da0993dddff3> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:b558693c-7452-f51a-e37a-ea407afddbee> ;
@@ -53,16 +69,6 @@
     sdo:givenName "Maghdalena"@nl ;
     sdo:name "Maghdalena de Huij"@nl .
 
-<https://ex.org/Person:3adb6696-caff-9a7e-c4be-228c835936f3> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:b558693c-7452-f51a-e37a-ea407afddbee> ;
-    picom:hasRole picot_roles:575 ;
-    sdo:description "Doopdatum: 06-05-1674"@nl ;
-    sdo:familyName "Tiljé"@nl ;
-    sdo:givenName "Abraham"@nl ;
-    sdo:name "Abraham Tiljé"@nl ;
-    sdo:parent <https://ex.org/Person:8cf1720d-1fd5-f161-b7ab-2e33cac23028>,
-        <https://ex.org/Person:e1be8c53-cb50-d785-efa2-456387763019> .
-
 <https://ex.org/Person:8cf1720d-1fd5-f161-b7ab-2e33cac23028> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:b558693c-7452-f51a-e37a-ea407afddbee> ;
     sdo:additionalName [ a pnv:PersonName ;
@@ -72,6 +78,10 @@
     sdo:children <https://ex.org/Person:3adb6696-caff-9a7e-c4be-228c835936f3> ;
     sdo:gender sdo:Female ;
     sdo:givenName "Sarah"@nl ;
+    sdo:knows <https://ex.org/Person:2217d1c2-ffcc-d8ff-7de8-904906416341>,
+        <https://ex.org/Person:4231f11f-7f1a-d49c-423b-da0993dddff3>,
+        <https://ex.org/Person:77d2feec-639f-44e3-eb80-81c197c6d0ff>,
+        <https://ex.org/Person:79f9d69d-fec4-0bbe-7fbb-cd392a9f9fe2> ;
     sdo:name "Sarah Pieters"@nl ;
     sdo:spouse <https://ex.org/Person:e1be8c53-cb50-d785-efa2-456387763019> .
 
@@ -81,11 +91,16 @@
     sdo:familyName "Tiljé"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Claes"@nl ;
+    sdo:knows <https://ex.org/Person:2217d1c2-ffcc-d8ff-7de8-904906416341>,
+        <https://ex.org/Person:4231f11f-7f1a-d49c-423b-da0993dddff3>,
+        <https://ex.org/Person:77d2feec-639f-44e3-eb80-81c197c6d0ff>,
+        <https://ex.org/Person:79f9d69d-fec4-0bbe-7fbb-cd392a9f9fe2> ;
     sdo:name "Claes Tiljé"@nl ;
     sdo:spouse <https://ex.org/Person:8cf1720d-1fd5-f161-b7ab-2e33cac23028> .
 
 <https://ex.org/Source:b558693c-7452-f51a-e37a-ea407afddbee> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/53ceafb9-e51a-47e5-8c09-83b70b1a42e0/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/b558693c-7452-f51a-e37a-ea407afddbee"^^xsd:anyURI ;

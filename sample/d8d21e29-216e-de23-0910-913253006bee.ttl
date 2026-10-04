@@ -5,6 +5,11 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:d8d21e29-216e-de23-0910-913253006bee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1778-04-15"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Person:0c2a278d-592f-e794-78f0-976a26c3b848> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:d8d21e29-216e-de23-0910-913253006bee> ;
     picom:hasRole picot_roles:573 ;
@@ -30,6 +35,8 @@
     sdo:familyName "Lagalie"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Andries Johannes"@nl ;
+    sdo:knows <https://ex.org/Person:0c2a278d-592f-e794-78f0-976a26c3b848>,
+        <https://ex.org/Person:7a94353d-709b-288f-db77-a1ece39d73e3> ;
     sdo:name "Andries Johannes Lagalie"@nl ;
     sdo:spouse <https://ex.org/Person:b4cfd438-05eb-e5f8-0a7c-872931aef499> .
 
@@ -39,11 +46,14 @@
     sdo:familyName "Herrewij"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName "Maria"@nl ;
+    sdo:knows <https://ex.org/Person:0c2a278d-592f-e794-78f0-976a26c3b848>,
+        <https://ex.org/Person:7a94353d-709b-288f-db77-a1ece39d73e3> ;
     sdo:name "Maria Herrewij"@nl ;
     sdo:spouse <https://ex.org/Person:b2727747-d69c-c7a8-c57f-d2c5b150f170> .
 
 <https://ex.org/Person:fc616bc5-95cd-b50e-4fd4-a5045a5f1bf5> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:d8d21e29-216e-de23-0910-913253006bee> ;
+    picom:hasLifeEvent <https://ex.org/Source:d8d21e29-216e-de23-0910-913253006bee_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 15-04-1778"@nl ;
     sdo:familyName "Lagalie"@nl ;
@@ -53,7 +63,8 @@
         <https://ex.org/Person:b4cfd438-05eb-e5f8-0a7c-872931aef499> .
 
 <https://ex.org/Source:d8d21e29-216e-de23-0910-913253006bee> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/2823c8a8-a939-4754-9164-531ce9ade0d8/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/d8d21e29-216e-de23-0910-913253006bee"^^xsd:anyURI ;

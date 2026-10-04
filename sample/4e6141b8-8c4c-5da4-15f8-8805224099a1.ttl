@@ -5,6 +5,27 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:4e6141b8-8c4c-5da4-15f8-8805224099a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1783-07-03"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
+<https://ex.org/Person:1058f2ca-52ff-93b6-518e-2095e487175d> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:4e6141b8-8c4c-5da4-15f8-8805224099a1> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Koning"@nl ;
+            pnv:givenName "Anthonette"@nl ;
+            pnv:literalName "Anthonette de Koning"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:children <https://ex.org/Person:51b7f493-0f08-34c0-dbfa-aa892f3d9043> ;
+    sdo:familyName "de Koning"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Anthonette"@nl ;
+    sdo:knows <https://ex.org/Person:3a3040da-7c41-b1ef-18b8-56ca72520a86>,
+        <https://ex.org/Person:3befc13e-573f-9fb1-3773-a2b27ce465d1> ;
+    sdo:name "Anthonette de Koning"@nl ;
+    sdo:spouse <https://ex.org/Person:a1212e34-7781-2cde-d92f-41ae155e8196> .
+
 <https://ex.org/Person:3a3040da-7c41-b1ef-18b8-56ca72520a86> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:4e6141b8-8c4c-5da4-15f8-8805224099a1> ;
     picom:hasRole picot_roles:573 ;
@@ -19,22 +40,9 @@
     sdo:givenName "Leendert"@nl ;
     sdo:name "Leendert Wijnen"@nl .
 
-<https://ex.org/Person:1058f2ca-52ff-93b6-518e-2095e487175d> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:4e6141b8-8c4c-5da4-15f8-8805224099a1> ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:baseSurname "Koning"@nl ;
-            pnv:givenName "Anthonette"@nl ;
-            pnv:literalName "Anthonette de Koning"@nl ;
-            pnv:surnamePrefix "de"@nl ] ;
-    sdo:children <https://ex.org/Person:51b7f493-0f08-34c0-dbfa-aa892f3d9043> ;
-    sdo:familyName "de Koning"@nl ;
-    sdo:gender sdo:Female ;
-    sdo:givenName "Anthonette"@nl ;
-    sdo:name "Anthonette de Koning"@nl ;
-    sdo:spouse <https://ex.org/Person:a1212e34-7781-2cde-d92f-41ae155e8196> .
-
 <https://ex.org/Person:51b7f493-0f08-34c0-dbfa-aa892f3d9043> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:4e6141b8-8c4c-5da4-15f8-8805224099a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:4e6141b8-8c4c-5da4-15f8-8805224099a1_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 03-07-1783"@nl ;
     sdo:familyName "Wijnen"@nl ;
@@ -49,11 +57,14 @@
     sdo:familyName "Wijnen"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Hendrik"@nl ;
+    sdo:knows <https://ex.org/Person:3a3040da-7c41-b1ef-18b8-56ca72520a86>,
+        <https://ex.org/Person:3befc13e-573f-9fb1-3773-a2b27ce465d1> ;
     sdo:name "Hendrik Wijnen"@nl ;
     sdo:spouse <https://ex.org/Person:1058f2ca-52ff-93b6-518e-2095e487175d> .
 
 <https://ex.org/Source:4e6141b8-8c4c-5da4-15f8-8805224099a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/dedb93f2-53d2-4809-ab0f-404bd85e7259/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/4e6141b8-8c4c-5da4-15f8-8805224099a1"^^xsd:anyURI ;

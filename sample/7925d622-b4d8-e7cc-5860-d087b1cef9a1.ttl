@@ -5,6 +5,39 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:7925d622-b4d8-e7cc-5860-d087b1cef9a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1689-04-28"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
+<https://ex.org/Person:415ce116-98f5-c04f-0197-4eff8b4cf2b2> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:7925d622-b4d8-e7cc-5860-d087b1cef9a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:7925d622-b4d8-e7cc-5860-d087b1cef9a1_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 28-04-1689"@nl ;
+    sdo:familyName "Clignet"@nl ;
+    sdo:givenName "Hendrik"@nl ;
+    sdo:name "Hendrik Clignet"@nl ;
+    sdo:parent <https://ex.org/Person:7d609a9c-e0fc-f609-4c1e-b6292ed580ef>,
+        <https://ex.org/Person:d33713c0-42c8-1ee5-8c20-392d3b69562b> .
+
+<https://ex.org/Person:7d609a9c-e0fc-f609-4c1e-b6292ed580ef> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:7925d622-b4d8-e7cc-5860-d087b1cef9a1> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Nijs"@nl ;
+            pnv:givenName "Elisabeth"@nl ;
+            pnv:literalName "Elisabeth de Nijs"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:children <https://ex.org/Person:415ce116-98f5-c04f-0197-4eff8b4cf2b2> ;
+    sdo:familyName "de Nijs"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Elisabeth"@nl ;
+    sdo:knows <https://ex.org/Person:a4efd28f-b603-f7c8-682f-3924ad137adc>,
+        <https://ex.org/Person:b408b0f1-eade-c311-6a7e-c8389f96daba>,
+        <https://ex.org/Person:b616605a-17d9-4677-94bc-64f84ca27755> ;
+    sdo:name "Elisabeth de Nijs"@nl ;
+    sdo:spouse <https://ex.org/Person:d33713c0-42c8-1ee5-8c20-392d3b69562b> .
+
 <https://ex.org/Person:a4efd28f-b603-f7c8-682f-3924ad137adc> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:7925d622-b4d8-e7cc-5860-d087b1cef9a1> ;
     picom:hasRole picot_roles:573 ;
@@ -36,41 +69,21 @@
     sdo:givenName "Henricus"@nl ;
     sdo:name "Henricus du Rieu"@nl .
 
-<https://ex.org/Person:415ce116-98f5-c04f-0197-4eff8b4cf2b2> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:7925d622-b4d8-e7cc-5860-d087b1cef9a1> ;
-    picom:hasRole picot_roles:575 ;
-    sdo:description "Doopdatum: 28-04-1689"@nl ;
-    sdo:familyName "Clignet"@nl ;
-    sdo:givenName "Hendrik"@nl ;
-    sdo:name "Hendrik Clignet"@nl ;
-    sdo:parent <https://ex.org/Person:7d609a9c-e0fc-f609-4c1e-b6292ed580ef>,
-        <https://ex.org/Person:d33713c0-42c8-1ee5-8c20-392d3b69562b> .
-
-<https://ex.org/Person:7d609a9c-e0fc-f609-4c1e-b6292ed580ef> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:7925d622-b4d8-e7cc-5860-d087b1cef9a1> ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:baseSurname "Nijs"@nl ;
-            pnv:givenName "Elisabeth"@nl ;
-            pnv:literalName "Elisabeth de Nijs"@nl ;
-            pnv:surnamePrefix "de"@nl ] ;
-    sdo:children <https://ex.org/Person:415ce116-98f5-c04f-0197-4eff8b4cf2b2> ;
-    sdo:familyName "de Nijs"@nl ;
-    sdo:gender sdo:Female ;
-    sdo:givenName "Elisabeth"@nl ;
-    sdo:name "Elisabeth de Nijs"@nl ;
-    sdo:spouse <https://ex.org/Person:d33713c0-42c8-1ee5-8c20-392d3b69562b> .
-
 <https://ex.org/Person:d33713c0-42c8-1ee5-8c20-392d3b69562b> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:7925d622-b4d8-e7cc-5860-d087b1cef9a1> ;
     sdo:children <https://ex.org/Person:415ce116-98f5-c04f-0197-4eff8b4cf2b2> ;
     sdo:familyName "Clignet"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Abraham"@nl ;
+    sdo:knows <https://ex.org/Person:a4efd28f-b603-f7c8-682f-3924ad137adc>,
+        <https://ex.org/Person:b408b0f1-eade-c311-6a7e-c8389f96daba>,
+        <https://ex.org/Person:b616605a-17d9-4677-94bc-64f84ca27755> ;
     sdo:name "Abraham Clignet"@nl ;
     sdo:spouse <https://ex.org/Person:7d609a9c-e0fc-f609-4c1e-b6292ed580ef> .
 
 <https://ex.org/Source:7925d622-b4d8-e7cc-5860-d087b1cef9a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/44c6306b-8a58-440e-8f94-4690b65e98d2/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/7925d622-b4d8-e7cc-5860-d087b1cef9a1"^^xsd:anyURI ;

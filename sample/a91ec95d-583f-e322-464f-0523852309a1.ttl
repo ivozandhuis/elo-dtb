@@ -5,6 +5,11 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:a91ec95d-583f-e322-464f-0523852309a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1775-10-07"@nl ;
+    picom:eventPlace "Alkemade"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Person:072006b6-131a-6a3d-507b-df0e0a2043fe> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:a91ec95d-583f-e322-464f-0523852309a1> ;
     picom:hasRole picot_roles:573 ;
@@ -18,15 +23,9 @@
     sdo:givenName "Maria"@nl ;
     sdo:name "Maria Ambosiusze de Roos"@nl .
 
-<https://ex.org/Person:e1f39fe2-86e9-b4c8-e686-d355ef43fc8f> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:a91ec95d-583f-e322-464f-0523852309a1> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:familyName "Kwakkenbosch"@nl ;
-    sdo:givenName "Henricus"@nl ;
-    sdo:name "Henricus Kwakkenbosch"@nl .
-
 <https://ex.org/Person:243d483d-aeca-6eca-e146-3456a58b7197> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:a91ec95d-583f-e322-464f-0523852309a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:a91ec95d-583f-e322-464f-0523852309a1_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:birthPlace "Rijpwetering"@nl ;
     sdo:description "Doopdatum: 07-10-1775"@nl ;
@@ -48,6 +47,8 @@
     sdo:familyName "de Ronde"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName "Anna"@nl ;
+    sdo:knows <https://ex.org/Person:072006b6-131a-6a3d-507b-df0e0a2043fe>,
+        <https://ex.org/Person:e1f39fe2-86e9-b4c8-e686-d355ef43fc8f> ;
     sdo:name "Anna Cornelisze de Ronde"@nl ;
     sdo:spouse <https://ex.org/Person:450d1b5e-832a-873c-0d0c-805776fa6254> .
 
@@ -57,11 +58,21 @@
     sdo:familyName "Mulder"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Joannes"@nl ;
+    sdo:knows <https://ex.org/Person:072006b6-131a-6a3d-507b-df0e0a2043fe>,
+        <https://ex.org/Person:e1f39fe2-86e9-b4c8-e686-d355ef43fc8f> ;
     sdo:name "Joannes Mulder"@nl ;
     sdo:spouse <https://ex.org/Person:3efafcb4-4d13-d5cf-54d3-c79580a435f9> .
 
+<https://ex.org/Person:e1f39fe2-86e9-b4c8-e686-d355ef43fc8f> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:a91ec95d-583f-e322-464f-0523852309a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Kwakkenbosch"@nl ;
+    sdo:givenName "Henricus"@nl ;
+    sdo:name "Henricus Kwakkenbosch"@nl .
+
 <https://ex.org/Source:a91ec95d-583f-e322-464f-0523852309a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/ebfbc218-df91-4dde-86e6-45b5323306d0/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/a91ec95d-583f-e322-464f-0523852309a1"^^xsd:anyURI ;

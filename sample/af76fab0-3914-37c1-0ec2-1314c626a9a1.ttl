@@ -5,6 +5,11 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:af76fab0-3914-37c1-0ec2-1314c626a9a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1685-09-20"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Person:32880664-a44e-4bd7-5671-5cac6528ad33> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:af76fab0-3914-37c1-0ec2-1314c626a9a1> ;
     picom:hasRole picot_roles:573 ;
@@ -22,23 +27,20 @@
     sdo:givenName "Geertgen"@nl ;
     sdo:name "Geertgen Maeswijk"@nl .
 
-<https://ex.org/Person:72051aa3-a39a-5fee-b657-9eb741bc43a0> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:af76fab0-3914-37c1-0ec2-1314c626a9a1> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:familyName "Rensema"@nl ;
-    sdo:givenName "Adriaen"@nl ;
-    sdo:name "Adriaen Rensema"@nl .
-
 <https://ex.org/Person:54dc1943-42b2-4e46-c4b3-a38ec4d24d4d> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:af76fab0-3914-37c1-0ec2-1314c626a9a1> ;
     sdo:children <https://ex.org/Person:68a05236-81b9-07b4-eeb8-cd0921addb4a> ;
     sdo:gender sdo:Female ;
     sdo:givenName "Magdalena"@nl ;
+    sdo:knows <https://ex.org/Person:32880664-a44e-4bd7-5671-5cac6528ad33>,
+        <https://ex.org/Person:4f0c90c6-d13c-9822-78c7-ba9a216cd29d>,
+        <https://ex.org/Person:72051aa3-a39a-5fee-b657-9eb741bc43a0> ;
     sdo:name "Magdalena"@nl ;
     sdo:spouse <https://ex.org/Person:d13adcb1-81a4-07fb-c204-dfd5ad38e55e> .
 
 <https://ex.org/Person:68a05236-81b9-07b4-eeb8-cd0921addb4a> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:af76fab0-3914-37c1-0ec2-1314c626a9a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:af76fab0-3914-37c1-0ec2-1314c626a9a1_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 20-09-1685"@nl ;
     sdo:familyName "Swanenburg"@nl ;
@@ -47,17 +49,28 @@
     sdo:parent <https://ex.org/Person:54dc1943-42b2-4e46-c4b3-a38ec4d24d4d>,
         <https://ex.org/Person:d13adcb1-81a4-07fb-c204-dfd5ad38e55e> .
 
+<https://ex.org/Person:72051aa3-a39a-5fee-b657-9eb741bc43a0> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:af76fab0-3914-37c1-0ec2-1314c626a9a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Rensema"@nl ;
+    sdo:givenName "Adriaen"@nl ;
+    sdo:name "Adriaen Rensema"@nl .
+
 <https://ex.org/Person:d13adcb1-81a4-07fb-c204-dfd5ad38e55e> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:af76fab0-3914-37c1-0ec2-1314c626a9a1> ;
     sdo:children <https://ex.org/Person:68a05236-81b9-07b4-eeb8-cd0921addb4a> ;
     sdo:familyName "Swanenburg"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Johannes"@nl ;
+    sdo:knows <https://ex.org/Person:32880664-a44e-4bd7-5671-5cac6528ad33>,
+        <https://ex.org/Person:4f0c90c6-d13c-9822-78c7-ba9a216cd29d>,
+        <https://ex.org/Person:72051aa3-a39a-5fee-b657-9eb741bc43a0> ;
     sdo:name "Johannes Swanenburg"@nl ;
     sdo:spouse <https://ex.org/Person:54dc1943-42b2-4e46-c4b3-a38ec4d24d4d> .
 
 <https://ex.org/Source:af76fab0-3914-37c1-0ec2-1314c626a9a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/d3e44d89-faf4-48f9-a910-dddb4efefa13/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/af76fab0-3914-37c1-0ec2-1314c626a9a1"^^xsd:anyURI ;

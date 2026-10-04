@@ -5,6 +5,46 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:154e33bd-7a48-e136-8ed1-3baa837e1bee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1631-11-23"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
+<https://ex.org/Person:05b05fbc-30a6-16c8-e63e-5f94e513e20d> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:154e33bd-7a48-e136-8ed1-3baa837e1bee> ;
+    picom:hasLifeEvent <https://ex.org/Source:154e33bd-7a48-e136-8ed1-3baa837e1bee_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 23-11-1631"@nl ;
+    sdo:givenName "Johannes"@nl ;
+    sdo:name "Johannes"@nl ;
+    sdo:parent <https://ex.org/Person:3c94e555-a1e7-35c5-8185-8e35bacb7b6a>,
+        <https://ex.org/Person:4b6dad95-ebbf-8f09-3d8d-18818278c7c3> .
+
+<https://ex.org/Person:3c94e555-a1e7-35c5-8185-8e35bacb7b6a> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:154e33bd-7a48-e136-8ed1-3baa837e1bee> ;
+    sdo:children <https://ex.org/Person:05b05fbc-30a6-16c8-e63e-5f94e513e20d> ;
+    sdo:familyName "Milecan"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Janneken"@nl ;
+    sdo:knows <https://ex.org/Person:740e1098-611c-5222-20ce-b6e6ed9aeca1>,
+        <https://ex.org/Person:f4aca5ec-ed0a-e732-6b2a-9b142db031cd> ;
+    sdo:name "Janneken Milecan"@nl ;
+    sdo:spouse <https://ex.org/Person:4b6dad95-ebbf-8f09-3d8d-18818278c7c3> .
+
+<https://ex.org/Person:4b6dad95-ebbf-8f09-3d8d-18818278c7c3> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:154e33bd-7a48-e136-8ed1-3baa837e1bee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Abraham"@nl ;
+            pnv:literalName "Abraham Oliviersz"@nl ;
+            pnv:patronym "Oliviersz"@nl ] ;
+    sdo:children <https://ex.org/Person:05b05fbc-30a6-16c8-e63e-5f94e513e20d> ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Abraham"@nl ;
+    sdo:knows <https://ex.org/Person:740e1098-611c-5222-20ce-b6e6ed9aeca1>,
+        <https://ex.org/Person:f4aca5ec-ed0a-e732-6b2a-9b142db031cd> ;
+    sdo:name "Abraham Oliviersz"@nl ;
+    sdo:spouse <https://ex.org/Person:3c94e555-a1e7-35c5-8185-8e35bacb7b6a> .
+
 <https://ex.org/Person:740e1098-611c-5222-20ce-b6e6ed9aeca1> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:154e33bd-7a48-e136-8ed1-3baa837e1bee> ;
     picom:hasRole picot_roles:573 ;
@@ -25,38 +65,9 @@
     sdo:givenName "Annetgen"@nl ;
     sdo:name "Annetgen Aerentsdr"@nl .
 
-<https://ex.org/Person:05b05fbc-30a6-16c8-e63e-5f94e513e20d> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:154e33bd-7a48-e136-8ed1-3baa837e1bee> ;
-    picom:hasRole picot_roles:575 ;
-    sdo:description "Doopdatum: 23-11-1631"@nl ;
-    sdo:givenName "Johannes"@nl ;
-    sdo:name "Johannes"@nl ;
-    sdo:parent <https://ex.org/Person:3c94e555-a1e7-35c5-8185-8e35bacb7b6a>,
-        <https://ex.org/Person:4b6dad95-ebbf-8f09-3d8d-18818278c7c3> .
-
-<https://ex.org/Person:3c94e555-a1e7-35c5-8185-8e35bacb7b6a> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:154e33bd-7a48-e136-8ed1-3baa837e1bee> ;
-    sdo:children <https://ex.org/Person:05b05fbc-30a6-16c8-e63e-5f94e513e20d> ;
-    sdo:familyName "Milecan"@nl ;
-    sdo:gender sdo:Female ;
-    sdo:givenName "Janneken"@nl ;
-    sdo:name "Janneken Milecan"@nl ;
-    sdo:spouse <https://ex.org/Person:4b6dad95-ebbf-8f09-3d8d-18818278c7c3> .
-
-<https://ex.org/Person:4b6dad95-ebbf-8f09-3d8d-18818278c7c3> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:154e33bd-7a48-e136-8ed1-3baa837e1bee> ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:givenName "Abraham"@nl ;
-            pnv:literalName "Abraham Oliviersz"@nl ;
-            pnv:patronym "Oliviersz"@nl ] ;
-    sdo:children <https://ex.org/Person:05b05fbc-30a6-16c8-e63e-5f94e513e20d> ;
-    sdo:gender sdo:Male ;
-    sdo:givenName "Abraham"@nl ;
-    sdo:name "Abraham Oliviersz"@nl ;
-    sdo:spouse <https://ex.org/Person:3c94e555-a1e7-35c5-8185-8e35bacb7b6a> .
-
 <https://ex.org/Source:154e33bd-7a48-e136-8ed1-3baa837e1bee> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/03f9e410-3cfd-40ce-be79-72208240b62d/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/154e33bd-7a48-e136-8ed1-3baa837e1bee"^^xsd:anyURI ;

@@ -5,12 +5,10 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ex.org/Person:9f8daa7e-1865-bf86-811d-c0dba7315453> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:52165429-e50a-44d2-99f4-7a8794c75bee> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:familyName "Elsevier"@nl ;
-    sdo:givenName "Marij Catrijn"@nl ;
-    sdo:name "Marij Catrijn Elsevier"@nl .
+<https://ex.org/Source:52165429-e50a-44d2-99f4-7a8794c75bee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1673-09-10"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
 
 <https://ex.org/Person:125a9d75-d38d-5b9b-bbb8-6b6ffef23b8d> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:52165429-e50a-44d2-99f4-7a8794c75bee> ;
@@ -21,8 +19,16 @@
     sdo:children <https://ex.org/Person:d13269eb-82e5-3809-7e05-982a086bd7dc> ;
     sdo:gender sdo:Female ;
     sdo:givenName "Annetje"@nl ;
+    sdo:knows <https://ex.org/Person:9f8daa7e-1865-bf86-811d-c0dba7315453> ;
     sdo:name "Annetje Jacobsdr"@nl ;
     sdo:spouse <https://ex.org/Person:b229cd99-aa1c-f291-c4bd-9e1f36f14c2c> .
+
+<https://ex.org/Person:9f8daa7e-1865-bf86-811d-c0dba7315453> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:52165429-e50a-44d2-99f4-7a8794c75bee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Elsevier"@nl ;
+    sdo:givenName "Marij Catrijn"@nl ;
+    sdo:name "Marij Catrijn Elsevier"@nl .
 
 <https://ex.org/Person:b229cd99-aa1c-f291-c4bd-9e1f36f14c2c> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:52165429-e50a-44d2-99f4-7a8794c75bee> ;
@@ -30,11 +36,13 @@
     sdo:familyName "Hofman"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Claas"@nl ;
+    sdo:knows <https://ex.org/Person:9f8daa7e-1865-bf86-811d-c0dba7315453> ;
     sdo:name "Claas Hofman"@nl ;
     sdo:spouse <https://ex.org/Person:125a9d75-d38d-5b9b-bbb8-6b6ffef23b8d> .
 
 <https://ex.org/Person:d13269eb-82e5-3809-7e05-982a086bd7dc> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:52165429-e50a-44d2-99f4-7a8794c75bee> ;
+    picom:hasLifeEvent <https://ex.org/Source:52165429-e50a-44d2-99f4-7a8794c75bee_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 10-09-1673"@nl ;
     sdo:familyName "Hofman"@nl ;
@@ -44,7 +52,8 @@
         <https://ex.org/Person:b229cd99-aa1c-f291-c4bd-9e1f36f14c2c> .
 
 <https://ex.org/Source:52165429-e50a-44d2-99f4-7a8794c75bee> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/f080deae-3968-442c-ad7b-af583f2c2bdb/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/52165429-e50a-44d2-99f4-7a8794c75bee"^^xsd:anyURI ;

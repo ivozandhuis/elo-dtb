@@ -5,15 +5,10 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ex.org/Person:f24a1e2b-8b00-11cd-fde8-b7b36a08d6cb> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:c908f36e-95c7-45fb-ec5c-ab2428236bee> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:givenName "Annetjen"@nl ;
-            pnv:literalName "Annetjen Thijssen"@nl ;
-            pnv:patronym "Thijssen"@nl ] ;
-    sdo:givenName "Annetjen"@nl ;
-    sdo:name "Annetjen Thijssen"@nl .
+<https://ex.org/Source:c908f36e-95c7-45fb-ec5c-ab2428236bee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1671-02-06"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
 
 <https://ex.org/Person:01a79838-e0f4-c358-454a-02722ce1a8dc> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:c908f36e-95c7-45fb-ec5c-ab2428236bee> ;
@@ -21,11 +16,13 @@
     sdo:familyName "Hasebroek"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName "Jacomijntjen"@nl ;
+    sdo:knows <https://ex.org/Person:f24a1e2b-8b00-11cd-fde8-b7b36a08d6cb> ;
     sdo:name "Jacomijntjen Hasebroek"@nl ;
     sdo:spouse <https://ex.org/Person:c25ab023-8cfa-feaa-8268-972b2faa5548> .
 
 <https://ex.org/Person:20a5984d-9389-2849-709a-15ba3e385dd5> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:c908f36e-95c7-45fb-ec5c-ab2428236bee> ;
+    picom:hasLifeEvent <https://ex.org/Source:c908f36e-95c7-45fb-ec5c-ab2428236bee_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 06-02-1671"@nl ;
     sdo:givenName "Annetjen"@nl ;
@@ -42,11 +39,23 @@
     sdo:children <https://ex.org/Person:20a5984d-9389-2849-709a-15ba3e385dd5> ;
     sdo:gender sdo:Male ;
     sdo:givenName "Jaspar"@nl ;
+    sdo:knows <https://ex.org/Person:f24a1e2b-8b00-11cd-fde8-b7b36a08d6cb> ;
     sdo:name "Jaspar Serwouters"@nl ;
     sdo:spouse <https://ex.org/Person:01a79838-e0f4-c358-454a-02722ce1a8dc> .
 
+<https://ex.org/Person:f24a1e2b-8b00-11cd-fde8-b7b36a08d6cb> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:c908f36e-95c7-45fb-ec5c-ab2428236bee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Annetjen"@nl ;
+            pnv:literalName "Annetjen Thijssen"@nl ;
+            pnv:patronym "Thijssen"@nl ] ;
+    sdo:givenName "Annetjen"@nl ;
+    sdo:name "Annetjen Thijssen"@nl .
+
 <https://ex.org/Source:c908f36e-95c7-45fb-ec5c-ab2428236bee> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/fad9d399-bef7-497e-8014-e3a32b2ea376/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/c908f36e-95c7-45fb-ec5c-ab2428236bee"^^xsd:anyURI ;

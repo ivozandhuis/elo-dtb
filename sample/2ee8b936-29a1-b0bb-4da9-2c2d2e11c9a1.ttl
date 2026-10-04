@@ -5,18 +5,10 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ex.org/Person:f5ef4bfc-0552-16ce-4b0c-df91da289437> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:2ee8b936-29a1-b0bb-4da9-2c2d2e11c9a1> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:baseSurname "Waelswijck"@nl ;
-            pnv:givenName "Anna"@nl ;
-            pnv:literalName "Anna Abrahams van Waelswijck"@nl ;
-            pnv:patronym "Abrahams"@nl ;
-            pnv:surnamePrefix "van"@nl ] ;
-    sdo:familyName "van Waelswijck"@nl ;
-    sdo:givenName "Anna"@nl ;
-    sdo:name "Anna Abrahams van Waelswijck"@nl .
+<https://ex.org/Source:2ee8b936-29a1-b0bb-4da9-2c2d2e11c9a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1678-07-15"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
 
 <https://ex.org/Person:715a010e-859b-f19e-1ec6-42f6b80bc8fc> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:2ee8b936-29a1-b0bb-4da9-2c2d2e11c9a1> ;
@@ -30,6 +22,7 @@
     sdo:familyName "van Santduijne"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Maerten"@nl ;
+    sdo:knows <https://ex.org/Person:f5ef4bfc-0552-16ce-4b0c-df91da289437> ;
     sdo:name "Maerten Hendricks van Santduijne"@nl ;
     sdo:spouse <https://ex.org/Person:72daaa0e-7e3b-285b-5b28-cfbfc28eda02> .
 
@@ -45,11 +38,13 @@
     sdo:familyName "van Waelswijck"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName "Dievertje"@nl ;
+    sdo:knows <https://ex.org/Person:f5ef4bfc-0552-16ce-4b0c-df91da289437> ;
     sdo:name "Dievertje Abrahams van Waelswijck"@nl ;
     sdo:spouse <https://ex.org/Person:715a010e-859b-f19e-1ec6-42f6b80bc8fc> .
 
 <https://ex.org/Person:f19801eb-1f21-fb83-337d-22315013e639> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:2ee8b936-29a1-b0bb-4da9-2c2d2e11c9a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:2ee8b936-29a1-b0bb-4da9-2c2d2e11c9a1_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:baseSurname "Santduijne"@nl ;
@@ -63,8 +58,22 @@
     sdo:parent <https://ex.org/Person:715a010e-859b-f19e-1ec6-42f6b80bc8fc>,
         <https://ex.org/Person:72daaa0e-7e3b-285b-5b28-cfbfc28eda02> .
 
+<https://ex.org/Person:f5ef4bfc-0552-16ce-4b0c-df91da289437> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:2ee8b936-29a1-b0bb-4da9-2c2d2e11c9a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Waelswijck"@nl ;
+            pnv:givenName "Anna"@nl ;
+            pnv:literalName "Anna Abrahams van Waelswijck"@nl ;
+            pnv:patronym "Abrahams"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:familyName "van Waelswijck"@nl ;
+    sdo:givenName "Anna"@nl ;
+    sdo:name "Anna Abrahams van Waelswijck"@nl .
+
 <https://ex.org/Source:2ee8b936-29a1-b0bb-4da9-2c2d2e11c9a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/40c27e8f-7451-412b-99ee-190cab58c85d/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/2ee8b936-29a1-b0bb-4da9-2c2d2e11c9a1"^^xsd:anyURI ;

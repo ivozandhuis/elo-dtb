@@ -5,6 +5,23 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:1efe16a1-4c7e-658b-2e45-f84429dcc9a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1688-04-04"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
+<https://ex.org/Person:084ef201-6ddb-ac08-2b42-987fc980b2fa> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:1efe16a1-4c7e-658b-2e45-f84429dcc9a1> ;
+    sdo:children <https://ex.org/Person:8c3719c8-1738-cbe7-7c57-a7319c128e3a> ;
+    sdo:familyName "Johnson"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Isaak"@nl ;
+    sdo:knows <https://ex.org/Person:4a964d5a-f041-5299-fe7c-6113fbf5ddb1>,
+        <https://ex.org/Person:67281094-541b-8818-b194-44f88b069355>,
+        <https://ex.org/Person:6851017c-5cd8-9367-282c-6cf7166fd264> ;
+    sdo:name "Isaak Johnson"@nl ;
+    sdo:spouse <https://ex.org/Person:9cc166fc-44b9-2a0e-230f-fe1babcc8364> .
+
 <https://ex.org/Person:4a964d5a-f041-5299-fe7c-6113fbf5ddb1> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:1efe16a1-4c7e-658b-2e45-f84429dcc9a1> ;
     picom:hasRole picot_roles:573 ;
@@ -36,17 +53,9 @@
     sdo:givenName "Geraard"@nl ;
     sdo:name "Geraard del Tombe"@nl .
 
-<https://ex.org/Person:084ef201-6ddb-ac08-2b42-987fc980b2fa> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:1efe16a1-4c7e-658b-2e45-f84429dcc9a1> ;
-    sdo:children <https://ex.org/Person:8c3719c8-1738-cbe7-7c57-a7319c128e3a> ;
-    sdo:familyName "Johnson"@nl ;
-    sdo:gender sdo:Male ;
-    sdo:givenName "Isaak"@nl ;
-    sdo:name "Isaak Johnson"@nl ;
-    sdo:spouse <https://ex.org/Person:9cc166fc-44b9-2a0e-230f-fe1babcc8364> .
-
 <https://ex.org/Person:8c3719c8-1738-cbe7-7c57-a7319c128e3a> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:1efe16a1-4c7e-658b-2e45-f84429dcc9a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:1efe16a1-4c7e-658b-2e45-f84429dcc9a1_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 04-04-1688"@nl ;
     sdo:familyName "Johnson"@nl ;
@@ -66,11 +75,15 @@
     sdo:familyName "del Tombe"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName "Esther"@nl ;
+    sdo:knows <https://ex.org/Person:4a964d5a-f041-5299-fe7c-6113fbf5ddb1>,
+        <https://ex.org/Person:67281094-541b-8818-b194-44f88b069355>,
+        <https://ex.org/Person:6851017c-5cd8-9367-282c-6cf7166fd264> ;
     sdo:name "Esther del Tombe"@nl ;
     sdo:spouse <https://ex.org/Person:084ef201-6ddb-ac08-2b42-987fc980b2fa> .
 
 <https://ex.org/Source:1efe16a1-4c7e-658b-2e45-f84429dcc9a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/95010e7a-e05d-4f49-9b81-4a17d278a0f9/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/1efe16a1-4c7e-658b-2e45-f84429dcc9a1"^^xsd:anyURI ;

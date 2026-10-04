@@ -5,6 +5,11 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:fe0bf28c-e481-bdaa-48aa-fd2619b70c35_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1649-11-19"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/99> .
+
 <https://ex.org/Person:0a70f369-23d6-643d-21d4-ab78851e34e2> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:fe0bf28c-e481-bdaa-48aa-fd2619b70c35> ;
     picom:hasRole picot_roles:573 ;
@@ -12,26 +17,16 @@
             pnv:givenName "Lydia"@nl ;
             pnv:literalName "Lydia Thonis"@nl ;
             pnv:patronym "Thonis"@nl ] ;
+    sdo:address "Oude Vest"@nl ;
     sdo:description "getuige van de bruid, relatie tot de bruid: moei, adres: Oude Vest"@nl ;
+    sdo:gender sdo:Female ;
     sdo:givenName "Lydia"@nl ;
     sdo:name "Lydia Thonis"@nl .
-
-<https://ex.org/Person:cba9f821-a709-55bd-77ef-8a8519c95685> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:fe0bf28c-e481-bdaa-48aa-fd2619b70c35> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:baseSurname "Cool"@nl ;
-            pnv:givenName "Jan"@nl ;
-            pnv:literalName "Jan Jochemsz Cool"@nl ;
-            pnv:patronym "Jochemsz"@nl ] ;
-    sdo:description "getuige van de bruidegom, relatie tot de bruidegom: oom, adres: Levendael"@nl ;
-    sdo:familyName "Cool"@nl ;
-    sdo:givenName "Jan"@nl ;
-    sdo:name "Jan Jochemsz Cool"@nl .
 
 <https://ex.org/Person:2ad69130-a432-c567-b4de-5b33a64063d2> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:fe0bf28c-e481-bdaa-48aa-fd2619b70c35> ;
     picom:hasRole picot_roles:574 ;
+    picom:hasUncle_Aunt <https://ex.org/Person:cba9f821-a709-55bd-77ef-8a8519c95685> ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:baseSurname "Clouck"@nl ;
             pnv:givenName "Frans"@nl ;
@@ -49,6 +44,7 @@
 <https://ex.org/Person:bc8a6d45-a793-09e4-3602-520e95199ddd> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:fe0bf28c-e481-bdaa-48aa-fd2619b70c35> ;
     picom:hasRole picot_roles:574 ;
+    picom:hasUncle_Aunt <https://ex.org/Person:0a70f369-23d6-643d-21d4-ab78851e34e2> ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:baseSurname "Graef"@nl ;
             pnv:givenName "Jaecquemyntgen"@nl ;
@@ -62,13 +58,30 @@
     sdo:name "Jaecquemyntgen Isaac de Graef"@nl ;
     sdo:spouse <https://ex.org/Person:2ad69130-a432-c567-b4de-5b33a64063d2> .
 
+<https://ex.org/Person:cba9f821-a709-55bd-77ef-8a8519c95685> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:fe0bf28c-e481-bdaa-48aa-fd2619b70c35> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Cool"@nl ;
+            pnv:givenName "Jan"@nl ;
+            pnv:literalName "Jan Jochemsz Cool"@nl ;
+            pnv:patronym "Jochemsz"@nl ] ;
+    sdo:address "Levendael"@nl ;
+    sdo:description "getuige van de bruidegom, relatie tot de bruidegom: oom, adres: Levendael"@nl ;
+    sdo:familyName "Cool"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jan"@nl ;
+    sdo:name "Jan Jochemsz Cool"@nl .
+
 <https://ex.org/Source:fe0bf28c-e481-bdaa-48aa-fd2619b70c35> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/549>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/e96c1282-5e0b-43e5-bcd3-4edf986cf131/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/fe0bf28c-e481-bdaa-48aa-fd2619b70c35"^^xsd:anyURI ;
             sdo:position "1" ;
             sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/e96c1282-5e0b-43e5-bcd3-4edf986cf131/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1649-11-19"@nl ;
     sdo:dateModified "1970-01-01"^^xsd:date ;
     sdo:description "14"@nl,
         "1647-1653"@nl,

@@ -4,8 +4,14 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:9cbad3b0-3a13-5ee5-76fe-2d76427debee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1810-08-19"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Person:3d406f81-3c5b-1f5a-41fd-b433a0d60d16> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:9cbad3b0-3a13-5ee5-76fe-2d76427debee> ;
+    picom:hasLifeEvent <https://ex.org/Source:9cbad3b0-3a13-5ee5-76fe-2d76427debee_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:birthDate "1810-08-15"^^xsd:date ;
     sdo:description "Doopdatum: 19-08-1810"@nl ;
@@ -34,7 +40,8 @@
     sdo:spouse <https://ex.org/Person:54227237-9fd8-2eaa-4107-8bae6bdabac0> .
 
 <https://ex.org/Source:9cbad3b0-3a13-5ee5-76fe-2d76427debee> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/ff7ae74e-3df4-46a0-b83f-63fb160dfa66/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/9cbad3b0-3a13-5ee5-76fe-2d76427debee"^^xsd:anyURI ;

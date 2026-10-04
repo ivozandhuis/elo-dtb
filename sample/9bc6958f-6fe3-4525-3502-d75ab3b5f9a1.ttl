@@ -5,6 +5,23 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Person:34e99bf1-2e33-7b2a-5f56-061af0edbc1f> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:9bc6958f-6fe3-4525-3502-d75ab3b5f9a1> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Toict"@nl ;
+            pnv:givenName "Charles"@nl ;
+            pnv:literalName "Charles du Toict"@nl ;
+            pnv:surnamePrefix "du"@nl ] ;
+    sdo:children <https://ex.org/Person:dfef3a83-0277-6cec-46f5-3fb0ec2d71aa> ;
+    sdo:familyName "du Toict"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Charles"@nl ;
+    sdo:knows <https://ex.org/Person:5d2390d8-b7b6-33f8-98a3-94bd1d0d3e9a>,
+        <https://ex.org/Person:847d583f-763c-42e2-c885-344a6b773c54>,
+        <https://ex.org/Person:db69468b-19ac-2637-28d4-f0c9a7fc45e3>,
+        <https://ex.org/Person:e572f792-8b66-7082-0400-bfed4b1ac252> ;
+    sdo:name "Charles du Toict"@nl .
+
 <https://ex.org/Person:5d2390d8-b7b6-33f8-98a3-94bd1d0d3e9a> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:9bc6958f-6fe3-4525-3502-d75ab3b5f9a1> ;
     picom:hasRole picot_roles:573 ;
@@ -31,33 +48,9 @@
     sdo:givenName "Balthsar"@nl ;
     sdo:name "Balthsar de Bane"@nl .
 
-<https://ex.org/Person:e572f792-8b66-7082-0400-bfed4b1ac252> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:9bc6958f-6fe3-4525-3502-d75ab3b5f9a1> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:baseSurname "Latesen"@nl ;
-            pnv:givenName "Guilbert"@nl ;
-            pnv:literalName "Guilbert de Latesen"@nl ;
-            pnv:surnamePrefix "de"@nl ] ;
-    sdo:familyName "de Latesen"@nl ;
-    sdo:givenName "Guilbert"@nl ;
-    sdo:name "Guilbert de Latesen"@nl .
-
-<https://ex.org/Person:34e99bf1-2e33-7b2a-5f56-061af0edbc1f> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:9bc6958f-6fe3-4525-3502-d75ab3b5f9a1> ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:baseSurname "Toict"@nl ;
-            pnv:givenName "Charles"@nl ;
-            pnv:literalName "Charles du Toict"@nl ;
-            pnv:surnamePrefix "du"@nl ] ;
-    sdo:children <https://ex.org/Person:dfef3a83-0277-6cec-46f5-3fb0ec2d71aa> ;
-    sdo:familyName "du Toict"@nl ;
-    sdo:gender sdo:Male ;
-    sdo:givenName "Charles"@nl ;
-    sdo:name "Charles du Toict"@nl .
-
 <https://ex.org/Person:dfef3a83-0277-6cec-46f5-3fb0ec2d71aa> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:9bc6958f-6fe3-4525-3502-d75ab3b5f9a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:9bc6958f-6fe3-4525-3502-d75ab3b5f9a1_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:baseSurname "Toict"@nl ;
@@ -70,8 +63,26 @@
     sdo:name "Susanne du Toict"@nl ;
     sdo:parent <https://ex.org/Person:34e99bf1-2e33-7b2a-5f56-061af0edbc1f> .
 
+<https://ex.org/Person:e572f792-8b66-7082-0400-bfed4b1ac252> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:9bc6958f-6fe3-4525-3502-d75ab3b5f9a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Latesen"@nl ;
+            pnv:givenName "Guilbert"@nl ;
+            pnv:literalName "Guilbert de Latesen"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:familyName "de Latesen"@nl ;
+    sdo:givenName "Guilbert"@nl ;
+    sdo:name "Guilbert de Latesen"@nl .
+
+<https://ex.org/Source:9bc6958f-6fe3-4525-3502-d75ab3b5f9a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1636-02-14"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Source:9bc6958f-6fe3-4525-3502-d75ab3b5f9a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/3fda8631-0be8-47bf-a693-345c79cbcfbd/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/9bc6958f-6fe3-4525-3502-d75ab3b5f9a1"^^xsd:anyURI ;

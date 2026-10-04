@@ -4,6 +4,11 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:cb207091-f4ce-f941-0ec5-827279f969a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1787-12-11"@nl ;
+    picom:eventPlace "Sassenheim"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Person:58cab95f-ebbf-74db-64e9-2318ac441c3f> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:cb207091-f4ce-f941-0ec5-827279f969a1> ;
     picom:hasRole picot_roles:573 ;
@@ -20,6 +25,7 @@
 
 <https://ex.org/Person:88ffe7a4-db57-eb3d-5264-2617f8b817ac> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:cb207091-f4ce-f941-0ec5-827279f969a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:cb207091-f4ce-f941-0ec5-827279f969a1_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 11-12-1787"@nl ;
     sdo:familyName "Kazander"@nl ;
@@ -34,6 +40,8 @@
     sdo:familyName "Ammeraal"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName "Geertrui"@nl ;
+    sdo:knows <https://ex.org/Person:58cab95f-ebbf-74db-64e9-2318ac441c3f>,
+        <https://ex.org/Person:820efea8-ccb8-382e-a86f-9041b2abb6ab> ;
     sdo:name "Geertrui Ammeraal"@nl ;
     sdo:spouse <https://ex.org/Person:ec32b28a-1c26-a3ba-c5a7-def324808962> .
 
@@ -43,11 +51,14 @@
     sdo:familyName "Kazander"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Aloijn"@nl ;
+    sdo:knows <https://ex.org/Person:58cab95f-ebbf-74db-64e9-2318ac441c3f>,
+        <https://ex.org/Person:820efea8-ccb8-382e-a86f-9041b2abb6ab> ;
     sdo:name "Aloijn Kazander"@nl ;
     sdo:spouse <https://ex.org/Person:94e71908-fc10-bbba-8091-8a3c6700413a> .
 
 <https://ex.org/Source:cb207091-f4ce-f941-0ec5-827279f969a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/cbb1a2f4-1110-4a00-b760-cd1c029fe3d1/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/cb207091-f4ce-f941-0ec5-827279f969a1"^^xsd:anyURI ;

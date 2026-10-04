@@ -4,22 +4,14 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ex.org/Person:96ac0ce7-005a-3176-4bc9-bab28e185769> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:900891d5-1144-e780-26ed-b0875bc319a1> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:familyName "Serooj"@nl ;
-    sdo:givenName "Aeltie"@nl ;
-    sdo:name "Aeltie Serooj"@nl .
-
-<https://ex.org/Person:b67d1811-2b8b-9755-9e97-fa2172f6d1a4> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:900891d5-1144-e780-26ed-b0875bc319a1> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:familyName "Serooj"@nl ;
-    sdo:givenName "Gillis"@nl ;
-    sdo:name "Gillis Serooj"@nl .
+<https://ex.org/Source:900891d5-1144-e780-26ed-b0875bc319a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1684-09-28"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
 
 <https://ex.org/Person:86572356-3d1e-1cbe-4d9d-0cfac021dad9> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:900891d5-1144-e780-26ed-b0875bc319a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:900891d5-1144-e780-26ed-b0875bc319a1_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 28-09-1684"@nl ;
     sdo:familyName "Serooj"@nl ;
@@ -34,8 +26,24 @@
     sdo:familyName "Serooj"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Cornelis"@nl ;
+    sdo:knows <https://ex.org/Person:96ac0ce7-005a-3176-4bc9-bab28e185769>,
+        <https://ex.org/Person:b67d1811-2b8b-9755-9e97-fa2172f6d1a4> ;
     sdo:name "Cornelis Serooj"@nl ;
     sdo:spouse <https://ex.org/Person:f0c51a99-19eb-ce87-785c-a67041a0e28e> .
+
+<https://ex.org/Person:96ac0ce7-005a-3176-4bc9-bab28e185769> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:900891d5-1144-e780-26ed-b0875bc319a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Serooj"@nl ;
+    sdo:givenName "Aeltie"@nl ;
+    sdo:name "Aeltie Serooj"@nl .
+
+<https://ex.org/Person:b67d1811-2b8b-9755-9e97-fa2172f6d1a4> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:900891d5-1144-e780-26ed-b0875bc319a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Serooj"@nl ;
+    sdo:givenName "Gillis"@nl ;
+    sdo:name "Gillis Serooj"@nl .
 
 <https://ex.org/Person:f0c51a99-19eb-ce87-785c-a67041a0e28e> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:900891d5-1144-e780-26ed-b0875bc319a1> ;
@@ -43,11 +51,14 @@
     sdo:familyName "Deree"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName "Maria"@nl ;
+    sdo:knows <https://ex.org/Person:96ac0ce7-005a-3176-4bc9-bab28e185769>,
+        <https://ex.org/Person:b67d1811-2b8b-9755-9e97-fa2172f6d1a4> ;
     sdo:name "Maria Deree"@nl ;
     sdo:spouse <https://ex.org/Person:8b4ee5b2-990f-13d2-65af-563d5743bf77> .
 
 <https://ex.org/Source:900891d5-1144-e780-26ed-b0875bc319a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/d6299de8-3f24-457e-b8a1-232d01104fb0/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/900891d5-1144-e780-26ed-b0875bc319a1"^^xsd:anyURI ;

@@ -21,7 +21,6 @@ WHERE {
   ?text ql:contains-word "trouwen" .
   ?text ql:contains-entity ?description .
   ?source a sdo:ArchiveComponent ;
-          sdo:holdingArchive oa:elo ;
           sdo:locationCreated ?event_place ;
           sdo:description ?description .
   FILTER (CONTAINS(?description, "Datum trouwen: "))

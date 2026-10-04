@@ -5,6 +5,11 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:691bb3f0-7fe8-0239-7008-1e8f22818bee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1663-09-09"@nl ;
+    picom:eventPlace "Noordwijk"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Person:6215e5fb-d8b1-f711-8150-28f35dd548a4> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:691bb3f0-7fe8-0239-7008-1e8f22818bee> ;
     picom:hasRole picot_roles:573 ;
@@ -17,6 +22,20 @@
     sdo:givenName "Claas"@nl ;
     sdo:name "Claas Arentsz Glasbergen"@nl .
 
+<https://ex.org/Person:7791afe5-0901-e735-13b4-364a8264e110> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:691bb3f0-7fe8-0239-7008-1e8f22818bee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Neeltie"@nl ;
+            pnv:literalName "Neeltie Gijsberts"@nl ;
+            pnv:patronym "Gijsberts"@nl ] ;
+    sdo:children <https://ex.org/Person:96a420ba-2774-d470-473f-80e9eef37779> ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Neeltie"@nl ;
+    sdo:knows <https://ex.org/Person:6215e5fb-d8b1-f711-8150-28f35dd548a4>,
+        <https://ex.org/Person:87b4808a-68d6-0ca3-f820-4e1871232c7f> ;
+    sdo:name "Neeltie Gijsberts"@nl ;
+    sdo:spouse <https://ex.org/Person:ad28ca11-6ff3-b1bc-d97f-a127e040c150> .
+
 <https://ex.org/Person:87b4808a-68d6-0ca3-f820-4e1871232c7f> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:691bb3f0-7fe8-0239-7008-1e8f22818bee> ;
     picom:hasRole picot_roles:573 ;
@@ -27,20 +46,9 @@
     sdo:givenName "Jannetie"@nl ;
     sdo:name "Jannetie Arents"@nl .
 
-<https://ex.org/Person:7791afe5-0901-e735-13b4-364a8264e110> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:691bb3f0-7fe8-0239-7008-1e8f22818bee> ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:givenName "Neeltie"@nl ;
-            pnv:literalName "Neeltie Gijsberts"@nl ;
-            pnv:patronym "Gijsberts"@nl ] ;
-    sdo:children <https://ex.org/Person:96a420ba-2774-d470-473f-80e9eef37779> ;
-    sdo:gender sdo:Female ;
-    sdo:givenName "Neeltie"@nl ;
-    sdo:name "Neeltie Gijsberts"@nl ;
-    sdo:spouse <https://ex.org/Person:ad28ca11-6ff3-b1bc-d97f-a127e040c150> .
-
 <https://ex.org/Person:96a420ba-2774-d470-473f-80e9eef37779> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:691bb3f0-7fe8-0239-7008-1e8f22818bee> ;
+    picom:hasLifeEvent <https://ex.org/Source:691bb3f0-7fe8-0239-7008-1e8f22818bee_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:baseSurname "Glasbergen"@nl ;
@@ -66,11 +74,14 @@
     sdo:familyName "van Glasbergen"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Jan"@nl ;
+    sdo:knows <https://ex.org/Person:6215e5fb-d8b1-f711-8150-28f35dd548a4>,
+        <https://ex.org/Person:87b4808a-68d6-0ca3-f820-4e1871232c7f> ;
     sdo:name "Jan Arentsz van Glasbergen"@nl ;
     sdo:spouse <https://ex.org/Person:7791afe5-0901-e735-13b4-364a8264e110> .
 
 <https://ex.org/Source:691bb3f0-7fe8-0239-7008-1e8f22818bee> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/8421ea7c-8aae-4840-9100-730f0c52186d/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/691bb3f0-7fe8-0239-7008-1e8f22818bee"^^xsd:anyURI ;

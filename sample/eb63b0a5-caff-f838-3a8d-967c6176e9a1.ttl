@@ -5,6 +5,11 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:eb63b0a5-caff-f838-3a8d-967c6176e9a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1785-11-13"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Person:353dc970-a4d8-4a22-86e0-3ba64bea8f0c> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:eb63b0a5-caff-f838-3a8d-967c6176e9a1> ;
     picom:hasRole picot_roles:573 ;
@@ -26,6 +31,7 @@
 
 <https://ex.org/Person:549cc6bd-743b-0a92-fe5b-57b96236e5b9> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:eb63b0a5-caff-f838-3a8d-967c6176e9a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:eb63b0a5-caff-f838-3a8d-967c6176e9a1_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 13-11-1785"@nl ;
     sdo:familyName "Hogervorst"@nl ;
@@ -40,6 +46,8 @@
     sdo:familyName "Hogervorst"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Willem"@nl ;
+    sdo:knows <https://ex.org/Person:353dc970-a4d8-4a22-86e0-3ba64bea8f0c>,
+        <https://ex.org/Person:3f5cd4a2-eaeb-3e95-3fd5-dff0ceddafec> ;
     sdo:name "Willem Hogervorst"@nl ;
     sdo:spouse <https://ex.org/Person:bc820d5a-8a88-e937-f157-3b16a3e95823> .
 
@@ -49,11 +57,14 @@
     sdo:familyName "Heemelop"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName "Menssie"@nl ;
+    sdo:knows <https://ex.org/Person:353dc970-a4d8-4a22-86e0-3ba64bea8f0c>,
+        <https://ex.org/Person:3f5cd4a2-eaeb-3e95-3fd5-dff0ceddafec> ;
     sdo:name "Menssie Heemelop"@nl ;
     sdo:spouse <https://ex.org/Person:7303df32-cc53-e24f-a1d5-b8a11c6ebe36> .
 
 <https://ex.org/Source:eb63b0a5-caff-f838-3a8d-967c6176e9a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/a3278852-5974-44c8-809c-875c1fe46843/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/eb63b0a5-caff-f838-3a8d-967c6176e9a1"^^xsd:anyURI ;

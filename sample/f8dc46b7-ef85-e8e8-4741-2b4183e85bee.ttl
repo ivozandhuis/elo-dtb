@@ -5,6 +5,11 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:f8dc46b7-ef85-e8e8-4741-2b4183e85bee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1755-08-10"@nl ;
+    picom:eventPlace "Woubrugge"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Person:1ae5c937-3f63-53d5-e719-1d5c5c29df9a> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:f8dc46b7-ef85-e8e8-4741-2b4183e85bee> ;
     picom:hasRole picot_roles:573 ;
@@ -14,6 +19,7 @@
 
 <https://ex.org/Person:59820e0d-c55a-b8ec-ce4c-ea5985be9fef> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:f8dc46b7-ef85-e8e8-4741-2b4183e85bee> ;
+    picom:hasLifeEvent <https://ex.org/Source:f8dc46b7-ef85-e8e8-4741-2b4183e85bee_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:baseSurname "Waalle"@nl ;
@@ -38,6 +44,7 @@
     sdo:familyName "van Waalle"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Willem"@nl ;
+    sdo:knows <https://ex.org/Person:1ae5c937-3f63-53d5-e719-1d5c5c29df9a> ;
     sdo:name "Willem van Waalle"@nl ;
     sdo:spouse <https://ex.org/Person:bcccbae7-dfad-4d2c-38ad-fb5630a4c5d9> .
 
@@ -47,11 +54,13 @@
     sdo:familyName "Verburg"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName "Huijbertje"@nl ;
+    sdo:knows <https://ex.org/Person:1ae5c937-3f63-53d5-e719-1d5c5c29df9a> ;
     sdo:name "Huijbertje Verburg"@nl ;
     sdo:spouse <https://ex.org/Person:a8442a0c-fdf7-152c-e118-ffb1000c997d> .
 
 <https://ex.org/Source:f8dc46b7-ef85-e8e8-4741-2b4183e85bee> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/6be2bc26-f8da-4da0-aa63-e8224c66ff5e/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/f8dc46b7-ef85-e8e8-4741-2b4183e85bee"^^xsd:anyURI ;

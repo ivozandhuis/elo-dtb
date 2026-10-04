@@ -24,6 +24,7 @@
 
 <https://ex.org/Person:9e4dea46-5b33-b5e5-0be2-c51d17c4a250> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:ecb9e88d-82ae-9327-5e06-78b47a2079a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:ecb9e88d-82ae-9327-5e06-78b47a2079a1_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 14-09-1653"@nl ;
     sdo:givenName "Jacomijntje"@nl ;
@@ -39,10 +40,18 @@
     sdo:children <https://ex.org/Person:9e4dea46-5b33-b5e5-0be2-c51d17c4a250> ;
     sdo:gender sdo:Male ;
     sdo:givenName "Pieter"@nl ;
+    sdo:knows <https://ex.org/Person:19a7ef19-e026-1871-7162-d7df89dd6bb8>,
+        <https://ex.org/Person:68e7c494-4cfe-188a-b3b9-bc61ff43d8d6> ;
     sdo:name "Pieter Thomassen"@nl .
 
+<https://ex.org/Source:ecb9e88d-82ae-9327-5e06-78b47a2079a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1653-09-14"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Source:ecb9e88d-82ae-9327-5e06-78b47a2079a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/09372621-a4cc-49a1-b68e-e386ab12d29c/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/ecb9e88d-82ae-9327-5e06-78b47a2079a1"^^xsd:anyURI ;

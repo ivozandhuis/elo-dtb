@@ -5,6 +5,11 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:afee1e18-19f2-79f0-9611-2741c25f29a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1665-12-06"@nl ;
+    picom:eventPlace "Warmond"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Person:8fcc4cf9-bfe2-f855-1e25-ef9e2e125563> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:afee1e18-19f2-79f0-9611-2741c25f29a1> ;
     sdo:additionalName [ a pnv:PersonName ;
@@ -31,6 +36,7 @@
 
 <https://ex.org/Person:df8af7e5-5b55-8e22-9261-854f2eb3a1d7> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:afee1e18-19f2-79f0-9611-2741c25f29a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:afee1e18-19f2-79f0-9611-2741c25f29a1_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 06-12-1665"@nl ;
     sdo:givenName "Thijs"@nl ;
@@ -39,7 +45,8 @@
         <https://ex.org/Person:c2f3579a-e42c-479f-859e-a4de90e895f9> .
 
 <https://ex.org/Source:afee1e18-19f2-79f0-9611-2741c25f29a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/95c60148-eca7-4324-8535-3ec849c89229/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/afee1e18-19f2-79f0-9611-2741c25f29a1"^^xsd:anyURI ;

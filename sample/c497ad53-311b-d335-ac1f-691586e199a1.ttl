@@ -5,6 +5,11 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:c497ad53-311b-d335-ac1f-691586e199a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1795-11-22"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Person:4fc0e32f-2e1c-fff4-99a1-aa9ec54d1bb2> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:c497ad53-311b-d335-ac1f-691586e199a1> ;
     picom:hasRole picot_roles:573 ;
@@ -23,11 +28,13 @@
     sdo:familyName "van Hoek"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName "Adriana"@nl ;
+    sdo:knows <https://ex.org/Person:4fc0e32f-2e1c-fff4-99a1-aa9ec54d1bb2> ;
     sdo:name "Adriana van Hoek"@nl ;
     sdo:spouse <https://ex.org/Person:c307eb2a-d51a-a413-1f5f-104c76023e0b> .
 
 <https://ex.org/Person:a7ee8fb2-1898-56a5-ef02-ca5f5f086b84> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:c497ad53-311b-d335-ac1f-691586e199a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:c497ad53-311b-d335-ac1f-691586e199a1_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 22-11-1795"@nl ;
     sdo:familyName "Visser"@nl ;
@@ -42,11 +49,13 @@
     sdo:familyName "Visser"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Hendrik"@nl ;
+    sdo:knows <https://ex.org/Person:4fc0e32f-2e1c-fff4-99a1-aa9ec54d1bb2> ;
     sdo:name "Hendrik Visser"@nl ;
     sdo:spouse <https://ex.org/Person:a3516fa1-f276-ed4e-407c-9a528bf1f413> .
 
 <https://ex.org/Source:c497ad53-311b-d335-ac1f-691586e199a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/c61ba68b-791d-4b96-9e13-38c388c1548f/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/c497ad53-311b-d335-ac1f-691586e199a1"^^xsd:anyURI ;

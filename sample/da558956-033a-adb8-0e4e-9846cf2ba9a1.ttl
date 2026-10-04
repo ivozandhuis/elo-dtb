@@ -5,6 +5,15 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Person:4d303d40-b2a3-b3cd-c844-4161132a6a07> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:da558956-033a-adb8-0e4e-9846cf2ba9a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:da558956-033a-adb8-0e4e-9846cf2ba9a1_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 09-02-1653"@nl ;
+    sdo:givenName "Maritje"@nl ;
+    sdo:name "Maritje"@nl ;
+    sdo:parent <https://ex.org/Person:dc14650e-624b-b843-cef5-4dc4f94321ad> .
+
 <https://ex.org/Person:5f0ee280-0dca-c080-f48b-7986e06e1930> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:da558956-033a-adb8-0e4e-9846cf2ba9a1> ;
     picom:hasRole picot_roles:573 ;
@@ -25,6 +34,20 @@
     sdo:givenName "Cornelia"@nl ;
     sdo:name "Cornelia Abrahams"@nl .
 
+<https://ex.org/Person:dc14650e-624b-b843-cef5-4dc4f94321ad> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:da558956-033a-adb8-0e4e-9846cf2ba9a1> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Abraham"@nl ;
+            pnv:literalName "Abraham Joosten"@nl ;
+            pnv:patronym "Joosten"@nl ] ;
+    sdo:children <https://ex.org/Person:4d303d40-b2a3-b3cd-c844-4161132a6a07> ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Abraham"@nl ;
+    sdo:knows <https://ex.org/Person:5f0ee280-0dca-c080-f48b-7986e06e1930>,
+        <https://ex.org/Person:a799edb6-e8d4-ab4a-aed7-3c69eabf53f8>,
+        <https://ex.org/Person:df5545bb-7032-b795-283d-3338226abc00> ;
+    sdo:name "Abraham Joosten"@nl .
+
 <https://ex.org/Person:df5545bb-7032-b795-283d-3338226abc00> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:da558956-033a-adb8-0e4e-9846cf2ba9a1> ;
     picom:hasRole picot_roles:573 ;
@@ -35,27 +58,14 @@
     sdo:givenName "Magdalena"@nl ;
     sdo:name "Magdalena Senten"@nl .
 
-<https://ex.org/Person:4d303d40-b2a3-b3cd-c844-4161132a6a07> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:da558956-033a-adb8-0e4e-9846cf2ba9a1> ;
-    picom:hasRole picot_roles:575 ;
-    sdo:description "Doopdatum: 09-02-1653"@nl ;
-    sdo:givenName "Maritje"@nl ;
-    sdo:name "Maritje"@nl ;
-    sdo:parent <https://ex.org/Person:dc14650e-624b-b843-cef5-4dc4f94321ad> .
-
-<https://ex.org/Person:dc14650e-624b-b843-cef5-4dc4f94321ad> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:da558956-033a-adb8-0e4e-9846cf2ba9a1> ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:givenName "Abraham"@nl ;
-            pnv:literalName "Abraham Joosten"@nl ;
-            pnv:patronym "Joosten"@nl ] ;
-    sdo:children <https://ex.org/Person:4d303d40-b2a3-b3cd-c844-4161132a6a07> ;
-    sdo:gender sdo:Male ;
-    sdo:givenName "Abraham"@nl ;
-    sdo:name "Abraham Joosten"@nl .
+<https://ex.org/Source:da558956-033a-adb8-0e4e-9846cf2ba9a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1653-02-09"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
 
 <https://ex.org/Source:da558956-033a-adb8-0e4e-9846cf2ba9a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/a635e16a-3be7-4b91-9339-e974f20b7f51/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/da558956-033a-adb8-0e4e-9846cf2ba9a1"^^xsd:anyURI ;

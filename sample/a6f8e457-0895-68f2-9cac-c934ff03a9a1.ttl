@@ -5,6 +5,11 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:a6f8e457-0895-68f2-9cac-c934ff03a9a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1621-06-10"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Person:014aec35-df4b-970e-4694-7fdcff788913> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:a6f8e457-0895-68f2-9cac-c934ff03a9a1> ;
     picom:hasRole picot_roles:573 ;
@@ -34,6 +39,8 @@
     sdo:children <https://ex.org/Person:7ad39bb4-70c9-899b-986b-72acf1d4b633> ;
     sdo:gender sdo:Male ;
     sdo:givenName "Isbrant"@nl ;
+    sdo:knows <https://ex.org/Person:014aec35-df4b-970e-4694-7fdcff788913>,
+        <https://ex.org/Person:03c38322-1f11-ad93-ca15-88e0ae23a9c4> ;
     sdo:name "Isbrant Claessen"@nl ;
     sdo:spouse <https://ex.org/Person:798982ab-52d3-27d8-1c2a-e96a5b706ca3> .
 
@@ -46,11 +53,14 @@
     sdo:children <https://ex.org/Person:7ad39bb4-70c9-899b-986b-72acf1d4b633> ;
     sdo:gender sdo:Female ;
     sdo:givenName "Lijsbeth"@nl ;
+    sdo:knows <https://ex.org/Person:014aec35-df4b-970e-4694-7fdcff788913>,
+        <https://ex.org/Person:03c38322-1f11-ad93-ca15-88e0ae23a9c4> ;
     sdo:name "Lijsbeth Pieters"@nl ;
     sdo:spouse <https://ex.org/Person:353a9c5f-c11e-4a86-5f76-c3cc9f21d6ce> .
 
 <https://ex.org/Person:7ad39bb4-70c9-899b-986b-72acf1d4b633> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:a6f8e457-0895-68f2-9cac-c934ff03a9a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:a6f8e457-0895-68f2-9cac-c934ff03a9a1_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 10-06-1621"@nl ;
     sdo:givenName "Annetgen"@nl ;
@@ -59,7 +69,8 @@
         <https://ex.org/Person:798982ab-52d3-27d8-1c2a-e96a5b706ca3> .
 
 <https://ex.org/Source:a6f8e457-0895-68f2-9cac-c934ff03a9a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/7dd81a97-9ca8-4b93-998b-851c0e248e95/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/a6f8e457-0895-68f2-9cac-c934ff03a9a1"^^xsd:anyURI ;

@@ -25,6 +25,21 @@
     sdo:givenName "Maertgen"@nl ;
     sdo:name "Maertgen Cornelis"@nl .
 
+<https://ex.org/Person:859bdb22-db15-c3ec-3691-86f9efd11ada> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:a4a59f97-4396-f720-27aa-7a1f11e529a1> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Noach"@nl ;
+            pnv:literalName "Noach Jacobsen"@nl ;
+            pnv:patronym "Jacobsen"@nl ] ;
+    sdo:children <https://ex.org/Person:ec76b316-6021-db6f-a6f3-c79541168f7e> ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Noach"@nl ;
+    sdo:knows <https://ex.org/Person:377f477f-16a5-5ebf-0f8d-21fd6990d322>,
+        <https://ex.org/Person:6da27929-5351-4a38-c239-b943c6cec352>,
+        <https://ex.org/Person:d1019ad8-3afe-1fb4-ab18-b61de7041a8a>,
+        <https://ex.org/Person:e22ce822-c7d0-04bd-04b9-e224412ade51> ;
+    sdo:name "Noach Jacobsen"@nl .
+
 <https://ex.org/Person:d1019ad8-3afe-1fb4-ab18-b61de7041a8a> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:a4a59f97-4396-f720-27aa-7a1f11e529a1> ;
     picom:hasRole picot_roles:573 ;
@@ -45,27 +60,23 @@
     sdo:givenName "Trijntgen"@nl ;
     sdo:name "Trijntgen Lucas"@nl .
 
-<https://ex.org/Person:859bdb22-db15-c3ec-3691-86f9efd11ada> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:a4a59f97-4396-f720-27aa-7a1f11e529a1> ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:givenName "Noach"@nl ;
-            pnv:literalName "Noach Jacobsen"@nl ;
-            pnv:patronym "Jacobsen"@nl ] ;
-    sdo:children <https://ex.org/Person:ec76b316-6021-db6f-a6f3-c79541168f7e> ;
-    sdo:gender sdo:Male ;
-    sdo:givenName "Noach"@nl ;
-    sdo:name "Noach Jacobsen"@nl .
-
 <https://ex.org/Person:ec76b316-6021-db6f-a6f3-c79541168f7e> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:a4a59f97-4396-f720-27aa-7a1f11e529a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:a4a59f97-4396-f720-27aa-7a1f11e529a1_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 15-07-1657"@nl ;
     sdo:givenName "Jacob"@nl ;
     sdo:name "Jacob"@nl ;
     sdo:parent <https://ex.org/Person:859bdb22-db15-c3ec-3691-86f9efd11ada> .
 
+<https://ex.org/Source:a4a59f97-4396-f720-27aa-7a1f11e529a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1657-07-15"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Source:a4a59f97-4396-f720-27aa-7a1f11e529a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/ed88f96c-859c-4712-9429-0b3354a10d23/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/a4a59f97-4396-f720-27aa-7a1f11e529a1"^^xsd:anyURI ;

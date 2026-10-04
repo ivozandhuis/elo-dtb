@@ -5,6 +5,11 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:a6ef5889-136b-b800-6747-c8eacbd459a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1701-03-13"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Person:2cd5a902-ca91-0ca8-81d6-1ec076594b85> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:a6ef5889-136b-b800-6747-c8eacbd459a1> ;
     picom:hasRole picot_roles:573 ;
@@ -15,6 +20,17 @@
     sdo:givenName "Jannetie"@nl ;
     sdo:name "Jannetie Huiberts"@nl .
 
+<https://ex.org/Person:3a296e4c-11dc-acc9-ddfa-7cded4e30efc> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:a6ef5889-136b-b800-6747-c8eacbd459a1> ;
+    sdo:children <https://ex.org/Person:c75008f7-6bd8-971f-395c-d0b6bcc88a5f> ;
+    sdo:familyName "Nieuwdorp"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Gerrit"@nl ;
+    sdo:knows <https://ex.org/Person:2cd5a902-ca91-0ca8-81d6-1ec076594b85>,
+        <https://ex.org/Person:77fce240-1c2c-09bf-90c8-1135ae158cb5> ;
+    sdo:name "Gerrit Nieuwdorp"@nl ;
+    sdo:spouse <https://ex.org/Person:d70c5993-135c-be3a-731c-42d3f0eca2ec> .
+
 <https://ex.org/Person:77fce240-1c2c-09bf-90c8-1135ae158cb5> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:a6ef5889-136b-b800-6747-c8eacbd459a1> ;
     picom:hasRole picot_roles:573 ;
@@ -22,17 +38,9 @@
     sdo:givenName "Jan"@nl ;
     sdo:name "Jan Coerten"@nl .
 
-<https://ex.org/Person:3a296e4c-11dc-acc9-ddfa-7cded4e30efc> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:a6ef5889-136b-b800-6747-c8eacbd459a1> ;
-    sdo:children <https://ex.org/Person:c75008f7-6bd8-971f-395c-d0b6bcc88a5f> ;
-    sdo:familyName "Nieuwdorp"@nl ;
-    sdo:gender sdo:Male ;
-    sdo:givenName "Gerrit"@nl ;
-    sdo:name "Gerrit Nieuwdorp"@nl ;
-    sdo:spouse <https://ex.org/Person:d70c5993-135c-be3a-731c-42d3f0eca2ec> .
-
 <https://ex.org/Person:c75008f7-6bd8-971f-395c-d0b6bcc88a5f> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:a6ef5889-136b-b800-6747-c8eacbd459a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:a6ef5889-136b-b800-6747-c8eacbd459a1_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 13-03-1701"@nl ;
     sdo:familyName "Nieuwdorp"@nl ;
@@ -50,11 +58,14 @@
     sdo:children <https://ex.org/Person:c75008f7-6bd8-971f-395c-d0b6bcc88a5f> ;
     sdo:gender sdo:Female ;
     sdo:givenName "Anna Maria"@nl ;
+    sdo:knows <https://ex.org/Person:2cd5a902-ca91-0ca8-81d6-1ec076594b85>,
+        <https://ex.org/Person:77fce240-1c2c-09bf-90c8-1135ae158cb5> ;
     sdo:name "Anna Maria Marcus"@nl ;
     sdo:spouse <https://ex.org/Person:3a296e4c-11dc-acc9-ddfa-7cded4e30efc> .
 
 <https://ex.org/Source:a6ef5889-136b-b800-6747-c8eacbd459a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/3a4ad207-a54a-4991-9d9e-892573448445/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/a6ef5889-136b-b800-6747-c8eacbd459a1"^^xsd:anyURI ;

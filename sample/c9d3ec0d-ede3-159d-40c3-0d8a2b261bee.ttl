@@ -5,22 +5,10 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ex.org/Person:81857681-19c0-2c09-b654-782cd298b4a0> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:c9d3ec0d-ede3-159d-40c3-0d8a2b261bee> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:givenName "Ariaentge"@nl ;
-            pnv:literalName "Ariaentge Jans"@nl ;
-            pnv:patronym "Jans"@nl ] ;
-    sdo:givenName "Ariaentge"@nl ;
-    sdo:name "Ariaentge Jans"@nl .
-
-<https://ex.org/Person:ded24f57-5c1d-ec84-ad5d-a2be055711aa> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:c9d3ec0d-ede3-159d-40c3-0d8a2b261bee> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:familyName "Vermaeschen"@nl ;
-    sdo:givenName "Maritgen"@nl ;
-    sdo:name "Maritgen Vermaeschen"@nl .
+<https://ex.org/Source:c9d3ec0d-ede3-159d-40c3-0d8a2b261bee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1627-03-14"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
 
 <https://ex.org/Person:2c2c758b-4710-2032-9344-a732177a66a2> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:c9d3ec0d-ede3-159d-40c3-0d8a2b261bee> ;
@@ -33,8 +21,20 @@
     sdo:familyName "Scheen"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Claes"@nl ;
+    sdo:knows <https://ex.org/Person:81857681-19c0-2c09-b654-782cd298b4a0>,
+        <https://ex.org/Person:ded24f57-5c1d-ec84-ad5d-a2be055711aa> ;
     sdo:name "Claes Jansz Scheen"@nl ;
     sdo:spouse <https://ex.org/Person:cb80897f-ff16-f98f-c82b-c8527cefc4d9> .
+
+<https://ex.org/Person:81857681-19c0-2c09-b654-782cd298b4a0> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:c9d3ec0d-ede3-159d-40c3-0d8a2b261bee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Ariaentge"@nl ;
+            pnv:literalName "Ariaentge Jans"@nl ;
+            pnv:patronym "Jans"@nl ] ;
+    sdo:givenName "Ariaentge"@nl ;
+    sdo:name "Ariaentge Jans"@nl .
 
 <https://ex.org/Person:cb80897f-ff16-f98f-c82b-c8527cefc4d9> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:c9d3ec0d-ede3-159d-40c3-0d8a2b261bee> ;
@@ -45,11 +45,14 @@
     sdo:children <https://ex.org/Person:d5a59ff1-5c8b-ef81-14c5-13f327b5d836> ;
     sdo:gender sdo:Female ;
     sdo:givenName "Grietge"@nl ;
+    sdo:knows <https://ex.org/Person:81857681-19c0-2c09-b654-782cd298b4a0>,
+        <https://ex.org/Person:ded24f57-5c1d-ec84-ad5d-a2be055711aa> ;
     sdo:name "Grietge Philipsz"@nl ;
     sdo:spouse <https://ex.org/Person:2c2c758b-4710-2032-9344-a732177a66a2> .
 
 <https://ex.org/Person:d5a59ff1-5c8b-ef81-14c5-13f327b5d836> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:c9d3ec0d-ede3-159d-40c3-0d8a2b261bee> ;
+    picom:hasLifeEvent <https://ex.org/Source:c9d3ec0d-ede3-159d-40c3-0d8a2b261bee_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 14-03-1627"@nl ;
     sdo:familyName "Scheen"@nl ;
@@ -58,8 +61,16 @@
     sdo:parent <https://ex.org/Person:2c2c758b-4710-2032-9344-a732177a66a2>,
         <https://ex.org/Person:cb80897f-ff16-f98f-c82b-c8527cefc4d9> .
 
+<https://ex.org/Person:ded24f57-5c1d-ec84-ad5d-a2be055711aa> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:c9d3ec0d-ede3-159d-40c3-0d8a2b261bee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Vermaeschen"@nl ;
+    sdo:givenName "Maritgen"@nl ;
+    sdo:name "Maritgen Vermaeschen"@nl .
+
 <https://ex.org/Source:c9d3ec0d-ede3-159d-40c3-0d8a2b261bee> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/842c07b2-e134-4090-96dc-faea91ea75da/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/c9d3ec0d-ede3-159d-40c3-0d8a2b261bee"^^xsd:anyURI ;

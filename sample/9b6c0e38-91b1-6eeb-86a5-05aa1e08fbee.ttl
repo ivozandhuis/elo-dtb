@@ -5,6 +5,11 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:9b6c0e38-91b1-6eeb-86a5-05aa1e08fbee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1809-02-22"@nl ;
+    picom:eventPlace "Alkemade"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Person:2cddc74d-454a-1455-3028-f2dd8d0c11c8> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:9b6c0e38-91b1-6eeb-86a5-05aa1e08fbee> ;
     picom:hasRole picot_roles:573 ;
@@ -16,6 +21,34 @@
     sdo:familyName "de Kooning"@nl ;
     sdo:givenName "Jaap"@nl ;
     sdo:name "Jaap de Kooning"@nl .
+
+<https://ex.org/Person:56d69b9f-c179-f678-acb7-9694ee2a4a7b> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:9b6c0e38-91b1-6eeb-86a5-05aa1e08fbee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Koek"@nl ;
+            pnv:givenName "Jan"@nl ;
+            pnv:literalName "Jan Janse Koek"@nl ;
+            pnv:patronym "Janse"@nl ] ;
+    sdo:children <https://ex.org/Person:967be4f6-513e-8381-4534-b71cf3ea16e6> ;
+    sdo:familyName "Koek"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jan"@nl ;
+    sdo:knows <https://ex.org/Person:2cddc74d-454a-1455-3028-f2dd8d0c11c8>,
+        <https://ex.org/Person:a74ac508-5b27-ea46-7300-7b2e954e16ff> ;
+    sdo:name "Jan Janse Koek"@nl ;
+    sdo:spouse <https://ex.org/Person:c90531a5-a7a8-3e16-19d5-b0818f686641> .
+
+<https://ex.org/Person:967be4f6-513e-8381-4534-b71cf3ea16e6> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:9b6c0e38-91b1-6eeb-86a5-05aa1e08fbee> ;
+    picom:hasLifeEvent <https://ex.org/Source:9b6c0e38-91b1-6eeb-86a5-05aa1e08fbee_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:birthPlace "Roelofarendsveen"@nl ;
+    sdo:description "Doopdatum: 22-02-1809"@nl ;
+    sdo:familyName "Koek"@nl ;
+    sdo:givenName "Jaapik"@nl ;
+    sdo:name "Jaapik Koek"@nl ;
+    sdo:parent <https://ex.org/Person:56d69b9f-c179-f678-acb7-9694ee2a4a7b>,
+        <https://ex.org/Person:c90531a5-a7a8-3e16-19d5-b0818f686641> .
 
 <https://ex.org/Person:a74ac508-5b27-ea46-7300-7b2e954e16ff> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:9b6c0e38-91b1-6eeb-86a5-05aa1e08fbee> ;
@@ -29,31 +62,6 @@
     sdo:givenName "Jannetje"@nl ;
     sdo:name "Jannetje de Kooning"@nl .
 
-<https://ex.org/Person:56d69b9f-c179-f678-acb7-9694ee2a4a7b> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:9b6c0e38-91b1-6eeb-86a5-05aa1e08fbee> ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:baseSurname "Koek"@nl ;
-            pnv:givenName "Jan"@nl ;
-            pnv:literalName "Jan Janse Koek"@nl ;
-            pnv:patronym "Janse"@nl ] ;
-    sdo:children <https://ex.org/Person:967be4f6-513e-8381-4534-b71cf3ea16e6> ;
-    sdo:familyName "Koek"@nl ;
-    sdo:gender sdo:Male ;
-    sdo:givenName "Jan"@nl ;
-    sdo:name "Jan Janse Koek"@nl ;
-    sdo:spouse <https://ex.org/Person:c90531a5-a7a8-3e16-19d5-b0818f686641> .
-
-<https://ex.org/Person:967be4f6-513e-8381-4534-b71cf3ea16e6> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:9b6c0e38-91b1-6eeb-86a5-05aa1e08fbee> ;
-    picom:hasRole picot_roles:575 ;
-    sdo:birthPlace "Roelofarendsveen"@nl ;
-    sdo:description "Doopdatum: 22-02-1809"@nl ;
-    sdo:familyName "Koek"@nl ;
-    sdo:givenName "Jaapik"@nl ;
-    sdo:name "Jaapik Koek"@nl ;
-    sdo:parent <https://ex.org/Person:56d69b9f-c179-f678-acb7-9694ee2a4a7b>,
-        <https://ex.org/Person:c90531a5-a7a8-3e16-19d5-b0818f686641> .
-
 <https://ex.org/Person:c90531a5-a7a8-3e16-19d5-b0818f686641> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:9b6c0e38-91b1-6eeb-86a5-05aa1e08fbee> ;
     sdo:additionalName [ a pnv:PersonName ;
@@ -65,11 +73,14 @@
     sdo:familyName "van Tol"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName "Leena"@nl ;
+    sdo:knows <https://ex.org/Person:2cddc74d-454a-1455-3028-f2dd8d0c11c8>,
+        <https://ex.org/Person:a74ac508-5b27-ea46-7300-7b2e954e16ff> ;
     sdo:name "Leena van Tol"@nl ;
     sdo:spouse <https://ex.org/Person:56d69b9f-c179-f678-acb7-9694ee2a4a7b> .
 
 <https://ex.org/Source:9b6c0e38-91b1-6eeb-86a5-05aa1e08fbee> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/4199ac3b-bdd8-45ee-9042-0652fed82328/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/9b6c0e38-91b1-6eeb-86a5-05aa1e08fbee"^^xsd:anyURI ;

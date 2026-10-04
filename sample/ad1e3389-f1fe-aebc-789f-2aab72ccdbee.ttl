@@ -5,12 +5,10 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ex.org/Person:10e4af70-cece-551a-8563-a11a07427574> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:ad1e3389-f1fe-aebc-789f-2aab72ccdbee> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:familyName "Lemans"@nl ;
-    sdo:givenName "Lydia"@nl ;
-    sdo:name "Lydia Lemans"@nl .
+<https://ex.org/Source:ad1e3389-f1fe-aebc-789f-2aab72ccdbee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1794-07-10"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
 
 <https://ex.org/Person:0da54023-2eea-8bdf-c39a-1702c9e5842c> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:ad1e3389-f1fe-aebc-789f-2aab72ccdbee> ;
@@ -23,8 +21,16 @@
     sdo:familyName "van Ettinger"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName "Maria Elisabet"@nl ;
+    sdo:knows <https://ex.org/Person:10e4af70-cece-551a-8563-a11a07427574> ;
     sdo:name "Maria Elisabet van Ettinger"@nl ;
     sdo:spouse <https://ex.org/Person:1cbfc81c-37b4-9797-9e74-5224deb8c597> .
+
+<https://ex.org/Person:10e4af70-cece-551a-8563-a11a07427574> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:ad1e3389-f1fe-aebc-789f-2aab72ccdbee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Lemans"@nl ;
+    sdo:givenName "Lydia"@nl ;
+    sdo:name "Lydia Lemans"@nl .
 
 <https://ex.org/Person:1cbfc81c-37b4-9797-9e74-5224deb8c597> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:ad1e3389-f1fe-aebc-789f-2aab72ccdbee> ;
@@ -37,11 +43,13 @@
     sdo:familyName "van Ees"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Lammert"@nl ;
+    sdo:knows <https://ex.org/Person:10e4af70-cece-551a-8563-a11a07427574> ;
     sdo:name "Lammert van Ees"@nl ;
     sdo:spouse <https://ex.org/Person:0da54023-2eea-8bdf-c39a-1702c9e5842c> .
 
 <https://ex.org/Person:42e1280c-336f-0095-07ca-42d5084f717a> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:ad1e3389-f1fe-aebc-789f-2aab72ccdbee> ;
+    picom:hasLifeEvent <https://ex.org/Source:ad1e3389-f1fe-aebc-789f-2aab72ccdbee_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:baseSurname "Ees"@nl ;
@@ -56,7 +64,8 @@
         <https://ex.org/Person:1cbfc81c-37b4-9797-9e74-5224deb8c597> .
 
 <https://ex.org/Source:ad1e3389-f1fe-aebc-789f-2aab72ccdbee> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/c6a78524-fdf0-46a6-96bb-0d128da1fb04/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/ad1e3389-f1fe-aebc-789f-2aab72ccdbee"^^xsd:anyURI ;

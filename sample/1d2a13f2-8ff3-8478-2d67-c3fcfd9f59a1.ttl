@@ -5,8 +5,14 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:1d2a13f2-8ff3-8478-2d67-c3fcfd9f59a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1748-04-15"@nl ;
+    picom:eventPlace "Nieuwkoop"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Person:9af231cd-69f9-8f8e-7cd6-4e904ccf101b> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:1d2a13f2-8ff3-8478-2d67-c3fcfd9f59a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:1d2a13f2-8ff3-8478-2d67-c3fcfd9f59a1_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:baseSurname "Staveren"@nl ;
@@ -52,7 +58,8 @@
     sdo:spouse <https://ex.org/Person:af8e09e7-8023-6721-b429-b2130a32caf6> .
 
 <https://ex.org/Source:1d2a13f2-8ff3-8478-2d67-c3fcfd9f59a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/d269ca08-046b-4e6e-a0cc-29dde1eec26f/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/1d2a13f2-8ff3-8478-2d67-c3fcfd9f59a1"^^xsd:anyURI ;

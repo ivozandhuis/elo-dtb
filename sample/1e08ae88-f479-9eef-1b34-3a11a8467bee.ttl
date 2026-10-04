@@ -5,22 +5,10 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ex.org/Person:3a2e529a-8704-40e1-531b-afe89595c541> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:1e08ae88-f479-9eef-1b34-3a11a8467bee> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:givenName "Arij"@nl ;
-            pnv:literalName "Arij Claesz"@nl ;
-            pnv:patronym "Claesz"@nl ] ;
-    sdo:givenName "Arij"@nl ;
-    sdo:name "Arij Claesz"@nl .
-
-<https://ex.org/Person:a066b01f-6a29-f9aa-0fa3-7bf0ac9e67c5> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:1e08ae88-f479-9eef-1b34-3a11a8467bee> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:familyName "Heijndrickse"@nl ;
-    sdo:givenName "Jannetje"@nl ;
-    sdo:name "Jannetje Heijndrickse"@nl .
+<https://ex.org/Source:1e08ae88-f479-9eef-1b34-3a11a8467bee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1663-05-08"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
 
 <https://ex.org/Person:1ddf6d3d-6532-d178-0858-a8461bd1aeca> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:1e08ae88-f479-9eef-1b34-3a11a8467bee> ;
@@ -34,11 +22,24 @@
     sdo:familyName "van Langevelt"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName "Claesje"@nl ;
+    sdo:knows <https://ex.org/Person:3a2e529a-8704-40e1-531b-afe89595c541>,
+        <https://ex.org/Person:a066b01f-6a29-f9aa-0fa3-7bf0ac9e67c5> ;
     sdo:name "Claesje Jacobs van Langevelt"@nl ;
     sdo:spouse <https://ex.org/Person:d5a282cc-54fc-7c08-58aa-786075463e5a> .
 
+<https://ex.org/Person:3a2e529a-8704-40e1-531b-afe89595c541> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:1e08ae88-f479-9eef-1b34-3a11a8467bee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Arij"@nl ;
+            pnv:literalName "Arij Claesz"@nl ;
+            pnv:patronym "Claesz"@nl ] ;
+    sdo:givenName "Arij"@nl ;
+    sdo:name "Arij Claesz"@nl .
+
 <https://ex.org/Person:50b210ab-1f87-0e60-a1a4-e3e620ea12b1> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:1e08ae88-f479-9eef-1b34-3a11a8467bee> ;
+    picom:hasLifeEvent <https://ex.org/Source:1e08ae88-f479-9eef-1b34-3a11a8467bee_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 08-05-1663"@nl ;
     sdo:familyName "Knotter"@nl ;
@@ -46,6 +47,13 @@
     sdo:name "Dirck Knotter"@nl ;
     sdo:parent <https://ex.org/Person:1ddf6d3d-6532-d178-0858-a8461bd1aeca>,
         <https://ex.org/Person:d5a282cc-54fc-7c08-58aa-786075463e5a> .
+
+<https://ex.org/Person:a066b01f-6a29-f9aa-0fa3-7bf0ac9e67c5> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:1e08ae88-f479-9eef-1b34-3a11a8467bee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Heijndrickse"@nl ;
+    sdo:givenName "Jannetje"@nl ;
+    sdo:name "Jannetje Heijndrickse"@nl .
 
 <https://ex.org/Person:d5a282cc-54fc-7c08-58aa-786075463e5a> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:1e08ae88-f479-9eef-1b34-3a11a8467bee> ;
@@ -58,11 +66,14 @@
     sdo:familyName "Knotter"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Henrick"@nl ;
+    sdo:knows <https://ex.org/Person:3a2e529a-8704-40e1-531b-afe89595c541>,
+        <https://ex.org/Person:a066b01f-6a29-f9aa-0fa3-7bf0ac9e67c5> ;
     sdo:name "Henrick Dirckx Knotter"@nl ;
     sdo:spouse <https://ex.org/Person:1ddf6d3d-6532-d178-0858-a8461bd1aeca> .
 
 <https://ex.org/Source:1e08ae88-f479-9eef-1b34-3a11a8467bee> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/8765aff6-2b16-4d70-a537-67807d285e86/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/1e08ae88-f479-9eef-1b34-3a11a8467bee"^^xsd:anyURI ;

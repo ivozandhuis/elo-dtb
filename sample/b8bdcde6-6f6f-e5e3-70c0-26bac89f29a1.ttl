@@ -5,6 +5,11 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:b8bdcde6-6f6f-e5e3-70c0-26bac89f29a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1679-12-24"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Person:018d6100-cd9a-3281-08be-6f229a031183> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:b8bdcde6-6f6f-e5e3-70c0-26bac89f29a1> ;
     picom:hasRole picot_roles:573 ;
@@ -14,6 +19,16 @@
             pnv:patronym "Jans"@nl ] ;
     sdo:givenName "Annetje"@nl ;
     sdo:name "Annetje Jans"@nl .
+
+<https://ex.org/Person:128df9f6-d6f9-cb6c-8cbc-b3b54f81cd75> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b8bdcde6-6f6f-e5e3-70c0-26bac89f29a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:b8bdcde6-6f6f-e5e3-70c0-26bac89f29a1_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 24-12-1679"@nl ;
+    sdo:givenName "Sophia"@nl ;
+    sdo:name "Sophia"@nl ;
+    sdo:parent <https://ex.org/Person:5588e0ed-f5c5-7b0e-1871-a7376577b551>,
+        <https://ex.org/Person:d31b505b-005c-359d-e7ec-0f7344dc2a51> .
 
 <https://ex.org/Person:46382297-264e-db10-6a0b-2797d912b5d0> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:b8bdcde6-6f6f-e5e3-70c0-26bac89f29a1> ;
@@ -32,25 +47,6 @@
     sdo:givenName "Aeltje"@nl ;
     sdo:name "Aeltje Serwouters"@nl .
 
-<https://ex.org/Person:7a0abe6a-3c3a-d2f9-df51-689add25e90a> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:b8bdcde6-6f6f-e5e3-70c0-26bac89f29a1> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:givenName "Jasper"@nl ;
-            pnv:literalName "Jasper Serwouters"@nl ;
-            pnv:patronym "Serwouters"@nl ] ;
-    sdo:givenName "Jasper"@nl ;
-    sdo:name "Jasper Serwouters"@nl .
-
-<https://ex.org/Person:128df9f6-d6f9-cb6c-8cbc-b3b54f81cd75> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:b8bdcde6-6f6f-e5e3-70c0-26bac89f29a1> ;
-    picom:hasRole picot_roles:575 ;
-    sdo:description "Doopdatum: 24-12-1679"@nl ;
-    sdo:givenName "Sophia"@nl ;
-    sdo:name "Sophia"@nl ;
-    sdo:parent <https://ex.org/Person:5588e0ed-f5c5-7b0e-1871-a7376577b551>,
-        <https://ex.org/Person:d31b505b-005c-359d-e7ec-0f7344dc2a51> .
-
 <https://ex.org/Person:5588e0ed-f5c5-7b0e-1871-a7376577b551> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:b8bdcde6-6f6f-e5e3-70c0-26bac89f29a1> ;
     sdo:additionalName [ a pnv:PersonName ;
@@ -62,8 +58,22 @@
     sdo:familyName "van Duipen"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName "Sophia"@nl ;
+    sdo:knows <https://ex.org/Person:018d6100-cd9a-3281-08be-6f229a031183>,
+        <https://ex.org/Person:46382297-264e-db10-6a0b-2797d912b5d0>,
+        <https://ex.org/Person:497c79fe-b2cb-1544-4adc-1d60b2c4e879>,
+        <https://ex.org/Person:7a0abe6a-3c3a-d2f9-df51-689add25e90a> ;
     sdo:name "Sophia van Duipen"@nl ;
     sdo:spouse <https://ex.org/Person:d31b505b-005c-359d-e7ec-0f7344dc2a51> .
+
+<https://ex.org/Person:7a0abe6a-3c3a-d2f9-df51-689add25e90a> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b8bdcde6-6f6f-e5e3-70c0-26bac89f29a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Jasper"@nl ;
+            pnv:literalName "Jasper Serwouters"@nl ;
+            pnv:patronym "Serwouters"@nl ] ;
+    sdo:givenName "Jasper"@nl ;
+    sdo:name "Jasper Serwouters"@nl .
 
 <https://ex.org/Person:d31b505b-005c-359d-e7ec-0f7344dc2a51> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:b8bdcde6-6f6f-e5e3-70c0-26bac89f29a1> ;
@@ -74,11 +84,16 @@
     sdo:children <https://ex.org/Person:128df9f6-d6f9-cb6c-8cbc-b3b54f81cd75> ;
     sdo:gender sdo:Male ;
     sdo:givenName "Jan"@nl ;
+    sdo:knows <https://ex.org/Person:018d6100-cd9a-3281-08be-6f229a031183>,
+        <https://ex.org/Person:46382297-264e-db10-6a0b-2797d912b5d0>,
+        <https://ex.org/Person:497c79fe-b2cb-1544-4adc-1d60b2c4e879>,
+        <https://ex.org/Person:7a0abe6a-3c3a-d2f9-df51-689add25e90a> ;
     sdo:name "Jan Feijs"@nl ;
     sdo:spouse <https://ex.org/Person:5588e0ed-f5c5-7b0e-1871-a7376577b551> .
 
 <https://ex.org/Source:b8bdcde6-6f6f-e5e3-70c0-26bac89f29a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/20517add-176d-4475-85b9-41a9a7462da4/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/b8bdcde6-6f6f-e5e3-70c0-26bac89f29a1"^^xsd:anyURI ;

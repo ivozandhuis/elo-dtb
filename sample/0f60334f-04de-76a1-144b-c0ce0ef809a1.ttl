@@ -5,19 +5,10 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ex.org/Person:94f431f2-5a0e-92a0-5828-ef6680363bdb> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:0f60334f-04de-76a1-144b-c0ce0ef809a1> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:familyName "Kalf"@nl ;
-    sdo:givenName "Hester"@nl ;
-    sdo:name "Hester Kalf"@nl .
-
-<https://ex.org/Person:c125bf2c-a803-5318-7ae6-1a9d769fff63> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:0f60334f-04de-76a1-144b-c0ce0ef809a1> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:familyName "Bosman"@nl ;
-    sdo:givenName "Christoffel"@nl ;
-    sdo:name "Christoffel Bosman"@nl .
+<https://ex.org/Source:0f60334f-04de-76a1-144b-c0ce0ef809a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1727-04-06"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
 
 <https://ex.org/Person:71ec7b81-8e06-d967-6726-e74b8461fe32> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:0f60334f-04de-76a1-144b-c0ce0ef809a1> ;
@@ -25,6 +16,8 @@
     sdo:familyName "Joha"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName "Jannetje"@nl ;
+    sdo:knows <https://ex.org/Person:94f431f2-5a0e-92a0-5828-ef6680363bdb>,
+        <https://ex.org/Person:c125bf2c-a803-5318-7ae6-1a9d769fff63> ;
     sdo:name "Jannetje Joha"@nl ;
     sdo:spouse <https://ex.org/Person:882ec7a2-8312-45d6-7dc9-abd862151f01> .
 
@@ -39,11 +32,28 @@
     sdo:familyName "van Wolde"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Cornelis"@nl ;
+    sdo:knows <https://ex.org/Person:94f431f2-5a0e-92a0-5828-ef6680363bdb>,
+        <https://ex.org/Person:c125bf2c-a803-5318-7ae6-1a9d769fff63> ;
     sdo:name "Cornelis van Wolde"@nl ;
     sdo:spouse <https://ex.org/Person:71ec7b81-8e06-d967-6726-e74b8461fe32> .
 
+<https://ex.org/Person:94f431f2-5a0e-92a0-5828-ef6680363bdb> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:0f60334f-04de-76a1-144b-c0ce0ef809a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Kalf"@nl ;
+    sdo:givenName "Hester"@nl ;
+    sdo:name "Hester Kalf"@nl .
+
+<https://ex.org/Person:c125bf2c-a803-5318-7ae6-1a9d769fff63> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:0f60334f-04de-76a1-144b-c0ce0ef809a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Bosman"@nl ;
+    sdo:givenName "Christoffel"@nl ;
+    sdo:name "Christoffel Bosman"@nl .
+
 <https://ex.org/Person:efa56a02-867f-7558-d264-b0fbf4a2d7a2> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:0f60334f-04de-76a1-144b-c0ce0ef809a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:0f60334f-04de-76a1-144b-c0ce0ef809a1_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:baseSurname "Wolde"@nl ;
@@ -58,7 +68,8 @@
         <https://ex.org/Person:882ec7a2-8312-45d6-7dc9-abd862151f01> .
 
 <https://ex.org/Source:0f60334f-04de-76a1-144b-c0ce0ef809a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/ac864d44-760f-48d2-986d-3dbc1bfbac6c/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/0f60334f-04de-76a1-144b-c0ce0ef809a1"^^xsd:anyURI ;

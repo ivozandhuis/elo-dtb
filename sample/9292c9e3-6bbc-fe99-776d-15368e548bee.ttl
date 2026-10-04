@@ -73,6 +73,7 @@
 
 <https://ex.org/Person:e3348c0d-5fa7-4766-3f41-ae2dc851fe0e> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:9292c9e3-6bbc-fe99-776d-15368e548bee> ;
+    picom:hasLifeEvent <https://ex.org/Source:9292c9e3-6bbc-fe99-776d-15368e548bee_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 26-04-1648"@nl ;
     sdo:familyName "Pennequin"@nl ;
@@ -86,10 +87,24 @@
     sdo:familyName "Pennequin"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Miché"@nl ;
+    sdo:knows <https://ex.org/Person:3b422e17-9205-f83e-5fee-3f5d97991bc4>,
+        <https://ex.org/Person:4b64f1c1-a97a-68f8-f72d-2331321def02>,
+        <https://ex.org/Person:737810aa-6b63-e516-b979-99572e60a3d6>,
+        <https://ex.org/Person:92225b4e-cee7-fc5e-cf9e-52e3785f6290>,
+        <https://ex.org/Person:934954ae-42c9-0d01-eed4-f44eda8c9816>,
+        <https://ex.org/Person:bbe67cbc-a722-877c-2156-deb9ee7be8ac>,
+        <https://ex.org/Person:ca398e71-2925-4cbd-2af9-a39f2d359bcf>,
+        <https://ex.org/Person:e28286ef-376c-d71a-fbfd-9d9a63011150> ;
     sdo:name "Miché Pennequin"@nl .
 
+<https://ex.org/Source:9292c9e3-6bbc-fe99-776d-15368e548bee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1648-04-26"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Source:9292c9e3-6bbc-fe99-776d-15368e548bee> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/0852d158-c886-42fa-be56-dc8671519e48/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/9292c9e3-6bbc-fe99-776d-15368e548bee"^^xsd:anyURI ;

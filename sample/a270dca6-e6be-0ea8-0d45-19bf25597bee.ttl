@@ -5,21 +5,14 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ex.org/Person:52bcc49d-b00b-6ce4-0b9a-6d0b7dc258e9> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:a270dca6-e6be-0ea8-0d45-19bf25597bee> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:baseSurname "Berkheij"@nl ;
-            pnv:givenName "Maria"@nl ;
-            pnv:literalName "Maria Francq van Berkheij"@nl ;
-            pnv:patronym "Francq"@nl ;
-            pnv:surnamePrefix "van"@nl ] ;
-    sdo:familyName "van Berkheij"@nl ;
-    sdo:givenName "Maria"@nl ;
-    sdo:name "Maria Francq van Berkheij"@nl .
+<https://ex.org/Source:a270dca6-e6be-0ea8-0d45-19bf25597bee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1811-07-04"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
 
 <https://ex.org/Person:47ad3454-c9c8-ad6d-52f2-490371a4525a> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:a270dca6-e6be-0ea8-0d45-19bf25597bee> ;
+    picom:hasLifeEvent <https://ex.org/Source:a270dca6-e6be-0ea8-0d45-19bf25597bee_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:birthDate "1811-06-29"^^xsd:date ;
     sdo:description "Doopdatum: 04-07-1811"@nl ;
@@ -35,8 +28,22 @@
     sdo:familyName "Tragoo"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Adrianus"@nl ;
+    sdo:knows <https://ex.org/Person:52bcc49d-b00b-6ce4-0b9a-6d0b7dc258e9> ;
     sdo:name "Adrianus Tragoo"@nl ;
     sdo:spouse <https://ex.org/Person:f13881f7-eb25-3a17-b606-96f51da83c13> .
+
+<https://ex.org/Person:52bcc49d-b00b-6ce4-0b9a-6d0b7dc258e9> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:a270dca6-e6be-0ea8-0d45-19bf25597bee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Berkheij"@nl ;
+            pnv:givenName "Maria"@nl ;
+            pnv:literalName "Maria Francq van Berkheij"@nl ;
+            pnv:patronym "Francq"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:familyName "van Berkheij"@nl ;
+    sdo:givenName "Maria"@nl ;
+    sdo:name "Maria Francq van Berkheij"@nl .
 
 <https://ex.org/Person:f13881f7-eb25-3a17-b606-96f51da83c13> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:a270dca6-e6be-0ea8-0d45-19bf25597bee> ;
@@ -49,11 +56,13 @@
     sdo:familyName "den Ouden"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName "Johanna Catharina"@nl ;
+    sdo:knows <https://ex.org/Person:52bcc49d-b00b-6ce4-0b9a-6d0b7dc258e9> ;
     sdo:name "Johanna Catharina den Ouden"@nl ;
     sdo:spouse <https://ex.org/Person:4bde681a-007e-3fe6-fe91-6605cccc568e> .
 
 <https://ex.org/Source:a270dca6-e6be-0ea8-0d45-19bf25597bee> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/0e2e3f09-ba29-4b61-ae7e-68abf6222297/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/a270dca6-e6be-0ea8-0d45-19bf25597bee"^^xsd:anyURI ;

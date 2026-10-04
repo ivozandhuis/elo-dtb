@@ -5,6 +5,11 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:94cb1af5-5325-73d9-5cab-22b791207bee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1700-05-30"@nl ;
+    picom:eventPlace "Leimuiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Person:3fb8c71d-570f-57f3-cbe8-0f099d426776> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:94cb1af5-5325-73d9-5cab-22b791207bee> ;
     picom:hasRole picot_roles:573 ;
@@ -26,11 +31,13 @@
     sdo:familyName "Coomen"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Dirck"@nl ;
+    sdo:knows <https://ex.org/Person:3fb8c71d-570f-57f3-cbe8-0f099d426776> ;
     sdo:name "Dirck Cornelisz Coomen"@nl ;
     sdo:spouse <https://ex.org/Person:a5047bdd-a106-3ccf-7fba-4a1ca2b6b362> .
 
 <https://ex.org/Person:98e5b810-db41-302d-b0c9-9665eabe39ee> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:94cb1af5-5325-73d9-5cab-22b791207bee> ;
+    picom:hasLifeEvent <https://ex.org/Source:94cb1af5-5325-73d9-5cab-22b791207bee_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 30-05-1700"@nl ;
     sdo:familyName "Coomen"@nl ;
@@ -48,11 +55,13 @@
     sdo:children <https://ex.org/Person:98e5b810-db41-302d-b0c9-9665eabe39ee> ;
     sdo:gender sdo:Female ;
     sdo:givenName "Ariaantje"@nl ;
+    sdo:knows <https://ex.org/Person:3fb8c71d-570f-57f3-cbe8-0f099d426776> ;
     sdo:name "Ariaantje Pieters"@nl ;
     sdo:spouse <https://ex.org/Person:57655824-3a8e-e71a-b7c7-b01916ca5e77> .
 
 <https://ex.org/Source:94cb1af5-5325-73d9-5cab-22b791207bee> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/57489279-94cb-4181-b7eb-19e08f44d9f0/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/94cb1af5-5325-73d9-5cab-22b791207bee"^^xsd:anyURI ;

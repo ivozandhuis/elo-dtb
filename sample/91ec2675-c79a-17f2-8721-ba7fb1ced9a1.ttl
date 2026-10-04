@@ -5,6 +5,34 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:91ec2675-c79a-17f2-8721-ba7fb1ced9a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1692-10-05"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
+<https://ex.org/Person:016770db-e0d5-3a0d-8248-545b60395f82> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:91ec2675-c79a-17f2-8721-ba7fb1ced9a1> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Lijsbeth"@nl ;
+            pnv:literalName "Lijsbeth Oliviers"@nl ;
+            pnv:patronym "Oliviers"@nl ] ;
+    sdo:children <https://ex.org/Person:f3361883-8b40-ceca-f6cb-f4defcc98709> ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Lijsbeth"@nl ;
+    sdo:knows <https://ex.org/Person:60054c5f-76a7-d1b3-3743-6cc5a759595f> ;
+    sdo:name "Lijsbeth Oliviers"@nl ;
+    sdo:spouse <https://ex.org/Person:4215df07-2c89-3411-2f24-caebf178fcaf> .
+
+<https://ex.org/Person:4215df07-2c89-3411-2f24-caebf178fcaf> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:91ec2675-c79a-17f2-8721-ba7fb1ced9a1> ;
+    sdo:children <https://ex.org/Person:f3361883-8b40-ceca-f6cb-f4defcc98709> ;
+    sdo:familyName "Boon"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Frans"@nl ;
+    sdo:knows <https://ex.org/Person:60054c5f-76a7-d1b3-3743-6cc5a759595f> ;
+    sdo:name "Frans Boon"@nl ;
+    sdo:spouse <https://ex.org/Person:016770db-e0d5-3a0d-8248-545b60395f82> .
+
 <https://ex.org/Person:60054c5f-76a7-d1b3-3743-6cc5a759595f> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:91ec2675-c79a-17f2-8721-ba7fb1ced9a1> ;
     picom:hasRole picot_roles:573 ;
@@ -17,29 +45,9 @@
     sdo:givenName "Judith"@nl ;
     sdo:name "Judith le Fevers"@nl .
 
-<https://ex.org/Person:016770db-e0d5-3a0d-8248-545b60395f82> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:91ec2675-c79a-17f2-8721-ba7fb1ced9a1> ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:givenName "Lijsbeth"@nl ;
-            pnv:literalName "Lijsbeth Oliviers"@nl ;
-            pnv:patronym "Oliviers"@nl ] ;
-    sdo:children <https://ex.org/Person:f3361883-8b40-ceca-f6cb-f4defcc98709> ;
-    sdo:gender sdo:Female ;
-    sdo:givenName "Lijsbeth"@nl ;
-    sdo:name "Lijsbeth Oliviers"@nl ;
-    sdo:spouse <https://ex.org/Person:4215df07-2c89-3411-2f24-caebf178fcaf> .
-
-<https://ex.org/Person:4215df07-2c89-3411-2f24-caebf178fcaf> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:91ec2675-c79a-17f2-8721-ba7fb1ced9a1> ;
-    sdo:children <https://ex.org/Person:f3361883-8b40-ceca-f6cb-f4defcc98709> ;
-    sdo:familyName "Boon"@nl ;
-    sdo:gender sdo:Male ;
-    sdo:givenName "Frans"@nl ;
-    sdo:name "Frans Boon"@nl ;
-    sdo:spouse <https://ex.org/Person:016770db-e0d5-3a0d-8248-545b60395f82> .
-
 <https://ex.org/Person:f3361883-8b40-ceca-f6cb-f4defcc98709> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:91ec2675-c79a-17f2-8721-ba7fb1ced9a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:91ec2675-c79a-17f2-8721-ba7fb1ced9a1_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 05-10-1692"@nl ;
     sdo:familyName "Boon"@nl ;
@@ -49,7 +57,8 @@
         <https://ex.org/Person:4215df07-2c89-3411-2f24-caebf178fcaf> .
 
 <https://ex.org/Source:91ec2675-c79a-17f2-8721-ba7fb1ced9a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/d90d5db9-f934-4962-b64c-a171881388fe/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/91ec2675-c79a-17f2-8721-ba7fb1ced9a1"^^xsd:anyURI ;

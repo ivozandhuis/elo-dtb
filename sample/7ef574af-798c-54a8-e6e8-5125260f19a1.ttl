@@ -4,6 +4,11 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:7ef574af-798c-54a8-e6e8-5125260f19a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1719-02-06"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Person:019374c2-5884-9121-e6bc-6a471aa1f768> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:7ef574af-798c-54a8-e6e8-5125260f19a1> ;
     picom:hasRole picot_roles:573 ;
@@ -11,24 +16,20 @@
     sdo:givenName "Joseph"@nl ;
     sdo:name "Joseph Godeau"@nl .
 
-<https://ex.org/Person:ab4b6746-1a86-68e9-bcd2-b2959256b3ed> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:7ef574af-798c-54a8-e6e8-5125260f19a1> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:familyName "Legni"@nl ;
-    sdo:givenName "Anna"@nl ;
-    sdo:name "Anna Legni"@nl .
-
 <https://ex.org/Person:1d13e5df-2d83-e908-f4a0-c347c299049f> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:7ef574af-798c-54a8-e6e8-5125260f19a1> ;
     sdo:children <https://ex.org/Person:2f9f34a3-b4af-0190-3097-87366a608fed> ;
     sdo:familyName "Godeau"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName "Sara"@nl ;
+    sdo:knows <https://ex.org/Person:019374c2-5884-9121-e6bc-6a471aa1f768>,
+        <https://ex.org/Person:ab4b6746-1a86-68e9-bcd2-b2959256b3ed> ;
     sdo:name "Sara Godeau"@nl ;
     sdo:spouse <https://ex.org/Person:d20d2480-57c1-08dd-0219-1d0a9e7c6260> .
 
 <https://ex.org/Person:2f9f34a3-b4af-0190-3097-87366a608fed> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:7ef574af-798c-54a8-e6e8-5125260f19a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:7ef574af-798c-54a8-e6e8-5125260f19a1_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 06-02-1719"@nl ;
     sdo:familyName "Ceuters"@nl ;
@@ -37,17 +38,27 @@
     sdo:parent <https://ex.org/Person:1d13e5df-2d83-e908-f4a0-c347c299049f>,
         <https://ex.org/Person:d20d2480-57c1-08dd-0219-1d0a9e7c6260> .
 
+<https://ex.org/Person:ab4b6746-1a86-68e9-bcd2-b2959256b3ed> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:7ef574af-798c-54a8-e6e8-5125260f19a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Legni"@nl ;
+    sdo:givenName "Anna"@nl ;
+    sdo:name "Anna Legni"@nl .
+
 <https://ex.org/Person:d20d2480-57c1-08dd-0219-1d0a9e7c6260> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:7ef574af-798c-54a8-e6e8-5125260f19a1> ;
     sdo:children <https://ex.org/Person:2f9f34a3-b4af-0190-3097-87366a608fed> ;
     sdo:familyName "Ceuters"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Joannis"@nl ;
+    sdo:knows <https://ex.org/Person:019374c2-5884-9121-e6bc-6a471aa1f768>,
+        <https://ex.org/Person:ab4b6746-1a86-68e9-bcd2-b2959256b3ed> ;
     sdo:name "Joannis Ceuters"@nl ;
     sdo:spouse <https://ex.org/Person:1d13e5df-2d83-e908-f4a0-c347c299049f> .
 
 <https://ex.org/Source:7ef574af-798c-54a8-e6e8-5125260f19a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/a572f766-bbd3-4ce2-a2e9-a4c6024dfb69/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/7ef574af-798c-54a8-e6e8-5125260f19a1"^^xsd:anyURI ;

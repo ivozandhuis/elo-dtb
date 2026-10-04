@@ -5,6 +5,11 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:13dfac0a-25d0-bc9d-cceb-31f4f02aa9a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1621-12-02"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Person:04c77a1e-0500-7118-c978-53da59cd52fe> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:13dfac0a-25d0-bc9d-cceb-31f4f02aa9a1> ;
     picom:hasRole picot_roles:573 ;
@@ -18,6 +23,22 @@
     sdo:familyName "Sant"@nl ;
     sdo:givenName "Jan"@nl ;
     sdo:name "Jan Sant"@nl .
+
+<https://ex.org/Person:5335e7ac-491c-bd30-8fff-86bbad28602e> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:13dfac0a-25d0-bc9d-cceb-31f4f02aa9a1> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Rijcke"@nl ;
+            pnv:literalName "Rijcke Mahieus"@nl ;
+            pnv:patronym "Mahieus"@nl ] ;
+    sdo:children <https://ex.org/Person:8d5af111-b563-7d69-48b9-55c5f4b8b5bf> ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Rijcke"@nl ;
+    sdo:knows <https://ex.org/Person:04c77a1e-0500-7118-c978-53da59cd52fe>,
+        <https://ex.org/Person:1c304e75-7432-1193-43a6-b071df5717e1>,
+        <https://ex.org/Person:730981ca-fb65-ecf1-c06b-e51cd3762eac>,
+        <https://ex.org/Person:7f3639ac-1fba-a29c-905f-630b48e8bd96> ;
+    sdo:name "Rijcke Mahieus"@nl ;
+    sdo:spouse <https://ex.org/Person:96a82ebf-d15b-be86-a6d9-8af644ab7501> .
 
 <https://ex.org/Person:730981ca-fb65-ecf1-c06b-e51cd3762eac> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:13dfac0a-25d0-bc9d-cceb-31f4f02aa9a1> ;
@@ -36,20 +57,9 @@
     sdo:givenName "Sijntgen"@nl ;
     sdo:name "Sijntgen Mahieus"@nl .
 
-<https://ex.org/Person:5335e7ac-491c-bd30-8fff-86bbad28602e> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:13dfac0a-25d0-bc9d-cceb-31f4f02aa9a1> ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:givenName "Rijcke"@nl ;
-            pnv:literalName "Rijcke Mahieus"@nl ;
-            pnv:patronym "Mahieus"@nl ] ;
-    sdo:children <https://ex.org/Person:8d5af111-b563-7d69-48b9-55c5f4b8b5bf> ;
-    sdo:gender sdo:Female ;
-    sdo:givenName "Rijcke"@nl ;
-    sdo:name "Rijcke Mahieus"@nl ;
-    sdo:spouse <https://ex.org/Person:96a82ebf-d15b-be86-a6d9-8af644ab7501> .
-
 <https://ex.org/Person:8d5af111-b563-7d69-48b9-55c5f4b8b5bf> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:13dfac0a-25d0-bc9d-cceb-31f4f02aa9a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:13dfac0a-25d0-bc9d-cceb-31f4f02aa9a1_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 02-12-1621"@nl ;
     sdo:familyName "Sant"@nl ;
@@ -64,11 +74,16 @@
     sdo:familyName "Sant"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Pieter"@nl ;
+    sdo:knows <https://ex.org/Person:04c77a1e-0500-7118-c978-53da59cd52fe>,
+        <https://ex.org/Person:1c304e75-7432-1193-43a6-b071df5717e1>,
+        <https://ex.org/Person:730981ca-fb65-ecf1-c06b-e51cd3762eac>,
+        <https://ex.org/Person:7f3639ac-1fba-a29c-905f-630b48e8bd96> ;
     sdo:name "Pieter Sant"@nl ;
     sdo:spouse <https://ex.org/Person:5335e7ac-491c-bd30-8fff-86bbad28602e> .
 
 <https://ex.org/Source:13dfac0a-25d0-bc9d-cceb-31f4f02aa9a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/2e1eebbb-fac5-4f72-8c59-dd0d7771c3ae/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/13dfac0a-25d0-bc9d-cceb-31f4f02aa9a1"^^xsd:anyURI ;

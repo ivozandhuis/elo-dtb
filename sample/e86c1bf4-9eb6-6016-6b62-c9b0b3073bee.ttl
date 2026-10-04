@@ -5,6 +5,11 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:e86c1bf4-9eb6-6016-6b62-c9b0b3073bee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1722-04-26"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Person:28b43f76-e2b7-149d-0470-a655c0261c09> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:e86c1bf4-9eb6-6016-6b62-c9b0b3073bee> ;
     picom:hasRole picot_roles:573 ;
@@ -15,15 +20,9 @@
     sdo:givenName "Jannetie"@nl ;
     sdo:name "Jannetie Barends"@nl .
 
-<https://ex.org/Person:9e3131f6-4836-0348-eeef-4017e9e2faaf> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:e86c1bf4-9eb6-6016-6b62-c9b0b3073bee> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:familyName "Schagt"@nl ;
-    sdo:givenName "Daniel"@nl ;
-    sdo:name "Daniel Schagt"@nl .
-
 <https://ex.org/Person:727f21e5-c134-328b-829c-57313a75f19e> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:e86c1bf4-9eb6-6016-6b62-c9b0b3073bee> ;
+    picom:hasLifeEvent <https://ex.org/Source:e86c1bf4-9eb6-6016-6b62-c9b0b3073bee_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 26-04-1722"@nl ;
     sdo:familyName "Schagt"@nl ;
@@ -32,12 +31,21 @@
     sdo:parent <https://ex.org/Person:9ffa39ca-4ba9-66e0-1015-18f29073281f>,
         <https://ex.org/Person:c28ef394-8f12-a82e-2c8a-9c2cac8a5a1a> .
 
+<https://ex.org/Person:9e3131f6-4836-0348-eeef-4017e9e2faaf> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:e86c1bf4-9eb6-6016-6b62-c9b0b3073bee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Schagt"@nl ;
+    sdo:givenName "Daniel"@nl ;
+    sdo:name "Daniel Schagt"@nl .
+
 <https://ex.org/Person:9ffa39ca-4ba9-66e0-1015-18f29073281f> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:e86c1bf4-9eb6-6016-6b62-c9b0b3073bee> ;
     sdo:children <https://ex.org/Person:727f21e5-c134-328b-829c-57313a75f19e> ;
     sdo:familyName "Schagt"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Tomas"@nl ;
+    sdo:knows <https://ex.org/Person:28b43f76-e2b7-149d-0470-a655c0261c09>,
+        <https://ex.org/Person:9e3131f6-4836-0348-eeef-4017e9e2faaf> ;
     sdo:name "Tomas Schagt"@nl ;
     sdo:spouse <https://ex.org/Person:c28ef394-8f12-a82e-2c8a-9c2cac8a5a1a> .
 
@@ -50,11 +58,14 @@
     sdo:children <https://ex.org/Person:727f21e5-c134-328b-829c-57313a75f19e> ;
     sdo:gender sdo:Female ;
     sdo:givenName "Sara"@nl ;
+    sdo:knows <https://ex.org/Person:28b43f76-e2b7-149d-0470-a655c0261c09>,
+        <https://ex.org/Person:9e3131f6-4836-0348-eeef-4017e9e2faaf> ;
     sdo:name "Sara Duif"@nl ;
     sdo:spouse <https://ex.org/Person:9ffa39ca-4ba9-66e0-1015-18f29073281f> .
 
 <https://ex.org/Source:e86c1bf4-9eb6-6016-6b62-c9b0b3073bee> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/e6a583ed-d39e-4282-9ab5-4b89ae06ad29/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/e86c1bf4-9eb6-6016-6b62-c9b0b3073bee"^^xsd:anyURI ;

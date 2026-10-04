@@ -5,19 +5,10 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ex.org/Person:33218993-ca9b-1884-e1af-d885cdb65ef8> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:5886c41f-1feb-b18a-6efd-21376dc65bee> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:familyName "Galjaar"@nl ;
-    sdo:givenName "Rachel"@nl ;
-    sdo:name "Rachel Galjaar"@nl .
-
-<https://ex.org/Person:523595f4-e210-e0b0-df0a-2294f7460114> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:5886c41f-1feb-b18a-6efd-21376dc65bee> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:familyName "Piket"@nl ;
-    sdo:givenName "Carel"@nl ;
-    sdo:name "Carel Piket"@nl .
+<https://ex.org/Source:5886c41f-1feb-b18a-6efd-21376dc65bee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1765-09-01"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
 
 <https://ex.org/Person:0d240c5f-6a45-71a7-7db4-d71b067c9135> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:5886c41f-1feb-b18a-6efd-21376dc65bee> ;
@@ -25,8 +16,17 @@
     sdo:familyName "Galjaar"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName "Judik"@nl ;
+    sdo:knows <https://ex.org/Person:33218993-ca9b-1884-e1af-d885cdb65ef8>,
+        <https://ex.org/Person:523595f4-e210-e0b0-df0a-2294f7460114> ;
     sdo:name "Judik Galjaar"@nl ;
     sdo:spouse <https://ex.org/Person:488e917a-9987-ce54-8223-ddb0e00ea361> .
+
+<https://ex.org/Person:33218993-ca9b-1884-e1af-d885cdb65ef8> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:5886c41f-1feb-b18a-6efd-21376dc65bee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Galjaar"@nl ;
+    sdo:givenName "Rachel"@nl ;
+    sdo:name "Rachel Galjaar"@nl .
 
 <https://ex.org/Person:488e917a-9987-ce54-8223-ddb0e00ea361> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:5886c41f-1feb-b18a-6efd-21376dc65bee> ;
@@ -39,11 +39,21 @@
     sdo:familyName "de Vink"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Jacobus"@nl ;
+    sdo:knows <https://ex.org/Person:33218993-ca9b-1884-e1af-d885cdb65ef8>,
+        <https://ex.org/Person:523595f4-e210-e0b0-df0a-2294f7460114> ;
     sdo:name "Jacobus de Vink"@nl ;
     sdo:spouse <https://ex.org/Person:0d240c5f-6a45-71a7-7db4-d71b067c9135> .
 
+<https://ex.org/Person:523595f4-e210-e0b0-df0a-2294f7460114> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:5886c41f-1feb-b18a-6efd-21376dc65bee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Piket"@nl ;
+    sdo:givenName "Carel"@nl ;
+    sdo:name "Carel Piket"@nl .
+
 <https://ex.org/Person:72143e0e-74f4-a6d1-90fc-7b7a76b2ee1a> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:5886c41f-1feb-b18a-6efd-21376dc65bee> ;
+    picom:hasLifeEvent <https://ex.org/Source:5886c41f-1feb-b18a-6efd-21376dc65bee_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:baseSurname "Vink"@nl ;
@@ -58,7 +68,8 @@
         <https://ex.org/Person:488e917a-9987-ce54-8223-ddb0e00ea361> .
 
 <https://ex.org/Source:5886c41f-1feb-b18a-6efd-21376dc65bee> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/7c18ef5e-ac45-47b8-afd2-d25925aaf3c7/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/5886c41f-1feb-b18a-6efd-21376dc65bee"^^xsd:anyURI ;

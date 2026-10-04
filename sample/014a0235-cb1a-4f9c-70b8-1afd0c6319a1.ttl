@@ -5,6 +5,11 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:014a0235-cb1a-4f9c-70b8-1afd0c6319a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1698-02-16"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Person:0adc4399-8e7f-b9e3-d70e-4d1f33e46af3> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:014a0235-cb1a-4f9c-70b8-1afd0c6319a1> ;
     picom:hasRole picot_roles:573 ;
@@ -12,20 +17,9 @@
     sdo:givenName "Heijndrik"@nl ;
     sdo:name "Heijndrik Drummond"@nl .
 
-<https://ex.org/Person:dc76b7c4-4964-0f6d-9ee0-9cdb6e57d11e> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:014a0235-cb1a-4f9c-70b8-1afd0c6319a1> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:baseSurname "Kuijk"@nl ;
-            pnv:givenName "Pieternelle"@nl ;
-            pnv:literalName "Pieternelle van Kuijk"@nl ;
-            pnv:surnamePrefix "van"@nl ] ;
-    sdo:familyName "van Kuijk"@nl ;
-    sdo:givenName "Pieternelle"@nl ;
-    sdo:name "Pieternelle van Kuijk"@nl .
-
 <https://ex.org/Person:1088e283-c72c-0c55-a687-38053f797071> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:014a0235-cb1a-4f9c-70b8-1afd0c6319a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:014a0235-cb1a-4f9c-70b8-1afd0c6319a1_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 16-02-1698"@nl ;
     sdo:familyName "Drummond"@nl ;
@@ -45,6 +39,8 @@
     sdo:familyName "van Blanken"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName "Cornelia"@nl ;
+    sdo:knows <https://ex.org/Person:0adc4399-8e7f-b9e3-d70e-4d1f33e46af3>,
+        <https://ex.org/Person:dc76b7c4-4964-0f6d-9ee0-9cdb6e57d11e> ;
     sdo:name "Cornelia van Blanken"@nl ;
     sdo:spouse <https://ex.org/Person:99878dfd-56f8-80da-588f-659961cfb13c> .
 
@@ -54,11 +50,26 @@
     sdo:familyName "Drummond"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Pieter"@nl ;
+    sdo:knows <https://ex.org/Person:0adc4399-8e7f-b9e3-d70e-4d1f33e46af3>,
+        <https://ex.org/Person:dc76b7c4-4964-0f6d-9ee0-9cdb6e57d11e> ;
     sdo:name "Pieter Drummond"@nl ;
     sdo:spouse <https://ex.org/Person:671124d4-0cc6-9614-e0de-4f117b626635> .
 
+<https://ex.org/Person:dc76b7c4-4964-0f6d-9ee0-9cdb6e57d11e> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:014a0235-cb1a-4f9c-70b8-1afd0c6319a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Kuijk"@nl ;
+            pnv:givenName "Pieternelle"@nl ;
+            pnv:literalName "Pieternelle van Kuijk"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:familyName "van Kuijk"@nl ;
+    sdo:givenName "Pieternelle"@nl ;
+    sdo:name "Pieternelle van Kuijk"@nl .
+
 <https://ex.org/Source:014a0235-cb1a-4f9c-70b8-1afd0c6319a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/68595d42-2d90-4050-8acc-92d76e3ff6ce/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/014a0235-cb1a-4f9c-70b8-1afd0c6319a1"^^xsd:anyURI ;

@@ -5,6 +5,23 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:861d850f-6e5b-2e36-0fb5-b5c01e21bbee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1765-07-16"@nl ;
+    picom:eventPlace "Alkemade"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
+<https://ex.org/Person:0ef43a76-ea44-779b-cd6a-f627db2c8536> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:861d850f-6e5b-2e36-0fb5-b5c01e21bbee> ;
+    picom:hasLifeEvent <https://ex.org/Source:861d850f-6e5b-2e36-0fb5-b5c01e21bbee_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:birthPlace "Nieuwe Wetering"@nl ;
+    sdo:description "Doopdatum: 16-07-1765"@nl ;
+    sdo:familyName "Nieuwkamp"@nl ;
+    sdo:givenName "Maria"@nl ;
+    sdo:name "Maria Nieuwkamp"@nl ;
+    sdo:parent <https://ex.org/Person:b136a0ba-fa22-b5ab-73c2-1a4e8cef2310>,
+        <https://ex.org/Person:fda08907-1e39-d5ce-e04b-65696d33a67d> .
+
 <https://ex.org/Person:5310a8d5-6205-bad9-dbda-e245f0505847> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:861d850f-6e5b-2e36-0fb5-b5c01e21bbee> ;
     picom:hasRole picot_roles:573 ;
@@ -18,6 +35,22 @@
     sdo:givenName "Lijb"@nl ;
     sdo:name "Lijb Cornelisse van der Meer"@nl .
 
+<https://ex.org/Person:b136a0ba-fa22-b5ab-73c2-1a4e8cef2310> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:861d850f-6e5b-2e36-0fb5-b5c01e21bbee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Nieuwkamp"@nl ;
+            pnv:givenName "Hermen"@nl ;
+            pnv:literalName "Hermen Janse Nieuwkamp"@nl ;
+            pnv:patronym "Janse"@nl ] ;
+    sdo:children <https://ex.org/Person:0ef43a76-ea44-779b-cd6a-f627db2c8536> ;
+    sdo:familyName "Nieuwkamp"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Hermen"@nl ;
+    sdo:knows <https://ex.org/Person:5310a8d5-6205-bad9-dbda-e245f0505847>,
+        <https://ex.org/Person:bbdb33e6-c3c0-b099-f581-b37a0010d6b0> ;
+    sdo:name "Hermen Janse Nieuwkamp"@nl ;
+    sdo:spouse <https://ex.org/Person:fda08907-1e39-d5ce-e04b-65696d33a67d> .
+
 <https://ex.org/Person:bbdb33e6-c3c0-b099-f581-b37a0010d6b0> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:861d850f-6e5b-2e36-0fb5-b5c01e21bbee> ;
     picom:hasRole picot_roles:573 ;
@@ -30,31 +63,6 @@
     sdo:givenName "Gerret"@nl ;
     sdo:name "Gerret Dirkse Tijs"@nl .
 
-<https://ex.org/Person:0ef43a76-ea44-779b-cd6a-f627db2c8536> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:861d850f-6e5b-2e36-0fb5-b5c01e21bbee> ;
-    picom:hasRole picot_roles:575 ;
-    sdo:birthPlace "Nieuwe Wetering"@nl ;
-    sdo:description "Doopdatum: 16-07-1765"@nl ;
-    sdo:familyName "Nieuwkamp"@nl ;
-    sdo:givenName "Maria"@nl ;
-    sdo:name "Maria Nieuwkamp"@nl ;
-    sdo:parent <https://ex.org/Person:b136a0ba-fa22-b5ab-73c2-1a4e8cef2310>,
-        <https://ex.org/Person:fda08907-1e39-d5ce-e04b-65696d33a67d> .
-
-<https://ex.org/Person:b136a0ba-fa22-b5ab-73c2-1a4e8cef2310> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:861d850f-6e5b-2e36-0fb5-b5c01e21bbee> ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:baseSurname "Nieuwkamp"@nl ;
-            pnv:givenName "Hermen"@nl ;
-            pnv:literalName "Hermen Janse Nieuwkamp"@nl ;
-            pnv:patronym "Janse"@nl ] ;
-    sdo:children <https://ex.org/Person:0ef43a76-ea44-779b-cd6a-f627db2c8536> ;
-    sdo:familyName "Nieuwkamp"@nl ;
-    sdo:gender sdo:Male ;
-    sdo:givenName "Hermen"@nl ;
-    sdo:name "Hermen Janse Nieuwkamp"@nl ;
-    sdo:spouse <https://ex.org/Person:fda08907-1e39-d5ce-e04b-65696d33a67d> .
-
 <https://ex.org/Person:fda08907-1e39-d5ce-e04b-65696d33a67d> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:861d850f-6e5b-2e36-0fb5-b5c01e21bbee> ;
     sdo:additionalName [ a pnv:PersonName ;
@@ -66,11 +74,14 @@
     sdo:familyName "Kiewit"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName "Martje"@nl ;
+    sdo:knows <https://ex.org/Person:5310a8d5-6205-bad9-dbda-e245f0505847>,
+        <https://ex.org/Person:bbdb33e6-c3c0-b099-f581-b37a0010d6b0> ;
     sdo:name "Martje Pieters Kiewit"@nl ;
     sdo:spouse <https://ex.org/Person:b136a0ba-fa22-b5ab-73c2-1a4e8cef2310> .
 
 <https://ex.org/Source:861d850f-6e5b-2e36-0fb5-b5c01e21bbee> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/b71f3fe8-006a-4f1e-937d-0080c3024e15/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/861d850f-6e5b-2e36-0fb5-b5c01e21bbee"^^xsd:anyURI ;

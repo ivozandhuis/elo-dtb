@@ -5,6 +5,11 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:a5aa2c4f-4d89-dad4-346f-8e95afd13c35_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1623-05-19"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/99> .
+
 <https://ex.org/Person:10bf4f4f-5d79-3839-4fee-eb6d5f383337> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:a5aa2c4f-4d89-dad4-346f-8e95afd13c35> ;
     picom:hasRole picot_roles:574 ;
@@ -30,12 +35,14 @@
     sdo:spouse <https://ex.org/Person:10bf4f4f-5d79-3839-4fee-eb6d5f383337> .
 
 <https://ex.org/Source:a5aa2c4f-4d89-dad4-346f-8e95afd13c35> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/549>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/cfb01bcc-19bb-49bd-8acb-f6955fe41fac/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/a5aa2c4f-4d89-dad4-346f-8e95afd13c35"^^xsd:anyURI ;
             sdo:position "1" ;
             sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/cfb01bcc-19bb-49bd-8acb-f6955fe41fac/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1623-05-19"@nl ;
     sdo:dateModified "1970-01-01"^^xsd:date ;
     sdo:description "1619-1626"@nl,
         "9"@nl,

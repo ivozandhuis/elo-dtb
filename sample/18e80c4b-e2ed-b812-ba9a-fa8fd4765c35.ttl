@@ -5,16 +5,6 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ex.org/Person:490f3505-9de7-a243-3745-c53f6618093a> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:18e80c4b-e2ed-b812-ba9a-fa8fd4765c35> ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:givenName "Jan"@nl ;
-            pnv:literalName "Jan Cornelisz"@nl ;
-            pnv:patronym "Cornelisz"@nl ] ;
-    sdo:description "Relatie tot bruid: wed."@nl ;
-    sdo:givenName "Jan"@nl ;
-    sdo:name "Jan Cornelisz"@nl .
-
 <https://ex.org/Person:5393a04f-cf9e-75dc-7040-e1b403216f42> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:18e80c4b-e2ed-b812-ba9a-fa8fd4765c35> ;
     picom:hasRole picot_roles:573 ;
@@ -22,39 +12,34 @@
             pnv:givenName "Antge"@nl ;
             pnv:literalName "Antge Rense"@nl ;
             pnv:patronym "Rense"@nl ] ;
+    sdo:address "Geergraft"@nl ;
     sdo:description "getuige van de bruid, relatie tot de bruid: nicht, adres: Geergraft"@nl ;
     sdo:givenName "Antge"@nl ;
     sdo:name "Antge Rense"@nl .
 
-<https://ex.org/Person:8a42ceb6-d9da-b5a7-6a8e-fea1a7a08245> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:18e80c4b-e2ed-b812-ba9a-fa8fd4765c35> ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:givenName "Trijntie"@nl ;
-            pnv:literalName "Trijntie Jans"@nl ;
-            pnv:patronym "Jans"@nl ] ;
-    sdo:description "Relatie tot bruidegom: wed."@nl ;
-    sdo:givenName "Trijntie"@nl ;
-    sdo:name "Trijntie Jans"@nl .
-
-<https://ex.org/Person:e1e76f31-8ce8-cd94-ea8d-23944a24293e> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:18e80c4b-e2ed-b812-ba9a-fa8fd4765c35> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:description "getuige van de bruid, relatie tot de bruid: bekende, adres: Vleeresteegh"@nl ;
-    sdo:familyName "Jonghbloet"@nl ;
-    sdo:givenName "Elsge"@nl ;
-    sdo:name "Elsge Jonghbloet"@nl .
-
 <https://ex.org/Person:ee860834-6110-2706-0fcb-46989d6a9576> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:18e80c4b-e2ed-b812-ba9a-fa8fd4765c35> ;
     picom:hasRole picot_roles:573 ;
+    sdo:address "Geergraft"@nl ;
     sdo:description "getuige van de bruidegom, relatie tot de bruidegom: neef, adres: Geergraft"@nl ;
     sdo:familyName "Tier"@nl ;
     sdo:givenName "Servaes"@nl ;
     sdo:name "Servaes Tier"@nl .
 
+<https://ex.org/Source:18e80c4b-e2ed-b812-ba9a-fa8fd4765c35_huwelijk_event> a picom:LifeEvent ;
+    picom:eventDate "1698-04-05"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/83> .
+
+<https://ex.org/Source:18e80c4b-e2ed-b812-ba9a-fa8fd4765c35_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1698-03-15"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/99> .
+
 <https://ex.org/Person:3531850b-2dc3-a477-149e-1d6065add68e> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:18e80c4b-e2ed-b812-ba9a-fa8fd4765c35> ;
     picom:hasRole picot_roles:574 ;
+    picom:isWidOf <https://ex.org/Person:490f3505-9de7-a243-3745-c53f6618093a> ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:givenName "Eva"@nl ;
             pnv:literalName "Eva Jacobs"@nl ;
@@ -62,12 +47,47 @@
     sdo:address "Vleresteegh"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName "Eva"@nl ;
+    sdo:knows <https://ex.org/Person:e1e76f31-8ce8-cd94-ea8d-23944a24293e> ;
     sdo:name "Eva Jacobs"@nl ;
     sdo:spouse <https://ex.org/Person:fbbbe2a6-4980-2169-c69e-4c9725f4aea2> .
+
+<https://ex.org/Person:490f3505-9de7-a243-3745-c53f6618093a> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:18e80c4b-e2ed-b812-ba9a-fa8fd4765c35> ;
+    picom:deceased true ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Jan"@nl ;
+            pnv:literalName "Jan Cornelisz"@nl ;
+            pnv:patronym "Cornelisz"@nl ] ;
+    sdo:description "Relatie tot bruid: wed."@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jan"@nl ;
+    sdo:name "Jan Cornelisz"@nl .
+
+<https://ex.org/Person:8a42ceb6-d9da-b5a7-6a8e-fea1a7a08245> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:18e80c4b-e2ed-b812-ba9a-fa8fd4765c35> ;
+    picom:deceased true ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Trijntie"@nl ;
+            pnv:literalName "Trijntie Jans"@nl ;
+            pnv:patronym "Jans"@nl ] ;
+    sdo:description "Relatie tot bruidegom: wed."@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Trijntie"@nl ;
+    sdo:name "Trijntie Jans"@nl .
+
+<https://ex.org/Person:e1e76f31-8ce8-cd94-ea8d-23944a24293e> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:18e80c4b-e2ed-b812-ba9a-fa8fd4765c35> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:address "Vleeresteegh"@nl ;
+    sdo:description "getuige van de bruid, relatie tot de bruid: bekende, adres: Vleeresteegh"@nl ;
+    sdo:familyName "Jonghbloet"@nl ;
+    sdo:givenName "Elsge"@nl ;
+    sdo:name "Elsge Jonghbloet"@nl .
 
 <https://ex.org/Person:fbbbe2a6-4980-2169-c69e-4c9725f4aea2> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:18e80c4b-e2ed-b812-ba9a-fa8fd4765c35> ;
     picom:hasRole picot_roles:574 ;
+    picom:isWidOf <https://ex.org/Person:8a42ceb6-d9da-b5a7-6a8e-fea1a7a08245> ;
     sdo:address "Uytterstegraft"@nl ;
     sdo:familyName "Tier"@nl ;
     sdo:gender sdo:Male ;
@@ -76,12 +96,15 @@
     sdo:spouse <https://ex.org/Person:3531850b-2dc3-a477-149e-1d6065add68e> .
 
 <https://ex.org/Source:18e80c4b-e2ed-b812-ba9a-fa8fd4765c35> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/549>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/18362c1f-127a-4768-b9e6-f6b5030f2928/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/18e80c4b-e2ed-b812-ba9a-fa8fd4765c35"^^xsd:anyURI ;
             sdo:position "1" ;
             sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/18362c1f-127a-4768-b9e6-f6b5030f2928/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1698-03-15"@nl,
+        "1698-04-05"@nl ;
     sdo:dateModified "1970-01-01"^^xsd:date ;
     sdo:description "1687-1701"@nl,
         "203"@nl,

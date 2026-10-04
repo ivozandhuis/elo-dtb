@@ -4,6 +4,33 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:56c334bf-272a-fe26-2cb4-dbe6ade579a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1743-05-14"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
+<https://ex.org/Person:18bfc360-514b-de8b-9250-2400aa9baa2a> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:56c334bf-272a-fe26-2cb4-dbe6ade579a1> ;
+    sdo:children <https://ex.org/Person:57c030ad-c9a8-f079-163c-f113bec764ea> ;
+    sdo:familyName "Kwast"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Marij"@nl ;
+    sdo:knows <https://ex.org/Person:aac7786e-7be8-6e89-c100-63a5a7cc2af2>,
+        <https://ex.org/Person:b93dc343-c3c0-9567-575d-b914c501ec3a> ;
+    sdo:name "Marij Kwast"@nl ;
+    sdo:spouse <https://ex.org/Person:cece68ab-5ad5-2e85-5d72-4a955b1dee4f> .
+
+<https://ex.org/Person:57c030ad-c9a8-f079-163c-f113bec764ea> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:56c334bf-272a-fe26-2cb4-dbe6ade579a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:56c334bf-272a-fe26-2cb4-dbe6ade579a1_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 14-05-1743"@nl ;
+    sdo:familyName "Piekaar"@nl ;
+    sdo:givenName "Jan"@nl ;
+    sdo:name "Jan Piekaar"@nl ;
+    sdo:parent <https://ex.org/Person:18bfc360-514b-de8b-9250-2400aa9baa2a>,
+        <https://ex.org/Person:cece68ab-5ad5-2e85-5d72-4a955b1dee4f> .
+
 <https://ex.org/Person:aac7786e-7be8-6e89-c100-63a5a7cc2af2> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:56c334bf-272a-fe26-2cb4-dbe6ade579a1> ;
     picom:hasRole picot_roles:573 ;
@@ -18,36 +45,20 @@
     sdo:givenName "Cornelis"@nl ;
     sdo:name "Cornelis Rooseboom"@nl .
 
-<https://ex.org/Person:18bfc360-514b-de8b-9250-2400aa9baa2a> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:56c334bf-272a-fe26-2cb4-dbe6ade579a1> ;
-    sdo:children <https://ex.org/Person:57c030ad-c9a8-f079-163c-f113bec764ea> ;
-    sdo:familyName "Kwast"@nl ;
-    sdo:gender sdo:Female ;
-    sdo:givenName "Marij"@nl ;
-    sdo:name "Marij Kwast"@nl ;
-    sdo:spouse <https://ex.org/Person:cece68ab-5ad5-2e85-5d72-4a955b1dee4f> .
-
-<https://ex.org/Person:57c030ad-c9a8-f079-163c-f113bec764ea> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:56c334bf-272a-fe26-2cb4-dbe6ade579a1> ;
-    picom:hasRole picot_roles:575 ;
-    sdo:description "Doopdatum: 14-05-1743"@nl ;
-    sdo:familyName "Piekaar"@nl ;
-    sdo:givenName "Jan"@nl ;
-    sdo:name "Jan Piekaar"@nl ;
-    sdo:parent <https://ex.org/Person:18bfc360-514b-de8b-9250-2400aa9baa2a>,
-        <https://ex.org/Person:cece68ab-5ad5-2e85-5d72-4a955b1dee4f> .
-
 <https://ex.org/Person:cece68ab-5ad5-2e85-5d72-4a955b1dee4f> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:56c334bf-272a-fe26-2cb4-dbe6ade579a1> ;
     sdo:children <https://ex.org/Person:57c030ad-c9a8-f079-163c-f113bec764ea> ;
     sdo:familyName "Piekaar"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Jan"@nl ;
+    sdo:knows <https://ex.org/Person:aac7786e-7be8-6e89-c100-63a5a7cc2af2>,
+        <https://ex.org/Person:b93dc343-c3c0-9567-575d-b914c501ec3a> ;
     sdo:name "Jan Piekaar"@nl ;
     sdo:spouse <https://ex.org/Person:18bfc360-514b-de8b-9250-2400aa9baa2a> .
 
 <https://ex.org/Source:56c334bf-272a-fe26-2cb4-dbe6ade579a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/7dd6a351-4e69-4ed5-91e0-0237e5ff4e34/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/56c334bf-272a-fe26-2cb4-dbe6ade579a1"^^xsd:anyURI ;

@@ -5,12 +5,50 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:db598722-5679-abb3-73cb-240f9dad5bee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1693-02-04"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
+<https://ex.org/Person:1fdba711-469b-249e-816c-3fbc61a609f9> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:db598722-5679-abb3-73cb-240f9dad5bee> ;
+    sdo:children <https://ex.org/Person:ab3878e1-2689-d18f-06a5-7a9698438da2> ;
+    sdo:familyName "Vermaes"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Johanna"@nl ;
+    sdo:knows <https://ex.org/Person:84753b88-3cc9-96c1-c2de-f53457d4940d>,
+        <https://ex.org/Person:e48a3670-4211-e65a-97f4-230530d9216b> ;
+    sdo:name "Johanna Vermaes"@nl ;
+    sdo:spouse <https://ex.org/Person:20be7695-aa11-ff4e-e337-0bf7c47fddb0> .
+
+<https://ex.org/Person:20be7695-aa11-ff4e-e337-0bf7c47fddb0> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:db598722-5679-abb3-73cb-240f9dad5bee> ;
+    sdo:children <https://ex.org/Person:ab3878e1-2689-d18f-06a5-7a9698438da2> ;
+    sdo:familyName "Treutelaer"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Cornelis"@nl ;
+    sdo:knows <https://ex.org/Person:84753b88-3cc9-96c1-c2de-f53457d4940d>,
+        <https://ex.org/Person:e48a3670-4211-e65a-97f4-230530d9216b> ;
+    sdo:name "Cornelis Treutelaer"@nl ;
+    sdo:spouse <https://ex.org/Person:1fdba711-469b-249e-816c-3fbc61a609f9> .
+
 <https://ex.org/Person:84753b88-3cc9-96c1-c2de-f53457d4940d> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:db598722-5679-abb3-73cb-240f9dad5bee> ;
     picom:hasRole picot_roles:573 ;
     sdo:familyName "Vermaes"@nl ;
     sdo:givenName "Michiel"@nl ;
     sdo:name "Michiel Vermaes"@nl .
+
+<https://ex.org/Person:ab3878e1-2689-d18f-06a5-7a9698438da2> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:db598722-5679-abb3-73cb-240f9dad5bee> ;
+    picom:hasLifeEvent <https://ex.org/Source:db598722-5679-abb3-73cb-240f9dad5bee_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 04-02-1693"@nl ;
+    sdo:familyName "Treutelaer"@nl ;
+    sdo:givenName "Christina"@nl ;
+    sdo:name "Christina Treutelaer"@nl ;
+    sdo:parent <https://ex.org/Person:1fdba711-469b-249e-816c-3fbc61a609f9>,
+        <https://ex.org/Person:20be7695-aa11-ff4e-e337-0bf7c47fddb0> .
 
 <https://ex.org/Person:e48a3670-4211-e65a-97f4-230530d9216b> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:db598722-5679-abb3-73cb-240f9dad5bee> ;
@@ -24,36 +62,9 @@
     sdo:givenName "Josijntje"@nl ;
     sdo:name "Josijntje van Emmerseel"@nl .
 
-<https://ex.org/Person:1fdba711-469b-249e-816c-3fbc61a609f9> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:db598722-5679-abb3-73cb-240f9dad5bee> ;
-    sdo:children <https://ex.org/Person:ab3878e1-2689-d18f-06a5-7a9698438da2> ;
-    sdo:familyName "Vermaes"@nl ;
-    sdo:gender sdo:Female ;
-    sdo:givenName "Johanna"@nl ;
-    sdo:name "Johanna Vermaes"@nl ;
-    sdo:spouse <https://ex.org/Person:20be7695-aa11-ff4e-e337-0bf7c47fddb0> .
-
-<https://ex.org/Person:20be7695-aa11-ff4e-e337-0bf7c47fddb0> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:db598722-5679-abb3-73cb-240f9dad5bee> ;
-    sdo:children <https://ex.org/Person:ab3878e1-2689-d18f-06a5-7a9698438da2> ;
-    sdo:familyName "Treutelaer"@nl ;
-    sdo:gender sdo:Male ;
-    sdo:givenName "Cornelis"@nl ;
-    sdo:name "Cornelis Treutelaer"@nl ;
-    sdo:spouse <https://ex.org/Person:1fdba711-469b-249e-816c-3fbc61a609f9> .
-
-<https://ex.org/Person:ab3878e1-2689-d18f-06a5-7a9698438da2> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:db598722-5679-abb3-73cb-240f9dad5bee> ;
-    picom:hasRole picot_roles:575 ;
-    sdo:description "Doopdatum: 04-02-1693"@nl ;
-    sdo:familyName "Treutelaer"@nl ;
-    sdo:givenName "Christina"@nl ;
-    sdo:name "Christina Treutelaer"@nl ;
-    sdo:parent <https://ex.org/Person:1fdba711-469b-249e-816c-3fbc61a609f9>,
-        <https://ex.org/Person:20be7695-aa11-ff4e-e337-0bf7c47fddb0> .
-
 <https://ex.org/Source:db598722-5679-abb3-73cb-240f9dad5bee> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/a75feb56-7933-460d-9465-9088b27d7ce2/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/db598722-5679-abb3-73cb-240f9dad5bee"^^xsd:anyURI ;

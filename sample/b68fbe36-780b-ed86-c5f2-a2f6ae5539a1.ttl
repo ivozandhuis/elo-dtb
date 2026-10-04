@@ -5,6 +5,11 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:b68fbe36-780b-ed86-c5f2-a2f6ae5539a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1710-07-01"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Person:4dcca5c4-df0a-94ef-fcb6-6f163bd0f336> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:b68fbe36-780b-ed86-c5f2-a2f6ae5539a1> ;
     picom:hasRole picot_roles:573 ;
@@ -40,6 +45,8 @@
     sdo:familyName "van Es"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName "Helena"@nl ;
+    sdo:knows <https://ex.org/Person:4dcca5c4-df0a-94ef-fcb6-6f163bd0f336>,
+        <https://ex.org/Person:6ca3ff44-7072-3c61-7b06-e51464319f1c> ;
     sdo:name "Helena van Es"@nl ;
     sdo:spouse <https://ex.org/Person:ab5baf5c-6696-600f-5a11-b3bb741d26f0> .
 
@@ -54,11 +61,14 @@
     sdo:familyName "van der Walle"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Jakobus"@nl ;
+    sdo:knows <https://ex.org/Person:4dcca5c4-df0a-94ef-fcb6-6f163bd0f336>,
+        <https://ex.org/Person:6ca3ff44-7072-3c61-7b06-e51464319f1c> ;
     sdo:name "Jakobus van der Walle"@nl ;
     sdo:spouse <https://ex.org/Person:8e9d3e75-8d72-efc6-5f78-b2003866bf50> .
 
 <https://ex.org/Person:c795089d-3e6d-18cf-5888-35e14dfb0b28> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:b68fbe36-780b-ed86-c5f2-a2f6ae5539a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:b68fbe36-780b-ed86-c5f2-a2f6ae5539a1_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:baseSurname "Walle"@nl ;
@@ -73,7 +83,8 @@
         <https://ex.org/Person:ab5baf5c-6696-600f-5a11-b3bb741d26f0> .
 
 <https://ex.org/Source:b68fbe36-780b-ed86-c5f2-a2f6ae5539a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/d6959322-2bed-40c6-8ba4-d4161aa66df8/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/b68fbe36-780b-ed86-c5f2-a2f6ae5539a1"^^xsd:anyURI ;

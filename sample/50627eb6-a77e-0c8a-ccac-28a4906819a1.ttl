@@ -5,6 +5,16 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Person:2ad86b96-183f-f54e-2245-73f5b3148d80> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:50627eb6-a77e-0c8a-ccac-28a4906819a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:50627eb6-a77e-0c8a-ccac-28a4906819a1_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 16-06-1641"@nl ;
+    sdo:familyName "Plan"@nl ;
+    sdo:givenName "Jeanne"@nl ;
+    sdo:name "Jeanne Plan"@nl ;
+    sdo:parent <https://ex.org/Person:ffb3f2e7-52d8-33fa-607b-67b1f0c87f98> .
+
 <https://ex.org/Person:3ac76594-2c94-20cb-3ba4-fa957c6cd889> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:50627eb6-a77e-0c8a-ccac-28a4906819a1> ;
     picom:hasRole picot_roles:573 ;
@@ -26,15 +36,6 @@
     sdo:givenName "Jan"@nl ;
     sdo:name "Jan Kiniren"@nl .
 
-<https://ex.org/Person:2ad86b96-183f-f54e-2245-73f5b3148d80> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:50627eb6-a77e-0c8a-ccac-28a4906819a1> ;
-    picom:hasRole picot_roles:575 ;
-    sdo:description "Doopdatum: 16-06-1641"@nl ;
-    sdo:familyName "Plan"@nl ;
-    sdo:givenName "Jeanne"@nl ;
-    sdo:name "Jeanne Plan"@nl ;
-    sdo:parent <https://ex.org/Person:ffb3f2e7-52d8-33fa-607b-67b1f0c87f98> .
-
 <https://ex.org/Person:ffb3f2e7-52d8-33fa-607b-67b1f0c87f98> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:50627eb6-a77e-0c8a-ccac-28a4906819a1> ;
     sdo:additionalName [ a pnv:PersonName ;
@@ -46,10 +47,19 @@
     sdo:familyName "des Plan"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Jan"@nl ;
+    sdo:knows <https://ex.org/Person:3ac76594-2c94-20cb-3ba4-fa957c6cd889>,
+        <https://ex.org/Person:546c43d2-fb6d-e426-45d5-4875188b34cf>,
+        <https://ex.org/Person:b434f6c5-ddad-3953-7bed-f17f7b33778d> ;
     sdo:name "Jan des Plan"@nl .
 
+<https://ex.org/Source:50627eb6-a77e-0c8a-ccac-28a4906819a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1641-06-16"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Source:50627eb6-a77e-0c8a-ccac-28a4906819a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/6d92ab3e-4b0c-4b57-ac8b-5de42439286f/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/50627eb6-a77e-0c8a-ccac-28a4906819a1"^^xsd:anyURI ;

@@ -5,6 +5,27 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:24818ca3-0e20-a9a0-0353-568c7ea449a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1753-12-12"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
+<https://ex.org/Person:14a4aa5b-a84a-1d3c-18fe-68ae2c6184bc> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:24818ca3-0e20-a9a0-0353-568c7ea449a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:24818ca3-0e20-a9a0-0353-568c7ea449a1_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Kijser"@nl ;
+            pnv:givenName "Haasia Maria"@nl ;
+            pnv:literalName "Haasia Maria de Kijser"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:description "Doopdatum: 12-12-1753"@nl ;
+    sdo:familyName "de Kijser"@nl ;
+    sdo:givenName "Haasia Maria"@nl ;
+    sdo:name "Haasia Maria de Kijser"@nl ;
+    sdo:parent <https://ex.org/Person:d197180a-7a2f-4f5e-f931-ca06614e1994>,
+        <https://ex.org/Person:d97ce240-851a-ba3a-9c7f-7cc5ec2723ce> .
+
 <https://ex.org/Person:7a0f1523-103f-ad5d-624f-a011f23a7e7d> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:24818ca3-0e20-a9a0-0353-568c7ea449a1> ;
     picom:hasRole picot_roles:573 ;
@@ -19,27 +40,14 @@
     sdo:givenName "Haasje"@nl ;
     sdo:name "Haasje Veldhoven"@nl .
 
-<https://ex.org/Person:14a4aa5b-a84a-1d3c-18fe-68ae2c6184bc> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:24818ca3-0e20-a9a0-0353-568c7ea449a1> ;
-    picom:hasRole picot_roles:575 ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:baseSurname "Kijser"@nl ;
-            pnv:givenName "Haasia Maria"@nl ;
-            pnv:literalName "Haasia Maria de Kijser"@nl ;
-            pnv:surnamePrefix "de"@nl ] ;
-    sdo:description "Doopdatum: 12-12-1753"@nl ;
-    sdo:familyName "de Kijser"@nl ;
-    sdo:givenName "Haasia Maria"@nl ;
-    sdo:name "Haasia Maria de Kijser"@nl ;
-    sdo:parent <https://ex.org/Person:d197180a-7a2f-4f5e-f931-ca06614e1994>,
-        <https://ex.org/Person:d97ce240-851a-ba3a-9c7f-7cc5ec2723ce> .
-
 <https://ex.org/Person:d197180a-7a2f-4f5e-f931-ca06614e1994> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:24818ca3-0e20-a9a0-0353-568c7ea449a1> ;
     sdo:children <https://ex.org/Person:14a4aa5b-a84a-1d3c-18fe-68ae2c6184bc> ;
     sdo:familyName "Veldhoven"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName "Catharina Theodora"@nl ;
+    sdo:knows <https://ex.org/Person:7a0f1523-103f-ad5d-624f-a011f23a7e7d>,
+        <https://ex.org/Person:86d6d7d6-4daf-fc4d-e979-a7175cab3b80> ;
     sdo:name "Catharina Theodora Veldhoven"@nl ;
     sdo:spouse <https://ex.org/Person:d97ce240-851a-ba3a-9c7f-7cc5ec2723ce> .
 
@@ -54,11 +62,14 @@
     sdo:familyName "de Kijser"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Johannes"@nl ;
+    sdo:knows <https://ex.org/Person:7a0f1523-103f-ad5d-624f-a011f23a7e7d>,
+        <https://ex.org/Person:86d6d7d6-4daf-fc4d-e979-a7175cab3b80> ;
     sdo:name "Johannes de Kijser"@nl ;
     sdo:spouse <https://ex.org/Person:d197180a-7a2f-4f5e-f931-ca06614e1994> .
 
 <https://ex.org/Source:24818ca3-0e20-a9a0-0353-568c7ea449a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/34bb81ea-9d06-4e05-8e2a-83b82ae35deb/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/24818ca3-0e20-a9a0-0353-568c7ea449a1"^^xsd:anyURI ;

@@ -5,6 +5,11 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:ece1ce8d-e5e4-83ad-4b58-6af54056d9a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1711-08-30"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Person:1ef3c95b-04e3-6fb7-b4b1-03c90568bf57> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:ece1ce8d-e5e4-83ad-4b58-6af54056d9a1> ;
     picom:hasRole picot_roles:573 ;
@@ -15,22 +20,14 @@
     sdo:givenName "Jannetje"@nl ;
     sdo:name "Jannetje Klaas"@nl .
 
-<https://ex.org/Person:ca9044a4-bf02-20dc-c61e-a29f7e1e6e35> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:ece1ce8d-e5e4-83ad-4b58-6af54056d9a1> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:givenName "Dirk"@nl ;
-            pnv:literalName "Dirk Dirksz"@nl ;
-            pnv:patronym "Dirksz"@nl ] ;
-    sdo:givenName "Dirk"@nl ;
-    sdo:name "Dirk Dirksz"@nl .
-
 <https://ex.org/Person:371dbc62-f5d7-94eb-d15e-31cbf000f218> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:ece1ce8d-e5e4-83ad-4b58-6af54056d9a1> ;
     sdo:children <https://ex.org/Person:848f99de-b27d-9a93-3e0c-8225cbbd2785> ;
     sdo:familyName "Schrijver"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Jan"@nl ;
+    sdo:knows <https://ex.org/Person:1ef3c95b-04e3-6fb7-b4b1-03c90568bf57>,
+        <https://ex.org/Person:ca9044a4-bf02-20dc-c61e-a29f7e1e6e35> ;
     sdo:name "Jan Schrijver"@nl ;
     sdo:spouse <https://ex.org/Person:39d388a9-8d3e-8012-07c4-bc36893eef23> .
 
@@ -43,11 +40,14 @@
     sdo:children <https://ex.org/Person:848f99de-b27d-9a93-3e0c-8225cbbd2785> ;
     sdo:gender sdo:Female ;
     sdo:givenName "Anna"@nl ;
+    sdo:knows <https://ex.org/Person:1ef3c95b-04e3-6fb7-b4b1-03c90568bf57>,
+        <https://ex.org/Person:ca9044a4-bf02-20dc-c61e-a29f7e1e6e35> ;
     sdo:name "Anna Dirks"@nl ;
     sdo:spouse <https://ex.org/Person:371dbc62-f5d7-94eb-d15e-31cbf000f218> .
 
 <https://ex.org/Person:848f99de-b27d-9a93-3e0c-8225cbbd2785> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:ece1ce8d-e5e4-83ad-4b58-6af54056d9a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:ece1ce8d-e5e4-83ad-4b58-6af54056d9a1_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 30-08-1711"@nl ;
     sdo:familyName "Schrijver"@nl ;
@@ -56,8 +56,19 @@
     sdo:parent <https://ex.org/Person:371dbc62-f5d7-94eb-d15e-31cbf000f218>,
         <https://ex.org/Person:39d388a9-8d3e-8012-07c4-bc36893eef23> .
 
+<https://ex.org/Person:ca9044a4-bf02-20dc-c61e-a29f7e1e6e35> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:ece1ce8d-e5e4-83ad-4b58-6af54056d9a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Dirk"@nl ;
+            pnv:literalName "Dirk Dirksz"@nl ;
+            pnv:patronym "Dirksz"@nl ] ;
+    sdo:givenName "Dirk"@nl ;
+    sdo:name "Dirk Dirksz"@nl .
+
 <https://ex.org/Source:ece1ce8d-e5e4-83ad-4b58-6af54056d9a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/9a3f3b70-b0b9-4a4b-b122-d1e9fd2c2474/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/ece1ce8d-e5e4-83ad-4b58-6af54056d9a1"^^xsd:anyURI ;

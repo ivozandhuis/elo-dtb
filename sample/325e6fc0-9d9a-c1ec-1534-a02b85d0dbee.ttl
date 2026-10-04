@@ -5,6 +5,11 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:325e6fc0-9d9a-c1ec-1534-a02b85d0dbee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1672-08-24"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Person:53476c86-26cd-3d5e-88a5-52a421733947> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:325e6fc0-9d9a-c1ec-1534-a02b85d0dbee> ;
     picom:hasRole picot_roles:573 ;
@@ -32,6 +37,32 @@
     sdo:givenName "Lijsbeth"@nl ;
     sdo:name "Lijsbeth Martens"@nl .
 
+<https://ex.org/Person:7e250584-9f12-57a4-2a78-9ae9d4d21a90> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:325e6fc0-9d9a-c1ec-1534-a02b85d0dbee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Treintie"@nl ;
+            pnv:literalName "Treintie Jans"@nl ;
+            pnv:patronym "Jans"@nl ] ;
+    sdo:children <https://ex.org/Person:9bbcf4b1-c25c-cff5-69be-5d5df9b6e2df> ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Treintie"@nl ;
+    sdo:knows <https://ex.org/Person:53476c86-26cd-3d5e-88a5-52a421733947>,
+        <https://ex.org/Person:61f1a6c3-9e1a-f768-ca54-2b6b0c00b6b8>,
+        <https://ex.org/Person:76e53d88-1009-6334-458f-477557060e1c>,
+        <https://ex.org/Person:a1ef9f7a-8e8a-a942-e579-63d3d42eb0b0> ;
+    sdo:name "Treintie Jans"@nl ;
+    sdo:spouse <https://ex.org/Person:a2903374-52f0-257d-798f-d14c5717761f> .
+
+<https://ex.org/Person:9bbcf4b1-c25c-cff5-69be-5d5df9b6e2df> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:325e6fc0-9d9a-c1ec-1534-a02b85d0dbee> ;
+    picom:hasLifeEvent <https://ex.org/Source:325e6fc0-9d9a-c1ec-1534-a02b85d0dbee_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 24-08-1672"@nl ;
+    sdo:givenName "Lijsbeth"@nl ;
+    sdo:name "Lijsbeth"@nl ;
+    sdo:parent <https://ex.org/Person:7e250584-9f12-57a4-2a78-9ae9d4d21a90>,
+        <https://ex.org/Person:a2903374-52f0-257d-798f-d14c5717761f> .
+
 <https://ex.org/Person:a1ef9f7a-8e8a-a942-e579-63d3d42eb0b0> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:325e6fc0-9d9a-c1ec-1534-a02b85d0dbee> ;
     picom:hasRole picot_roles:573 ;
@@ -44,27 +75,6 @@
     sdo:givenName "Jan"@nl ;
     sdo:name "Jan van Houten"@nl .
 
-<https://ex.org/Person:7e250584-9f12-57a4-2a78-9ae9d4d21a90> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:325e6fc0-9d9a-c1ec-1534-a02b85d0dbee> ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:givenName "Treintie"@nl ;
-            pnv:literalName "Treintie Jans"@nl ;
-            pnv:patronym "Jans"@nl ] ;
-    sdo:children <https://ex.org/Person:9bbcf4b1-c25c-cff5-69be-5d5df9b6e2df> ;
-    sdo:gender sdo:Female ;
-    sdo:givenName "Treintie"@nl ;
-    sdo:name "Treintie Jans"@nl ;
-    sdo:spouse <https://ex.org/Person:a2903374-52f0-257d-798f-d14c5717761f> .
-
-<https://ex.org/Person:9bbcf4b1-c25c-cff5-69be-5d5df9b6e2df> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:325e6fc0-9d9a-c1ec-1534-a02b85d0dbee> ;
-    picom:hasRole picot_roles:575 ;
-    sdo:description "Doopdatum: 24-08-1672"@nl ;
-    sdo:givenName "Lijsbeth"@nl ;
-    sdo:name "Lijsbeth"@nl ;
-    sdo:parent <https://ex.org/Person:7e250584-9f12-57a4-2a78-9ae9d4d21a90>,
-        <https://ex.org/Person:a2903374-52f0-257d-798f-d14c5717761f> .
-
 <https://ex.org/Person:a2903374-52f0-257d-798f-d14c5717761f> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:325e6fc0-9d9a-c1ec-1534-a02b85d0dbee> ;
     sdo:additionalName [ a pnv:PersonName ;
@@ -74,11 +84,16 @@
     sdo:children <https://ex.org/Person:9bbcf4b1-c25c-cff5-69be-5d5df9b6e2df> ;
     sdo:gender sdo:Male ;
     sdo:givenName "Pieter"@nl ;
+    sdo:knows <https://ex.org/Person:53476c86-26cd-3d5e-88a5-52a421733947>,
+        <https://ex.org/Person:61f1a6c3-9e1a-f768-ca54-2b6b0c00b6b8>,
+        <https://ex.org/Person:76e53d88-1009-6334-458f-477557060e1c>,
+        <https://ex.org/Person:a1ef9f7a-8e8a-a942-e579-63d3d42eb0b0> ;
     sdo:name "Pieter Gerrits"@nl ;
     sdo:spouse <https://ex.org/Person:7e250584-9f12-57a4-2a78-9ae9d4d21a90> .
 
 <https://ex.org/Source:325e6fc0-9d9a-c1ec-1534-a02b85d0dbee> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/7721e673-728c-4d8c-8fd2-e6e99976b4a6/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/325e6fc0-9d9a-c1ec-1534-a02b85d0dbee"^^xsd:anyURI ;

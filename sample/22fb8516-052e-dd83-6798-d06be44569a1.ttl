@@ -5,12 +5,10 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ex.org/Person:16553626-4c55-dcf2-1bd2-ab4bad351e88> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:22fb8516-052e-dd83-6798-d06be44569a1> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:familyName "Hoeke"@nl ;
-    sdo:givenName "Sara Cornelia"@nl ;
-    sdo:name "Sara Cornelia Hoeke"@nl .
+<https://ex.org/Source:22fb8516-052e-dd83-6798-d06be44569a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1804-06-07"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
 
 <https://ex.org/Person:0ef59055-790c-6b96-e1a7-89c1510daefc> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:22fb8516-052e-dd83-6798-d06be44569a1> ;
@@ -23,11 +21,20 @@
     sdo:familyName "du Flot"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName "Maria Theresia"@nl ;
+    sdo:knows <https://ex.org/Person:16553626-4c55-dcf2-1bd2-ab4bad351e88> ;
     sdo:name "Maria Theresia du Flot"@nl ;
     sdo:spouse <https://ex.org/Person:c3618769-f2be-0c57-2b20-5df88f054840> .
 
+<https://ex.org/Person:16553626-4c55-dcf2-1bd2-ab4bad351e88> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:22fb8516-052e-dd83-6798-d06be44569a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Hoeke"@nl ;
+    sdo:givenName "Sara Cornelia"@nl ;
+    sdo:name "Sara Cornelia Hoeke"@nl .
+
 <https://ex.org/Person:52a1f9ce-80f8-aed5-5eda-26ffff2a8d72> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:22fb8516-052e-dd83-6798-d06be44569a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:22fb8516-052e-dd83-6798-d06be44569a1_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:birthDate "1804-06-02"^^xsd:date ;
     sdo:description "Doopdatum: 07-06-1804"@nl ;
@@ -43,11 +50,13 @@
     sdo:familyName "Hoeke"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Salomon"@nl ;
+    sdo:knows <https://ex.org/Person:16553626-4c55-dcf2-1bd2-ab4bad351e88> ;
     sdo:name "Salomon Hoeke"@nl ;
     sdo:spouse <https://ex.org/Person:0ef59055-790c-6b96-e1a7-89c1510daefc> .
 
 <https://ex.org/Source:22fb8516-052e-dd83-6798-d06be44569a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/9e4bc9e6-183d-4bff-b8a5-f1ea9c752d0a/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/22fb8516-052e-dd83-6798-d06be44569a1"^^xsd:anyURI ;

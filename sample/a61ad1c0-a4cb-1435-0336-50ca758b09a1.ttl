@@ -12,6 +12,28 @@
     sdo:givenName "Jacques"@nl ;
     sdo:name "Jacques Brinet"@nl .
 
+<https://ex.org/Person:188bbaae-5a3f-24d1-87c3-d1048788b5b6> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:a61ad1c0-a4cb-1435-0336-50ca758b09a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:a61ad1c0-a4cb-1435-0336-50ca758b09a1_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 02-1641"@nl ;
+    sdo:familyName "Codrou"@nl ;
+    sdo:givenName "Catelijne"@nl ;
+    sdo:name "Catelijne Codrou"@nl ;
+    sdo:parent <https://ex.org/Person:29cde2df-6ce5-73e0-892c-5997d6edf932> .
+
+<https://ex.org/Person:29cde2df-6ce5-73e0-892c-5997d6edf932> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:a61ad1c0-a4cb-1435-0336-50ca758b09a1> ;
+    sdo:children <https://ex.org/Person:188bbaae-5a3f-24d1-87c3-d1048788b5b6> ;
+    sdo:familyName "Codrou"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jan"@nl ;
+    sdo:knows <https://ex.org/Person:0b66cdcc-1075-fc68-6354-92d56c254b57>,
+        <https://ex.org/Person:5ce1d26d-62c7-680c-2a0a-3bdb49a5af7d>,
+        <https://ex.org/Person:82a045cd-8338-0f68-7aeb-2b8513aa2915>,
+        <https://ex.org/Person:ea0e7ace-855a-ccac-90e9-ae80016c059c> ;
+    sdo:name "Jan Codrou"@nl .
+
 <https://ex.org/Person:5ce1d26d-62c7-680c-2a0a-3bdb49a5af7d> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:a61ad1c0-a4cb-1435-0336-50ca758b09a1> ;
     picom:hasRole picot_roles:573 ;
@@ -41,25 +63,14 @@
     sdo:givenName "Francoise"@nl ;
     sdo:name "Francoise Theliez"@nl .
 
-<https://ex.org/Person:188bbaae-5a3f-24d1-87c3-d1048788b5b6> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:a61ad1c0-a4cb-1435-0336-50ca758b09a1> ;
-    picom:hasRole picot_roles:575 ;
-    sdo:description "Doopdatum: 02-1641"@nl ;
-    sdo:familyName "Codrou"@nl ;
-    sdo:givenName "Catelijne"@nl ;
-    sdo:name "Catelijne Codrou"@nl ;
-    sdo:parent <https://ex.org/Person:29cde2df-6ce5-73e0-892c-5997d6edf932> .
-
-<https://ex.org/Person:29cde2df-6ce5-73e0-892c-5997d6edf932> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:a61ad1c0-a4cb-1435-0336-50ca758b09a1> ;
-    sdo:children <https://ex.org/Person:188bbaae-5a3f-24d1-87c3-d1048788b5b6> ;
-    sdo:familyName "Codrou"@nl ;
-    sdo:gender sdo:Male ;
-    sdo:givenName "Jan"@nl ;
-    sdo:name "Jan Codrou"@nl .
+<https://ex.org/Source:a61ad1c0-a4cb-1435-0336-50ca758b09a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "dopen 7 en 10 Februari<br>Doopdatum: 02-1641<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/271\">Inventarisnummer 271 van archiefnummer 1004 in Archieven</a>"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
 
 <https://ex.org/Source:a61ad1c0-a4cb-1435-0336-50ca758b09a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/ff24fcb1-f1e6-4124-a67a-42d74ffa4c79/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/a61ad1c0-a4cb-1435-0336-50ca758b09a1"^^xsd:anyURI ;

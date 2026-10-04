@@ -5,6 +5,11 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:1ae1cffb-6be9-5716-eefb-db29ad4c49a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1749-04-13"@nl ;
+    picom:eventPlace "Noordwijk"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Person:1815d130-b73f-8a33-7c68-7d7cbcb68bf2> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:1ae1cffb-6be9-5716-eefb-db29ad4c49a1> ;
     picom:hasRole picot_roles:573 ;
@@ -12,20 +17,9 @@
     sdo:givenName "Arij"@nl ;
     sdo:name "Arij Zwanenburg"@nl .
 
-<https://ex.org/Person:9f45c550-e234-d3b4-556f-3e7db498d23b> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:1ae1cffb-6be9-5716-eefb-db29ad4c49a1> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:baseSurname "Boon"@nl ;
-            pnv:givenName "Marijtie"@nl ;
-            pnv:literalName "Marijtie van der Boon"@nl ;
-            pnv:surnamePrefix "van der"@nl ] ;
-    sdo:familyName "van der Boon"@nl ;
-    sdo:givenName "Marijtie"@nl ;
-    sdo:name "Marijtie van der Boon"@nl .
-
 <https://ex.org/Person:23a0e8c1-d86f-7469-9669-cc662860979d> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:1ae1cffb-6be9-5716-eefb-db29ad4c49a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:1ae1cffb-6be9-5716-eefb-db29ad4c49a1_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:baseSurname "Hemert"@nl ;
@@ -50,8 +44,22 @@
     sdo:familyName "van Hemert"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Klaes"@nl ;
+    sdo:knows <https://ex.org/Person:1815d130-b73f-8a33-7c68-7d7cbcb68bf2>,
+        <https://ex.org/Person:9f45c550-e234-d3b4-556f-3e7db498d23b> ;
     sdo:name "Klaes van Hemert"@nl ;
     sdo:spouse <https://ex.org/Person:bd3906a4-6b1a-3bb8-0f20-00d140cbbd50> .
+
+<https://ex.org/Person:9f45c550-e234-d3b4-556f-3e7db498d23b> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:1ae1cffb-6be9-5716-eefb-db29ad4c49a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Boon"@nl ;
+            pnv:givenName "Marijtie"@nl ;
+            pnv:literalName "Marijtie van der Boon"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:familyName "van der Boon"@nl ;
+    sdo:givenName "Marijtie"@nl ;
+    sdo:name "Marijtie van der Boon"@nl .
 
 <https://ex.org/Person:bd3906a4-6b1a-3bb8-0f20-00d140cbbd50> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:1ae1cffb-6be9-5716-eefb-db29ad4c49a1> ;
@@ -64,11 +72,14 @@
     sdo:familyName "van der Boon"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName "Jannetje"@nl ;
+    sdo:knows <https://ex.org/Person:1815d130-b73f-8a33-7c68-7d7cbcb68bf2>,
+        <https://ex.org/Person:9f45c550-e234-d3b4-556f-3e7db498d23b> ;
     sdo:name "Jannetje van der Boon"@nl ;
     sdo:spouse <https://ex.org/Person:2699e3ba-260c-3e15-c1b9-462d31425ae0> .
 
 <https://ex.org/Source:1ae1cffb-6be9-5716-eefb-db29ad4c49a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/4c5c7cf9-c644-4ab0-8825-133cec1a7fe1/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/1ae1cffb-6be9-5716-eefb-db29ad4c49a1"^^xsd:anyURI ;

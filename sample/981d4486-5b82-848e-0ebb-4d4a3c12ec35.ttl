@@ -5,6 +5,11 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:981d4486-5b82-848e-0ebb-4d4a3c12ec35_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1793-04-25"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/99> .
+
 <https://ex.org/Person:021f73dd-cadf-bd0b-9425-8ab868bf1bb5> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:981d4486-5b82-848e-0ebb-4d4a3c12ec35> ;
     picom:hasRole picot_roles:573 ;
@@ -13,8 +18,10 @@
             pnv:givenName "Anna"@nl ;
             pnv:literalName "Anna van den Burg"@nl ;
             pnv:surnamePrefix "van den"@nl ] ;
+    sdo:address "Klaaresteeg"@nl ;
     sdo:description "getuige van de bruid, relatie tot de bruid: moeder, adres: Klaaresteeg"@nl ;
     sdo:familyName "van den Burg"@nl ;
+    sdo:gender sdo:Female ;
     sdo:givenName "Anna"@nl ;
     sdo:name "Anna van den Burg"@nl .
 
@@ -25,7 +32,9 @@
             pnv:givenName "Kaatje"@nl ;
             pnv:literalName "Kaatje Engelbregt"@nl ;
             pnv:patronym "Engelbregt"@nl ] ;
+    sdo:address "Binnevestgragt bij de Maarepoort"@nl ;
     sdo:description "getuige van de bruidegom, relatie tot de bruidegom: moeder, adres: Binnevestgragt bij de Maarepoort"@nl ;
+    sdo:gender sdo:Female ;
     sdo:givenName "Kaatje"@nl ;
     sdo:name "Kaatje Engelbregt"@nl .
 
@@ -38,6 +47,7 @@
     sdo:gender sdo:Female ;
     sdo:givenName "Jannetje"@nl ;
     sdo:name "Jannetje Leemans"@nl ;
+    sdo:parent <https://ex.org/Person:021f73dd-cadf-bd0b-9425-8ab868bf1bb5> ;
     sdo:spouse <https://ex.org/Person:88d2d112-d413-d60e-d925-e1ac0c091226> .
 
 <https://ex.org/Person:88d2d112-d413-d60e-d925-e1ac0c091226> a picom:PersonObservation ;
@@ -50,15 +60,18 @@
     sdo:givenName "Johannes"@nl ;
     sdo:hasOccupation "wolkammer"@nl ;
     sdo:name "Johannes Slijk"@nl ;
+    sdo:parent <https://ex.org/Person:46283de6-6d42-b7ff-a3fc-58b5a9a88fdf> ;
     sdo:spouse <https://ex.org/Person:7d28969f-c768-49d0-935b-1b35859a7739> .
 
 <https://ex.org/Source:981d4486-5b82-848e-0ebb-4d4a3c12ec35> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/549>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/112aa637-8569-439d-ab25-22bf548383df/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/981d4486-5b82-848e-0ebb-4d4a3c12ec35"^^xsd:anyURI ;
             sdo:position "1" ;
             sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/112aa637-8569-439d-ab25-22bf548383df/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1793-04-25"@nl ;
     sdo:dateModified "1970-01-01"^^xsd:date ;
     sdo:description "1790-1795"@nl,
         "47"@nl,

@@ -5,6 +5,11 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:6a269356-4804-4c22-91aa-cf40622fbbee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1769-10-27"@nl ;
+    picom:eventPlace "Ter Aar"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Person:070e05d2-4bf0-f4b3-80e2-faef327cb556> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:6a269356-4804-4c22-91aa-cf40622fbbee> ;
     picom:hasRole picot_roles:573 ;
@@ -31,6 +36,7 @@
 
 <https://ex.org/Person:2805ea31-4f91-c081-5a77-5f0a09ba39a2> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:6a269356-4804-4c22-91aa-cf40622fbbee> ;
+    picom:hasLifeEvent <https://ex.org/Source:6a269356-4804-4c22-91aa-cf40622fbbee_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "voornaam in de volksmond: Nicolaa<br>Doopdatum: 27-10-1769"@nl ;
     sdo:familyName "Slingerland"@nl ;
@@ -50,6 +56,8 @@
     sdo:familyName "van der Burg"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName "Marijtje"@nl ;
+    sdo:knows <https://ex.org/Person:070e05d2-4bf0-f4b3-80e2-faef327cb556>,
+        <https://ex.org/Person:1e25732f-4f72-ea42-34e9-b15baec47858> ;
     sdo:name "Marijtje van der Burg"@nl ;
     sdo:spouse <https://ex.org/Person:dd1d8335-9030-0698-8944-fe8665de3432> .
 
@@ -64,11 +72,14 @@
     sdo:familyName "Slingerland"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Jan"@nl ;
+    sdo:knows <https://ex.org/Person:070e05d2-4bf0-f4b3-80e2-faef327cb556>,
+        <https://ex.org/Person:1e25732f-4f72-ea42-34e9-b15baec47858> ;
     sdo:name "Jan Janze Slingerland"@nl ;
     sdo:spouse <https://ex.org/Person:663c5426-a992-f00f-f146-a34ec1620414> .
 
 <https://ex.org/Source:6a269356-4804-4c22-91aa-cf40622fbbee> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/3924fdde-590b-4178-aff3-4c4147ffbe76/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/6a269356-4804-4c22-91aa-cf40622fbbee"^^xsd:anyURI ;

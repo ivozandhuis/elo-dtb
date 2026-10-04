@@ -5,6 +5,59 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:3317255a-a52b-c2d8-4c55-a50135dc19a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1763-05-29"@nl ;
+    picom:eventPlace "Leiderdorp"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
+<https://ex.org/Person:2a5aaddd-1ad8-a626-4f8f-0a4a2238c83c> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:3317255a-a52b-c2d8-4c55-a50135dc19a1> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Outeren"@nl ;
+            pnv:givenName "Dirk"@nl ;
+            pnv:literalName "Dirk van Outeren"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:children <https://ex.org/Person:6bbdc27a-47de-0e71-ab66-2450035ece28> ;
+    sdo:familyName "van Outeren"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Dirk"@nl ;
+    sdo:knows <https://ex.org/Person:9690afea-2ad6-2997-4998-6271bcc0fd9a>,
+        <https://ex.org/Person:e1173c49-c490-50fc-3d1c-76e829189764> ;
+    sdo:name "Dirk van Outeren"@nl ;
+    sdo:spouse <https://ex.org/Person:352bd3dc-0dc0-4858-b3a8-3c4937631812> .
+
+<https://ex.org/Person:352bd3dc-0dc0-4858-b3a8-3c4937631812> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:3317255a-a52b-c2d8-4c55-a50135dc19a1> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Jacob"@nl ;
+            pnv:givenName "Anna Cornelia"@nl ;
+            pnv:literalName "Anna Cornelia s Jacob"@nl ;
+            pnv:surnamePrefix "s"@nl ] ;
+    sdo:children <https://ex.org/Person:6bbdc27a-47de-0e71-ab66-2450035ece28> ;
+    sdo:familyName "s Jacob"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Anna Cornelia"@nl ;
+    sdo:knows <https://ex.org/Person:9690afea-2ad6-2997-4998-6271bcc0fd9a>,
+        <https://ex.org/Person:e1173c49-c490-50fc-3d1c-76e829189764> ;
+    sdo:name "Anna Cornelia s Jacob"@nl ;
+    sdo:spouse <https://ex.org/Person:2a5aaddd-1ad8-a626-4f8f-0a4a2238c83c> .
+
+<https://ex.org/Person:6bbdc27a-47de-0e71-ab66-2450035ece28> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:3317255a-a52b-c2d8-4c55-a50135dc19a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:3317255a-a52b-c2d8-4c55-a50135dc19a1_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Outeren"@nl ;
+            pnv:givenName "Maria Willemina"@nl ;
+            pnv:literalName "Maria Willemina van Outeren"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:description "Doopdatum: 29-05-1763"@nl ;
+    sdo:familyName "van Outeren"@nl ;
+    sdo:givenName "Maria Willemina"@nl ;
+    sdo:name "Maria Willemina van Outeren"@nl ;
+    sdo:parent <https://ex.org/Person:2a5aaddd-1ad8-a626-4f8f-0a4a2238c83c>,
+        <https://ex.org/Person:352bd3dc-0dc0-4858-b3a8-3c4937631812> .
+
 <https://ex.org/Person:9690afea-2ad6-2997-4998-6271bcc0fd9a> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:3317255a-a52b-c2d8-4c55-a50135dc19a1> ;
     picom:hasRole picot_roles:573 ;
@@ -24,51 +77,9 @@
     sdo:givenName "Abraham"@nl ;
     sdo:name "Abraham Silvius"@nl .
 
-<https://ex.org/Person:2a5aaddd-1ad8-a626-4f8f-0a4a2238c83c> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:3317255a-a52b-c2d8-4c55-a50135dc19a1> ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:baseSurname "Outeren"@nl ;
-            pnv:givenName "Dirk"@nl ;
-            pnv:literalName "Dirk van Outeren"@nl ;
-            pnv:surnamePrefix "van"@nl ] ;
-    sdo:children <https://ex.org/Person:6bbdc27a-47de-0e71-ab66-2450035ece28> ;
-    sdo:familyName "van Outeren"@nl ;
-    sdo:gender sdo:Male ;
-    sdo:givenName "Dirk"@nl ;
-    sdo:name "Dirk van Outeren"@nl ;
-    sdo:spouse <https://ex.org/Person:352bd3dc-0dc0-4858-b3a8-3c4937631812> .
-
-<https://ex.org/Person:352bd3dc-0dc0-4858-b3a8-3c4937631812> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:3317255a-a52b-c2d8-4c55-a50135dc19a1> ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:baseSurname "Jacob"@nl ;
-            pnv:givenName "Anna Cornelia"@nl ;
-            pnv:literalName "Anna Cornelia s Jacob"@nl ;
-            pnv:surnamePrefix "s"@nl ] ;
-    sdo:children <https://ex.org/Person:6bbdc27a-47de-0e71-ab66-2450035ece28> ;
-    sdo:familyName "s Jacob"@nl ;
-    sdo:gender sdo:Female ;
-    sdo:givenName "Anna Cornelia"@nl ;
-    sdo:name "Anna Cornelia s Jacob"@nl ;
-    sdo:spouse <https://ex.org/Person:2a5aaddd-1ad8-a626-4f8f-0a4a2238c83c> .
-
-<https://ex.org/Person:6bbdc27a-47de-0e71-ab66-2450035ece28> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:3317255a-a52b-c2d8-4c55-a50135dc19a1> ;
-    picom:hasRole picot_roles:575 ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:baseSurname "Outeren"@nl ;
-            pnv:givenName "Maria Willemina"@nl ;
-            pnv:literalName "Maria Willemina van Outeren"@nl ;
-            pnv:surnamePrefix "van"@nl ] ;
-    sdo:description "Doopdatum: 29-05-1763"@nl ;
-    sdo:familyName "van Outeren"@nl ;
-    sdo:givenName "Maria Willemina"@nl ;
-    sdo:name "Maria Willemina van Outeren"@nl ;
-    sdo:parent <https://ex.org/Person:2a5aaddd-1ad8-a626-4f8f-0a4a2238c83c>,
-        <https://ex.org/Person:352bd3dc-0dc0-4858-b3a8-3c4937631812> .
-
 <https://ex.org/Source:3317255a-a52b-c2d8-4c55-a50135dc19a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/97de6650-49e5-4401-ad9f-112043f967e7/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/3317255a-a52b-c2d8-4c55-a50135dc19a1"^^xsd:anyURI ;

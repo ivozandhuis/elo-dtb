@@ -5,12 +5,10 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ex.org/Person:c78f10bf-9ca3-6a6d-426c-a9b130ef1a04> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:1c4c7d48-d616-a8c9-dc6b-8f3cd2127bee> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:familyName "Geudike"@nl ;
-    sdo:givenName "Amelia"@nl ;
-    sdo:name "Amelia Geudike"@nl .
+<https://ex.org/Source:1c4c7d48-d616-a8c9-dc6b-8f3cd2127bee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1724-12-12"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
 
 <https://ex.org/Person:96fb3f13-0159-95f1-630d-19f866dbf6c4> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:1c4c7d48-d616-a8c9-dc6b-8f3cd2127bee> ;
@@ -18,11 +16,13 @@
     sdo:familyName "Kerchem"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Theodorus"@nl ;
+    sdo:knows <https://ex.org/Person:c78f10bf-9ca3-6a6d-426c-a9b130ef1a04> ;
     sdo:name "Theodorus Kerchem"@nl ;
     sdo:spouse <https://ex.org/Person:dde1db03-289a-f45c-8a50-15f069da9427> .
 
 <https://ex.org/Person:b6d18392-df7e-3561-04f6-d12af0a80b54> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:1c4c7d48-d616-a8c9-dc6b-8f3cd2127bee> ;
+    picom:hasLifeEvent <https://ex.org/Source:1c4c7d48-d616-a8c9-dc6b-8f3cd2127bee_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 12-12-1724"@nl ;
     sdo:familyName "Kerchem"@nl ;
@@ -30,6 +30,13 @@
     sdo:name "Theodorus Kerchem"@nl ;
     sdo:parent <https://ex.org/Person:96fb3f13-0159-95f1-630d-19f866dbf6c4>,
         <https://ex.org/Person:dde1db03-289a-f45c-8a50-15f069da9427> .
+
+<https://ex.org/Person:c78f10bf-9ca3-6a6d-426c-a9b130ef1a04> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:1c4c7d48-d616-a8c9-dc6b-8f3cd2127bee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Geudike"@nl ;
+    sdo:givenName "Amelia"@nl ;
+    sdo:name "Amelia Geudike"@nl .
 
 <https://ex.org/Person:dde1db03-289a-f45c-8a50-15f069da9427> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:1c4c7d48-d616-a8c9-dc6b-8f3cd2127bee> ;
@@ -42,11 +49,13 @@
     sdo:familyName "van der Put"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName "Helena"@nl ;
+    sdo:knows <https://ex.org/Person:c78f10bf-9ca3-6a6d-426c-a9b130ef1a04> ;
     sdo:name "Helena van der Put"@nl ;
     sdo:spouse <https://ex.org/Person:96fb3f13-0159-95f1-630d-19f866dbf6c4> .
 
 <https://ex.org/Source:1c4c7d48-d616-a8c9-dc6b-8f3cd2127bee> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/ed7c5c49-36de-4196-a5d1-cb6810a0765a/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/1c4c7d48-d616-a8c9-dc6b-8f3cd2127bee"^^xsd:anyURI ;

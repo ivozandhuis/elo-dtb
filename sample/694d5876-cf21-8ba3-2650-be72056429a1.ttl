@@ -5,6 +5,27 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:694d5876-cf21-8ba3-2650-be72056429a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1696-03-04"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
+<https://ex.org/Person:06c729c3-724a-0a7f-0b66-8f6d08824b1b> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:694d5876-cf21-8ba3-2650-be72056429a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:694d5876-cf21-8ba3-2650-be72056429a1_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Caade"@nl ;
+            pnv:givenName "Adrianus"@nl ;
+            pnv:literalName "Adrianus van der Caade"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:description "Doopdatum: 04-03-1696"@nl ;
+    sdo:familyName "van der Caade"@nl ;
+    sdo:givenName "Adrianus"@nl ;
+    sdo:name "Adrianus van der Caade"@nl ;
+    sdo:parent <https://ex.org/Person:5f5d5451-93f6-7911-2172-eec7b9c57954>,
+        <https://ex.org/Person:60e888c1-0fc8-f11c-741c-354bb8728eed> .
+
 <https://ex.org/Person:380e66d9-d242-b335-30ed-3a6a6d36e5af> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:694d5876-cf21-8ba3-2650-be72056429a1> ;
     picom:hasRole picot_roles:573 ;
@@ -29,21 +50,6 @@
     sdo:givenName "Adriana"@nl ;
     sdo:name "Adriana van Vianen"@nl .
 
-<https://ex.org/Person:06c729c3-724a-0a7f-0b66-8f6d08824b1b> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:694d5876-cf21-8ba3-2650-be72056429a1> ;
-    picom:hasRole picot_roles:575 ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:baseSurname "Caade"@nl ;
-            pnv:givenName "Adrianus"@nl ;
-            pnv:literalName "Adrianus van der Caade"@nl ;
-            pnv:surnamePrefix "van der"@nl ] ;
-    sdo:description "Doopdatum: 04-03-1696"@nl ;
-    sdo:familyName "van der Caade"@nl ;
-    sdo:givenName "Adrianus"@nl ;
-    sdo:name "Adrianus van der Caade"@nl ;
-    sdo:parent <https://ex.org/Person:5f5d5451-93f6-7911-2172-eec7b9c57954>,
-        <https://ex.org/Person:60e888c1-0fc8-f11c-741c-354bb8728eed> .
-
 <https://ex.org/Person:5f5d5451-93f6-7911-2172-eec7b9c57954> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:694d5876-cf21-8ba3-2650-be72056429a1> ;
     sdo:additionalName [ a pnv:PersonName ;
@@ -55,6 +61,8 @@
     sdo:familyName "van der Caade"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Cornelis"@nl ;
+    sdo:knows <https://ex.org/Person:380e66d9-d242-b335-30ed-3a6a6d36e5af>,
+        <https://ex.org/Person:44627fba-242f-5c23-e443-b7d786f5a50f> ;
     sdo:name "Cornelis van der Caade"@nl ;
     sdo:spouse <https://ex.org/Person:60e888c1-0fc8-f11c-741c-354bb8728eed> .
 
@@ -64,11 +72,14 @@
     sdo:familyName "Romdelot"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName "Magteld"@nl ;
+    sdo:knows <https://ex.org/Person:380e66d9-d242-b335-30ed-3a6a6d36e5af>,
+        <https://ex.org/Person:44627fba-242f-5c23-e443-b7d786f5a50f> ;
     sdo:name "Magteld Romdelot"@nl ;
     sdo:spouse <https://ex.org/Person:5f5d5451-93f6-7911-2172-eec7b9c57954> .
 
 <https://ex.org/Source:694d5876-cf21-8ba3-2650-be72056429a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/d91228ef-cd0f-4939-ba37-b218752841ed/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/694d5876-cf21-8ba3-2650-be72056429a1"^^xsd:anyURI ;

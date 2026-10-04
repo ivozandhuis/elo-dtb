@@ -5,6 +5,22 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:b9b763eb-55ec-d490-ef40-ec12c30e7bee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1707-12-10"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
+<https://ex.org/Person:2eb2bf99-b4ac-0732-e781-06d9c7177f15> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b9b763eb-55ec-d490-ef40-ec12c30e7bee> ;
+    sdo:children <https://ex.org/Person:ec7f88d6-3b6a-60ed-8af8-fe118a6a1de3> ;
+    sdo:familyName "Galouis"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Andries"@nl ;
+    sdo:knows <https://ex.org/Person:32c73e73-7785-3200-bcd7-f1d56c8aeab0>,
+        <https://ex.org/Person:636aacc6-d66a-2f7f-4819-dc7a18ba6129> ;
+    sdo:name "Andries Galouis"@nl ;
+    sdo:spouse <https://ex.org/Person:76ea5c25-0c5e-4423-e5f5-c12cb5395238> .
+
 <https://ex.org/Person:32c73e73-7785-3200-bcd7-f1d56c8aeab0> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:b9b763eb-55ec-d490-ef40-ec12c30e7bee> ;
     picom:hasRole picot_roles:573 ;
@@ -22,15 +38,6 @@
     sdo:givenName "Maria"@nl ;
     sdo:name "Maria Galouis"@nl .
 
-<https://ex.org/Person:2eb2bf99-b4ac-0732-e781-06d9c7177f15> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:b9b763eb-55ec-d490-ef40-ec12c30e7bee> ;
-    sdo:children <https://ex.org/Person:ec7f88d6-3b6a-60ed-8af8-fe118a6a1de3> ;
-    sdo:familyName "Galouis"@nl ;
-    sdo:gender sdo:Male ;
-    sdo:givenName "Andries"@nl ;
-    sdo:name "Andries Galouis"@nl ;
-    sdo:spouse <https://ex.org/Person:76ea5c25-0c5e-4423-e5f5-c12cb5395238> .
-
 <https://ex.org/Person:76ea5c25-0c5e-4423-e5f5-c12cb5395238> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:b9b763eb-55ec-d490-ef40-ec12c30e7bee> ;
     sdo:additionalName [ a pnv:PersonName ;
@@ -42,11 +49,14 @@
     sdo:familyName "van Hoeke"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName "Anna"@nl ;
+    sdo:knows <https://ex.org/Person:32c73e73-7785-3200-bcd7-f1d56c8aeab0>,
+        <https://ex.org/Person:636aacc6-d66a-2f7f-4819-dc7a18ba6129> ;
     sdo:name "Anna van Hoeke"@nl ;
     sdo:spouse <https://ex.org/Person:2eb2bf99-b4ac-0732-e781-06d9c7177f15> .
 
 <https://ex.org/Person:ec7f88d6-3b6a-60ed-8af8-fe118a6a1de3> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:b9b763eb-55ec-d490-ef40-ec12c30e7bee> ;
+    picom:hasLifeEvent <https://ex.org/Source:b9b763eb-55ec-d490-ef40-ec12c30e7bee_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 10-12-1707"@nl ;
     sdo:familyName "Galouis"@nl ;
@@ -56,7 +66,8 @@
         <https://ex.org/Person:76ea5c25-0c5e-4423-e5f5-c12cb5395238> .
 
 <https://ex.org/Source:b9b763eb-55ec-d490-ef40-ec12c30e7bee> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/f82ad77a-a98d-4476-8618-50aafb3075cc/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/b9b763eb-55ec-d490-ef40-ec12c30e7bee"^^xsd:anyURI ;

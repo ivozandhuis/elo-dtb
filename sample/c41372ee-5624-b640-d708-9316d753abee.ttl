@@ -5,6 +5,11 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:c41372ee-5624-b640-d708-9316d753abee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1681-05-23"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Person:011c2f49-a791-2b58-91cd-14fc6b6721ae> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:c41372ee-5624-b640-d708-9316d753abee> ;
     picom:hasRole picot_roles:573 ;
@@ -17,6 +22,7 @@
 
 <https://ex.org/Person:0d97abc3-bfce-8479-687a-b1820792664d> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:c41372ee-5624-b640-d708-9316d753abee> ;
+    picom:hasLifeEvent <https://ex.org/Source:c41372ee-5624-b640-d708-9316d753abee_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 23-05-1681"@nl ;
     sdo:givenName "Cornelia"@nl ;
@@ -33,6 +39,7 @@
     sdo:children <https://ex.org/Person:0d97abc3-bfce-8479-687a-b1820792664d> ;
     sdo:gender sdo:Female ;
     sdo:givenName "Cornelia"@nl ;
+    sdo:knows <https://ex.org/Person:011c2f49-a791-2b58-91cd-14fc6b6721ae> ;
     sdo:name "Cornelia Leenderts"@nl ;
     sdo:spouse <https://ex.org/Person:ea0c0978-0dbd-051b-90ce-27fbfe86ff91> .
 
@@ -45,11 +52,13 @@
     sdo:children <https://ex.org/Person:0d97abc3-bfce-8479-687a-b1820792664d> ;
     sdo:gender sdo:Male ;
     sdo:givenName "Leendert"@nl ;
+    sdo:knows <https://ex.org/Person:011c2f49-a791-2b58-91cd-14fc6b6721ae> ;
     sdo:name "Leendert Adriaensz"@nl ;
     sdo:spouse <https://ex.org/Person:2c6cc004-b830-4e99-76d1-5b08a594b59c> .
 
 <https://ex.org/Source:c41372ee-5624-b640-d708-9316d753abee> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/8793be14-fbf6-45ea-a4ea-6db929e4e733/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/c41372ee-5624-b640-d708-9316d753abee"^^xsd:anyURI ;

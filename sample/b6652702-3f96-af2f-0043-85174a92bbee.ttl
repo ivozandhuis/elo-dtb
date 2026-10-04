@@ -5,6 +5,39 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:b6652702-3f96-af2f-0043-85174a92bbee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1678-09-15"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
+<https://ex.org/Person:1e3af3d2-edba-580c-1037-cd55dd9a3135> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b6652702-3f96-af2f-0043-85174a92bbee> ;
+    picom:hasLifeEvent <https://ex.org/Source:b6652702-3f96-af2f-0043-85174a92bbee_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 15-09-1678"@nl ;
+    sdo:familyName "Swijs"@nl ;
+    sdo:givenName "Pieter"@nl ;
+    sdo:name "Pieter Swijs"@nl ;
+    sdo:parent <https://ex.org/Person:2d0312da-b895-8025-d5ff-1528e96de4ea>,
+        <https://ex.org/Person:e1fd0b92-5b1e-8bef-b544-d97347ff6d4e> .
+
+<https://ex.org/Person:2d0312da-b895-8025-d5ff-1528e96de4ea> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b6652702-3f96-af2f-0043-85174a92bbee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Haen"@nl ;
+            pnv:givenName "Marijtje"@nl ;
+            pnv:literalName "Marijtje d' Haen"@nl ;
+            pnv:surnamePrefix "d'"@nl ] ;
+    sdo:children <https://ex.org/Person:1e3af3d2-edba-580c-1037-cd55dd9a3135> ;
+    sdo:familyName "d' Haen"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Marijtje"@nl ;
+    sdo:knows <https://ex.org/Person:39a3c300-2da1-d650-3454-d657faaa9db3>,
+        <https://ex.org/Person:db75b17a-7ad5-bfbf-56fd-c57124d5d37e>,
+        <https://ex.org/Person:e1e152e6-a76a-1e3b-f727-7d2e9449c791> ;
+    sdo:name "Marijtje d' Haen"@nl ;
+    sdo:spouse <https://ex.org/Person:e1fd0b92-5b1e-8bef-b544-d97347ff6d4e> .
+
 <https://ex.org/Person:39a3c300-2da1-d650-3454-d657faaa9db3> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:b6652702-3f96-af2f-0043-85174a92bbee> ;
     picom:hasRole picot_roles:573 ;
@@ -26,41 +59,21 @@
     sdo:givenName "Jannetje"@nl ;
     sdo:name "Jannetje Krasmans"@nl .
 
-<https://ex.org/Person:1e3af3d2-edba-580c-1037-cd55dd9a3135> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:b6652702-3f96-af2f-0043-85174a92bbee> ;
-    picom:hasRole picot_roles:575 ;
-    sdo:description "Doopdatum: 15-09-1678"@nl ;
-    sdo:familyName "Swijs"@nl ;
-    sdo:givenName "Pieter"@nl ;
-    sdo:name "Pieter Swijs"@nl ;
-    sdo:parent <https://ex.org/Person:2d0312da-b895-8025-d5ff-1528e96de4ea>,
-        <https://ex.org/Person:e1fd0b92-5b1e-8bef-b544-d97347ff6d4e> .
-
-<https://ex.org/Person:2d0312da-b895-8025-d5ff-1528e96de4ea> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:b6652702-3f96-af2f-0043-85174a92bbee> ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:baseSurname "Haen"@nl ;
-            pnv:givenName "Marijtje"@nl ;
-            pnv:literalName "Marijtje d' Haen"@nl ;
-            pnv:surnamePrefix "d'"@nl ] ;
-    sdo:children <https://ex.org/Person:1e3af3d2-edba-580c-1037-cd55dd9a3135> ;
-    sdo:familyName "d' Haen"@nl ;
-    sdo:gender sdo:Female ;
-    sdo:givenName "Marijtje"@nl ;
-    sdo:name "Marijtje d' Haen"@nl ;
-    sdo:spouse <https://ex.org/Person:e1fd0b92-5b1e-8bef-b544-d97347ff6d4e> .
-
 <https://ex.org/Person:e1fd0b92-5b1e-8bef-b544-d97347ff6d4e> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:b6652702-3f96-af2f-0043-85174a92bbee> ;
     sdo:children <https://ex.org/Person:1e3af3d2-edba-580c-1037-cd55dd9a3135> ;
     sdo:familyName "Swijs"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Ulrich"@nl ;
+    sdo:knows <https://ex.org/Person:39a3c300-2da1-d650-3454-d657faaa9db3>,
+        <https://ex.org/Person:db75b17a-7ad5-bfbf-56fd-c57124d5d37e>,
+        <https://ex.org/Person:e1e152e6-a76a-1e3b-f727-7d2e9449c791> ;
     sdo:name "Ulrich Swijs"@nl ;
     sdo:spouse <https://ex.org/Person:2d0312da-b895-8025-d5ff-1528e96de4ea> .
 
 <https://ex.org/Source:b6652702-3f96-af2f-0043-85174a92bbee> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/42ba06b7-fbd7-4ac8-b2d1-ed5655c6975b/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/b6652702-3f96-af2f-0043-85174a92bbee"^^xsd:anyURI ;

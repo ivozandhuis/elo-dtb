@@ -5,6 +5,11 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:4f5abb35-4b3b-e555-49a2-d9666a8db9a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1759-04-27"@nl ;
+    picom:eventPlace "Rijnsaterwoude"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Person:17ed2a36-3bbf-d946-db29-55c7f5f98ad0> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:4f5abb35-4b3b-e555-49a2-d9666a8db9a1> ;
     picom:hasRole picot_roles:573 ;
@@ -17,6 +22,22 @@
     sdo:familyName "van der Lucht"@nl ;
     sdo:givenName "Jan"@nl ;
     sdo:name "Jan Pietersz van der Lucht"@nl .
+
+<https://ex.org/Person:31ea474c-8b8f-f6b6-4e49-0a5601538495> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:4f5abb35-4b3b-e555-49a2-d9666a8db9a1> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Duuren"@nl ;
+            pnv:givenName "Antje"@nl ;
+            pnv:literalName "Antje van Duuren"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:children <https://ex.org/Person:c4652afd-bd46-e268-d735-b884b40b1b0c> ;
+    sdo:familyName "van Duuren"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Antje"@nl ;
+    sdo:knows <https://ex.org/Person:17ed2a36-3bbf-d946-db29-55c7f5f98ad0>,
+        <https://ex.org/Person:82fa0f0f-0b22-bc74-b03b-4ef77bff8bea> ;
+    sdo:name "Antje van Duuren"@nl ;
+    sdo:spouse <https://ex.org/Person:be63e4b1-66ff-4cb7-1bfc-d519ba782940> .
 
 <https://ex.org/Person:82fa0f0f-0b22-bc74-b03b-4ef77bff8bea> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:4f5abb35-4b3b-e555-49a2-d9666a8db9a1> ;
@@ -31,31 +52,20 @@
     sdo:givenName "Antje"@nl ;
     sdo:name "Antje Pieterse van der Zwet"@nl .
 
-<https://ex.org/Person:31ea474c-8b8f-f6b6-4e49-0a5601538495> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:4f5abb35-4b3b-e555-49a2-d9666a8db9a1> ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:baseSurname "Duuren"@nl ;
-            pnv:givenName "Antje"@nl ;
-            pnv:literalName "Antje van Duuren"@nl ;
-            pnv:surnamePrefix "van"@nl ] ;
-    sdo:children <https://ex.org/Person:c4652afd-bd46-e268-d735-b884b40b1b0c> ;
-    sdo:familyName "van Duuren"@nl ;
-    sdo:gender sdo:Female ;
-    sdo:givenName "Antje"@nl ;
-    sdo:name "Antje van Duuren"@nl ;
-    sdo:spouse <https://ex.org/Person:be63e4b1-66ff-4cb7-1bfc-d519ba782940> .
-
 <https://ex.org/Person:be63e4b1-66ff-4cb7-1bfc-d519ba782940> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:4f5abb35-4b3b-e555-49a2-d9666a8db9a1> ;
     sdo:children <https://ex.org/Person:c4652afd-bd46-e268-d735-b884b40b1b0c> ;
     sdo:familyName "Jongman"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Lammert"@nl ;
+    sdo:knows <https://ex.org/Person:17ed2a36-3bbf-d946-db29-55c7f5f98ad0>,
+        <https://ex.org/Person:82fa0f0f-0b22-bc74-b03b-4ef77bff8bea> ;
     sdo:name "Lammert Jongman"@nl ;
     sdo:spouse <https://ex.org/Person:31ea474c-8b8f-f6b6-4e49-0a5601538495> .
 
 <https://ex.org/Person:c4652afd-bd46-e268-d735-b884b40b1b0c> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:4f5abb35-4b3b-e555-49a2-d9666a8db9a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:4f5abb35-4b3b-e555-49a2-d9666a8db9a1_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:birthPlace "Rijnsaterwoude"@nl ;
     sdo:description "Doopdatum: 27-04-1759"@nl ;
@@ -66,7 +76,8 @@
         <https://ex.org/Person:be63e4b1-66ff-4cb7-1bfc-d519ba782940> .
 
 <https://ex.org/Source:4f5abb35-4b3b-e555-49a2-d9666a8db9a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/4aead095-97ad-490b-b976-7bd8b32300ce/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/4f5abb35-4b3b-e555-49a2-d9666a8db9a1"^^xsd:anyURI ;

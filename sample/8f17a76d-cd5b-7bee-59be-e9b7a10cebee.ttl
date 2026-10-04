@@ -5,6 +5,11 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:8f17a76d-cd5b-7bee-59be-e9b7a10cebee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1623-06-05"@nl ;
+    picom:eventPlace "Alkemade"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Person:2445d3fb-ccde-8d84-edd4-2989ad11fc15> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:8f17a76d-cd5b-7bee-59be-e9b7a10cebee> ;
     picom:hasRole picot_roles:573 ;
@@ -27,6 +32,7 @@
 
 <https://ex.org/Person:54da8f8f-57e8-0fd9-0389-58f6312d5c5c> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:8f17a76d-cd5b-7bee-59be-e9b7a10cebee> ;
+    picom:hasLifeEvent <https://ex.org/Source:8f17a76d-cd5b-7bee-59be-e9b7a10cebee_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 05-06-1623"@nl ;
     sdo:gender sdo:Male ;
@@ -44,6 +50,8 @@
     sdo:children <https://ex.org/Person:54da8f8f-57e8-0fd9-0389-58f6312d5c5c> ;
     sdo:gender sdo:Male ;
     sdo:givenName "Frans"@nl ;
+    sdo:knows <https://ex.org/Person:2445d3fb-ccde-8d84-edd4-2989ad11fc15>,
+        <https://ex.org/Person:3339c9fd-9b66-d7e5-aaf9-e4ebdd410281> ;
     sdo:name "Frans Aeltbertsz"@nl ;
     sdo:spouse <https://ex.org/Person:c30a74a2-85c6-4850-c9fc-f718a7c948a0> .
 
@@ -56,11 +64,14 @@
     sdo:children <https://ex.org/Person:54da8f8f-57e8-0fd9-0389-58f6312d5c5c> ;
     sdo:gender sdo:Female ;
     sdo:givenName "Huijbertgen"@nl ;
+    sdo:knows <https://ex.org/Person:2445d3fb-ccde-8d84-edd4-2989ad11fc15>,
+        <https://ex.org/Person:3339c9fd-9b66-d7e5-aaf9-e4ebdd410281> ;
     sdo:name "Huijbertgen Feuijten"@nl ;
     sdo:spouse <https://ex.org/Person:8299da65-0b8a-7a22-c82b-b436552fc1f4> .
 
 <https://ex.org/Source:8f17a76d-cd5b-7bee-59be-e9b7a10cebee> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/34fefd36-9319-4ee3-83e6-1bf174eefce1/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/8f17a76d-cd5b-7bee-59be-e9b7a10cebee"^^xsd:anyURI ;

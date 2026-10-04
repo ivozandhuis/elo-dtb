@@ -5,6 +5,18 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Person:64105f0c-7e1e-97fc-631d-ef5b6ff2ab89> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:a407baa7-a75c-4cc2-4593-3f83c18c19a1> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Laurens"@nl ;
+            pnv:literalName "Laurens Laurensz"@nl ;
+            pnv:patronym "Laurensz"@nl ] ;
+    sdo:children <https://ex.org/Person:d24d562b-2e79-05f9-7e93-1f9e7c30ce7f> ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Laurens"@nl ;
+    sdo:knows <https://ex.org/Person:77c4eed5-37ea-5a55-5bf4-52ab86b823cc> ;
+    sdo:name "Laurens Laurensz"@nl .
+
 <https://ex.org/Person:77c4eed5-37ea-5a55-5bf4-52ab86b823cc> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:a407baa7-a75c-4cc2-4593-3f83c18c19a1> ;
     picom:hasRole picot_roles:573 ;
@@ -15,27 +27,23 @@
     sdo:givenName "Janneken"@nl ;
     sdo:name "Janneken Heyndricx"@nl .
 
-<https://ex.org/Person:64105f0c-7e1e-97fc-631d-ef5b6ff2ab89> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:a407baa7-a75c-4cc2-4593-3f83c18c19a1> ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:givenName "Laurens"@nl ;
-            pnv:literalName "Laurens Laurensz"@nl ;
-            pnv:patronym "Laurensz"@nl ] ;
-    sdo:children <https://ex.org/Person:d24d562b-2e79-05f9-7e93-1f9e7c30ce7f> ;
-    sdo:gender sdo:Male ;
-    sdo:givenName "Laurens"@nl ;
-    sdo:name "Laurens Laurensz"@nl .
-
 <https://ex.org/Person:d24d562b-2e79-05f9-7e93-1f9e7c30ce7f> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:a407baa7-a75c-4cc2-4593-3f83c18c19a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:a407baa7-a75c-4cc2-4593-3f83c18c19a1_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 14-04-1638"@nl ;
     sdo:givenName "Heyndrick"@nl ;
     sdo:name "Heyndrick"@nl ;
     sdo:parent <https://ex.org/Person:64105f0c-7e1e-97fc-631d-ef5b6ff2ab89> .
 
+<https://ex.org/Source:a407baa7-a75c-4cc2-4593-3f83c18c19a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1638-04-14"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Source:a407baa7-a75c-4cc2-4593-3f83c18c19a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/2f31b5ee-cd35-40d0-a1f9-298b49db78ef/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/a407baa7-a75c-4cc2-4593-3f83c18c19a1"^^xsd:anyURI ;

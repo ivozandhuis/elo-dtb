@@ -5,27 +5,15 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ex.org/Person:5fc827f0-dde6-6afa-2e79-19c0e7e93142> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:1f2821f2-f637-9b88-b803-9c3a7851ec35> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:baseSurname "Leeuwen"@nl ;
-            pnv:givenName "Anna"@nl ;
-            pnv:literalName "Anna van Leeuwen"@nl ;
-            pnv:surnamePrefix "van"@nl ] ;
-    sdo:description "getuige van de bruidegom, relatie tot de bruidegom: moeder, adres: Levendaal"@nl ;
-    sdo:familyName "van Leeuwen"@nl ;
-    sdo:givenName "Anna"@nl ;
-    sdo:name "Anna van Leeuwen"@nl .
+<https://ex.org/Source:1f2821f2-f637-9b88-b803-9c3a7851ec35_huwelijk_event> a picom:LifeEvent ;
+    picom:eventDate "1804-04-21"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/83> .
 
-<https://ex.org/Person:d67e1e7e-989c-6ab3-6ac7-a1a37bf3123c> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:1f2821f2-f637-9b88-b803-9c3a7851ec35> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:address "Den Haag"@nl ;
-    sdo:description "getuige van de bruid, relatie tot de bruid: zuster"@nl ;
-    sdo:familyName "Verhage"@nl ;
-    sdo:givenName "Rachel"@nl ;
-    sdo:name "Rachel Verhage"@nl .
+<https://ex.org/Source:1f2821f2-f637-9b88-b803-9c3a7851ec35_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1804-04-06"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/99> .
 
 <https://ex.org/Person:4109ea8f-b6d9-b270-c2c3-10eff9ceeeee> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:1f2821f2-f637-9b88-b803-9c3a7851ec35> ;
@@ -36,6 +24,7 @@
     sdo:gender sdo:Female ;
     sdo:givenName "Jannetje"@nl ;
     sdo:name "Jannetje Verhagen"@nl ;
+    sdo:sibling <https://ex.org/Person:d67e1e7e-989c-6ab3-6ac7-a1a37bf3123c> ;
     sdo:spouse <https://ex.org/Person:46dbafb3-3adc-1629-8b78-35e2216dfe91> .
 
 <https://ex.org/Person:46dbafb3-3adc-1629-8b78-35e2216dfe91> a picom:PersonObservation ;
@@ -48,15 +37,44 @@
     sdo:givenName "Gerrit"@nl ;
     sdo:hasOccupation "daggelder"@nl ;
     sdo:name "Gerrit Schoonhoven"@nl ;
+    sdo:parent <https://ex.org/Person:5fc827f0-dde6-6afa-2e79-19c0e7e93142> ;
     sdo:spouse <https://ex.org/Person:4109ea8f-b6d9-b270-c2c3-10eff9ceeeee> .
 
+<https://ex.org/Person:5fc827f0-dde6-6afa-2e79-19c0e7e93142> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:1f2821f2-f637-9b88-b803-9c3a7851ec35> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Leeuwen"@nl ;
+            pnv:givenName "Anna"@nl ;
+            pnv:literalName "Anna van Leeuwen"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:address "Levendaal"@nl ;
+    sdo:description "getuige van de bruidegom, relatie tot de bruidegom: moeder, adres: Levendaal"@nl ;
+    sdo:familyName "van Leeuwen"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Anna"@nl ;
+    sdo:name "Anna van Leeuwen"@nl .
+
+<https://ex.org/Person:d67e1e7e-989c-6ab3-6ac7-a1a37bf3123c> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:1f2821f2-f637-9b88-b803-9c3a7851ec35> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:address "Den Haag"@nl ;
+    sdo:description "getuige van de bruid, relatie tot de bruid: zuster"@nl ;
+    sdo:familyName "Verhage"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Rachel"@nl ;
+    sdo:name "Rachel Verhage"@nl .
+
 <https://ex.org/Source:1f2821f2-f637-9b88-b803-9c3a7851ec35> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/549>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/1b983202-2eb5-4606-a40c-520a316e0920/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/1f2821f2-f637-9b88-b803-9c3a7851ec35"^^xsd:anyURI ;
             sdo:position "1" ;
             sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/1b983202-2eb5-4606-a40c-520a316e0920/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1804-04-06"@nl,
+        "1804-04-21"@nl ;
     sdo:dateModified "1970-01-01"^^xsd:date ;
     sdo:description "1803-1805"@nl,
         "213"@nl,

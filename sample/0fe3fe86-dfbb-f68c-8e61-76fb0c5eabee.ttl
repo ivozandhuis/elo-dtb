@@ -5,6 +5,11 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:0fe3fe86-dfbb-f68c-8e61-76fb0c5eabee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1716-10-20"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Person:003a7a96-f26e-67bd-c27b-a20f9323a256> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:0fe3fe86-dfbb-f68c-8e61-76fb0c5eabee> ;
     picom:hasRole picot_roles:573 ;
@@ -33,6 +38,8 @@
     sdo:familyName "van Zanen"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Jan"@nl ;
+    sdo:knows <https://ex.org/Person:003a7a96-f26e-67bd-c27b-a20f9323a256>,
+        <https://ex.org/Person:2a2ebdd5-9a79-8f39-34b0-3132c73e5466> ;
     sdo:name "Jan van Zanen"@nl ;
     sdo:spouse <https://ex.org/Person:c892f6a1-b1dd-51d1-c718-92e95e214120> .
 
@@ -45,11 +52,14 @@
     sdo:children <https://ex.org/Person:f71e9e26-97e9-3f60-7d68-1e72dd357fb7> ;
     sdo:gender sdo:Female ;
     sdo:givenName "Rachel"@nl ;
+    sdo:knows <https://ex.org/Person:003a7a96-f26e-67bd-c27b-a20f9323a256>,
+        <https://ex.org/Person:2a2ebdd5-9a79-8f39-34b0-3132c73e5466> ;
     sdo:name "Rachel Willems"@nl ;
     sdo:spouse <https://ex.org/Person:a6318b96-e942-5ef7-6673-73a5f18189fb> .
 
 <https://ex.org/Person:f71e9e26-97e9-3f60-7d68-1e72dd357fb7> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:0fe3fe86-dfbb-f68c-8e61-76fb0c5eabee> ;
+    picom:hasLifeEvent <https://ex.org/Source:0fe3fe86-dfbb-f68c-8e61-76fb0c5eabee_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:baseSurname "Zanen"@nl ;
@@ -64,7 +74,8 @@
         <https://ex.org/Person:c892f6a1-b1dd-51d1-c718-92e95e214120> .
 
 <https://ex.org/Source:0fe3fe86-dfbb-f68c-8e61-76fb0c5eabee> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/42e4dd62-5a9f-459b-8f6f-70f7cfbaa8f9/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/0fe3fe86-dfbb-f68c-8e61-76fb0c5eabee"^^xsd:anyURI ;

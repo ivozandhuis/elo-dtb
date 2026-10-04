@@ -4,6 +4,11 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:5e3fc42a-30c5-9bfa-b3a0-8960bb9779a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1742-09-12"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Person:1d4e233c-7b21-db0d-36be-ae25215fa833> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:5e3fc42a-30c5-9bfa-b3a0-8960bb9779a1> ;
     picom:hasRole picot_roles:573 ;
@@ -11,15 +16,9 @@
     sdo:givenName "François"@nl ;
     sdo:name "François Schas"@nl .
 
-<https://ex.org/Person:7892d809-9fdf-2421-b945-ca03c0396548> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:5e3fc42a-30c5-9bfa-b3a0-8960bb9779a1> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:familyName "Pichot"@nl ;
-    sdo:givenName "Constantia Maria"@nl ;
-    sdo:name "Constantia Maria Pichot"@nl .
-
 <https://ex.org/Person:6dab5ebf-6148-bcfd-14e4-272fbd3831a8> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:5e3fc42a-30c5-9bfa-b3a0-8960bb9779a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:5e3fc42a-30c5-9bfa-b3a0-8960bb9779a1_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 12-09-1742"@nl ;
     sdo:familyName "Wobma"@nl ;
@@ -28,12 +27,21 @@
     sdo:parent <https://ex.org/Person:88ddf674-c7e5-7291-0532-681b3f9a175b>,
         <https://ex.org/Person:96066460-3fa6-1b5a-3fba-bd9e59035639> .
 
+<https://ex.org/Person:7892d809-9fdf-2421-b945-ca03c0396548> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:5e3fc42a-30c5-9bfa-b3a0-8960bb9779a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Pichot"@nl ;
+    sdo:givenName "Constantia Maria"@nl ;
+    sdo:name "Constantia Maria Pichot"@nl .
+
 <https://ex.org/Person:88ddf674-c7e5-7291-0532-681b3f9a175b> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:5e3fc42a-30c5-9bfa-b3a0-8960bb9779a1> ;
     sdo:children <https://ex.org/Person:6dab5ebf-6148-bcfd-14e4-272fbd3831a8> ;
     sdo:familyName "Wobma"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Daniel"@nl ;
+    sdo:knows <https://ex.org/Person:1d4e233c-7b21-db0d-36be-ae25215fa833>,
+        <https://ex.org/Person:7892d809-9fdf-2421-b945-ca03c0396548> ;
     sdo:name "Daniel Wobma"@nl ;
     sdo:spouse <https://ex.org/Person:96066460-3fa6-1b5a-3fba-bd9e59035639> .
 
@@ -43,11 +51,14 @@
     sdo:familyName "Pichot"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName "Susanna Fransina"@nl ;
+    sdo:knows <https://ex.org/Person:1d4e233c-7b21-db0d-36be-ae25215fa833>,
+        <https://ex.org/Person:7892d809-9fdf-2421-b945-ca03c0396548> ;
     sdo:name "Susanna Fransina Pichot"@nl ;
     sdo:spouse <https://ex.org/Person:88ddf674-c7e5-7291-0532-681b3f9a175b> .
 
 <https://ex.org/Source:5e3fc42a-30c5-9bfa-b3a0-8960bb9779a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/0d2c7122-81a5-41e8-84d6-9a4a8fb613f6/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/5e3fc42a-30c5-9bfa-b3a0-8960bb9779a1"^^xsd:anyURI ;

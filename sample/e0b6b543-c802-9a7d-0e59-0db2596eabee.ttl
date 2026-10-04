@@ -5,6 +5,43 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:e0b6b543-c802-9a7d-0e59-0db2596eabee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1687-02-26"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
+<https://ex.org/Person:0d0cbccb-4c63-65e4-2325-7112d3aa1f1d> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:e0b6b543-c802-9a7d-0e59-0db2596eabee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Grostes"@nl ;
+            pnv:givenName "Anne"@nl ;
+            pnv:literalName "Anne de Grostes"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:children <https://ex.org/Person:47b594cf-86b2-78b3-a341-541a404d28cd> ;
+    sdo:familyName "de Grostes"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Anne"@nl ;
+    sdo:knows <https://ex.org/Person:4b9d7c0f-0470-d954-6794-2ddc3e8c5b1c>,
+        <https://ex.org/Person:9d6d9d61-718a-d527-d69e-c7f2624aeddc> ;
+    sdo:name "Anne de Grostes"@nl ;
+    sdo:spouse <https://ex.org/Person:d8fa7012-fc70-5457-e7b0-8e3b8fa843ea> .
+
+<https://ex.org/Person:47b594cf-86b2-78b3-a341-541a404d28cd> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:e0b6b543-c802-9a7d-0e59-0db2596eabee> ;
+    picom:hasLifeEvent <https://ex.org/Source:e0b6b543-c802-9a7d-0e59-0db2596eabee_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Coufle"@nl ;
+            pnv:givenName "Anna"@nl ;
+            pnv:literalName "Anna de Coufle"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:description "Doopdatum: 26-02-1687"@nl ;
+    sdo:familyName "de Coufle"@nl ;
+    sdo:givenName "Anna"@nl ;
+    sdo:name "Anna de Coufle"@nl ;
+    sdo:parent <https://ex.org/Person:0d0cbccb-4c63-65e4-2325-7112d3aa1f1d>,
+        <https://ex.org/Person:d8fa7012-fc70-5457-e7b0-8e3b8fa843ea> .
+
 <https://ex.org/Person:4b9d7c0f-0470-d954-6794-2ddc3e8c5b1c> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:e0b6b543-c802-9a7d-0e59-0db2596eabee> ;
     picom:hasRole picot_roles:573 ;
@@ -19,35 +56,6 @@
     sdo:givenName "Jean François"@nl ;
     sdo:name "Jean François Pereau"@nl .
 
-<https://ex.org/Person:0d0cbccb-4c63-65e4-2325-7112d3aa1f1d> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:e0b6b543-c802-9a7d-0e59-0db2596eabee> ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:baseSurname "Grostes"@nl ;
-            pnv:givenName "Anne"@nl ;
-            pnv:literalName "Anne de Grostes"@nl ;
-            pnv:surnamePrefix "de"@nl ] ;
-    sdo:children <https://ex.org/Person:47b594cf-86b2-78b3-a341-541a404d28cd> ;
-    sdo:familyName "de Grostes"@nl ;
-    sdo:gender sdo:Female ;
-    sdo:givenName "Anne"@nl ;
-    sdo:name "Anne de Grostes"@nl ;
-    sdo:spouse <https://ex.org/Person:d8fa7012-fc70-5457-e7b0-8e3b8fa843ea> .
-
-<https://ex.org/Person:47b594cf-86b2-78b3-a341-541a404d28cd> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:e0b6b543-c802-9a7d-0e59-0db2596eabee> ;
-    picom:hasRole picot_roles:575 ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:baseSurname "Coufle"@nl ;
-            pnv:givenName "Anna"@nl ;
-            pnv:literalName "Anna de Coufle"@nl ;
-            pnv:surnamePrefix "de"@nl ] ;
-    sdo:description "Doopdatum: 26-02-1687"@nl ;
-    sdo:familyName "de Coufle"@nl ;
-    sdo:givenName "Anna"@nl ;
-    sdo:name "Anna de Coufle"@nl ;
-    sdo:parent <https://ex.org/Person:0d0cbccb-4c63-65e4-2325-7112d3aa1f1d>,
-        <https://ex.org/Person:d8fa7012-fc70-5457-e7b0-8e3b8fa843ea> .
-
 <https://ex.org/Person:d8fa7012-fc70-5457-e7b0-8e3b8fa843ea> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:e0b6b543-c802-9a7d-0e59-0db2596eabee> ;
     sdo:additionalName [ a pnv:PersonName ;
@@ -59,11 +67,14 @@
     sdo:familyName "de Coufle"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Philippe"@nl ;
+    sdo:knows <https://ex.org/Person:4b9d7c0f-0470-d954-6794-2ddc3e8c5b1c>,
+        <https://ex.org/Person:9d6d9d61-718a-d527-d69e-c7f2624aeddc> ;
     sdo:name "Philippe de Coufle"@nl ;
     sdo:spouse <https://ex.org/Person:0d0cbccb-4c63-65e4-2325-7112d3aa1f1d> .
 
 <https://ex.org/Source:e0b6b543-c802-9a7d-0e59-0db2596eabee> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/29902c40-c8c4-45ff-afbd-c4e5ab74f486/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/e0b6b543-c802-9a7d-0e59-0db2596eabee"^^xsd:anyURI ;

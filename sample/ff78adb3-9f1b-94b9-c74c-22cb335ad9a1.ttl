@@ -4,6 +4,22 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:ff78adb3-9f1b-94b9-c74c-22cb335ad9a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1788-03-01"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
+<https://ex.org/Person:254b41b1-e25b-9094-74b0-6a81e0605e14> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:ff78adb3-9f1b-94b9-c74c-22cb335ad9a1> ;
+    sdo:children <https://ex.org/Person:f94e343f-3349-91fa-620d-3d49a2567aef> ;
+    sdo:familyName "Kettenis"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Henricus"@nl ;
+    sdo:knows <https://ex.org/Person:37f4a7cc-e1bf-4a5c-d604-24d1144bda31>,
+        <https://ex.org/Person:7042fa1c-ab00-c54f-902b-9788b6dc5363> ;
+    sdo:name "Henricus Kettenis"@nl ;
+    sdo:spouse <https://ex.org/Person:8d2be29e-8bb7-cb8b-329f-4d07c9873b87> .
+
 <https://ex.org/Person:37f4a7cc-e1bf-4a5c-d604-24d1144bda31> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:ff78adb3-9f1b-94b9-c74c-22cb335ad9a1> ;
     picom:hasRole picot_roles:573 ;
@@ -18,26 +34,20 @@
     sdo:givenName "Joanna"@nl ;
     sdo:name "Joanna Cornelissen"@nl .
 
-<https://ex.org/Person:254b41b1-e25b-9094-74b0-6a81e0605e14> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:ff78adb3-9f1b-94b9-c74c-22cb335ad9a1> ;
-    sdo:children <https://ex.org/Person:f94e343f-3349-91fa-620d-3d49a2567aef> ;
-    sdo:familyName "Kettenis"@nl ;
-    sdo:gender sdo:Male ;
-    sdo:givenName "Henricus"@nl ;
-    sdo:name "Henricus Kettenis"@nl ;
-    sdo:spouse <https://ex.org/Person:8d2be29e-8bb7-cb8b-329f-4d07c9873b87> .
-
 <https://ex.org/Person:8d2be29e-8bb7-cb8b-329f-4d07c9873b87> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:ff78adb3-9f1b-94b9-c74c-22cb335ad9a1> ;
     sdo:children <https://ex.org/Person:f94e343f-3349-91fa-620d-3d49a2567aef> ;
     sdo:familyName "Vlinkervleugel"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName "Gertruda"@nl ;
+    sdo:knows <https://ex.org/Person:37f4a7cc-e1bf-4a5c-d604-24d1144bda31>,
+        <https://ex.org/Person:7042fa1c-ab00-c54f-902b-9788b6dc5363> ;
     sdo:name "Gertruda Vlinkervleugel"@nl ;
     sdo:spouse <https://ex.org/Person:254b41b1-e25b-9094-74b0-6a81e0605e14> .
 
 <https://ex.org/Person:f94e343f-3349-91fa-620d-3d49a2567aef> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:ff78adb3-9f1b-94b9-c74c-22cb335ad9a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:ff78adb3-9f1b-94b9-c74c-22cb335ad9a1_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 01-03-1788"@nl ;
     sdo:familyName "Kettenis"@nl ;
@@ -47,7 +57,8 @@
         <https://ex.org/Person:8d2be29e-8bb7-cb8b-329f-4d07c9873b87> .
 
 <https://ex.org/Source:ff78adb3-9f1b-94b9-c74c-22cb335ad9a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/e0d0402e-f007-4050-97b0-92a1e3a29165/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/ff78adb3-9f1b-94b9-c74c-22cb335ad9a1"^^xsd:anyURI ;

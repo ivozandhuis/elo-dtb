@@ -5,6 +5,11 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:58ffa423-952b-9840-534e-9691fbfba9a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1695-03-20"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Person:3ab460de-8f6f-ff5d-31e2-b8040d7d1bc5> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:58ffa423-952b-9840-534e-9691fbfba9a1> ;
     picom:hasRole picot_roles:573 ;
@@ -12,27 +17,9 @@
     sdo:givenName "Abraham"@nl ;
     sdo:name "Abraham Elvijs"@nl .
 
-<https://ex.org/Person:59641b7f-13e4-0ff2-9796-b4657d331a19> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:58ffa423-952b-9840-534e-9691fbfba9a1> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:baseSurname "Eik"@nl ;
-            pnv:givenName "Anna"@nl ;
-            pnv:literalName "Anna van Eik"@nl ;
-            pnv:surnamePrefix "van"@nl ] ;
-    sdo:familyName "van Eik"@nl ;
-    sdo:givenName "Anna"@nl ;
-    sdo:name "Anna van Eik"@nl .
-
-<https://ex.org/Person:ee319028-75f4-c81a-d54d-ed644fea7ded> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:58ffa423-952b-9840-534e-9691fbfba9a1> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:familyName "Rechters"@nl ;
-    sdo:givenName "Heiltje"@nl ;
-    sdo:name "Heiltje Rechters"@nl .
-
 <https://ex.org/Person:3e163b77-6311-676b-6ba2-8327b457b70c> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:58ffa423-952b-9840-534e-9691fbfba9a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:58ffa423-952b-9840-534e-9691fbfba9a1_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:baseSurname "Lelij"@nl ;
@@ -57,8 +44,23 @@
     sdo:familyName "van der Lelij"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Johannes"@nl ;
+    sdo:knows <https://ex.org/Person:3ab460de-8f6f-ff5d-31e2-b8040d7d1bc5>,
+        <https://ex.org/Person:59641b7f-13e4-0ff2-9796-b4657d331a19>,
+        <https://ex.org/Person:ee319028-75f4-c81a-d54d-ed644fea7ded> ;
     sdo:name "Johannes van der Lelij"@nl ;
     sdo:spouse <https://ex.org/Person:d40ee592-7617-758a-02ee-7df4000f3839> .
+
+<https://ex.org/Person:59641b7f-13e4-0ff2-9796-b4657d331a19> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:58ffa423-952b-9840-534e-9691fbfba9a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Eik"@nl ;
+            pnv:givenName "Anna"@nl ;
+            pnv:literalName "Anna van Eik"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:familyName "van Eik"@nl ;
+    sdo:givenName "Anna"@nl ;
+    sdo:name "Anna van Eik"@nl .
 
 <https://ex.org/Person:d40ee592-7617-758a-02ee-7df4000f3839> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:58ffa423-952b-9840-534e-9691fbfba9a1> ;
@@ -71,11 +73,22 @@
     sdo:familyName "van den Berg"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName "Magdalena"@nl ;
+    sdo:knows <https://ex.org/Person:3ab460de-8f6f-ff5d-31e2-b8040d7d1bc5>,
+        <https://ex.org/Person:59641b7f-13e4-0ff2-9796-b4657d331a19>,
+        <https://ex.org/Person:ee319028-75f4-c81a-d54d-ed644fea7ded> ;
     sdo:name "Magdalena van den Berg"@nl ;
     sdo:spouse <https://ex.org/Person:4f61cdbc-4815-63ea-8f74-3f0afe2729f2> .
 
+<https://ex.org/Person:ee319028-75f4-c81a-d54d-ed644fea7ded> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:58ffa423-952b-9840-534e-9691fbfba9a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Rechters"@nl ;
+    sdo:givenName "Heiltje"@nl ;
+    sdo:name "Heiltje Rechters"@nl .
+
 <https://ex.org/Source:58ffa423-952b-9840-534e-9691fbfba9a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/acd6db9a-2dbf-4d0e-bf2e-a08fa3f89425/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/58ffa423-952b-9840-534e-9691fbfba9a1"^^xsd:anyURI ;

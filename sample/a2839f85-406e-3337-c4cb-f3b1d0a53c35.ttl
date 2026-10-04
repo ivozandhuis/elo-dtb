@@ -5,26 +5,19 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ex.org/Person:2b2468d9-7df1-a7c5-0c4f-facf6c7f592f> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:a2839f85-406e-3337-c4cb-f3b1d0a53c35> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:baseSurname "Vliet"@nl ;
-            pnv:givenName "Judik"@nl ;
-            pnv:literalName "Judik van der Vliet"@nl ;
-            pnv:surnamePrefix "van der"@nl ] ;
-    sdo:description "getuige van de bruid, relatie tot de bruid: bekende, adres: Plaetsteegh"@nl ;
-    sdo:familyName "van der Vliet"@nl ;
-    sdo:givenName "Judik"@nl ;
-    sdo:name "Judik van der Vliet"@nl .
-
 <https://ex.org/Person:97ad129a-0dbe-5a4f-63fa-b8fad08a4ce3> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:a2839f85-406e-3337-c4cb-f3b1d0a53c35> ;
     picom:hasRole picot_roles:573 ;
+    sdo:address "Orangegraft"@nl ;
     sdo:description "getuige van de bruidegom, relatie tot de bruidegom: neef, adres: Orangegraft"@nl ;
     sdo:familyName "Vonk"@nl ;
     sdo:givenName "Pieter"@nl ;
     sdo:name "Pieter Vonk"@nl .
+
+<https://ex.org/Source:a2839f85-406e-3337-c4cb-f3b1d0a53c35_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1694-04-24"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/99> .
 
 <https://ex.org/Person:26840c51-c781-ed03-0737-f129e9de5aa2> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:a2839f85-406e-3337-c4cb-f3b1d0a53c35> ;
@@ -38,6 +31,20 @@
     sdo:name "Johannes Kruyck"@nl ;
     sdo:spouse <https://ex.org/Person:ba4ccbc0-0959-faff-3a40-06e468f3009b> .
 
+<https://ex.org/Person:2b2468d9-7df1-a7c5-0c4f-facf6c7f592f> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:a2839f85-406e-3337-c4cb-f3b1d0a53c35> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Vliet"@nl ;
+            pnv:givenName "Judik"@nl ;
+            pnv:literalName "Judik van der Vliet"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:address "Plaetsteegh"@nl ;
+    sdo:description "getuige van de bruid, relatie tot de bruid: bekende, adres: Plaetsteegh"@nl ;
+    sdo:familyName "van der Vliet"@nl ;
+    sdo:givenName "Judik"@nl ;
+    sdo:name "Judik van der Vliet"@nl .
+
 <https://ex.org/Person:ba4ccbc0-0959-faff-3a40-06e468f3009b> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:a2839f85-406e-3337-c4cb-f3b1d0a53c35> ;
     picom:hasRole picot_roles:574 ;
@@ -49,16 +56,19 @@
     sdo:birthPlace "Leyden"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName "Pieternel"@nl ;
+    sdo:knows <https://ex.org/Person:2b2468d9-7df1-a7c5-0c4f-facf6c7f592f> ;
     sdo:name "Pieternel Claris"@nl ;
     sdo:spouse <https://ex.org/Person:26840c51-c781-ed03-0737-f129e9de5aa2> .
 
 <https://ex.org/Source:a2839f85-406e-3337-c4cb-f3b1d0a53c35> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/549>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/a485e11a-d84b-4739-8990-61cec66bac07/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/a2839f85-406e-3337-c4cb-f3b1d0a53c35"^^xsd:anyURI ;
             sdo:position "1" ;
             sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/a485e11a-d84b-4739-8990-61cec66bac07/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1694-04-24"@nl ;
     sdo:dateModified "1970-01-01"^^xsd:date ;
     sdo:description "1690-1694"@nl,
         "25"@nl,

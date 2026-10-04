@@ -4,19 +4,10 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ex.org/Person:d319cbb1-22a5-d605-7877-622da2ac6e6c> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:43da79cc-e8e7-9e31-61a7-5b5b63993bee> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:familyName "Tongerlo"@nl ;
-    sdo:givenName "Willemijntie"@nl ;
-    sdo:name "Willemijntie Tongerlo"@nl .
-
-<https://ex.org/Person:f8cbd8b0-ed0e-4ea8-c51e-bfa78787a2fa> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:43da79cc-e8e7-9e31-61a7-5b5b63993bee> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:familyName "Blankert"@nl ;
-    sdo:givenName "Willem"@nl ;
-    sdo:name "Willem Blankert"@nl .
+<https://ex.org/Source:43da79cc-e8e7-9e31-61a7-5b5b63993bee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1733-01-25"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
 
 <https://ex.org/Person:1dba3a59-beec-c2c5-5643-041c43fa66a7> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:43da79cc-e8e7-9e31-61a7-5b5b63993bee> ;
@@ -24,11 +15,14 @@
     sdo:familyName "Tongerloo"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName "Hendrina"@nl ;
+    sdo:knows <https://ex.org/Person:d319cbb1-22a5-d605-7877-622da2ac6e6c>,
+        <https://ex.org/Person:f8cbd8b0-ed0e-4ea8-c51e-bfa78787a2fa> ;
     sdo:name "Hendrina Tongerloo"@nl ;
     sdo:spouse <https://ex.org/Person:d1a2eebb-652a-cd8f-1393-b445911bff73> .
 
 <https://ex.org/Person:aeee278c-3097-7e8c-e38e-d8442760d496> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:43da79cc-e8e7-9e31-61a7-5b5b63993bee> ;
+    picom:hasLifeEvent <https://ex.org/Source:43da79cc-e8e7-9e31-61a7-5b5b63993bee_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 25-01-1733"@nl ;
     sdo:familyName "Nieuwenhuisen"@nl ;
@@ -43,11 +37,28 @@
     sdo:familyName "Nieuwenhuisen"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Gerret"@nl ;
+    sdo:knows <https://ex.org/Person:d319cbb1-22a5-d605-7877-622da2ac6e6c>,
+        <https://ex.org/Person:f8cbd8b0-ed0e-4ea8-c51e-bfa78787a2fa> ;
     sdo:name "Gerret Nieuwenhuisen"@nl ;
     sdo:spouse <https://ex.org/Person:1dba3a59-beec-c2c5-5643-041c43fa66a7> .
 
+<https://ex.org/Person:d319cbb1-22a5-d605-7877-622da2ac6e6c> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:43da79cc-e8e7-9e31-61a7-5b5b63993bee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Tongerlo"@nl ;
+    sdo:givenName "Willemijntie"@nl ;
+    sdo:name "Willemijntie Tongerlo"@nl .
+
+<https://ex.org/Person:f8cbd8b0-ed0e-4ea8-c51e-bfa78787a2fa> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:43da79cc-e8e7-9e31-61a7-5b5b63993bee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Blankert"@nl ;
+    sdo:givenName "Willem"@nl ;
+    sdo:name "Willem Blankert"@nl .
+
 <https://ex.org/Source:43da79cc-e8e7-9e31-61a7-5b5b63993bee> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/10de618c-ea29-492c-b989-cd7ba81236c7/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/43da79cc-e8e7-9e31-61a7-5b5b63993bee"^^xsd:anyURI ;

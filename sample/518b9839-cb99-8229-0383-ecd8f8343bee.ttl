@@ -5,6 +5,11 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:518b9839-cb99-8229-0383-ecd8f8343bee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1734-09-25"@nl ;
+    picom:eventPlace "Alkemade"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Person:00fd0fce-4ebe-0148-60a9-82d12b86a521> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:518b9839-cb99-8229-0383-ecd8f8343bee> ;
     picom:hasRole picot_roles:573 ;
@@ -15,18 +20,9 @@
     sdo:givenName "Gijsie"@nl ;
     sdo:name "Gijsie Jans"@nl .
 
-<https://ex.org/Person:982a6f4c-67c8-c924-4153-020375d68845> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:518b9839-cb99-8229-0383-ecd8f8343bee> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:givenName "Huijbert"@nl ;
-            pnv:literalName "Huijbert Janse"@nl ;
-            pnv:patronym "Janse"@nl ] ;
-    sdo:givenName "Huijbert"@nl ;
-    sdo:name "Huijbert Janse"@nl .
-
 <https://ex.org/Person:0a0d98b5-0ba1-7ccf-cb40-c29a8abd1bc5> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:518b9839-cb99-8229-0383-ecd8f8343bee> ;
+    picom:hasLifeEvent <https://ex.org/Source:518b9839-cb99-8229-0383-ecd8f8343bee_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:birthPlace "Kaag"@nl ;
     sdo:description "Doopdatum: 25-09-1734"@nl ;
@@ -44,8 +40,20 @@
     sdo:children <https://ex.org/Person:0a0d98b5-0ba1-7ccf-cb40-c29a8abd1bc5> ;
     sdo:gender sdo:Male ;
     sdo:givenName "Jan"@nl ;
+    sdo:knows <https://ex.org/Person:00fd0fce-4ebe-0148-60a9-82d12b86a521>,
+        <https://ex.org/Person:982a6f4c-67c8-c924-4153-020375d68845> ;
     sdo:name "Jan Hendrixe"@nl ;
     sdo:spouse <https://ex.org/Person:fddc5280-e337-e173-8cb8-209356817f20> .
+
+<https://ex.org/Person:982a6f4c-67c8-c924-4153-020375d68845> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:518b9839-cb99-8229-0383-ecd8f8343bee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Huijbert"@nl ;
+            pnv:literalName "Huijbert Janse"@nl ;
+            pnv:patronym "Janse"@nl ] ;
+    sdo:givenName "Huijbert"@nl ;
+    sdo:name "Huijbert Janse"@nl .
 
 <https://ex.org/Person:fddc5280-e337-e173-8cb8-209356817f20> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:518b9839-cb99-8229-0383-ecd8f8343bee> ;
@@ -56,11 +64,14 @@
     sdo:children <https://ex.org/Person:0a0d98b5-0ba1-7ccf-cb40-c29a8abd1bc5> ;
     sdo:gender sdo:Female ;
     sdo:givenName "Jannetie"@nl ;
+    sdo:knows <https://ex.org/Person:00fd0fce-4ebe-0148-60a9-82d12b86a521>,
+        <https://ex.org/Person:982a6f4c-67c8-c924-4153-020375d68845> ;
     sdo:name "Jannetie Cornelis"@nl ;
     sdo:spouse <https://ex.org/Person:5c928141-1cff-a792-c7c2-e7e2df4cb751> .
 
 <https://ex.org/Source:518b9839-cb99-8229-0383-ecd8f8343bee> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/36c71095-c7a0-4fa0-b3b0-eb00fe0e1c06/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/518b9839-cb99-8229-0383-ecd8f8343bee"^^xsd:anyURI ;

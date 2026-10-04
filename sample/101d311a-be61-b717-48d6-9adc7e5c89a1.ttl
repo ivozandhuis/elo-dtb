@@ -5,6 +5,11 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:101d311a-be61-b717-48d6-9adc7e5c89a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1665-12-08"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Person:16193afc-df73-94bb-c6bd-a726ae0b9684> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:101d311a-be61-b717-48d6-9adc7e5c89a1> ;
     picom:hasRole picot_roles:573 ;
@@ -16,6 +21,16 @@
     sdo:familyName "de Fret"@nl ;
     sdo:givenName "Marij"@nl ;
     sdo:name "Marij de Fret"@nl .
+
+<https://ex.org/Person:58d1a280-3e1f-a69a-4430-ffd48cb8c149> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:101d311a-be61-b717-48d6-9adc7e5c89a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:101d311a-be61-b717-48d6-9adc7e5c89a1_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 08-12-1665"@nl ;
+    sdo:givenName "Josijntie"@nl ;
+    sdo:name "Josijntie"@nl ;
+    sdo:parent <https://ex.org/Person:ba2789ff-b939-7979-3fd7-bbb1c308b70b>,
+        <https://ex.org/Person:ce079efd-728d-d86d-457f-39eaed5ffc1d> .
 
 <https://ex.org/Person:8d33b7c5-929f-016d-a462-65e811661047> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:101d311a-be61-b717-48d6-9adc7e5c89a1> ;
@@ -31,15 +46,6 @@
     sdo:givenName "Jan"@nl ;
     sdo:name "Jan Husman"@nl .
 
-<https://ex.org/Person:58d1a280-3e1f-a69a-4430-ffd48cb8c149> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:101d311a-be61-b717-48d6-9adc7e5c89a1> ;
-    picom:hasRole picot_roles:575 ;
-    sdo:description "Doopdatum: 08-12-1665"@nl ;
-    sdo:givenName "Josijntie"@nl ;
-    sdo:name "Josijntie"@nl ;
-    sdo:parent <https://ex.org/Person:ba2789ff-b939-7979-3fd7-bbb1c308b70b>,
-        <https://ex.org/Person:ce079efd-728d-d86d-457f-39eaed5ffc1d> .
-
 <https://ex.org/Person:ba2789ff-b939-7979-3fd7-bbb1c308b70b> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:101d311a-be61-b717-48d6-9adc7e5c89a1> ;
     sdo:additionalName [ a pnv:PersonName ;
@@ -49,6 +55,9 @@
     sdo:children <https://ex.org/Person:58d1a280-3e1f-a69a-4430-ffd48cb8c149> ;
     sdo:gender sdo:Female ;
     sdo:givenName "Maria"@nl ;
+    sdo:knows <https://ex.org/Person:16193afc-df73-94bb-c6bd-a726ae0b9684>,
+        <https://ex.org/Person:8d33b7c5-929f-016d-a462-65e811661047>,
+        <https://ex.org/Person:b0e0d778-d1b7-59a8-d658-d6d1c7882afb> ;
     sdo:name "Maria Jans"@nl ;
     sdo:spouse <https://ex.org/Person:ce079efd-728d-d86d-457f-39eaed5ffc1d> .
 
@@ -61,11 +70,15 @@
     sdo:children <https://ex.org/Person:58d1a280-3e1f-a69a-4430-ffd48cb8c149> ;
     sdo:gender sdo:Male ;
     sdo:givenName "Samuel"@nl ;
+    sdo:knows <https://ex.org/Person:16193afc-df73-94bb-c6bd-a726ae0b9684>,
+        <https://ex.org/Person:8d33b7c5-929f-016d-a462-65e811661047>,
+        <https://ex.org/Person:b0e0d778-d1b7-59a8-d658-d6d1c7882afb> ;
     sdo:name "Samuel Barentsz"@nl ;
     sdo:spouse <https://ex.org/Person:ba2789ff-b939-7979-3fd7-bbb1c308b70b> .
 
 <https://ex.org/Source:101d311a-be61-b717-48d6-9adc7e5c89a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/0f19e8d5-2703-4f95-a23c-f580a6012a27/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/101d311a-be61-b717-48d6-9adc7e5c89a1"^^xsd:anyURI ;

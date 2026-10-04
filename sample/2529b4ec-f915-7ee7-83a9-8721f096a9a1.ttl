@@ -5,20 +5,14 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ex.org/Person:2c3b8472-0732-903b-bbd0-b49f698b1b81> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:2529b4ec-f915-7ee7-83a9-8721f096a9a1> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:baseSurname "Raat"@nl ;
-            pnv:givenName "Annetje"@nl ;
-            pnv:literalName "Annetje van den Raat"@nl ;
-            pnv:surnamePrefix "van den"@nl ] ;
-    sdo:familyName "van den Raat"@nl ;
-    sdo:givenName "Annetje"@nl ;
-    sdo:name "Annetje van den Raat"@nl .
+<https://ex.org/Source:2529b4ec-f915-7ee7-83a9-8721f096a9a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1741-10-08"@nl ;
+    picom:eventPlace "Noordwijk"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
 
 <https://ex.org/Person:006adfb6-1f89-1701-4e50-3e401c9e4c98> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:2529b4ec-f915-7ee7-83a9-8721f096a9a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:2529b4ec-f915-7ee7-83a9-8721f096a9a1_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:baseSurname "Klerk"@nl ;
@@ -32,6 +26,18 @@
     sdo:parent <https://ex.org/Person:7eb004c2-ef5b-1fd4-35e7-d4e456dbddac>,
         <https://ex.org/Person:a970a79d-dde6-c0cd-7da0-67bda975eabb> .
 
+<https://ex.org/Person:2c3b8472-0732-903b-bbd0-b49f698b1b81> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:2529b4ec-f915-7ee7-83a9-8721f096a9a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Raat"@nl ;
+            pnv:givenName "Annetje"@nl ;
+            pnv:literalName "Annetje van den Raat"@nl ;
+            pnv:surnamePrefix "van den"@nl ] ;
+    sdo:familyName "van den Raat"@nl ;
+    sdo:givenName "Annetje"@nl ;
+    sdo:name "Annetje van den Raat"@nl .
+
 <https://ex.org/Person:7eb004c2-ef5b-1fd4-35e7-d4e456dbddac> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:2529b4ec-f915-7ee7-83a9-8721f096a9a1> ;
     sdo:additionalName [ a pnv:PersonName ;
@@ -44,6 +50,7 @@
     sdo:familyName "van der Klerk"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Vechter"@nl ;
+    sdo:knows <https://ex.org/Person:2c3b8472-0732-903b-bbd0-b49f698b1b81> ;
     sdo:name "Vechter Janse van der Klerk"@nl ;
     sdo:spouse <https://ex.org/Person:a970a79d-dde6-c0cd-7da0-67bda975eabb> .
 
@@ -58,11 +65,13 @@
     sdo:familyName "Barnhoorn"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName "Neeltje"@nl ;
+    sdo:knows <https://ex.org/Person:2c3b8472-0732-903b-bbd0-b49f698b1b81> ;
     sdo:name "Neeltje Dirks Barnhoorn"@nl ;
     sdo:spouse <https://ex.org/Person:7eb004c2-ef5b-1fd4-35e7-d4e456dbddac> .
 
 <https://ex.org/Source:2529b4ec-f915-7ee7-83a9-8721f096a9a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/f2439eb7-f4f7-4ffc-bed9-e2b5037a1aa7/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/2529b4ec-f915-7ee7-83a9-8721f096a9a1"^^xsd:anyURI ;

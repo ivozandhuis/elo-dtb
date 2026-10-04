@@ -5,12 +5,10 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ex.org/Person:57cc9f45-d21b-42fa-c581-1ff5f83b1195> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:ecb08563-3621-6069-8854-2eccd0143bee> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:familyName "Roerts"@nl ;
-    sdo:givenName "Agnietie"@nl ;
-    sdo:name "Agnietie Roerts"@nl .
+<https://ex.org/Source:ecb08563-3621-6069-8854-2eccd0143bee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1662-10-19"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
 
 <https://ex.org/Person:111bc338-804a-240f-fe90-777eafb684bd> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:ecb08563-3621-6069-8854-2eccd0143bee> ;
@@ -23,8 +21,16 @@
     sdo:familyName "de Pitter"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName "Agnietie"@nl ;
+    sdo:knows <https://ex.org/Person:57cc9f45-d21b-42fa-c581-1ff5f83b1195> ;
     sdo:name "Agnietie de Pitter"@nl ;
     sdo:spouse <https://ex.org/Person:5b0f3551-0086-31bf-7f56-6e5c5854c74d> .
+
+<https://ex.org/Person:57cc9f45-d21b-42fa-c581-1ff5f83b1195> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:ecb08563-3621-6069-8854-2eccd0143bee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Roerts"@nl ;
+    sdo:givenName "Agnietie"@nl ;
+    sdo:name "Agnietie Roerts"@nl .
 
 <https://ex.org/Person:5b0f3551-0086-31bf-7f56-6e5c5854c74d> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:ecb08563-3621-6069-8854-2eccd0143bee> ;
@@ -35,11 +41,13 @@
     sdo:children <https://ex.org/Person:d0ac6d44-cc95-a3b8-d566-9790b15baf19> ;
     sdo:gender sdo:Male ;
     sdo:givenName "Jacob"@nl ;
+    sdo:knows <https://ex.org/Person:57cc9f45-d21b-42fa-c581-1ff5f83b1195> ;
     sdo:name "Jacob Danielsz"@nl ;
     sdo:spouse <https://ex.org/Person:111bc338-804a-240f-fe90-777eafb684bd> .
 
 <https://ex.org/Person:d0ac6d44-cc95-a3b8-d566-9790b15baf19> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:ecb08563-3621-6069-8854-2eccd0143bee> ;
+    picom:hasLifeEvent <https://ex.org/Source:ecb08563-3621-6069-8854-2eccd0143bee_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 19-10-1662"@nl ;
     sdo:givenName "Hendrick"@nl ;
@@ -48,7 +56,8 @@
         <https://ex.org/Person:5b0f3551-0086-31bf-7f56-6e5c5854c74d> .
 
 <https://ex.org/Source:ecb08563-3621-6069-8854-2eccd0143bee> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/624af12b-62c9-443c-9b09-1dd0d4551ffe/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/ecb08563-3621-6069-8854-2eccd0143bee"^^xsd:anyURI ;

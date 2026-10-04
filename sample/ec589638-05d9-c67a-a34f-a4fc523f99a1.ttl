@@ -5,6 +5,11 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:ec589638-05d9-c67a-a34f-a4fc523f99a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1681-11-04"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Person:206e7750-51ff-d5cd-4fc1-eeccf4f60981> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:ec589638-05d9-c67a-a34f-a4fc523f99a1> ;
     picom:hasRole picot_roles:573 ;
@@ -17,13 +22,6 @@
     sdo:givenName "Lijsbeth"@nl ;
     sdo:name "Lijsbeth de Klerck"@nl .
 
-<https://ex.org/Person:c7889462-1ea0-6799-259c-058210ea6f1f> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:ec589638-05d9-c67a-a34f-a4fc523f99a1> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:familyName "Kuijsten"@nl ;
-    sdo:givenName "Claas"@nl ;
-    sdo:name "Claas Kuijsten"@nl .
-
 <https://ex.org/Person:399b0a6f-57c3-4528-6b07-0e32929f9981> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:ec589638-05d9-c67a-a34f-a4fc523f99a1> ;
     sdo:additionalName [ a pnv:PersonName ;
@@ -35,11 +33,14 @@
     sdo:familyName "de Klerck"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Hendrick"@nl ;
+    sdo:knows <https://ex.org/Person:206e7750-51ff-d5cd-4fc1-eeccf4f60981>,
+        <https://ex.org/Person:c7889462-1ea0-6799-259c-058210ea6f1f> ;
     sdo:name "Hendrick de Klerck"@nl ;
     sdo:spouse <https://ex.org/Person:b7593dde-92ac-cdf2-2b9d-1d181544e3e6> .
 
 <https://ex.org/Person:7bb6c2ea-4257-d8e3-4765-0db638227f6e> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:ec589638-05d9-c67a-a34f-a4fc523f99a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:ec589638-05d9-c67a-a34f-a4fc523f99a1_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:baseSurname "Klerck"@nl ;
@@ -62,11 +63,21 @@
     sdo:children <https://ex.org/Person:7bb6c2ea-4257-d8e3-4765-0db638227f6e> ;
     sdo:gender sdo:Female ;
     sdo:givenName "Beelijtje"@nl ;
+    sdo:knows <https://ex.org/Person:206e7750-51ff-d5cd-4fc1-eeccf4f60981>,
+        <https://ex.org/Person:c7889462-1ea0-6799-259c-058210ea6f1f> ;
     sdo:name "Beelijtje Pietersdr"@nl ;
     sdo:spouse <https://ex.org/Person:399b0a6f-57c3-4528-6b07-0e32929f9981> .
 
+<https://ex.org/Person:c7889462-1ea0-6799-259c-058210ea6f1f> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:ec589638-05d9-c67a-a34f-a4fc523f99a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Kuijsten"@nl ;
+    sdo:givenName "Claas"@nl ;
+    sdo:name "Claas Kuijsten"@nl .
+
 <https://ex.org/Source:ec589638-05d9-c67a-a34f-a4fc523f99a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/8dcee40b-87af-4093-8426-41be8d1747ae/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/ec589638-05d9-c67a-a34f-a4fc523f99a1"^^xsd:anyURI ;

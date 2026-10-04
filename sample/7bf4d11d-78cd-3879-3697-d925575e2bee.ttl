@@ -5,6 +5,11 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:7bf4d11d-78cd-3879-3697-d925575e2bee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1687-08-19"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Person:a2d62dcb-7705-597e-d39b-7f832115ec20> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:7bf4d11d-78cd-3879-3697-d925575e2bee> ;
     picom:hasRole picot_roles:573 ;
@@ -13,18 +18,9 @@
             pnv:patronym "Jacobs"@nl ] ;
     sdo:name "Jacobs"@nl .
 
-<https://ex.org/Person:cb9bc133-51dd-6db2-c4e1-bb2bb17a9d7b> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:7bf4d11d-78cd-3879-3697-d925575e2bee> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:givenName "Margerata"@nl ;
-            pnv:literalName "Margerata Jaspersen"@nl ;
-            pnv:patronym "Jaspersen"@nl ] ;
-    sdo:givenName "Margerata"@nl ;
-    sdo:name "Margerata Jaspersen"@nl .
-
 <https://ex.org/Person:a5e88909-a358-0759-5141-609fde86317e> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:7bf4d11d-78cd-3879-3697-d925575e2bee> ;
+    picom:hasLifeEvent <https://ex.org/Source:7bf4d11d-78cd-3879-3697-d925575e2bee_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 19-08-1687"@nl ;
     sdo:givenName "Clementia"@nl ;
@@ -41,6 +37,8 @@
     sdo:children <https://ex.org/Person:a5e88909-a358-0759-5141-609fde86317e> ;
     sdo:gender sdo:Female ;
     sdo:givenName "Petronella"@nl ;
+    sdo:knows <https://ex.org/Person:a2d62dcb-7705-597e-d39b-7f832115ec20>,
+        <https://ex.org/Person:cb9bc133-51dd-6db2-c4e1-bb2bb17a9d7b> ;
     sdo:name "Petronella Janss"@nl ;
     sdo:spouse <https://ex.org/Person:c76e312d-10cf-0232-3d28-e7837e53baee> .
 
@@ -53,11 +51,24 @@
     sdo:children <https://ex.org/Person:a5e88909-a358-0759-5141-609fde86317e> ;
     sdo:gender sdo:Male ;
     sdo:givenName "Henricus"@nl ;
+    sdo:knows <https://ex.org/Person:a2d62dcb-7705-597e-d39b-7f832115ec20>,
+        <https://ex.org/Person:cb9bc133-51dd-6db2-c4e1-bb2bb17a9d7b> ;
     sdo:name "Henricus Michiels"@nl ;
     sdo:spouse <https://ex.org/Person:be672c23-c676-823d-df97-56d8222625ea> .
 
+<https://ex.org/Person:cb9bc133-51dd-6db2-c4e1-bb2bb17a9d7b> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:7bf4d11d-78cd-3879-3697-d925575e2bee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Margerata"@nl ;
+            pnv:literalName "Margerata Jaspersen"@nl ;
+            pnv:patronym "Jaspersen"@nl ] ;
+    sdo:givenName "Margerata"@nl ;
+    sdo:name "Margerata Jaspersen"@nl .
+
 <https://ex.org/Source:7bf4d11d-78cd-3879-3697-d925575e2bee> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/4196be58-fd52-43de-b82c-4cca201698ae/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/7bf4d11d-78cd-3879-3697-d925575e2bee"^^xsd:anyURI ;

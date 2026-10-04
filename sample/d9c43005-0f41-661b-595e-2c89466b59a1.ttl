@@ -5,30 +5,14 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ex.org/Person:61eb92a5-c698-2a45-ca87-a6df1cb5e6d6> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:d9c43005-0f41-661b-595e-2c89466b59a1> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:baseSurname "Zanden"@nl ;
-            pnv:givenName "Elizabeth"@nl ;
-            pnv:literalName "Elizabeth van der Zanden"@nl ;
-            pnv:surnamePrefix "van der"@nl ] ;
-    sdo:familyName "van der Zanden"@nl ;
-    sdo:givenName "Elizabeth"@nl ;
-    sdo:name "Elizabeth van der Zanden"@nl .
-
-<https://ex.org/Person:87e1c2ae-6a9f-aff1-e75b-636eeeb5a942> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:d9c43005-0f41-661b-595e-2c89466b59a1> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:givenName "Wouter"@nl ;
-            pnv:literalName "Wouter Gerretse"@nl ;
-            pnv:patronym "Gerretse"@nl ] ;
-    sdo:givenName "Wouter"@nl ;
-    sdo:name "Wouter Gerretse"@nl .
+<https://ex.org/Source:d9c43005-0f41-661b-595e-2c89466b59a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1780-08-27"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
 
 <https://ex.org/Person:4b251992-e656-163a-7899-d9dc6656c99b> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:d9c43005-0f41-661b-595e-2c89466b59a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:d9c43005-0f41-661b-595e-2c89466b59a1_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:baseSurname "Sanden"@nl ;
@@ -51,8 +35,22 @@
     sdo:children <https://ex.org/Person:4b251992-e656-163a-7899-d9dc6656c99b> ;
     sdo:gender sdo:Female ;
     sdo:givenName "Maria"@nl ;
+    sdo:knows <https://ex.org/Person:61eb92a5-c698-2a45-ca87-a6df1cb5e6d6>,
+        <https://ex.org/Person:87e1c2ae-6a9f-aff1-e75b-636eeeb5a942> ;
     sdo:name "Maria Gerretse"@nl ;
     sdo:spouse <https://ex.org/Person:7c720788-f23b-0d82-9ab4-fd3256dc5e70> .
+
+<https://ex.org/Person:61eb92a5-c698-2a45-ca87-a6df1cb5e6d6> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:d9c43005-0f41-661b-595e-2c89466b59a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Zanden"@nl ;
+            pnv:givenName "Elizabeth"@nl ;
+            pnv:literalName "Elizabeth van der Zanden"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:familyName "van der Zanden"@nl ;
+    sdo:givenName "Elizabeth"@nl ;
+    sdo:name "Elizabeth van der Zanden"@nl .
 
 <https://ex.org/Person:7c720788-f23b-0d82-9ab4-fd3256dc5e70> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:d9c43005-0f41-661b-595e-2c89466b59a1> ;
@@ -65,11 +63,24 @@
     sdo:familyName "van der Sanden"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Arnold"@nl ;
+    sdo:knows <https://ex.org/Person:61eb92a5-c698-2a45-ca87-a6df1cb5e6d6>,
+        <https://ex.org/Person:87e1c2ae-6a9f-aff1-e75b-636eeeb5a942> ;
     sdo:name "Arnold van der Sanden"@nl ;
     sdo:spouse <https://ex.org/Person:4f73f08c-3fd9-ce76-9144-c8c4fe99a0e7> .
 
+<https://ex.org/Person:87e1c2ae-6a9f-aff1-e75b-636eeeb5a942> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:d9c43005-0f41-661b-595e-2c89466b59a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Wouter"@nl ;
+            pnv:literalName "Wouter Gerretse"@nl ;
+            pnv:patronym "Gerretse"@nl ] ;
+    sdo:givenName "Wouter"@nl ;
+    sdo:name "Wouter Gerretse"@nl .
+
 <https://ex.org/Source:d9c43005-0f41-661b-595e-2c89466b59a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/9a7397c8-68fb-40d3-abd7-9f6d4ac3b44c/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/d9c43005-0f41-661b-595e-2c89466b59a1"^^xsd:anyURI ;

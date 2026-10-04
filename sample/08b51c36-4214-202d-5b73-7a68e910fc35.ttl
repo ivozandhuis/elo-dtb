@@ -5,6 +5,11 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:08b51c36-4214-202d-5b73-7a68e910fc35_huwelijk_event> a picom:LifeEvent ;
+    picom:eventDate "1757-04-22"@nl ;
+    picom:eventPlace "Rijnsburg"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/83> .
+
 <https://ex.org/Person:7d8cbc0f-2bd3-dd3b-441e-3161d3eeb6e5> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:08b51c36-4214-202d-5b73-7a68e910fc35> ;
     picom:hasRole picot_roles:574 ;
@@ -40,12 +45,14 @@
     sdo:spouse <https://ex.org/Person:7d8cbc0f-2bd3-dd3b-441e-3161d3eeb6e5> .
 
 <https://ex.org/Source:08b51c36-4214-202d-5b73-7a68e910fc35> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/549>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/b7857a82-41e4-4f86-bbbb-5e8941caf7ee/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/08b51c36-4214-202d-5b73-7a68e910fc35"^^xsd:anyURI ;
             sdo:position "1" ;
             sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/b7857a82-41e4-4f86-bbbb-5e8941caf7ee/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1757-04-22"@nl ;
     sdo:dateModified "1970-01-01"^^xsd:date ;
     sdo:description "16"@nl,
         "1734-1804"@nl,

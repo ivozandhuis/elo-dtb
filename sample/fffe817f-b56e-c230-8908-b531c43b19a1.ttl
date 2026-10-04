@@ -5,12 +5,56 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:fffe817f-b56e-c230-8908-b531c43b19a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1793-02-12"@nl ;
+    picom:eventPlace "Noordwijk"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
+<https://ex.org/Person:06f5acee-fdc8-ad43-ee3d-8c02ce064547> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:fffe817f-b56e-c230-8908-b531c43b19a1> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Ruit"@nl ;
+            pnv:givenName "Engeltje"@nl ;
+            pnv:literalName "Engeltje van der Ruit"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:children <https://ex.org/Person:235dde1f-41ae-e252-66e1-e4ea8adc0b97> ;
+    sdo:familyName "van der Ruit"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Engeltje"@nl ;
+    sdo:knows <https://ex.org/Person:3654e90e-266c-3694-5105-ae6ae531d44c>,
+        <https://ex.org/Person:ef306dc0-5dc3-388c-61cb-e457761d5834> ;
+    sdo:name "Engeltje van der Ruit"@nl ;
+    sdo:spouse <https://ex.org/Person:53d9dfec-7eb7-517a-25c2-6c4428b113b0> .
+
+<https://ex.org/Person:235dde1f-41ae-e252-66e1-e4ea8adc0b97> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:fffe817f-b56e-c230-8908-b531c43b19a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:fffe817f-b56e-c230-8908-b531c43b19a1_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:birthDate "1793-02-12"^^xsd:date ;
+    sdo:description "Doopdatum: 12-02-1793"@nl ;
+    sdo:familyName "Brama"@nl ;
+    sdo:givenName "Pieter"@nl ;
+    sdo:name "Pieter Brama"@nl ;
+    sdo:parent <https://ex.org/Person:06f5acee-fdc8-ad43-ee3d-8c02ce064547>,
+        <https://ex.org/Person:53d9dfec-7eb7-517a-25c2-6c4428b113b0> .
+
 <https://ex.org/Person:3654e90e-266c-3694-5105-ae6ae531d44c> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:fffe817f-b56e-c230-8908-b531c43b19a1> ;
     picom:hasRole picot_roles:573 ;
     sdo:familyName "Brama"@nl ;
     sdo:givenName "Antje"@nl ;
     sdo:name "Antje Brama"@nl .
+
+<https://ex.org/Person:53d9dfec-7eb7-517a-25c2-6c4428b113b0> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:fffe817f-b56e-c230-8908-b531c43b19a1> ;
+    sdo:children <https://ex.org/Person:235dde1f-41ae-e252-66e1-e4ea8adc0b97> ;
+    sdo:familyName "Brama"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Gerrit"@nl ;
+    sdo:knows <https://ex.org/Person:3654e90e-266c-3694-5105-ae6ae531d44c>,
+        <https://ex.org/Person:ef306dc0-5dc3-388c-61cb-e457761d5834> ;
+    sdo:name "Gerrit Brama"@nl ;
+    sdo:spouse <https://ex.org/Person:06f5acee-fdc8-ad43-ee3d-8c02ce064547> .
 
 <https://ex.org/Person:ef306dc0-5dc3-388c-61cb-e457761d5834> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:fffe817f-b56e-c230-8908-b531c43b19a1> ;
@@ -24,42 +68,9 @@
     sdo:givenName "Andries"@nl ;
     sdo:name "Andries Joseph Scheers"@nl .
 
-<https://ex.org/Person:06f5acee-fdc8-ad43-ee3d-8c02ce064547> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:fffe817f-b56e-c230-8908-b531c43b19a1> ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:baseSurname "Ruit"@nl ;
-            pnv:givenName "Engeltje"@nl ;
-            pnv:literalName "Engeltje van der Ruit"@nl ;
-            pnv:surnamePrefix "van der"@nl ] ;
-    sdo:children <https://ex.org/Person:235dde1f-41ae-e252-66e1-e4ea8adc0b97> ;
-    sdo:familyName "van der Ruit"@nl ;
-    sdo:gender sdo:Female ;
-    sdo:givenName "Engeltje"@nl ;
-    sdo:name "Engeltje van der Ruit"@nl ;
-    sdo:spouse <https://ex.org/Person:53d9dfec-7eb7-517a-25c2-6c4428b113b0> .
-
-<https://ex.org/Person:235dde1f-41ae-e252-66e1-e4ea8adc0b97> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:fffe817f-b56e-c230-8908-b531c43b19a1> ;
-    picom:hasRole picot_roles:575 ;
-    sdo:birthDate "1793-02-12"^^xsd:date ;
-    sdo:description "Doopdatum: 12-02-1793"@nl ;
-    sdo:familyName "Brama"@nl ;
-    sdo:givenName "Pieter"@nl ;
-    sdo:name "Pieter Brama"@nl ;
-    sdo:parent <https://ex.org/Person:06f5acee-fdc8-ad43-ee3d-8c02ce064547>,
-        <https://ex.org/Person:53d9dfec-7eb7-517a-25c2-6c4428b113b0> .
-
-<https://ex.org/Person:53d9dfec-7eb7-517a-25c2-6c4428b113b0> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:fffe817f-b56e-c230-8908-b531c43b19a1> ;
-    sdo:children <https://ex.org/Person:235dde1f-41ae-e252-66e1-e4ea8adc0b97> ;
-    sdo:familyName "Brama"@nl ;
-    sdo:gender sdo:Male ;
-    sdo:givenName "Gerrit"@nl ;
-    sdo:name "Gerrit Brama"@nl ;
-    sdo:spouse <https://ex.org/Person:06f5acee-fdc8-ad43-ee3d-8c02ce064547> .
-
 <https://ex.org/Source:fffe817f-b56e-c230-8908-b531c43b19a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/e889a56c-f455-4487-92c2-5b2eaa53ab23/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/fffe817f-b56e-c230-8908-b531c43b19a1"^^xsd:anyURI ;

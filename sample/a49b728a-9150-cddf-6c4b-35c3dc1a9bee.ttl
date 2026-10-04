@@ -4,6 +4,11 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:a49b728a-9150-cddf-6c4b-35c3dc1a9bee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1748-04-21"@nl ;
+    picom:eventPlace "Rijnsburg"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Person:17e39bd3-1bdf-08d9-c48e-0e81ea0f8f47> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:a49b728a-9150-cddf-6c4b-35c3dc1a9bee> ;
     picom:hasRole picot_roles:573 ;
@@ -17,11 +22,13 @@
     sdo:familyName "Hogewoning"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Pieter"@nl ;
+    sdo:knows <https://ex.org/Person:17e39bd3-1bdf-08d9-c48e-0e81ea0f8f47> ;
     sdo:name "Pieter Hogewoning"@nl ;
     sdo:spouse <https://ex.org/Person:f58f8ae7-c2c5-6904-e2ff-601940f9226b> .
 
 <https://ex.org/Person:76ea4690-dc6c-a8bb-a718-9812cadca439> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:a49b728a-9150-cddf-6c4b-35c3dc1a9bee> ;
+    picom:hasLifeEvent <https://ex.org/Source:a49b728a-9150-cddf-6c4b-35c3dc1a9bee_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 21-04-1748"@nl ;
     sdo:familyName "Hogewoning"@nl ;
@@ -36,11 +43,13 @@
     sdo:familyName "Kommens"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName "Marijtje"@nl ;
+    sdo:knows <https://ex.org/Person:17e39bd3-1bdf-08d9-c48e-0e81ea0f8f47> ;
     sdo:name "Marijtje Kommens"@nl ;
     sdo:spouse <https://ex.org/Person:32f4dab4-e016-6047-26d9-cd3f292db335> .
 
 <https://ex.org/Source:a49b728a-9150-cddf-6c4b-35c3dc1a9bee> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/7cb91369-dd33-40a7-bbbd-0b95b21548a6/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/a49b728a-9150-cddf-6c4b-35c3dc1a9bee"^^xsd:anyURI ;

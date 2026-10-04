@@ -4,6 +4,11 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:b71a150e-b5c8-b55e-bf9a-207744acc9a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1719-11-19"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Person:5e60f67a-9d2f-1781-cd43-e54554e2d48e> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:b71a150e-b5c8-b55e-bf9a-207744acc9a1> ;
     picom:hasRole picot_roles:573 ;
@@ -11,24 +16,20 @@
     sdo:givenName "Geloude"@nl ;
     sdo:name "Geloude Bollie"@nl .
 
-<https://ex.org/Person:a34e42b0-7655-fc94-5d0c-a78f93915fce> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:b71a150e-b5c8-b55e-bf9a-207744acc9a1> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:familyName "Koppij"@nl ;
-    sdo:givenName "Maria"@nl ;
-    sdo:name "Maria Koppij"@nl .
-
 <https://ex.org/Person:64091417-ff0f-531f-8d10-bf3eb5aa5379> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:b71a150e-b5c8-b55e-bf9a-207744acc9a1> ;
     sdo:children <https://ex.org/Person:89ac8973-bebc-bc67-2b0c-06bfc08303e1> ;
     sdo:familyName "Koppij"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Lourens"@nl ;
+    sdo:knows <https://ex.org/Person:5e60f67a-9d2f-1781-cd43-e54554e2d48e>,
+        <https://ex.org/Person:a34e42b0-7655-fc94-5d0c-a78f93915fce> ;
     sdo:name "Lourens Koppij"@nl ;
     sdo:spouse <https://ex.org/Person:ded5a95f-ab70-f16f-5919-30802aab9c69> .
 
 <https://ex.org/Person:89ac8973-bebc-bc67-2b0c-06bfc08303e1> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:b71a150e-b5c8-b55e-bf9a-207744acc9a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:b71a150e-b5c8-b55e-bf9a-207744acc9a1_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 19-11-1719"@nl ;
     sdo:familyName "Koppij"@nl ;
@@ -37,17 +38,27 @@
     sdo:parent <https://ex.org/Person:64091417-ff0f-531f-8d10-bf3eb5aa5379>,
         <https://ex.org/Person:ded5a95f-ab70-f16f-5919-30802aab9c69> .
 
+<https://ex.org/Person:a34e42b0-7655-fc94-5d0c-a78f93915fce> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b71a150e-b5c8-b55e-bf9a-207744acc9a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Koppij"@nl ;
+    sdo:givenName "Maria"@nl ;
+    sdo:name "Maria Koppij"@nl .
+
 <https://ex.org/Person:ded5a95f-ab70-f16f-5919-30802aab9c69> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:b71a150e-b5c8-b55e-bf9a-207744acc9a1> ;
     sdo:children <https://ex.org/Person:89ac8973-bebc-bc67-2b0c-06bfc08303e1> ;
     sdo:familyName "Kranenburgh"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName "Geertruijd"@nl ;
+    sdo:knows <https://ex.org/Person:5e60f67a-9d2f-1781-cd43-e54554e2d48e>,
+        <https://ex.org/Person:a34e42b0-7655-fc94-5d0c-a78f93915fce> ;
     sdo:name "Geertruijd Kranenburgh"@nl ;
     sdo:spouse <https://ex.org/Person:64091417-ff0f-531f-8d10-bf3eb5aa5379> .
 
 <https://ex.org/Source:b71a150e-b5c8-b55e-bf9a-207744acc9a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/d8b44684-d10d-4f86-a6e8-d4d6e2d694ef/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/b71a150e-b5c8-b55e-bf9a-207744acc9a1"^^xsd:anyURI ;

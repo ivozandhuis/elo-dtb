@@ -25,23 +25,20 @@
     sdo:givenName "Servaes"@nl ;
     sdo:name "Servaes Renier"@nl .
 
-<https://ex.org/Person:b0c39a1a-76f9-f7dc-63d6-3301f9304aba> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:da32d53f-a638-d584-6a81-298003e579a1> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:familyName "Bode"@nl ;
-    sdo:givenName "Jan"@nl ;
-    sdo:name "Jan Bode"@nl .
-
 <https://ex.org/Person:43fb63b9-a918-19bf-09d5-e1721def56fd> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:da32d53f-a638-d584-6a81-298003e579a1> ;
     sdo:children <https://ex.org/Person:7f9eebad-3613-e312-7945-4734a6c68b6d> ;
     sdo:familyName "Renard"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Bonaventure"@nl ;
+    sdo:knows <https://ex.org/Person:360ba27b-4449-7475-9582-b971cc38ceeb>,
+        <https://ex.org/Person:43c7285e-6d52-27d8-1008-faebb052e0f3>,
+        <https://ex.org/Person:b0c39a1a-76f9-f7dc-63d6-3301f9304aba> ;
     sdo:name "Bonaventure Renard"@nl .
 
 <https://ex.org/Person:7f9eebad-3613-e312-7945-4734a6c68b6d> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:da32d53f-a638-d584-6a81-298003e579a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:da32d53f-a638-d584-6a81-298003e579a1_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 26-12-1639"@nl ;
     sdo:familyName "Renard"@nl ;
@@ -49,8 +46,21 @@
     sdo:name "Elizabeth Renard"@nl ;
     sdo:parent <https://ex.org/Person:43fb63b9-a918-19bf-09d5-e1721def56fd> .
 
+<https://ex.org/Person:b0c39a1a-76f9-f7dc-63d6-3301f9304aba> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:da32d53f-a638-d584-6a81-298003e579a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Bode"@nl ;
+    sdo:givenName "Jan"@nl ;
+    sdo:name "Jan Bode"@nl .
+
+<https://ex.org/Source:da32d53f-a638-d584-6a81-298003e579a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1639-12-26"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Source:da32d53f-a638-d584-6a81-298003e579a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/c84f53b2-8489-420a-853f-41af660f43b1/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/da32d53f-a638-d584-6a81-298003e579a1"^^xsd:anyURI ;

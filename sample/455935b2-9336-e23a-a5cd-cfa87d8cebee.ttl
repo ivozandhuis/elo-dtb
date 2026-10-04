@@ -5,12 +5,10 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ex.org/Person:71a68512-54a2-9b23-58dd-40889d10f8c5> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:455935b2-9336-e23a-a5cd-cfa87d8cebee> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:familyName "Kortsen"@nl ;
-    sdo:givenName "Catharina Elizabeth"@nl ;
-    sdo:name "Catharina Elizabeth Kortsen"@nl .
+<https://ex.org/Source:455935b2-9336-e23a-a5cd-cfa87d8cebee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1755-11-09"@nl ;
+    picom:eventPlace "Hillegom"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
 
 <https://ex.org/Person:6c3bb488-e040-494c-2bcb-db88746f24a5> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:455935b2-9336-e23a-a5cd-cfa87d8cebee> ;
@@ -18,11 +16,13 @@
     sdo:familyName "Slot"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Joost"@nl ;
+    sdo:knows <https://ex.org/Person:71a68512-54a2-9b23-58dd-40889d10f8c5> ;
     sdo:name "Joost Slot"@nl ;
     sdo:spouse <https://ex.org/Person:b28f0364-968c-b282-bf36-dbf742fda271> .
 
 <https://ex.org/Person:6d83087d-4714-eb0a-26f5-f15946dea369> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:455935b2-9336-e23a-a5cd-cfa87d8cebee> ;
+    picom:hasLifeEvent <https://ex.org/Source:455935b2-9336-e23a-a5cd-cfa87d8cebee_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 09-11-1755"@nl ;
     sdo:familyName "Slot"@nl ;
@@ -30,6 +30,13 @@
     sdo:name "Catharina Elizabeth Slot"@nl ;
     sdo:parent <https://ex.org/Person:6c3bb488-e040-494c-2bcb-db88746f24a5>,
         <https://ex.org/Person:b28f0364-968c-b282-bf36-dbf742fda271> .
+
+<https://ex.org/Person:71a68512-54a2-9b23-58dd-40889d10f8c5> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:455935b2-9336-e23a-a5cd-cfa87d8cebee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Kortsen"@nl ;
+    sdo:givenName "Catharina Elizabeth"@nl ;
+    sdo:name "Catharina Elizabeth Kortsen"@nl .
 
 <https://ex.org/Person:b28f0364-968c-b282-bf36-dbf742fda271> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:455935b2-9336-e23a-a5cd-cfa87d8cebee> ;
@@ -42,11 +49,13 @@
     sdo:familyName "Broersma"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName "Grietje"@nl ;
+    sdo:knows <https://ex.org/Person:71a68512-54a2-9b23-58dd-40889d10f8c5> ;
     sdo:name "Grietje Klaesdr Broersma"@nl ;
     sdo:spouse <https://ex.org/Person:6c3bb488-e040-494c-2bcb-db88746f24a5> .
 
 <https://ex.org/Source:455935b2-9336-e23a-a5cd-cfa87d8cebee> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/242bd32f-f787-4b26-9db1-4f0d6f4ecac3/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/455935b2-9336-e23a-a5cd-cfa87d8cebee"^^xsd:anyURI ;

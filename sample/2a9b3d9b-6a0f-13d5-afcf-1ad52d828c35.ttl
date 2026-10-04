@@ -5,6 +5,16 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:2a9b3d9b-6a0f-13d5-afcf-1ad52d828c35_huwelijk_event> a picom:LifeEvent ;
+    picom:eventDate "1585-02-23"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/83> .
+
+<https://ex.org/Source:2a9b3d9b-6a0f-13d5-afcf-1ad52d828c35_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1585-02-09"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/99> .
+
 <https://ex.org/Person:19b28626-dfa7-6648-56d8-5d509844e2fa> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:2a9b3d9b-6a0f-13d5-afcf-1ad52d828c35> ;
     picom:hasRole picot_roles:573 ;
@@ -13,25 +23,14 @@
             pnv:literalName "Marytgen Claesdr"@nl ;
             pnv:patronym "Claesdr"@nl ] ;
     sdo:description "getuige van de bruid, relatie tot de bruid: moei"@nl ;
+    sdo:gender sdo:Female ;
     sdo:givenName "Marytgen"@nl ;
     sdo:name "Marytgen Claesdr"@nl .
-
-<https://ex.org/Person:d35674b6-26b3-0ad3-7792-77a23aea9945> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:2a9b3d9b-6a0f-13d5-afcf-1ad52d828c35> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:baseSurname "Vougen"@nl ;
-            pnv:givenName "Dirck"@nl ;
-            pnv:literalName "Dirck Pietersz Vougen"@nl ;
-            pnv:patronym "Pietersz"@nl ] ;
-    sdo:description "getuige van de bruidegom, relatie tot de bruidegom: vader"@nl ;
-    sdo:familyName "Vougen"@nl ;
-    sdo:givenName "Dirck"@nl ;
-    sdo:name "Dirck Pietersz Vougen"@nl .
 
 <https://ex.org/Person:63d990a5-e3a0-e8e5-d6a0-fb82acb45e65> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:2a9b3d9b-6a0f-13d5-afcf-1ad52d828c35> ;
     picom:hasRole picot_roles:574 ;
+    picom:hasUncle_Aunt <https://ex.org/Person:19b28626-dfa7-6648-56d8-5d509844e2fa> ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:givenName "Baertgen"@nl ;
             pnv:literalName "Baertgen Cornelisdr"@nl ;
@@ -52,15 +51,33 @@
     sdo:givenName "Cornelis"@nl ;
     sdo:hasOccupation "chirurgijn"@nl ;
     sdo:name "Cornelis Dircxz"@nl ;
+    sdo:parent <https://ex.org/Person:d35674b6-26b3-0ad3-7792-77a23aea9945> ;
     sdo:spouse <https://ex.org/Person:63d990a5-e3a0-e8e5-d6a0-fb82acb45e65> .
 
+<https://ex.org/Person:d35674b6-26b3-0ad3-7792-77a23aea9945> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:2a9b3d9b-6a0f-13d5-afcf-1ad52d828c35> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Vougen"@nl ;
+            pnv:givenName "Dirck"@nl ;
+            pnv:literalName "Dirck Pietersz Vougen"@nl ;
+            pnv:patronym "Pietersz"@nl ] ;
+    sdo:description "getuige van de bruidegom, relatie tot de bruidegom: vader"@nl ;
+    sdo:familyName "Vougen"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Dirck"@nl ;
+    sdo:name "Dirck Pietersz Vougen"@nl .
+
 <https://ex.org/Source:2a9b3d9b-6a0f-13d5-afcf-1ad52d828c35> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/549>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/10da0ff8-8233-4d9f-95e5-02f8c00da7e7/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/2a9b3d9b-6a0f-13d5-afcf-1ad52d828c35"^^xsd:anyURI ;
             sdo:position "1" ;
             sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/10da0ff8-8233-4d9f-95e5-02f8c00da7e7/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1585-02-09"@nl,
+        "1585-02-23"@nl ;
     sdo:dateModified "1970-01-01"^^xsd:date ;
     sdo:description "1"@nl,
         "1575-1586"@nl,

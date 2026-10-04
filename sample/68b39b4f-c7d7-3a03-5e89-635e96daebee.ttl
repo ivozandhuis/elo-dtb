@@ -5,32 +5,14 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ex.org/Person:b2c4914a-ac33-45ed-76e7-3ddc3ddc9543> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:68b39b4f-c7d7-3a03-5e89-635e96daebee> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:baseSurname "Konik"@nl ;
-            pnv:givenName "David"@nl ;
-            pnv:literalName "David de Konik"@nl ;
-            pnv:surnamePrefix "de"@nl ] ;
-    sdo:familyName "de Konik"@nl ;
-    sdo:givenName "David"@nl ;
-    sdo:name "David de Konik"@nl .
-
-<https://ex.org/Person:ee69836c-d637-fe55-532d-d28ec49cac68> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:68b39b4f-c7d7-3a03-5e89-635e96daebee> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:baseSurname "Groet"@nl ;
-            pnv:givenName "Henrikjen"@nl ;
-            pnv:literalName "Henrikjen de Groet"@nl ;
-            pnv:surnamePrefix "de"@nl ] ;
-    sdo:familyName "de Groet"@nl ;
-    sdo:givenName "Henrikjen"@nl ;
-    sdo:name "Henrikjen de Groet"@nl .
+<https://ex.org/Source:68b39b4f-c7d7-3a03-5e89-635e96daebee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1707-09-04"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
 
 <https://ex.org/Person:56bb6e10-1c8b-c617-02e0-27ffe53c0d3c> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:68b39b4f-c7d7-3a03-5e89-635e96daebee> ;
+    picom:hasLifeEvent <https://ex.org/Source:68b39b4f-c7d7-3a03-5e89-635e96daebee_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 04-09-1707"@nl ;
     sdo:familyName "Rookmans"@nl ;
@@ -45,8 +27,22 @@
     sdo:familyName "Hennaart"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName "Elisabet"@nl ;
+    sdo:knows <https://ex.org/Person:b2c4914a-ac33-45ed-76e7-3ddc3ddc9543>,
+        <https://ex.org/Person:ee69836c-d637-fe55-532d-d28ec49cac68> ;
     sdo:name "Elisabet Hennaart"@nl ;
     sdo:spouse <https://ex.org/Person:ca09ec8c-9673-8611-e591-d3893c8c0508> .
+
+<https://ex.org/Person:b2c4914a-ac33-45ed-76e7-3ddc3ddc9543> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:68b39b4f-c7d7-3a03-5e89-635e96daebee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Konik"@nl ;
+            pnv:givenName "David"@nl ;
+            pnv:literalName "David de Konik"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:familyName "de Konik"@nl ;
+    sdo:givenName "David"@nl ;
+    sdo:name "David de Konik"@nl .
 
 <https://ex.org/Person:ca09ec8c-9673-8611-e591-d3893c8c0508> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:68b39b4f-c7d7-3a03-5e89-635e96daebee> ;
@@ -54,11 +50,26 @@
     sdo:familyName "Rookmans"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Joannes"@nl ;
+    sdo:knows <https://ex.org/Person:b2c4914a-ac33-45ed-76e7-3ddc3ddc9543>,
+        <https://ex.org/Person:ee69836c-d637-fe55-532d-d28ec49cac68> ;
     sdo:name "Joannes Rookmans"@nl ;
     sdo:spouse <https://ex.org/Person:6fead25b-cb5b-a642-6763-e97e1b8cc552> .
 
+<https://ex.org/Person:ee69836c-d637-fe55-532d-d28ec49cac68> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:68b39b4f-c7d7-3a03-5e89-635e96daebee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Groet"@nl ;
+            pnv:givenName "Henrikjen"@nl ;
+            pnv:literalName "Henrikjen de Groet"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:familyName "de Groet"@nl ;
+    sdo:givenName "Henrikjen"@nl ;
+    sdo:name "Henrikjen de Groet"@nl .
+
 <https://ex.org/Source:68b39b4f-c7d7-3a03-5e89-635e96daebee> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/55e2beec-9955-48e7-aeb9-1ee557a25c7c/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/68b39b4f-c7d7-3a03-5e89-635e96daebee"^^xsd:anyURI ;

@@ -4,6 +4,34 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:bdc09318-27e5-5e61-c8b4-bc06f6018bee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1741-01-15"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
+<https://ex.org/Person:1417b5ca-89d9-cef8-db97-f56612e1fd0d> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:bdc09318-27e5-5e61-c8b4-bc06f6018bee> ;
+    sdo:children <https://ex.org/Person:605a96b0-a1cb-218a-42f7-a12e7f58c789> ;
+    sdo:familyName "Goed"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Catherine Angelique"@nl ;
+    sdo:knows <https://ex.org/Person:8648a486-e6ba-7632-3491-df3040cb12fb>,
+        <https://ex.org/Person:b515c2b4-53dd-5426-1f14-22aae6db8b23> ;
+    sdo:name "Catherine Angelique Goed"@nl ;
+    sdo:spouse <https://ex.org/Person:be826a53-6a99-9208-ce6e-ebd14a787bab> .
+
+<https://ex.org/Person:605a96b0-a1cb-218a-42f7-a12e7f58c789> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:bdc09318-27e5-5e61-c8b4-bc06f6018bee> ;
+    picom:hasLifeEvent <https://ex.org/Source:bdc09318-27e5-5e61-c8b4-bc06f6018bee_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:birthDate "1741-01-14"^^xsd:date ;
+    sdo:description "Doopdatum: 15-01-1741"@nl ;
+    sdo:familyName "Ronval"@nl ;
+    sdo:givenName "Henriette"@nl ;
+    sdo:name "Henriette Ronval"@nl ;
+    sdo:parent <https://ex.org/Person:1417b5ca-89d9-cef8-db97-f56612e1fd0d>,
+        <https://ex.org/Person:be826a53-6a99-9208-ce6e-ebd14a787bab> .
+
 <https://ex.org/Person:8648a486-e6ba-7632-3491-df3040cb12fb> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:bdc09318-27e5-5e61-c8b4-bc06f6018bee> ;
     picom:hasRole picot_roles:573 ;
@@ -18,37 +46,20 @@
     sdo:givenName "Henriette"@nl ;
     sdo:name "Henriette Winter"@nl .
 
-<https://ex.org/Person:1417b5ca-89d9-cef8-db97-f56612e1fd0d> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:bdc09318-27e5-5e61-c8b4-bc06f6018bee> ;
-    sdo:children <https://ex.org/Person:605a96b0-a1cb-218a-42f7-a12e7f58c789> ;
-    sdo:familyName "Goed"@nl ;
-    sdo:gender sdo:Female ;
-    sdo:givenName "Catherine Angelique"@nl ;
-    sdo:name "Catherine Angelique Goed"@nl ;
-    sdo:spouse <https://ex.org/Person:be826a53-6a99-9208-ce6e-ebd14a787bab> .
-
-<https://ex.org/Person:605a96b0-a1cb-218a-42f7-a12e7f58c789> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:bdc09318-27e5-5e61-c8b4-bc06f6018bee> ;
-    picom:hasRole picot_roles:575 ;
-    sdo:birthDate "1741-01-14"^^xsd:date ;
-    sdo:description "Doopdatum: 15-01-1741"@nl ;
-    sdo:familyName "Ronval"@nl ;
-    sdo:givenName "Henriette"@nl ;
-    sdo:name "Henriette Ronval"@nl ;
-    sdo:parent <https://ex.org/Person:1417b5ca-89d9-cef8-db97-f56612e1fd0d>,
-        <https://ex.org/Person:be826a53-6a99-9208-ce6e-ebd14a787bab> .
-
 <https://ex.org/Person:be826a53-6a99-9208-ce6e-ebd14a787bab> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:bdc09318-27e5-5e61-c8b4-bc06f6018bee> ;
     sdo:children <https://ex.org/Person:605a96b0-a1cb-218a-42f7-a12e7f58c789> ;
     sdo:familyName "Ronval"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Jean Batiste"@nl ;
+    sdo:knows <https://ex.org/Person:8648a486-e6ba-7632-3491-df3040cb12fb>,
+        <https://ex.org/Person:b515c2b4-53dd-5426-1f14-22aae6db8b23> ;
     sdo:name "Jean Batiste Ronval"@nl ;
     sdo:spouse <https://ex.org/Person:1417b5ca-89d9-cef8-db97-f56612e1fd0d> .
 
 <https://ex.org/Source:bdc09318-27e5-5e61-c8b4-bc06f6018bee> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/d86759ec-06c7-44e3-b97e-ac28c1878cc7/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/bdc09318-27e5-5e61-c8b4-bc06f6018bee"^^xsd:anyURI ;

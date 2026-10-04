@@ -5,6 +5,21 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Person:4d980858-4f19-3718-bd03-ad5f13c3a62f> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:6bffd0bc-1797-a00a-7a54-3ef717455bee> ;
+    picom:hasLifeEvent <https://ex.org/Source:6bffd0bc-1797-a00a-7a54-3ef717455bee_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Hidde"@nl ;
+            pnv:givenName "Maertgen"@nl ;
+            pnv:literalName "Maertgen van Hidde"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:description "Doopdatum: 10-11-1633"@nl ;
+    sdo:familyName "van Hidde"@nl ;
+    sdo:givenName "Maertgen"@nl ;
+    sdo:name "Maertgen van Hidde"@nl ;
+    sdo:parent <https://ex.org/Person:de955071-b176-5c14-0145-ee022d088750> .
+
 <https://ex.org/Person:72cd4857-f313-76ad-8284-ac9983ae67fa> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:6bffd0bc-1797-a00a-7a54-3ef717455bee> ;
     picom:hasRole picot_roles:573 ;
@@ -31,6 +46,23 @@
     sdo:givenName "Geertgen"@nl ;
     sdo:name "Geertgen Dicksd van Schagen"@nl .
 
+<https://ex.org/Person:de955071-b176-5c14-0145-ee022d088750> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:6bffd0bc-1797-a00a-7a54-3ef717455bee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Hidde"@nl ;
+            pnv:givenName "Jan"@nl ;
+            pnv:literalName "Jan Arentsz van Hidde"@nl ;
+            pnv:patronym "Arentsz"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:children <https://ex.org/Person:4d980858-4f19-3718-bd03-ad5f13c3a62f> ;
+    sdo:familyName "van Hidde"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jan"@nl ;
+    sdo:knows <https://ex.org/Person:72cd4857-f313-76ad-8284-ac9983ae67fa>,
+        <https://ex.org/Person:bffbbce1-8306-e201-fe7d-4a8a1bf5a6f6>,
+        <https://ex.org/Person:e4cf703c-a3ac-416a-5dc0-62563efdb729> ;
+    sdo:name "Jan Arentsz van Hidde"@nl .
+
 <https://ex.org/Person:e4cf703c-a3ac-416a-5dc0-62563efdb729> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:6bffd0bc-1797-a00a-7a54-3ef717455bee> ;
     picom:hasRole picot_roles:573 ;
@@ -44,36 +76,14 @@
     sdo:givenName "Jan"@nl ;
     sdo:name "Jan Dircksz van Schagen"@nl .
 
-<https://ex.org/Person:4d980858-4f19-3718-bd03-ad5f13c3a62f> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:6bffd0bc-1797-a00a-7a54-3ef717455bee> ;
-    picom:hasRole picot_roles:575 ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:baseSurname "Hidde"@nl ;
-            pnv:givenName "Maertgen"@nl ;
-            pnv:literalName "Maertgen van Hidde"@nl ;
-            pnv:surnamePrefix "van"@nl ] ;
-    sdo:description "Doopdatum: 10-11-1633"@nl ;
-    sdo:familyName "van Hidde"@nl ;
-    sdo:givenName "Maertgen"@nl ;
-    sdo:name "Maertgen van Hidde"@nl ;
-    sdo:parent <https://ex.org/Person:de955071-b176-5c14-0145-ee022d088750> .
-
-<https://ex.org/Person:de955071-b176-5c14-0145-ee022d088750> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:6bffd0bc-1797-a00a-7a54-3ef717455bee> ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:baseSurname "Hidde"@nl ;
-            pnv:givenName "Jan"@nl ;
-            pnv:literalName "Jan Arentsz van Hidde"@nl ;
-            pnv:patronym "Arentsz"@nl ;
-            pnv:surnamePrefix "van"@nl ] ;
-    sdo:children <https://ex.org/Person:4d980858-4f19-3718-bd03-ad5f13c3a62f> ;
-    sdo:familyName "van Hidde"@nl ;
-    sdo:gender sdo:Male ;
-    sdo:givenName "Jan"@nl ;
-    sdo:name "Jan Arentsz van Hidde"@nl .
+<https://ex.org/Source:6bffd0bc-1797-a00a-7a54-3ef717455bee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1633-11-10"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
 
 <https://ex.org/Source:6bffd0bc-1797-a00a-7a54-3ef717455bee> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/cd2f543e-7444-41a0-8e59-1f3ae7218201/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/6bffd0bc-1797-a00a-7a54-3ef717455bee"^^xsd:anyURI ;

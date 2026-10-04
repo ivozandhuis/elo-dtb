@@ -4,12 +4,10 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ex.org/Person:91d87ce1-22c2-4e8a-26c8-ffd83ccccfee> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:3b57847e-5119-66bd-2f37-2194f4bddbee> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:familyName "Orson"@nl ;
-    sdo:givenName "Barber"@nl ;
-    sdo:name "Barber Orson"@nl .
+<https://ex.org/Source:3b57847e-5119-66bd-2f37-2194f4bddbee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1738-10-07"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
 
 <https://ex.org/Person:0e09a015-1f05-4f6b-6f87-70a1abb54ba5> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:3b57847e-5119-66bd-2f37-2194f4bddbee> ;
@@ -17,6 +15,7 @@
     sdo:familyName "Orson"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName "Maria"@nl ;
+    sdo:knows <https://ex.org/Person:91d87ce1-22c2-4e8a-26c8-ffd83ccccfee> ;
     sdo:name "Maria Orson"@nl ;
     sdo:spouse <https://ex.org/Person:35144d9f-4a5e-072f-3ee7-76040726f0fc> .
 
@@ -26,11 +25,20 @@
     sdo:familyName "Lichtvoet"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Jan"@nl ;
+    sdo:knows <https://ex.org/Person:91d87ce1-22c2-4e8a-26c8-ffd83ccccfee> ;
     sdo:name "Jan Lichtvoet"@nl ;
     sdo:spouse <https://ex.org/Person:0e09a015-1f05-4f6b-6f87-70a1abb54ba5> .
 
+<https://ex.org/Person:91d87ce1-22c2-4e8a-26c8-ffd83ccccfee> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:3b57847e-5119-66bd-2f37-2194f4bddbee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Orson"@nl ;
+    sdo:givenName "Barber"@nl ;
+    sdo:name "Barber Orson"@nl .
+
 <https://ex.org/Person:ea1300c8-abf0-b040-9482-7cfe67c520a3> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:3b57847e-5119-66bd-2f37-2194f4bddbee> ;
+    picom:hasLifeEvent <https://ex.org/Source:3b57847e-5119-66bd-2f37-2194f4bddbee_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 07-10-1738"@nl ;
     sdo:familyName "Lichtvoet"@nl ;
@@ -40,7 +48,8 @@
         <https://ex.org/Person:35144d9f-4a5e-072f-3ee7-76040726f0fc> .
 
 <https://ex.org/Source:3b57847e-5119-66bd-2f37-2194f4bddbee> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/e3fdad0a-8eff-43e9-a450-3a4d4968da5a/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/3b57847e-5119-66bd-2f37-2194f4bddbee"^^xsd:anyURI ;

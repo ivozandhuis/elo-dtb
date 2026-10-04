@@ -5,6 +5,11 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:56208301-283e-96b0-c346-038ca6b469a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1763-01-23"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Person:014db616-8528-018e-f49c-807a44cc09c6> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:56208301-283e-96b0-c346-038ca6b469a1> ;
     picom:hasRole picot_roles:573 ;
@@ -28,11 +33,13 @@
     sdo:familyName "de Rooij"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName "Pieternelle"@nl ;
+    sdo:knows <https://ex.org/Person:014db616-8528-018e-f49c-807a44cc09c6> ;
     sdo:name "Pieternelle de Rooij"@nl ;
     sdo:spouse <https://ex.org/Person:71fdc1bb-0374-25a3-3b64-5b7a635e684c> .
 
 <https://ex.org/Person:4ee69732-6ec2-f471-9ab9-b67102844134> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:56208301-283e-96b0-c346-038ca6b469a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:56208301-283e-96b0-c346-038ca6b469a1_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:baseSurname "Niewenhooven"@nl ;
@@ -57,11 +64,13 @@
     sdo:familyName "van Niewenhooven"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Barend"@nl ;
+    sdo:knows <https://ex.org/Person:014db616-8528-018e-f49c-807a44cc09c6> ;
     sdo:name "Barend van Niewenhooven"@nl ;
     sdo:spouse <https://ex.org/Person:2da0ca78-4a5c-3bd5-2212-bc54a9d427d9> .
 
 <https://ex.org/Source:56208301-283e-96b0-c346-038ca6b469a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/aeae5b13-82a2-4471-80fb-bd1ba72f3896/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/56208301-283e-96b0-c346-038ca6b469a1"^^xsd:anyURI ;

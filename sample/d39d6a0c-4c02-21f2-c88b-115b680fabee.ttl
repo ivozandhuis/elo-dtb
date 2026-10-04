@@ -24,18 +24,26 @@
     sdo:children <https://ex.org/Person:65c6f052-a8c2-bb63-39fa-09997253b8f0> ;
     sdo:gender sdo:Male ;
     sdo:givenName "Willem"@nl ;
+    sdo:knows <https://ex.org/Person:10449e06-9f77-70d0-ba82-8a8d466809f7> ;
     sdo:name "Willem Willemsz"@nl .
 
 <https://ex.org/Person:65c6f052-a8c2-bb63-39fa-09997253b8f0> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:d39d6a0c-4c02-21f2-c88b-115b680fabee> ;
+    picom:hasLifeEvent <https://ex.org/Source:d39d6a0c-4c02-21f2-c88b-115b680fabee_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 26-05-1648"@nl ;
     sdo:givenName "Maria"@nl ;
     sdo:name "Maria"@nl ;
     sdo:parent <https://ex.org/Person:21ee7348-b78d-5db3-f4c2-7870a298cae5> .
 
+<https://ex.org/Source:d39d6a0c-4c02-21f2-c88b-115b680fabee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1648-05-26"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Source:d39d6a0c-4c02-21f2-c88b-115b680fabee> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/ac5f6135-f22f-47b3-84f9-dc6c29d94a5f/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/d39d6a0c-4c02-21f2-c88b-115b680fabee"^^xsd:anyURI ;

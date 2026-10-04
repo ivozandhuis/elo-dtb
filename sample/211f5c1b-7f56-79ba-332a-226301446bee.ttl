@@ -5,6 +5,11 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:211f5c1b-7f56-79ba-332a-226301446bee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1761-07-30"@nl ;
+    picom:eventPlace "Ter Aar"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Person:01772081-3eef-3b5b-1fca-52639423656a> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:211f5c1b-7f56-79ba-332a-226301446bee> ;
     picom:hasRole picot_roles:573 ;
@@ -36,6 +41,8 @@
     sdo:familyName "Swanevelt"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Jan"@nl ;
+    sdo:knows <https://ex.org/Person:01772081-3eef-3b5b-1fca-52639423656a>,
+        <https://ex.org/Person:92d7459c-e99b-3416-86a0-1ad753bfc0b8> ;
     sdo:name "Jan Swanevelt"@nl ;
     sdo:spouse <https://ex.org/Person:dcecc531-7c95-f035-0402-0e15f3dba857> .
 
@@ -51,11 +58,14 @@
     sdo:familyName "van der Veer"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName "Antje"@nl ;
+    sdo:knows <https://ex.org/Person:01772081-3eef-3b5b-1fca-52639423656a>,
+        <https://ex.org/Person:92d7459c-e99b-3416-86a0-1ad753bfc0b8> ;
     sdo:name "Antje Wilems van der Veer"@nl ;
     sdo:spouse <https://ex.org/Person:b17e0448-6349-072d-17e6-0d34aaa11c02> .
 
 <https://ex.org/Person:de44101f-b1d1-64e1-73f0-0d74572fabbf> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:211f5c1b-7f56-79ba-332a-226301446bee> ;
+    picom:hasLifeEvent <https://ex.org/Source:211f5c1b-7f56-79ba-332a-226301446bee_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 30-07-1761"@nl ;
     sdo:familyName "Swanevelt"@nl ;
@@ -65,7 +75,8 @@
         <https://ex.org/Person:dcecc531-7c95-f035-0402-0e15f3dba857> .
 
 <https://ex.org/Source:211f5c1b-7f56-79ba-332a-226301446bee> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/5438e302-4749-443a-8286-10f8285bf8d7/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/211f5c1b-7f56-79ba-332a-226301446bee"^^xsd:anyURI ;

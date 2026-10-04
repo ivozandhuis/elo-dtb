@@ -5,6 +5,11 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:03752658-cc02-194d-4c45-51caca15abee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1688-08-24"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Person:1f543119-777a-4b94-6632-000df92bcd2d> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:03752658-cc02-194d-4c45-51caca15abee> ;
     picom:hasRole picot_roles:573 ;
@@ -40,6 +45,8 @@
     sdo:familyName "Westerembde"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Jan"@nl ;
+    sdo:knows <https://ex.org/Person:1f543119-777a-4b94-6632-000df92bcd2d>,
+        <https://ex.org/Person:2db32320-6e33-683e-c55f-5be24dedea0d> ;
     sdo:name "Jan Jansz Westerembde"@nl ;
     sdo:spouse <https://ex.org/Person:d821a138-11cc-c3cb-6539-d02275b52a39> .
 
@@ -54,11 +61,14 @@
     sdo:familyName "Hoogland"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName "Annetje"@nl ;
+    sdo:knows <https://ex.org/Person:1f543119-777a-4b94-6632-000df92bcd2d>,
+        <https://ex.org/Person:2db32320-6e33-683e-c55f-5be24dedea0d> ;
     sdo:name "Annetje Jans Hoogland"@nl ;
     sdo:spouse <https://ex.org/Person:a86a28a0-3b4b-f804-9c9c-cb806e42827e> .
 
 <https://ex.org/Person:e394bdcb-c69e-b716-1426-493fe54cad55> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:03752658-cc02-194d-4c45-51caca15abee> ;
+    picom:hasLifeEvent <https://ex.org/Source:03752658-cc02-194d-4c45-51caca15abee_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 24-08-1688"@nl ;
     sdo:familyName "Westerembde"@nl ;
@@ -68,7 +78,8 @@
         <https://ex.org/Person:d821a138-11cc-c3cb-6539-d02275b52a39> .
 
 <https://ex.org/Source:03752658-cc02-194d-4c45-51caca15abee> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/e0d5ef86-1951-43fb-a6f6-dbd0f13d3ed9/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/03752658-cc02-194d-4c45-51caca15abee"^^xsd:anyURI ;

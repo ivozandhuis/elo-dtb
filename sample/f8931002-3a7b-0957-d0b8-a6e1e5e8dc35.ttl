@@ -5,6 +5,19 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Person:4e3991bf-b1bd-4192-f5b6-c78880d9ec20> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:f8931002-3a7b-0957-d0b8-a6e1e5e8dc35> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:description "getuige van de bruidegom, relatie tot de bruidegom: zwager"@nl ;
+    sdo:familyName "Leupe"@nl ;
+    sdo:givenName "Andries"@nl ;
+    sdo:name "Andries Leupe"@nl .
+
+<https://ex.org/Source:f8931002-3a7b-0957-d0b8-a6e1e5e8dc35_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1747-10-05"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/99> .
+
 <https://ex.org/Person:071b5c77-73ff-6082-1409-d2d309ba9d70> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:f8931002-3a7b-0957-d0b8-a6e1e5e8dc35> ;
     picom:hasRole picot_roles:573 ;
@@ -15,27 +28,14 @@
             pnv:surnamePrefix "de"@nl ] ;
     sdo:description "getuige van de bruid, relatie tot de bruid: moeder"@nl ;
     sdo:familyName "de Bruijn"@nl ;
+    sdo:gender sdo:Female ;
     sdo:givenName "Grietje"@nl ;
     sdo:name "Grietje de Bruijn"@nl .
-
-<https://ex.org/Person:4e3991bf-b1bd-4192-f5b6-c78880d9ec20> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:f8931002-3a7b-0957-d0b8-a6e1e5e8dc35> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:description "getuige van de bruidegom, relatie tot de bruidegom: zwager"@nl ;
-    sdo:familyName "Leupe"@nl ;
-    sdo:givenName "Andries"@nl ;
-    sdo:name "Andries Leupe"@nl .
-
-<https://ex.org/Person:f1ad9620-63e8-c4a5-8f85-50b2bdb5d23d> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:f8931002-3a7b-0957-d0b8-a6e1e5e8dc35> ;
-    sdo:description "Relatie tot bruidegom: wed."@nl ;
-    sdo:familyName "Leupe"@nl ;
-    sdo:givenName "Marijtje"@nl ;
-    sdo:name "Marijtje Leupe"@nl .
 
 <https://ex.org/Person:98e445be-8191-8604-fa4c-9a5d2a227ab0> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:f8931002-3a7b-0957-d0b8-a6e1e5e8dc35> ;
     picom:hasRole picot_roles:574 ;
+    picom:isWidOf <https://ex.org/Person:f1ad9620-63e8-c4a5-8f85-50b2bdb5d23d> ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:baseSurname "Voorde"@nl ;
             pnv:givenName "Jacobus"@nl ;
@@ -49,6 +49,15 @@
     sdo:name "Jacobus van de Voorde"@nl ;
     sdo:spouse <https://ex.org/Person:f6152289-c1a6-3fae-3285-b0b97cb6937a> .
 
+<https://ex.org/Person:f1ad9620-63e8-c4a5-8f85-50b2bdb5d23d> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:f8931002-3a7b-0957-d0b8-a6e1e5e8dc35> ;
+    picom:deceased true ;
+    sdo:description "Relatie tot bruidegom: wed."@nl ;
+    sdo:familyName "Leupe"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Marijtje"@nl ;
+    sdo:name "Marijtje Leupe"@nl .
+
 <https://ex.org/Person:f6152289-c1a6-3fae-3285-b0b97cb6937a> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:f8931002-3a7b-0957-d0b8-a6e1e5e8dc35> ;
     picom:hasRole picot_roles:574 ;
@@ -59,15 +68,18 @@
     sdo:gender sdo:Female ;
     sdo:givenName "Maria"@nl ;
     sdo:name "Maria Wantenaer"@nl ;
+    sdo:parent <https://ex.org/Person:071b5c77-73ff-6082-1409-d2d309ba9d70> ;
     sdo:spouse <https://ex.org/Person:98e445be-8191-8604-fa4c-9a5d2a227ab0> .
 
 <https://ex.org/Source:f8931002-3a7b-0957-d0b8-a6e1e5e8dc35> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/549>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/7f6bf572-beec-406a-b96d-f1f8cbc11016/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/f8931002-3a7b-0957-d0b8-a6e1e5e8dc35"^^xsd:anyURI ;
             sdo:position "1" ;
             sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/7f6bf572-beec-406a-b96d-f1f8cbc11016/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1747-10-05"@nl ;
     sdo:dateModified "1970-01-01"^^xsd:date ;
     sdo:description "1746-1750"@nl,
         "39"@nl,

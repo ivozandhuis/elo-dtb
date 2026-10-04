@@ -5,6 +5,11 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:1b153ffd-e30c-6cf3-c7d2-43252c8b4bee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1752-07-23"@nl ;
+    picom:eventPlace "Rijnsaterwoude"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Person:40db4516-33c3-e4e6-7408-f4275d70808e> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:1b153ffd-e30c-6cf3-c7d2-43252c8b4bee> ;
     picom:hasRole picot_roles:573 ;
@@ -23,6 +28,7 @@
 
 <https://ex.org/Person:e1a50c2a-92e3-00c5-25b3-18d8c9c8f79e> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:1b153ffd-e30c-6cf3-c7d2-43252c8b4bee> ;
+    picom:hasLifeEvent <https://ex.org/Source:1b153ffd-e30c-6cf3-c7d2-43252c8b4bee_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:baseSurname "Meulen"@nl ;
@@ -42,6 +48,8 @@
     sdo:familyName "Rodenburg"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName "Jaapje"@nl ;
+    sdo:knows <https://ex.org/Person:40db4516-33c3-e4e6-7408-f4275d70808e>,
+        <https://ex.org/Person:e119d7bc-9463-bb95-b14d-1bb8d7c47366> ;
     sdo:name "Jaapje Rodenburg"@nl ;
     sdo:spouse <https://ex.org/Person:ff5e2166-dda9-938a-582c-dfae13088031> .
 
@@ -56,11 +64,14 @@
     sdo:familyName "van der Meulen"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Anthonij"@nl ;
+    sdo:knows <https://ex.org/Person:40db4516-33c3-e4e6-7408-f4275d70808e>,
+        <https://ex.org/Person:e119d7bc-9463-bb95-b14d-1bb8d7c47366> ;
     sdo:name "Anthonij van der Meulen"@nl ;
     sdo:spouse <https://ex.org/Person:f1663ca1-3c0c-e3bc-f78d-0173cee0146f> .
 
 <https://ex.org/Source:1b153ffd-e30c-6cf3-c7d2-43252c8b4bee> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/bb548e69-ee08-45a5-ad92-073f6f2f21d0/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/1b153ffd-e30c-6cf3-c7d2-43252c8b4bee"^^xsd:anyURI ;

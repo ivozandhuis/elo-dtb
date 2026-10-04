@@ -5,6 +5,48 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:99bc38a8-0047-b11c-4097-076cff5f79a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1658-11-24"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
+<https://ex.org/Person:0b70f5e0-9e49-1ab6-b636-1627b7448672> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:99bc38a8-0047-b11c-4097-076cff5f79a1> ;
+    sdo:children <https://ex.org/Person:31ff52ea-e6d0-73df-1636-1fb52b7100b0> ;
+    sdo:familyName "Chalar"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Moyse"@nl ;
+    sdo:knows <https://ex.org/Person:8752732c-3304-7cc1-6b00-13e8a4b4d40e>,
+        <https://ex.org/Person:ba1f6578-4cdc-5da3-fbda-9e5cf613182e>,
+        <https://ex.org/Person:d0f15703-9537-af64-ee59-4fb9f2c06c55>,
+        <https://ex.org/Person:f196024c-9495-cc76-d35e-cb44f8ab2bdf> ;
+    sdo:name "Moyse Chalar"@nl ;
+    sdo:spouse <https://ex.org/Person:288236d5-52af-f885-9281-7a0865c1033d> .
+
+<https://ex.org/Person:288236d5-52af-f885-9281-7a0865c1033d> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:99bc38a8-0047-b11c-4097-076cff5f79a1> ;
+    sdo:children <https://ex.org/Person:31ff52ea-e6d0-73df-1636-1fb52b7100b0> ;
+    sdo:familyName "Penquen"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Marie"@nl ;
+    sdo:knows <https://ex.org/Person:8752732c-3304-7cc1-6b00-13e8a4b4d40e>,
+        <https://ex.org/Person:ba1f6578-4cdc-5da3-fbda-9e5cf613182e>,
+        <https://ex.org/Person:d0f15703-9537-af64-ee59-4fb9f2c06c55>,
+        <https://ex.org/Person:f196024c-9495-cc76-d35e-cb44f8ab2bdf> ;
+    sdo:name "Marie Penquen"@nl ;
+    sdo:spouse <https://ex.org/Person:0b70f5e0-9e49-1ab6-b636-1627b7448672> .
+
+<https://ex.org/Person:31ff52ea-e6d0-73df-1636-1fb52b7100b0> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:99bc38a8-0047-b11c-4097-076cff5f79a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:99bc38a8-0047-b11c-4097-076cff5f79a1_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 24-11-1658"@nl ;
+    sdo:familyName "Chalar"@nl ;
+    sdo:givenName "Pierre"@nl ;
+    sdo:name "Pierre Chalar"@nl ;
+    sdo:parent <https://ex.org/Person:0b70f5e0-9e49-1ab6-b636-1627b7448672>,
+        <https://ex.org/Person:288236d5-52af-f885-9281-7a0865c1033d> .
+
 <https://ex.org/Person:8752732c-3304-7cc1-6b00-13e8a4b4d40e> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:99bc38a8-0047-b11c-4097-076cff5f79a1> ;
     picom:hasRole picot_roles:573 ;
@@ -45,36 +87,9 @@
     sdo:givenName "Jeane"@nl ;
     sdo:name "Jeane Bauduin"@nl .
 
-<https://ex.org/Person:0b70f5e0-9e49-1ab6-b636-1627b7448672> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:99bc38a8-0047-b11c-4097-076cff5f79a1> ;
-    sdo:children <https://ex.org/Person:31ff52ea-e6d0-73df-1636-1fb52b7100b0> ;
-    sdo:familyName "Chalar"@nl ;
-    sdo:gender sdo:Male ;
-    sdo:givenName "Moyse"@nl ;
-    sdo:name "Moyse Chalar"@nl ;
-    sdo:spouse <https://ex.org/Person:288236d5-52af-f885-9281-7a0865c1033d> .
-
-<https://ex.org/Person:288236d5-52af-f885-9281-7a0865c1033d> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:99bc38a8-0047-b11c-4097-076cff5f79a1> ;
-    sdo:children <https://ex.org/Person:31ff52ea-e6d0-73df-1636-1fb52b7100b0> ;
-    sdo:familyName "Penquen"@nl ;
-    sdo:gender sdo:Female ;
-    sdo:givenName "Marie"@nl ;
-    sdo:name "Marie Penquen"@nl ;
-    sdo:spouse <https://ex.org/Person:0b70f5e0-9e49-1ab6-b636-1627b7448672> .
-
-<https://ex.org/Person:31ff52ea-e6d0-73df-1636-1fb52b7100b0> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:99bc38a8-0047-b11c-4097-076cff5f79a1> ;
-    picom:hasRole picot_roles:575 ;
-    sdo:description "Doopdatum: 24-11-1658"@nl ;
-    sdo:familyName "Chalar"@nl ;
-    sdo:givenName "Pierre"@nl ;
-    sdo:name "Pierre Chalar"@nl ;
-    sdo:parent <https://ex.org/Person:0b70f5e0-9e49-1ab6-b636-1627b7448672>,
-        <https://ex.org/Person:288236d5-52af-f885-9281-7a0865c1033d> .
-
 <https://ex.org/Source:99bc38a8-0047-b11c-4097-076cff5f79a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/b9d64c71-3bb1-4fc0-aebb-d85ac6ee0134/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/99bc38a8-0047-b11c-4097-076cff5f79a1"^^xsd:anyURI ;

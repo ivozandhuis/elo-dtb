@@ -5,19 +5,10 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ex.org/Person:51b3eb2c-6fdc-6b68-f7c5-de6b7b5a546b> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:a3126d88-076c-8ff7-ab44-acd5c79059a1> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:familyName "Scherme"@nl ;
-    sdo:givenName "Carolus"@nl ;
-    sdo:name "Carolus Scherme"@nl .
-
-<https://ex.org/Person:e5ddd8fb-1209-88ab-b120-2de6c39d4c24> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:a3126d88-076c-8ff7-ab44-acd5c79059a1> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:familyName "Dupont"@nl ;
-    sdo:givenName "Maria"@nl ;
-    sdo:name "Maria Dupont"@nl .
+<https://ex.org/Source:a3126d88-076c-8ff7-ab44-acd5c79059a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1702-02-14"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
 
 <https://ex.org/Person:2261ccd8-8052-5c65-c704-45ba817d121a> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:a3126d88-076c-8ff7-ab44-acd5c79059a1> ;
@@ -28,8 +19,17 @@
     sdo:children <https://ex.org/Person:a4f63606-a720-17ba-090f-fff7882bce6e> ;
     sdo:gender sdo:Male ;
     sdo:givenName "Joannis"@nl ;
+    sdo:knows <https://ex.org/Person:51b3eb2c-6fdc-6b68-f7c5-de6b7b5a546b>,
+        <https://ex.org/Person:e5ddd8fb-1209-88ab-b120-2de6c39d4c24> ;
     sdo:name "Joannis Bertrand"@nl ;
     sdo:spouse <https://ex.org/Person:8f7aae7c-2b2c-1a12-32a5-8dc2322a422d> .
+
+<https://ex.org/Person:51b3eb2c-6fdc-6b68-f7c5-de6b7b5a546b> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:a3126d88-076c-8ff7-ab44-acd5c79059a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Scherme"@nl ;
+    sdo:givenName "Carolus"@nl ;
+    sdo:name "Carolus Scherme"@nl .
 
 <https://ex.org/Person:8f7aae7c-2b2c-1a12-32a5-8dc2322a422d> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:a3126d88-076c-8ff7-ab44-acd5c79059a1> ;
@@ -37,11 +37,14 @@
     sdo:familyName "Dupont"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName "Catharina"@nl ;
+    sdo:knows <https://ex.org/Person:51b3eb2c-6fdc-6b68-f7c5-de6b7b5a546b>,
+        <https://ex.org/Person:e5ddd8fb-1209-88ab-b120-2de6c39d4c24> ;
     sdo:name "Catharina Dupont"@nl ;
     sdo:spouse <https://ex.org/Person:2261ccd8-8052-5c65-c704-45ba817d121a> .
 
 <https://ex.org/Person:a4f63606-a720-17ba-090f-fff7882bce6e> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:a3126d88-076c-8ff7-ab44-acd5c79059a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:a3126d88-076c-8ff7-ab44-acd5c79059a1_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 14-02-1702"@nl ;
     sdo:givenName "Joanna"@nl ;
@@ -49,8 +52,16 @@
     sdo:parent <https://ex.org/Person:2261ccd8-8052-5c65-c704-45ba817d121a>,
         <https://ex.org/Person:8f7aae7c-2b2c-1a12-32a5-8dc2322a422d> .
 
+<https://ex.org/Person:e5ddd8fb-1209-88ab-b120-2de6c39d4c24> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:a3126d88-076c-8ff7-ab44-acd5c79059a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Dupont"@nl ;
+    sdo:givenName "Maria"@nl ;
+    sdo:name "Maria Dupont"@nl .
+
 <https://ex.org/Source:a3126d88-076c-8ff7-ab44-acd5c79059a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/8bd5fa4a-2db9-4e00-9d76-0c4e281db33d/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/a3126d88-076c-8ff7-ab44-acd5c79059a1"^^xsd:anyURI ;

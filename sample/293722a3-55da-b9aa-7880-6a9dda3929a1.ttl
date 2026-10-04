@@ -4,22 +4,14 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ex.org/Person:71b7855d-4c59-5fa4-75b3-adadc37efe5d> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:293722a3-55da-b9aa-7880-6a9dda3929a1> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:familyName "Wassaart"@nl ;
-    sdo:givenName "Judik"@nl ;
-    sdo:name "Judik Wassaart"@nl .
-
-<https://ex.org/Person:fc530b12-168a-0260-aeda-93b5ac25f397> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:293722a3-55da-b9aa-7880-6a9dda3929a1> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:familyName "Heus"@nl ;
-    sdo:givenName "Hendrik"@nl ;
-    sdo:name "Hendrik Heus"@nl .
+<https://ex.org/Source:293722a3-55da-b9aa-7880-6a9dda3929a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1792-03-11"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
 
 <https://ex.org/Person:306c7b0d-e0a6-8724-27a4-781879593d71> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:293722a3-55da-b9aa-7880-6a9dda3929a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:293722a3-55da-b9aa-7880-6a9dda3929a1_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 11-03-1792"@nl ;
     sdo:familyName "Riebeek"@nl ;
@@ -34,8 +26,17 @@
     sdo:familyName "Riebeek"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Michiel"@nl ;
+    sdo:knows <https://ex.org/Person:71b7855d-4c59-5fa4-75b3-adadc37efe5d>,
+        <https://ex.org/Person:fc530b12-168a-0260-aeda-93b5ac25f397> ;
     sdo:name "Michiel Riebeek"@nl ;
     sdo:spouse <https://ex.org/Person:c06893b0-6ff2-1e38-61b3-fc09ec8753aa> .
+
+<https://ex.org/Person:71b7855d-4c59-5fa4-75b3-adadc37efe5d> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:293722a3-55da-b9aa-7880-6a9dda3929a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Wassaart"@nl ;
+    sdo:givenName "Judik"@nl ;
+    sdo:name "Judik Wassaart"@nl .
 
 <https://ex.org/Person:c06893b0-6ff2-1e38-61b3-fc09ec8753aa> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:293722a3-55da-b9aa-7880-6a9dda3929a1> ;
@@ -43,11 +44,21 @@
     sdo:familyName "Heus"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName "Hester"@nl ;
+    sdo:knows <https://ex.org/Person:71b7855d-4c59-5fa4-75b3-adadc37efe5d>,
+        <https://ex.org/Person:fc530b12-168a-0260-aeda-93b5ac25f397> ;
     sdo:name "Hester Heus"@nl ;
     sdo:spouse <https://ex.org/Person:692bd159-035b-8d34-a71a-2f6437854958> .
 
+<https://ex.org/Person:fc530b12-168a-0260-aeda-93b5ac25f397> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:293722a3-55da-b9aa-7880-6a9dda3929a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Heus"@nl ;
+    sdo:givenName "Hendrik"@nl ;
+    sdo:name "Hendrik Heus"@nl .
+
 <https://ex.org/Source:293722a3-55da-b9aa-7880-6a9dda3929a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/60dd4471-2bf3-497d-b39f-4221d67138b2/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/293722a3-55da-b9aa-7880-6a9dda3929a1"^^xsd:anyURI ;

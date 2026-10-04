@@ -5,6 +5,16 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:3e79a5c2-20f7-46eb-f3a4-51a032d3fc35_huwelijk_event> a picom:LifeEvent ;
+    picom:eventDate "1594-04-12"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/83> .
+
+<https://ex.org/Source:3e79a5c2-20f7-46eb-f3a4-51a032d3fc35_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1594-01-26"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/99> .
+
 <https://ex.org/Person:3a867557-3d0d-443c-7a09-ec44d0e16a0e> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:3e79a5c2-20f7-46eb-f3a4-51a032d3fc35> ;
     picom:hasRole picot_roles:573 ;
@@ -13,6 +23,7 @@
             pnv:literalName "Trijntge Jans"@nl ;
             pnv:patronym "Jans"@nl ] ;
     sdo:description "getuige van de bruid, relatie tot de bruid: moei"@nl ;
+    sdo:gender sdo:Female ;
     sdo:givenName "Trijntge"@nl ;
     sdo:name "Trijntge Jans"@nl .
 
@@ -24,12 +35,14 @@
             pnv:literalName "Maerten Gerritsz"@nl ;
             pnv:patronym "Gerritsz"@nl ] ;
     sdo:description "getuige van de bruidegom, relatie tot de bruidegom: stiefvader"@nl ;
+    sdo:gender sdo:Male ;
     sdo:givenName "Maerten"@nl ;
     sdo:name "Maerten Gerritsz"@nl .
 
 <https://ex.org/Person:8569a68a-5017-5df8-928f-fcda7129659e> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:3e79a5c2-20f7-46eb-f3a4-51a032d3fc35> ;
     picom:hasRole picot_roles:574 ;
+    picom:hasUncle_Aunt <https://ex.org/Person:3a867557-3d0d-443c-7a09-ec44d0e16a0e> ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:givenName "Maertgen"@nl ;
             pnv:literalName "Maertgen Louweris"@nl ;
@@ -43,6 +56,7 @@
 <https://ex.org/Person:dda146c8-bef8-060b-7ee0-490da0ba65b5> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:3e79a5c2-20f7-46eb-f3a4-51a032d3fc35> ;
     picom:hasRole picot_roles:574 ;
+    picom:hasStepparent <https://ex.org/Person:72c4e35b-07d7-eb54-9c32-47538d1b7312> ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:givenName "Kors"@nl ;
             pnv:literalName "Kors Jacobsz"@nl ;
@@ -54,12 +68,15 @@
     sdo:spouse <https://ex.org/Person:8569a68a-5017-5df8-928f-fcda7129659e> .
 
 <https://ex.org/Source:3e79a5c2-20f7-46eb-f3a4-51a032d3fc35> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/549>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/7444a7e6-f6ba-4e4b-81c2-9471b1102597/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/3e79a5c2-20f7-46eb-f3a4-51a032d3fc35"^^xsd:anyURI ;
             sdo:position "1" ;
             sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/7444a7e6-f6ba-4e4b-81c2-9471b1102597/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1594-01-26"@nl,
+        "1594-04-12"@nl ;
     sdo:dateModified "1970-01-01"^^xsd:date ;
     sdo:description "1592-1611"@nl,
         "197"@nl,

@@ -5,12 +5,10 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ex.org/Person:4426b2b6-3fe6-a444-b93a-bb6763338400> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:c17b8757-e7e2-dd9e-2188-94636df439a1> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:familyName "Delmans"@nl ;
-    sdo:givenName "Lijntje"@nl ;
-    sdo:name "Lijntje Delmans"@nl .
+<https://ex.org/Source:c17b8757-e7e2-dd9e-2188-94636df439a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1728-04-01"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
 
 <https://ex.org/Person:050202c8-4357-f589-f7c8-e1f2e9890538> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:c17b8757-e7e2-dd9e-2188-94636df439a1> ;
@@ -18,11 +16,20 @@
     sdo:familyName "Rijgenbach"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Hendrik"@nl ;
+    sdo:knows <https://ex.org/Person:4426b2b6-3fe6-a444-b93a-bb6763338400> ;
     sdo:name "Hendrik Rijgenbach"@nl ;
     sdo:spouse <https://ex.org/Person:5d3e862a-a631-ad97-a443-de82999cc635> .
 
+<https://ex.org/Person:4426b2b6-3fe6-a444-b93a-bb6763338400> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:c17b8757-e7e2-dd9e-2188-94636df439a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Delmans"@nl ;
+    sdo:givenName "Lijntje"@nl ;
+    sdo:name "Lijntje Delmans"@nl .
+
 <https://ex.org/Person:52bfb06e-33cd-6090-2a6d-f336f108573f> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:c17b8757-e7e2-dd9e-2188-94636df439a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:c17b8757-e7e2-dd9e-2188-94636df439a1_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 01-04-1728"@nl ;
     sdo:familyName "Rijgenbach"@nl ;
@@ -42,11 +49,13 @@
     sdo:familyName "van Aken"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName "Adriana"@nl ;
+    sdo:knows <https://ex.org/Person:4426b2b6-3fe6-a444-b93a-bb6763338400> ;
     sdo:name "Adriana van Aken"@nl ;
     sdo:spouse <https://ex.org/Person:050202c8-4357-f589-f7c8-e1f2e9890538> .
 
 <https://ex.org/Source:c17b8757-e7e2-dd9e-2188-94636df439a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/6647d56b-7a8d-4fb6-acb3-7e54106ee4ff/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/c17b8757-e7e2-dd9e-2188-94636df439a1"^^xsd:anyURI ;

@@ -5,12 +5,28 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:1e0af9da-437d-ae6a-92ab-b7c3b140dbee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1699-10-11"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Person:ab509573-7be5-08f7-ab23-5cb5fcd4ffd0> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:1e0af9da-437d-ae6a-92ab-b7c3b140dbee> ;
     picom:hasRole picot_roles:573 ;
     sdo:familyName "Esschegiffers"@nl ;
     sdo:givenName "Dina"@nl ;
     sdo:name "Dina Esschegiffers"@nl .
+
+<https://ex.org/Person:b3ca1a08-70d8-8359-5468-3aab83d61e8c> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:1e0af9da-437d-ae6a-92ab-b7c3b140dbee> ;
+    sdo:children <https://ex.org/Person:f750bbf7-cd5d-af74-b0c8-21306344b5d9> ;
+    sdo:familyName "Wittig"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Hans"@nl ;
+    sdo:knows <https://ex.org/Person:ab509573-7be5-08f7-ab23-5cb5fcd4ffd0>,
+        <https://ex.org/Person:c9b82447-3a03-899b-42c7-b5b71237e809> ;
+    sdo:name "Hans Wittig"@nl ;
+    sdo:spouse <https://ex.org/Person:db5c6035-e82c-d96f-2189-e42c5e2cbb66> .
 
 <https://ex.org/Person:c9b82447-3a03-899b-42c7-b5b71237e809> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:1e0af9da-437d-ae6a-92ab-b7c3b140dbee> ;
@@ -24,15 +40,6 @@
     sdo:givenName "Hans"@nl ;
     sdo:name "Hans te Wijn"@nl .
 
-<https://ex.org/Person:b3ca1a08-70d8-8359-5468-3aab83d61e8c> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:1e0af9da-437d-ae6a-92ab-b7c3b140dbee> ;
-    sdo:children <https://ex.org/Person:f750bbf7-cd5d-af74-b0c8-21306344b5d9> ;
-    sdo:familyName "Wittig"@nl ;
-    sdo:gender sdo:Male ;
-    sdo:givenName "Hans"@nl ;
-    sdo:name "Hans Wittig"@nl ;
-    sdo:spouse <https://ex.org/Person:db5c6035-e82c-d96f-2189-e42c5e2cbb66> .
-
 <https://ex.org/Person:db5c6035-e82c-d96f-2189-e42c5e2cbb66> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:1e0af9da-437d-ae6a-92ab-b7c3b140dbee> ;
     sdo:additionalName [ a pnv:PersonName ;
@@ -42,11 +49,14 @@
     sdo:children <https://ex.org/Person:f750bbf7-cd5d-af74-b0c8-21306344b5d9> ;
     sdo:gender sdo:Female ;
     sdo:givenName "Marij"@nl ;
+    sdo:knows <https://ex.org/Person:ab509573-7be5-08f7-ab23-5cb5fcd4ffd0>,
+        <https://ex.org/Person:c9b82447-3a03-899b-42c7-b5b71237e809> ;
     sdo:name "Marij Pieters"@nl ;
     sdo:spouse <https://ex.org/Person:b3ca1a08-70d8-8359-5468-3aab83d61e8c> .
 
 <https://ex.org/Person:f750bbf7-cd5d-af74-b0c8-21306344b5d9> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:1e0af9da-437d-ae6a-92ab-b7c3b140dbee> ;
+    picom:hasLifeEvent <https://ex.org/Source:1e0af9da-437d-ae6a-92ab-b7c3b140dbee_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 11-10-1699"@nl ;
     sdo:familyName "Wittig"@nl ;
@@ -56,7 +66,8 @@
         <https://ex.org/Person:db5c6035-e82c-d96f-2189-e42c5e2cbb66> .
 
 <https://ex.org/Source:1e0af9da-437d-ae6a-92ab-b7c3b140dbee> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/2a2bcbd2-cfa9-4271-833f-7bc659778e67/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/1e0af9da-437d-ae6a-92ab-b7c3b140dbee"^^xsd:anyURI ;

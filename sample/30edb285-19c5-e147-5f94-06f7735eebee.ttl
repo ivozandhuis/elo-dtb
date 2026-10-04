@@ -5,6 +5,27 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:30edb285-19c5-e147-5f94-06f7735eebee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1653-06-18"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
+<https://ex.org/Person:3b991a9f-878f-02fe-927a-7d73ce39aff1> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:30edb285-19c5-e147-5f94-06f7735eebee> ;
+    picom:hasLifeEvent <https://ex.org/Source:30edb285-19c5-e147-5f94-06f7735eebee_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Rumau"@nl ;
+            pnv:givenName "Anthoine"@nl ;
+            pnv:literalName "Anthoine des Rumau"@nl ;
+            pnv:surnamePrefix "des"@nl ] ;
+    sdo:description "Doopdatum: 18-06-1653"@nl ;
+    sdo:familyName "des Rumau"@nl ;
+    sdo:givenName "Anthoine"@nl ;
+    sdo:name "Anthoine des Rumau"@nl ;
+    sdo:parent <https://ex.org/Person:b324a671-64f8-6ae1-d5c2-2783381e2728>,
+        <https://ex.org/Person:d0370854-cd2e-76a1-3f9c-718a010b369a> .
+
 <https://ex.org/Person:3bfe35a4-ea52-7a9d-2ebc-39fd29cb8660> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:30edb285-19c5-e147-5f94-06f7735eebee> ;
     picom:hasRole picot_roles:573 ;
@@ -26,28 +47,6 @@
     sdo:givenName "Jaquemine"@nl ;
     sdo:name "Jaquemine Malfait"@nl .
 
-<https://ex.org/Person:ec8e2483-b518-064b-1ea5-57d3593f2778> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:30edb285-19c5-e147-5f94-06f7735eebee> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:familyName "Carlie"@nl ;
-    sdo:givenName "Jaqueline"@nl ;
-    sdo:name "Jaqueline Carlie"@nl .
-
-<https://ex.org/Person:3b991a9f-878f-02fe-927a-7d73ce39aff1> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:30edb285-19c5-e147-5f94-06f7735eebee> ;
-    picom:hasRole picot_roles:575 ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:baseSurname "Rumau"@nl ;
-            pnv:givenName "Anthoine"@nl ;
-            pnv:literalName "Anthoine des Rumau"@nl ;
-            pnv:surnamePrefix "des"@nl ] ;
-    sdo:description "Doopdatum: 18-06-1653"@nl ;
-    sdo:familyName "des Rumau"@nl ;
-    sdo:givenName "Anthoine"@nl ;
-    sdo:name "Anthoine des Rumau"@nl ;
-    sdo:parent <https://ex.org/Person:b324a671-64f8-6ae1-d5c2-2783381e2728>,
-        <https://ex.org/Person:d0370854-cd2e-76a1-3f9c-718a010b369a> .
-
 <https://ex.org/Person:b324a671-64f8-6ae1-d5c2-2783381e2728> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:30edb285-19c5-e147-5f94-06f7735eebee> ;
     sdo:additionalName [ a pnv:PersonName ;
@@ -57,6 +56,10 @@
     sdo:children <https://ex.org/Person:3b991a9f-878f-02fe-927a-7d73ce39aff1> ;
     sdo:gender sdo:Female ;
     sdo:givenName "Marguerite"@nl ;
+    sdo:knows <https://ex.org/Person:3bfe35a4-ea52-7a9d-2ebc-39fd29cb8660>,
+        <https://ex.org/Person:85c93886-8db4-df25-5fcb-5231833bf31c>,
+        <https://ex.org/Person:a7bc3282-d332-b230-af43-317bd854c1ce>,
+        <https://ex.org/Person:ec8e2483-b518-064b-1ea5-57d3593f2778> ;
     sdo:name "Marguerite Clarice"@nl ;
     sdo:spouse <https://ex.org/Person:d0370854-cd2e-76a1-3f9c-718a010b369a> .
 
@@ -71,11 +74,23 @@
     sdo:familyName "des Rumau"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Jaques"@nl ;
+    sdo:knows <https://ex.org/Person:3bfe35a4-ea52-7a9d-2ebc-39fd29cb8660>,
+        <https://ex.org/Person:85c93886-8db4-df25-5fcb-5231833bf31c>,
+        <https://ex.org/Person:a7bc3282-d332-b230-af43-317bd854c1ce>,
+        <https://ex.org/Person:ec8e2483-b518-064b-1ea5-57d3593f2778> ;
     sdo:name "Jaques des Rumau"@nl ;
     sdo:spouse <https://ex.org/Person:b324a671-64f8-6ae1-d5c2-2783381e2728> .
 
+<https://ex.org/Person:ec8e2483-b518-064b-1ea5-57d3593f2778> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:30edb285-19c5-e147-5f94-06f7735eebee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Carlie"@nl ;
+    sdo:givenName "Jaqueline"@nl ;
+    sdo:name "Jaqueline Carlie"@nl .
+
 <https://ex.org/Source:30edb285-19c5-e147-5f94-06f7735eebee> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/a1ceb490-6758-4482-80c6-0f60796e4af8/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/30edb285-19c5-e147-5f94-06f7735eebee"^^xsd:anyURI ;

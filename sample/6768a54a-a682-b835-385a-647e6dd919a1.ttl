@@ -5,6 +5,11 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:6768a54a-a682-b835-385a-647e6dd919a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1654-02-22"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Person:163b915a-a14b-539e-2c1d-21c9d5d806b4> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:6768a54a-a682-b835-385a-647e6dd919a1> ;
     picom:hasRole picot_roles:573 ;
@@ -12,15 +17,9 @@
     sdo:givenName "Jenne"@nl ;
     sdo:name "Jenne Beurlette"@nl .
 
-<https://ex.org/Person:c2311f61-58b5-7a38-92a9-7da5c1a5cd4e> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:6768a54a-a682-b835-385a-647e6dd919a1> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:familyName "Dieckhuyse"@nl ;
-    sdo:givenName "Jean"@nl ;
-    sdo:name "Jean Dieckhuyse"@nl .
-
 <https://ex.org/Person:63f4c3ca-1801-57d8-a6dd-43f8fa9885e7> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:6768a54a-a682-b835-385a-647e6dd919a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:6768a54a-a682-b835-385a-647e6dd919a1_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:baseSurname "Sau"@nl ;
@@ -45,6 +44,8 @@
     sdo:familyName "du Sau"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Jean"@nl ;
+    sdo:knows <https://ex.org/Person:163b915a-a14b-539e-2c1d-21c9d5d806b4>,
+        <https://ex.org/Person:c2311f61-58b5-7a38-92a9-7da5c1a5cd4e> ;
     sdo:name "Jean du Sau"@nl ;
     sdo:spouse <https://ex.org/Person:b6be0097-ad3d-1d7f-fd6d-45766eaadef0> .
 
@@ -53,11 +54,21 @@
     sdo:children <https://ex.org/Person:63f4c3ca-1801-57d8-a6dd-43f8fa9885e7> ;
     sdo:gender sdo:Female ;
     sdo:givenName "Françoise"@nl ;
+    sdo:knows <https://ex.org/Person:163b915a-a14b-539e-2c1d-21c9d5d806b4>,
+        <https://ex.org/Person:c2311f61-58b5-7a38-92a9-7da5c1a5cd4e> ;
     sdo:name "Françoise"@nl ;
     sdo:spouse <https://ex.org/Person:8ebb0902-f03b-90cf-e396-721da315c750> .
 
+<https://ex.org/Person:c2311f61-58b5-7a38-92a9-7da5c1a5cd4e> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:6768a54a-a682-b835-385a-647e6dd919a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Dieckhuyse"@nl ;
+    sdo:givenName "Jean"@nl ;
+    sdo:name "Jean Dieckhuyse"@nl .
+
 <https://ex.org/Source:6768a54a-a682-b835-385a-647e6dd919a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/bf6cecc5-a553-4d24-a61f-f7bbd27c7a95/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/6768a54a-a682-b835-385a-647e6dd919a1"^^xsd:anyURI ;

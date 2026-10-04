@@ -5,6 +5,38 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:02be8652-8878-7600-70a6-57353c17f9a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1756-04-21"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
+<https://ex.org/Person:003c2c38-35d2-86a9-9b93-069671714355> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:02be8652-8878-7600-70a6-57353c17f9a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:02be8652-8878-7600-70a6-57353c17f9a1_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 21-04-1756"@nl ;
+    sdo:familyName "Vermond"@nl ;
+    sdo:givenName "Hendrik"@nl ;
+    sdo:name "Hendrik Vermond"@nl ;
+    sdo:parent <https://ex.org/Person:294c3a87-2825-53f3-1e02-f75247a82bd2>,
+        <https://ex.org/Person:a16e6e6a-9038-bd57-758b-4354c742c71b> .
+
+<https://ex.org/Person:294c3a87-2825-53f3-1e02-f75247a82bd2> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:02be8652-8878-7600-70a6-57353c17f9a1> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Burg"@nl ;
+            pnv:givenName "Maria Magdalena"@nl ;
+            pnv:literalName "Maria Magdalena van der Burg"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:children <https://ex.org/Person:003c2c38-35d2-86a9-9b93-069671714355> ;
+    sdo:familyName "van der Burg"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Maria Magdalena"@nl ;
+    sdo:knows <https://ex.org/Person:36e234f5-47ac-e180-7c27-1323f98674a4>,
+        <https://ex.org/Person:8c87a838-0563-5372-d667-d756fb179a67> ;
+    sdo:name "Maria Magdalena van der Burg"@nl ;
+    sdo:spouse <https://ex.org/Person:a16e6e6a-9038-bd57-758b-4354c742c71b> .
+
 <https://ex.org/Person:36e234f5-47ac-e180-7c27-1323f98674a4> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:02be8652-8878-7600-70a6-57353c17f9a1> ;
     picom:hasRole picot_roles:573 ;
@@ -29,41 +61,20 @@
     sdo:givenName "Hubertus"@nl ;
     sdo:name "Hubertus van der Burg"@nl .
 
-<https://ex.org/Person:003c2c38-35d2-86a9-9b93-069671714355> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:02be8652-8878-7600-70a6-57353c17f9a1> ;
-    picom:hasRole picot_roles:575 ;
-    sdo:description "Doopdatum: 21-04-1756"@nl ;
-    sdo:familyName "Vermond"@nl ;
-    sdo:givenName "Hendrik"@nl ;
-    sdo:name "Hendrik Vermond"@nl ;
-    sdo:parent <https://ex.org/Person:294c3a87-2825-53f3-1e02-f75247a82bd2>,
-        <https://ex.org/Person:a16e6e6a-9038-bd57-758b-4354c742c71b> .
-
-<https://ex.org/Person:294c3a87-2825-53f3-1e02-f75247a82bd2> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:02be8652-8878-7600-70a6-57353c17f9a1> ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:baseSurname "Burg"@nl ;
-            pnv:givenName "Maria Magdalena"@nl ;
-            pnv:literalName "Maria Magdalena van der Burg"@nl ;
-            pnv:surnamePrefix "van der"@nl ] ;
-    sdo:children <https://ex.org/Person:003c2c38-35d2-86a9-9b93-069671714355> ;
-    sdo:familyName "van der Burg"@nl ;
-    sdo:gender sdo:Female ;
-    sdo:givenName "Maria Magdalena"@nl ;
-    sdo:name "Maria Magdalena van der Burg"@nl ;
-    sdo:spouse <https://ex.org/Person:a16e6e6a-9038-bd57-758b-4354c742c71b> .
-
 <https://ex.org/Person:a16e6e6a-9038-bd57-758b-4354c742c71b> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:02be8652-8878-7600-70a6-57353c17f9a1> ;
     sdo:children <https://ex.org/Person:003c2c38-35d2-86a9-9b93-069671714355> ;
     sdo:familyName "Vermond"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Hendrik"@nl ;
+    sdo:knows <https://ex.org/Person:36e234f5-47ac-e180-7c27-1323f98674a4>,
+        <https://ex.org/Person:8c87a838-0563-5372-d667-d756fb179a67> ;
     sdo:name "Hendrik Vermond"@nl ;
     sdo:spouse <https://ex.org/Person:294c3a87-2825-53f3-1e02-f75247a82bd2> .
 
 <https://ex.org/Source:02be8652-8878-7600-70a6-57353c17f9a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/5df5523b-31b5-4e0d-90f6-2240c2c7b85f/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/02be8652-8878-7600-70a6-57353c17f9a1"^^xsd:anyURI ;

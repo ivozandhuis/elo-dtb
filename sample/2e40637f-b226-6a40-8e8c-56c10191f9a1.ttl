@@ -5,6 +5,21 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Person:1ba46aa0-11ae-fbff-7825-122639e5b7c9> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:2e40637f-b226-6a40-8e8c-56c10191f9a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:2e40637f-b226-6a40-8e8c-56c10191f9a1_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Dorp"@nl ;
+            pnv:givenName "Claes"@nl ;
+            pnv:literalName "Claes van Dorp"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:description "Doopdatum: 11-05-1625"@nl ;
+    sdo:familyName "van Dorp"@nl ;
+    sdo:givenName "Claes"@nl ;
+    sdo:name "Claes van Dorp"@nl ;
+    sdo:parent <https://ex.org/Person:b070e614-133a-d925-9967-df17dcf0628a> .
+
 <https://ex.org/Person:7b7717c3-c09d-30bb-bce2-d6fade1479e8> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:2e40637f-b226-6a40-8e8c-56c10191f9a1> ;
     picom:hasRole picot_roles:573 ;
@@ -28,30 +43,6 @@
     sdo:givenName "Jannetgen"@nl ;
     sdo:name "Jannetgen Jans"@nl .
 
-<https://ex.org/Person:cb9d8653-6019-f29e-f0d8-d7bd50b63c6e> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:2e40637f-b226-6a40-8e8c-56c10191f9a1> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:givenName "Pieter"@nl ;
-            pnv:literalName "Pieter Zegersz"@nl ;
-            pnv:patronym "Zegersz"@nl ] ;
-    sdo:givenName "Pieter"@nl ;
-    sdo:name "Pieter Zegersz"@nl .
-
-<https://ex.org/Person:1ba46aa0-11ae-fbff-7825-122639e5b7c9> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:2e40637f-b226-6a40-8e8c-56c10191f9a1> ;
-    picom:hasRole picot_roles:575 ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:baseSurname "Dorp"@nl ;
-            pnv:givenName "Claes"@nl ;
-            pnv:literalName "Claes van Dorp"@nl ;
-            pnv:surnamePrefix "van"@nl ] ;
-    sdo:description "Doopdatum: 11-05-1625"@nl ;
-    sdo:familyName "van Dorp"@nl ;
-    sdo:givenName "Claes"@nl ;
-    sdo:name "Claes van Dorp"@nl ;
-    sdo:parent <https://ex.org/Person:b070e614-133a-d925-9967-df17dcf0628a> .
-
 <https://ex.org/Person:b070e614-133a-d925-9967-df17dcf0628a> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:2e40637f-b226-6a40-8e8c-56c10191f9a1> ;
     sdo:additionalName [ a pnv:PersonName ;
@@ -64,10 +55,29 @@
     sdo:familyName "van Dorp"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Sijmon"@nl ;
+    sdo:knows <https://ex.org/Person:7b7717c3-c09d-30bb-bce2-d6fade1479e8>,
+        <https://ex.org/Person:7f561b21-95ae-6731-e7e0-fd61b6b125ea>,
+        <https://ex.org/Person:cb9d8653-6019-f29e-f0d8-d7bd50b63c6e> ;
     sdo:name "Sijmon Claessen van Dorp"@nl .
 
+<https://ex.org/Person:cb9d8653-6019-f29e-f0d8-d7bd50b63c6e> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:2e40637f-b226-6a40-8e8c-56c10191f9a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Pieter"@nl ;
+            pnv:literalName "Pieter Zegersz"@nl ;
+            pnv:patronym "Zegersz"@nl ] ;
+    sdo:givenName "Pieter"@nl ;
+    sdo:name "Pieter Zegersz"@nl .
+
+<https://ex.org/Source:2e40637f-b226-6a40-8e8c-56c10191f9a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1625-05-11"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Source:2e40637f-b226-6a40-8e8c-56c10191f9a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/0fb6ad37-73ed-4479-858c-8dc5e6f87a29/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/2e40637f-b226-6a40-8e8c-56c10191f9a1"^^xsd:anyURI ;

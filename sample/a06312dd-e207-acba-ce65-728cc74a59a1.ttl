@@ -4,6 +4,11 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:a06312dd-e207-acba-ce65-728cc74a59a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1803-05-15"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Person:2cd6fbaf-be20-7442-ef4c-3ed3502c9061> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:a06312dd-e207-acba-ce65-728cc74a59a1> ;
     sdo:children <https://ex.org/Person:6af31cdc-3756-9daa-d352-691f9792aa73> ;
@@ -15,6 +20,7 @@
 
 <https://ex.org/Person:6af31cdc-3756-9daa-d352-691f9792aa73> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:a06312dd-e207-acba-ce65-728cc74a59a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:a06312dd-e207-acba-ce65-728cc74a59a1_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:birthDate "1803-05-08"^^xsd:date ;
     sdo:description "Doopdatum: 15-05-1803"@nl ;
@@ -34,7 +40,8 @@
     sdo:spouse <https://ex.org/Person:2cd6fbaf-be20-7442-ef4c-3ed3502c9061> .
 
 <https://ex.org/Source:a06312dd-e207-acba-ce65-728cc74a59a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/b195cab7-9adc-4f91-a3a4-cde3fe2c76c7/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/a06312dd-e207-acba-ce65-728cc74a59a1"^^xsd:anyURI ;

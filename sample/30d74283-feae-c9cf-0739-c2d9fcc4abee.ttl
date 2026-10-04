@@ -5,6 +5,11 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:30d74283-feae-c9cf-0739-c2d9fcc4abee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1700-02-21"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Person:09927189-f031-b451-aae0-4a86ed2f302f> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:30d74283-feae-c9cf-0739-c2d9fcc4abee> ;
     picom:hasRole picot_roles:573 ;
@@ -12,15 +17,9 @@
     sdo:givenName "Catarina"@nl ;
     sdo:name "Catarina Polet"@nl .
 
-<https://ex.org/Person:6028a1a1-3336-4f60-c018-b67de42d43e7> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:30d74283-feae-c9cf-0739-c2d9fcc4abee> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:familyName "Planke"@nl ;
-    sdo:givenName "Isaac"@nl ;
-    sdo:name "Isaac Planke"@nl .
-
 <https://ex.org/Person:3f0a2aba-e195-39c7-04ff-fb03ccea8882> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:30d74283-feae-c9cf-0739-c2d9fcc4abee> ;
+    picom:hasLifeEvent <https://ex.org/Source:30d74283-feae-c9cf-0739-c2d9fcc4abee_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:baseSurname "Planke"@nl ;
@@ -34,6 +33,13 @@
     sdo:parent <https://ex.org/Person:8320311a-6a19-0a70-4596-99eecf1584cb>,
         <https://ex.org/Person:940a63ad-8ef5-cf36-3230-a35fa858bd2f> .
 
+<https://ex.org/Person:6028a1a1-3336-4f60-c018-b67de42d43e7> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:30d74283-feae-c9cf-0739-c2d9fcc4abee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Planke"@nl ;
+    sdo:givenName "Isaac"@nl ;
+    sdo:name "Isaac Planke"@nl .
+
 <https://ex.org/Person:8320311a-6a19-0a70-4596-99eecf1584cb> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:30d74283-feae-c9cf-0739-c2d9fcc4abee> ;
     sdo:additionalName [ a pnv:PersonName ;
@@ -45,6 +51,8 @@
     sdo:familyName "de Planke"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Jan"@nl ;
+    sdo:knows <https://ex.org/Person:09927189-f031-b451-aae0-4a86ed2f302f>,
+        <https://ex.org/Person:6028a1a1-3336-4f60-c018-b67de42d43e7> ;
     sdo:name "Jan de Planke"@nl ;
     sdo:spouse <https://ex.org/Person:940a63ad-8ef5-cf36-3230-a35fa858bd2f> .
 
@@ -59,11 +67,14 @@
     sdo:familyName "de Planke"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName "Jannetje"@nl ;
+    sdo:knows <https://ex.org/Person:09927189-f031-b451-aae0-4a86ed2f302f>,
+        <https://ex.org/Person:6028a1a1-3336-4f60-c018-b67de42d43e7> ;
     sdo:name "Jannetje de Planke"@nl ;
     sdo:spouse <https://ex.org/Person:8320311a-6a19-0a70-4596-99eecf1584cb> .
 
 <https://ex.org/Source:30d74283-feae-c9cf-0739-c2d9fcc4abee> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/71d2140f-5a70-4262-a3a0-7021f1ac6f87/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/30d74283-feae-c9cf-0739-c2d9fcc4abee"^^xsd:anyURI ;

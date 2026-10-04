@@ -5,6 +5,27 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:7ac9aa02-5ee3-31dc-53b7-8666431169a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1652-12-22"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
+<https://ex.org/Person:17f86426-de52-6b7d-73ac-b5d7eedf8717> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:7ac9aa02-5ee3-31dc-53b7-8666431169a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:7ac9aa02-5ee3-31dc-53b7-8666431169a1_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Tol"@nl ;
+            pnv:givenName "Cornelia"@nl ;
+            pnv:literalName "Cornelia van Tol"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:description "Doopdatum: 22-12-1652"@nl ;
+    sdo:familyName "van Tol"@nl ;
+    sdo:givenName "Cornelia"@nl ;
+    sdo:name "Cornelia van Tol"@nl ;
+    sdo:parent <https://ex.org/Person:d25d2144-eb00-837c-0f16-b2df23b2c4aa>,
+        <https://ex.org/Person:ffa88001-a4c4-326b-f5a4-3051d882cda0> .
+
 <https://ex.org/Person:7d74896f-e60e-f7c9-e814-9d5681a8a330> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:7ac9aa02-5ee3-31dc-53b7-8666431169a1> ;
     picom:hasRole picot_roles:573 ;
@@ -25,6 +46,17 @@
     sdo:givenName "Grietje"@nl ;
     sdo:name "Grietje Cornelis"@nl .
 
+<https://ex.org/Person:d25d2144-eb00-837c-0f16-b2df23b2c4aa> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:7ac9aa02-5ee3-31dc-53b7-8666431169a1> ;
+    sdo:children <https://ex.org/Person:17f86426-de52-6b7d-73ac-b5d7eedf8717> ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Nn"@nl ;
+    sdo:knows <https://ex.org/Person:7d74896f-e60e-f7c9-e814-9d5681a8a330>,
+        <https://ex.org/Person:af74b143-8f41-a548-4580-724af52dcef4>,
+        <https://ex.org/Person:d5ba1d25-c4e2-1077-ab6b-b8a861f12299> ;
+    sdo:name "Nn"@nl ;
+    sdo:spouse <https://ex.org/Person:ffa88001-a4c4-326b-f5a4-3051d882cda0> .
+
 <https://ex.org/Person:d5ba1d25-c4e2-1077-ab6b-b8a861f12299> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:7ac9aa02-5ee3-31dc-53b7-8666431169a1> ;
     picom:hasRole picot_roles:573 ;
@@ -38,29 +70,6 @@
     sdo:givenName "Jacob"@nl ;
     sdo:name "Jacob Leendertsz van Immerzeel"@nl .
 
-<https://ex.org/Person:17f86426-de52-6b7d-73ac-b5d7eedf8717> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:7ac9aa02-5ee3-31dc-53b7-8666431169a1> ;
-    picom:hasRole picot_roles:575 ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:baseSurname "Tol"@nl ;
-            pnv:givenName "Cornelia"@nl ;
-            pnv:literalName "Cornelia van Tol"@nl ;
-            pnv:surnamePrefix "van"@nl ] ;
-    sdo:description "Doopdatum: 22-12-1652"@nl ;
-    sdo:familyName "van Tol"@nl ;
-    sdo:givenName "Cornelia"@nl ;
-    sdo:name "Cornelia van Tol"@nl ;
-    sdo:parent <https://ex.org/Person:d25d2144-eb00-837c-0f16-b2df23b2c4aa>,
-        <https://ex.org/Person:ffa88001-a4c4-326b-f5a4-3051d882cda0> .
-
-<https://ex.org/Person:d25d2144-eb00-837c-0f16-b2df23b2c4aa> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:7ac9aa02-5ee3-31dc-53b7-8666431169a1> ;
-    sdo:children <https://ex.org/Person:17f86426-de52-6b7d-73ac-b5d7eedf8717> ;
-    sdo:gender sdo:Female ;
-    sdo:givenName "Nn"@nl ;
-    sdo:name "Nn"@nl ;
-    sdo:spouse <https://ex.org/Person:ffa88001-a4c4-326b-f5a4-3051d882cda0> .
-
 <https://ex.org/Person:ffa88001-a4c4-326b-f5a4-3051d882cda0> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:7ac9aa02-5ee3-31dc-53b7-8666431169a1> ;
     sdo:additionalName [ a pnv:PersonName ;
@@ -73,11 +82,15 @@
     sdo:familyName "van Tol"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Jacob"@nl ;
+    sdo:knows <https://ex.org/Person:7d74896f-e60e-f7c9-e814-9d5681a8a330>,
+        <https://ex.org/Person:af74b143-8f41-a548-4580-724af52dcef4>,
+        <https://ex.org/Person:d5ba1d25-c4e2-1077-ab6b-b8a861f12299> ;
     sdo:name "Jacob Dircksz van Tol"@nl ;
     sdo:spouse <https://ex.org/Person:d25d2144-eb00-837c-0f16-b2df23b2c4aa> .
 
 <https://ex.org/Source:7ac9aa02-5ee3-31dc-53b7-8666431169a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/49f802fa-fb5d-418f-afb3-94874d3cf7e0/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/7ac9aa02-5ee3-31dc-53b7-8666431169a1"^^xsd:anyURI ;

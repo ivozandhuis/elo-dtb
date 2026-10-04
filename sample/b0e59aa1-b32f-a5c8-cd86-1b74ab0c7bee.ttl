@@ -4,12 +4,29 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:b0e59aa1-b32f-a5c8-cd86-1b74ab0c7bee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1649-05-02"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Person:3b3522f7-e734-c7e6-73c7-e4f0071bde21> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:b0e59aa1-b32f-a5c8-cd86-1b74ab0c7bee> ;
     picom:hasRole picot_roles:573 ;
     sdo:familyName "Testelinsz"@nl ;
     sdo:givenName "Glaudijne"@nl ;
     sdo:name "Glaudijne Testelinsz"@nl .
+
+<https://ex.org/Person:68a0f035-711b-2fd0-0deb-23a978d5a23c> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b0e59aa1-b32f-a5c8-cd86-1b74ab0c7bee> ;
+    sdo:children <https://ex.org/Person:f9221e49-4d0f-f128-fd25-b33f4fea5790> ;
+    sdo:familyName "Vermeulen"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jaques"@nl ;
+    sdo:knows <https://ex.org/Person:3b3522f7-e734-c7e6-73c7-e4f0071bde21>,
+        <https://ex.org/Person:a7d672c0-f39d-fe73-b711-3d3a4e9100e1>,
+        <https://ex.org/Person:cd32191d-6520-5308-df65-70ee7bd95529> ;
+    sdo:name "Jaques Vermeulen"@nl ;
+    sdo:spouse <https://ex.org/Person:f4fa04eb-c1e4-46ff-1bb5-e1756e22a54f> .
 
 <https://ex.org/Person:a7d672c0-f39d-fe73-b711-3d3a4e9100e1> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:b0e59aa1-b32f-a5c8-cd86-1b74ab0c7bee> ;
@@ -25,26 +42,21 @@
     sdo:givenName "Jannetje"@nl ;
     sdo:name "Jannetje Rijckewaert"@nl .
 
-<https://ex.org/Person:68a0f035-711b-2fd0-0deb-23a978d5a23c> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:b0e59aa1-b32f-a5c8-cd86-1b74ab0c7bee> ;
-    sdo:children <https://ex.org/Person:f9221e49-4d0f-f128-fd25-b33f4fea5790> ;
-    sdo:familyName "Vermeulen"@nl ;
-    sdo:gender sdo:Male ;
-    sdo:givenName "Jaques"@nl ;
-    sdo:name "Jaques Vermeulen"@nl ;
-    sdo:spouse <https://ex.org/Person:f4fa04eb-c1e4-46ff-1bb5-e1756e22a54f> .
-
 <https://ex.org/Person:f4fa04eb-c1e4-46ff-1bb5-e1756e22a54f> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:b0e59aa1-b32f-a5c8-cd86-1b74ab0c7bee> ;
     sdo:children <https://ex.org/Person:f9221e49-4d0f-f128-fd25-b33f4fea5790> ;
     sdo:familyName "Gavre"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName "Anneken"@nl ;
+    sdo:knows <https://ex.org/Person:3b3522f7-e734-c7e6-73c7-e4f0071bde21>,
+        <https://ex.org/Person:a7d672c0-f39d-fe73-b711-3d3a4e9100e1>,
+        <https://ex.org/Person:cd32191d-6520-5308-df65-70ee7bd95529> ;
     sdo:name "Anneken Gavre"@nl ;
     sdo:spouse <https://ex.org/Person:68a0f035-711b-2fd0-0deb-23a978d5a23c> .
 
 <https://ex.org/Person:f9221e49-4d0f-f128-fd25-b33f4fea5790> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:b0e59aa1-b32f-a5c8-cd86-1b74ab0c7bee> ;
+    picom:hasLifeEvent <https://ex.org/Source:b0e59aa1-b32f-a5c8-cd86-1b74ab0c7bee_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 02-05-1649"@nl ;
     sdo:familyName "Vermeulen"@nl ;
@@ -54,7 +66,8 @@
         <https://ex.org/Person:f4fa04eb-c1e4-46ff-1bb5-e1756e22a54f> .
 
 <https://ex.org/Source:b0e59aa1-b32f-a5c8-cd86-1b74ab0c7bee> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/a0958280-95d6-4df9-a6ee-0d47874b1a9a/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/b0e59aa1-b32f-a5c8-cd86-1b74ab0c7bee"^^xsd:anyURI ;

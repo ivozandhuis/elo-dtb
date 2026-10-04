@@ -7,6 +7,7 @@
 
 <https://ex.org/Person:5afe4584-96c2-9112-3fd0-e7e8b032e475> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:14ea2db8-cb15-c09f-c62f-87cfd8dbabee> ;
+    picom:hasLifeEvent <https://ex.org/Source:14ea2db8-cb15-c09f-c62f-87cfd8dbabee_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:baseSurname "Pla"@nl ;
@@ -32,8 +33,14 @@
     sdo:givenName "Adriaan"@nl ;
     sdo:name "Adriaan le Pla"@nl .
 
+<https://ex.org/Source:14ea2db8-cb15-c09f-c62f-87cfd8dbabee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1668-12-23"@nl ;
+    picom:eventPlace "Voorhout"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Source:14ea2db8-cb15-c09f-c62f-87cfd8dbabee> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/f265a3de-1576-4d2b-80fc-56251bb3b0cf/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/14ea2db8-cb15-c09f-c62f-87cfd8dbabee"^^xsd:anyURI ;

@@ -5,6 +5,24 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:9de75a07-e96a-b42b-2377-4947e0d099a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1680-10-06"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
+<https://ex.org/Person:09c48303-91a0-e3e5-2766-23366233cfb3> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:9de75a07-e96a-b42b-2377-4947e0d099a1> ;
+    sdo:children <https://ex.org/Person:6ceb7b2a-37fb-c68d-4b3f-23e846b74365> ;
+    sdo:familyName "Ferlin"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Etiennette"@nl ;
+    sdo:knows <https://ex.org/Person:3060495c-658d-fee4-a32b-3039d5fce707>,
+        <https://ex.org/Person:60ab1fbf-816a-08c9-796f-06b8c0454d34>,
+        <https://ex.org/Person:7abe70db-e3f2-47db-0bf7-e45bb3264914>,
+        <https://ex.org/Person:d344d014-3121-34f0-8f6a-7bab511c8f22> ;
+    sdo:name "Etiennette Ferlin"@nl ;
+    sdo:spouse <https://ex.org/Person:f877088c-1e9c-ae6e-6e01-ac3bc0620466> .
+
 <https://ex.org/Person:3060495c-658d-fee4-a32b-3039d5fce707> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:9de75a07-e96a-b42b-2377-4947e0d099a1> ;
     picom:hasRole picot_roles:573 ;
@@ -18,6 +36,17 @@
     sdo:familyName "Capel"@nl ;
     sdo:givenName "Valentin"@nl ;
     sdo:name "Valentin Capel"@nl .
+
+<https://ex.org/Person:6ceb7b2a-37fb-c68d-4b3f-23e846b74365> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:9de75a07-e96a-b42b-2377-4947e0d099a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:9de75a07-e96a-b42b-2377-4947e0d099a1_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 06-10-1680"@nl ;
+    sdo:familyName "Prevo"@nl ;
+    sdo:givenName "Jacqueline"@nl ;
+    sdo:name "Jacqueline Prevo"@nl ;
+    sdo:parent <https://ex.org/Person:09c48303-91a0-e3e5-2766-23366233cfb3>,
+        <https://ex.org/Person:f877088c-1e9c-ae6e-6e01-ac3bc0620466> .
 
 <https://ex.org/Person:7abe70db-e3f2-47db-0bf7-e45bb3264914> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:9de75a07-e96a-b42b-2377-4947e0d099a1> ;
@@ -36,36 +65,22 @@
     sdo:givenName "Charlotte"@nl ;
     sdo:name "Charlotte Segers"@nl .
 
-<https://ex.org/Person:09c48303-91a0-e3e5-2766-23366233cfb3> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:9de75a07-e96a-b42b-2377-4947e0d099a1> ;
-    sdo:children <https://ex.org/Person:6ceb7b2a-37fb-c68d-4b3f-23e846b74365> ;
-    sdo:familyName "Ferlin"@nl ;
-    sdo:gender sdo:Female ;
-    sdo:givenName "Etiennette"@nl ;
-    sdo:name "Etiennette Ferlin"@nl ;
-    sdo:spouse <https://ex.org/Person:f877088c-1e9c-ae6e-6e01-ac3bc0620466> .
-
-<https://ex.org/Person:6ceb7b2a-37fb-c68d-4b3f-23e846b74365> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:9de75a07-e96a-b42b-2377-4947e0d099a1> ;
-    picom:hasRole picot_roles:575 ;
-    sdo:description "Doopdatum: 06-10-1680"@nl ;
-    sdo:familyName "Prevo"@nl ;
-    sdo:givenName "Jacqueline"@nl ;
-    sdo:name "Jacqueline Prevo"@nl ;
-    sdo:parent <https://ex.org/Person:09c48303-91a0-e3e5-2766-23366233cfb3>,
-        <https://ex.org/Person:f877088c-1e9c-ae6e-6e01-ac3bc0620466> .
-
 <https://ex.org/Person:f877088c-1e9c-ae6e-6e01-ac3bc0620466> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:9de75a07-e96a-b42b-2377-4947e0d099a1> ;
     sdo:children <https://ex.org/Person:6ceb7b2a-37fb-c68d-4b3f-23e846b74365> ;
     sdo:familyName "Prevo"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Jan"@nl ;
+    sdo:knows <https://ex.org/Person:3060495c-658d-fee4-a32b-3039d5fce707>,
+        <https://ex.org/Person:60ab1fbf-816a-08c9-796f-06b8c0454d34>,
+        <https://ex.org/Person:7abe70db-e3f2-47db-0bf7-e45bb3264914>,
+        <https://ex.org/Person:d344d014-3121-34f0-8f6a-7bab511c8f22> ;
     sdo:name "Jan Prevo"@nl ;
     sdo:spouse <https://ex.org/Person:09c48303-91a0-e3e5-2766-23366233cfb3> .
 
 <https://ex.org/Source:9de75a07-e96a-b42b-2377-4947e0d099a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/ae7dd7a9-9231-4814-9b91-c486d84a9eab/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/9de75a07-e96a-b42b-2377-4947e0d099a1"^^xsd:anyURI ;

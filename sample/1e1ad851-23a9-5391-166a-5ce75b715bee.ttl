@@ -4,15 +4,14 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ex.org/Person:7d4d526b-b124-3365-c8e6-2c6c62540cd6> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:1e1ad851-23a9-5391-166a-5ce75b715bee> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:familyName "Soelje"@nl ;
-    sdo:givenName "Katrijn"@nl ;
-    sdo:name "Katrijn Soelje"@nl .
+<https://ex.org/Source:1e1ad851-23a9-5391-166a-5ce75b715bee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1714-06-20"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
 
 <https://ex.org/Person:02a47f59-173d-4200-b2ef-4f35f2c8ed2a> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:1e1ad851-23a9-5391-166a-5ce75b715bee> ;
+    picom:hasLifeEvent <https://ex.org/Source:1e1ad851-23a9-5391-166a-5ce75b715bee_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 20-06-1714"@nl ;
     sdo:familyName "Wijt"@nl ;
@@ -21,12 +20,20 @@
     sdo:parent <https://ex.org/Person:86b25528-5244-e980-3bd3-493075e85403>,
         <https://ex.org/Person:aad72382-b6fe-b4fe-ed5e-6d1af8d9e053> .
 
+<https://ex.org/Person:7d4d526b-b124-3365-c8e6-2c6c62540cd6> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:1e1ad851-23a9-5391-166a-5ce75b715bee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Soelje"@nl ;
+    sdo:givenName "Katrijn"@nl ;
+    sdo:name "Katrijn Soelje"@nl .
+
 <https://ex.org/Person:86b25528-5244-e980-3bd3-493075e85403> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:1e1ad851-23a9-5391-166a-5ce75b715bee> ;
     sdo:children <https://ex.org/Person:02a47f59-173d-4200-b2ef-4f35f2c8ed2a> ;
     sdo:familyName "Wijt"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "David"@nl ;
+    sdo:knows <https://ex.org/Person:7d4d526b-b124-3365-c8e6-2c6c62540cd6> ;
     sdo:name "David Wijt"@nl ;
     sdo:spouse <https://ex.org/Person:aad72382-b6fe-b4fe-ed5e-6d1af8d9e053> .
 
@@ -36,11 +43,13 @@
     sdo:familyName "Guljon"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName "Jannetje"@nl ;
+    sdo:knows <https://ex.org/Person:7d4d526b-b124-3365-c8e6-2c6c62540cd6> ;
     sdo:name "Jannetje Guljon"@nl ;
     sdo:spouse <https://ex.org/Person:86b25528-5244-e980-3bd3-493075e85403> .
 
 <https://ex.org/Source:1e1ad851-23a9-5391-166a-5ce75b715bee> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/a44361b0-7740-498c-a079-dd6932a70d8d/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/1e1ad851-23a9-5391-166a-5ce75b715bee"^^xsd:anyURI ;

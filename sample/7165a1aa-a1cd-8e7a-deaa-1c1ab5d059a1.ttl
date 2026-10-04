@@ -4,15 +4,14 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ex.org/Person:95ee7730-a94c-3dc6-7f6c-f6c6efb1e830> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:7165a1aa-a1cd-8e7a-deaa-1c1ab5d059a1> ;
-    picom:hasRole picot_roles:573 ;
-    sdo:familyName "Schroef"@nl ;
-    sdo:givenName "Pieternella"@nl ;
-    sdo:name "Pieternella Schroef"@nl .
+<https://ex.org/Source:7165a1aa-a1cd-8e7a-deaa-1c1ab5d059a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1795-10-11"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
 
 <https://ex.org/Person:262311c4-e7f4-efb1-d8ba-0ad8dffa9eda> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:7165a1aa-a1cd-8e7a-deaa-1c1ab5d059a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:7165a1aa-a1cd-8e7a-deaa-1c1ab5d059a1_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 11-10-1795"@nl ;
     sdo:familyName "Haseveld"@nl ;
@@ -27,8 +26,16 @@
     sdo:familyName "Haseveld"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Dirk"@nl ;
+    sdo:knows <https://ex.org/Person:95ee7730-a94c-3dc6-7f6c-f6c6efb1e830> ;
     sdo:name "Dirk Haseveld"@nl ;
     sdo:spouse <https://ex.org/Person:cc63bad4-9593-07f3-c580-7a5802f93d5c> .
+
+<https://ex.org/Person:95ee7730-a94c-3dc6-7f6c-f6c6efb1e830> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:7165a1aa-a1cd-8e7a-deaa-1c1ab5d059a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Schroef"@nl ;
+    sdo:givenName "Pieternella"@nl ;
+    sdo:name "Pieternella Schroef"@nl .
 
 <https://ex.org/Person:cc63bad4-9593-07f3-c580-7a5802f93d5c> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:7165a1aa-a1cd-8e7a-deaa-1c1ab5d059a1> ;
@@ -36,11 +43,13 @@
     sdo:familyName "Wingers"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName "Rachel"@nl ;
+    sdo:knows <https://ex.org/Person:95ee7730-a94c-3dc6-7f6c-f6c6efb1e830> ;
     sdo:name "Rachel Wingers"@nl ;
     sdo:spouse <https://ex.org/Person:837c16db-1b12-683b-ec7d-e07dfd7fec18> .
 
 <https://ex.org/Source:7165a1aa-a1cd-8e7a-deaa-1c1ab5d059a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/3f0a3e9a-c239-42b4-b0b4-ba1c0f8c9ee7/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/7165a1aa-a1cd-8e7a-deaa-1c1ab5d059a1"^^xsd:anyURI ;

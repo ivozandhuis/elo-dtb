@@ -5,6 +5,11 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:7adcc50e-082b-04b4-8a91-17ea03827bee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1655-09-28"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Person:05d69cbb-77f6-8a49-50c2-118e029a45f9> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:7adcc50e-082b-04b4-8a91-17ea03827bee> ;
     picom:hasRole picot_roles:573 ;
@@ -14,6 +19,48 @@
             pnv:patronym "Frans"@nl ] ;
     sdo:givenName "Aeltje"@nl ;
     sdo:name "Aeltje Frans"@nl .
+
+<https://ex.org/Person:4155d9a1-72b8-6d94-c94c-9d1fe175e612> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:7adcc50e-082b-04b4-8a91-17ea03827bee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Jacomijntje"@nl ;
+            pnv:literalName "Jacomijntje Isaax"@nl ;
+            pnv:patronym "Isaax"@nl ] ;
+    sdo:children <https://ex.org/Person:503e750b-9404-e3fb-3dca-31f0bec5c9b2> ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Jacomijntje"@nl ;
+    sdo:knows <https://ex.org/Person:05d69cbb-77f6-8a49-50c2-118e029a45f9>,
+        <https://ex.org/Person:782336f9-5ac7-75d1-a0e1-1d6411b975d9>,
+        <https://ex.org/Person:bf22cdb0-3e2e-1cf3-f177-5a7b1a4fa15a>,
+        <https://ex.org/Person:e11dd7de-e038-5dc3-87db-317bd7c12758> ;
+    sdo:name "Jacomijntje Isaax"@nl ;
+    sdo:spouse <https://ex.org/Person:46714952-9221-e86d-3981-e1bb20f96a6f> .
+
+<https://ex.org/Person:46714952-9221-e86d-3981-e1bb20f96a6f> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:7adcc50e-082b-04b4-8a91-17ea03827bee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Francois"@nl ;
+            pnv:literalName "Francois Pietersz"@nl ;
+            pnv:patronym "Pietersz"@nl ] ;
+    sdo:children <https://ex.org/Person:503e750b-9404-e3fb-3dca-31f0bec5c9b2> ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Francois"@nl ;
+    sdo:knows <https://ex.org/Person:05d69cbb-77f6-8a49-50c2-118e029a45f9>,
+        <https://ex.org/Person:782336f9-5ac7-75d1-a0e1-1d6411b975d9>,
+        <https://ex.org/Person:bf22cdb0-3e2e-1cf3-f177-5a7b1a4fa15a>,
+        <https://ex.org/Person:e11dd7de-e038-5dc3-87db-317bd7c12758> ;
+    sdo:name "Francois Pietersz"@nl ;
+    sdo:spouse <https://ex.org/Person:4155d9a1-72b8-6d94-c94c-9d1fe175e612> .
+
+<https://ex.org/Person:503e750b-9404-e3fb-3dca-31f0bec5c9b2> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:7adcc50e-082b-04b4-8a91-17ea03827bee> ;
+    picom:hasLifeEvent <https://ex.org/Source:7adcc50e-082b-04b4-8a91-17ea03827bee_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 28-09-1655"@nl ;
+    sdo:givenName "Francois"@nl ;
+    sdo:name "Francois"@nl ;
+    sdo:parent <https://ex.org/Person:4155d9a1-72b8-6d94-c94c-9d1fe175e612>,
+        <https://ex.org/Person:46714952-9221-e86d-3981-e1bb20f96a6f> .
 
 <https://ex.org/Person:782336f9-5ac7-75d1-a0e1-1d6411b975d9> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:7adcc50e-082b-04b4-8a91-17ea03827bee> ;
@@ -39,41 +86,9 @@
     sdo:givenName "Lijvijntje"@nl ;
     sdo:name "Lijvijntje Eijnhoudt"@nl .
 
-<https://ex.org/Person:4155d9a1-72b8-6d94-c94c-9d1fe175e612> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:7adcc50e-082b-04b4-8a91-17ea03827bee> ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:givenName "Jacomijntje"@nl ;
-            pnv:literalName "Jacomijntje Isaax"@nl ;
-            pnv:patronym "Isaax"@nl ] ;
-    sdo:children <https://ex.org/Person:503e750b-9404-e3fb-3dca-31f0bec5c9b2> ;
-    sdo:gender sdo:Female ;
-    sdo:givenName "Jacomijntje"@nl ;
-    sdo:name "Jacomijntje Isaax"@nl ;
-    sdo:spouse <https://ex.org/Person:46714952-9221-e86d-3981-e1bb20f96a6f> .
-
-<https://ex.org/Person:46714952-9221-e86d-3981-e1bb20f96a6f> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:7adcc50e-082b-04b4-8a91-17ea03827bee> ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:givenName "Francois"@nl ;
-            pnv:literalName "Francois Pietersz"@nl ;
-            pnv:patronym "Pietersz"@nl ] ;
-    sdo:children <https://ex.org/Person:503e750b-9404-e3fb-3dca-31f0bec5c9b2> ;
-    sdo:gender sdo:Male ;
-    sdo:givenName "Francois"@nl ;
-    sdo:name "Francois Pietersz"@nl ;
-    sdo:spouse <https://ex.org/Person:4155d9a1-72b8-6d94-c94c-9d1fe175e612> .
-
-<https://ex.org/Person:503e750b-9404-e3fb-3dca-31f0bec5c9b2> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:7adcc50e-082b-04b4-8a91-17ea03827bee> ;
-    picom:hasRole picot_roles:575 ;
-    sdo:description "Doopdatum: 28-09-1655"@nl ;
-    sdo:givenName "Francois"@nl ;
-    sdo:name "Francois"@nl ;
-    sdo:parent <https://ex.org/Person:4155d9a1-72b8-6d94-c94c-9d1fe175e612>,
-        <https://ex.org/Person:46714952-9221-e86d-3981-e1bb20f96a6f> .
-
 <https://ex.org/Source:7adcc50e-082b-04b4-8a91-17ea03827bee> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/18bab02a-27df-4fed-abe7-f3bfc85448c9/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/7adcc50e-082b-04b4-8a91-17ea03827bee"^^xsd:anyURI ;

@@ -5,6 +5,11 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Source:0991f91f-76d0-1484-5f57-653c935849a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1684-09-13"@nl ;
+    picom:eventPlace "Noordwijk"@nl ;
+    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+
 <https://ex.org/Person:0a86960e-b002-7921-bab5-39ddd8c557d2> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:0991f91f-76d0-1484-5f57-653c935849a1> ;
     sdo:additionalName [ a pnv:PersonName ;
@@ -19,6 +24,7 @@
 
 <https://ex.org/Person:4fbd4e50-2eba-62d5-7f95-dff82693c984> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:0991f91f-76d0-1484-5f57-653c935849a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:0991f91f-76d0-1484-5f57-653c935849a1_doop_event> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 13-09-1684"@nl ;
     sdo:givenName "Jeroen"@nl ;
@@ -39,7 +45,8 @@
     sdo:spouse <https://ex.org/Person:0a86960e-b002-7921-bab5-39ddd8c557d2> .
 
 <https://ex.org/Source:0991f91f-76d0-1484-5f57-653c935849a1> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+        "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/702ca6be-da1e-4eed-b916-5f0c0543787a/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/0991f91f-76d0-1484-5f57-653c935849a1"^^xsd:anyURI ;
