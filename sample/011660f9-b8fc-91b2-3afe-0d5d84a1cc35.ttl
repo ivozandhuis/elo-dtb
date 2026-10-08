@@ -1,17 +1,14 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ex.org/Source:011660f9-b8fc-91b2-3afe-0d5d84a1cc35_ondertrouw_event> a picom:LifeEvent ;
-    picom:eventDate "1708-07-26"@nl ;
-    picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/99> .
-
 <https://ex.org/Person:437e3ea6-cd2e-3657-f7fa-25f7fc33ba55> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:011660f9-b8fc-91b2-3afe-0d5d84a1cc35> ;
+    picom:hasLifeEvent <https://ex.org/Source:011660f9-b8fc-91b2-3afe-0d5d84a1cc35_ondertrouw_event> ;
     picom:hasRole picot_roles:574 ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:baseSurname "Roijen"@nl ;
@@ -30,6 +27,7 @@
 
 <https://ex.org/Person:7a11fbd3-34f6-d593-5881-28fd575cc404> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:011660f9-b8fc-91b2-3afe-0d5d84a1cc35> ;
+    picom:hasLifeEvent <https://ex.org/Source:011660f9-b8fc-91b2-3afe-0d5d84a1cc35_ondertrouw_event> ;
     picom:hasRole picot_roles:574 ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:baseSurname "Brouwhuijsen"@nl ;
@@ -48,7 +46,7 @@
     sdo:spouse <https://ex.org/Person:437e3ea6-cd2e-3657-f7fa-25f7fc33ba55> .
 
 <https://ex.org/Source:011660f9-b8fc-91b2-3afe-0d5d84a1cc35> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/549>,
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/968c1b29-1e70-4c42-a46c-2e5cf06738f3/info.json"^^xsd:anyURI ;
@@ -64,4 +62,9 @@
     sdo:locationCreated "Leiden"@nl ;
     sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 109, Periode: 1..., (toegangsnr. 1004), inv.nr. 109, Trouwboek van de Hooglandse Kerk (NH) te Leiden, 27 mei 1707 - 24 september 1711., 68, "@nl ;
     sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/011660f9-b8fc-91b2-3afe-0d5d84a1cc35"^^xsd:anyURI .
+
+<https://ex.org/Source:011660f9-b8fc-91b2-3afe-0d5d84a1cc35_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1708-07-26"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
 

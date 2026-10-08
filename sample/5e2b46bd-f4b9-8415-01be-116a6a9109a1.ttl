@@ -1,4 +1,5 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -8,7 +9,7 @@
 <https://ex.org/Source:5e2b46bd-f4b9-8415-01be-116a6a9109a1_doop_event> a picom:LifeEvent ;
     picom:eventDate "1676-01-17"@nl ;
     picom:eventPlace "Alkemade"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+    picom:eventType picot_eventtypes:75 .
 
 <https://ex.org/Person:069738e8-cebf-1a21-89f4-dd0ff5fa80fe> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:5e2b46bd-f4b9-8415-01be-116a6a9109a1> ;
@@ -69,7 +70,7 @@
     sdo:name "Cornelis Cornelisz"@nl .
 
 <https://ex.org/Source:5e2b46bd-f4b9-8415-01be-116a6a9109a1> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+    sdo:additionalType picot_eventtypes:548,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/7ae730a4-6b36-4340-b8f2-c0a67f40efbc/info.json"^^xsd:anyURI ;

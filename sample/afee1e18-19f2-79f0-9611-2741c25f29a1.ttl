@@ -1,4 +1,5 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -8,7 +9,7 @@
 <https://ex.org/Source:afee1e18-19f2-79f0-9611-2741c25f29a1_doop_event> a picom:LifeEvent ;
     picom:eventDate "1665-12-06"@nl ;
     picom:eventPlace "Warmond"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+    picom:eventType picot_eventtypes:75 .
 
 <https://ex.org/Person:8fcc4cf9-bfe2-f855-1e25-ef9e2e125563> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:afee1e18-19f2-79f0-9611-2741c25f29a1> ;
@@ -45,7 +46,7 @@
         <https://ex.org/Person:c2f3579a-e42c-479f-859e-a4de90e895f9> .
 
 <https://ex.org/Source:afee1e18-19f2-79f0-9611-2741c25f29a1> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+    sdo:additionalType picot_eventtypes:548,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/95c60148-eca7-4324-8535-3ec849c89229/info.json"^^xsd:anyURI ;

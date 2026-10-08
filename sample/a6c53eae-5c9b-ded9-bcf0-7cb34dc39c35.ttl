@@ -1,14 +1,10 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-<https://ex.org/Source:a6c53eae-5c9b-ded9-bcf0-7cb34dc39c35_ondertrouw_event> a picom:LifeEvent ;
-    picom:eventDate "1788-09-27"@nl ;
-    picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/99> .
 
 <https://ex.org/Person:214038d7-294f-80f0-39e5-2c258fa98345> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:a6c53eae-5c9b-ded9-bcf0-7cb34dc39c35> ;
@@ -26,6 +22,7 @@
 
 <https://ex.org/Person:47e1407c-d77c-07f9-52e3-6f47b35bc6ae> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:a6c53eae-5c9b-ded9-bcf0-7cb34dc39c35> ;
+    picom:hasLifeEvent <https://ex.org/Source:a6c53eae-5c9b-ded9-bcf0-7cb34dc39c35_ondertrouw_event> ;
     picom:hasRole picot_roles:574 ;
     sdo:address "Rhijn, Nieuwen by de Koornbrugsteeg"@nl ;
     sdo:birthPlace "Oude Wetering"@nl ;
@@ -49,6 +46,7 @@
 
 <https://ex.org/Person:b27d71ca-4fb9-ca2b-9561-9f3957e2e6de> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:a6c53eae-5c9b-ded9-bcf0-7cb34dc39c35> ;
+    picom:hasLifeEvent <https://ex.org/Source:a6c53eae-5c9b-ded9-bcf0-7cb34dc39c35_ondertrouw_event> ;
     picom:hasRole picot_roles:574 ;
     sdo:address "Soeterwoude"@nl ;
     sdo:birthPlace "Leydsendam"@nl ;
@@ -61,8 +59,13 @@
     sdo:parent <https://ex.org/Person:a244de69-ffe5-6d50-cab4-19f0fbadf35c> ;
     sdo:spouse <https://ex.org/Person:47e1407c-d77c-07f9-52e3-6f47b35bc6ae> .
 
+<https://ex.org/Source:a6c53eae-5c9b-ded9-bcf0-7cb34dc39c35_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1788-09-27"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
 <https://ex.org/Source:a6c53eae-5c9b-ded9-bcf0-7cb34dc39c35> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/549>,
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/1a363de9-b6e9-4368-bd7e-dfd9a13842f9/info.json"^^xsd:anyURI ;

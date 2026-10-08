@@ -1,17 +1,14 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ex.org/Source:b0a51415-2959-fa00-8ffc-ef0d4382bc35_ondertrouw_event> a picom:LifeEvent ;
-    picom:eventDate "1664-01-24"@nl ;
-    picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/99> .
-
 <https://ex.org/Person:002bda07-5f26-8d56-00cf-2f3c693ad0a2> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:b0a51415-2959-fa00-8ffc-ef0d4382bc35> ;
+    picom:hasLifeEvent <https://ex.org/Source:b0a51415-2959-fa00-8ffc-ef0d4382bc35_ondertrouw_event> ;
     picom:hasRole picot_roles:574 ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:baseSurname "Horst"@nl ;
@@ -39,6 +36,7 @@
 
 <https://ex.org/Person:78647ef2-da6d-e8f9-f54c-696f6b50b77f> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:b0a51415-2959-fa00-8ffc-ef0d4382bc35> ;
+    picom:hasLifeEvent <https://ex.org/Source:b0a51415-2959-fa00-8ffc-ef0d4382bc35_ondertrouw_event> ;
     picom:hasRole picot_roles:574 ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:givenName "Annetgen"@nl ;
@@ -65,8 +63,13 @@
     sdo:givenName "Elysabeth"@nl ;
     sdo:name "Elysabeth Jans"@nl .
 
+<https://ex.org/Source:b0a51415-2959-fa00-8ffc-ef0d4382bc35_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1664-01-24"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
 <https://ex.org/Source:b0a51415-2959-fa00-8ffc-ef0d4382bc35> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/549>,
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/a21a495a-95b9-42c1-a1cf-88a278976da0/info.json"^^xsd:anyURI ;

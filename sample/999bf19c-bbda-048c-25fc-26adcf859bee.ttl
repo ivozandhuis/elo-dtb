@@ -1,4 +1,5 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -8,7 +9,7 @@
 <https://ex.org/Source:999bf19c-bbda-048c-25fc-26adcf859bee_doop_event> a picom:LifeEvent ;
     picom:eventDate "1694-08-04"@nl ;
     picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+    picom:eventType picot_eventtypes:75 .
 
 <https://ex.org/Person:02df8aaf-1035-9dee-7751-9a8e7773463f> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:999bf19c-bbda-048c-25fc-26adcf859bee> ;
@@ -74,7 +75,7 @@
     sdo:name "Jeanne Bervais"@nl .
 
 <https://ex.org/Source:999bf19c-bbda-048c-25fc-26adcf859bee> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+    sdo:additionalType picot_eventtypes:548,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/3482f07d-2c05-4d8e-8fdd-beb3bae431da/info.json"^^xsd:anyURI ;

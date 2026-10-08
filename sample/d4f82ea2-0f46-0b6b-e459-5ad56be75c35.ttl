@@ -1,14 +1,10 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-<https://ex.org/Source:d4f82ea2-0f46-0b6b-e459-5ad56be75c35_ondertrouw_event> a picom:LifeEvent ;
-    picom:eventDate "1612-01-27"@nl ;
-    picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/99> .
 
 <https://ex.org/Person:8c47952a-df68-0682-b916-b96de8aa183c> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:d4f82ea2-0f46-0b6b-e459-5ad56be75c35> ;
@@ -26,6 +22,7 @@
 
 <https://ex.org/Person:94377f8e-d265-21d8-f17e-fa0665b431a0> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:d4f82ea2-0f46-0b6b-e459-5ad56be75c35> ;
+    picom:hasLifeEvent <https://ex.org/Source:d4f82ea2-0f46-0b6b-e459-5ad56be75c35_ondertrouw_event> ;
     picom:hasRole picot_roles:574 ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:baseSurname "Hegere"@nl ;
@@ -43,6 +40,7 @@
 
 <https://ex.org/Person:c12b7f43-a524-e64c-d13e-29c9a17b91ac> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:d4f82ea2-0f46-0b6b-e459-5ad56be75c35> ;
+    picom:hasLifeEvent <https://ex.org/Source:d4f82ea2-0f46-0b6b-e459-5ad56be75c35_ondertrouw_event> ;
     picom:hasRole picot_roles:574 ;
     sdo:birthPlace "Leyden"@nl ;
     sdo:familyName "Dindermans"@nl ;
@@ -61,8 +59,13 @@
     sdo:givenName "Cathelyne"@nl ;
     sdo:name "Cathelyne Dindermans"@nl .
 
+<https://ex.org/Source:d4f82ea2-0f46-0b6b-e459-5ad56be75c35_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1612-01-27"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
 <https://ex.org/Source:d4f82ea2-0f46-0b6b-e459-5ad56be75c35> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/549>,
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/e2039063-129f-434e-883b-ea4fe96c3b6e/info.json"^^xsd:anyURI ;

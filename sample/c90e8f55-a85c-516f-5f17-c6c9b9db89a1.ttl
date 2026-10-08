@@ -1,4 +1,5 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix sdo: <https://schema.org/> .
@@ -7,7 +8,7 @@
 <https://ex.org/Source:c90e8f55-a85c-516f-5f17-c6c9b9db89a1_doop_event> a picom:LifeEvent ;
     picom:eventDate "1801-06-21"@nl ;
     picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+    picom:eventType picot_eventtypes:75 .
 
 <https://ex.org/Person:4217cf89-6f0e-dc1f-e2cb-562d103ec060> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:c90e8f55-a85c-516f-5f17-c6c9b9db89a1> ;
@@ -57,7 +58,7 @@
     sdo:name "Maria Nuij"@nl .
 
 <https://ex.org/Source:c90e8f55-a85c-516f-5f17-c6c9b9db89a1> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+    sdo:additionalType picot_eventtypes:548,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/b70bf7ad-b68e-436b-b1cd-4a9dbd1ace23/info.json"^^xsd:anyURI ;

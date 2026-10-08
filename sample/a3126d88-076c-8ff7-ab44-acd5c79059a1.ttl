@@ -1,4 +1,5 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -8,7 +9,7 @@
 <https://ex.org/Source:a3126d88-076c-8ff7-ab44-acd5c79059a1_doop_event> a picom:LifeEvent ;
     picom:eventDate "1702-02-14"@nl ;
     picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+    picom:eventType picot_eventtypes:75 .
 
 <https://ex.org/Person:2261ccd8-8052-5c65-c704-45ba817d121a> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:a3126d88-076c-8ff7-ab44-acd5c79059a1> ;
@@ -60,7 +61,7 @@
     sdo:name "Maria Dupont"@nl .
 
 <https://ex.org/Source:a3126d88-076c-8ff7-ab44-acd5c79059a1> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+    sdo:additionalType picot_eventtypes:548,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/8bd5fa4a-2db9-4e00-9d76-0c4e281db33d/info.json"^^xsd:anyURI ;

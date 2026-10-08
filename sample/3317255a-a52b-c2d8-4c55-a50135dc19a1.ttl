@@ -1,4 +1,5 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -8,7 +9,7 @@
 <https://ex.org/Source:3317255a-a52b-c2d8-4c55-a50135dc19a1_doop_event> a picom:LifeEvent ;
     picom:eventDate "1763-05-29"@nl ;
     picom:eventPlace "Leiderdorp"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+    picom:eventType picot_eventtypes:75 .
 
 <https://ex.org/Person:2a5aaddd-1ad8-a626-4f8f-0a4a2238c83c> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:3317255a-a52b-c2d8-4c55-a50135dc19a1> ;
@@ -78,7 +79,7 @@
     sdo:name "Abraham Silvius"@nl .
 
 <https://ex.org/Source:3317255a-a52b-c2d8-4c55-a50135dc19a1> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+    sdo:additionalType picot_eventtypes:548,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/97de6650-49e5-4401-ad9f-112043f967e7/info.json"^^xsd:anyURI ;

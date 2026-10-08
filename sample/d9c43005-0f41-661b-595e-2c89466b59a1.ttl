@@ -1,4 +1,5 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -8,7 +9,7 @@
 <https://ex.org/Source:d9c43005-0f41-661b-595e-2c89466b59a1_doop_event> a picom:LifeEvent ;
     picom:eventDate "1780-08-27"@nl ;
     picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+    picom:eventType picot_eventtypes:75 .
 
 <https://ex.org/Person:4b251992-e656-163a-7899-d9dc6656c99b> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:d9c43005-0f41-661b-595e-2c89466b59a1> ;
@@ -79,7 +80,7 @@
     sdo:name "Wouter Gerretse"@nl .
 
 <https://ex.org/Source:d9c43005-0f41-661b-595e-2c89466b59a1> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+    sdo:additionalType picot_eventtypes:548,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/9a7397c8-68fb-40d3-abd7-9f6d4ac3b44c/info.json"^^xsd:anyURI ;

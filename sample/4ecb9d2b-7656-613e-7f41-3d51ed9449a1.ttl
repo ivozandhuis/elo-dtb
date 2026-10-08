@@ -1,4 +1,5 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -8,7 +9,7 @@
 <https://ex.org/Source:4ecb9d2b-7656-613e-7f41-3d51ed9449a1_doop_event> a picom:LifeEvent ;
     picom:eventDate "1689-02-27"@nl ;
     picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+    picom:eventType picot_eventtypes:75 .
 
 <https://ex.org/Person:3bc3950f-6698-b69e-5b35-9be0fa252d63> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:4ecb9d2b-7656-613e-7f41-3d51ed9449a1> ;
@@ -63,7 +64,7 @@
     sdo:name "Carel Speck"@nl .
 
 <https://ex.org/Source:4ecb9d2b-7656-613e-7f41-3d51ed9449a1> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+    sdo:additionalType picot_eventtypes:548,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/717e7f96-12da-4598-ad3c-13403db74079/info.json"^^xsd:anyURI ;

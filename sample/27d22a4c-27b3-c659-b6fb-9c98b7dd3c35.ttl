@@ -1,4 +1,5 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix sdo: <https://schema.org/> .
@@ -13,13 +14,9 @@
     sdo:givenName "Henric"@nl ;
     sdo:name "Henric Prins"@nl .
 
-<https://ex.org/Source:27d22a4c-27b3-c659-b6fb-9c98b7dd3c35_ondertrouw_event> a picom:LifeEvent ;
-    picom:eventDate "1628-05-17"@nl ;
-    picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/99> .
-
 <https://ex.org/Person:19610d1d-e40c-07e6-31cb-63250afb9006> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:27d22a4c-27b3-c659-b6fb-9c98b7dd3c35> ;
+    picom:hasLifeEvent <https://ex.org/Source:27d22a4c-27b3-c659-b6fb-9c98b7dd3c35_ondertrouw_event> ;
     picom:hasRole picot_roles:574 ;
     sdo:address "Oude Cingel"@nl ;
     sdo:familyName "Norman"@nl ;
@@ -31,6 +28,7 @@
 
 <https://ex.org/Person:56e1c8d3-9681-1582-64aa-481aa002f3b4> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:27d22a4c-27b3-c659-b6fb-9c98b7dd3c35> ;
+    picom:hasLifeEvent <https://ex.org/Source:27d22a4c-27b3-c659-b6fb-9c98b7dd3c35_ondertrouw_event> ;
     picom:hasRole picot_roles:574 ;
     sdo:address "Langegraft"@nl ;
     sdo:familyName "Motte"@nl ;
@@ -50,8 +48,13 @@
     sdo:givenName "Annetgen"@nl ;
     sdo:name "Annetgen Motte"@nl .
 
+<https://ex.org/Source:27d22a4c-27b3-c659-b6fb-9c98b7dd3c35_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1628-05-17"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
 <https://ex.org/Source:27d22a4c-27b3-c659-b6fb-9c98b7dd3c35> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/549>,
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/3d103bf0-0cf6-479d-8b42-189852b8cf35/info.json"^^xsd:anyURI ;

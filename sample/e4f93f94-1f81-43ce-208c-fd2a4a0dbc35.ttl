@@ -1,17 +1,14 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ex.org/Source:e4f93f94-1f81-43ce-208c-fd2a4a0dbc35_huwelijk_event> a picom:LifeEvent ;
-    picom:eventDate "1811-07-28"@nl ;
-    picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/83> .
-
 <https://ex.org/Person:7112d596-e5d2-c868-7c0d-ad0f7ef49f17> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:e4f93f94-1f81-43ce-208c-fd2a4a0dbc35> ;
+    picom:hasLifeEvent <https://ex.org/Source:e4f93f94-1f81-43ce-208c-fd2a4a0dbc35_huwelijk_event> ;
     picom:hasRole picot_roles:574 ;
     sdo:familyName "Saroni"@nl ;
     sdo:gender sdo:Male ;
@@ -21,6 +18,7 @@
 
 <https://ex.org/Person:84617431-041a-4dfe-b740-11507771b289> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:e4f93f94-1f81-43ce-208c-fd2a4a0dbc35> ;
+    picom:hasLifeEvent <https://ex.org/Source:e4f93f94-1f81-43ce-208c-fd2a4a0dbc35_huwelijk_event> ;
     picom:hasRole picot_roles:574 ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:baseSurname "Es"@nl ;
@@ -34,7 +32,7 @@
     sdo:spouse <https://ex.org/Person:7112d596-e5d2-c868-7c0d-ad0f7ef49f17> .
 
 <https://ex.org/Source:e4f93f94-1f81-43ce-208c-fd2a4a0dbc35> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/549>,
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/63c24309-3afa-45e0-b838-4a3988fd57d3/info.json"^^xsd:anyURI ;
@@ -50,4 +48,9 @@
     sdo:locationCreated "Leiden"@nl ;
     sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 297, Periode: 1..., (toegangsnr. 1004), inv.nr. 297, Doopboek en trouwboek van de kerk aan de St. Jorissteeg (RK) te Leiden, 1801 - 1811., "@nl ;
     sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/e4f93f94-1f81-43ce-208c-fd2a4a0dbc35"^^xsd:anyURI .
+
+<https://ex.org/Source:e4f93f94-1f81-43ce-208c-fd2a4a0dbc35_huwelijk_event> a picom:LifeEvent ;
+    picom:eventDate "1811-07-28"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:83 .
 

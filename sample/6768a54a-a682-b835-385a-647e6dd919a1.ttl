@@ -1,4 +1,5 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -8,7 +9,7 @@
 <https://ex.org/Source:6768a54a-a682-b835-385a-647e6dd919a1_doop_event> a picom:LifeEvent ;
     picom:eventDate "1654-02-22"@nl ;
     picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+    picom:eventType picot_eventtypes:75 .
 
 <https://ex.org/Person:163b915a-a14b-539e-2c1d-21c9d5d806b4> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:6768a54a-a682-b835-385a-647e6dd919a1> ;
@@ -67,7 +68,7 @@
     sdo:name "Jean Dieckhuyse"@nl .
 
 <https://ex.org/Source:6768a54a-a682-b835-385a-647e6dd919a1> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+    sdo:additionalType picot_eventtypes:548,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/bf6cecc5-a553-4d24-a61f-f7bbd27c7a95/info.json"^^xsd:anyURI ;

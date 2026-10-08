@@ -1,4 +1,5 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -8,7 +9,7 @@
 <https://ex.org/Source:2050793d-2b4a-f5ca-86db-82a96c766bee_doop_event> a picom:LifeEvent ;
     picom:eventDate "1634-04-16"@nl ;
     picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+    picom:eventType picot_eventtypes:75 .
 
 <https://ex.org/Person:2c671964-527c-ed65-6bb8-f5360734de05> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:2050793d-2b4a-f5ca-86db-82a96c766bee> ;
@@ -74,7 +75,7 @@
     sdo:name "Arent Claessen"@nl .
 
 <https://ex.org/Source:2050793d-2b4a-f5ca-86db-82a96c766bee> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+    sdo:additionalType picot_eventtypes:548,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/71b986d3-0cce-49c4-bea6-0112417baf7e/info.json"^^xsd:anyURI ;

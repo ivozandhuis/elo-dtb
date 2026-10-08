@@ -1,22 +1,15 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ex.org/Source:d254e081-a774-a593-c107-2ef76038ac35_huwelijk_event> a picom:LifeEvent ;
-    picom:eventDate "1693-06-20"@nl ;
-    picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/83> .
-
-<https://ex.org/Source:d254e081-a774-a593-c107-2ef76038ac35_ondertrouw_event> a picom:LifeEvent ;
-    picom:eventDate "1693-06-05"@nl ;
-    picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/99> .
-
 <https://ex.org/Person:2ba45144-3522-d1ca-f746-16adf240f092> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:d254e081-a774-a593-c107-2ef76038ac35> ;
+    picom:hasLifeEvent <https://ex.org/Source:d254e081-a774-a593-c107-2ef76038ac35_huwelijk_event>,
+        <https://ex.org/Source:d254e081-a774-a593-c107-2ef76038ac35_ondertrouw_event> ;
     picom:hasRole picot_roles:574 ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:givenName "Cataryn"@nl ;
@@ -44,6 +37,8 @@
 
 <https://ex.org/Person:ae6687b7-71f2-fafa-958d-578456541509> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:d254e081-a774-a593-c107-2ef76038ac35> ;
+    picom:hasLifeEvent <https://ex.org/Source:d254e081-a774-a593-c107-2ef76038ac35_huwelijk_event>,
+        <https://ex.org/Source:d254e081-a774-a593-c107-2ef76038ac35_ondertrouw_event> ;
     picom:hasRole picot_roles:574 ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:givenName "Guielmus"@nl ;
@@ -70,8 +65,18 @@
     sdo:givenName "Lysbeth"@nl ;
     sdo:name "Lysbeth Jans"@nl .
 
+<https://ex.org/Source:d254e081-a774-a593-c107-2ef76038ac35_huwelijk_event> a picom:LifeEvent ;
+    picom:eventDate "1693-06-20"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:83 .
+
+<https://ex.org/Source:d254e081-a774-a593-c107-2ef76038ac35_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1693-06-05"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
 <https://ex.org/Source:d254e081-a774-a593-c107-2ef76038ac35> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/549>,
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/2ea7171b-14e7-47bf-8afe-2d8f74b38598/info.json"^^xsd:anyURI ;

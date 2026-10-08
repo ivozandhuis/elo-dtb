@@ -1,17 +1,14 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ex.org/Source:a5aa2c4f-4d89-dad4-346f-8e95afd13c35_ondertrouw_event> a picom:LifeEvent ;
-    picom:eventDate "1623-05-19"@nl ;
-    picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/99> .
-
 <https://ex.org/Person:10bf4f4f-5d79-3839-4fee-eb6d5f383337> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:a5aa2c4f-4d89-dad4-346f-8e95afd13c35> ;
+    picom:hasLifeEvent <https://ex.org/Source:a5aa2c4f-4d89-dad4-346f-8e95afd13c35_ondertrouw_event> ;
     picom:hasRole picot_roles:574 ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:givenName "Aeltgen"@nl ;
@@ -25,6 +22,7 @@
 
 <https://ex.org/Person:2d4e096b-7a24-2853-ae7f-1d7b97cc3da4> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:a5aa2c4f-4d89-dad4-346f-8e95afd13c35> ;
+    picom:hasLifeEvent <https://ex.org/Source:a5aa2c4f-4d89-dad4-346f-8e95afd13c35_ondertrouw_event> ;
     picom:hasRole picot_roles:574 ;
     sdo:birthPlace "Engelant"@nl ;
     sdo:familyName "Permetter"@nl ;
@@ -35,7 +33,7 @@
     sdo:spouse <https://ex.org/Person:10bf4f4f-5d79-3839-4fee-eb6d5f383337> .
 
 <https://ex.org/Source:a5aa2c4f-4d89-dad4-346f-8e95afd13c35> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/549>,
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/cfb01bcc-19bb-49bd-8acb-f6955fe41fac/info.json"^^xsd:anyURI ;
@@ -51,4 +49,9 @@
     sdo:locationCreated "Leiden"@nl ;
     sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 9, Periode: 161..., (toegangsnr. 1004), inv.nr. 9, I. Kerkelijk ondertrouwboek (NH) van Leiden, juni 1619 - augustus 1626., 69v, "@nl ;
     sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/a5aa2c4f-4d89-dad4-346f-8e95afd13c35"^^xsd:anyURI .
+
+<https://ex.org/Source:a5aa2c4f-4d89-dad4-346f-8e95afd13c35_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1623-05-19"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
 

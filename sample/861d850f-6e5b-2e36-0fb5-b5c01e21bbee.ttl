@@ -1,4 +1,5 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -8,7 +9,7 @@
 <https://ex.org/Source:861d850f-6e5b-2e36-0fb5-b5c01e21bbee_doop_event> a picom:LifeEvent ;
     picom:eventDate "1765-07-16"@nl ;
     picom:eventPlace "Alkemade"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+    picom:eventType picot_eventtypes:75 .
 
 <https://ex.org/Person:0ef43a76-ea44-779b-cd6a-f627db2c8536> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:861d850f-6e5b-2e36-0fb5-b5c01e21bbee> ;
@@ -80,7 +81,7 @@
     sdo:spouse <https://ex.org/Person:b136a0ba-fa22-b5ab-73c2-1a4e8cef2310> .
 
 <https://ex.org/Source:861d850f-6e5b-2e36-0fb5-b5c01e21bbee> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+    sdo:additionalType picot_eventtypes:548,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/b71f3fe8-006a-4f1e-937d-0080c3024e15/info.json"^^xsd:anyURI ;

@@ -1,14 +1,10 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-<https://ex.org/Source:56652804-3e80-daab-24e7-fc4eef93dc35_ondertrouw_event> a picom:LifeEvent ;
-    picom:eventDate "1635-03-09"@nl ;
-    picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/99> .
 
 <https://ex.org/Person:6a4422be-5103-eedb-ccb7-777b0e54ffef> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:56652804-3e80-daab-24e7-fc4eef93dc35> ;
@@ -27,6 +23,7 @@
 
 <https://ex.org/Person:71944655-3068-e7ac-ac0d-c8592238e022> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:56652804-3e80-daab-24e7-fc4eef93dc35> ;
+    picom:hasLifeEvent <https://ex.org/Source:56652804-3e80-daab-24e7-fc4eef93dc35_ondertrouw_event> ;
     picom:hasRole picot_roles:574 ;
     picom:hasUncle_Aunt <https://ex.org/Person:6a4422be-5103-eedb-ccb7-777b0e54ffef> ;
     sdo:additionalName [ a pnv:PersonName ;
@@ -76,6 +73,7 @@
 
 <https://ex.org/Person:ceb1d675-820f-b386-07f3-1de79aefee04> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:56652804-3e80-daab-24e7-fc4eef93dc35> ;
+    picom:hasLifeEvent <https://ex.org/Source:56652804-3e80-daab-24e7-fc4eef93dc35_ondertrouw_event> ;
     picom:hasRole picot_roles:574 ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:baseSurname "Loopenduyn"@nl ;
@@ -92,8 +90,13 @@
     sdo:parent <https://ex.org/Person:a23d82fe-42c8-0625-a8d6-896b41382bdc> ;
     sdo:spouse <https://ex.org/Person:71944655-3068-e7ac-ac0d-c8592238e022> .
 
+<https://ex.org/Source:56652804-3e80-daab-24e7-fc4eef93dc35_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1635-03-09"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
 <https://ex.org/Source:56652804-3e80-daab-24e7-fc4eef93dc35> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/549>,
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/816536c0-4c46-434e-bee3-2c1494ec16d2/info.json"^^xsd:anyURI ;

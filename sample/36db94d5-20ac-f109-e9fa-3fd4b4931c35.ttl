@@ -1,17 +1,14 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ex.org/Source:36db94d5-20ac-f109-e9fa-3fd4b4931c35_ondertrouw_event> a picom:LifeEvent ;
-    picom:eventDate "1646-05-29"@nl ;
-    picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/99> .
-
 <https://ex.org/Person:2fee539e-b608-01f6-945e-e5f40c058400> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:36db94d5-20ac-f109-e9fa-3fd4b4931c35> ;
+    picom:hasLifeEvent <https://ex.org/Source:36db94d5-20ac-f109-e9fa-3fd4b4931c35_ondertrouw_event> ;
     picom:hasRole picot_roles:574 ;
     picom:isWidOf <https://ex.org/Person:42c16cd4-504c-a77a-9bf6-ea7286b6313f> ;
     sdo:address "Achtergraft"@nl ;
@@ -56,6 +53,7 @@
 
 <https://ex.org/Person:e608089d-4c80-2697-ba94-47b4e9ec05d6> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:36db94d5-20ac-f109-e9fa-3fd4b4931c35> ;
+    picom:hasLifeEvent <https://ex.org/Source:36db94d5-20ac-f109-e9fa-3fd4b4931c35_ondertrouw_event> ;
     picom:hasRole picot_roles:574 ;
     sdo:address "Houtmart, Nieuwe"@nl ;
     sdo:birthPlace "Pomeringen"@nl ;
@@ -67,8 +65,13 @@
     sdo:name "Claes Hoverder"@nl ;
     sdo:spouse <https://ex.org/Person:2fee539e-b608-01f6-945e-e5f40c058400> .
 
+<https://ex.org/Source:36db94d5-20ac-f109-e9fa-3fd4b4931c35_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1646-05-29"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
 <https://ex.org/Source:36db94d5-20ac-f109-e9fa-3fd4b4931c35> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/549>,
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/808aa3f8-1242-470b-9f34-5e109ebf3aa3/info.json"^^xsd:anyURI ;

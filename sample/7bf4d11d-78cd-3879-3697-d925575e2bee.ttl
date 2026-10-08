@@ -1,4 +1,5 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -8,7 +9,7 @@
 <https://ex.org/Source:7bf4d11d-78cd-3879-3697-d925575e2bee_doop_event> a picom:LifeEvent ;
     picom:eventDate "1687-08-19"@nl ;
     picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+    picom:eventType picot_eventtypes:75 .
 
 <https://ex.org/Person:a2d62dcb-7705-597e-d39b-7f832115ec20> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:7bf4d11d-78cd-3879-3697-d925575e2bee> ;
@@ -67,7 +68,7 @@
     sdo:name "Margerata Jaspersen"@nl .
 
 <https://ex.org/Source:7bf4d11d-78cd-3879-3697-d925575e2bee> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+    sdo:additionalType picot_eventtypes:548,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/4196be58-fd52-43de-b82c-4cca201698ae/info.json"^^xsd:anyURI ;

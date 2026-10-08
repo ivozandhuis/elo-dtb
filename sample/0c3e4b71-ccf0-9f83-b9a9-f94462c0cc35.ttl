@@ -1,22 +1,15 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ex.org/Source:0c3e4b71-ccf0-9f83-b9a9-f94462c0cc35_huwelijk_event> a picom:LifeEvent ;
-    picom:eventDate "1613-02-10"@nl ;
-    picom:eventPlace "Warmond"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/83> .
-
-<https://ex.org/Source:0c3e4b71-ccf0-9f83-b9a9-f94462c0cc35_ondertrouw_event> a picom:LifeEvent ;
-    picom:eventDate "1613-01-24"@nl ;
-    picom:eventPlace "Warmond"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/99> .
-
 <https://ex.org/Person:079c419e-acc5-70d0-c81a-d16110d12e5e> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:0c3e4b71-ccf0-9f83-b9a9-f94462c0cc35> ;
+    picom:hasLifeEvent <https://ex.org/Source:0c3e4b71-ccf0-9f83-b9a9-f94462c0cc35_huwelijk_event>,
+        <https://ex.org/Source:0c3e4b71-ccf0-9f83-b9a9-f94462c0cc35_ondertrouw_event> ;
     picom:hasRole picot_roles:574 ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:givenName "Anneken"@nl ;
@@ -30,6 +23,8 @@
 
 <https://ex.org/Person:8cfb9757-e0d1-6963-a1ae-1ea86d3c4c1c> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:0c3e4b71-ccf0-9f83-b9a9-f94462c0cc35> ;
+    picom:hasLifeEvent <https://ex.org/Source:0c3e4b71-ccf0-9f83-b9a9-f94462c0cc35_huwelijk_event>,
+        <https://ex.org/Source:0c3e4b71-ccf0-9f83-b9a9-f94462c0cc35_ondertrouw_event> ;
     picom:hasRole picot_roles:574 ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:givenName "Jan"@nl ;
@@ -42,7 +37,7 @@
     sdo:spouse <https://ex.org/Person:079c419e-acc5-70d0-c81a-d16110d12e5e> .
 
 <https://ex.org/Source:0c3e4b71-ccf0-9f83-b9a9-f94462c0cc35> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/549>,
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/d654f0d3-e815-41c7-bf29-3f7fff21a7ee/info.json"^^xsd:anyURI ;
@@ -59,4 +54,14 @@
     sdo:locationCreated "Warmond"@nl ;
     sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Gemeente Warmond (1575-1930), Deel: 714, Periode: 1599-1646, (toegangsnr. 0600), inv.nr. 714, Doopboek en trouwboek (NH) van Warmond, 1599 - 1646., 16, "@nl ;
     sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/0c3e4b71-ccf0-9f83-b9a9-f94462c0cc35"^^xsd:anyURI .
+
+<https://ex.org/Source:0c3e4b71-ccf0-9f83-b9a9-f94462c0cc35_huwelijk_event> a picom:LifeEvent ;
+    picom:eventDate "1613-02-10"@nl ;
+    picom:eventPlace "Warmond"@nl ;
+    picom:eventType picot_eventtypes:83 .
+
+<https://ex.org/Source:0c3e4b71-ccf0-9f83-b9a9-f94462c0cc35_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1613-01-24"@nl ;
+    picom:eventPlace "Warmond"@nl ;
+    picom:eventType picot_eventtypes:99 .
 

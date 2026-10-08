@@ -1,4 +1,5 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -8,7 +9,7 @@
 <https://ex.org/Source:7adcc50e-082b-04b4-8a91-17ea03827bee_doop_event> a picom:LifeEvent ;
     picom:eventDate "1655-09-28"@nl ;
     picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+    picom:eventType picot_eventtypes:75 .
 
 <https://ex.org/Person:05d69cbb-77f6-8a49-50c2-118e029a45f9> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:7adcc50e-082b-04b4-8a91-17ea03827bee> ;
@@ -87,7 +88,7 @@
     sdo:name "Lijvijntje Eijnhoudt"@nl .
 
 <https://ex.org/Source:7adcc50e-082b-04b4-8a91-17ea03827bee> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+    sdo:additionalType picot_eventtypes:548,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/18bab02a-27df-4fed-abe7-f3bfc85448c9/info.json"^^xsd:anyURI ;

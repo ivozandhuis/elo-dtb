@@ -1,14 +1,10 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-<https://ex.org/Source:965e67b1-b62b-2e8c-23d7-8f5e11908c35_ondertrouw_event> a picom:LifeEvent ;
-    picom:eventDate "1702-04-29"@nl ;
-    picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/99> .
 
 <https://ex.org/Person:39991275-1eb5-3ec8-6900-a1f9339eea04> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:965e67b1-b62b-2e8c-23d7-8f5e11908c35> ;
@@ -27,6 +23,7 @@
 
 <https://ex.org/Person:4f4401f8-1548-3ee2-1136-443c553c7b16> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:965e67b1-b62b-2e8c-23d7-8f5e11908c35> ;
+    picom:hasLifeEvent <https://ex.org/Source:965e67b1-b62b-2e8c-23d7-8f5e11908c35_ondertrouw_event> ;
     picom:hasRole picot_roles:574 ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:baseSurname "Lip"@nl ;
@@ -45,6 +42,7 @@
 
 <https://ex.org/Person:6a3673cc-c51d-197a-67da-e49f4b041684> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:965e67b1-b62b-2e8c-23d7-8f5e11908c35> ;
+    picom:hasLifeEvent <https://ex.org/Source:965e67b1-b62b-2e8c-23d7-8f5e11908c35_ondertrouw_event> ;
     picom:hasRole picot_roles:574 ;
     sdo:address "Haarlemstraat"@nl ;
     sdo:birthPlace "Luynen Brandenburg"@nl ;
@@ -64,8 +62,13 @@
     sdo:givenName "Catharijn"@nl ;
     sdo:name "Catharijn Mullikhoff"@nl .
 
+<https://ex.org/Source:965e67b1-b62b-2e8c-23d7-8f5e11908c35_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1702-04-29"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
 <https://ex.org/Source:965e67b1-b62b-2e8c-23d7-8f5e11908c35> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/549>,
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/98ac4319-7108-4073-96b9-bbc354bc74c0/info.json"^^xsd:anyURI ;

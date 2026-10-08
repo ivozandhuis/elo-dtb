@@ -1,4 +1,5 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -8,7 +9,7 @@
 <https://ex.org/Source:f41c2e7f-bb23-bbdc-36ff-365be01fabee_doop_event> a picom:LifeEvent ;
     picom:eventDate "1728-11-09"@nl ;
     picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+    picom:eventType picot_eventtypes:75 .
 
 <https://ex.org/Person:0d57e570-791c-cbca-d425-729fec082139> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:f41c2e7f-bb23-bbdc-36ff-365be01fabee> ;
@@ -81,7 +82,7 @@
     sdo:name "Katrina van Dalen"@nl .
 
 <https://ex.org/Source:f41c2e7f-bb23-bbdc-36ff-365be01fabee> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+    sdo:additionalType picot_eventtypes:548,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/8286f69a-6ca0-4140-99b8-acbae0be1497/info.json"^^xsd:anyURI ;

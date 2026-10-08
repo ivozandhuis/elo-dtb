@@ -1,4 +1,5 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -8,7 +9,7 @@
 <https://ex.org/Source:ece1ce8d-e5e4-83ad-4b58-6af54056d9a1_doop_event> a picom:LifeEvent ;
     picom:eventDate "1711-08-30"@nl ;
     picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+    picom:eventType picot_eventtypes:75 .
 
 <https://ex.org/Person:1ef3c95b-04e3-6fb7-b4b1-03c90568bf57> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:ece1ce8d-e5e4-83ad-4b58-6af54056d9a1> ;
@@ -67,7 +68,7 @@
     sdo:name "Dirk Dirksz"@nl .
 
 <https://ex.org/Source:ece1ce8d-e5e4-83ad-4b58-6af54056d9a1> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+    sdo:additionalType picot_eventtypes:548,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/9a3f3b70-b0b9-4a4b-b122-d1e9fd2c2474/info.json"^^xsd:anyURI ;

@@ -1,4 +1,5 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -8,7 +9,7 @@
 <https://ex.org/Source:9686f325-11cb-ed6c-929c-4b8e9d95cbee_doop_event> a picom:LifeEvent ;
     picom:eventDate "1729-04-07"@nl ;
     picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+    picom:eventType picot_eventtypes:75 .
 
 <https://ex.org/Person:19509f49-f7a8-1853-c57c-e12ed9302660> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:9686f325-11cb-ed6c-929c-4b8e9d95cbee> ;
@@ -68,7 +69,7 @@
     sdo:name "Otto Jacobus van der Vin"@nl .
 
 <https://ex.org/Source:9686f325-11cb-ed6c-929c-4b8e9d95cbee> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+    sdo:additionalType picot_eventtypes:548,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/4694377a-c1dd-4531-ad24-6c4df1d242e4/info.json"^^xsd:anyURI ;

@@ -1,16 +1,13 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ex.org/Source:ef99e7d7-2c10-6aa8-197e-dc77c7f39c35_huwelijk_event> a picom:LifeEvent ;
-    picom:eventDate "1796-01-07"@nl ;
-    picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/83> .
-
 <https://ex.org/Person:398f40e6-5fd8-8391-93f3-89e2e9222caa> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:ef99e7d7-2c10-6aa8-197e-dc77c7f39c35> ;
+    picom:hasLifeEvent <https://ex.org/Source:ef99e7d7-2c10-6aa8-197e-dc77c7f39c35_huwelijk_event> ;
     picom:hasRole picot_roles:574 ;
     sdo:description "titel: Dominus"@nl ;
     sdo:familyName "Serrurier"@nl ;
@@ -22,6 +19,7 @@
 
 <https://ex.org/Person:6df8a1a5-1dcd-5c5a-5608-25beaa12a62f> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:ef99e7d7-2c10-6aa8-197e-dc77c7f39c35> ;
+    picom:hasLifeEvent <https://ex.org/Source:ef99e7d7-2c10-6aa8-197e-dc77c7f39c35_huwelijk_event> ;
     picom:hasRole picot_roles:574 ;
     sdo:familyName "Hahn"@nl ;
     sdo:gender sdo:Female ;
@@ -30,7 +28,7 @@
     sdo:spouse <https://ex.org/Person:398f40e6-5fd8-8391-93f3-89e2e9222caa> .
 
 <https://ex.org/Source:ef99e7d7-2c10-6aa8-197e-dc77c7f39c35> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/549>,
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/407f435d-0105-4d56-9a90-a8f93bbc62ff/info.json"^^xsd:anyURI ;
@@ -46,4 +44,9 @@
     sdo:locationCreated "Leiden"@nl ;
     sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Schepenbank (Oud Rechterlijk Archief) van Leiden, Deel: 211D, Periode: 1796-1805, (toegangsnr. 0508), inv.nr. 211D, D. 1796-1805., "@nl ;
     sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/ef99e7d7-2c10-6aa8-197e-dc77c7f39c35"^^xsd:anyURI .
+
+<https://ex.org/Source:ef99e7d7-2c10-6aa8-197e-dc77c7f39c35_huwelijk_event> a picom:LifeEvent ;
+    picom:eventDate "1796-01-07"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:83 .
 

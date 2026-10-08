@@ -1,4 +1,5 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -22,14 +23,9 @@
     sdo:givenName "Elisabeth"@nl ;
     sdo:name "Elisabeth Noldes"@nl .
 
-<https://ex.org/Source:933930ce-4c52-c9f3-648a-7aace9575c35_huwelijk_event> a picom:LifeEvent ;
-    picom:eventDate """Zie:  Schepenhuwelijken Arch.1004 Inv. 204 blad H-229
-1712-05-14"""@nl ;
-    picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/83> .
-
 <https://ex.org/Person:a20edeaa-e23e-c89f-95e9-53640f520793> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:933930ce-4c52-c9f3-648a-7aace9575c35> ;
+    picom:hasLifeEvent <https://ex.org/Source:933930ce-4c52-c9f3-648a-7aace9575c35_huwelijk_event> ;
     picom:hasRole picot_roles:574 ;
     sdo:familyName "Screus"@nl ;
     sdo:gender sdo:Female ;
@@ -39,6 +35,7 @@
 
 <https://ex.org/Person:a5581dde-2292-9136-9f21-db9852b4b02f> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:933930ce-4c52-c9f3-648a-7aace9575c35> ;
+    picom:hasLifeEvent <https://ex.org/Source:933930ce-4c52-c9f3-648a-7aace9575c35_huwelijk_event> ;
     picom:hasRole picot_roles:574 ;
     sdo:familyName "Lerrie"@nl ;
     sdo:gender sdo:Male ;
@@ -46,8 +43,14 @@
     sdo:name "Petrus Lerrie"@nl ;
     sdo:spouse <https://ex.org/Person:a20edeaa-e23e-c89f-95e9-53640f520793> .
 
+<https://ex.org/Source:933930ce-4c52-c9f3-648a-7aace9575c35_huwelijk_event> a picom:LifeEvent ;
+    picom:eventDate """Zie:  Schepenhuwelijken Arch.1004 Inv. 204 blad H-229
+1712-05-14"""@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:83 .
+
 <https://ex.org/Source:933930ce-4c52-c9f3-648a-7aace9575c35> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/549>,
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/6cf834fb-a34a-4e16-bd1c-6a3f5e7c3a5b/info.json"^^xsd:anyURI ;

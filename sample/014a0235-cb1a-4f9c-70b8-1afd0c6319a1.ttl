@@ -1,4 +1,5 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -8,7 +9,7 @@
 <https://ex.org/Source:014a0235-cb1a-4f9c-70b8-1afd0c6319a1_doop_event> a picom:LifeEvent ;
     picom:eventDate "1698-02-16"@nl ;
     picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+    picom:eventType picot_eventtypes:75 .
 
 <https://ex.org/Person:0adc4399-8e7f-b9e3-d70e-4d1f33e46af3> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:014a0235-cb1a-4f9c-70b8-1afd0c6319a1> ;
@@ -68,7 +69,7 @@
     sdo:name "Pieternelle van Kuijk"@nl .
 
 <https://ex.org/Source:014a0235-cb1a-4f9c-70b8-1afd0c6319a1> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+    sdo:additionalType picot_eventtypes:548,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/68595d42-2d90-4050-8acc-92d76e3ff6ce/info.json"^^xsd:anyURI ;

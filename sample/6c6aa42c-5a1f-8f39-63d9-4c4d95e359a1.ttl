@@ -1,4 +1,5 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -8,7 +9,7 @@
 <https://ex.org/Source:6c6aa42c-5a1f-8f39-63d9-4c4d95e359a1_doop_event> a picom:LifeEvent ;
     picom:eventDate "1799-01-14"@nl ;
     picom:eventPlace "Zoeterwoude"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+    picom:eventType picot_eventtypes:75 .
 
 <https://ex.org/Person:812940e6-beb0-e8a1-605d-8404d38f02a0> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:6c6aa42c-5a1f-8f39-63d9-4c4d95e359a1> ;
@@ -70,7 +71,7 @@
     sdo:name "Gerrit van Slingeland"@nl .
 
 <https://ex.org/Source:6c6aa42c-5a1f-8f39-63d9-4c4d95e359a1> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+    sdo:additionalType picot_eventtypes:548,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/f70df16b-a551-4fc0-87b5-c33553168296/info.json"^^xsd:anyURI ;

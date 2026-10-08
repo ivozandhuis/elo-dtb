@@ -1,4 +1,5 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -8,7 +9,7 @@
 <https://ex.org/Source:1474302e-efe3-bff3-bd7c-b126f9f029a1_doop_event> a picom:LifeEvent ;
     picom:eventDate "1737-01-23"@nl ;
     picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+    picom:eventType picot_eventtypes:75 .
 
 <https://ex.org/Person:3a4e5b6f-a299-31db-07d4-75dea3d363c5> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:1474302e-efe3-bff3-bd7c-b126f9f029a1> ;
@@ -68,7 +69,7 @@
     sdo:name "Jan Boom"@nl .
 
 <https://ex.org/Source:1474302e-efe3-bff3-bd7c-b126f9f029a1> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+    sdo:additionalType picot_eventtypes:548,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/8abffbc9-7664-40aa-bc78-73c7a8427473/info.json"^^xsd:anyURI ;

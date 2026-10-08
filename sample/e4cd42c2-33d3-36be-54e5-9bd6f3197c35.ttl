@@ -1,17 +1,14 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ex.org/Source:e4cd42c2-33d3-36be-54e5-9bd6f3197c35_ondertrouw_event> a picom:LifeEvent ;
-    picom:eventDate "1768-05-21"@nl ;
-    picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/99> .
-
 <https://ex.org/Person:1caaaa4b-cebc-7deb-f90d-bcdca2659866> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:e4cd42c2-33d3-36be-54e5-9bd6f3197c35> ;
+    picom:hasLifeEvent <https://ex.org/Source:e4cd42c2-33d3-36be-54e5-9bd6f3197c35_ondertrouw_event> ;
     picom:hasRole picot_roles:574 ;
     sdo:address "Kijfgragt"@nl ;
     sdo:birthPlace "Leijden"@nl ;
@@ -26,6 +23,7 @@
 
 <https://ex.org/Person:7ca0d75f-e50d-9ecf-a7d8-e152bc00927b> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:e4cd42c2-33d3-36be-54e5-9bd6f3197c35> ;
+    picom:hasLifeEvent <https://ex.org/Source:e4cd42c2-33d3-36be-54e5-9bd6f3197c35_ondertrouw_event> ;
     picom:hasRole picot_roles:574 ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:givenName "Marijtje"@nl ;
@@ -58,8 +56,13 @@
     sdo:givenName "Antonetta"@nl ;
     sdo:name "Antonetta Lagalie"@nl .
 
+<https://ex.org/Source:e4cd42c2-33d3-36be-54e5-9bd6f3197c35_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1768-05-21"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
 <https://ex.org/Source:e4cd42c2-33d3-36be-54e5-9bd6f3197c35> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/549>,
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/f4920c83-edfc-4d63-91ac-c2691faba656/info.json"^^xsd:anyURI ;

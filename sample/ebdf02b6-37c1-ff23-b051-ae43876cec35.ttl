@@ -1,19 +1,10 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-<https://ex.org/Source:ebdf02b6-37c1-ff23-b051-ae43876cec35_huwelijk_event> a picom:LifeEvent ;
-    picom:eventDate "1682-05-09"@nl ;
-    picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/83> .
-
-<https://ex.org/Source:ebdf02b6-37c1-ff23-b051-ae43876cec35_ondertrouw_event> a picom:LifeEvent ;
-    picom:eventDate "1682-04-18"@nl ;
-    picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/99> .
 
 <https://ex.org/Person:0eb4582b-b042-1eb0-51e0-6c9cf26ce42a> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:ebdf02b6-37c1-ff23-b051-ae43876cec35> ;
@@ -40,6 +31,8 @@
 
 <https://ex.org/Person:a82a23d5-1078-ab93-ae05-6e5152421a85> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:ebdf02b6-37c1-ff23-b051-ae43876cec35> ;
+    picom:hasLifeEvent <https://ex.org/Source:ebdf02b6-37c1-ff23-b051-ae43876cec35_huwelijk_event>,
+        <https://ex.org/Source:ebdf02b6-37c1-ff23-b051-ae43876cec35_ondertrouw_event> ;
     picom:hasRole picot_roles:574 ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:givenName "Hans"@nl ;
@@ -56,6 +49,8 @@
 
 <https://ex.org/Person:d99bba1a-61dc-d1e9-b553-6a9e161f9480> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:ebdf02b6-37c1-ff23-b051-ae43876cec35> ;
+    picom:hasLifeEvent <https://ex.org/Source:ebdf02b6-37c1-ff23-b051-ae43876cec35_huwelijk_event>,
+        <https://ex.org/Source:ebdf02b6-37c1-ff23-b051-ae43876cec35_ondertrouw_event> ;
     picom:hasRole picot_roles:574 ;
     sdo:address "Waertgraft"@nl ;
     sdo:birthPlace "Leyden"@nl ;
@@ -66,8 +61,18 @@
     sdo:name "Marya Molenaer"@nl ;
     sdo:spouse <https://ex.org/Person:a82a23d5-1078-ab93-ae05-6e5152421a85> .
 
+<https://ex.org/Source:ebdf02b6-37c1-ff23-b051-ae43876cec35_huwelijk_event> a picom:LifeEvent ;
+    picom:eventDate "1682-05-09"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:83 .
+
+<https://ex.org/Source:ebdf02b6-37c1-ff23-b051-ae43876cec35_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1682-04-18"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
 <https://ex.org/Source:ebdf02b6-37c1-ff23-b051-ae43876cec35> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/549>,
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/c6274615-4959-4c4d-a06b-cb01ccbd3133/info.json"^^xsd:anyURI ;

@@ -1,19 +1,10 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-<https://ex.org/Source:e9f3c951-8121-6902-0561-d6f52d847c35_huwelijk_event> a picom:LifeEvent ;
-    picom:eventDate "1663-02-04"@nl ;
-    picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/83> .
-
-<https://ex.org/Source:e9f3c951-8121-6902-0561-d6f52d847c35_ondertrouw_event> a picom:LifeEvent ;
-    picom:eventDate "1663-01-18"@nl ;
-    picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/99> .
 
 <https://ex.org/Person:0b42212a-0808-c650-cb26-1ce177f64905> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:e9f3c951-8121-6902-0561-d6f52d847c35> ;
@@ -60,6 +51,8 @@
 
 <https://ex.org/Person:81487859-2bf2-48c5-7a8c-503bd099059e> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:e9f3c951-8121-6902-0561-d6f52d847c35> ;
+    picom:hasLifeEvent <https://ex.org/Source:e9f3c951-8121-6902-0561-d6f52d847c35_huwelijk_event>,
+        <https://ex.org/Source:e9f3c951-8121-6902-0561-d6f52d847c35_ondertrouw_event> ;
     picom:hasRole picot_roles:574 ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:baseSurname "Rossum"@nl ;
@@ -78,6 +71,8 @@
 
 <https://ex.org/Person:f07cf9cd-4f3e-0349-8b0f-49c5f35952b8> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:e9f3c951-8121-6902-0561-d6f52d847c35> ;
+    picom:hasLifeEvent <https://ex.org/Source:e9f3c951-8121-6902-0561-d6f52d847c35_huwelijk_event>,
+        <https://ex.org/Source:e9f3c951-8121-6902-0561-d6f52d847c35_ondertrouw_event> ;
     picom:hasRole picot_roles:574 ;
     picom:isWidOf <https://ex.org/Person:42159a57-7d95-43f1-85cf-1745adf85bd4> ;
     sdo:additionalName [ a pnv:PersonName ;
@@ -93,8 +88,18 @@
     sdo:sibling <https://ex.org/Person:49d878a8-1d0f-8510-8e02-07e1e29051f5> ;
     sdo:spouse <https://ex.org/Person:81487859-2bf2-48c5-7a8c-503bd099059e> .
 
+<https://ex.org/Source:e9f3c951-8121-6902-0561-d6f52d847c35_huwelijk_event> a picom:LifeEvent ;
+    picom:eventDate "1663-02-04"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:83 .
+
+<https://ex.org/Source:e9f3c951-8121-6902-0561-d6f52d847c35_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1663-01-18"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
 <https://ex.org/Source:e9f3c951-8121-6902-0561-d6f52d847c35> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/549>,
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/f73b28a5-efb2-49c0-96b2-d113c48a3f57/info.json"^^xsd:anyURI ;

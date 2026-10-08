@@ -1,4 +1,5 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix sdo: <https://schema.org/> .
@@ -7,7 +8,7 @@
 <https://ex.org/Source:43da79cc-e8e7-9e31-61a7-5b5b63993bee_doop_event> a picom:LifeEvent ;
     picom:eventDate "1733-01-25"@nl ;
     picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+    picom:eventType picot_eventtypes:75 .
 
 <https://ex.org/Person:1dba3a59-beec-c2c5-5643-041c43fa66a7> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:43da79cc-e8e7-9e31-61a7-5b5b63993bee> ;
@@ -57,7 +58,7 @@
     sdo:name "Willem Blankert"@nl .
 
 <https://ex.org/Source:43da79cc-e8e7-9e31-61a7-5b5b63993bee> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+    sdo:additionalType picot_eventtypes:548,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/10de618c-ea29-492c-b989-cd7ba81236c7/info.json"^^xsd:anyURI ;

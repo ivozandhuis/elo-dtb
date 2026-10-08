@@ -1,4 +1,5 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -66,10 +67,10 @@
 <https://ex.org/Source:a61ad1c0-a4cb-1435-0336-50ca758b09a1_doop_event> a picom:LifeEvent ;
     picom:eventDate "dopen 7 en 10 Februari<br>Doopdatum: 02-1641<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/271\">Inventarisnummer 271 van archiefnummer 1004 in Archieven</a>"@nl ;
     picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+    picom:eventType picot_eventtypes:75 .
 
 <https://ex.org/Source:a61ad1c0-a4cb-1435-0336-50ca758b09a1> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+    sdo:additionalType picot_eventtypes:548,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/ff24fcb1-f1e6-4124-a67a-42d74ffa4c79/info.json"^^xsd:anyURI ;

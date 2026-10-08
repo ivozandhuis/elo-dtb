@@ -1,14 +1,10 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-<https://ex.org/Source:981d4486-5b82-848e-0ebb-4d4a3c12ec35_ondertrouw_event> a picom:LifeEvent ;
-    picom:eventDate "1793-04-25"@nl ;
-    picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/99> .
 
 <https://ex.org/Person:021f73dd-cadf-bd0b-9425-8ab868bf1bb5> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:981d4486-5b82-848e-0ebb-4d4a3c12ec35> ;
@@ -40,6 +36,7 @@
 
 <https://ex.org/Person:7d28969f-c768-49d0-935b-1b35859a7739> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:981d4486-5b82-848e-0ebb-4d4a3c12ec35> ;
+    picom:hasLifeEvent <https://ex.org/Source:981d4486-5b82-848e-0ebb-4d4a3c12ec35_ondertrouw_event> ;
     picom:hasRole picot_roles:574 ;
     sdo:address "Klaaresteeg"@nl ;
     sdo:birthPlace "Leiden"@nl ;
@@ -52,6 +49,7 @@
 
 <https://ex.org/Person:88d2d112-d413-d60e-d925-e1ac0c091226> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:981d4486-5b82-848e-0ebb-4d4a3c12ec35> ;
+    picom:hasLifeEvent <https://ex.org/Source:981d4486-5b82-848e-0ebb-4d4a3c12ec35_ondertrouw_event> ;
     picom:hasRole picot_roles:574 ;
     sdo:address "Binnevestgragt bij de Maarepoort"@nl ;
     sdo:birthPlace "Leyden"@nl ;
@@ -63,8 +61,13 @@
     sdo:parent <https://ex.org/Person:46283de6-6d42-b7ff-a3fc-58b5a9a88fdf> ;
     sdo:spouse <https://ex.org/Person:7d28969f-c768-49d0-935b-1b35859a7739> .
 
+<https://ex.org/Source:981d4486-5b82-848e-0ebb-4d4a3c12ec35_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1793-04-25"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
 <https://ex.org/Source:981d4486-5b82-848e-0ebb-4d4a3c12ec35> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/549>,
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/112aa637-8569-439d-ab25-22bf548383df/info.json"^^xsd:anyURI ;

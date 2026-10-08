@@ -1,4 +1,5 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -8,7 +9,7 @@
 <https://ex.org/Source:6717e9ff-3711-cd19-8f62-b0bfbda79bee_doop_event> a picom:LifeEvent ;
     picom:eventDate "1683-06-01"@nl ;
     picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+    picom:eventType picot_eventtypes:75 .
 
 <https://ex.org/Person:2088fda4-8f19-6e26-f5f6-0a2c4bdcea63> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:6717e9ff-3711-cd19-8f62-b0bfbda79bee> ;
@@ -81,7 +82,7 @@
     sdo:name "Cornelis van Dogt"@nl .
 
 <https://ex.org/Source:6717e9ff-3711-cd19-8f62-b0bfbda79bee> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+    sdo:additionalType picot_eventtypes:548,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/1ac71481-0afe-455c-985a-1c6b1f10e4dd/info.json"^^xsd:anyURI ;

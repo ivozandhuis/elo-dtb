@@ -1,19 +1,10 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-<https://ex.org/Source:2a9b3d9b-6a0f-13d5-afcf-1ad52d828c35_huwelijk_event> a picom:LifeEvent ;
-    picom:eventDate "1585-02-23"@nl ;
-    picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/83> .
-
-<https://ex.org/Source:2a9b3d9b-6a0f-13d5-afcf-1ad52d828c35_ondertrouw_event> a picom:LifeEvent ;
-    picom:eventDate "1585-02-09"@nl ;
-    picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/99> .
 
 <https://ex.org/Person:19b28626-dfa7-6648-56d8-5d509844e2fa> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:2a9b3d9b-6a0f-13d5-afcf-1ad52d828c35> ;
@@ -29,6 +20,8 @@
 
 <https://ex.org/Person:63d990a5-e3a0-e8e5-d6a0-fb82acb45e65> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:2a9b3d9b-6a0f-13d5-afcf-1ad52d828c35> ;
+    picom:hasLifeEvent <https://ex.org/Source:2a9b3d9b-6a0f-13d5-afcf-1ad52d828c35_huwelijk_event>,
+        <https://ex.org/Source:2a9b3d9b-6a0f-13d5-afcf-1ad52d828c35_ondertrouw_event> ;
     picom:hasRole picot_roles:574 ;
     picom:hasUncle_Aunt <https://ex.org/Person:19b28626-dfa7-6648-56d8-5d509844e2fa> ;
     sdo:additionalName [ a pnv:PersonName ;
@@ -42,6 +35,8 @@
 
 <https://ex.org/Person:746904a3-9386-3f15-4416-12e2efa2e80a> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:2a9b3d9b-6a0f-13d5-afcf-1ad52d828c35> ;
+    picom:hasLifeEvent <https://ex.org/Source:2a9b3d9b-6a0f-13d5-afcf-1ad52d828c35_huwelijk_event>,
+        <https://ex.org/Source:2a9b3d9b-6a0f-13d5-afcf-1ad52d828c35_ondertrouw_event> ;
     picom:hasRole picot_roles:574 ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:givenName "Cornelis"@nl ;
@@ -68,8 +63,18 @@
     sdo:givenName "Dirck"@nl ;
     sdo:name "Dirck Pietersz Vougen"@nl .
 
+<https://ex.org/Source:2a9b3d9b-6a0f-13d5-afcf-1ad52d828c35_huwelijk_event> a picom:LifeEvent ;
+    picom:eventDate "1585-02-23"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:83 .
+
+<https://ex.org/Source:2a9b3d9b-6a0f-13d5-afcf-1ad52d828c35_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1585-02-09"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
 <https://ex.org/Source:2a9b3d9b-6a0f-13d5-afcf-1ad52d828c35> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/549>,
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/10da0ff8-8233-4d9f-95e5-02f8c00da7e7/info.json"^^xsd:anyURI ;

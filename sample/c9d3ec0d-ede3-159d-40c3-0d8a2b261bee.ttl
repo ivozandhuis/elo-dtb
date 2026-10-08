@@ -1,4 +1,5 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -8,7 +9,7 @@
 <https://ex.org/Source:c9d3ec0d-ede3-159d-40c3-0d8a2b261bee_doop_event> a picom:LifeEvent ;
     picom:eventDate "1627-03-14"@nl ;
     picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+    picom:eventType picot_eventtypes:75 .
 
 <https://ex.org/Person:2c2c758b-4710-2032-9344-a732177a66a2> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:c9d3ec0d-ede3-159d-40c3-0d8a2b261bee> ;
@@ -69,7 +70,7 @@
     sdo:name "Maritgen Vermaeschen"@nl .
 
 <https://ex.org/Source:c9d3ec0d-ede3-159d-40c3-0d8a2b261bee> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+    sdo:additionalType picot_eventtypes:548,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/842c07b2-e134-4090-96dc-faea91ea75da/info.json"^^xsd:anyURI ;

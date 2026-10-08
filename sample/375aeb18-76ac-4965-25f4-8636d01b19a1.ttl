@@ -1,4 +1,5 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix sdo: <https://schema.org/> .
@@ -7,7 +8,7 @@
 <https://ex.org/Source:375aeb18-76ac-4965-25f4-8636d01b19a1_doop_event> a picom:LifeEvent ;
     picom:eventDate "1659-12-10"@nl ;
     picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+    picom:eventType picot_eventtypes:75 .
 
 <https://ex.org/Person:0c1c2d4d-21d0-0923-25c0-0604fa8343bd> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:375aeb18-76ac-4965-25f4-8636d01b19a1> ;
@@ -74,7 +75,7 @@
     sdo:name "Magdaleine Jordain"@nl .
 
 <https://ex.org/Source:375aeb18-76ac-4965-25f4-8636d01b19a1> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+    sdo:additionalType picot_eventtypes:548,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/4de4db07-513c-4e17-80b8-1afc22a568b3/info.json"^^xsd:anyURI ;

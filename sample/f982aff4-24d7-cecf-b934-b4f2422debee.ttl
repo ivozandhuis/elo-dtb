@@ -1,4 +1,5 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix sdo: <https://schema.org/> .
@@ -7,7 +8,7 @@
 <https://ex.org/Source:f982aff4-24d7-cecf-b934-b4f2422debee_doop_event> a picom:LifeEvent ;
     picom:eventDate "getuige 4 : Kateline, dochter van Quintin du Breuck<br>Doopdatum: 09-1604<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/270\">Inventarisnummer 270 van archiefnummer 1004 in Archieven</a>"@nl ;
     picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+    picom:eventType picot_eventtypes:75 .
 
 <https://ex.org/Person:0db9cf8b-158a-64bc-88ea-de9969739657> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:f982aff4-24d7-cecf-b934-b4f2422debee> ;
@@ -76,7 +77,7 @@
     sdo:spouse <https://ex.org/Person:0db9cf8b-158a-64bc-88ea-de9969739657> .
 
 <https://ex.org/Source:f982aff4-24d7-cecf-b934-b4f2422debee> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+    sdo:additionalType picot_eventtypes:548,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/a49e06a1-da9e-4505-b048-babbc300a681/info.json"^^xsd:anyURI ;

@@ -1,17 +1,14 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ex.org/Source:a365a35b-2a0d-edad-d8be-c9069c7f3c35_ondertrouw_event> a picom:LifeEvent ;
-    picom:eventDate "1684-09-30"@nl ;
-    picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/99> .
-
 <https://ex.org/Person:51b6f15d-2135-f00d-2064-f9b8e7db4e4a> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:a365a35b-2a0d-edad-d8be-c9069c7f3c35> ;
+    picom:hasLifeEvent <https://ex.org/Source:a365a35b-2a0d-edad-d8be-c9069c7f3c35_ondertrouw_event> ;
     picom:hasRole picot_roles:574 ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:baseSurname "Rousjau"@nl ;
@@ -49,6 +46,7 @@
 
 <https://ex.org/Person:ca23d9db-cf99-3c52-7efc-b6cf9f06635a> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:a365a35b-2a0d-edad-d8be-c9069c7f3c35> ;
+    picom:hasLifeEvent <https://ex.org/Source:a365a35b-2a0d-edad-d8be-c9069c7f3c35_ondertrouw_event> ;
     picom:hasRole picot_roles:574 ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:baseSurname "Waerdenburgh"@nl ;
@@ -65,8 +63,13 @@
     sdo:parent <https://ex.org/Person:c6ee1490-2b9e-f043-1cd6-8a852f4321df> ;
     sdo:spouse <https://ex.org/Person:51b6f15d-2135-f00d-2064-f9b8e7db4e4a> .
 
+<https://ex.org/Source:a365a35b-2a0d-edad-d8be-c9069c7f3c35_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1684-09-30"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
 <https://ex.org/Source:a365a35b-2a0d-edad-d8be-c9069c7f3c35> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/549>,
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/2884c8d6-7fa1-4cd0-a0f7-e30f9beed4e3/info.json"^^xsd:anyURI ;

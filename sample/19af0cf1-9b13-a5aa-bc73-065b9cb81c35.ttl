@@ -1,17 +1,14 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ex.org/Source:19af0cf1-9b13-a5aa-bc73-065b9cb81c35_ondertrouw_event> a picom:LifeEvent ;
-    picom:eventDate "1702-06-03"@nl ;
-    picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/99> .
-
 <https://ex.org/Person:63df6375-199b-b9d9-d0b7-d0b375aaba85> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:19af0cf1-9b13-a5aa-bc73-065b9cb81c35> ;
+    picom:hasLifeEvent <https://ex.org/Source:19af0cf1-9b13-a5aa-bc73-065b9cb81c35_ondertrouw_event> ;
     picom:hasRole picot_roles:574 ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:givenName "Trijntje"@nl ;
@@ -27,6 +24,7 @@
 
 <https://ex.org/Person:887bdb11-fd13-203a-6d16-8b8265c40350> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:19af0cf1-9b13-a5aa-bc73-065b9cb81c35> ;
+    picom:hasLifeEvent <https://ex.org/Source:19af0cf1-9b13-a5aa-bc73-065b9cb81c35_ondertrouw_event> ;
     picom:hasRole picot_roles:574 ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:baseSurname "Koot"@nl ;
@@ -71,8 +69,13 @@
     sdo:givenName "Catharina"@nl ;
     sdo:name "Catharina Goewinter"@nl .
 
+<https://ex.org/Source:19af0cf1-9b13-a5aa-bc73-065b9cb81c35_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1702-06-03"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
 <https://ex.org/Source:19af0cf1-9b13-a5aa-bc73-065b9cb81c35> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/549>,
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/f199b579-c562-45f3-ae53-ebd6c020623e/info.json"^^xsd:anyURI ;

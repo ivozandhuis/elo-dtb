@@ -1,4 +1,5 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -8,7 +9,7 @@
 <https://ex.org/Source:fffe817f-b56e-c230-8908-b531c43b19a1_doop_event> a picom:LifeEvent ;
     picom:eventDate "1793-02-12"@nl ;
     picom:eventPlace "Noordwijk"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+    picom:eventType picot_eventtypes:75 .
 
 <https://ex.org/Person:06f5acee-fdc8-ad43-ee3d-8c02ce064547> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:fffe817f-b56e-c230-8908-b531c43b19a1> ;
@@ -69,7 +70,7 @@
     sdo:name "Andries Joseph Scheers"@nl .
 
 <https://ex.org/Source:fffe817f-b56e-c230-8908-b531c43b19a1> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+    sdo:additionalType picot_eventtypes:548,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/e889a56c-f455-4487-92c2-5b2eaa53ab23/info.json"^^xsd:anyURI ;

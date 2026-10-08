@@ -1,4 +1,5 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -8,7 +9,7 @@
 <https://ex.org/Source:c908f36e-95c7-45fb-ec5c-ab2428236bee_doop_event> a picom:LifeEvent ;
     picom:eventDate "1671-02-06"@nl ;
     picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+    picom:eventType picot_eventtypes:75 .
 
 <https://ex.org/Person:01a79838-e0f4-c358-454a-02722ce1a8dc> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:c908f36e-95c7-45fb-ec5c-ab2428236bee> ;
@@ -54,7 +55,7 @@
     sdo:name "Annetjen Thijssen"@nl .
 
 <https://ex.org/Source:c908f36e-95c7-45fb-ec5c-ab2428236bee> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+    sdo:additionalType picot_eventtypes:548,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/fad9d399-bef7-497e-8014-e3a32b2ea376/info.json"^^xsd:anyURI ;

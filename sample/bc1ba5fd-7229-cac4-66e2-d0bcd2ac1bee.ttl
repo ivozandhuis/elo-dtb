@@ -1,4 +1,5 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -8,7 +9,7 @@
 <https://ex.org/Source:bc1ba5fd-7229-cac4-66e2-d0bcd2ac1bee_doop_event> a picom:LifeEvent ;
     picom:eventDate "1651-09-24"@nl ;
     picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+    picom:eventType picot_eventtypes:75 .
 
 <https://ex.org/Person:2096a0a8-a2c5-0aa8-b981-09012fa6025e> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:bc1ba5fd-7229-cac4-66e2-d0bcd2ac1bee> ;
@@ -66,7 +67,7 @@
     sdo:name "Christiaen Hendrickxsz"@nl .
 
 <https://ex.org/Source:bc1ba5fd-7229-cac4-66e2-d0bcd2ac1bee> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+    sdo:additionalType picot_eventtypes:548,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/371d6c69-02bf-402d-b3c0-b739d15e2d99/info.json"^^xsd:anyURI ;

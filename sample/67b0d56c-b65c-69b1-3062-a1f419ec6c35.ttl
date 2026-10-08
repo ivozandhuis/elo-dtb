@@ -1,4 +1,5 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -14,13 +15,9 @@
     sdo:givenName "Susanna"@nl ;
     sdo:name "Susanna Gerijn"@nl .
 
-<https://ex.org/Source:67b0d56c-b65c-69b1-3062-a1f419ec6c35_ondertrouw_event> a picom:LifeEvent ;
-    picom:eventDate "1671-03-11"@nl ;
-    picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/99> .
-
 <https://ex.org/Person:a36d9550-9d12-ecaf-14c3-fe3fb310ff74> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:67b0d56c-b65c-69b1-3062-a1f419ec6c35> ;
+    picom:hasLifeEvent <https://ex.org/Source:67b0d56c-b65c-69b1-3062-a1f419ec6c35_ondertrouw_event> ;
     picom:hasRole picot_roles:574 ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:baseSurname "Naeck"@nl ;
@@ -52,6 +49,7 @@
 
 <https://ex.org/Person:d49e2785-b1cc-f206-b661-712e5bbda036> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:67b0d56c-b65c-69b1-3062-a1f419ec6c35> ;
+    picom:hasLifeEvent <https://ex.org/Source:67b0d56c-b65c-69b1-3062-a1f419ec6c35_ondertrouw_event> ;
     picom:hasRole picot_roles:574 ;
     picom:isWidOf <https://ex.org/Person:e9d4f6fb-7edc-6521-d4f7-ed9c22aa5590> ;
     sdo:additionalName [ a pnv:PersonName ;
@@ -97,8 +95,13 @@
     sdo:givenName "Cornelis"@nl ;
     sdo:name "Cornelis de Groot"@nl .
 
+<https://ex.org/Source:67b0d56c-b65c-69b1-3062-a1f419ec6c35_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1671-03-11"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
 <https://ex.org/Source:67b0d56c-b65c-69b1-3062-a1f419ec6c35> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/549>,
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/2a5a0d7d-802d-48f8-a56b-e0903cad5872/info.json"^^xsd:anyURI ;

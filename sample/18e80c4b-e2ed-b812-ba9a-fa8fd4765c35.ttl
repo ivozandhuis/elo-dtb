@@ -1,4 +1,5 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -26,18 +27,10 @@
     sdo:givenName "Servaes"@nl ;
     sdo:name "Servaes Tier"@nl .
 
-<https://ex.org/Source:18e80c4b-e2ed-b812-ba9a-fa8fd4765c35_huwelijk_event> a picom:LifeEvent ;
-    picom:eventDate "1698-04-05"@nl ;
-    picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/83> .
-
-<https://ex.org/Source:18e80c4b-e2ed-b812-ba9a-fa8fd4765c35_ondertrouw_event> a picom:LifeEvent ;
-    picom:eventDate "1698-03-15"@nl ;
-    picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/99> .
-
 <https://ex.org/Person:3531850b-2dc3-a477-149e-1d6065add68e> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:18e80c4b-e2ed-b812-ba9a-fa8fd4765c35> ;
+    picom:hasLifeEvent <https://ex.org/Source:18e80c4b-e2ed-b812-ba9a-fa8fd4765c35_huwelijk_event>,
+        <https://ex.org/Source:18e80c4b-e2ed-b812-ba9a-fa8fd4765c35_ondertrouw_event> ;
     picom:hasRole picot_roles:574 ;
     picom:isWidOf <https://ex.org/Person:490f3505-9de7-a243-3745-c53f6618093a> ;
     sdo:additionalName [ a pnv:PersonName ;
@@ -86,6 +79,8 @@
 
 <https://ex.org/Person:fbbbe2a6-4980-2169-c69e-4c9725f4aea2> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:18e80c4b-e2ed-b812-ba9a-fa8fd4765c35> ;
+    picom:hasLifeEvent <https://ex.org/Source:18e80c4b-e2ed-b812-ba9a-fa8fd4765c35_huwelijk_event>,
+        <https://ex.org/Source:18e80c4b-e2ed-b812-ba9a-fa8fd4765c35_ondertrouw_event> ;
     picom:hasRole picot_roles:574 ;
     picom:isWidOf <https://ex.org/Person:8a42ceb6-d9da-b5a7-6a8e-fea1a7a08245> ;
     sdo:address "Uytterstegraft"@nl ;
@@ -95,8 +90,18 @@
     sdo:name "Harmen Tier"@nl ;
     sdo:spouse <https://ex.org/Person:3531850b-2dc3-a477-149e-1d6065add68e> .
 
+<https://ex.org/Source:18e80c4b-e2ed-b812-ba9a-fa8fd4765c35_huwelijk_event> a picom:LifeEvent ;
+    picom:eventDate "1698-04-05"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:83 .
+
+<https://ex.org/Source:18e80c4b-e2ed-b812-ba9a-fa8fd4765c35_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1698-03-15"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
 <https://ex.org/Source:18e80c4b-e2ed-b812-ba9a-fa8fd4765c35> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/549>,
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/18362c1f-127a-4768-b9e6-f6b5030f2928/info.json"^^xsd:anyURI ;

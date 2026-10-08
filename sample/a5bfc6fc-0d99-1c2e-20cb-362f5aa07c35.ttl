@@ -1,16 +1,13 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ex.org/Source:a5bfc6fc-0d99-1c2e-20cb-362f5aa07c35_ondertrouw_event> a picom:LifeEvent ;
-    picom:eventDate "1737-06-28"@nl ;
-    picom:eventPlace "Leiderdorp"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/99> .
-
 <https://ex.org/Person:8f0ccbcc-1a4b-0db5-b53d-a67d73dc5924> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:a5bfc6fc-0d99-1c2e-20cb-362f5aa07c35> ;
+    picom:hasLifeEvent <https://ex.org/Source:a5bfc6fc-0d99-1c2e-20cb-362f5aa07c35_ondertrouw_event> ;
     picom:hasRole picot_roles:574 ;
     sdo:description "Burgerlijke staat voor het huwelijk: j.d."@nl ;
     sdo:familyName "Holder"@nl ;
@@ -21,6 +18,7 @@
 
 <https://ex.org/Person:bae18a29-f21a-b0b7-3551-ee05f493151c> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:a5bfc6fc-0d99-1c2e-20cb-362f5aa07c35> ;
+    picom:hasLifeEvent <https://ex.org/Source:a5bfc6fc-0d99-1c2e-20cb-362f5aa07c35_ondertrouw_event> ;
     picom:hasRole picot_roles:574 ;
     sdo:description "Burgerlijke staat voor het huwelijk: j.m."@nl ;
     sdo:familyName "Reijsevoord"@nl ;
@@ -30,7 +28,7 @@
     sdo:spouse <https://ex.org/Person:8f0ccbcc-1a4b-0db5-b53d-a67d73dc5924> .
 
 <https://ex.org/Source:a5bfc6fc-0d99-1c2e-20cb-362f5aa07c35> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/549>,
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/3140117d-8907-4280-b4a9-b5c0a1e85a8a/info.json"^^xsd:anyURI ;
@@ -46,4 +44,9 @@
     sdo:locationCreated "Leiderdorp"@nl ;
     sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Dorps- en gemeentebestuur van Leiderdorp (1561-1958), Deel: 1495, Periode: 1723-1808, (toegangsnr. 0800), inv.nr. 1495, Registers van ontvangst van de impost op trouwen en begraven van Leiderdorp, 1723 - 1805., 5v, "@nl ;
     sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/a5bfc6fc-0d99-1c2e-20cb-362f5aa07c35"^^xsd:anyURI .
+
+<https://ex.org/Source:a5bfc6fc-0d99-1c2e-20cb-362f5aa07c35_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1737-06-28"@nl ;
+    picom:eventPlace "Leiderdorp"@nl ;
+    picom:eventType picot_eventtypes:99 .
 

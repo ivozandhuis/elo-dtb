@@ -1,4 +1,5 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix sdo: <https://schema.org/> .
@@ -7,7 +8,7 @@
 <https://ex.org/Source:46c6abb8-2224-5cb7-44d5-f8a4875c4bee_doop_event> a picom:LifeEvent ;
     picom:eventDate "1760-08-29"@nl ;
     picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+    picom:eventType picot_eventtypes:75 .
 
 <https://ex.org/Person:0a4ee0c7-1ed6-66b8-d1b0-2c40f84c1568> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:46c6abb8-2224-5cb7-44d5-f8a4875c4bee> ;
@@ -57,7 +58,7 @@
     sdo:name "Jan Wijngaars"@nl .
 
 <https://ex.org/Source:46c6abb8-2224-5cb7-44d5-f8a4875c4bee> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+    sdo:additionalType picot_eventtypes:548,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/3f65c437-a059-4b1b-a64d-aa6ba046d5d2/info.json"^^xsd:anyURI ;

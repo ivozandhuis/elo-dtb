@@ -1,22 +1,15 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ex.org/Source:1f2821f2-f637-9b88-b803-9c3a7851ec35_huwelijk_event> a picom:LifeEvent ;
-    picom:eventDate "1804-04-21"@nl ;
-    picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/83> .
-
-<https://ex.org/Source:1f2821f2-f637-9b88-b803-9c3a7851ec35_ondertrouw_event> a picom:LifeEvent ;
-    picom:eventDate "1804-04-06"@nl ;
-    picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/99> .
-
 <https://ex.org/Person:4109ea8f-b6d9-b270-c2c3-10eff9ceeeee> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:1f2821f2-f637-9b88-b803-9c3a7851ec35> ;
+    picom:hasLifeEvent <https://ex.org/Source:1f2821f2-f637-9b88-b803-9c3a7851ec35_huwelijk_event>,
+        <https://ex.org/Source:1f2821f2-f637-9b88-b803-9c3a7851ec35_ondertrouw_event> ;
     picom:hasRole picot_roles:574 ;
     sdo:address "Binnevestgragt bij Rhynsburgerpoort"@nl ;
     sdo:birthPlace "Leyden"@nl ;
@@ -29,6 +22,8 @@
 
 <https://ex.org/Person:46dbafb3-3adc-1629-8b78-35e2216dfe91> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:1f2821f2-f637-9b88-b803-9c3a7851ec35> ;
+    picom:hasLifeEvent <https://ex.org/Source:1f2821f2-f637-9b88-b803-9c3a7851ec35_huwelijk_event>,
+        <https://ex.org/Source:1f2821f2-f637-9b88-b803-9c3a7851ec35_ondertrouw_event> ;
     picom:hasRole picot_roles:574 ;
     sdo:address "Binnevestgragt bij Rhynsburgerpoort"@nl ;
     sdo:birthPlace "Soeterwoude"@nl ;
@@ -65,8 +60,18 @@
     sdo:givenName "Rachel"@nl ;
     sdo:name "Rachel Verhage"@nl .
 
+<https://ex.org/Source:1f2821f2-f637-9b88-b803-9c3a7851ec35_huwelijk_event> a picom:LifeEvent ;
+    picom:eventDate "1804-04-21"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:83 .
+
+<https://ex.org/Source:1f2821f2-f637-9b88-b803-9c3a7851ec35_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1804-04-06"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
 <https://ex.org/Source:1f2821f2-f637-9b88-b803-9c3a7851ec35> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/549>,
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/1b983202-2eb5-4606-a40c-520a316e0920/info.json"^^xsd:anyURI ;

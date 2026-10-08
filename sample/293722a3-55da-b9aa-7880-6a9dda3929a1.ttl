@@ -1,4 +1,5 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix sdo: <https://schema.org/> .
@@ -7,7 +8,7 @@
 <https://ex.org/Source:293722a3-55da-b9aa-7880-6a9dda3929a1_doop_event> a picom:LifeEvent ;
     picom:eventDate "1792-03-11"@nl ;
     picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+    picom:eventType picot_eventtypes:75 .
 
 <https://ex.org/Person:306c7b0d-e0a6-8724-27a4-781879593d71> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:293722a3-55da-b9aa-7880-6a9dda3929a1> ;
@@ -57,7 +58,7 @@
     sdo:name "Hendrik Heus"@nl .
 
 <https://ex.org/Source:293722a3-55da-b9aa-7880-6a9dda3929a1> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+    sdo:additionalType picot_eventtypes:548,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/60dd4471-2bf3-497d-b39f-4221d67138b2/info.json"^^xsd:anyURI ;

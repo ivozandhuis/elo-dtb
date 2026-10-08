@@ -1,4 +1,5 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -8,7 +9,7 @@
 <https://ex.org/Source:bc79377f-a05c-304f-3288-145b8c84fbee_doop_event> a picom:LifeEvent ;
     picom:eventDate "1754-10-16"@nl ;
     picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+    picom:eventType picot_eventtypes:75 .
 
 <https://ex.org/Person:1b048d8b-5290-098f-9fef-d392f42635cd> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:bc79377f-a05c-304f-3288-145b8c84fbee> ;
@@ -73,7 +74,7 @@
     sdo:name "Pieter de Geer"@nl .
 
 <https://ex.org/Source:bc79377f-a05c-304f-3288-145b8c84fbee> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+    sdo:additionalType picot_eventtypes:548,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/9884f1bd-6237-4f82-9c80-14807b9c9cfe/info.json"^^xsd:anyURI ;

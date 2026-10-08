@@ -1,4 +1,5 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -8,7 +9,7 @@
 <https://ex.org/Source:ac583302-1d84-8484-b4ff-658f054d2bee_doop_event> a picom:LifeEvent ;
     picom:eventDate "1718-05-15"@nl ;
     picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+    picom:eventType picot_eventtypes:75 .
 
 <https://ex.org/Person:19f24623-f772-433e-3e36-bfc682cf56c2> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:ac583302-1d84-8484-b4ff-658f054d2bee> ;
@@ -68,7 +69,7 @@
     sdo:name "Hendrik van der Aa"@nl .
 
 <https://ex.org/Source:ac583302-1d84-8484-b4ff-658f054d2bee> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+    sdo:additionalType picot_eventtypes:548,
         "other: "@nl ;
     sdo:dateCreated "1718-05-15"^^xsd:date ;
     sdo:dateModified "1970-01-01"^^xsd:date ;

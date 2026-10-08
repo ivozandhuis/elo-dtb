@@ -1,4 +1,5 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -28,13 +29,9 @@
     sdo:givenName "Sara"@nl ;
     sdo:name "Sara de Planke"@nl .
 
-<https://ex.org/Source:793c9539-611e-00ec-8682-8c7f8d613c35_ondertrouw_event> a picom:LifeEvent ;
-    picom:eventDate "1752-08-18"@nl ;
-    picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/99> .
-
 <https://ex.org/Person:19917de4-2c96-cad2-b7fd-8becab55b530> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:793c9539-611e-00ec-8682-8c7f8d613c35> ;
+    picom:hasLifeEvent <https://ex.org/Source:793c9539-611e-00ec-8682-8c7f8d613c35_ondertrouw_event> ;
     picom:hasRole picot_roles:574 ;
     picom:isWidOf <https://ex.org/Person:fc342539-710b-de08-ffa1-0193be3ec798> ;
     sdo:address "Cellebroersgragt"@nl ;
@@ -61,6 +58,7 @@
 
 <https://ex.org/Person:dec617f0-1d07-b0d1-0760-9b58271ba01b> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:793c9539-611e-00ec-8682-8c7f8d613c35> ;
+    picom:hasLifeEvent <https://ex.org/Source:793c9539-611e-00ec-8682-8c7f8d613c35_ondertrouw_event> ;
     picom:hasRole picot_roles:574 ;
     picom:isWidOf <https://ex.org/Person:dfc01946-e5d8-73d9-aa5c-739a7c16e248> ;
     sdo:additionalName [ a pnv:PersonName ;
@@ -98,8 +96,13 @@
     sdo:givenName "Catarina"@nl ;
     sdo:name "Catarina Schoemaker"@nl .
 
+<https://ex.org/Source:793c9539-611e-00ec-8682-8c7f8d613c35_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1752-08-18"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
 <https://ex.org/Source:793c9539-611e-00ec-8682-8c7f8d613c35> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/549>,
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/d54aa2e6-c873-41f5-9ce7-8a24788a9089/info.json"^^xsd:anyURI ;

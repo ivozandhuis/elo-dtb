@@ -1,4 +1,5 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -14,13 +15,9 @@
     sdo:givenName "Pieter"@nl ;
     sdo:name "Pieter Vonk"@nl .
 
-<https://ex.org/Source:a2839f85-406e-3337-c4cb-f3b1d0a53c35_ondertrouw_event> a picom:LifeEvent ;
-    picom:eventDate "1694-04-24"@nl ;
-    picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/99> .
-
 <https://ex.org/Person:26840c51-c781-ed03-0737-f129e9de5aa2> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:a2839f85-406e-3337-c4cb-f3b1d0a53c35> ;
+    picom:hasLifeEvent <https://ex.org/Source:a2839f85-406e-3337-c4cb-f3b1d0a53c35_ondertrouw_event> ;
     picom:hasRole picot_roles:574 ;
     sdo:address "Hoygraft"@nl ;
     sdo:birthPlace "Leyden"@nl ;
@@ -47,6 +44,7 @@
 
 <https://ex.org/Person:ba4ccbc0-0959-faff-3a40-06e468f3009b> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:a2839f85-406e-3337-c4cb-f3b1d0a53c35> ;
+    picom:hasLifeEvent <https://ex.org/Source:a2839f85-406e-3337-c4cb-f3b1d0a53c35_ondertrouw_event> ;
     picom:hasRole picot_roles:574 ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:givenName "Pieternel"@nl ;
@@ -60,8 +58,13 @@
     sdo:name "Pieternel Claris"@nl ;
     sdo:spouse <https://ex.org/Person:26840c51-c781-ed03-0737-f129e9de5aa2> .
 
+<https://ex.org/Source:a2839f85-406e-3337-c4cb-f3b1d0a53c35_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1694-04-24"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
 <https://ex.org/Source:a2839f85-406e-3337-c4cb-f3b1d0a53c35> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/549>,
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/a485e11a-d84b-4739-8990-61cec66bac07/info.json"^^xsd:anyURI ;

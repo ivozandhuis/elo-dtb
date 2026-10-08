@@ -1,17 +1,14 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ex.org/Source:a9459187-6fb4-d8ce-cb05-dbacc8949c35_ondertrouw_event> a picom:LifeEvent ;
-    picom:eventDate "1778-02-05"@nl ;
-    picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/99> .
-
 <https://ex.org/Person:7813edef-16ef-af77-b217-96d430482b95> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:a9459187-6fb4-d8ce-cb05-dbacc8949c35> ;
+    picom:hasLifeEvent <https://ex.org/Source:a9459187-6fb4-d8ce-cb05-dbacc8949c35_ondertrouw_event> ;
     picom:hasRole picot_roles:574 ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:givenName "Nathan"@nl ;
@@ -25,6 +22,7 @@
 
 <https://ex.org/Person:b797b847-6e91-b656-7e2a-5b412cfc67d7> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:a9459187-6fb4-d8ce-cb05-dbacc8949c35> ;
+    picom:hasLifeEvent <https://ex.org/Source:a9459187-6fb4-d8ce-cb05-dbacc8949c35_ondertrouw_event> ;
     picom:hasRole picot_roles:574 ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:givenName "Johanna"@nl ;
@@ -38,7 +36,7 @@
     sdo:spouse <https://ex.org/Person:7813edef-16ef-af77-b217-96d430482b95> .
 
 <https://ex.org/Source:a9459187-6fb4-d8ce-cb05-dbacc8949c35> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/549>,
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/393c30c9-e1ca-44dc-9620-e9cacf18b0a9/info.json"^^xsd:anyURI ;
@@ -54,4 +52,9 @@
     sdo:locationCreated "Leiden"@nl ;
     sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 209, Periode: 1..., (toegangsnr. 1004), inv.nr. 209, N. Ondertrouwboek en trouwboek voor schepenen van Leiden, 1768 - januari 1784., 155, "@nl ;
     sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/a9459187-6fb4-d8ce-cb05-dbacc8949c35"^^xsd:anyURI .
+
+<https://ex.org/Source:a9459187-6fb4-d8ce-cb05-dbacc8949c35_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1778-02-05"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
 

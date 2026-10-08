@@ -1,14 +1,10 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-<https://ex.org/Source:fe0bf28c-e481-bdaa-48aa-fd2619b70c35_ondertrouw_event> a picom:LifeEvent ;
-    picom:eventDate "1649-11-19"@nl ;
-    picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/99> .
 
 <https://ex.org/Person:0a70f369-23d6-643d-21d4-ab78851e34e2> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:fe0bf28c-e481-bdaa-48aa-fd2619b70c35> ;
@@ -25,6 +21,7 @@
 
 <https://ex.org/Person:2ad69130-a432-c567-b4de-5b33a64063d2> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:fe0bf28c-e481-bdaa-48aa-fd2619b70c35> ;
+    picom:hasLifeEvent <https://ex.org/Source:fe0bf28c-e481-bdaa-48aa-fd2619b70c35_ondertrouw_event> ;
     picom:hasRole picot_roles:574 ;
     picom:hasUncle_Aunt <https://ex.org/Person:cba9f821-a709-55bd-77ef-8a8519c95685> ;
     sdo:additionalName [ a pnv:PersonName ;
@@ -43,6 +40,7 @@
 
 <https://ex.org/Person:bc8a6d45-a793-09e4-3602-520e95199ddd> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:fe0bf28c-e481-bdaa-48aa-fd2619b70c35> ;
+    picom:hasLifeEvent <https://ex.org/Source:fe0bf28c-e481-bdaa-48aa-fd2619b70c35_ondertrouw_event> ;
     picom:hasRole picot_roles:574 ;
     picom:hasUncle_Aunt <https://ex.org/Person:0a70f369-23d6-643d-21d4-ab78851e34e2> ;
     sdo:additionalName [ a pnv:PersonName ;
@@ -73,8 +71,13 @@
     sdo:givenName "Jan"@nl ;
     sdo:name "Jan Jochemsz Cool"@nl .
 
+<https://ex.org/Source:fe0bf28c-e481-bdaa-48aa-fd2619b70c35_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1649-11-19"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
 <https://ex.org/Source:fe0bf28c-e481-bdaa-48aa-fd2619b70c35> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/549>,
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/e96c1282-5e0b-43e5-bcd3-4edf986cf131/info.json"^^xsd:anyURI ;

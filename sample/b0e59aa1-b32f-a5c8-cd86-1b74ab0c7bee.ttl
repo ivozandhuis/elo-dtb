@@ -1,4 +1,5 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix sdo: <https://schema.org/> .
@@ -7,7 +8,7 @@
 <https://ex.org/Source:b0e59aa1-b32f-a5c8-cd86-1b74ab0c7bee_doop_event> a picom:LifeEvent ;
     picom:eventDate "1649-05-02"@nl ;
     picom:eventPlace "Leiden"@nl ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/75> .
+    picom:eventType picot_eventtypes:75 .
 
 <https://ex.org/Person:3b3522f7-e734-c7e6-73c7-e4f0071bde21> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:b0e59aa1-b32f-a5c8-cd86-1b74ab0c7bee> ;
@@ -66,7 +67,7 @@
         <https://ex.org/Person:f4fa04eb-c1e4-46ff-1bb5-e1756e22a54f> .
 
 <https://ex.org/Source:b0e59aa1-b32f-a5c8-cd86-1b74ab0c7bee> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/548>,
+    sdo:additionalType picot_eventtypes:548,
         "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/a0958280-95d6-4df9-a6ee-0d47874b1a9a/info.json"^^xsd:anyURI ;
