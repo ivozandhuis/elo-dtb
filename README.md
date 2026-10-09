@@ -1,5 +1,5 @@
 # Data project PersonObservations from 17th/18th century Leiden (NL)
-The Erfgoed Leiden en Omstreken (ELO) archival service provides indexes on the Doop- Trouw- en Begraafboeken (DTB) from the 17th/18th century. It contains a lot of interesting and useful data for our project to try and match the persons described in these sources. In this repo we collect code used to create data according to the [pico format](https://personsincontext.nl/model).
+The Erfgoed Leiden en Omstreken (ELO) archival service provides indexes on the Doop- Trouw- en Begraafboeken (DTB) from the 17th/18th century. It contains a lot of interesting and useful data for our project to try and match the persons described in these sources. In this repo we collect code used to create data according to the [pico format](https://personsincontext.org/model).
 
 ## Sample
 Check the sample/ directory for a first glance of what the resulting data looks like.
