@@ -1,6 +1,6 @@
 PREFIX sdo: <https://schema.org/>
-PREFIX oa: <https://www.openarchieven.nl/id/>
-PREFIX sdo: <https://schema.org/>
+PREFIX picom: <https://personsincontext.org/model#>
+PREFIX picot_eventtypes: <https://terms.personsincontext.org/eventtypes/>
 PREFIX picot_sourcetypes: <https://terms.personsincontext.org/sourcetypes/>
 PREFIX picot_roles: <https://terms.personsincontext.org/roles/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
@@ -10,10 +10,10 @@ PREFIX ql: <http://qlever.cs.uni-freiburg.de/builtin-functions/>
 
 CONSTRUCT {
   ?source sdo:dateCreated ?event_date ;
-    sdo:additionalType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/549> .
+    sdo:additionalType picot_sourcetypes:549 .
   
   ?event_uri a picom:LifeEvent ;
-    picom:eventType <https://terms.personsincontext.org/ThesaurusHistorischePersoonsgegevens/83> ;
+    picom:eventType picot_eventtypes:83 ;
     picom:eventPlace ?event_place ;
     picom:eventDate ?event_date .
 }
@@ -21,7 +21,6 @@ WHERE {
   ?text ql:contains-word "trouwen" .
   ?text ql:contains-entity ?description .
   ?source a sdo:ArchiveComponent ;
-          sdo:holdingArchive oa:elo ;
           sdo:locationCreated ?event_place ;
           sdo:description ?description .
   FILTER (CONTAINS(?description, "Datum trouwen: "))

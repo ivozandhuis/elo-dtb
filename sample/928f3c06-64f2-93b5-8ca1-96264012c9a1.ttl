@@ -1,0 +1,82 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:928f3c06-64f2-93b5-8ca1-96264012c9a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1718-01-30"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:078e577f-d1d7-6134-9c16-a927610598d0> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:928f3c06-64f2-93b5-8ca1-96264012c9a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Alleaume"@nl ;
+    sdo:givenName "Elisabeth"@nl ;
+    sdo:name "Elisabeth Alleaume"@nl .
+
+<https://ex.org/Person:4d84f440-6781-c3b8-89d4-d4f61a745679> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:928f3c06-64f2-93b5-8ca1-96264012c9a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:928f3c06-64f2-93b5-8ca1-96264012c9a1_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:birthDate "1718-01-29"^^xsd:date ;
+    sdo:description "Doopdatum: 30-01-1718"@nl ;
+    sdo:familyName "Alléaume"@nl ;
+    sdo:givenName "Isabelle"@nl ;
+    sdo:name "Isabelle Alléaume"@nl ;
+    sdo:parent <https://ex.org/Person:8a7d58e8-bb3b-ce91-585f-329c20357a84>,
+        <https://ex.org/Person:d3586a6d-0a86-bbf3-ccc5-bf86c42ec379> .
+
+<https://ex.org/Person:8a7d58e8-bb3b-ce91-585f-329c20357a84> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:928f3c06-64f2-93b5-8ca1-96264012c9a1> ;
+    sdo:children <https://ex.org/Person:4d84f440-6781-c3b8-89d4-d4f61a745679> ;
+    sdo:familyName "Alléaume"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Pierre"@nl ;
+    sdo:knows <https://ex.org/Person:078e577f-d1d7-6134-9c16-a927610598d0>,
+        <https://ex.org/Person:e824415e-c1d0-bed2-f303-0ad3d97841df> ;
+    sdo:name "Pierre Alléaume"@nl ;
+    sdo:spouse <https://ex.org/Person:d3586a6d-0a86-bbf3-ccc5-bf86c42ec379> .
+
+<https://ex.org/Person:d3586a6d-0a86-bbf3-ccc5-bf86c42ec379> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:928f3c06-64f2-93b5-8ca1-96264012c9a1> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Catherine"@nl ;
+            pnv:literalName "Catherine Hendrikse"@nl ;
+            pnv:patronym "Hendrikse"@nl ] ;
+    sdo:children <https://ex.org/Person:4d84f440-6781-c3b8-89d4-d4f61a745679> ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Catherine"@nl ;
+    sdo:knows <https://ex.org/Person:078e577f-d1d7-6134-9c16-a927610598d0>,
+        <https://ex.org/Person:e824415e-c1d0-bed2-f303-0ad3d97841df> ;
+    sdo:name "Catherine Hendrikse"@nl ;
+    sdo:spouse <https://ex.org/Person:8a7d58e8-bb3b-ce91-585f-329c20357a84> .
+
+<https://ex.org/Person:e824415e-c1d0-bed2-f303-0ad3d97841df> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:928f3c06-64f2-93b5-8ca1-96264012c9a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Alleaume"@nl ;
+    sdo:givenName "Pierre"@nl ;
+    sdo:name "Pierre Alleaume"@nl .
+
+<https://ex.org/Source:928f3c06-64f2-93b5-8ca1-96264012c9a1> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/a19af049-1832-4144-bdae-2277203712fd/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/928f3c06-64f2-93b5-8ca1-96264012c9a1"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/a19af049-1832-4144-bdae-2277203712fd/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1718-01-30"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1696-1748"@nl,
+        "275"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 30-01-1718<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/275\">Inventarisnummer 275 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 275, Periode: 1..., (toegangsnr. 1004), inv.nr. 275, Doopboek van de Vrouwekerk (Waals, NH) te Leiden, 1696 - 1 mei 1748., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/928f3c06-64f2-93b5-8ca1-96264012c9a1"^^xsd:anyURI .
+

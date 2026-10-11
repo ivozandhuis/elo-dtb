@@ -1,0 +1,84 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:ad1e3389-f1fe-aebc-789f-2aab72ccdbee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1794-07-10"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:0da54023-2eea-8bdf-c39a-1702c9e5842c> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:ad1e3389-f1fe-aebc-789f-2aab72ccdbee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Ettinger"@nl ;
+            pnv:givenName "Maria Elisabet"@nl ;
+            pnv:literalName "Maria Elisabet van Ettinger"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:children <https://ex.org/Person:42e1280c-336f-0095-07ca-42d5084f717a> ;
+    sdo:familyName "van Ettinger"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Maria Elisabet"@nl ;
+    sdo:knows <https://ex.org/Person:10e4af70-cece-551a-8563-a11a07427574> ;
+    sdo:name "Maria Elisabet van Ettinger"@nl ;
+    sdo:spouse <https://ex.org/Person:1cbfc81c-37b4-9797-9e74-5224deb8c597> .
+
+<https://ex.org/Person:10e4af70-cece-551a-8563-a11a07427574> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:ad1e3389-f1fe-aebc-789f-2aab72ccdbee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Lemans"@nl ;
+    sdo:givenName "Lydia"@nl ;
+    sdo:name "Lydia Lemans"@nl .
+
+<https://ex.org/Person:1cbfc81c-37b4-9797-9e74-5224deb8c597> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:ad1e3389-f1fe-aebc-789f-2aab72ccdbee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Ees"@nl ;
+            pnv:givenName "Lammert"@nl ;
+            pnv:literalName "Lammert van Ees"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:children <https://ex.org/Person:42e1280c-336f-0095-07ca-42d5084f717a> ;
+    sdo:familyName "van Ees"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Lammert"@nl ;
+    sdo:knows <https://ex.org/Person:10e4af70-cece-551a-8563-a11a07427574> ;
+    sdo:name "Lammert van Ees"@nl ;
+    sdo:spouse <https://ex.org/Person:0da54023-2eea-8bdf-c39a-1702c9e5842c> .
+
+<https://ex.org/Person:42e1280c-336f-0095-07ca-42d5084f717a> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:ad1e3389-f1fe-aebc-789f-2aab72ccdbee> ;
+    picom:hasLifeEvent <https://ex.org/Source:ad1e3389-f1fe-aebc-789f-2aab72ccdbee_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Ees"@nl ;
+            pnv:givenName "Maria Elisabet"@nl ;
+            pnv:literalName "Maria Elisabet van Ees"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:description "Doopdatum: 10-07-1794"@nl ;
+    sdo:familyName "van Ees"@nl ;
+    sdo:givenName "Maria Elisabet"@nl ;
+    sdo:name "Maria Elisabet van Ees"@nl ;
+    sdo:parent <https://ex.org/Person:0da54023-2eea-8bdf-c39a-1702c9e5842c>,
+        <https://ex.org/Person:1cbfc81c-37b4-9797-9e74-5224deb8c597> .
+
+<https://ex.org/Source:ad1e3389-f1fe-aebc-789f-2aab72ccdbee> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/c6a78524-fdf0-46a6-96bb-0d128da1fb04/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/ad1e3389-f1fe-aebc-789f-2aab72ccdbee"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/c6a78524-fdf0-46a6-96bb-0d128da1fb04/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1794-07-10"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1789-1796"@nl,
+        "255"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 10-07-1794<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/255\">Inventarisnummer 255 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 255, Periode: 1..., (toegangsnr. 1004), inv.nr. 255, Doopboek van de Hooglandse Kerk (NH) te Leiden, 1 oktober 1789 - 30 juni 1796., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/ad1e3389-f1fe-aebc-789f-2aab72ccdbee"^^xsd:anyURI .
+

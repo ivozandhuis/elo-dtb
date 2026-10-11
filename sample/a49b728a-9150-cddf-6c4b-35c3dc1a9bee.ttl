@@ -1,0 +1,68 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:a49b728a-9150-cddf-6c4b-35c3dc1a9bee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1748-04-21"@nl ;
+    picom:eventPlace "Rijnsburg"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:17e39bd3-1bdf-08d9-c48e-0e81ea0f8f47> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:a49b728a-9150-cddf-6c4b-35c3dc1a9bee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Hogewoning"@nl ;
+    sdo:givenName "Ariaantje"@nl ;
+    sdo:name "Ariaantje Hogewoning"@nl .
+
+<https://ex.org/Person:32f4dab4-e016-6047-26d9-cd3f292db335> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:a49b728a-9150-cddf-6c4b-35c3dc1a9bee> ;
+    sdo:children <https://ex.org/Person:76ea4690-dc6c-a8bb-a718-9812cadca439> ;
+    sdo:familyName "Hogewoning"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Pieter"@nl ;
+    sdo:knows <https://ex.org/Person:17e39bd3-1bdf-08d9-c48e-0e81ea0f8f47> ;
+    sdo:name "Pieter Hogewoning"@nl ;
+    sdo:spouse <https://ex.org/Person:f58f8ae7-c2c5-6904-e2ff-601940f9226b> .
+
+<https://ex.org/Person:76ea4690-dc6c-a8bb-a718-9812cadca439> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:a49b728a-9150-cddf-6c4b-35c3dc1a9bee> ;
+    picom:hasLifeEvent <https://ex.org/Source:a49b728a-9150-cddf-6c4b-35c3dc1a9bee_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 21-04-1748"@nl ;
+    sdo:familyName "Hogewoning"@nl ;
+    sdo:givenName "Klaartje"@nl ;
+    sdo:name "Klaartje Hogewoning"@nl ;
+    sdo:parent <https://ex.org/Person:32f4dab4-e016-6047-26d9-cd3f292db335>,
+        <https://ex.org/Person:f58f8ae7-c2c5-6904-e2ff-601940f9226b> .
+
+<https://ex.org/Person:f58f8ae7-c2c5-6904-e2ff-601940f9226b> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:a49b728a-9150-cddf-6c4b-35c3dc1a9bee> ;
+    sdo:children <https://ex.org/Person:76ea4690-dc6c-a8bb-a718-9812cadca439> ;
+    sdo:familyName "Kommens"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Marijtje"@nl ;
+    sdo:knows <https://ex.org/Person:17e39bd3-1bdf-08d9-c48e-0e81ea0f8f47> ;
+    sdo:name "Marijtje Kommens"@nl ;
+    sdo:spouse <https://ex.org/Person:32f4dab4-e016-6047-26d9-cd3f292db335> .
+
+<https://ex.org/Source:a49b728a-9150-cddf-6c4b-35c3dc1a9bee> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/7cb91369-dd33-40a7-bbbd-0b95b21548a6/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/a49b728a-9150-cddf-6c4b-35c3dc1a9bee"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/7cb91369-dd33-40a7-bbbd-0b95b21548a6/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1748-04-21"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1214"@nl,
+        "1713-1837"@nl,
+        "Ambachts-, Dorps- en Gemeentebestuur van Rijnsburg"@nl,
+        "Doopdatum: 21-04-1748<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/0700/file/1214\">Inventarisnummer 1214 van archiefnummer 0700 in Archieven</a>"@nl ;
+    sdo:locationCreated "Rijnsburg"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Ambachts-, Dorps- en Gemeentebestuur van Rijnsburg, Deel: 1214, Periode: 1713-1837, (toegangsnr. 0700), inv.nr. 1214, Doopboek (NH) van Rijnsburg, 1713 - 1787., 23, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/a49b728a-9150-cddf-6c4b-35c3dc1a9bee"^^xsd:anyURI .
+

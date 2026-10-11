@@ -1,0 +1,77 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:cb207091-f4ce-f941-0ec5-827279f969a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1787-12-11"@nl ;
+    picom:eventPlace "Sassenheim"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:58cab95f-ebbf-74db-64e9-2318ac441c3f> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:cb207091-f4ce-f941-0ec5-827279f969a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Ammeraal"@nl ;
+    sdo:givenName "Geijs"@nl ;
+    sdo:name "Geijs Ammeraal"@nl .
+
+<https://ex.org/Person:820efea8-ccb8-382e-a86f-9041b2abb6ab> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:cb207091-f4ce-f941-0ec5-827279f969a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Ammeraal"@nl ;
+    sdo:givenName "Aagtje"@nl ;
+    sdo:name "Aagtje Ammeraal"@nl .
+
+<https://ex.org/Person:88ffe7a4-db57-eb3d-5264-2617f8b817ac> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:cb207091-f4ce-f941-0ec5-827279f969a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:cb207091-f4ce-f941-0ec5-827279f969a1_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 11-12-1787"@nl ;
+    sdo:familyName "Kazander"@nl ;
+    sdo:givenName "Joannes"@nl ;
+    sdo:name "Joannes Kazander"@nl ;
+    sdo:parent <https://ex.org/Person:94e71908-fc10-bbba-8091-8a3c6700413a>,
+        <https://ex.org/Person:ec32b28a-1c26-a3ba-c5a7-def324808962> .
+
+<https://ex.org/Person:94e71908-fc10-bbba-8091-8a3c6700413a> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:cb207091-f4ce-f941-0ec5-827279f969a1> ;
+    sdo:children <https://ex.org/Person:88ffe7a4-db57-eb3d-5264-2617f8b817ac> ;
+    sdo:familyName "Ammeraal"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Geertrui"@nl ;
+    sdo:knows <https://ex.org/Person:58cab95f-ebbf-74db-64e9-2318ac441c3f>,
+        <https://ex.org/Person:820efea8-ccb8-382e-a86f-9041b2abb6ab> ;
+    sdo:name "Geertrui Ammeraal"@nl ;
+    sdo:spouse <https://ex.org/Person:ec32b28a-1c26-a3ba-c5a7-def324808962> .
+
+<https://ex.org/Person:ec32b28a-1c26-a3ba-c5a7-def324808962> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:cb207091-f4ce-f941-0ec5-827279f969a1> ;
+    sdo:children <https://ex.org/Person:88ffe7a4-db57-eb3d-5264-2617f8b817ac> ;
+    sdo:familyName "Kazander"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Aloijn"@nl ;
+    sdo:knows <https://ex.org/Person:58cab95f-ebbf-74db-64e9-2318ac441c3f>,
+        <https://ex.org/Person:820efea8-ccb8-382e-a86f-9041b2abb6ab> ;
+    sdo:name "Aloijn Kazander"@nl ;
+    sdo:spouse <https://ex.org/Person:94e71908-fc10-bbba-8091-8a3c6700413a> .
+
+<https://ex.org/Source:cb207091-f4ce-f941-0ec5-827279f969a1> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/cbb1a2f4-1110-4a00-b760-cd1c029fe3d1/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/cb207091-f4ce-f941-0ec5-827279f969a1"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/cbb1a2f4-1110-4a00-b760-cd1c029fe3d1/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1787-12-11"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1715-1812"@nl,
+        "3"@nl,
+        "Retroacta Burgerlijke Stand en DTB gemeente Sassenheim"@nl,
+        "Sassenheim<br>Doopdatum: 11-12-1787<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/0661A/file/3\">Inventarisnummer 3 van archiefnummer 0661A in Archieven</a>"@nl ;
+    sdo:locationCreated "Sassenheim"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Retroacta Burgerlijke Stand en DTB gemeente Sassenheim, Deel: 3, Periode: 1715-1812, (toegangsnr. 0661A), inv.nr. 3, Doopboek en trouwboek (RK) van Sassenheim, 1715 - 1812., 169, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/cb207091-f4ce-f941-0ec5-827279f969a1"^^xsd:anyURI .
+

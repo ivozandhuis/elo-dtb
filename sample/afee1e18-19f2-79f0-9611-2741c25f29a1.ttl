@@ -1,0 +1,65 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:afee1e18-19f2-79f0-9611-2741c25f29a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1665-12-06"@nl ;
+    picom:eventPlace "Warmond"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:8fcc4cf9-bfe2-f855-1e25-ef9e2e125563> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:afee1e18-19f2-79f0-9611-2741c25f29a1> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Pieter"@nl ;
+            pnv:literalName "Pieter Matthijsz"@nl ;
+            pnv:patronym "Matthijsz"@nl ] ;
+    sdo:children <https://ex.org/Person:df8af7e5-5b55-8e22-9261-854f2eb3a1d7> ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Pieter"@nl ;
+    sdo:name "Pieter Matthijsz"@nl ;
+    sdo:spouse <https://ex.org/Person:c2f3579a-e42c-479f-859e-a4de90e895f9> .
+
+<https://ex.org/Person:c2f3579a-e42c-479f-859e-a4de90e895f9> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:afee1e18-19f2-79f0-9611-2741c25f29a1> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Jannetge"@nl ;
+            pnv:literalName "Jannetge Gerrits"@nl ;
+            pnv:patronym "Gerrits"@nl ] ;
+    sdo:children <https://ex.org/Person:df8af7e5-5b55-8e22-9261-854f2eb3a1d7> ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Jannetge"@nl ;
+    sdo:name "Jannetge Gerrits"@nl ;
+    sdo:spouse <https://ex.org/Person:8fcc4cf9-bfe2-f855-1e25-ef9e2e125563> .
+
+<https://ex.org/Person:df8af7e5-5b55-8e22-9261-854f2eb3a1d7> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:afee1e18-19f2-79f0-9611-2741c25f29a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:afee1e18-19f2-79f0-9611-2741c25f29a1_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 06-12-1665"@nl ;
+    sdo:givenName "Thijs"@nl ;
+    sdo:name "Thijs"@nl ;
+    sdo:parent <https://ex.org/Person:8fcc4cf9-bfe2-f855-1e25-ef9e2e125563>,
+        <https://ex.org/Person:c2f3579a-e42c-479f-859e-a4de90e895f9> .
+
+<https://ex.org/Source:afee1e18-19f2-79f0-9611-2741c25f29a1> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/95c60148-eca7-4324-8535-3ec849c89229/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/afee1e18-19f2-79f0-9611-2741c25f29a1"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/95c60148-eca7-4324-8535-3ec849c89229/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1665-12-06"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1645-1671"@nl,
+        "715"@nl,
+        "Doopdatum: 06-12-1665<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/0600/file/715\">Inventarisnummer 715 van archiefnummer 0600 in Archieven</a>"@nl,
+        "Gemeente Warmond (1575-1930)"@nl ;
+    sdo:locationCreated "Warmond"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Gemeente Warmond (1575-1930), Deel: 715, Periode: 1645-1671, (toegangsnr. 0600), inv.nr. 715, Doopboek en trouwboek (NH) van Warmond, 1645 - 1721., 99v, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/afee1e18-19f2-79f0-9611-2741c25f29a1"^^xsd:anyURI .
+

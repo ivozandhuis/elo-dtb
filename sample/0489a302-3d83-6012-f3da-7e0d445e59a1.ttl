@@ -1,0 +1,113 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:0489a302-3d83-6012-f3da-7e0d445e59a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1677-01-06"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:27c6492e-5363-9270-7089-c8d1ce3b0216> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:0489a302-3d83-6012-f3da-7e0d445e59a1> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Briqueny"@nl ;
+            pnv:givenName "Maria"@nl ;
+            pnv:literalName "Maria de Briqueny"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:children <https://ex.org/Person:a17c1fb8-dcae-c478-c16e-c975a80057e0> ;
+    sdo:familyName "de Briqueny"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Maria"@nl ;
+    sdo:knows <https://ex.org/Person:8eab19f8-4929-a349-4d3e-a5639d86cacd>,
+        <https://ex.org/Person:e171cfaa-b967-cc19-9c38-59da29b8d32b>,
+        <https://ex.org/Person:ed8e4725-1056-c628-3330-ea72b9a43033> ;
+    sdo:name "Maria de Briqueny"@nl ;
+    sdo:spouse <https://ex.org/Person:3b76bafd-d1b8-7ab9-7d8b-e15eb43b6af3> .
+
+<https://ex.org/Person:3b76bafd-d1b8-7ab9-7d8b-e15eb43b6af3> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:0489a302-3d83-6012-f3da-7e0d445e59a1> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Aerdenstof"@nl ;
+            pnv:givenName "Gerret"@nl ;
+            pnv:literalName "Gerret Harmensz van Aerdenstof"@nl ;
+            pnv:patronym "Harmensz"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:children <https://ex.org/Person:a17c1fb8-dcae-c478-c16e-c975a80057e0> ;
+    sdo:familyName "van Aerdenstof"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Gerret"@nl ;
+    sdo:knows <https://ex.org/Person:8eab19f8-4929-a349-4d3e-a5639d86cacd>,
+        <https://ex.org/Person:e171cfaa-b967-cc19-9c38-59da29b8d32b>,
+        <https://ex.org/Person:ed8e4725-1056-c628-3330-ea72b9a43033> ;
+    sdo:name "Gerret Harmensz van Aerdenstof"@nl ;
+    sdo:spouse <https://ex.org/Person:27c6492e-5363-9270-7089-c8d1ce3b0216> .
+
+<https://ex.org/Person:8eab19f8-4929-a349-4d3e-a5639d86cacd> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:0489a302-3d83-6012-f3da-7e0d445e59a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Campen"@nl ;
+            pnv:givenName "Nicolaus"@nl ;
+            pnv:literalName "Nicolaus van Campen"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:familyName "van Campen"@nl ;
+    sdo:givenName "Nicolaus"@nl ;
+    sdo:name "Nicolaus van Campen"@nl .
+
+<https://ex.org/Person:a17c1fb8-dcae-c478-c16e-c975a80057e0> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:0489a302-3d83-6012-f3da-7e0d445e59a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:0489a302-3d83-6012-f3da-7e0d445e59a1_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Aerdenstof"@nl ;
+            pnv:givenName "Willem"@nl ;
+            pnv:literalName "Willem van Aerdenstof"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:description "Doopdatum: 06-01-1677"@nl ;
+    sdo:familyName "van Aerdenstof"@nl ;
+    sdo:givenName "Willem"@nl ;
+    sdo:name "Willem van Aerdenstof"@nl ;
+    sdo:parent <https://ex.org/Person:27c6492e-5363-9270-7089-c8d1ce3b0216>,
+        <https://ex.org/Person:3b76bafd-d1b8-7ab9-7d8b-e15eb43b6af3> .
+
+<https://ex.org/Person:e171cfaa-b967-cc19-9c38-59da29b8d32b> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:0489a302-3d83-6012-f3da-7e0d445e59a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Aerdenstof"@nl ;
+    sdo:givenName "Joannes"@nl ;
+    sdo:name "Joannes Aerdenstof"@nl .
+
+<https://ex.org/Person:ed8e4725-1056-c628-3330-ea72b9a43033> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:0489a302-3d83-6012-f3da-7e0d445e59a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Vliet"@nl ;
+            pnv:givenName "Maria"@nl ;
+            pnv:literalName "Maria van Vliet"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:familyName "van Vliet"@nl ;
+    sdo:givenName "Maria"@nl ;
+    sdo:name "Maria van Vliet"@nl .
+
+<https://ex.org/Source:0489a302-3d83-6012-f3da-7e0d445e59a1> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/21568f75-181c-488c-b66f-d20113743621/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/0489a302-3d83-6012-f3da-7e0d445e59a1"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/21568f75-181c-488c-b66f-d20113743621/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1677-01-06"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1664-1681"@nl,
+        "223"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "aant. doop op den biddagh<br>Doopdatum: 06-01-1677<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/223\">Inventarisnummer 223 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 223, Periode: 1..., (toegangsnr. 1004), inv.nr. 223, Doopboek van de Pieterskerk (NH) te Leiden, 5 maart 1664 - 1681., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/0489a302-3d83-6012-f3da-7e0d445e59a1"^^xsd:anyURI .
+

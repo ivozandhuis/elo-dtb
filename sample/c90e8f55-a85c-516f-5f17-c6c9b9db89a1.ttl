@@ -1,0 +1,77 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:c90e8f55-a85c-516f-5f17-c6c9b9db89a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1801-06-21"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:4217cf89-6f0e-dc1f-e2cb-562d103ec060> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:c90e8f55-a85c-516f-5f17-c6c9b9db89a1> ;
+    sdo:children <https://ex.org/Person:7ec47258-8b26-dc72-1fd4-0d7c8ac68261> ;
+    sdo:familyName "Nuij"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Johannes"@nl ;
+    sdo:knows <https://ex.org/Person:73a4b1d1-157d-ed6b-a52b-ff82a7afd138>,
+        <https://ex.org/Person:bf7f877a-9bc9-af81-a1c5-aea957164c88> ;
+    sdo:name "Johannes Nuij"@nl ;
+    sdo:spouse <https://ex.org/Person:b8e6bd23-2734-ea35-930c-c89c35a6e476> .
+
+<https://ex.org/Person:73a4b1d1-157d-ed6b-a52b-ff82a7afd138> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:c90e8f55-a85c-516f-5f17-c6c9b9db89a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Nuij"@nl ;
+    sdo:givenName "Johannes"@nl ;
+    sdo:name "Johannes Nuij"@nl .
+
+<https://ex.org/Person:7ec47258-8b26-dc72-1fd4-0d7c8ac68261> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:c90e8f55-a85c-516f-5f17-c6c9b9db89a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:c90e8f55-a85c-516f-5f17-c6c9b9db89a1_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 21-06-1801"@nl ;
+    sdo:familyName "Nuij"@nl ;
+    sdo:givenName "Maria"@nl ;
+    sdo:name "Maria Nuij"@nl ;
+    sdo:parent <https://ex.org/Person:4217cf89-6f0e-dc1f-e2cb-562d103ec060>,
+        <https://ex.org/Person:b8e6bd23-2734-ea35-930c-c89c35a6e476> .
+
+<https://ex.org/Person:b8e6bd23-2734-ea35-930c-c89c35a6e476> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:c90e8f55-a85c-516f-5f17-c6c9b9db89a1> ;
+    sdo:children <https://ex.org/Person:7ec47258-8b26-dc72-1fd4-0d7c8ac68261> ;
+    sdo:familyName "Pikaar"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Maria"@nl ;
+    sdo:knows <https://ex.org/Person:73a4b1d1-157d-ed6b-a52b-ff82a7afd138>,
+        <https://ex.org/Person:bf7f877a-9bc9-af81-a1c5-aea957164c88> ;
+    sdo:name "Maria Pikaar"@nl ;
+    sdo:spouse <https://ex.org/Person:4217cf89-6f0e-dc1f-e2cb-562d103ec060> .
+
+<https://ex.org/Person:bf7f877a-9bc9-af81-a1c5-aea957164c88> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:c90e8f55-a85c-516f-5f17-c6c9b9db89a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Nuij"@nl ;
+    sdo:givenName "Maria"@nl ;
+    sdo:name "Maria Nuij"@nl .
+
+<https://ex.org/Source:c90e8f55-a85c-516f-5f17-c6c9b9db89a1> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/b70bf7ad-b68e-436b-b1cd-4a9dbd1ace23/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/c90e8f55-a85c-516f-5f17-c6c9b9db89a1"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/b70bf7ad-b68e-436b-b1cd-4a9dbd1ace23/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1801-06-21"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1796-1803"@nl,
+        "256"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 21-06-1801<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/256\">Inventarisnummer 256 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 256, Periode: 1..., (toegangsnr. 1004), inv.nr. 256, Doopboek van de Hooglandse Kerk (NH) te Leiden, 3 juli 1796 - 1803., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/c90e8f55-a85c-516f-5f17-c6c9b9db89a1"^^xsd:anyURI .
+

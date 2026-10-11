@@ -1,0 +1,102 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:13dfac0a-25d0-bc9d-cceb-31f4f02aa9a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1621-12-02"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:04c77a1e-0500-7118-c978-53da59cd52fe> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:13dfac0a-25d0-bc9d-cceb-31f4f02aa9a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Braems"@nl ;
+    sdo:givenName "Maeijcken"@nl ;
+    sdo:name "Maeijcken Braems"@nl .
+
+<https://ex.org/Person:1c304e75-7432-1193-43a6-b071df5717e1> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:13dfac0a-25d0-bc9d-cceb-31f4f02aa9a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Sant"@nl ;
+    sdo:givenName "Jan"@nl ;
+    sdo:name "Jan Sant"@nl .
+
+<https://ex.org/Person:5335e7ac-491c-bd30-8fff-86bbad28602e> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:13dfac0a-25d0-bc9d-cceb-31f4f02aa9a1> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Rijcke"@nl ;
+            pnv:literalName "Rijcke Mahieus"@nl ;
+            pnv:patronym "Mahieus"@nl ] ;
+    sdo:children <https://ex.org/Person:8d5af111-b563-7d69-48b9-55c5f4b8b5bf> ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Rijcke"@nl ;
+    sdo:knows <https://ex.org/Person:04c77a1e-0500-7118-c978-53da59cd52fe>,
+        <https://ex.org/Person:1c304e75-7432-1193-43a6-b071df5717e1>,
+        <https://ex.org/Person:730981ca-fb65-ecf1-c06b-e51cd3762eac>,
+        <https://ex.org/Person:7f3639ac-1fba-a29c-905f-630b48e8bd96> ;
+    sdo:name "Rijcke Mahieus"@nl ;
+    sdo:spouse <https://ex.org/Person:96a82ebf-d15b-be86-a6d9-8af644ab7501> .
+
+<https://ex.org/Person:730981ca-fb65-ecf1-c06b-e51cd3762eac> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:13dfac0a-25d0-bc9d-cceb-31f4f02aa9a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Sant"@nl ;
+    sdo:givenName "Jan"@nl ;
+    sdo:name "Jan Sant"@nl .
+
+<https://ex.org/Person:7f3639ac-1fba-a29c-905f-630b48e8bd96> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:13dfac0a-25d0-bc9d-cceb-31f4f02aa9a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Sijntgen"@nl ;
+            pnv:literalName "Sijntgen Mahieus"@nl ;
+            pnv:patronym "Mahieus"@nl ] ;
+    sdo:givenName "Sijntgen"@nl ;
+    sdo:name "Sijntgen Mahieus"@nl .
+
+<https://ex.org/Person:8d5af111-b563-7d69-48b9-55c5f4b8b5bf> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:13dfac0a-25d0-bc9d-cceb-31f4f02aa9a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:13dfac0a-25d0-bc9d-cceb-31f4f02aa9a1_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 02-12-1621"@nl ;
+    sdo:familyName "Sant"@nl ;
+    sdo:givenName "Jan"@nl ;
+    sdo:name "Jan Sant"@nl ;
+    sdo:parent <https://ex.org/Person:5335e7ac-491c-bd30-8fff-86bbad28602e>,
+        <https://ex.org/Person:96a82ebf-d15b-be86-a6d9-8af644ab7501> .
+
+<https://ex.org/Person:96a82ebf-d15b-be86-a6d9-8af644ab7501> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:13dfac0a-25d0-bc9d-cceb-31f4f02aa9a1> ;
+    sdo:children <https://ex.org/Person:8d5af111-b563-7d69-48b9-55c5f4b8b5bf> ;
+    sdo:familyName "Sant"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Pieter"@nl ;
+    sdo:knows <https://ex.org/Person:04c77a1e-0500-7118-c978-53da59cd52fe>,
+        <https://ex.org/Person:1c304e75-7432-1193-43a6-b071df5717e1>,
+        <https://ex.org/Person:730981ca-fb65-ecf1-c06b-e51cd3762eac>,
+        <https://ex.org/Person:7f3639ac-1fba-a29c-905f-630b48e8bd96> ;
+    sdo:name "Pieter Sant"@nl ;
+    sdo:spouse <https://ex.org/Person:5335e7ac-491c-bd30-8fff-86bbad28602e> .
+
+<https://ex.org/Source:13dfac0a-25d0-bc9d-cceb-31f4f02aa9a1> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/2e1eebbb-fac5-4f72-8c59-dd0d7771c3ae/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/13dfac0a-25d0-bc9d-cceb-31f4f02aa9a1"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/2e1eebbb-fac5-4f72-8c59-dd0d7771c3ae/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1621-12-02"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1621-1628"@nl,
+        "232"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Toevoegingen: eerste getuige: den Ouden; tweede getuige: den jonghen.<br>Doopdatum: 02-12-1621<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/232\">Inventarisnummer 232 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 232, Periode: 1..., (toegangsnr. 1004), inv.nr. 232, Doopboek van de Hooglandse Kerk (NH) te Leiden, 1621 - 17 augustus 1628., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/13dfac0a-25d0-bc9d-cceb-31f4f02aa9a1"^^xsd:anyURI .
+

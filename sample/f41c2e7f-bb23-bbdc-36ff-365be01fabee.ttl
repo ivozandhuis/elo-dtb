@@ -1,0 +1,101 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:f41c2e7f-bb23-bbdc-36ff-365be01fabee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1728-11-09"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:0d57e570-791c-cbca-d425-729fec082139> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:f41c2e7f-bb23-bbdc-36ff-365be01fabee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Sanger"@nl ;
+            pnv:givenName "Jan"@nl ;
+            pnv:literalName "Jan de Sanger"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:children <https://ex.org/Person:26112c70-f042-7917-1e4b-027ad1906db9> ;
+    sdo:familyName "de Sanger"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jan"@nl ;
+    sdo:knows <https://ex.org/Person:790dd808-7565-7c1d-00a4-7821f5791c83>,
+        <https://ex.org/Person:f7bad1a3-a903-aa37-4348-28ec9c54f7e4> ;
+    sdo:name "Jan de Sanger"@nl ;
+    sdo:spouse <https://ex.org/Person:360bd003-c04d-1332-7e5a-034ba36281ce> .
+
+<https://ex.org/Person:26112c70-f042-7917-1e4b-027ad1906db9> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:f41c2e7f-bb23-bbdc-36ff-365be01fabee> ;
+    picom:hasLifeEvent <https://ex.org/Source:f41c2e7f-bb23-bbdc-36ff-365be01fabee_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Sanger"@nl ;
+            pnv:givenName "Ysaack"@nl ;
+            pnv:literalName "Ysaack de Sanger"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:description "Doopdatum: 09-11-1728"@nl ;
+    sdo:familyName "de Sanger"@nl ;
+    sdo:givenName "Ysaack"@nl ;
+    sdo:name "Ysaack de Sanger"@nl ;
+    sdo:parent <https://ex.org/Person:0d57e570-791c-cbca-d425-729fec082139>,
+        <https://ex.org/Person:360bd003-c04d-1332-7e5a-034ba36281ce> .
+
+<https://ex.org/Person:360bd003-c04d-1332-7e5a-034ba36281ce> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:f41c2e7f-bb23-bbdc-36ff-365be01fabee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Dalen"@nl ;
+            pnv:givenName "Jannetie"@nl ;
+            pnv:literalName "Jannetie van Dalen"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:children <https://ex.org/Person:26112c70-f042-7917-1e4b-027ad1906db9> ;
+    sdo:familyName "van Dalen"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Jannetie"@nl ;
+    sdo:knows <https://ex.org/Person:790dd808-7565-7c1d-00a4-7821f5791c83>,
+        <https://ex.org/Person:f7bad1a3-a903-aa37-4348-28ec9c54f7e4> ;
+    sdo:name "Jannetie van Dalen"@nl ;
+    sdo:spouse <https://ex.org/Person:0d57e570-791c-cbca-d425-729fec082139> .
+
+<https://ex.org/Person:790dd808-7565-7c1d-00a4-7821f5791c83> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:f41c2e7f-bb23-bbdc-36ff-365be01fabee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Dirck"@nl ;
+            pnv:literalName "Dirck Maartenz"@nl ;
+            pnv:patronym "Maartenz"@nl ] ;
+    sdo:givenName "Dirck"@nl ;
+    sdo:name "Dirck Maartenz"@nl .
+
+<https://ex.org/Person:f7bad1a3-a903-aa37-4348-28ec9c54f7e4> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:f41c2e7f-bb23-bbdc-36ff-365be01fabee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Dalen"@nl ;
+            pnv:givenName "Katrina"@nl ;
+            pnv:literalName "Katrina van Dalen"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:familyName "van Dalen"@nl ;
+    sdo:givenName "Katrina"@nl ;
+    sdo:name "Katrina van Dalen"@nl .
+
+<https://ex.org/Source:f41c2e7f-bb23-bbdc-36ff-365be01fabee> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/8286f69a-6ca0-4140-99b8-acbae0be1497/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/f41c2e7f-bb23-bbdc-36ff-365be01fabee"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/8286f69a-6ca0-4140-99b8-acbae0be1497/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1728-11-09"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1726-1733"@nl,
+        "249"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 09-11-1728<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/249\">Inventarisnummer 249 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 249, Periode: 1..., (toegangsnr. 1004), inv.nr. 249, Doopboek van de Hooglandse Kerk (NH) te Leiden, 3 maart 1726 - 28 april 1733., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/f41c2e7f-bb23-bbdc-36ff-365be01fabee"^^xsd:anyURI .
+

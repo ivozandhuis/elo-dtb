@@ -1,0 +1,72 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:1e246b75-5a9a-693d-ffa8-75bc4087efa5> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:32a56215-f9f8-8942-b29b-4134bcc60c35> ;
+    picom:deceased true ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Annetie"@nl ;
+            pnv:literalName "Annetie Jans"@nl ;
+            pnv:patronym "Jans"@nl ] ;
+    sdo:description "Relatie tot bruidegom: wed."@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Annetie"@nl ;
+    sdo:name "Annetie Jans"@nl .
+
+<https://ex.org/Person:24db1058-04db-86f7-78b4-5111abf00e48> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:32a56215-f9f8-8942-b29b-4134bcc60c35> ;
+    picom:hasLifeEvent <https://ex.org/Source:32a56215-f9f8-8942-b29b-4134bcc60c35_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Mispel"@nl ;
+            pnv:givenName "Pieternelletie"@nl ;
+            pnv:literalName "Pieternelletie Frans Mispel"@nl ;
+            pnv:patronym "Frans"@nl ] ;
+    sdo:address "Schoonhoven"@nl ;
+    sdo:birthPlace "Schoonhoven"@nl ;
+    sdo:familyName "Mispel"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Pieternelletie"@nl ;
+    sdo:name "Pieternelletie Frans Mispel"@nl ;
+    sdo:spouse <https://ex.org/Person:729b4d20-aca7-3fdc-b59c-e506e3ea1e8a> .
+
+<https://ex.org/Person:729b4d20-aca7-3fdc-b59c-e506e3ea1e8a> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:32a56215-f9f8-8942-b29b-4134bcc60c35> ;
+    picom:hasLifeEvent <https://ex.org/Source:32a56215-f9f8-8942-b29b-4134bcc60c35_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    picom:isWidOf <https://ex.org/Person:1e246b75-5a9a-693d-ffa8-75bc4087efa5> ;
+    sdo:address "Haerlemstraet"@nl ;
+    sdo:familyName "Hup"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Laurens"@nl ;
+    sdo:name "Laurens Hup"@nl ;
+    sdo:spouse <https://ex.org/Person:24db1058-04db-86f7-78b4-5111abf00e48> .
+
+<https://ex.org/Source:32a56215-f9f8-8942-b29b-4134bcc60c35_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1682-04-10"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
+<https://ex.org/Source:32a56215-f9f8-8942-b29b-4134bcc60c35> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/9f8d50d6-7ce0-494f-9e35-3780823e2bad/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/32a56215-f9f8-8942-b29b-4134bcc60c35"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/9f8d50d6-7ce0-494f-9e35-3780823e2bad/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1682-04-10"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1682-1686"@nl,
+        "23"@nl,
+        "Bruidegom is met behoorlyke attestatie gecompareerd<br>Datum ondertrouw: 10-04-1682<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/23\">Inventarisnummer 23 van archiefnummer 1004 in Archieven</a>"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 23, Periode: 16..., (toegangsnr. 1004), inv.nr. 23, Y. Kerkelijk ondertrouwboek (NH) van Leiden, 1682 - januari 1686., 21v, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/32a56215-f9f8-8942-b29b-4134bcc60c35"^^xsd:anyURI .
+

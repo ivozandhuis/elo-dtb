@@ -1,0 +1,112 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:b8bdcde6-6f6f-e5e3-70c0-26bac89f29a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1679-12-24"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:018d6100-cd9a-3281-08be-6f229a031183> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b8bdcde6-6f6f-e5e3-70c0-26bac89f29a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Annetje"@nl ;
+            pnv:literalName "Annetje Jans"@nl ;
+            pnv:patronym "Jans"@nl ] ;
+    sdo:givenName "Annetje"@nl ;
+    sdo:name "Annetje Jans"@nl .
+
+<https://ex.org/Person:128df9f6-d6f9-cb6c-8cbc-b3b54f81cd75> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b8bdcde6-6f6f-e5e3-70c0-26bac89f29a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:b8bdcde6-6f6f-e5e3-70c0-26bac89f29a1_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 24-12-1679"@nl ;
+    sdo:givenName "Sophia"@nl ;
+    sdo:name "Sophia"@nl ;
+    sdo:parent <https://ex.org/Person:5588e0ed-f5c5-7b0e-1871-a7376577b551>,
+        <https://ex.org/Person:d31b505b-005c-359d-e7ec-0f7344dc2a51> .
+
+<https://ex.org/Person:46382297-264e-db10-6a0b-2797d912b5d0> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b8bdcde6-6f6f-e5e3-70c0-26bac89f29a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Kraeck"@nl ;
+    sdo:givenName "Hendrijck"@nl ;
+    sdo:name "Hendrijck Kraeck"@nl .
+
+<https://ex.org/Person:497c79fe-b2cb-1544-4adc-1d60b2c4e879> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b8bdcde6-6f6f-e5e3-70c0-26bac89f29a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Aeltje"@nl ;
+            pnv:literalName "Aeltje Serwouters"@nl ;
+            pnv:patronym "Serwouters"@nl ] ;
+    sdo:givenName "Aeltje"@nl ;
+    sdo:name "Aeltje Serwouters"@nl .
+
+<https://ex.org/Person:5588e0ed-f5c5-7b0e-1871-a7376577b551> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b8bdcde6-6f6f-e5e3-70c0-26bac89f29a1> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Duipen"@nl ;
+            pnv:givenName "Sophia"@nl ;
+            pnv:literalName "Sophia van Duipen"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:children <https://ex.org/Person:128df9f6-d6f9-cb6c-8cbc-b3b54f81cd75> ;
+    sdo:familyName "van Duipen"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Sophia"@nl ;
+    sdo:knows <https://ex.org/Person:018d6100-cd9a-3281-08be-6f229a031183>,
+        <https://ex.org/Person:46382297-264e-db10-6a0b-2797d912b5d0>,
+        <https://ex.org/Person:497c79fe-b2cb-1544-4adc-1d60b2c4e879>,
+        <https://ex.org/Person:7a0abe6a-3c3a-d2f9-df51-689add25e90a> ;
+    sdo:name "Sophia van Duipen"@nl ;
+    sdo:spouse <https://ex.org/Person:d31b505b-005c-359d-e7ec-0f7344dc2a51> .
+
+<https://ex.org/Person:7a0abe6a-3c3a-d2f9-df51-689add25e90a> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b8bdcde6-6f6f-e5e3-70c0-26bac89f29a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Jasper"@nl ;
+            pnv:literalName "Jasper Serwouters"@nl ;
+            pnv:patronym "Serwouters"@nl ] ;
+    sdo:givenName "Jasper"@nl ;
+    sdo:name "Jasper Serwouters"@nl .
+
+<https://ex.org/Person:d31b505b-005c-359d-e7ec-0f7344dc2a51> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b8bdcde6-6f6f-e5e3-70c0-26bac89f29a1> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Jan"@nl ;
+            pnv:literalName "Jan Feijs"@nl ;
+            pnv:patronym "Feijs"@nl ] ;
+    sdo:children <https://ex.org/Person:128df9f6-d6f9-cb6c-8cbc-b3b54f81cd75> ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jan"@nl ;
+    sdo:knows <https://ex.org/Person:018d6100-cd9a-3281-08be-6f229a031183>,
+        <https://ex.org/Person:46382297-264e-db10-6a0b-2797d912b5d0>,
+        <https://ex.org/Person:497c79fe-b2cb-1544-4adc-1d60b2c4e879>,
+        <https://ex.org/Person:7a0abe6a-3c3a-d2f9-df51-689add25e90a> ;
+    sdo:name "Jan Feijs"@nl ;
+    sdo:spouse <https://ex.org/Person:5588e0ed-f5c5-7b0e-1871-a7376577b551> .
+
+<https://ex.org/Source:b8bdcde6-6f6f-e5e3-70c0-26bac89f29a1> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/20517add-176d-4475-85b9-41a9a7462da4/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/b8bdcde6-6f6f-e5e3-70c0-26bac89f29a1"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/20517add-176d-4475-85b9-41a9a7462da4/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1679-12-24"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1674-1679"@nl,
+        "239"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 24-12-1679<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/239\">Inventarisnummer 239 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 239, Periode: 1..., (toegangsnr. 1004), inv.nr. 239, Doopboek van de Hooglandse Kerk (NH) te Leiden, 1 april 1674 - 1679., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/b8bdcde6-6f6f-e5e3-70c0-26bac89f29a1"^^xsd:anyURI .
+

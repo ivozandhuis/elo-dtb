@@ -1,0 +1,95 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:211f5c1b-7f56-79ba-332a-226301446bee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1761-07-30"@nl ;
+    picom:eventPlace "Ter Aar"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:01772081-3eef-3b5b-1fca-52639423656a> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:211f5c1b-7f56-79ba-332a-226301446bee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Veer"@nl ;
+            pnv:givenName "Kornelis"@nl ;
+            pnv:literalName "Kornelis Willem van der Veer"@nl ;
+            pnv:patronym "Willem"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:familyName "van der Veer"@nl ;
+    sdo:givenName "Kornelis"@nl ;
+    sdo:name "Kornelis Willem van der Veer"@nl .
+
+<https://ex.org/Person:92d7459c-e99b-3416-86a0-1ad753bfc0b8> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:211f5c1b-7f56-79ba-332a-226301446bee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Veer"@nl ;
+            pnv:givenName "Marijtje"@nl ;
+            pnv:literalName "Marijtje van der Veer"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:familyName "van der Veer"@nl ;
+    sdo:givenName "Marijtje"@nl ;
+    sdo:name "Marijtje van der Veer"@nl .
+
+<https://ex.org/Person:b17e0448-6349-072d-17e6-0d34aaa11c02> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:211f5c1b-7f56-79ba-332a-226301446bee> ;
+    sdo:children <https://ex.org/Person:de44101f-b1d1-64e1-73f0-0d74572fabbf> ;
+    sdo:familyName "Swanevelt"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jan"@nl ;
+    sdo:knows <https://ex.org/Person:01772081-3eef-3b5b-1fca-52639423656a>,
+        <https://ex.org/Person:92d7459c-e99b-3416-86a0-1ad753bfc0b8> ;
+    sdo:name "Jan Swanevelt"@nl ;
+    sdo:spouse <https://ex.org/Person:dcecc531-7c95-f035-0402-0e15f3dba857> .
+
+<https://ex.org/Person:dcecc531-7c95-f035-0402-0e15f3dba857> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:211f5c1b-7f56-79ba-332a-226301446bee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Veer"@nl ;
+            pnv:givenName "Antje"@nl ;
+            pnv:literalName "Antje Wilems van der Veer"@nl ;
+            pnv:patronym "Wilems"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:children <https://ex.org/Person:de44101f-b1d1-64e1-73f0-0d74572fabbf> ;
+    sdo:familyName "van der Veer"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Antje"@nl ;
+    sdo:knows <https://ex.org/Person:01772081-3eef-3b5b-1fca-52639423656a>,
+        <https://ex.org/Person:92d7459c-e99b-3416-86a0-1ad753bfc0b8> ;
+    sdo:name "Antje Wilems van der Veer"@nl ;
+    sdo:spouse <https://ex.org/Person:b17e0448-6349-072d-17e6-0d34aaa11c02> .
+
+<https://ex.org/Person:de44101f-b1d1-64e1-73f0-0d74572fabbf> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:211f5c1b-7f56-79ba-332a-226301446bee> ;
+    picom:hasLifeEvent <https://ex.org/Source:211f5c1b-7f56-79ba-332a-226301446bee_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 30-07-1761"@nl ;
+    sdo:familyName "Swanevelt"@nl ;
+    sdo:givenName "Wilhelmus"@nl ;
+    sdo:name "Wilhelmus Swanevelt"@nl ;
+    sdo:parent <https://ex.org/Person:b17e0448-6349-072d-17e6-0d34aaa11c02>,
+        <https://ex.org/Person:dcecc531-7c95-f035-0402-0e15f3dba857> .
+
+<https://ex.org/Source:211f5c1b-7f56-79ba-332a-226301446bee> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/5438e302-4749-443a-8286-10f8285bf8d7/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/211f5c1b-7f56-79ba-332a-226301446bee"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/5438e302-4749-443a-8286-10f8285bf8d7/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1761-07-30"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1755-1792"@nl,
+        "6"@nl,
+        "Doop-, trouw- en begraafregisters van Ter Aar"@nl,
+        "Doopdatum: 30-07-1761<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/151.1.11/file/6\">Inventarisnummer 6 van archiefnummer 151.1.11 in Archieven</a>"@nl ;
+    sdo:locationCreated "Ter Aar"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw- en begraafregisters van Ter Aar, Deel: 6, Periode: 1755-1792, (toegangsnr. 151.1.11), inv.nr. 6, Doopboek (RK) van Ter Aar, 3 mei 1755 - 24 december 1791 en trouwboek, 20 mei 1755 - 16 januari 1792;, 29, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/211f5c1b-7f56-79ba-332a-226301446bee"^^xsd:anyURI .
+

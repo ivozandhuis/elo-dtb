@@ -1,0 +1,90 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:60766a05-9c02-9caa-6c3b-948d568bfbee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1714-06-26"@nl ;
+    picom:eventPlace "Ter Aar"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:03611d14-4939-4537-3371-e27ae04990ff> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:60766a05-9c02-9caa-6c3b-948d568bfbee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Cnelis"@nl ;
+            pnv:literalName "Cnelis Tomisse"@nl ;
+            pnv:patronym "Tomisse"@nl ] ;
+    sdo:givenName "Cnelis"@nl ;
+    sdo:name "Cnelis Tomisse"@nl .
+
+<https://ex.org/Person:2a0151c6-035b-317f-4158-664ee97c9255> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:60766a05-9c02-9caa-6c3b-948d568bfbee> ;
+    picom:hasLifeEvent <https://ex.org/Source:60766a05-9c02-9caa-6c3b-948d568bfbee_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:birthPlace "Langeraar"@nl ;
+    sdo:description "Spurius<br>Doopdatum: 26-06-1714"@nl ;
+    sdo:givenName "Martinus"@nl ;
+    sdo:name "Martinus"@nl ;
+    sdo:parent <https://ex.org/Person:569e2c6d-60fc-e63d-5e67-d2cf24c689bc>,
+        <https://ex.org/Person:99120066-d67e-05da-5dff-0a6f29db73ac> .
+
+<https://ex.org/Person:569e2c6d-60fc-e63d-5e67-d2cf24c689bc> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:60766a05-9c02-9caa-6c3b-948d568bfbee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Martie"@nl ;
+            pnv:literalName "Martie Meertens"@nl ;
+            pnv:patronym "Meertens"@nl ] ;
+    sdo:children <https://ex.org/Person:2a0151c6-035b-317f-4158-664ee97c9255> ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Martie"@nl ;
+    sdo:knows <https://ex.org/Person:03611d14-4939-4537-3371-e27ae04990ff>,
+        <https://ex.org/Person:df099a9f-537b-9077-52a6-21afd45cbef3> ;
+    sdo:name "Martie Meertens"@nl ;
+    sdo:spouse <https://ex.org/Person:99120066-d67e-05da-5dff-0a6f29db73ac> .
+
+<https://ex.org/Person:99120066-d67e-05da-5dff-0a6f29db73ac> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:60766a05-9c02-9caa-6c3b-948d568bfbee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Jan"@nl ;
+            pnv:literalName "Jan Knelisse"@nl ;
+            pnv:patronym "Knelisse"@nl ] ;
+    sdo:children <https://ex.org/Person:2a0151c6-035b-317f-4158-664ee97c9255> ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jan"@nl ;
+    sdo:knows <https://ex.org/Person:03611d14-4939-4537-3371-e27ae04990ff>,
+        <https://ex.org/Person:df099a9f-537b-9077-52a6-21afd45cbef3> ;
+    sdo:name "Jan Knelisse"@nl ;
+    sdo:spouse <https://ex.org/Person:569e2c6d-60fc-e63d-5e67-d2cf24c689bc> .
+
+<https://ex.org/Person:df099a9f-537b-9077-52a6-21afd45cbef3> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:60766a05-9c02-9caa-6c3b-948d568bfbee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Anna"@nl ;
+            pnv:literalName "Anna Gijse"@nl ;
+            pnv:patronym "Gijse"@nl ] ;
+    sdo:givenName "Anna"@nl ;
+    sdo:name "Anna Gijse"@nl .
+
+<https://ex.org/Source:60766a05-9c02-9caa-6c3b-948d568bfbee> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/07e75b35-24fe-407f-9855-3bcbce1300f1/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/60766a05-9c02-9caa-6c3b-948d568bfbee"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/07e75b35-24fe-407f-9855-3bcbce1300f1/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1714-06-26"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1668-1718"@nl,
+        "5"@nl,
+        "Doop-, trouw- en begraafregisters van Ter Aar"@nl,
+        "Doopdatum: 26-06-1714<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/151.1.11/file/5\">Inventarisnummer 5 van archiefnummer 151.1.11 in Archieven</a>"@nl ;
+    sdo:locationCreated "Ter Aar"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw- en begraafregisters van Ter Aar, Deel: 5, Periode: 1668-1718, (toegangsnr. 151.1.11), inv.nr. 5, \"Doopboek en trouwboek (RK) van Ter Aar\", doopinschrijvingen 8 april 1668 - 4 maart 1699, 18 december 1700 - 18 maart 1718, trouwinschrijvingen, 16 oktober 1668 - 24 februari 1699, 1701 - 11 februari 1711, 1715, 1718 en z.d. en lijst van personen die het laatste Heilige Oliesel hebben ontvangen, met aantekening van overlijden, 29 december 1700 - januari 1715, 1716 - 15 juni 1717., 87, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/60766a05-9c02-9caa-6c3b-948d568bfbee"^^xsd:anyURI .
+

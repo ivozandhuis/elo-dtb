@@ -1,0 +1,84 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:e86c1bf4-9eb6-6016-6b62-c9b0b3073bee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1722-04-26"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:28b43f76-e2b7-149d-0470-a655c0261c09> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:e86c1bf4-9eb6-6016-6b62-c9b0b3073bee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Jannetie"@nl ;
+            pnv:literalName "Jannetie Barends"@nl ;
+            pnv:patronym "Barends"@nl ] ;
+    sdo:givenName "Jannetie"@nl ;
+    sdo:name "Jannetie Barends"@nl .
+
+<https://ex.org/Person:727f21e5-c134-328b-829c-57313a75f19e> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:e86c1bf4-9eb6-6016-6b62-c9b0b3073bee> ;
+    picom:hasLifeEvent <https://ex.org/Source:e86c1bf4-9eb6-6016-6b62-c9b0b3073bee_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 26-04-1722"@nl ;
+    sdo:familyName "Schagt"@nl ;
+    sdo:givenName "Jannetie"@nl ;
+    sdo:name "Jannetie Schagt"@nl ;
+    sdo:parent <https://ex.org/Person:9ffa39ca-4ba9-66e0-1015-18f29073281f>,
+        <https://ex.org/Person:c28ef394-8f12-a82e-2c8a-9c2cac8a5a1a> .
+
+<https://ex.org/Person:9e3131f6-4836-0348-eeef-4017e9e2faaf> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:e86c1bf4-9eb6-6016-6b62-c9b0b3073bee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Schagt"@nl ;
+    sdo:givenName "Daniel"@nl ;
+    sdo:name "Daniel Schagt"@nl .
+
+<https://ex.org/Person:9ffa39ca-4ba9-66e0-1015-18f29073281f> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:e86c1bf4-9eb6-6016-6b62-c9b0b3073bee> ;
+    sdo:children <https://ex.org/Person:727f21e5-c134-328b-829c-57313a75f19e> ;
+    sdo:familyName "Schagt"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Tomas"@nl ;
+    sdo:knows <https://ex.org/Person:28b43f76-e2b7-149d-0470-a655c0261c09>,
+        <https://ex.org/Person:9e3131f6-4836-0348-eeef-4017e9e2faaf> ;
+    sdo:name "Tomas Schagt"@nl ;
+    sdo:spouse <https://ex.org/Person:c28ef394-8f12-a82e-2c8a-9c2cac8a5a1a> .
+
+<https://ex.org/Person:c28ef394-8f12-a82e-2c8a-9c2cac8a5a1a> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:e86c1bf4-9eb6-6016-6b62-c9b0b3073bee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Sara"@nl ;
+            pnv:literalName "Sara Duif"@nl ;
+            pnv:patronym "Duif"@nl ] ;
+    sdo:children <https://ex.org/Person:727f21e5-c134-328b-829c-57313a75f19e> ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Sara"@nl ;
+    sdo:knows <https://ex.org/Person:28b43f76-e2b7-149d-0470-a655c0261c09>,
+        <https://ex.org/Person:9e3131f6-4836-0348-eeef-4017e9e2faaf> ;
+    sdo:name "Sara Duif"@nl ;
+    sdo:spouse <https://ex.org/Person:9ffa39ca-4ba9-66e0-1015-18f29073281f> .
+
+<https://ex.org/Source:e86c1bf4-9eb6-6016-6b62-c9b0b3073bee> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/e6a583ed-d39e-4282-9ab5-4b89ae06ad29/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/e86c1bf4-9eb6-6016-6b62-c9b0b3073bee"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/e6a583ed-d39e-4282-9ab5-4b89ae06ad29/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1722-04-26"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1718-1726"@nl,
+        "248"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Toevoeging onderzoeker: Schacht z H 119v<br>Doopdatum: 26-04-1722<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/248\">Inventarisnummer 248 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 248, Periode: 1..., (toegangsnr. 1004), inv.nr. 248, Doopboek van de Hooglandse Kerk (NH) te Leiden, 2 oktober 1718 - 28 februari 1726., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/e86c1bf4-9eb6-6016-6b62-c9b0b3073bee"^^xsd:anyURI .
+

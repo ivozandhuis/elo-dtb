@@ -1,0 +1,94 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:0fe3fe86-dfbb-f68c-8e61-76fb0c5eabee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1716-10-20"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:003a7a96-f26e-67bd-c27b-a20f9323a256> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:0fe3fe86-dfbb-f68c-8e61-76fb0c5eabee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Redel"@nl ;
+    sdo:givenName "Dirk"@nl ;
+    sdo:name "Dirk Redel"@nl .
+
+<https://ex.org/Person:2a2ebdd5-9a79-8f39-34b0-3132c73e5466> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:0fe3fe86-dfbb-f68c-8e61-76fb0c5eabee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Barber"@nl ;
+            pnv:literalName "Barber Philips"@nl ;
+            pnv:patronym "Philips"@nl ] ;
+    sdo:givenName "Barber"@nl ;
+    sdo:name "Barber Philips"@nl .
+
+<https://ex.org/Person:a6318b96-e942-5ef7-6673-73a5f18189fb> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:0fe3fe86-dfbb-f68c-8e61-76fb0c5eabee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Zanen"@nl ;
+            pnv:givenName "Jan"@nl ;
+            pnv:literalName "Jan van Zanen"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:children <https://ex.org/Person:f71e9e26-97e9-3f60-7d68-1e72dd357fb7> ;
+    sdo:familyName "van Zanen"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jan"@nl ;
+    sdo:knows <https://ex.org/Person:003a7a96-f26e-67bd-c27b-a20f9323a256>,
+        <https://ex.org/Person:2a2ebdd5-9a79-8f39-34b0-3132c73e5466> ;
+    sdo:name "Jan van Zanen"@nl ;
+    sdo:spouse <https://ex.org/Person:c892f6a1-b1dd-51d1-c718-92e95e214120> .
+
+<https://ex.org/Person:c892f6a1-b1dd-51d1-c718-92e95e214120> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:0fe3fe86-dfbb-f68c-8e61-76fb0c5eabee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Rachel"@nl ;
+            pnv:literalName "Rachel Willems"@nl ;
+            pnv:patronym "Willems"@nl ] ;
+    sdo:children <https://ex.org/Person:f71e9e26-97e9-3f60-7d68-1e72dd357fb7> ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Rachel"@nl ;
+    sdo:knows <https://ex.org/Person:003a7a96-f26e-67bd-c27b-a20f9323a256>,
+        <https://ex.org/Person:2a2ebdd5-9a79-8f39-34b0-3132c73e5466> ;
+    sdo:name "Rachel Willems"@nl ;
+    sdo:spouse <https://ex.org/Person:a6318b96-e942-5ef7-6673-73a5f18189fb> .
+
+<https://ex.org/Person:f71e9e26-97e9-3f60-7d68-1e72dd357fb7> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:0fe3fe86-dfbb-f68c-8e61-76fb0c5eabee> ;
+    picom:hasLifeEvent <https://ex.org/Source:0fe3fe86-dfbb-f68c-8e61-76fb0c5eabee_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Zanen"@nl ;
+            pnv:givenName "Hester"@nl ;
+            pnv:literalName "Hester van Zanen"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:description "Doopdatum: 20-10-1716"@nl ;
+    sdo:familyName "van Zanen"@nl ;
+    sdo:givenName "Hester"@nl ;
+    sdo:name "Hester van Zanen"@nl ;
+    sdo:parent <https://ex.org/Person:a6318b96-e942-5ef7-6673-73a5f18189fb>,
+        <https://ex.org/Person:c892f6a1-b1dd-51d1-c718-92e95e214120> .
+
+<https://ex.org/Source:0fe3fe86-dfbb-f68c-8e61-76fb0c5eabee> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/42e4dd62-5a9f-459b-8f6f-70f7cfbaa8f9/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/0fe3fe86-dfbb-f68c-8e61-76fb0c5eabee"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/42e4dd62-5a9f-459b-8f6f-70f7cfbaa8f9/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1716-10-20"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1711-1718"@nl,
+        "247"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 20-10-1716<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/247\">Inventarisnummer 247 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 247, Periode: 1..., (toegangsnr. 1004), inv.nr. 247, Doopboek van de Hooglandse Kerk (NH) te Leiden, 1711 - 29 september 1718., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/0fe3fe86-dfbb-f68c-8e61-76fb0c5eabee"^^xsd:anyURI .
+

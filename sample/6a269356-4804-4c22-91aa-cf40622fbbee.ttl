@@ -1,0 +1,98 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:6a269356-4804-4c22-91aa-cf40622fbbee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1769-10-27"@nl ;
+    picom:eventPlace "Ter Aar"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:070e05d2-4bf0-f4b3-80e2-faef327cb556> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:6a269356-4804-4c22-91aa-cf40622fbbee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Burg"@nl ;
+            pnv:givenName "Neeltje"@nl ;
+            pnv:literalName "Neeltje van der Burg"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:familyName "van der Burg"@nl ;
+    sdo:givenName "Neeltje"@nl ;
+    sdo:name "Neeltje van der Burg"@nl .
+
+<https://ex.org/Person:1e25732f-4f72-ea42-34e9-b15baec47858> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:6a269356-4804-4c22-91aa-cf40622fbbee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Burg"@nl ;
+            pnv:givenName "Jan"@nl ;
+            pnv:literalName "Jan van der Burg"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:familyName "van der Burg"@nl ;
+    sdo:givenName "Jan"@nl ;
+    sdo:name "Jan van der Burg"@nl .
+
+<https://ex.org/Person:2805ea31-4f91-c081-5a77-5f0a09ba39a2> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:6a269356-4804-4c22-91aa-cf40622fbbee> ;
+    picom:hasLifeEvent <https://ex.org/Source:6a269356-4804-4c22-91aa-cf40622fbbee_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "voornaam in de volksmond: Nicolaa<br>Doopdatum: 27-10-1769"@nl ;
+    sdo:familyName "Slingerland"@nl ;
+    sdo:givenName "Ikasie"@nl ;
+    sdo:name "Ikasie Slingerland"@nl ;
+    sdo:parent <https://ex.org/Person:663c5426-a992-f00f-f146-a34ec1620414>,
+        <https://ex.org/Person:dd1d8335-9030-0698-8944-fe8665de3432> .
+
+<https://ex.org/Person:663c5426-a992-f00f-f146-a34ec1620414> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:6a269356-4804-4c22-91aa-cf40622fbbee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Burg"@nl ;
+            pnv:givenName "Marijtje"@nl ;
+            pnv:literalName "Marijtje van der Burg"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:children <https://ex.org/Person:2805ea31-4f91-c081-5a77-5f0a09ba39a2> ;
+    sdo:familyName "van der Burg"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Marijtje"@nl ;
+    sdo:knows <https://ex.org/Person:070e05d2-4bf0-f4b3-80e2-faef327cb556>,
+        <https://ex.org/Person:1e25732f-4f72-ea42-34e9-b15baec47858> ;
+    sdo:name "Marijtje van der Burg"@nl ;
+    sdo:spouse <https://ex.org/Person:dd1d8335-9030-0698-8944-fe8665de3432> .
+
+<https://ex.org/Person:dd1d8335-9030-0698-8944-fe8665de3432> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:6a269356-4804-4c22-91aa-cf40622fbbee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Slingerland"@nl ;
+            pnv:givenName "Jan"@nl ;
+            pnv:literalName "Jan Janze Slingerland"@nl ;
+            pnv:patronym "Janze"@nl ] ;
+    sdo:children <https://ex.org/Person:2805ea31-4f91-c081-5a77-5f0a09ba39a2> ;
+    sdo:familyName "Slingerland"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jan"@nl ;
+    sdo:knows <https://ex.org/Person:070e05d2-4bf0-f4b3-80e2-faef327cb556>,
+        <https://ex.org/Person:1e25732f-4f72-ea42-34e9-b15baec47858> ;
+    sdo:name "Jan Janze Slingerland"@nl ;
+    sdo:spouse <https://ex.org/Person:663c5426-a992-f00f-f146-a34ec1620414> .
+
+<https://ex.org/Source:6a269356-4804-4c22-91aa-cf40622fbbee> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/3924fdde-590b-4178-aff3-4c4147ffbe76/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/6a269356-4804-4c22-91aa-cf40622fbbee"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/3924fdde-590b-4178-aff3-4c4147ffbe76/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1769-10-27"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1755-1792"@nl,
+        "6"@nl,
+        "Doop-, trouw- en begraafregisters van Ter Aar"@nl,
+        "Doopdatum: 27-10-1769<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/151.1.11/file/6\">Inventarisnummer 6 van archiefnummer 151.1.11 in Archieven</a>"@nl ;
+    sdo:locationCreated "Ter Aar"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw- en begraafregisters van Ter Aar, Deel: 6, Periode: 1755-1792, (toegangsnr. 151.1.11), inv.nr. 6, Doopboek (RK) van Ter Aar, 3 mei 1755 - 24 december 1791 en trouwboek, 20 mei 1755 - 16 januari 1792;, 74, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/6a269356-4804-4c22-91aa-cf40622fbbee"^^xsd:anyURI .
+

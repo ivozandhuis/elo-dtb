@@ -1,0 +1,121 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:2570f2f1-3ade-8a78-33dd-4d5c7c450255> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:793c9539-611e-00ec-8682-8c7f8d613c35> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:address "Middelstegragt"@nl ;
+    sdo:description "getuige van de bruid, relatie tot de bruid: snaar, adres: Middelstegragt"@nl ;
+    sdo:familyName "Rijswijk"@nl ;
+    sdo:givenName "Lijsbet"@nl ;
+    sdo:name "Lijsbet Rijswijk"@nl .
+
+<https://ex.org/Person:44edd707-b0a3-2925-3f15-e275fd675616> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:793c9539-611e-00ec-8682-8c7f8d613c35> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Planke"@nl ;
+            pnv:givenName "Sara"@nl ;
+            pnv:literalName "Sara de Planke"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:address "Haarlemstraat"@nl ;
+    sdo:description "getuige van de bruid, relatie tot de bruid: aanbehuwddochter, adres: Haarlemstraat"@nl ;
+    sdo:familyName "de Planke"@nl ;
+    sdo:givenName "Sara"@nl ;
+    sdo:name "Sara de Planke"@nl .
+
+<https://ex.org/Person:19917de4-2c96-cad2-b7fd-8becab55b530> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:793c9539-611e-00ec-8682-8c7f8d613c35> ;
+    picom:hasLifeEvent <https://ex.org/Source:793c9539-611e-00ec-8682-8c7f8d613c35_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    picom:isWidOf <https://ex.org/Person:fc342539-710b-de08-ffa1-0193be3ec798> ;
+    sdo:address "Cellebroersgragt"@nl ;
+    sdo:familyName "Pijngaard"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Paulus"@nl ;
+    sdo:knows <https://ex.org/Person:580740b2-7b31-91b4-a4b3-27dde616afcc> ;
+    sdo:name "Paulus Pijngaard"@nl ;
+    sdo:spouse <https://ex.org/Person:dec617f0-1d07-b0d1-0760-9b58271ba01b> .
+
+<https://ex.org/Person:580740b2-7b31-91b4-a4b3-27dde616afcc> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:793c9539-611e-00ec-8682-8c7f8d613c35> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Hest"@nl ;
+            pnv:givenName "Thomas"@nl ;
+            pnv:literalName "Thomas van Hest"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:address "Uijtterstegragt"@nl ;
+    sdo:description "getuige van de bruidegom, relatie tot de bruidegom: bekende, adres: Uijtterstegragt"@nl ;
+    sdo:familyName "van Hest"@nl ;
+    sdo:givenName "Thomas"@nl ;
+    sdo:name "Thomas van Hest"@nl .
+
+<https://ex.org/Person:dec617f0-1d07-b0d1-0760-9b58271ba01b> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:793c9539-611e-00ec-8682-8c7f8d613c35> ;
+    picom:hasLifeEvent <https://ex.org/Source:793c9539-611e-00ec-8682-8c7f8d613c35_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    picom:isWidOf <https://ex.org/Person:dfc01946-e5d8-73d9-aa5c-739a7c16e248> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Horst"@nl ;
+            pnv:givenName "Judith"@nl ;
+            pnv:literalName "Judith van der Horst"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:address "St. Jacobsgragt"@nl ;
+    sdo:familyName "van der Horst"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Judith"@nl ;
+    sdo:name "Judith van der Horst"@nl ;
+    sdo:spouse <https://ex.org/Person:19917de4-2c96-cad2-b7fd-8becab55b530> .
+
+<https://ex.org/Person:dfc01946-e5d8-73d9-aa5c-739a7c16e248> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:793c9539-611e-00ec-8682-8c7f8d613c35> ;
+    picom:deceased true ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Horst"@nl ;
+            pnv:givenName "Jacobus"@nl ;
+            pnv:literalName "Jacobus van der Horst"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:description "Relatie tot bruid: wed."@nl ;
+    sdo:familyName "van der Horst"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jacobus"@nl ;
+    sdo:name "Jacobus van der Horst"@nl .
+
+<https://ex.org/Person:fc342539-710b-de08-ffa1-0193be3ec798> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:793c9539-611e-00ec-8682-8c7f8d613c35> ;
+    picom:deceased true ;
+    sdo:description "Relatie tot bruidegom: wed."@nl ;
+    sdo:familyName "Schoemaker"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Catarina"@nl ;
+    sdo:name "Catarina Schoemaker"@nl .
+
+<https://ex.org/Source:793c9539-611e-00ec-8682-8c7f8d613c35_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1752-08-18"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
+<https://ex.org/Source:793c9539-611e-00ec-8682-8c7f8d613c35> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/d54aa2e6-c873-41f5-9ce7-8a24788a9089/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/793c9539-611e-00ec-8682-8c7f8d613c35"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/d54aa2e6-c873-41f5-9ce7-8a24788a9089/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1752-08-18"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1751-1755"@nl,
+        "40"@nl,
+        "Datum ondertrouw: 18-08-1752<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/40\">Inventarisnummer 40 van archiefnummer 1004 in Archieven</a>"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 40, Periode: 17..., (toegangsnr. 1004), inv.nr. 40, QQ. Kerkelijk ondertrouwboek (NH) van Leiden, 1751 - 1755., 96, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/793c9539-611e-00ec-8682-8c7f8d613c35"^^xsd:anyURI .
+

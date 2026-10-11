@@ -1,0 +1,97 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:a1de19a7-b8a1-f6a4-e957-32e0c987ebee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1757-05-24"@nl ;
+    picom:eventPlace "Rijnsaterwoude"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:088aedfc-e125-a64b-706e-8f41dfbcae5a> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:a1de19a7-b8a1-f6a4-e957-32e0c987ebee> ;
+    sdo:children <https://ex.org/Person:785f8c3d-ffad-62c1-4b75-9d338d127617> ;
+    sdo:familyName "Bakker"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Hendrik"@nl ;
+    sdo:knows <https://ex.org/Person:ce5a070a-a1df-37f0-ba40-b74a94046e1c>,
+        <https://ex.org/Person:d5cf7332-19f4-f50e-b807-edb9c956f1c8> ;
+    sdo:name "Hendrik Bakker"@nl ;
+    sdo:spouse <https://ex.org/Person:e1281b9a-ed23-0d5b-1c05-ff50ec16ef93> .
+
+<https://ex.org/Person:785f8c3d-ffad-62c1-4b75-9d338d127617> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:a1de19a7-b8a1-f6a4-e957-32e0c987ebee> ;
+    picom:hasLifeEvent <https://ex.org/Source:a1de19a7-b8a1-f6a4-e957-32e0c987ebee_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:birthPlace "Rijnsaterwoude"@nl ;
+    sdo:description "Doopdatum: 24-05-1757"@nl ;
+    sdo:familyName "Bakker"@nl ;
+    sdo:givenName "Mathias"@nl ;
+    sdo:name "Mathias Bakker"@nl ;
+    sdo:parent <https://ex.org/Person:088aedfc-e125-a64b-706e-8f41dfbcae5a>,
+        <https://ex.org/Person:e1281b9a-ed23-0d5b-1c05-ff50ec16ef93> .
+
+<https://ex.org/Person:ce5a070a-a1df-37f0-ba40-b74a94046e1c> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:a1de19a7-b8a1-f6a4-e957-32e0c987ebee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Alfen"@nl ;
+            pnv:givenName "Marijtje"@nl ;
+            pnv:literalName "Marijtje Koeraad van Alfen"@nl ;
+            pnv:patronym "Koeraad"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:familyName "van Alfen"@nl ;
+    sdo:givenName "Marijtje"@nl ;
+    sdo:name "Marijtje Koeraad van Alfen"@nl .
+
+<https://ex.org/Person:d5cf7332-19f4-f50e-b807-edb9c956f1c8> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:a1de19a7-b8a1-f6a4-e957-32e0c987ebee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Rijn"@nl ;
+            pnv:givenName "Willem"@nl ;
+            pnv:literalName "Willem Tijssen van Rijn"@nl ;
+            pnv:patronym "Tijssen"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:familyName "van Rijn"@nl ;
+    sdo:givenName "Willem"@nl ;
+    sdo:name "Willem Tijssen van Rijn"@nl .
+
+<https://ex.org/Person:e1281b9a-ed23-0d5b-1c05-ff50ec16ef93> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:a1de19a7-b8a1-f6a4-e957-32e0c987ebee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Rijn"@nl ;
+            pnv:givenName "Jannetje"@nl ;
+            pnv:literalName "Jannetje Tijssen van Rijn"@nl ;
+            pnv:patronym "Tijssen"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:children <https://ex.org/Person:785f8c3d-ffad-62c1-4b75-9d338d127617> ;
+    sdo:familyName "van Rijn"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Jannetje"@nl ;
+    sdo:knows <https://ex.org/Person:ce5a070a-a1df-37f0-ba40-b74a94046e1c>,
+        <https://ex.org/Person:d5cf7332-19f4-f50e-b807-edb9c956f1c8> ;
+    sdo:name "Jannetje Tijssen van Rijn"@nl ;
+    sdo:spouse <https://ex.org/Person:088aedfc-e125-a64b-706e-8f41dfbcae5a> .
+
+<https://ex.org/Source:a1de19a7-b8a1-f6a4-e957-32e0c987ebee> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/c08b54e5-7f3a-409a-be80-f4a5fe159abb/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/a1de19a7-b8a1-f6a4-e957-32e0c987ebee"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/c08b54e5-7f3a-409a-be80-f4a5fe159abb/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1757-05-24"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "10"@nl,
+        "1734-1811"@nl,
+        "Doop-, trouw- en begraafregisters Rijnsaterwoude"@nl,
+        "Doopdatum: 24-05-1757<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/124.1.13/file/10\">Inventarisnummer 10 van archiefnummer 124.1.13 in Archieven</a>"@nl ;
+    sdo:locationCreated "Rijnsaterwoude"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw- en begraafregisters Rijnsaterwoude, Deel: 10, Periode: 1734-1811, (toegangsnr. 124.1.13), inv.nr. 10, Doopboek (RK) van Rijnsaterwoude, z.d., 10 februari 1734 - 24 april 1746, 1 september 1746 - 18 februari 1776, 27 februari 1777 - 25 augustus 1784, 10 oktober 1787 - 3 september 1811., 81, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/a1de19a7-b8a1-f6a4-e957-32e0c987ebee"^^xsd:anyURI .
+

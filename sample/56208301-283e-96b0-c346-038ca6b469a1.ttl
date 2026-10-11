@@ -1,0 +1,89 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:56208301-283e-96b0-c346-038ca6b469a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1763-01-23"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:014db616-8528-018e-f49c-807a44cc09c6> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:56208301-283e-96b0-c346-038ca6b469a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Noodt"@nl ;
+            pnv:givenName "Teuntje"@nl ;
+            pnv:literalName "Teuntje de Noodt"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:familyName "de Noodt"@nl ;
+    sdo:givenName "Teuntje"@nl ;
+    sdo:name "Teuntje de Noodt"@nl .
+
+<https://ex.org/Person:2da0ca78-4a5c-3bd5-2212-bc54a9d427d9> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:56208301-283e-96b0-c346-038ca6b469a1> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Rooij"@nl ;
+            pnv:givenName "Pieternelle"@nl ;
+            pnv:literalName "Pieternelle de Rooij"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:children <https://ex.org/Person:4ee69732-6ec2-f471-9ab9-b67102844134> ;
+    sdo:familyName "de Rooij"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Pieternelle"@nl ;
+    sdo:knows <https://ex.org/Person:014db616-8528-018e-f49c-807a44cc09c6> ;
+    sdo:name "Pieternelle de Rooij"@nl ;
+    sdo:spouse <https://ex.org/Person:71fdc1bb-0374-25a3-3b64-5b7a635e684c> .
+
+<https://ex.org/Person:4ee69732-6ec2-f471-9ab9-b67102844134> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:56208301-283e-96b0-c346-038ca6b469a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:56208301-283e-96b0-c346-038ca6b469a1_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Niewenhooven"@nl ;
+            pnv:givenName "Barend"@nl ;
+            pnv:literalName "Barend van Niewenhooven"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:description "Doopdatum: 23-01-1763"@nl ;
+    sdo:familyName "van Niewenhooven"@nl ;
+    sdo:givenName "Barend"@nl ;
+    sdo:name "Barend van Niewenhooven"@nl ;
+    sdo:parent <https://ex.org/Person:2da0ca78-4a5c-3bd5-2212-bc54a9d427d9>,
+        <https://ex.org/Person:71fdc1bb-0374-25a3-3b64-5b7a635e684c> .
+
+<https://ex.org/Person:71fdc1bb-0374-25a3-3b64-5b7a635e684c> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:56208301-283e-96b0-c346-038ca6b469a1> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Niewenhooven"@nl ;
+            pnv:givenName "Barend"@nl ;
+            pnv:literalName "Barend van Niewenhooven"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:children <https://ex.org/Person:4ee69732-6ec2-f471-9ab9-b67102844134> ;
+    sdo:familyName "van Niewenhooven"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Barend"@nl ;
+    sdo:knows <https://ex.org/Person:014db616-8528-018e-f49c-807a44cc09c6> ;
+    sdo:name "Barend van Niewenhooven"@nl ;
+    sdo:spouse <https://ex.org/Person:2da0ca78-4a5c-3bd5-2212-bc54a9d427d9> .
+
+<https://ex.org/Source:56208301-283e-96b0-c346-038ca6b469a1> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/aeae5b13-82a2-4471-80fb-bd1ba72f3896/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/56208301-283e-96b0-c346-038ca6b469a1"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/aeae5b13-82a2-4471-80fb-bd1ba72f3896/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1763-01-23"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1741-1769"@nl,
+        "229"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "toevoeging s'avonts geboren<br>Doopdatum: 23-01-1763<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/229\">Inventarisnummer 229 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 229, Periode: 1..., (toegangsnr. 1004), inv.nr. 229, Doopboek van de Pieterskerk (NH) te Leiden, 1741 - 1769., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/56208301-283e-96b0-c346-038ca6b469a1"^^xsd:anyURI .
+

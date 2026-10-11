@@ -1,0 +1,90 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:2befd695-f287-1acc-b9de-d0ae86ca9bee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1746-05-15"@nl ;
+    picom:eventPlace "Alkemade"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:167ae679-b265-d4ee-cd89-8bf41a2691c6> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:2befd695-f287-1acc-b9de-d0ae86ca9bee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Japie"@nl ;
+            pnv:literalName "Japie Aalders"@nl ;
+            pnv:patronym "Aalders"@nl ] ;
+    sdo:children <https://ex.org/Person:575f0b5c-6d1a-ed38-10a0-04c8063f9a1e> ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Japie"@nl ;
+    sdo:knows <https://ex.org/Person:202dc5bf-eb8c-616f-7e35-2f6d989f2e43>,
+        <https://ex.org/Person:e853203a-0e11-a0df-9c9a-e09f0ac65d7a> ;
+    sdo:name "Japie Aalders"@nl ;
+    sdo:spouse <https://ex.org/Person:af570615-afa7-72b9-b62b-68823863e769> .
+
+<https://ex.org/Person:202dc5bf-eb8c-616f-7e35-2f6d989f2e43> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:2befd695-f287-1acc-b9de-d0ae86ca9bee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Dirk"@nl ;
+            pnv:literalName "Dirk Cornelisse"@nl ;
+            pnv:patronym "Cornelisse"@nl ] ;
+    sdo:givenName "Dirk"@nl ;
+    sdo:name "Dirk Cornelisse"@nl .
+
+<https://ex.org/Person:575f0b5c-6d1a-ed38-10a0-04c8063f9a1e> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:2befd695-f287-1acc-b9de-d0ae86ca9bee> ;
+    picom:hasLifeEvent <https://ex.org/Source:2befd695-f287-1acc-b9de-d0ae86ca9bee_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:birthPlace "Veene"@nl ;
+    sdo:description "Doopdatum: 15-05-1746"@nl ;
+    sdo:givenName "Wilhelma"@nl ;
+    sdo:name "Wilhelma"@nl ;
+    sdo:parent <https://ex.org/Person:167ae679-b265-d4ee-cd89-8bf41a2691c6>,
+        <https://ex.org/Person:af570615-afa7-72b9-b62b-68823863e769> .
+
+<https://ex.org/Person:af570615-afa7-72b9-b62b-68823863e769> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:2befd695-f287-1acc-b9de-d0ae86ca9bee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Gerrid"@nl ;
+            pnv:literalName "Gerrid Janse"@nl ;
+            pnv:patronym "Janse"@nl ] ;
+    sdo:children <https://ex.org/Person:575f0b5c-6d1a-ed38-10a0-04c8063f9a1e> ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Gerrid"@nl ;
+    sdo:knows <https://ex.org/Person:202dc5bf-eb8c-616f-7e35-2f6d989f2e43>,
+        <https://ex.org/Person:e853203a-0e11-a0df-9c9a-e09f0ac65d7a> ;
+    sdo:name "Gerrid Janse"@nl ;
+    sdo:spouse <https://ex.org/Person:167ae679-b265-d4ee-cd89-8bf41a2691c6> .
+
+<https://ex.org/Person:e853203a-0e11-a0df-9c9a-e09f0ac65d7a> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:2befd695-f287-1acc-b9de-d0ae86ca9bee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Lijsbeth"@nl ;
+            pnv:literalName "Lijsbeth Dirks"@nl ;
+            pnv:patronym "Dirks"@nl ] ;
+    sdo:givenName "Lijsbeth"@nl ;
+    sdo:name "Lijsbeth Dirks"@nl .
+
+<https://ex.org/Source:2befd695-f287-1acc-b9de-d0ae86ca9bee> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/7d54bae1-30af-4445-8657-19fe244acf5b/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/2befd695-f287-1acc-b9de-d0ae86ca9bee"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/7d54bae1-30af-4445-8657-19fe244acf5b/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1746-05-15"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1733-1748"@nl,
+        "18"@nl,
+        "Doop-, trouw- en begraafregisters van Alkemade"@nl,
+        "Doopdatum: 15-05-1746<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/170.1.05/file/18\">Inventarisnummer 18 van archiefnummer 170.1.05 in Archieven</a>"@nl ;
+    sdo:locationCreated "Alkemade"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw- en begraafregisters van Alkemade, Deel: 18, Periode: 1733-1748, (toegangsnr. 170.1.05), inv.nr. 18, Doopboek en trouwboek (RK) van Rijpwetering, 1733 - 3 juni 1748;, 126, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/2befd695-f287-1acc-b9de-d0ae86ca9bee"^^xsd:anyURI .
+

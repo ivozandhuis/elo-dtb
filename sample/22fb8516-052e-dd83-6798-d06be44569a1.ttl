@@ -1,0 +1,75 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:22fb8516-052e-dd83-6798-d06be44569a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1804-06-07"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:0ef59055-790c-6b96-e1a7-89c1510daefc> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:22fb8516-052e-dd83-6798-d06be44569a1> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Flot"@nl ;
+            pnv:givenName "Maria Theresia"@nl ;
+            pnv:literalName "Maria Theresia du Flot"@nl ;
+            pnv:surnamePrefix "du"@nl ] ;
+    sdo:children <https://ex.org/Person:52a1f9ce-80f8-aed5-5eda-26ffff2a8d72> ;
+    sdo:familyName "du Flot"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Maria Theresia"@nl ;
+    sdo:knows <https://ex.org/Person:16553626-4c55-dcf2-1bd2-ab4bad351e88> ;
+    sdo:name "Maria Theresia du Flot"@nl ;
+    sdo:spouse <https://ex.org/Person:c3618769-f2be-0c57-2b20-5df88f054840> .
+
+<https://ex.org/Person:16553626-4c55-dcf2-1bd2-ab4bad351e88> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:22fb8516-052e-dd83-6798-d06be44569a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Hoeke"@nl ;
+    sdo:givenName "Sara Cornelia"@nl ;
+    sdo:name "Sara Cornelia Hoeke"@nl .
+
+<https://ex.org/Person:52a1f9ce-80f8-aed5-5eda-26ffff2a8d72> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:22fb8516-052e-dd83-6798-d06be44569a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:22fb8516-052e-dd83-6798-d06be44569a1_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:birthDate "1804-06-02"^^xsd:date ;
+    sdo:description "Doopdatum: 07-06-1804"@nl ;
+    sdo:familyName "Hoeke"@nl ;
+    sdo:givenName "Cornelis Bartlomeus"@nl ;
+    sdo:name "Cornelis Bartlomeus Hoeke"@nl ;
+    sdo:parent <https://ex.org/Person:0ef59055-790c-6b96-e1a7-89c1510daefc>,
+        <https://ex.org/Person:c3618769-f2be-0c57-2b20-5df88f054840> .
+
+<https://ex.org/Person:c3618769-f2be-0c57-2b20-5df88f054840> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:22fb8516-052e-dd83-6798-d06be44569a1> ;
+    sdo:children <https://ex.org/Person:52a1f9ce-80f8-aed5-5eda-26ffff2a8d72> ;
+    sdo:familyName "Hoeke"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Salomon"@nl ;
+    sdo:knows <https://ex.org/Person:16553626-4c55-dcf2-1bd2-ab4bad351e88> ;
+    sdo:name "Salomon Hoeke"@nl ;
+    sdo:spouse <https://ex.org/Person:0ef59055-790c-6b96-e1a7-89c1510daefc> .
+
+<https://ex.org/Source:22fb8516-052e-dd83-6798-d06be44569a1> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/9e4bc9e6-183d-4bff-b8a5-f1ea9c752d0a/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/22fb8516-052e-dd83-6798-d06be44569a1"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/9e4bc9e6-183d-4bff-b8a5-f1ea9c752d0a/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1804-06-07"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1796-1811"@nl,
+        "231"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 07-06-1804<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/231\">Inventarisnummer 231 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 231, Periode: 1..., (toegangsnr. 1004), inv.nr. 231, Doopboek van de Pieterskerk (NH) te Leiden, 1796 - 1811., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/22fb8516-052e-dd83-6798-d06be44569a1"^^xsd:anyURI .
+

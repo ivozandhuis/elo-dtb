@@ -1,0 +1,93 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:bc79377f-a05c-304f-3288-145b8c84fbee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1754-10-16"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:1b048d8b-5290-098f-9fef-d392f42635cd> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:bc79377f-a05c-304f-3288-145b8c84fbee> ;
+    sdo:children <https://ex.org/Person:7c34a172-6de1-153d-1426-db4b395a1f26> ;
+    sdo:familyName "Groenlant"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Geertruij"@nl ;
+    sdo:knows <https://ex.org/Person:97415ab1-052f-917d-e994-595b769eec32>,
+        <https://ex.org/Person:f6f21365-62a0-a99e-0d5e-cc6a090b794a> ;
+    sdo:name "Geertruij Groenlant"@nl ;
+    sdo:spouse <https://ex.org/Person:62cc55b8-34c2-7e5e-d47f-f7021850b8cd> .
+
+<https://ex.org/Person:62cc55b8-34c2-7e5e-d47f-f7021850b8cd> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:bc79377f-a05c-304f-3288-145b8c84fbee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Gulik"@nl ;
+            pnv:givenName "Frans"@nl ;
+            pnv:literalName "Frans van Gulik"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:children <https://ex.org/Person:7c34a172-6de1-153d-1426-db4b395a1f26> ;
+    sdo:familyName "van Gulik"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Frans"@nl ;
+    sdo:knows <https://ex.org/Person:97415ab1-052f-917d-e994-595b769eec32>,
+        <https://ex.org/Person:f6f21365-62a0-a99e-0d5e-cc6a090b794a> ;
+    sdo:name "Frans van Gulik"@nl ;
+    sdo:spouse <https://ex.org/Person:1b048d8b-5290-098f-9fef-d392f42635cd> .
+
+<https://ex.org/Person:7c34a172-6de1-153d-1426-db4b395a1f26> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:bc79377f-a05c-304f-3288-145b8c84fbee> ;
+    picom:hasLifeEvent <https://ex.org/Source:bc79377f-a05c-304f-3288-145b8c84fbee_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Gulik"@nl ;
+            pnv:givenName "Jacobus"@nl ;
+            pnv:literalName "Jacobus van Gulik"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:description "Doopdatum: 16-10-1754"@nl ;
+    sdo:familyName "van Gulik"@nl ;
+    sdo:givenName "Jacobus"@nl ;
+    sdo:name "Jacobus van Gulik"@nl ;
+    sdo:parent <https://ex.org/Person:1b048d8b-5290-098f-9fef-d392f42635cd>,
+        <https://ex.org/Person:62cc55b8-34c2-7e5e-d47f-f7021850b8cd> .
+
+<https://ex.org/Person:97415ab1-052f-917d-e994-595b769eec32> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:bc79377f-a05c-304f-3288-145b8c84fbee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Groenlant"@nl ;
+    sdo:givenName "Anna"@nl ;
+    sdo:name "Anna Groenlant"@nl .
+
+<https://ex.org/Person:f6f21365-62a0-a99e-0d5e-cc6a090b794a> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:bc79377f-a05c-304f-3288-145b8c84fbee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Geer"@nl ;
+            pnv:givenName "Pieter"@nl ;
+            pnv:literalName "Pieter de Geer"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:familyName "de Geer"@nl ;
+    sdo:givenName "Pieter"@nl ;
+    sdo:name "Pieter de Geer"@nl .
+
+<https://ex.org/Source:bc79377f-a05c-304f-3288-145b8c84fbee> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/9884f1bd-6237-4f82-9c80-14807b9c9cfe/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/bc79377f-a05c-304f-3288-145b8c84fbee"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/9884f1bd-6237-4f82-9c80-14807b9c9cfe/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1754-10-16"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1741-1769"@nl,
+        "229"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 16-10-1754<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/229\">Inventarisnummer 229 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 229, Periode: 1..., (toegangsnr. 1004), inv.nr. 229, Doopboek van de Pieterskerk (NH) te Leiden, 1741 - 1769., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/bc79377f-a05c-304f-3288-145b8c84fbee"^^xsd:anyURI .
+

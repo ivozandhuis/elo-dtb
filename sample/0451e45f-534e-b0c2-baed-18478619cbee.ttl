@@ -1,0 +1,104 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:0451e45f-534e-b0c2-baed-18478619cbee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1759-04-01"@nl ;
+    picom:eventPlace "Rijnsaterwoude"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:0c5f5c9a-3cdc-20d5-832e-d3fdcb282467> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:0451e45f-534e-b0c2-baed-18478619cbee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Staveren"@nl ;
+            pnv:givenName "Barbara"@nl ;
+            pnv:literalName "Barbara van Staveren"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:children <https://ex.org/Person:a6b43d6a-6d16-fbad-dcb1-f31a1b6208ee> ;
+    sdo:familyName "van Staveren"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Barbara"@nl ;
+    sdo:knows <https://ex.org/Person:2c6ec764-46ff-d768-ebde-9edad2409198>,
+        <https://ex.org/Person:6d5581e0-c584-b634-84b5-cdd94de6b809> ;
+    sdo:name "Barbara van Staveren"@nl ;
+    sdo:spouse <https://ex.org/Person:30844230-3e50-844c-9e46-7d7ef4c83997> .
+
+<https://ex.org/Person:2c6ec764-46ff-d768-ebde-9edad2409198> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:0451e45f-534e-b0c2-baed-18478619cbee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Staveren"@nl ;
+            pnv:givenName "Paulus"@nl ;
+            pnv:literalName "Paulus van Staveren"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:familyName "van Staveren"@nl ;
+    sdo:givenName "Paulus"@nl ;
+    sdo:name "Paulus van Staveren"@nl .
+
+<https://ex.org/Person:30844230-3e50-844c-9e46-7d7ef4c83997> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:0451e45f-534e-b0c2-baed-18478619cbee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Hijningen"@nl ;
+            pnv:givenName "Cornelis"@nl ;
+            pnv:literalName "Cornelis van Hijningen"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:children <https://ex.org/Person:a6b43d6a-6d16-fbad-dcb1-f31a1b6208ee> ;
+    sdo:familyName "van Hijningen"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Cornelis"@nl ;
+    sdo:knows <https://ex.org/Person:2c6ec764-46ff-d768-ebde-9edad2409198>,
+        <https://ex.org/Person:6d5581e0-c584-b634-84b5-cdd94de6b809> ;
+    sdo:name "Cornelis van Hijningen"@nl ;
+    sdo:spouse <https://ex.org/Person:0c5f5c9a-3cdc-20d5-832e-d3fdcb282467> .
+
+<https://ex.org/Person:6d5581e0-c584-b634-84b5-cdd94de6b809> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:0451e45f-534e-b0c2-baed-18478619cbee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Wassenaar"@nl ;
+            pnv:givenName "Martijntje"@nl ;
+            pnv:literalName "Martijntje Willebrordse Wassenaar"@nl ;
+            pnv:patronym "Willebrordse"@nl ] ;
+    sdo:familyName "Wassenaar"@nl ;
+    sdo:givenName "Martijntje"@nl ;
+    sdo:name "Martijntje Willebrordse Wassenaar"@nl .
+
+<https://ex.org/Person:a6b43d6a-6d16-fbad-dcb1-f31a1b6208ee> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:0451e45f-534e-b0c2-baed-18478619cbee> ;
+    picom:hasLifeEvent <https://ex.org/Source:0451e45f-534e-b0c2-baed-18478619cbee_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Hijningen"@nl ;
+            pnv:givenName "Simon"@nl ;
+            pnv:literalName "Simon van Hijningen"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:birthPlace "Wetering Oostzijde"@nl ;
+    sdo:description "Doopdatum: 01-04-1759"@nl ;
+    sdo:familyName "van Hijningen"@nl ;
+    sdo:givenName "Simon"@nl ;
+    sdo:name "Simon van Hijningen"@nl ;
+    sdo:parent <https://ex.org/Person:0c5f5c9a-3cdc-20d5-832e-d3fdcb282467>,
+        <https://ex.org/Person:30844230-3e50-844c-9e46-7d7ef4c83997> .
+
+<https://ex.org/Source:0451e45f-534e-b0c2-baed-18478619cbee> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/6c2359fe-e50a-4677-ba13-0de1cdff2fd3/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/0451e45f-534e-b0c2-baed-18478619cbee"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/6c2359fe-e50a-4677-ba13-0de1cdff2fd3/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1759-04-01"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "10"@nl,
+        "1734-1811"@nl,
+        "Doop-, trouw- en begraafregisters Rijnsaterwoude"@nl,
+        "Doopdatum: 01-04-1759<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/124.1.13/file/10\">Inventarisnummer 10 van archiefnummer 124.1.13 in Archieven</a>"@nl ;
+    sdo:locationCreated "Rijnsaterwoude"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw- en begraafregisters Rijnsaterwoude, Deel: 10, Periode: 1734-1811, (toegangsnr. 124.1.13), inv.nr. 10, Doopboek (RK) van Rijnsaterwoude, z.d., 10 februari 1734 - 24 april 1746, 1 september 1746 - 18 februari 1776, 27 februari 1777 - 25 augustus 1784, 10 oktober 1787 - 3 september 1811., 86, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/0451e45f-534e-b0c2-baed-18478619cbee"^^xsd:anyURI .
+

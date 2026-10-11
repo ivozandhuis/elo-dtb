@@ -1,0 +1,112 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:a2570015-5b52-818b-a142-16f3d96e0780> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:821a49ff-4c47-29dc-bd4d-5f830d79ec35> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:address "Vrouwecamp"@nl ;
+    sdo:description "getuige van de bruidegom, relatie tot de bruidegom: zwager, adres: Vrouwecamp"@nl ;
+    sdo:familyName "Trioen"@nl ;
+    sdo:givenName "Jan"@nl ;
+    sdo:name "Jan Trioen"@nl .
+
+<https://ex.org/Person:0de36db2-c58c-bba0-6f92-5bc2070485e6> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:821a49ff-4c47-29dc-bd4d-5f830d79ec35> ;
+    picom:deceased true ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Wicke"@nl ;
+            pnv:givenName "Theunis"@nl ;
+            pnv:literalName "Theunis Theunisz van Wicke"@nl ;
+            pnv:patronym "Theunisz"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:description "Relatie tot bruid: wed."@nl ;
+    sdo:familyName "van Wicke"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Theunis"@nl ;
+    sdo:name "Theunis Theunisz van Wicke"@nl .
+
+<https://ex.org/Person:385f70e8-74bc-3bdc-1456-8336963265ac> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:821a49ff-4c47-29dc-bd4d-5f830d79ec35> ;
+    picom:hasLifeEvent <https://ex.org/Source:821a49ff-4c47-29dc-bd4d-5f830d79ec35_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    picom:isWidOf <https://ex.org/Person:5df592e6-1d55-1f3c-1e72-012bbbda74f7> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Mont"@nl ;
+            pnv:givenName "Jan"@nl ;
+            pnv:literalName "Jan de Mont"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:address "Uytterstegraft"@nl ;
+    sdo:familyName "de Mont"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jan"@nl ;
+    sdo:name "Jan de Mont"@nl ;
+    sdo:spouse <https://ex.org/Person:a9ce1b17-a5b8-5716-ecd7-c3b700e46b3a> .
+
+<https://ex.org/Person:3cddc3b7-f1f4-1749-d004-3a2d427b383f> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:821a49ff-4c47-29dc-bd4d-5f830d79ec35> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:address "Uytterstegraft"@nl ;
+    sdo:description "getuige van de bruid, relatie tot de bruid: moeder, adres: Uytterstegraft"@nl ;
+    sdo:familyName "Sierkins"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Louysge"@nl ;
+    sdo:name "Louysge Sierkins"@nl .
+
+<https://ex.org/Person:5df592e6-1d55-1f3c-1e72-012bbbda74f7> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:821a49ff-4c47-29dc-bd4d-5f830d79ec35> ;
+    picom:deceased true ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Jannetge"@nl ;
+            pnv:literalName "Jannetge Thobias"@nl ;
+            pnv:patronym "Thobias"@nl ] ;
+    sdo:description "Relatie tot bruidegom: wed."@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Jannetge"@nl ;
+    sdo:name "Jannetge Thobias"@nl .
+
+<https://ex.org/Person:a9ce1b17-a5b8-5716-ecd7-c3b700e46b3a> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:821a49ff-4c47-29dc-bd4d-5f830d79ec35> ;
+    picom:hasLifeEvent <https://ex.org/Source:821a49ff-4c47-29dc-bd4d-5f830d79ec35_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    picom:isWidOf <https://ex.org/Person:0de36db2-c58c-bba0-6f92-5bc2070485e6> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Rijcke"@nl ;
+            pnv:givenName "Franchijntge"@nl ;
+            pnv:literalName "Franchijntge de Rijcke"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:address "Uytterstegraft"@nl ;
+    sdo:familyName "de Rijcke"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Franchijntge"@nl ;
+    sdo:name "Franchijntge de Rijcke"@nl ;
+    sdo:parent <https://ex.org/Person:3cddc3b7-f1f4-1749-d004-3a2d427b383f> ;
+    sdo:spouse <https://ex.org/Person:385f70e8-74bc-3bdc-1456-8336963265ac> .
+
+<https://ex.org/Source:821a49ff-4c47-29dc-bd4d-5f830d79ec35_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1669-06-06"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
+<https://ex.org/Source:821a49ff-4c47-29dc-bd4d-5f830d79ec35> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/7862068e-4829-4754-9eae-1859f0d88e6e/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/821a49ff-4c47-29dc-bd4d-5f830d79ec35"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/7862068e-4829-4754-9eae-1859f0d88e6e/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1669-06-06"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1667-1670"@nl,
+        "19"@nl,
+        "Datum ondertrouw: 06-06-1669<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/19\">Inventarisnummer 19 van archiefnummer 1004 in Archieven</a>"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 19, Periode: 16..., (toegangsnr. 1004), inv.nr. 19, T. Kerkelijk ondertrouwboek (NH) van Leiden, juli 1667 - augustus 1670., 167v, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/821a49ff-4c47-29dc-bd4d-5f830d79ec35"^^xsd:anyURI .
+

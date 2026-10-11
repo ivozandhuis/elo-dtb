@@ -1,0 +1,85 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:d37bf2bc-b237-0ac4-f01c-282bde802bee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1730-10-15"@nl ;
+    picom:eventPlace "Leiderdorp"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:459aa900-f833-bf01-3896-2bfbce98780a> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:d37bf2bc-b237-0ac4-f01c-282bde802bee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Lieskade"@nl ;
+            pnv:givenName "Willem"@nl ;
+            pnv:literalName "Willem Gerritsz Lieskade"@nl ;
+            pnv:patronym "Gerritsz"@nl ] ;
+    sdo:children <https://ex.org/Person:7bc7d212-215e-85db-2c9d-347fe1388492> ;
+    sdo:familyName "Lieskade"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Willem"@nl ;
+    sdo:knows <https://ex.org/Person:6e386485-5a9a-846e-3fd7-f4902e1e420d> ;
+    sdo:name "Willem Gerritsz Lieskade"@nl ;
+    sdo:spouse <https://ex.org/Person:80e7c648-8fc8-3829-5e9c-205bfbad3e2d> .
+
+<https://ex.org/Person:6e386485-5a9a-846e-3fd7-f4902e1e420d> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:d37bf2bc-b237-0ac4-f01c-282bde802bee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Lieskade"@nl ;
+            pnv:givenName "Aariaantje"@nl ;
+            pnv:literalName "Aariaantje Gerritsz Lieskade"@nl ;
+            pnv:patronym "Gerritsz"@nl ] ;
+    sdo:familyName "Lieskade"@nl ;
+    sdo:givenName "Aariaantje"@nl ;
+    sdo:name "Aariaantje Gerritsz Lieskade"@nl .
+
+<https://ex.org/Person:7bc7d212-215e-85db-2c9d-347fe1388492> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:d37bf2bc-b237-0ac4-f01c-282bde802bee> ;
+    picom:hasLifeEvent <https://ex.org/Source:d37bf2bc-b237-0ac4-f01c-282bde802bee_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 15-10-1730"@nl ;
+    sdo:familyName "Lieskade"@nl ;
+    sdo:givenName "Gerrit"@nl ;
+    sdo:name "Gerrit Lieskade"@nl ;
+    sdo:parent <https://ex.org/Person:459aa900-f833-bf01-3896-2bfbce98780a>,
+        <https://ex.org/Person:80e7c648-8fc8-3829-5e9c-205bfbad3e2d> .
+
+<https://ex.org/Person:80e7c648-8fc8-3829-5e9c-205bfbad3e2d> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:d37bf2bc-b237-0ac4-f01c-282bde802bee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Neugten"@nl ;
+            pnv:givenName "Sara"@nl ;
+            pnv:literalName "Sara Willemsz van der Neugten"@nl ;
+            pnv:patronym "Willemsz"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:children <https://ex.org/Person:7bc7d212-215e-85db-2c9d-347fe1388492> ;
+    sdo:familyName "van der Neugten"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Sara"@nl ;
+    sdo:knows <https://ex.org/Person:6e386485-5a9a-846e-3fd7-f4902e1e420d> ;
+    sdo:name "Sara Willemsz van der Neugten"@nl ;
+    sdo:spouse <https://ex.org/Person:459aa900-f833-bf01-3896-2bfbce98780a> .
+
+<https://ex.org/Source:d37bf2bc-b237-0ac4-f01c-282bde802bee> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/ccfef8b6-5691-4f53-82c1-2e2e27e2183a/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/d37bf2bc-b237-0ac4-f01c-282bde802bee"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/ccfef8b6-5691-4f53-82c1-2e2e27e2183a/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1730-10-15"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1477"@nl,
+        "1688-1740"@nl,
+        "Doopdatum: 15-10-1730<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/0800/file/1477\">Inventarisnummer 1477 van archiefnummer 0800 in Archieven</a>"@nl,
+        "Dorps- en gemeentebestuur van Leiderdorp (1561-1958)"@nl ;
+    sdo:locationCreated "Leiderdorp"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Dorps- en gemeentebestuur van Leiderdorp (1561-1958), Deel: 1477, Periode: 1688-1740, (toegangsnr. 0800), inv.nr. 1477, Doopboek (NH) van Leiderdorp, 1688 - 1740., 237, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/d37bf2bc-b237-0ac4-f01c-282bde802bee"^^xsd:anyURI .
+

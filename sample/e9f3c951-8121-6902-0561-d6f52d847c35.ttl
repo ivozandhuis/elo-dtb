@@ -1,0 +1,119 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:0b42212a-0808-c650-cb26-1ce177f64905> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:e9f3c951-8121-6902-0561-d6f52d847c35> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Tolledo"@nl ;
+            pnv:givenName "Lydia"@nl ;
+            pnv:literalName "Lydia Willemsdr van Tolledo"@nl ;
+            pnv:patronym "Willemsdr"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:address "Pieterskerck"@nl ;
+    sdo:description "getuige van de bruid, relatie tot de bruid: moeder, adres: Pieterskerck"@nl ;
+    sdo:familyName "van Tolledo"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Lydia"@nl ;
+    sdo:name "Lydia Willemsdr van Tolledo"@nl .
+
+<https://ex.org/Person:42159a57-7d95-43f1-85cf-1745adf85bd4> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:e9f3c951-8121-6902-0561-d6f52d847c35> ;
+    picom:deceased true ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Marya"@nl ;
+            pnv:literalName "Marya Baltens"@nl ;
+            pnv:patronym "Baltens"@nl ] ;
+    sdo:description "Relatie tot bruidegom: wed."@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Marya"@nl ;
+    sdo:name "Marya Baltens"@nl .
+
+<https://ex.org/Person:49d878a8-1d0f-8510-8e02-07e1e29051f5> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:e9f3c951-8121-6902-0561-d6f52d847c35> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Berendrecht"@nl ;
+            pnv:givenName "Willem"@nl ;
+            pnv:literalName "Willem van Berendrecht"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:address "Bredestraet"@nl ;
+    sdo:description "getuige van de bruidegom, relatie tot de bruidegom: broer, adres: Bredestraet"@nl ;
+    sdo:familyName "van Berendrecht"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Willem"@nl ;
+    sdo:name "Willem van Berendrecht"@nl .
+
+<https://ex.org/Person:81487859-2bf2-48c5-7a8c-503bd099059e> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:e9f3c951-8121-6902-0561-d6f52d847c35> ;
+    picom:hasLifeEvent <https://ex.org/Source:e9f3c951-8121-6902-0561-d6f52d847c35_huwelijk_event>,
+        <https://ex.org/Source:e9f3c951-8121-6902-0561-d6f52d847c35_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Rossum"@nl ;
+            pnv:givenName "Elisabeth"@nl ;
+            pnv:literalName "Elisabeth Dircxdr van Rossum"@nl ;
+            pnv:patronym "Dircxdr"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:address "Pieterskerck"@nl ;
+    sdo:birthPlace "Leyden"@nl ;
+    sdo:familyName "van Rossum"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Elisabeth"@nl ;
+    sdo:name "Elisabeth Dircxdr van Rossum"@nl ;
+    sdo:parent <https://ex.org/Person:0b42212a-0808-c650-cb26-1ce177f64905> ;
+    sdo:spouse <https://ex.org/Person:f07cf9cd-4f3e-0349-8b0f-49c5f35952b8> .
+
+<https://ex.org/Person:f07cf9cd-4f3e-0349-8b0f-49c5f35952b8> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:e9f3c951-8121-6902-0561-d6f52d847c35> ;
+    picom:hasLifeEvent <https://ex.org/Source:e9f3c951-8121-6902-0561-d6f52d847c35_huwelijk_event>,
+        <https://ex.org/Source:e9f3c951-8121-6902-0561-d6f52d847c35_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    picom:isWidOf <https://ex.org/Person:42159a57-7d95-43f1-85cf-1745adf85bd4> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Berendrecht"@nl ;
+            pnv:givenName "Gerrit"@nl ;
+            pnv:literalName "Gerrit van Berendrecht"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:address "Bredestraet"@nl ;
+    sdo:familyName "van Berendrecht"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Gerrit"@nl ;
+    sdo:name "Gerrit van Berendrecht"@nl ;
+    sdo:sibling <https://ex.org/Person:49d878a8-1d0f-8510-8e02-07e1e29051f5> ;
+    sdo:spouse <https://ex.org/Person:81487859-2bf2-48c5-7a8c-503bd099059e> .
+
+<https://ex.org/Source:e9f3c951-8121-6902-0561-d6f52d847c35_huwelijk_event> a picom:LifeEvent ;
+    picom:eventDate "1663-02-04"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:83 .
+
+<https://ex.org/Source:e9f3c951-8121-6902-0561-d6f52d847c35_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1663-01-18"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
+<https://ex.org/Source:e9f3c951-8121-6902-0561-d6f52d847c35> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/f73b28a5-efb2-49c0-96b2-d113c48a3f57/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/e9f3c951-8121-6902-0561-d6f52d847c35"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/f73b28a5-efb2-49c0-96b2-d113c48a3f57/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1663-01-18"@nl,
+        "1663-02-04"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1661-1664"@nl,
+        "17"@nl,
+        "Datum trouwen: 04-02-1663<br>Datum ondertrouw: 18-01-1663<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/17\">Inventarisnummer 17 van archiefnummer 1004 in Archieven</a>"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 17, Periode: 16..., (toegangsnr. 1004), inv.nr. 17, R. Kerkelijk ondertrouwboek (NH) van Leiden, februari 1661 - mei 1664., 147, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/e9f3c951-8121-6902-0561-d6f52d847c35"^^xsd:anyURI .
+

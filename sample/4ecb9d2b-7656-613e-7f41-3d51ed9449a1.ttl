@@ -1,0 +1,83 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:4ecb9d2b-7656-613e-7f41-3d51ed9449a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1689-02-27"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:3bc3950f-6698-b69e-5b35-9be0fa252d63> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:4ecb9d2b-7656-613e-7f41-3d51ed9449a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:4ecb9d2b-7656-613e-7f41-3d51ed9449a1_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 27-02-1689"@nl ;
+    sdo:familyName "Bodijn"@nl ;
+    sdo:givenName "Anna"@nl ;
+    sdo:name "Anna Bodijn"@nl ;
+    sdo:parent <https://ex.org/Person:3f3b1636-4b79-efb3-0ca8-b905a4017a1c>,
+        <https://ex.org/Person:56e2c9eb-db56-ea1c-cb8d-434d9129dff3> .
+
+<https://ex.org/Person:3f3b1636-4b79-efb3-0ca8-b905a4017a1c> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:4ecb9d2b-7656-613e-7f41-3d51ed9449a1> ;
+    sdo:children <https://ex.org/Person:3bc3950f-6698-b69e-5b35-9be0fa252d63> ;
+    sdo:familyName "Sickels"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Geertruyd"@nl ;
+    sdo:knows <https://ex.org/Person:5da4aff5-52f4-0b27-77e2-505db13ca0de>,
+        <https://ex.org/Person:dee82e50-63a7-88e7-0cc6-64a2433638cd> ;
+    sdo:name "Geertruyd Sickels"@nl ;
+    sdo:spouse <https://ex.org/Person:56e2c9eb-db56-ea1c-cb8d-434d9129dff3> .
+
+<https://ex.org/Person:56e2c9eb-db56-ea1c-cb8d-434d9129dff3> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:4ecb9d2b-7656-613e-7f41-3d51ed9449a1> ;
+    sdo:children <https://ex.org/Person:3bc3950f-6698-b69e-5b35-9be0fa252d63> ;
+    sdo:familyName "Bodijn"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Nicolaes"@nl ;
+    sdo:knows <https://ex.org/Person:5da4aff5-52f4-0b27-77e2-505db13ca0de>,
+        <https://ex.org/Person:dee82e50-63a7-88e7-0cc6-64a2433638cd> ;
+    sdo:name "Nicolaes Bodijn"@nl ;
+    sdo:spouse <https://ex.org/Person:3f3b1636-4b79-efb3-0ca8-b905a4017a1c> .
+
+<https://ex.org/Person:5da4aff5-52f4-0b27-77e2-505db13ca0de> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:4ecb9d2b-7656-613e-7f41-3d51ed9449a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Stijne"@nl ;
+            pnv:givenName "Anna"@nl ;
+            pnv:literalName "Anna van Stijne"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:familyName "van Stijne"@nl ;
+    sdo:givenName "Anna"@nl ;
+    sdo:name "Anna van Stijne"@nl .
+
+<https://ex.org/Person:dee82e50-63a7-88e7-0cc6-64a2433638cd> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:4ecb9d2b-7656-613e-7f41-3d51ed9449a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Speck"@nl ;
+    sdo:givenName "Carel"@nl ;
+    sdo:name "Carel Speck"@nl .
+
+<https://ex.org/Source:4ecb9d2b-7656-613e-7f41-3d51ed9449a1> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/717e7f96-12da-4598-ad3c-13403db74079/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/4ecb9d2b-7656-613e-7f41-3d51ed9449a1"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/717e7f96-12da-4598-ad3c-13403db74079/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1689-02-27"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1670-1802"@nl,
+        "295"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 27-02-1689<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/295\">Inventarisnummer 295 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 295, Periode: 1..., (toegangsnr. 1004), inv.nr. 295, Doopboek en trouwboek van de kerk aan de St. Jorissteeg (RK) te Leiden, 1670 - 1802, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/4ecb9d2b-7656-613e-7f41-3d51ed9449a1"^^xsd:anyURI .
+

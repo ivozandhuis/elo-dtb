@@ -1,0 +1,88 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:014a0235-cb1a-4f9c-70b8-1afd0c6319a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1698-02-16"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:0adc4399-8e7f-b9e3-d70e-4d1f33e46af3> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:014a0235-cb1a-4f9c-70b8-1afd0c6319a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Drummond"@nl ;
+    sdo:givenName "Heijndrik"@nl ;
+    sdo:name "Heijndrik Drummond"@nl .
+
+<https://ex.org/Person:1088e283-c72c-0c55-a687-38053f797071> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:014a0235-cb1a-4f9c-70b8-1afd0c6319a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:014a0235-cb1a-4f9c-70b8-1afd0c6319a1_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 16-02-1698"@nl ;
+    sdo:familyName "Drummond"@nl ;
+    sdo:givenName "Maria"@nl ;
+    sdo:name "Maria Drummond"@nl ;
+    sdo:parent <https://ex.org/Person:671124d4-0cc6-9614-e0de-4f117b626635>,
+        <https://ex.org/Person:99878dfd-56f8-80da-588f-659961cfb13c> .
+
+<https://ex.org/Person:671124d4-0cc6-9614-e0de-4f117b626635> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:014a0235-cb1a-4f9c-70b8-1afd0c6319a1> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Blanken"@nl ;
+            pnv:givenName "Cornelia"@nl ;
+            pnv:literalName "Cornelia van Blanken"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:children <https://ex.org/Person:1088e283-c72c-0c55-a687-38053f797071> ;
+    sdo:familyName "van Blanken"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Cornelia"@nl ;
+    sdo:knows <https://ex.org/Person:0adc4399-8e7f-b9e3-d70e-4d1f33e46af3>,
+        <https://ex.org/Person:dc76b7c4-4964-0f6d-9ee0-9cdb6e57d11e> ;
+    sdo:name "Cornelia van Blanken"@nl ;
+    sdo:spouse <https://ex.org/Person:99878dfd-56f8-80da-588f-659961cfb13c> .
+
+<https://ex.org/Person:99878dfd-56f8-80da-588f-659961cfb13c> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:014a0235-cb1a-4f9c-70b8-1afd0c6319a1> ;
+    sdo:children <https://ex.org/Person:1088e283-c72c-0c55-a687-38053f797071> ;
+    sdo:familyName "Drummond"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Pieter"@nl ;
+    sdo:knows <https://ex.org/Person:0adc4399-8e7f-b9e3-d70e-4d1f33e46af3>,
+        <https://ex.org/Person:dc76b7c4-4964-0f6d-9ee0-9cdb6e57d11e> ;
+    sdo:name "Pieter Drummond"@nl ;
+    sdo:spouse <https://ex.org/Person:671124d4-0cc6-9614-e0de-4f117b626635> .
+
+<https://ex.org/Person:dc76b7c4-4964-0f6d-9ee0-9cdb6e57d11e> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:014a0235-cb1a-4f9c-70b8-1afd0c6319a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Kuijk"@nl ;
+            pnv:givenName "Pieternelle"@nl ;
+            pnv:literalName "Pieternelle van Kuijk"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:familyName "van Kuijk"@nl ;
+    sdo:givenName "Pieternelle"@nl ;
+    sdo:name "Pieternelle van Kuijk"@nl .
+
+<https://ex.org/Source:014a0235-cb1a-4f9c-70b8-1afd0c6319a1> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/68595d42-2d90-4050-8acc-92d76e3ff6ce/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/014a0235-cb1a-4f9c-70b8-1afd0c6319a1"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/68595d42-2d90-4050-8acc-92d76e3ff6ce/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1698-02-16"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1696-1700"@nl,
+        "244"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 16-02-1698<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/244\">Inventarisnummer 244 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 244, Periode: 1..., (toegangsnr. 1004), inv.nr. 244, Doopboek van de Hooglandse Kerk (NH) te Leiden, 26 april 1696 - 1700., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/014a0235-cb1a-4f9c-70b8-1afd0c6319a1"^^xsd:anyURI .
+

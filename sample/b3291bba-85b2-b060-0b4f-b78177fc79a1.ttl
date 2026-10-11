@@ -1,0 +1,91 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:b3291bba-85b2-b060-0b4f-b78177fc79a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1688-04-17"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:14ff9f31-eead-0079-029c-ea11d1805054> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b3291bba-85b2-b060-0b4f-b78177fc79a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Palme"@nl ;
+    sdo:givenName "Anne"@nl ;
+    sdo:name "Anne Palme"@nl .
+
+<https://ex.org/Person:2be9b10c-b110-7bd6-2d42-9885aaad4802> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b3291bba-85b2-b060-0b4f-b78177fc79a1> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Cour"@nl ;
+            pnv:givenName "Louis"@nl ;
+            pnv:literalName "Louis de la Cour"@nl ;
+            pnv:surnamePrefix "de la"@nl ] ;
+    sdo:children <https://ex.org/Person:ab14542f-8ba9-9a17-7f05-4f8565cee756> ;
+    sdo:familyName "de la Cour"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Louis"@nl ;
+    sdo:knows <https://ex.org/Person:14ff9f31-eead-0079-029c-ea11d1805054>,
+        <https://ex.org/Person:a96ed5af-b68a-872a-1fda-16cfa6bed060> ;
+    sdo:name "Louis de la Cour"@nl ;
+    sdo:spouse <https://ex.org/Person:72e1b60a-11d2-0c9e-9e0c-136688206648> .
+
+<https://ex.org/Person:72e1b60a-11d2-0c9e-9e0c-136688206648> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b3291bba-85b2-b060-0b4f-b78177fc79a1> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Gertrude"@nl ;
+            pnv:literalName "Gertrude Mathis"@nl ;
+            pnv:patronym "Mathis"@nl ] ;
+    sdo:children <https://ex.org/Person:ab14542f-8ba9-9a17-7f05-4f8565cee756> ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Gertrude"@nl ;
+    sdo:knows <https://ex.org/Person:14ff9f31-eead-0079-029c-ea11d1805054>,
+        <https://ex.org/Person:a96ed5af-b68a-872a-1fda-16cfa6bed060> ;
+    sdo:name "Gertrude Mathis"@nl ;
+    sdo:spouse <https://ex.org/Person:2be9b10c-b110-7bd6-2d42-9885aaad4802> .
+
+<https://ex.org/Person:a96ed5af-b68a-872a-1fda-16cfa6bed060> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b3291bba-85b2-b060-0b4f-b78177fc79a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Prevost"@nl ;
+    sdo:givenName "Jacques"@nl ;
+    sdo:name "Jacques Prevost"@nl .
+
+<https://ex.org/Person:ab14542f-8ba9-9a17-7f05-4f8565cee756> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b3291bba-85b2-b060-0b4f-b78177fc79a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:b3291bba-85b2-b060-0b4f-b78177fc79a1_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Cour"@nl ;
+            pnv:givenName "Anna"@nl ;
+            pnv:literalName "Anna de la Cour"@nl ;
+            pnv:surnamePrefix "de la"@nl ] ;
+    sdo:description "Doopdatum: 17-04-1688"@nl ;
+    sdo:familyName "de la Cour"@nl ;
+    sdo:givenName "Anna"@nl ;
+    sdo:name "Anna de la Cour"@nl ;
+    sdo:parent <https://ex.org/Person:2be9b10c-b110-7bd6-2d42-9885aaad4802>,
+        <https://ex.org/Person:72e1b60a-11d2-0c9e-9e0c-136688206648> .
+
+<https://ex.org/Source:b3291bba-85b2-b060-0b4f-b78177fc79a1> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/ca61c60a-8ac4-407c-ab35-1f92d48026e8/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/b3291bba-85b2-b060-0b4f-b78177fc79a1"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/ca61c60a-8ac4-407c-ab35-1f92d48026e8/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1688-04-17"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1683-1811"@nl,
+        "305"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 17-04-1688<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/305\">Inventarisnummer 305 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 305, Periode: 1..., (toegangsnr. 1004), inv.nr. 305, Doopboek van de kerk De Zon (RK) te Leiden, 3 oktober 1683 - 1811., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/b3291bba-85b2-b060-0b4f-b78177fc79a1"^^xsd:anyURI .
+

@@ -1,0 +1,98 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:03752658-cc02-194d-4c45-51caca15abee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1688-08-24"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:1f543119-777a-4b94-6632-000df92bcd2d> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:03752658-cc02-194d-4c45-51caca15abee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Dam"@nl ;
+            pnv:givenName "Marijtje"@nl ;
+            pnv:literalName "Marijtje van Dam"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:familyName "van Dam"@nl ;
+    sdo:givenName "Marijtje"@nl ;
+    sdo:name "Marijtje van Dam"@nl .
+
+<https://ex.org/Person:2db32320-6e33-683e-c55f-5be24dedea0d> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:03752658-cc02-194d-4c45-51caca15abee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Westerembde"@nl ;
+            pnv:givenName "Isaak"@nl ;
+            pnv:literalName "Isaak Jansz Westerembde"@nl ;
+            pnv:patronym "Jansz"@nl ] ;
+    sdo:familyName "Westerembde"@nl ;
+    sdo:givenName "Isaak"@nl ;
+    sdo:name "Isaak Jansz Westerembde"@nl .
+
+<https://ex.org/Person:a86a28a0-3b4b-f804-9c9c-cb806e42827e> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:03752658-cc02-194d-4c45-51caca15abee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Westerembde"@nl ;
+            pnv:givenName "Jan"@nl ;
+            pnv:literalName "Jan Jansz Westerembde"@nl ;
+            pnv:patronym "Jansz"@nl ] ;
+    sdo:children <https://ex.org/Person:e394bdcb-c69e-b716-1426-493fe54cad55> ;
+    sdo:familyName "Westerembde"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jan"@nl ;
+    sdo:knows <https://ex.org/Person:1f543119-777a-4b94-6632-000df92bcd2d>,
+        <https://ex.org/Person:2db32320-6e33-683e-c55f-5be24dedea0d> ;
+    sdo:name "Jan Jansz Westerembde"@nl ;
+    sdo:spouse <https://ex.org/Person:d821a138-11cc-c3cb-6539-d02275b52a39> .
+
+<https://ex.org/Person:d821a138-11cc-c3cb-6539-d02275b52a39> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:03752658-cc02-194d-4c45-51caca15abee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Hoogland"@nl ;
+            pnv:givenName "Annetje"@nl ;
+            pnv:literalName "Annetje Jans Hoogland"@nl ;
+            pnv:patronym "Jans"@nl ] ;
+    sdo:children <https://ex.org/Person:e394bdcb-c69e-b716-1426-493fe54cad55> ;
+    sdo:familyName "Hoogland"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Annetje"@nl ;
+    sdo:knows <https://ex.org/Person:1f543119-777a-4b94-6632-000df92bcd2d>,
+        <https://ex.org/Person:2db32320-6e33-683e-c55f-5be24dedea0d> ;
+    sdo:name "Annetje Jans Hoogland"@nl ;
+    sdo:spouse <https://ex.org/Person:a86a28a0-3b4b-f804-9c9c-cb806e42827e> .
+
+<https://ex.org/Person:e394bdcb-c69e-b716-1426-493fe54cad55> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:03752658-cc02-194d-4c45-51caca15abee> ;
+    picom:hasLifeEvent <https://ex.org/Source:03752658-cc02-194d-4c45-51caca15abee_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 24-08-1688"@nl ;
+    sdo:familyName "Westerembde"@nl ;
+    sdo:givenName "Anna"@nl ;
+    sdo:name "Anna Westerembde"@nl ;
+    sdo:parent <https://ex.org/Person:a86a28a0-3b4b-f804-9c9c-cb806e42827e>,
+        <https://ex.org/Person:d821a138-11cc-c3cb-6539-d02275b52a39> .
+
+<https://ex.org/Source:03752658-cc02-194d-4c45-51caca15abee> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/e0d5ef86-1951-43fb-a6f6-dbd0f13d3ed9/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/03752658-cc02-194d-4c45-51caca15abee"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/e0d5ef86-1951-43fb-a6f6-dbd0f13d3ed9/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1688-08-24"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1688-1691"@nl,
+        "242"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 24-08-1688<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/242\">Inventarisnummer 242 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 242, Periode: 1..., (toegangsnr. 1004), inv.nr. 242, Doopboek van de Hooglandse Kerk (NH) te Leiden, 1688 - 15 november 1691., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/03752658-cc02-194d-4c45-51caca15abee"^^xsd:anyURI .
+

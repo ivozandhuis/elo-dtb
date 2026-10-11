@@ -1,0 +1,83 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:df382b44-df3e-9b9e-7562-c19a43fb59a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1729-05-29"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:6e81c78c-876e-c3ca-bf7c-1739eb363a91> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:df382b44-df3e-9b9e-7562-c19a43fb59a1> ;
+    sdo:children <https://ex.org/Person:b0ec860e-455a-cbfb-f1ac-d929f687753d> ;
+    sdo:familyName "Gemer"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Catharina"@nl ;
+    sdo:knows <https://ex.org/Person:76ac5057-651b-669c-b2ee-a93c8aaed084>,
+        <https://ex.org/Person:dd246d26-75ed-fc94-0130-cefb92eeee04> ;
+    sdo:name "Catharina Gemer"@nl ;
+    sdo:spouse <https://ex.org/Person:fcafb28b-e612-af4a-fa43-37452fbee112> .
+
+<https://ex.org/Person:76ac5057-651b-669c-b2ee-a93c8aaed084> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:df382b44-df3e-9b9e-7562-c19a43fb59a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Bak"@nl ;
+            pnv:givenName "Catharina"@nl ;
+            pnv:literalName "Catharina van der Bak"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:familyName "van der Bak"@nl ;
+    sdo:givenName "Catharina"@nl ;
+    sdo:name "Catharina van der Bak"@nl .
+
+<https://ex.org/Person:b0ec860e-455a-cbfb-f1ac-d929f687753d> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:df382b44-df3e-9b9e-7562-c19a43fb59a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:df382b44-df3e-9b9e-7562-c19a43fb59a1_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 29-05-1729"@nl ;
+    sdo:familyName "Godefroi"@nl ;
+    sdo:givenName "Sara"@nl ;
+    sdo:name "Sara Godefroi"@nl ;
+    sdo:parent <https://ex.org/Person:6e81c78c-876e-c3ca-bf7c-1739eb363a91>,
+        <https://ex.org/Person:fcafb28b-e612-af4a-fa43-37452fbee112> .
+
+<https://ex.org/Person:dd246d26-75ed-fc94-0130-cefb92eeee04> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:df382b44-df3e-9b9e-7562-c19a43fb59a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Godefroi"@nl ;
+    sdo:givenName "Dirk"@nl ;
+    sdo:name "Dirk Godefroi"@nl .
+
+<https://ex.org/Person:fcafb28b-e612-af4a-fa43-37452fbee112> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:df382b44-df3e-9b9e-7562-c19a43fb59a1> ;
+    sdo:children <https://ex.org/Person:b0ec860e-455a-cbfb-f1ac-d929f687753d> ;
+    sdo:familyName "Godefroi"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Pieter"@nl ;
+    sdo:knows <https://ex.org/Person:76ac5057-651b-669c-b2ee-a93c8aaed084>,
+        <https://ex.org/Person:dd246d26-75ed-fc94-0130-cefb92eeee04> ;
+    sdo:name "Pieter Godefroi"@nl ;
+    sdo:spouse <https://ex.org/Person:6e81c78c-876e-c3ca-bf7c-1739eb363a91> .
+
+<https://ex.org/Source:df382b44-df3e-9b9e-7562-c19a43fb59a1> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/366b5a9e-a7aa-44fe-91cc-049e0677948d/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/df382b44-df3e-9b9e-7562-c19a43fb59a1"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/366b5a9e-a7aa-44fe-91cc-049e0677948d/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1729-05-29"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1714-1737"@nl,
+        "262"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 29-05-1729<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/262\">Inventarisnummer 262 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 262, Periode: 1..., (toegangsnr. 1004), inv.nr. 262, Doopboek van de Nieuwe- of Marekerk (NH) te Leiden, 1714 - 1737., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/df382b44-df3e-9b9e-7562-c19a43fb59a1"^^xsd:anyURI .
+

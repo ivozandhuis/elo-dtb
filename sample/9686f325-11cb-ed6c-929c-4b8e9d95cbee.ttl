@@ -1,0 +1,88 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:9686f325-11cb-ed6c-929c-4b8e9d95cbee_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1729-04-07"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:19509f49-f7a8-1853-c57c-e12ed9302660> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:9686f325-11cb-ed6c-929c-4b8e9d95cbee> ;
+    picom:hasLifeEvent <https://ex.org/Source:9686f325-11cb-ed6c-929c-4b8e9d95cbee_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 07-04-1729"@nl ;
+    sdo:familyName "Wilingh"@nl ;
+    sdo:givenName "Margaretha"@nl ;
+    sdo:name "Margaretha Wilingh"@nl ;
+    sdo:parent <https://ex.org/Person:85658363-68b8-2d95-77b3-ef6fe9bcf4c2>,
+        <https://ex.org/Person:b24cdb92-342f-0c70-59f2-40faeba88619> .
+
+<https://ex.org/Person:1966ba4e-4dbf-ed50-c779-6def77741e82> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:9686f325-11cb-ed6c-929c-4b8e9d95cbee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Severijn"@nl ;
+    sdo:givenName "Johanna Margaretha"@nl ;
+    sdo:name "Johanna Margaretha Severijn"@nl .
+
+<https://ex.org/Person:85658363-68b8-2d95-77b3-ef6fe9bcf4c2> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:9686f325-11cb-ed6c-929c-4b8e9d95cbee> ;
+    sdo:children <https://ex.org/Person:19509f49-f7a8-1853-c57c-e12ed9302660> ;
+    sdo:familyName "Wilingh"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Hermannus"@nl ;
+    sdo:knows <https://ex.org/Person:1966ba4e-4dbf-ed50-c779-6def77741e82>,
+        <https://ex.org/Person:f391bb9d-2dce-fa6c-d834-a4d17f51e347> ;
+    sdo:name "Hermannus Wilingh"@nl ;
+    sdo:spouse <https://ex.org/Person:b24cdb92-342f-0c70-59f2-40faeba88619> .
+
+<https://ex.org/Person:b24cdb92-342f-0c70-59f2-40faeba88619> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:9686f325-11cb-ed6c-929c-4b8e9d95cbee> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Vin"@nl ;
+            pnv:givenName "Sibilla"@nl ;
+            pnv:literalName "Sibilla van der Vin"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:children <https://ex.org/Person:19509f49-f7a8-1853-c57c-e12ed9302660> ;
+    sdo:familyName "van der Vin"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Sibilla"@nl ;
+    sdo:knows <https://ex.org/Person:1966ba4e-4dbf-ed50-c779-6def77741e82>,
+        <https://ex.org/Person:f391bb9d-2dce-fa6c-d834-a4d17f51e347> ;
+    sdo:name "Sibilla van der Vin"@nl ;
+    sdo:spouse <https://ex.org/Person:85658363-68b8-2d95-77b3-ef6fe9bcf4c2> .
+
+<https://ex.org/Person:f391bb9d-2dce-fa6c-d834-a4d17f51e347> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:9686f325-11cb-ed6c-929c-4b8e9d95cbee> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Vin"@nl ;
+            pnv:givenName "Otto Jacobus"@nl ;
+            pnv:literalName "Otto Jacobus van der Vin"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:familyName "van der Vin"@nl ;
+    sdo:givenName "Otto Jacobus"@nl ;
+    sdo:name "Otto Jacobus van der Vin"@nl .
+
+<https://ex.org/Source:9686f325-11cb-ed6c-929c-4b8e9d95cbee> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/4694377a-c1dd-4531-ad24-6c4df1d242e4/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/9686f325-11cb-ed6c-929c-4b8e9d95cbee"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/4694377a-c1dd-4531-ad24-6c4df1d242e4/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1729-04-07"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1726-1733"@nl,
+        "249"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Tweeling met Johanna<br>Doopdatum: 07-04-1729<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/249\">Inventarisnummer 249 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 249, Periode: 1..., (toegangsnr. 1004), inv.nr. 249, Doopboek van de Hooglandse Kerk (NH) te Leiden, 3 maart 1726 - 28 april 1733., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/9686f325-11cb-ed6c-929c-4b8e9d95cbee"^^xsd:anyURI .
+

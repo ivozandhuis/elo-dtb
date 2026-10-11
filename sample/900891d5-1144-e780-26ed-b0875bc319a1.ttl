@@ -1,0 +1,77 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:900891d5-1144-e780-26ed-b0875bc319a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1684-09-28"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:86572356-3d1e-1cbe-4d9d-0cfac021dad9> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:900891d5-1144-e780-26ed-b0875bc319a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:900891d5-1144-e780-26ed-b0875bc319a1_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 28-09-1684"@nl ;
+    sdo:familyName "Serooj"@nl ;
+    sdo:givenName "Leendert"@nl ;
+    sdo:name "Leendert Serooj"@nl ;
+    sdo:parent <https://ex.org/Person:8b4ee5b2-990f-13d2-65af-563d5743bf77>,
+        <https://ex.org/Person:f0c51a99-19eb-ce87-785c-a67041a0e28e> .
+
+<https://ex.org/Person:8b4ee5b2-990f-13d2-65af-563d5743bf77> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:900891d5-1144-e780-26ed-b0875bc319a1> ;
+    sdo:children <https://ex.org/Person:86572356-3d1e-1cbe-4d9d-0cfac021dad9> ;
+    sdo:familyName "Serooj"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Cornelis"@nl ;
+    sdo:knows <https://ex.org/Person:96ac0ce7-005a-3176-4bc9-bab28e185769>,
+        <https://ex.org/Person:b67d1811-2b8b-9755-9e97-fa2172f6d1a4> ;
+    sdo:name "Cornelis Serooj"@nl ;
+    sdo:spouse <https://ex.org/Person:f0c51a99-19eb-ce87-785c-a67041a0e28e> .
+
+<https://ex.org/Person:96ac0ce7-005a-3176-4bc9-bab28e185769> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:900891d5-1144-e780-26ed-b0875bc319a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Serooj"@nl ;
+    sdo:givenName "Aeltie"@nl ;
+    sdo:name "Aeltie Serooj"@nl .
+
+<https://ex.org/Person:b67d1811-2b8b-9755-9e97-fa2172f6d1a4> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:900891d5-1144-e780-26ed-b0875bc319a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Serooj"@nl ;
+    sdo:givenName "Gillis"@nl ;
+    sdo:name "Gillis Serooj"@nl .
+
+<https://ex.org/Person:f0c51a99-19eb-ce87-785c-a67041a0e28e> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:900891d5-1144-e780-26ed-b0875bc319a1> ;
+    sdo:children <https://ex.org/Person:86572356-3d1e-1cbe-4d9d-0cfac021dad9> ;
+    sdo:familyName "Deree"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Maria"@nl ;
+    sdo:knows <https://ex.org/Person:96ac0ce7-005a-3176-4bc9-bab28e185769>,
+        <https://ex.org/Person:b67d1811-2b8b-9755-9e97-fa2172f6d1a4> ;
+    sdo:name "Maria Deree"@nl ;
+    sdo:spouse <https://ex.org/Person:8b4ee5b2-990f-13d2-65af-563d5743bf77> .
+
+<https://ex.org/Source:900891d5-1144-e780-26ed-b0875bc319a1> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/d6299de8-3f24-457e-b8a1-232d01104fb0/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/900891d5-1144-e780-26ed-b0875bc319a1"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/d6299de8-3f24-457e-b8a1-232d01104fb0/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1684-09-28"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1684-1687"@nl,
+        "241"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Toevoeging onderzoeker over achternaam vader : C. Servoy, zie kerk. ondertr. reg. Y fol. 140v<br>Doopdatum: 28-09-1684<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/241\">Inventarisnummer 241 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 241, Periode: 1..., (toegangsnr. 1004), inv.nr. 241, Doopboek van de Hooglandse Kerk (NH) te Leiden, 1684 - 1687., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/900891d5-1144-e780-26ed-b0875bc319a1"^^xsd:anyURI .
+

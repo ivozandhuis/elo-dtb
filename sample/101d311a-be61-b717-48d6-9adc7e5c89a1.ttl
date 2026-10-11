@@ -1,0 +1,97 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:101d311a-be61-b717-48d6-9adc7e5c89a1_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1665-12-08"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:16193afc-df73-94bb-c6bd-a726ae0b9684> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:101d311a-be61-b717-48d6-9adc7e5c89a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Fret"@nl ;
+            pnv:givenName "Marij"@nl ;
+            pnv:literalName "Marij de Fret"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:familyName "de Fret"@nl ;
+    sdo:givenName "Marij"@nl ;
+    sdo:name "Marij de Fret"@nl .
+
+<https://ex.org/Person:58d1a280-3e1f-a69a-4430-ffd48cb8c149> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:101d311a-be61-b717-48d6-9adc7e5c89a1> ;
+    picom:hasLifeEvent <https://ex.org/Source:101d311a-be61-b717-48d6-9adc7e5c89a1_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 08-12-1665"@nl ;
+    sdo:givenName "Josijntie"@nl ;
+    sdo:name "Josijntie"@nl ;
+    sdo:parent <https://ex.org/Person:ba2789ff-b939-7979-3fd7-bbb1c308b70b>,
+        <https://ex.org/Person:ce079efd-728d-d86d-457f-39eaed5ffc1d> .
+
+<https://ex.org/Person:8d33b7c5-929f-016d-a462-65e811661047> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:101d311a-be61-b717-48d6-9adc7e5c89a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Aken"@nl ;
+    sdo:givenName "Marij"@nl ;
+    sdo:name "Marij Aken"@nl .
+
+<https://ex.org/Person:b0e0d778-d1b7-59a8-d658-d6d1c7882afb> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:101d311a-be61-b717-48d6-9adc7e5c89a1> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Husman"@nl ;
+    sdo:givenName "Jan"@nl ;
+    sdo:name "Jan Husman"@nl .
+
+<https://ex.org/Person:ba2789ff-b939-7979-3fd7-bbb1c308b70b> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:101d311a-be61-b717-48d6-9adc7e5c89a1> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Maria"@nl ;
+            pnv:literalName "Maria Jans"@nl ;
+            pnv:patronym "Jans"@nl ] ;
+    sdo:children <https://ex.org/Person:58d1a280-3e1f-a69a-4430-ffd48cb8c149> ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Maria"@nl ;
+    sdo:knows <https://ex.org/Person:16193afc-df73-94bb-c6bd-a726ae0b9684>,
+        <https://ex.org/Person:8d33b7c5-929f-016d-a462-65e811661047>,
+        <https://ex.org/Person:b0e0d778-d1b7-59a8-d658-d6d1c7882afb> ;
+    sdo:name "Maria Jans"@nl ;
+    sdo:spouse <https://ex.org/Person:ce079efd-728d-d86d-457f-39eaed5ffc1d> .
+
+<https://ex.org/Person:ce079efd-728d-d86d-457f-39eaed5ffc1d> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:101d311a-be61-b717-48d6-9adc7e5c89a1> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Samuel"@nl ;
+            pnv:literalName "Samuel Barentsz"@nl ;
+            pnv:patronym "Barentsz"@nl ] ;
+    sdo:children <https://ex.org/Person:58d1a280-3e1f-a69a-4430-ffd48cb8c149> ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Samuel"@nl ;
+    sdo:knows <https://ex.org/Person:16193afc-df73-94bb-c6bd-a726ae0b9684>,
+        <https://ex.org/Person:8d33b7c5-929f-016d-a462-65e811661047>,
+        <https://ex.org/Person:b0e0d778-d1b7-59a8-d658-d6d1c7882afb> ;
+    sdo:name "Samuel Barentsz"@nl ;
+    sdo:spouse <https://ex.org/Person:ba2789ff-b939-7979-3fd7-bbb1c308b70b> .
+
+<https://ex.org/Source:101d311a-be61-b717-48d6-9adc7e5c89a1> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/0f19e8d5-2703-4f95-a23c-f580a6012a27/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/101d311a-be61-b717-48d6-9adc7e5c89a1"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/0f19e8d5-2703-4f95-a23c-f580a6012a27/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1665-12-08"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1659-1666"@nl,
+        "237"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 08-12-1665<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/237\">Inventarisnummer 237 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 237, Periode: 1..., (toegangsnr. 1004), inv.nr. 237, Doopboek van de Hooglandse Kerk (NH) te Leiden, 1 juli 1659 - 1666., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/101d311a-be61-b717-48d6-9adc7e5c89a1"^^xsd:anyURI .
+

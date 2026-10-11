@@ -1,0 +1,108 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:03688e23-8cae-656e-8e00-db0ed2360a3a> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:1480033c-638d-f8a2-3451-34ee4d457c35> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Brisge"@nl ;
+            pnv:givenName "Jacob"@nl ;
+            pnv:literalName "Jacob van den Brisge"@nl ;
+            pnv:surnamePrefix "van den"@nl ] ;
+    sdo:description "getuige van de bruidegom"@nl ;
+    sdo:familyName "van den Brisge"@nl ;
+    sdo:givenName "Jacob"@nl ;
+    sdo:name "Jacob van den Brisge"@nl .
+
+<https://ex.org/Person:2051b4f6-d5fd-fa18-2783-dc97a11e9628> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:1480033c-638d-f8a2-3451-34ee4d457c35> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Berch"@nl ;
+            pnv:givenName "Maljaert"@nl ;
+            pnv:literalName "Maljaert van den Berch"@nl ;
+            pnv:surnamePrefix "van den"@nl ] ;
+    sdo:description "getuige van de bruidegom"@nl ;
+    sdo:familyName "van den Berch"@nl ;
+    sdo:givenName "Maljaert"@nl ;
+    sdo:name "Maljaert van den Berch"@nl .
+
+<https://ex.org/Person:90958c0b-ba88-78d2-afd1-c9d4adf0f3df> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:1480033c-638d-f8a2-3451-34ee4d457c35> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:description "getuige van de bruid"@nl ;
+    sdo:familyName "Fulsteecken"@nl ;
+    sdo:givenName "Galletgen"@nl ;
+    sdo:name "Galletgen Fulsteecken"@nl .
+
+<https://ex.org/Person:4931cec4-c753-cc06-043e-7b91793bed3a> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:1480033c-638d-f8a2-3451-34ee4d457c35> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Baerntgen"@nl ;
+            pnv:literalName "Baerntgen Clementsdr"@nl ;
+            pnv:patronym "Clementsdr"@nl ] ;
+    sdo:description "getuige van de bruid, relatie tot de bruid: zuster"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Baerntgen"@nl ;
+    sdo:name "Baerntgen Clementsdr"@nl .
+
+<https://ex.org/Person:8557d0ad-b324-76ec-0651-54daf08a7aed> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:1480033c-638d-f8a2-3451-34ee4d457c35> ;
+    picom:hasLifeEvent <https://ex.org/Source:1480033c-638d-f8a2-3451-34ee4d457c35_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Maycken"@nl ;
+            pnv:literalName "Maycken Clementsdr"@nl ;
+            pnv:patronym "Clementsdr"@nl ] ;
+    sdo:birthPlace "Nieupoort"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Maycken"@nl ;
+    sdo:name "Maycken Clementsdr"@nl ;
+    sdo:sibling <https://ex.org/Person:4931cec4-c753-cc06-043e-7b91793bed3a> ;
+    sdo:spouse <https://ex.org/Person:dc6f7f5a-89a8-1ab9-76cd-af6314dd0b0e> .
+
+<https://ex.org/Person:dc6f7f5a-89a8-1ab9-76cd-af6314dd0b0e> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:1480033c-638d-f8a2-3451-34ee4d457c35> ;
+    picom:hasLifeEvent <https://ex.org/Source:1480033c-638d-f8a2-3451-34ee4d457c35_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Berch"@nl ;
+            pnv:givenName "Jan"@nl ;
+            pnv:literalName "Jan van den Berch"@nl ;
+            pnv:surnamePrefix "van den"@nl ] ;
+    sdo:birthPlace "Kenne in Vlaenderen"@nl ;
+    sdo:familyName "van den Berch"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jan"@nl ;
+    sdo:name "Jan van den Berch"@nl ;
+    sdo:spouse <https://ex.org/Person:8557d0ad-b324-76ec-0651-54daf08a7aed> .
+
+<https://ex.org/Source:1480033c-638d-f8a2-3451-34ee4d457c35_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1592-12-03"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
+<https://ex.org/Source:1480033c-638d-f8a2-3451-34ee4d457c35> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/ae01f2b3-560d-450e-ba74-4d77f405b9ce/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/1480033c-638d-f8a2-3451-34ee4d457c35"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/ae01f2b3-560d-450e-ba74-4d77f405b9ce/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1592-12-03"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1592-1597"@nl,
+        "3"@nl,
+        "Datum ondertrouw: 03-12-1592<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/3\">Inventarisnummer 3 van archiefnummer 1004 in Archieven</a>"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 3, Periode: 159..., (toegangsnr. 1004), inv.nr. 3, C. Kerkelijk ondertrouwboek (NH) van Leiden, 1592 - maart 1597., 28, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/1480033c-638d-f8a2-3451-34ee4d457c35"^^xsd:anyURI .
+
