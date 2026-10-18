@@ -1,0 +1,42 @@
+{
+  "rotate": -12,
+  "perspective": 80,
+  "camera_height": 295,
+  "spacing": 1.0,
+  "head_size": 0.62,
+  "slice_thickness": 5,
+  "slice_spacing": 9,
+  "highlights": true,
+  "head_outline": true,
+  "text": true,
+  "label": "LODs of PiCo",
+  "colors": {
+    "body": "#1438F5",
+    "head": "#1A2550",
+    "text": "#1A2550",
+    "highlight": "#FFFFFF",
+    "outline": "#FFFFFF"
+  },
+  "animation": {
+    "frames": 90,
+    "duration_s": 8
+  },
+  "variants": {
+    "horizontal": {
+      "layout": "horizontal"
+    },
+    "dark": {
+      "colors": { "body": "#4D6BFF", "head": "#FFFFFF", "text": "#FFFFFF", "outline": "#1A2550" }
+    },
+    "dark-mark-embroidery": {
+      "text": false,
+      "highlights": false,
+      "colors": { "body": "#4D6BFF", "head": "#FFFFFF", "outline": "#1A2550" }
+    },
+    "mono-white-horizontal": {
+      "layout": "horizontal",
+      "highlights": false,
+      "colors": { "body": "#FFFFFF", "head": "#FFFFFF", "text": "#FFFFFF", "outline": "#1438F5" }
+    }
+  }
+}
