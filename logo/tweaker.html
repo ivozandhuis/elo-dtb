@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LODs of PiCo tweaker</title>
+<style>
+  :root { --bg: #f6f5f1; --card: #ffffff; --text: #1a2550; --muted: #5f5e5a; --border: #d3d1c7; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 14px/1.5 system-ui, sans-serif; }
+  main { max-width: 860px; margin: 0 auto; padding: 16px; }
+  h1 { font-size: 20px; font-weight: 600; margin: 0 0 12px; }
+  .stage { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 8px; }
+  .stage svg { display: block; width: 100%; height: 420px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 8px 28px; margin-top: 16px; }
+  .row { display: flex; align-items: center; gap: 10px; color: var(--muted); }
+  .row label { min-width: 120px; }
+  .row input[type=range] { flex: 1; }
+  .row output { min-width: 44px; text-align: right; color: var(--text); font-variant-numeric: tabular-nums; }
+  .checks { display: flex; gap: 16px; color: var(--muted); }
+  .bar { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; align-items: center; }
+  button, .file { font: inherit; padding: 6px 12px; border: 1px solid var(--border); border-radius: 8px; background: var(--card); color: var(--text); cursor: pointer; }
+  .file input { display: none; }
+  #msg { color: var(--muted); font-size: 13px; }
+  pre { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 10px; font-size: 12px; overflow-x: auto; }
+</style>
+</head>
+<body>
+<main>
+  <h1>LODs of PiCo tweaker</h1>
+  <div class="stage"><svg id="cv" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Logo preview"></svg></div>
+  <div class="grid">
+    <div class="row"><label for="rotate">Rotate triangle</label><input type="range" id="rotate" min="-180" max="180" step="1"><output id="rotate-o"></output></div>
+    <div class="row"><label for="perspective">Perspective</label><input type="range" id="perspective" min="0" max="100" step="1"><output id="perspective-o"></output></div>
+    <div class="row"><label for="camera_height">Camera height</label><input type="range" id="camera_height" min="0" max="600" step="5"><output id="camera_height-o"></output></div>
+    <div class="row"><label for="spacing">Spacing</label><input type="range" id="spacing" min="0.7" max="1.5" step="0.01"><output id="spacing-o"></output></div>
+    <div class="row"><label for="head_size">Head size</label><input type="range" id="head_size" min="0.4" max="0.9" step="0.01"><output id="head_size-o"></output></div>
+    <div class="row"><label for="slice_thickness">Slice thickness</label><input type="range" id="slice_thickness" min="2" max="10" step="0.5"><output id="slice_thickness-o"></output></div>
+    <div class="row"><label for="slice_spacing">Slice spacing</label><input type="range" id="slice_spacing" min="5" max="16" step="0.5"><output id="slice_spacing-o"></output></div>
+    <div class="checks">
+      <label><input type="checkbox" id="highlights"> Highlights</label>
+      <label><input type="checkbox" id="head_outline"> Head outline</label>
+      <label><input type="checkbox" id="text"> Text</label>
+    </div>
+  </div>
+  <div class="bar">
+    <button id="play">Play camera</button>
+    <button id="copy">Copy settings</button>
+    <button id="download">Download SVG</button>
+    <label class="file">Load settings<input type="file" id="load" accept=".json,application/json"></label>
+    <button id="reset">Reset to saved</button>
+    <span id="msg"></span>
+  </div>
+  <p id="hint" style="color:var(--muted);font-size:13px">Paste copied settings into <code>lods-of-pico-settings.json</code>, then run <code>python3 build_logo.py</code> to rebuild the SVGs and the animation.</p>
+  <pre id="json"></pre>
+</main>
+<script>
+// Saved settings; build_logo.py rewrites this block from lods-of-pico-settings.json.
+const SAVED = /*SETTINGS*/{"rotate": -12, "perspective": 80, "camera_height": 295, "spacing": 1.0, "head_size": 0.62, "slice_thickness": 5, "slice_spacing": 9, "highlights": true, "head_outline": true, "text": true, "label": "LODs of PiCo", "colors": {"body": "#1438F5", "head": "#1A2550", "text": "#1A2550", "highlight": "#FFFFFF", "outline": "#FFFFFF"}, "animation": {"frames": 90, "duration_s": 8}, "variants": {"horizontal": {"layout": "horizontal"}, "dark": {"colors": {"body": "#4D6BFF", "head": "#FFFFFF", "text": "#FFFFFF", "outline": "#1A2550"}}, "dark-mark-embroidery": {"text": false, "highlights": false, "colors": {"body": "#4D6BFF", "head": "#FFFFFF", "outline": "#1A2550"}}, "mono-white-horizontal": {"layout": "horizontal", "highlights": false, "colors": {"body": "#FFFFFF", "head": "#FFFFFF", "text": "#FFFFFF", "outline": "#1438F5"}}}}/*END*/;
+
+// Same model as build_logo.py: RDF logo node layout seen from above, drawn through a perspective camera.
+const TOP = [[103, 201, 47], [247, 115, 47], [249, 284, 47]];
+const EDGES = [[0, 1], [1, 2], [2, 0]];
+const C = 200;
+const NUM = ["rotate", "perspective", "camera_height", "spacing", "head_size", "slice_thickness", "slice_spacing"];
+const BOOL = ["highlights", "head_outline", "text"];
+const $ = id => document.getElementById(id);
+const f1 = v => String(Math.round(v * 10) / 10);
+let S = structuredClone(SAVED);
+
+function head(x, y, r, k) { const rh = k * r; return [x, y - r - 0.1 * r - rh, rh]; }
+
+function gloss(x, y, r, col) {
+  const a0 = 195 * Math.PI / 180, a1 = 265 * Math.PI / 180, g = 240 * Math.PI / 180, rr = 0.8 * r;
+  return `<path d="M ${f1(x + rr * Math.cos(a0))} ${f1(y + rr * Math.sin(a0))} A ${f1(rr)} ${f1(rr)} 0 0 1 ${f1(x + rr * Math.cos(a1))} ${f1(y + rr * Math.sin(a1))}" fill="none" stroke="${col}" stroke-width="${f1(0.09 * r)}" stroke-linecap="round"/>` +
+    `<circle cx="${f1(x + 0.55 * r * Math.cos(g))}" cy="${f1(y + 0.55 * r * Math.sin(g))}" r="${f1(0.08 * r)}" fill="${col}"/>`;
+}
+
+function slices(a, b, s) {
+  const [x1, y1, r1] = a, [x2, y2, r2] = b;
+  const dx = x2 - x1, dy = y2 - y1, L = Math.hypot(dx, dy), ux = dx / L, uy = dy / L, nx = -uy, ny = ux;
+  const th = s.slice_thickness;
+  const s0 = r1 + 1.6 * th * r1 / 47, s1 = L - r2 - 1.6 * th * r2 / 47;
+  if (s1 <= s0) return "";
+  const step = s.slice_spacing * (r1 + r2) / 94, n = Math.max(2, Math.floor((s1 - s0) / step) + 1);
+  let out = "";
+  for (let i = 0; i < n; i++) {
+    const t = i / (n - 1), d = s0 + (s1 - s0) * t;
+    const we = 0.42 * (r1 * (1 - t) + r2 * t), wm = 0.24 * (r1 + r2) / 2, h = we - (we - wm) * Math.sin(Math.PI * t);
+    const cx = x1 + ux * d, cy = y1 + uy * d, sw = th * (r1 * (1 - t) + r2 * t) / 47;
+    out += `<line x1="${f1(cx + nx * h)}" y1="${f1(cy + ny * h)}" x2="${f1(cx - nx * h)}" y2="${f1(cy - ny * h)}" stroke="${s.colors.body}" stroke-width="${f1(sw)}" stroke-linecap="round"/>`;
+  }
+  return out;
+}
+
+function scene(s, rotate) {
+  const rot = (rotate ?? s.rotate) * Math.PI / 180, K = 1620 - 15 * s.perspective, G = s.camera_height;
+  const top = TOP.map(([x, y, r]) => {
+    const dx = (x - C) * s.spacing, dy = (y - C) * s.spacing;
+    return [C + dx * Math.cos(rot) - dy * Math.sin(rot), C + dx * Math.sin(rot) + dy * Math.cos(rot), r];
+  });
+  const zf = Math.max(...top.map(p => p[1]));
+  const P = top.map(([x, y, r]) => { const k = 1 / (1 + (zf - y) / K); return [C + (x - C) * k, zf - G + G * k, r * k]; });
+  const items = top.map((p, i) => ({ d: p[1], k: "p", i }));
+  EDGES.forEach(([i, j]) => items.push({ d: Math.min(top[i][1], top[j][1]) + 0.01, k: "e", i, j }));
+  items.sort((u, v) => u.d - v.d);
+  const c = s.colors;
+  let out = "";
+  for (const it of items) {
+    if (it.k === "e") { out += slices(P[it.i], P[it.j], s); continue; }
+    const [x, y, r] = P[it.i], [hx, hy, hr] = head(x, y, r, s.head_size);
+    out += `<circle cx="${f1(x)}" cy="${f1(y)}" r="${f1(r)}" fill="${c.body}"/>`;
+    const ol = s.head_outline ? ` stroke="${c.outline}" stroke-width="${f1(5 * r / 47)}"` : "";
+    out += `<circle cx="${f1(hx)}" cy="${f1(hy)}" r="${f1(hr)}" fill="${c.head}"${ol}/>`;
+    if (s.highlights) out += gloss(x, y, r, c.highlight) + gloss(hx, hy, hr, c.highlight);
+  }
+  let x0 = Infinity, y0 = Infinity, x1 = -Infinity, y1 = -Infinity;
+  for (const [x, y, r] of P) {
+    const [hx, hy, hr] = head(x, y, r, s.head_size);
+    x0 = Math.min(x0, x - r, hx - hr); x1 = Math.max(x1, x + r, hx + hr);
+    y0 = Math.min(y0, hy - hr); y1 = Math.max(y1, y + r);
+  }
+  return { body: out, bounds: [x0, y0, x1, y1] };
+}
+
+function frameBox([x0, y0, x1, y1], text, pad = 14) {
+  const cx = (x0 + x1) / 2, w = Math.max(x1 - x0, 300) + 2 * pad, ty = y1 + 52;
+  const h = (text ? ty + 14 : y1 + pad) - (y0 - pad);
+  return { vx: cx - w / 2, vy: y0 - pad, w, h, cx, ty };
+}
+
+function label(s, b) {
+  return s.text ? `<text x="${f1(b.cx)}" y="${f1(b.ty)}" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="44" fill="${s.colors.text}">${s.label}</text>` : "";
+}
+
+function svgString(s) {
+  const { body, bounds } = scene(s), b = frameBox(bounds, s.text);
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${f1(b.vx)} ${f1(b.vy)} ${f1(b.w)} ${f1(b.h)}" width="${Math.round(b.w * 5)}" height="${Math.round(b.h * 5)}">\n${body}\n${label(s, b)}\n</svg>\n`;
+}
+
+let playing = false, angle = 0, fixedBox = null;
+function render() {
+  const { body, bounds } = scene(S, playing ? angle : undefined);
+  const b = fixedBox || frameBox(bounds, S.text);
+  const cv = $("cv");
+  cv.setAttribute("viewBox", `${f1(b.vx)} ${f1(b.vy)} ${f1(b.w)} ${f1(b.h)}`);
+  cv.innerHTML = body + label(S, b);
+  NUM.forEach(k => $(k + "-o").textContent = k === "rotate" ? S[k] + "°" : String(S[k]));
+  $("json").textContent = JSON.stringify(S, null, 2);
+}
+
+function toControls() {
+  NUM.forEach(k => $(k).value = S[k]);
+  BOOL.forEach(k => $(k).checked = S[k]);
+  render();
+}
+
+NUM.forEach(k => $(k).addEventListener("input", () => { S[k] = parseFloat($(k).value); render(); }));
+BOOL.forEach(k => $(k).addEventListener("change", () => { S[k] = $(k).checked; render(); }));
+
+function unionBox() {
+  let u = [Infinity, Infinity, -Infinity, -Infinity];
+  for (let a = 0; a < 360; a += 4) {
+    const b = scene(S, S.rotate + a).bounds;
+    u = [Math.min(u[0], b[0]), Math.min(u[1], b[1]), Math.max(u[2], b[2]), Math.max(u[3], b[3])];
+  }
+  return frameBox(u, S.text);
+}
+
+let last = 0;
+function tick(t) {
+  if (!playing) return;
+  const dur = (S.animation?.duration_s || 8) * 1000;
+  angle = S.rotate + ((t % dur) / dur) * 360;
+  render();
+  requestAnimationFrame(tick);
+}
+$("play").addEventListener("click", () => {
+  playing = !playing;
+  $("play").textContent = playing ? "Stop camera" : "Play camera";
+  fixedBox = playing ? unionBox() : null;
+  if (playing) requestAnimationFrame(tick); else render();
+});
+
+function flash(m) { $("msg").textContent = m; setTimeout(() => $("msg").textContent = "", 2500); }
+$("copy").addEventListener("click", async () => {
+  const txt = JSON.stringify(S, null, 2) + "\n";
+  try { await navigator.clipboard.writeText(txt); flash("Settings copied"); }
+  catch { flash("Couldn't copy. Select the settings below instead."); }
+});
+$("download").addEventListener("click", () => {
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([svgString(S)], { type: "image/svg+xml" }));
+  a.download = "lods-of-pico.svg";
+  a.click();
+  URL.revokeObjectURL(a.href);
+});
+$("load").addEventListener("change", async e => {
+  const f = e.target.files[0]; if (!f) return;
+  try { S = { ...structuredClone(SAVED), ...JSON.parse(await f.text()) }; toControls(); flash("Settings loaded"); }
+  catch { flash("That file isn't valid settings JSON"); }
+  e.target.value = "";
+});
+$("reset").addEventListener("click", () => { S = structuredClone(SAVED); toControls(); flash("Back to saved settings"); });
+
+toControls();
+</script>
+</body>
+</html>
