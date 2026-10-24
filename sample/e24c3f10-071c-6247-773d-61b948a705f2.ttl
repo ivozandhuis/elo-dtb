@@ -1,0 +1,35 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:23adc28f-7e20-3dbe-ca27-d2b13d107d8d> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:e24c3f10-071c-6247-773d-61b948a705f2> ;
+    picom:hasRole picot_roles:479 ;
+    sdo:address "Zijdgracht"@nl ;
+    sdo:givenName "NN"@nl ;
+    sdo:name "NN"@nl .
+
+<https://ex.org/Person:965306cd-56da-3d73-1b0b-3c7c6872eb08> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:e24c3f10-071c-6247-773d-61b948a705f2> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Pieter"@nl ;
+            pnv:literalName "Pieter Pietersz"@nl ;
+            pnv:patronym "Pietersz"@nl ] ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Pieter"@nl ;
+    sdo:name "Pieter Pietersz"@nl .
+
+<https://ex.org/Source:e24c3f10-071c-6247-773d-61b948a705f2> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1317"@nl,
+        "1624-1627"@nl,
+        "Datum begraven: 03-09-1626<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/0501A/file/1317\">Inventarisnummer 1317 van archiefnummer 0501A in Archieven</a>"@nl,
+        "Stadsarchief van Leiden (SA II) (1574-1816)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Stadsarchief van Leiden (SA II) (1574-1816), Deel: 1317, Periode: 1624-1627, (toegangsnr. 0501A), inv.nr. 1317, Register van begravenen te Leiden, 1624 juni 2-1627 juli 17., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/e24c3f10-071c-6247-773d-61b948a705f2"^^xsd:anyURI .
+

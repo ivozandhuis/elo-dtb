@@ -1,0 +1,37 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:4b3d974c-8e9e-706a-e3d1-0818cf1f7e18> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:bf4e8619-ce85-d320-030b-0bd6e787e5f2> ;
+    sdo:familyName "Otto"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Hendrik"@nl ;
+    sdo:name "Hendrik Otto"@nl .
+
+<https://ex.org/Person:d32d1df7-800e-d9bd-5ee8-c9c220574cb7> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:bf4e8619-ce85-d320-030b-0bd6e787e5f2> ;
+    picom:hasRole picot_roles:479 ;
+    sdo:address "Rijnsaterwoude"@nl ;
+    sdo:familyName "Otto"@nl ;
+    sdo:givenName "Egbertus"@nl ;
+    sdo:name "Egbertus Otto"@nl .
+
+<https://ex.org/Source:bf4e8619-ce85-d320-030b-0bd6e787e5f2> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/78ec8754-b399-46db-9b26-1919b350fcaa/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/bf4e8619-ce85-d320-030b-0bd6e787e5f2"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/78ec8754-b399-46db-9b26-1919b350fcaa/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1805-1869"@nl,
+        "6"@nl,
+        "Datum begraven: 17-10-1814<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/124.1.13/file/6\">Inventarisnummer 6 van archiefnummer 124.1.13 in Archieven</a>"@nl,
+        "Doop-, trouw- en begraafregisters Rijnsaterwoude"@nl ;
+    sdo:locationCreated "Rijnsaterwoude"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw- en begraafregisters Rijnsaterwoude, Deel: 6, Periode: 1805-1869, (toegangsnr. 124.1.13), inv.nr. 6, Register van ontvangst van het verschuldigde recht wegens het begraven op het kerkhof (NH) van Rijnsaterwoude, met alfabetische index, 21 maart 1805 - 30 november 1869., 12, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/bf4e8619-ce85-d320-030b-0bd6e787e5f2"^^xsd:anyURI .
+

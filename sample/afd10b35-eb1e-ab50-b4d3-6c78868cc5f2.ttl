@@ -1,0 +1,35 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:50749cf6-9595-e2f6-eb03-716fdc9a4c8e> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:afd10b35-eb1e-ab50-b4d3-6c78868cc5f2> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Willem"@nl ;
+            pnv:literalName "Willem Joosten"@nl ;
+            pnv:patronym "Joosten"@nl ] ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Willem"@nl ;
+    sdo:name "Willem Joosten"@nl .
+
+<https://ex.org/Person:73968221-457c-6d07-e4bc-8f4e21fcdab9> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:afd10b35-eb1e-ab50-b4d3-6c78868cc5f2> ;
+    picom:hasRole picot_roles:479 ;
+    sdo:address "Bogaerdsteeg"@nl ;
+    sdo:givenName "NN"@nl ;
+    sdo:name "NN"@nl .
+
+<https://ex.org/Source:afd10b35-eb1e-ab50-b4d3-6c78868cc5f2> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1319"@nl,
+        "1635-1636"@nl,
+        "Datum begraven: 26-07-1635<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/0501A/file/1319\">Inventarisnummer 1319 van archiefnummer 0501A in Archieven</a>"@nl,
+        "Stadsarchief van Leiden (SA II) (1574-1816)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Stadsarchief van Leiden (SA II) (1574-1816), Deel: 1319, Periode: 1635-1636, (toegangsnr. 0501A), inv.nr. 1319, Register van begravenen te Leiden, 1635 maart 25-1636 oktober 4., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/afd10b35-eb1e-ab50-b4d3-6c78868cc5f2"^^xsd:anyURI .
+

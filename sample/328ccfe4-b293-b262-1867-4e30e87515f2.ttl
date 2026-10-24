@@ -1,0 +1,35 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:b01462c7-8a6b-e7db-9f2d-22f6593a7252> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:328ccfe4-b293-b262-1867-4e30e87515f2> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Guylljamen"@nl ;
+            pnv:literalName "Guylljamen Aertijn"@nl ;
+            pnv:patronym "Aertijn"@nl ] ;
+    sdo:description "relatie: Huisvrouw"@nl ;
+    sdo:givenName "Guylljamen"@nl ;
+    sdo:name "Guylljamen Aertijn"@nl .
+
+<https://ex.org/Person:e857dab4-43af-c794-e5c4-7994e6c606d9> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:328ccfe4-b293-b262-1867-4e30e87515f2> ;
+    picom:hasRole picot_roles:479 ;
+    sdo:address "Koepoortsgracht"@nl ;
+    sdo:givenName "NN"@nl ;
+    sdo:name "NN"@nl .
+
+<https://ex.org/Source:328ccfe4-b293-b262-1867-4e30e87515f2> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1315"@nl,
+        "1609-1617"@nl,
+        "Datum begraven: 10-12-1610<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/0501A/file/1315\">Inventarisnummer 1315 van archiefnummer 0501A in Archieven</a>"@nl,
+        "Stadsarchief van Leiden (SA II) (1574-1816)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Stadsarchief van Leiden (SA II) (1574-1816), Deel: 1315, Periode: 1609-1617, (toegangsnr. 0501A), inv.nr. 1315, Register van begravenen te Leiden, 1609 april 5-1617 september 23., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/328ccfe4-b293-b262-1867-4e30e87515f2"^^xsd:anyURI .
+

@@ -1,0 +1,31 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:61d475e9-4997-bbb1-53a1-30b15c267906> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:54323385-96a7-5418-4871-9241f87495f2> ;
+    picom:hasRole picot_roles:479 ;
+    sdo:givenName "NN"@nl ;
+    sdo:name "NN"@nl .
+
+<https://ex.org/Person:6cc8d35a-87f1-19b2-f7bf-7d1117c8cd07> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:54323385-96a7-5418-4871-9241f87495f2> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 30-05-1672"@nl ;
+    sdo:familyName "Comijn"@nl ;
+    sdo:givenName "Dirck"@nl ;
+    sdo:name "Dirck Comijn"@nl .
+
+<https://ex.org/Source:54323385-96a7-5418-4871-9241f87495f2> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "157"@nl,
+        "1672-1678"@nl,
+        "NB. Datum is registratiedatum! Bron: Burgemeestersdagboeken.<br>Datum begraven: 30-05-1672<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/0501A/file/157\">Inventarisnummer 157 van archiefnummer 0501A in Archieven</a>"@nl,
+        "Stadsarchief van Leiden (SA II) (1574-1816)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Stadsarchief van Leiden (SA II) (1574-1816), Deel: 157, Periode: 1672-1678, (toegangsnr. 0501A), inv.nr. 157, N. 1672 maart 11-1678 april 1., Inv.nr. 157, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/54323385-96a7-5418-4871-9241f87495f2"^^xsd:anyURI .
+

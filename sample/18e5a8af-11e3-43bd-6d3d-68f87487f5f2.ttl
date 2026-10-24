@@ -1,0 +1,37 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:b8b60d72-40b7-264c-b0c8-acba5eb181e3> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:18e5a8af-11e3-43bd-6d3d-68f87487f5f2> ;
+    picom:hasRole picot_roles:479 ;
+    sdo:givenName "NN"@nl ;
+    sdo:name "NN"@nl .
+
+<https://ex.org/Person:f83feb67-6c49-a6b5-2bc7-4a96eb568a29> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:18e5a8af-11e3-43bd-6d3d-68f87487f5f2> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Greent"@nl ;
+            pnv:givenName "Simon"@nl ;
+            pnv:literalName "Simon van der Greent"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:description "relatie: Vrouw"@nl ;
+    sdo:familyName "van der Greent"@nl ;
+    sdo:givenName "Simon"@nl ;
+    sdo:hasOccupation "lakenwerker"@nl ;
+    sdo:name "Simon van der Greent"@nl .
+
+<https://ex.org/Source:18e5a8af-11e3-43bd-6d3d-68f87487f5f2> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1684-1707"@nl,
+        "2064"@nl,
+        "NB. Datum is registratiedatum!<br>Datum begraven: 28-11-1702<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/0501A/file/2064\">Inventarisnummer 2064 van archiefnummer 0501A in Archieven</a>"@nl,
+        "Stadsarchief van Leiden (SA II) (1574-1816)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Stadsarchief van Leiden (SA II) (1574-1816), Deel: 2064, Periode: 1684-1707, (toegangsnr. 0501A), inv.nr. 2064, 1684-1707., Inv.nr. 2064, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/18e5a8af-11e3-43bd-6d3d-68f87487f5f2"^^xsd:anyURI .
+

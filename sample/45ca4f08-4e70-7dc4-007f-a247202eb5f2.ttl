@@ -1,0 +1,50 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:5b61f4ab-71af-ab04-6665-596f0e9dbee0> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:45ca4f08-4e70-7dc4-007f-a247202eb5f2> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Jong"@nl ;
+            pnv:givenName "Pieter"@nl ;
+            pnv:literalName "Pieter Pieterse de Jong"@nl ;
+            pnv:patronym "Pieterse"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:familyName "de Jong"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Pieter"@nl ;
+    sdo:name "Pieter Pieterse de Jong"@nl .
+
+<https://ex.org/Person:7f9cf1e0-56df-9da0-f586-b0a278002cc1> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:45ca4f08-4e70-7dc4-007f-a247202eb5f2> ;
+    picom:hasRole picot_roles:479 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Jong"@nl ;
+            pnv:givenName "NN"@nl ;
+            pnv:literalName "NN de Jong"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:description "Kaag"@nl,
+        "een kindje"@nl ;
+    sdo:familyName "de Jong"@nl ;
+    sdo:givenName "NN"@nl ;
+    sdo:name "NN de Jong"@nl .
+
+<https://ex.org/Source:45ca4f08-4e70-7dc4-007f-a247202eb5f2> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/5b39d842-e470-4dff-8edd-cc95145fd011/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/45ca4f08-4e70-7dc4-007f-a247202eb5f2"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/5b39d842-e470-4dff-8edd-cc95145fd011/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1728-1730"@nl,
+        "9"@nl,
+        "Gaarder van Alkemade"@nl,
+        "Impost pro deo<br>Datum begraven: 08-07-1729<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/170.1.07/file/9\">Inventarisnummer 9 van archiefnummer 170.1.07 in Archieven</a>"@nl ;
+    sdo:locationCreated "Alkemade"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Gaarder van Alkemade, Deel: 9, Periode: 1728-1730, (toegangsnr. 170.1.07), inv.nr. 9, Registers van ontvangst van de impost op het begraven van Alkemade, 1728 - 1730;, 23, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/45ca4f08-4e70-7dc4-007f-a247202eb5f2"^^xsd:anyURI .
+

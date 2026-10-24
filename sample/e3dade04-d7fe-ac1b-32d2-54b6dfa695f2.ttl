@@ -1,0 +1,38 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:71f139ff-e6f2-19b2-5ac2-261cc16f1fe8> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:e3dade04-d7fe-ac1b-32d2-54b6dfa695f2> ;
+    sdo:familyName "Houweling"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jan"@nl ;
+    sdo:name "Jan Houweling"@nl .
+
+<https://ex.org/Person:9051bb60-7c78-5f80-71da-d7b52f0fe742> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:e3dade04-d7fe-ac1b-32d2-54b6dfa695f2> ;
+    picom:hasRole picot_roles:479 ;
+    sdo:address "Korteraar"@nl ;
+    sdo:familyName "Houweling"@nl ;
+    sdo:givenName "NN"@nl ;
+    sdo:name "NN Houweling"@nl .
+
+<https://ex.org/Source:e3dade04-d7fe-ac1b-32d2-54b6dfa695f2> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/cc227a68-3d86-4285-973f-b7f4ef7725b7/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/e3dade04-d7fe-ac1b-32d2-54b6dfa695f2"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/cc227a68-3d86-4285-973f-b7f4ef7725b7/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1793-1808"@nl,
+        "4"@nl,
+        """Begraafdatum is registratiedatum
+Begraven in de kerk, eigen graf, cirkel 7 graf 8<br>Datum begraven: 05-09-1808<br/><br/><a href="/collecties/archieven/archievenoverzicht/search/list/findingaid/151.1.11/file/4">Inventarisnummer 4 van archiefnummer 151.1.11 in Archieven</a>"""@nl,
+        "Doop-, trouw- en begraafregisters van Ter Aar"@nl ;
+    sdo:locationCreated "Ter Aar"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw- en begraafregisters van Ter Aar, Deel: 4, Periode: 1793-1808, (toegangsnr. 151.1.11), inv.nr. 4, Lijsten van ontvangen kerkerechten voor het begraven in de kerk of op het kerkhof (NH) van Ter Aar, 1793 - 1808., 2, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/e3dade04-d7fe-ac1b-32d2-54b6dfa695f2"^^xsd:anyURI .
+

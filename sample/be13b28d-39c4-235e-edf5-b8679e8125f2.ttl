@@ -1,0 +1,31 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:5ca1d718-8374-61da-6b84-187a8badf84c> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:be13b28d-39c4-235e-edf5-b8679e8125f2> ;
+    picom:hasRole picot_roles:479 ;
+    sdo:familyName "Hofman"@nl ;
+    sdo:givenName "Elisabeth"@nl ;
+    sdo:name "Elisabeth Hofman"@nl .
+
+<https://ex.org/Person:fe4dcd2a-0d0a-58d7-df81-ab2f01cd9c80> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:be13b28d-39c4-235e-edf5-b8679e8125f2> ;
+    sdo:description "relatie: Dochter"@nl ;
+    sdo:familyName "Hofman"@nl ;
+    sdo:givenName "Bartholomeus"@nl ;
+    sdo:name "Bartholomeus Hofman"@nl .
+
+<https://ex.org/Source:be13b28d-39c4-235e-edf5-b8679e8125f2> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1707-1733"@nl,
+        "2065"@nl,
+        "NB. Datum is registratiedatum!<br>Datum begraven: 10-09-1725<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/0501A/file/2065\">Inventarisnummer 2065 van archiefnummer 0501A in Archieven</a>"@nl,
+        "Stadsarchief van Leiden (SA II) (1574-1816)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Stadsarchief van Leiden (SA II) (1574-1816), Deel: 2065, Periode: 1707-1733, (toegangsnr. 0501A), inv.nr. 2065, 1707-1733., Inv.nr. 2065, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/be13b28d-39c4-235e-edf5-b8679e8125f2"^^xsd:anyURI .
+

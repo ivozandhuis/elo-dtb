@@ -5,7 +5,8 @@ from pathlib import Path
 from saxonche import PySaxonProcessor
 
 # set = "dtb_trouwen"
-set = "dtb_dopen"
+# set = "dtb_dopen"
+set = "dtb_begraven"
 amount = 0 # if 0, than all records are handled
 
 xsltproc = PySaxonProcessor(license=False).new_xslt30_processor()

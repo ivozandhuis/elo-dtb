@@ -1,0 +1,38 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:63ce01f0-ca3a-95d9-e87e-5d8e009591ca> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:a0fbf853-20b5-7518-666b-e10ddd1bd5f2> ;
+    sdo:description "relatie: Huisvrouw"@nl ;
+    sdo:familyName "Mouzee"@nl ;
+    sdo:givenName "Gabriel"@nl ;
+    sdo:name "Gabriel Mouzee"@nl .
+
+<https://ex.org/Person:e14ebea1-7a14-6489-fccb-b8d27152c03b> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:a0fbf853-20b5-7518-666b-e10ddd1bd5f2> ;
+    picom:hasRole picot_roles:479 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Gunst"@nl ;
+            pnv:givenName "Maria"@nl ;
+            pnv:literalName "Maria de Gunst"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:description "17960000"@nl ;
+    sdo:familyName "de Gunst"@nl ;
+    sdo:givenName "Maria"@nl ;
+    sdo:name "Maria de Gunst"@nl .
+
+<https://ex.org/Source:a0fbf853-20b5-7518-666b-e10ddd1bd5f2> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1341"@nl,
+        "1794-1804"@nl,
+        "Stadsarchief van Leiden (SA II) (1574-1816)"@nl,
+        "tussen 2 en 9 juli 1796. toevoeging onderzoeker: Mizee<br>Datum begraven: 1796<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/0501A/file/1341\">Inventarisnummer 1341 van archiefnummer 0501A in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Stadsarchief van Leiden (SA II) (1574-1816), Deel: 1341, Periode: 1794-1804, (toegangsnr. 0501A), inv.nr. 1341, Register van begravenen te Leiden, 1794 december 27-1804 december 29., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/a0fbf853-20b5-7518-666b-e10ddd1bd5f2"^^xsd:anyURI .
+

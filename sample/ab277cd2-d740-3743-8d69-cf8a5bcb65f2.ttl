@@ -1,0 +1,31 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:4265763c-0fa5-0ffb-553e-627f6c7aa709> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:ab277cd2-d740-3743-8d69-cf8a5bcb65f2> ;
+    picom:hasRole picot_roles:479 ;
+    sdo:familyName "Langla"@nl ;
+    sdo:givenName "NN"@nl ;
+    sdo:name "NN Langla"@nl .
+
+<https://ex.org/Person:fc53e584-4fd8-8f2b-6e0c-687fe3317d42> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:ab277cd2-d740-3743-8d69-cf8a5bcb65f2> ;
+    sdo:familyName "Langla"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Judick"@nl ;
+    sdo:name "Judick Langla"@nl .
+
+<https://ex.org/Source:ab277cd2-d740-3743-8d69-cf8a5bcb65f2> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1322"@nl,
+        "1655-1657"@nl,
+        "Datum begraven: 24-09-1655<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/0501A/file/1322\">Inventarisnummer 1322 van archiefnummer 0501A in Archieven</a>"@nl,
+        "Stadsarchief van Leiden (SA II) (1574-1816)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Stadsarchief van Leiden (SA II) (1574-1816), Deel: 1322, Periode: 1655-1657, (toegangsnr. 0501A), inv.nr. 1322, Register van begravenen te Leiden, 1655 augustus 1-1657 januari 27., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/ab277cd2-d740-3743-8d69-cf8a5bcb65f2"^^xsd:anyURI .
+

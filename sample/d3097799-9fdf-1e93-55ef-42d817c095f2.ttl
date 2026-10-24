@@ -1,0 +1,26 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:b8323366-ae12-3350-ebee-608af7cefd7e> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:d3097799-9fdf-1e93-55ef-42d817c095f2> ;
+    picom:hasRole picot_roles:479 ;
+    sdo:address "Militair Hospitaal"@nl ;
+    sdo:description "18010617"@nl ;
+    sdo:familyName "Janssen"@nl ;
+    sdo:givenName "H."@nl ;
+    sdo:hasOccupation "Kanonnier bij de 5e Comp. 4e Bat. Regiment Artillerie."@nl ;
+    sdo:name "H. Janssen"@nl .
+
+<https://ex.org/Source:d3097799-9fdf-1e93-55ef-42d817c095f2> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "7411"@nl,
+        "Inhoud record = inhoud bron! Opname: 24-10-1800.<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/0501A/file/7411\">Inventarisnummer 7411 van archiefnummer 0501A in Archieven</a>"@nl,
+        "Stadsarchief van Leiden (SA II) (1574-1816)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Stadsarchief van Leiden (SA II) (1574-1816), Deel: 7411, (toegangsnr. 0501A), inv.nr. 7411, Alfabetische lijst van in 1799-1810 in het militair hospitaal te Leiden overleden militairen, (1811)., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/d3097799-9fdf-1e93-55ef-42d817c095f2"^^xsd:anyURI .
+

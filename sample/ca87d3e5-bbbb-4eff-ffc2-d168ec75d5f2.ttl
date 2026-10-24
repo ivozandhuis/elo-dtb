@@ -1,0 +1,35 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:596469bc-77f5-3452-b16a-fdd4057e02fa> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:ca87d3e5-bbbb-4eff-ffc2-d168ec75d5f2> ;
+    picom:hasRole picot_roles:479 ;
+    sdo:givenName "NN"@nl ;
+    sdo:name "NN"@nl .
+
+<https://ex.org/Person:b24cea55-bbe0-b984-f26a-a2725756f263> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:ca87d3e5-bbbb-4eff-ffc2-d168ec75d5f2> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Heijndrick"@nl ;
+            pnv:literalName "Heijndrick Walingsz"@nl ;
+            pnv:patronym "Walingsz"@nl ] ;
+    sdo:description "Doopdatum: 05-06-1666"@nl ;
+    sdo:givenName "Heijndrick"@nl ;
+    sdo:name "Heijndrick Walingsz"@nl .
+
+<https://ex.org/Source:ca87d3e5-bbbb-4eff-ffc2-d168ec75d5f2> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "156"@nl,
+        "1667-1672"@nl,
+        "NB. Datum is registratiedatum! Bron: Burgemeestersdagboeken.<br>Datum begraven: 05-06-1666<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/0501A/file/156\">Inventarisnummer 156 van archiefnummer 0501A in Archieven</a>"@nl,
+        "Stadsarchief van Leiden (SA II) (1574-1816)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Stadsarchief van Leiden (SA II) (1574-1816), Deel: 156, Periode: 1667-1672, (toegangsnr. 0501A), inv.nr. 156, M. 1667 oktober 16-1672 april 23., Inv.nr. 156, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/ca87d3e5-bbbb-4eff-ffc2-d168ec75d5f2"^^xsd:anyURI .
+

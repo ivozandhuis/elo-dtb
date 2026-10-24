@@ -1,0 +1,43 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:2f43478b-a702-d930-0662-4c733bae5c97> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:df15d9ca-55e5-14ff-7c02-04582d6655f2> ;
+    picom:hasRole picot_roles:479 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Narm"@nl ;
+            pnv:givenName "NN"@nl ;
+            pnv:literalName "NN de Narm"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:address "oude Voldersgracht"@nl ;
+    sdo:familyName "de Narm"@nl ;
+    sdo:givenName "NN"@nl ;
+    sdo:name "NN de Narm"@nl .
+
+<https://ex.org/Person:a799f625-8256-f45b-7ee9-e43d5b0be529> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:df15d9ca-55e5-14ff-7c02-04582d6655f2> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Narm"@nl ;
+            pnv:givenName "Johan"@nl ;
+            pnv:literalName "Johan de Narm"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:familyName "de Narm"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Johan"@nl ;
+    sdo:name "Johan de Narm"@nl .
+
+<https://ex.org/Source:df15d9ca-55e5-14ff-7c02-04582d6655f2> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1319"@nl,
+        "1635-1636"@nl,
+        "Datum begraven: 21-09-1635<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/0501A/file/1319\">Inventarisnummer 1319 van archiefnummer 0501A in Archieven</a>"@nl,
+        "Stadsarchief van Leiden (SA II) (1574-1816)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Stadsarchief van Leiden (SA II) (1574-1816), Deel: 1319, Periode: 1635-1636, (toegangsnr. 0501A), inv.nr. 1319, Register van begravenen te Leiden, 1635 maart 25-1636 oktober 4., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/df15d9ca-55e5-14ff-7c02-04582d6655f2"^^xsd:anyURI .
+

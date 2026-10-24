@@ -1,0 +1,32 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:8c33e218-b8ad-f8a5-79c5-6d753c45f8e4> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:5d4a88a2-fdce-c7e4-c511-38641d2685f2> ;
+    picom:hasRole picot_roles:479 ;
+    sdo:address "Scheistraat"@nl ;
+    sdo:familyName "Donne"@nl ;
+    sdo:givenName "NN"@nl ;
+    sdo:name "NN Donne"@nl .
+
+<https://ex.org/Person:928eb00d-b2df-49bf-0f8d-573b80dcb89c> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:5d4a88a2-fdce-c7e4-c511-38641d2685f2> ;
+    sdo:familyName "Donne"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Pieter"@nl ;
+    sdo:name "Pieter Donne"@nl .
+
+<https://ex.org/Source:5d4a88a2-fdce-c7e4-c511-38641d2685f2> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1321"@nl,
+        "1646-1655"@nl,
+        "Datum begraven: 19-08-1654<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/0501A/file/1321\">Inventarisnummer 1321 van archiefnummer 0501A in Archieven</a>"@nl,
+        "Stadsarchief van Leiden (SA II) (1574-1816)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Stadsarchief van Leiden (SA II) (1574-1816), Deel: 1321, Periode: 1646-1655, (toegangsnr. 0501A), inv.nr. 1321, Register van begravenen te Leiden, 1646 augustus 19-1655 juli 31., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/5d4a88a2-fdce-c7e4-c511-38641d2685f2"^^xsd:anyURI .
+

@@ -1,0 +1,31 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:7aa98479-3212-a885-e96a-6ce72dd912e6> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:f8b240ca-f04b-3356-3148-2d09537165f2> ;
+    sdo:description "relatie: Huisvrouw"@nl ;
+    sdo:familyName "Sijl"@nl ;
+    sdo:givenName "Markes"@nl ;
+    sdo:name "Markes Sijl"@nl .
+
+<https://ex.org/Person:d547cdd3-d398-02e9-a1de-28f902c2739e> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:f8b240ca-f04b-3356-3148-2d09537165f2> ;
+    picom:hasRole picot_roles:479 ;
+    sdo:address "Middelstegracht"@nl ;
+    sdo:givenName "NN"@nl ;
+    sdo:name "NN"@nl .
+
+<https://ex.org/Source:f8b240ca-f04b-3356-3148-2d09537165f2> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1315"@nl,
+        "1609-1617"@nl,
+        "Datum begraven: 10-09-1609<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/0501A/file/1315\">Inventarisnummer 1315 van archiefnummer 0501A in Archieven</a>"@nl,
+        "Stadsarchief van Leiden (SA II) (1574-1816)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Stadsarchief van Leiden (SA II) (1574-1816), Deel: 1315, Periode: 1609-1617, (toegangsnr. 0501A), inv.nr. 1315, Register van begravenen te Leiden, 1609 april 5-1617 september 23., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/f8b240ca-f04b-3356-3148-2d09537165f2"^^xsd:anyURI .
+

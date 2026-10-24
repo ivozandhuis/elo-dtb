@@ -1,0 +1,43 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:900e1248-5241-cee7-ecf7-1e4fb3a93c30> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:0b5280d7-583c-9b44-2a0b-9b532ff4b5f2> ;
+    picom:hasRole picot_roles:479 ;
+    sdo:address "Kaag"@nl ;
+    sdo:familyName "Baas"@nl ;
+    sdo:givenName "Jan"@nl ;
+    sdo:name "Jan Baas"@nl .
+
+<https://ex.org/Person:a7f82c3e-a780-36f4-e3f8-2801c48bfc57> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:0b5280d7-583c-9b44-2a0b-9b532ff4b5f2> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Baas"@nl ;
+            pnv:givenName "Engel"@nl ;
+            pnv:literalName "Engel Janze Baas"@nl ;
+            pnv:patronym "Janze"@nl ] ;
+    sdo:familyName "Baas"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Engel"@nl ;
+    sdo:name "Engel Janze Baas"@nl .
+
+<https://ex.org/Source:0b5280d7-583c-9b44-2a0b-9b532ff4b5f2> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/df09bbf5-2179-4772-95d6-688eedc86e79/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/0b5280d7-583c-9b44-2a0b-9b532ff4b5f2"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/df09bbf5-2179-4772-95d6-688eedc86e79/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "16"@nl,
+        "1744-1751"@nl,
+        "Gaarder van Alkemade"@nl,
+        "Impost 3 gulden<br>Datum begraven: 12-04-1751<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/170.1.07/file/16\">Inventarisnummer 16 van archiefnummer 170.1.07 in Archieven</a>"@nl ;
+    sdo:locationCreated "Alkemade"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Gaarder van Alkemade, Deel: 16, Periode: 1744-1751, (toegangsnr. 170.1.07), inv.nr. 16, Registers van ontvangst van de impost op het begraven van Alkemade, 1744 - 1751;, 79, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/0b5280d7-583c-9b44-2a0b-9b532ff4b5f2"^^xsd:anyURI .
+

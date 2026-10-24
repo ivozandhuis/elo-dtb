@@ -6,6 +6,7 @@ import gzip
 
 # set = "dtb_trouwen"
 set = "dtb_dopen"
+# set = "dtb_begraven"
 amount = 0 # if 0, than all records are handled
 
 ext_path = Path(set + "/transformed")

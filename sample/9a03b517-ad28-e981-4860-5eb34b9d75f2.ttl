@@ -1,0 +1,35 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:2d2e969f-efd1-1451-9e79-dea5010a4e90> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:9a03b517-ad28-e981-4860-5eb34b9d75f2> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Jan"@nl ;
+            pnv:literalName "Jan Leendertsz"@nl ;
+            pnv:patronym "Leendertsz"@nl ] ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jan"@nl ;
+    sdo:name "Jan Leendertsz"@nl .
+
+<https://ex.org/Person:f64a8692-acdf-e963-fdbc-04279ab29804> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:9a03b517-ad28-e981-4860-5eb34b9d75f2> ;
+    picom:hasRole picot_roles:479 ;
+    sdo:address "Oude Rijn"@nl ;
+    sdo:givenName "NN"@nl ;
+    sdo:name "NN"@nl .
+
+<https://ex.org/Source:9a03b517-ad28-e981-4860-5eb34b9d75f2> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1316"@nl,
+        "1617-1624"@nl,
+        "Datum begraven: 16-02-1624<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/0501A/file/1316\">Inventarisnummer 1316 van archiefnummer 0501A in Archieven</a>"@nl,
+        "Stadsarchief van Leiden (SA II) (1574-1816)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Stadsarchief van Leiden (SA II) (1574-1816), Deel: 1316, Periode: 1617-1624, (toegangsnr. 0501A), inv.nr. 1316, Register van begravenen te Leiden, 1617 september 24-1624 juni 1., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/9a03b517-ad28-e981-4860-5eb34b9d75f2"^^xsd:anyURI .
+

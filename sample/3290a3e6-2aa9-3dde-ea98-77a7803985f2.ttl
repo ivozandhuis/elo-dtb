@@ -1,0 +1,32 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:bbfc653b-51ae-e8ae-3d44-22f75da34777> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:3290a3e6-2aa9-3dde-ea98-77a7803985f2> ;
+    picom:hasAge "2 jaar 6 maanden" ;
+    picom:hasRole picot_roles:479 ;
+    sdo:address "Noordeinde"@nl ;
+    sdo:description "18091222"@nl ;
+    sdo:familyName "Groenintwoud"@nl ;
+    sdo:givenName "Marijtje"@nl ;
+    sdo:name "Marijtje Groenintwoud"@nl .
+
+<https://ex.org/Source:3290a3e6-2aa9-3dde-ea98-77a7803985f2> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/79ce4760-b1e3-4827-aea3-bf51303ea8b0/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/3290a3e6-2aa9-3dde-ea98-77a7803985f2"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/79ce4760-b1e3-4827-aea3-bf51303ea8b0/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1806-1812"@nl,
+        "3"@nl,
+        "Datum begraven: 27-12-1809<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/132.1.11/file/3\">Inventarisnummer 3 van archiefnummer 132.1.11 in Archieven</a>"@nl,
+        "Gaarder van Zevenhoven"@nl ;
+    sdo:locationCreated "Zevenhoven"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Gaarder van Zevenhoven, Deel: 3, Periode: 1806-1812, (toegangsnr. 132.1.11), inv.nr. 3, Register van aangegeven lijken van Zevenhoven, 1806 - 1811 (1812 maart 4)., 10, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/3290a3e6-2aa9-3dde-ea98-77a7803985f2"^^xsd:anyURI .
+

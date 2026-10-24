@@ -1,0 +1,38 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:cc8485a6-d1fc-403d-3cbc-31fe7d2c1687> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:af9eb142-87a9-d0d7-9bd9-1115513bb5f2> ;
+    picom:hasAge "4 jaar" ;
+    picom:hasRole picot_roles:479 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Rooij"@nl ;
+            pnv:givenName "Abraham"@nl ;
+            pnv:literalName "Abraham de Rooij"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:address "Noorden"@nl ;
+    sdo:description "18090325"@nl ;
+    sdo:familyName "de Rooij"@nl ;
+    sdo:givenName "Abraham"@nl ;
+    sdo:name "Abraham de Rooij"@nl .
+
+<https://ex.org/Source:af9eb142-87a9-d0d7-9bd9-1115513bb5f2> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/3cbcd288-5656-4bb0-ae7f-020814c63377/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/af9eb142-87a9-d0d7-9bd9-1115513bb5f2"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/3cbcd288-5656-4bb0-ae7f-020814c63377/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1806-1811"@nl,
+        "9"@nl,
+        "Datum begraven: 28-03-1809<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/162.1.08/file/9\">Inventarisnummer 9 van archiefnummer 162.1.08 in Archieven</a>"@nl,
+        "Gaarder van Nieuwkoop en Noorden"@nl ;
+    sdo:locationCreated "Nieuwkoop"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Gaarder van Nieuwkoop en Noorden, Deel: 9, Periode: 1806-1811, (toegangsnr. 162.1.08), inv.nr. 9, Register van aangegeven lijken van Nieuwkoop en Noorden, 1806 - 1811., 15v, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/af9eb142-87a9-d0d7-9bd9-1115513bb5f2"^^xsd:anyURI .
+

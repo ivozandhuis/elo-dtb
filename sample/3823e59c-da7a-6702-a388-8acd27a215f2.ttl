@@ -1,0 +1,28 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:45283e51-543f-c762-8c89-20e83248bb3e> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:3823e59c-da7a-6702-a388-8acd27a215f2> ;
+    picom:hasRole picot_roles:479 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Catarina"@nl ;
+            pnv:literalName "Catarina Clement"@nl ;
+            pnv:patronym "Clement"@nl ] ;
+    sdo:givenName "Catarina"@nl ;
+    sdo:name "Catarina Clement"@nl .
+
+<https://ex.org/Source:3823e59c-da7a-6702-a388-8acd27a215f2> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1684-1707"@nl,
+        "2064"@nl,
+        "NB. Datum is registratiedatum!<br>Datum begraven: 27-10-1691<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/0501A/file/2064\">Inventarisnummer 2064 van archiefnummer 0501A in Archieven</a>"@nl,
+        "Stadsarchief van Leiden (SA II) (1574-1816)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Stadsarchief van Leiden (SA II) (1574-1816), Deel: 2064, Periode: 1684-1707, (toegangsnr. 0501A), inv.nr. 2064, 1684-1707., Inv.nr. 2064, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/3823e59c-da7a-6702-a388-8acd27a215f2"^^xsd:anyURI .
+

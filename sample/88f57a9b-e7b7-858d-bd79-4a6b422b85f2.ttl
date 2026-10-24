@@ -1,0 +1,31 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:2a76f232-57d6-69e4-05b7-6f3d81fa960b> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:88f57a9b-e7b7-858d-bd79-4a6b422b85f2> ;
+    picom:hasRole picot_roles:479 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Swanenburch"@nl ;
+            pnv:givenName "Willem"@nl ;
+            pnv:literalName "Willem Mourynsz van Swanenburch"@nl ;
+            pnv:patronym "Mourynsz"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:familyName "van Swanenburch"@nl ;
+    sdo:givenName "Willem"@nl ;
+    sdo:name "Willem Mourynsz van Swanenburch"@nl .
+
+<https://ex.org/Source:88f57a9b-e7b7-858d-bd79-4a6b422b85f2> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1319"@nl,
+        "1635-1636"@nl,
+        "Datum begraven: 24-07-1636<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/0501A/file/1319\">Inventarisnummer 1319 van archiefnummer 0501A in Archieven</a>"@nl,
+        "Stadsarchief van Leiden (SA II) (1574-1816)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Stadsarchief van Leiden (SA II) (1574-1816), Deel: 1319, Periode: 1635-1636, (toegangsnr. 0501A), inv.nr. 1319, Register van begravenen te Leiden, 1635 maart 25-1636 oktober 4., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/88f57a9b-e7b7-858d-bd79-4a6b422b85f2"^^xsd:anyURI .
+

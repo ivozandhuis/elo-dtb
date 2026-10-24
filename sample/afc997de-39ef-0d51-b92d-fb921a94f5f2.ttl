@@ -1,0 +1,30 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:6982d0b2-962b-358d-28f3-264f30489d35> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:afc997de-39ef-0d51-b92d-fb921a94f5f2> ;
+    picom:hasRole picot_roles:479 ;
+    sdo:address "Bierkaay"@nl ;
+    sdo:givenName "NN"@nl ;
+    sdo:name "NN"@nl .
+
+<https://ex.org/Person:943ee25b-f4e8-5dcc-8053-8ae8ce64f906> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:afc997de-39ef-0d51-b92d-fb921a94f5f2> ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Mathijs"@nl ;
+    sdo:name "Mathijs"@nl .
+
+<https://ex.org/Source:afc997de-39ef-0d51-b92d-fb921a94f5f2> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1319"@nl,
+        "1635-1636"@nl,
+        "Betreft 2 kinderen<br>Datum begraven: 30-10-1635<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/0501A/file/1319\">Inventarisnummer 1319 van archiefnummer 0501A in Archieven</a>"@nl,
+        "Stadsarchief van Leiden (SA II) (1574-1816)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Stadsarchief van Leiden (SA II) (1574-1816), Deel: 1319, Periode: 1635-1636, (toegangsnr. 0501A), inv.nr. 1319, Register van begravenen te Leiden, 1635 maart 25-1636 oktober 4., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/afc997de-39ef-0d51-b92d-fb921a94f5f2"^^xsd:anyURI .
+

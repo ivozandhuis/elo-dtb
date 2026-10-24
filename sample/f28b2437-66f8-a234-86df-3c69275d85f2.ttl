@@ -1,0 +1,34 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:1c293801-0cdd-1491-f3d6-7848dc29c240> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:f28b2437-66f8-a234-86df-3c69275d85f2> ;
+    picom:hasRole picot_roles:479 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Lucas"@nl ;
+            pnv:literalName "Lucas Piterze"@nl ;
+            pnv:patronym "Piterze"@nl ] ;
+    sdo:address "Esselickerwoude"@nl ;
+    sdo:givenName "Lucas"@nl ;
+    sdo:name "Lucas Piterze"@nl .
+
+<https://ex.org/Source:f28b2437-66f8-a234-86df-3c69275d85f2> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/5c835975-1942-4d9c-9f41-1ad4b01ec905/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/f28b2437-66f8-a234-86df-3c69275d85f2"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/5c835975-1942-4d9c-9f41-1ad4b01ec905/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1714-1811"@nl,
+        "6"@nl,
+        "Begraafdatum is registratiedatum.<br>Datum begraven: 16-08-1730<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/121.1.03/file/6\">Inventarisnummer 6 van archiefnummer 121.1.03 in Archieven</a>"@nl,
+        "Doop-, trouw- en begraafregisters van Hoogmade"@nl ;
+    sdo:locationCreated "Hoogmade"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw- en begraafregisters van Hoogmade, Deel: 6, Periode: 1714-1811, (toegangsnr. 121.1.03), inv.nr. 6, \"Doopboek, trouwboek en begraafboek\", doopinschrijvingen, april 1714 - 1811, trouwinschrijvingen, 23 april 1814 - 1810 en naamlijst van begravenen van de Rooms-katholieke statie (RK) te Hoogmade, 16 juli 1714 - 1811., 262, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/f28b2437-66f8-a234-86df-3c69275d85f2"^^xsd:anyURI .
+

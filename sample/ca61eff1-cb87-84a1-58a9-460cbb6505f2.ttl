@@ -1,0 +1,48 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:3ce328e5-ea08-ed77-cd64-44d4869d2588> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:ca61eff1-cb87-84a1-58a9-460cbb6505f2> ;
+    picom:hasRole picot_roles:479 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Dusseldorp"@nl ;
+            pnv:givenName "Pieter"@nl ;
+            pnv:literalName "Pieter van Dusseldorp"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:familyName "van Dusseldorp"@nl ;
+    sdo:givenName "Pieter"@nl ;
+    sdo:name "Pieter van Dusseldorp"@nl .
+
+<https://ex.org/Person:7b0d10de-a55f-b31d-3280-dd434138da0e> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:ca61eff1-cb87-84a1-58a9-460cbb6505f2> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Dusseldorp"@nl ;
+            pnv:givenName "Arij"@nl ;
+            pnv:literalName "Arij Pietersz van Dusseldorp"@nl ;
+            pnv:patronym "Pietersz"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:familyName "van Dusseldorp"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Arij"@nl ;
+    sdo:name "Arij Pietersz van Dusseldorp"@nl .
+
+<https://ex.org/Source:ca61eff1-cb87-84a1-58a9-460cbb6505f2> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/daf555f0-335d-4354-b7b9-1edd3cbcd2e3/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/ca61eff1-cb87-84a1-58a9-460cbb6505f2"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/daf555f0-335d-4354-b7b9-1edd3cbcd2e3/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1495"@nl,
+        "1723-1808"@nl,
+        "Dorps- en gemeentebestuur van Leiderdorp (1561-1958)"@nl,
+        "kind van Arij Pietersz van Dusseldorp<br>Datum begraven: 10-09-1734<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/0800/file/1495\">Inventarisnummer 1495 van archiefnummer 0800 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiderdorp"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Dorps- en gemeentebestuur van Leiderdorp (1561-1958), Deel: 1495, Periode: 1723-1808, (toegangsnr. 0800), inv.nr. 1495, Registers van ontvangst van de impost op trouwen en begraven van Leiderdorp, 1723 - 1805., 10v, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/ca61eff1-cb87-84a1-58a9-460cbb6505f2"^^xsd:anyURI .
+

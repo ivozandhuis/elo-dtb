@@ -6,7 +6,9 @@ from lxml import etree
 from datetime import datetime
 
 # set = "dtb_trouwen"
-set = "dtb_dopen"
+# set = "dtb_dopen"
+set = "dtb_begraven"
+
 amount = 0 # if 0, than all records are handled
 
 def to_balanced_path(number: str, extension: str, depth: int = 3) -> Path:
@@ -48,7 +50,10 @@ def find_youngest_file_date(path: Path):
     return last_mod_date
 
 
-# initialize
+
+# test
+# https://webservices.memorix.nl/a2a/20a181d4-c896-489f-9d16-20a3b7306b15&verb=Identify
+
 # https://webservices.memorix.nl/a2a/20a181d4-c896-489f-9d16-20a3b7306b15?verb=ListRecords&metadataPrefix=a2a&set=dtb_trouwen
 
 oai_endpoint          = "https://webservices.memorix.nl/a2a/20a181d4-c896-489f-9d16-20a3b7306b15"

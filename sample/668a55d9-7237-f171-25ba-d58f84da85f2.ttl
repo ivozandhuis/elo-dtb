@@ -1,0 +1,47 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:0a8cdbcd-99f4-40ba-1256-4cf84f30bcc0> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:668a55d9-7237-f171-25ba-d58f84da85f2> ;
+    picom:hasRole picot_roles:479 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Pals"@nl ;
+            pnv:givenName "NN"@nl ;
+            pnv:literalName "NN van der Pals"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:familyName "van der Pals"@nl ;
+    sdo:givenName "NN"@nl ;
+    sdo:name "NN van der Pals"@nl .
+
+<https://ex.org/Person:6010612b-204e-dfdf-e9e3-cae15f3d1061> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:668a55d9-7237-f171-25ba-d58f84da85f2> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Pals"@nl ;
+            pnv:givenName "Coenraad"@nl ;
+            pnv:literalName "Coenraad van der Pals"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:description "relatie: Zoon"@nl ;
+    sdo:familyName "van der Pals"@nl ;
+    sdo:givenName "Coenraad"@nl ;
+    sdo:name "Coenraad van der Pals"@nl .
+
+<https://ex.org/Source:668a55d9-7237-f171-25ba-d58f84da85f2> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/7ef2901e-3b57-4198-8c53-168edc574f71/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/668a55d9-7237-f171-25ba-d58f84da85f2"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/7ef2901e-3b57-4198-8c53-168edc574f71/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "13"@nl,
+        "1773-1795"@nl,
+        "Gaarder van Nieuwkoop en Noorden"@nl,
+        "Impost 3 gulden<br>Datum begraven: 04-08-1791<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/162.1.08/file/13\">Inventarisnummer 13 van archiefnummer 162.1.08 in Archieven</a>"@nl ;
+    sdo:locationCreated "Nieuwkoop"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Gaarder van Nieuwkoop en Noorden, Deel: 13, Periode: 1773-1795, (toegangsnr. 162.1.08), inv.nr. 13, 1773, 1775 - 1795., 6v, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/668a55d9-7237-f171-25ba-d58f84da85f2"^^xsd:anyURI .
+

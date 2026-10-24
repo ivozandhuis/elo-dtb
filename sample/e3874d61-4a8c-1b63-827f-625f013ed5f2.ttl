@@ -1,0 +1,51 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:121b4076-93f2-f3c1-52c7-ff4f8a6ce5a1> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:e3874d61-4a8c-1b63-827f-625f013ed5f2> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Tang"@nl ;
+            pnv:givenName "Teunis"@nl ;
+            pnv:literalName "Teunis van der Tang"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:description "Teunis van der Tang is schoonzoon van Johannis Langhout"@nl ;
+    sdo:familyName "van der Tang"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Teunis"@nl ;
+    sdo:name "Teunis van der Tang"@nl .
+
+<https://ex.org/Person:fcbb68d8-5216-b62f-1340-63193102eabe> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:e3874d61-4a8c-1b63-827f-625f013ed5f2> ;
+    picom:hasRole picot_roles:479 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Tang"@nl ;
+            pnv:givenName "Maartje"@nl ;
+            pnv:literalName "Maartje van der Tang"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:description "17980305"@nl ;
+    sdo:familyName "van der Tang"@nl ;
+    sdo:givenName "Maartje"@nl ;
+    sdo:name "Maartje van der Tang"@nl .
+
+<https://ex.org/Source:e3874d61-4a8c-1b63-827f-625f013ed5f2> a sdo:ArchiveComponent ;
+    sdo:additionalType "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/fa88e1e7-6a03-4575-be43-12e0d10c0f1a/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/e3874d61-4a8c-1b63-827f-625f013ed5f2"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/fa88e1e7-6a03-4575-be43-12e0d10c0f1a/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1793-1805"@nl,
+        "6"@nl,
+        """Begraafdatum is registratiedatum.
+Impost pro deo
+Aangegeven door Johannis Langhout<br>Datum begraven: 07-03-1798<br/><br/><a href="/collecties/archieven/archievenoverzicht/search/list/findingaid/151.1.13/file/6">Inventarisnummer 6 van archiefnummer 151.1.13 in Archieven</a>"""@nl,
+        "Gaarder van Ter Aar"@nl ;
+    sdo:locationCreated "Ter Aar"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Gaarder van Ter Aar, Deel: 6, Periode: 1793-1805, (toegangsnr. 151.1.13), inv.nr. 6, Register van ontvangst van de impost op het begraven Ter Aar, 1793 - 1805., 53, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/e3874d61-4a8c-1b63-827f-625f013ed5f2"^^xsd:anyURI .
+
