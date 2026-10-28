@@ -1,0 +1,80 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:2cad12d2-2452-9375-a0c7-1f1e943322d0_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1703-08-08"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:3a0ca2a7-f04c-6a25-1ac9-2a8f6780cfaf> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:2cad12d2-2452-9375-a0c7-1f1e943322d0> ;
+    sdo:children <https://ex.org/Person:f27d53e2-227a-2dea-9940-b3018efc5778> ;
+    sdo:familyName "Kerckhoff"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Margrijtje"@nl ;
+    sdo:knows <https://ex.org/Person:73d70d24-94a9-78a4-6f53-a1acc2f4ebf4>,
+        <https://ex.org/Person:cb052540-e4e0-90e2-8270-71b448c0c34b> ;
+    sdo:name "Margrijtje Kerckhoff"@nl ;
+    sdo:spouse <https://ex.org/Person:8ba8ec7a-7646-9fc4-dd19-3857fafdcea2> .
+
+<https://ex.org/Person:73d70d24-94a9-78a4-6f53-a1acc2f4ebf4> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:2cad12d2-2452-9375-a0c7-1f1e943322d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Kerckhoff"@nl ;
+    sdo:givenName "Roeleff"@nl ;
+    sdo:name "Roeleff Kerckhoff"@nl .
+
+<https://ex.org/Person:8ba8ec7a-7646-9fc4-dd19-3857fafdcea2> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:2cad12d2-2452-9375-a0c7-1f1e943322d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Jan"@nl ;
+            pnv:literalName "Jan Arens"@nl ;
+            pnv:patronym "Arens"@nl ] ;
+    sdo:children <https://ex.org/Person:f27d53e2-227a-2dea-9940-b3018efc5778> ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jan"@nl ;
+    sdo:knows <https://ex.org/Person:73d70d24-94a9-78a4-6f53-a1acc2f4ebf4>,
+        <https://ex.org/Person:cb052540-e4e0-90e2-8270-71b448c0c34b> ;
+    sdo:name "Jan Arens"@nl ;
+    sdo:spouse <https://ex.org/Person:3a0ca2a7-f04c-6a25-1ac9-2a8f6780cfaf> .
+
+<https://ex.org/Person:cb052540-e4e0-90e2-8270-71b448c0c34b> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:2cad12d2-2452-9375-a0c7-1f1e943322d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Heugens"@nl ;
+    sdo:givenName "Jannetje"@nl ;
+    sdo:name "Jannetje Heugens"@nl .
+
+<https://ex.org/Person:f27d53e2-227a-2dea-9940-b3018efc5778> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:2cad12d2-2452-9375-a0c7-1f1e943322d0> ;
+    picom:hasLifeEvent <https://ex.org/Source:2cad12d2-2452-9375-a0c7-1f1e943322d0_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 08-08-1703"@nl ;
+    sdo:givenName "Gerrit"@nl ;
+    sdo:name "Gerrit"@nl ;
+    sdo:parent <https://ex.org/Person:3a0ca2a7-f04c-6a25-1ac9-2a8f6780cfaf>,
+        <https://ex.org/Person:8ba8ec7a-7646-9fc4-dd19-3857fafdcea2> .
+
+<https://ex.org/Source:2cad12d2-2452-9375-a0c7-1f1e943322d0> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/1930a611-5a2d-406c-bf1e-6b4e2dcf0d7e/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/2cad12d2-2452-9375-a0c7-1f1e943322d0"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/1930a611-5a2d-406c-bf1e-6b4e2dcf0d7e/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1703-08-08"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1642-1729"@nl,
+        "49a"@nl,
+        "Doopdatum: 08-08-1703<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/0028/file/49a\">Inventarisnummer 49a van archiefnummer 0028 in Archieven</a>"@nl,
+        "Evangelisch-Lutherse gemeente, Leiden"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Evangelisch-Lutherse gemeente, Leiden, Deel: 49a, Periode: 1642-1729, (toegangsnr. 0028), inv.nr. 49a, 1642 - 1729., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/2cad12d2-2452-9375-a0c7-1f1e943322d0"^^xsd:anyURI .
+

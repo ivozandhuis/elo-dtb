@@ -4,13 +4,13 @@ from pathlib import Path
 from rdflib import Graph
 
 
-# set = "dtb_trouwen"
+set = "dtb_trouwen"
 # set = "dtb_dopen"
-set = "dtb_begraven"
+# set = "dtb_begraven"
 
 
-dopen_sample   = ["e/e/b", "1/a/9"]
-trouwen_sample = ["5/3/c"]
+dopen_sample   = ["e/e/b", "1/a/9", "0/d/2"]
+trouwen_sample = ["5/3/c", "6/0/6", "3/8/f" "5/2/0"]
 begraven_sample = ["2/f/5"]
 
 if set == "dtb_dopen": sample = dopen_sample

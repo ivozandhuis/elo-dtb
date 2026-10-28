@@ -1,0 +1,77 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:21dce6ba-910c-6cba-51ae-449bc35ca2d0_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1697-04-28"@nl ;
+    picom:eventPlace "Leimuiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:1cd63ccd-a06a-8f33-762c-bce07a227fed> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:21dce6ba-910c-6cba-51ae-449bc35ca2d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Ariaantje"@nl ;
+            pnv:literalName "Ariaantje Panckras"@nl ;
+            pnv:patronym "Panckras"@nl ] ;
+    sdo:givenName "Ariaantje"@nl ;
+    sdo:name "Ariaantje Panckras"@nl .
+
+<https://ex.org/Person:628bec03-2a67-34f9-c455-1638317f5a19> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:21dce6ba-910c-6cba-51ae-449bc35ca2d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Aert"@nl ;
+            pnv:literalName "Aert Panckrasz"@nl ;
+            pnv:patronym "Panckrasz"@nl ] ;
+    sdo:children <https://ex.org/Person:8a4becd7-bb07-be37-5dde-aa0849e5637c> ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Aert"@nl ;
+    sdo:knows <https://ex.org/Person:1cd63ccd-a06a-8f33-762c-bce07a227fed> ;
+    sdo:name "Aert Panckrasz"@nl ;
+    sdo:spouse <https://ex.org/Person:725ad0cd-2d0f-6193-e2db-3b940dd5b252> .
+
+<https://ex.org/Person:725ad0cd-2d0f-6193-e2db-3b940dd5b252> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:21dce6ba-910c-6cba-51ae-449bc35ca2d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Aeltje"@nl ;
+            pnv:literalName "Aeltje Gerrits"@nl ;
+            pnv:patronym "Gerrits"@nl ] ;
+    sdo:children <https://ex.org/Person:8a4becd7-bb07-be37-5dde-aa0849e5637c> ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Aeltje"@nl ;
+    sdo:knows <https://ex.org/Person:1cd63ccd-a06a-8f33-762c-bce07a227fed> ;
+    sdo:name "Aeltje Gerrits"@nl ;
+    sdo:spouse <https://ex.org/Person:628bec03-2a67-34f9-c455-1638317f5a19> .
+
+<https://ex.org/Person:8a4becd7-bb07-be37-5dde-aa0849e5637c> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:21dce6ba-910c-6cba-51ae-449bc35ca2d0> ;
+    picom:hasLifeEvent <https://ex.org/Source:21dce6ba-910c-6cba-51ae-449bc35ca2d0_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 28-04-1697"@nl ;
+    sdo:givenName "Jannitje"@nl ;
+    sdo:name "Jannitje"@nl ;
+    sdo:parent <https://ex.org/Person:628bec03-2a67-34f9-c455-1638317f5a19>,
+        <https://ex.org/Person:725ad0cd-2d0f-6193-e2db-3b940dd5b252> .
+
+<https://ex.org/Source:21dce6ba-910c-6cba-51ae-449bc35ca2d0> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/744ed42a-c3e5-4755-bcfa-301fbd181383/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/21dce6ba-910c-6cba-51ae-449bc35ca2d0"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/744ed42a-c3e5-4755-bcfa-301fbd181383/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1697-04-28"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1674-1719"@nl,
+        "2"@nl,
+        "Collectie doop-, trouw- en begraafregisters Leimuiden"@nl,
+        "Doopdatum: 28-04-1697<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/123.1.14/file/2\">Inventarisnummer 2 van archiefnummer 123.1.14 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leimuiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Collectie doop-, trouw- en begraafregisters Leimuiden, Deel: 2, Periode: 1674-1719, (toegangsnr. 123.1.14), inv.nr. 2, Doopboek (NH) van Leimuiden, 1674 - 7 april 1719;, 68, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/21dce6ba-910c-6cba-51ae-449bc35ca2d0"^^xsd:anyURI .
+

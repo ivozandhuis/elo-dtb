@@ -1,0 +1,106 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:44be4333-ea7a-bf38-1e90-25afaa6ab2d0_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1669-08-21"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:6d0b47f6-7c01-8dba-bb11-b9dfa041d8d7> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:44be4333-ea7a-bf38-1e90-25afaa6ab2d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Verstraten"@nl ;
+            pnv:givenName "Maertie"@nl ;
+            pnv:literalName "Maertie Jansdr Verstraten"@nl ;
+            pnv:patronym "Jansdr"@nl ] ;
+    sdo:familyName "Verstraten"@nl ;
+    sdo:givenName "Maertie"@nl ;
+    sdo:name "Maertie Jansdr Verstraten"@nl .
+
+<https://ex.org/Person:71a92f26-f8a0-62a3-1977-af5ebad21db8> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:44be4333-ea7a-bf38-1e90-25afaa6ab2d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Buijken"@nl ;
+            pnv:givenName "Marijtie"@nl ;
+            pnv:literalName "Marijtie Jansdr van der Buijken"@nl ;
+            pnv:patronym "Jansdr"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:familyName "van der Buijken"@nl ;
+    sdo:givenName "Marijtie"@nl ;
+    sdo:name "Marijtie Jansdr van der Buijken"@nl .
+
+<https://ex.org/Person:a416bf51-d690-1b7e-4081-b04707341b42> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:44be4333-ea7a-bf38-1e90-25afaa6ab2d0> ;
+    picom:hasLifeEvent <https://ex.org/Source:44be4333-ea7a-bf38-1e90-25afaa6ab2d0_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 21-08-1669"@nl ;
+    sdo:givenName "Isack"@nl ;
+    sdo:name "Isack"@nl ;
+    sdo:parent <https://ex.org/Person:bf159e6c-091f-94fa-9c91-fe44e728b8c2>,
+        <https://ex.org/Person:fd323f79-5c93-4b21-a3f2-2a76ca22cd89> .
+
+<https://ex.org/Person:bf159e6c-091f-94fa-9c91-fe44e728b8c2> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:44be4333-ea7a-bf38-1e90-25afaa6ab2d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Marijtie"@nl ;
+            pnv:literalName "Marijtie Klaesdr"@nl ;
+            pnv:patronym "Klaesdr"@nl ] ;
+    sdo:children <https://ex.org/Person:a416bf51-d690-1b7e-4081-b04707341b42> ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Marijtie"@nl ;
+    sdo:knows <https://ex.org/Person:6d0b47f6-7c01-8dba-bb11-b9dfa041d8d7>,
+        <https://ex.org/Person:71a92f26-f8a0-62a3-1977-af5ebad21db8>,
+        <https://ex.org/Person:d01600c6-e9b9-15bf-c189-4afaa29c303f> ;
+    sdo:name "Marijtie Klaesdr"@nl ;
+    sdo:spouse <https://ex.org/Person:fd323f79-5c93-4b21-a3f2-2a76ca22cd89> .
+
+<https://ex.org/Person:d01600c6-e9b9-15bf-c189-4afaa29c303f> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:44be4333-ea7a-bf38-1e90-25afaa6ab2d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Klaes"@nl ;
+            pnv:literalName "Klaes Gerritsz"@nl ;
+            pnv:patronym "Gerritsz"@nl ] ;
+    sdo:givenName "Klaes"@nl ;
+    sdo:name "Klaes Gerritsz"@nl .
+
+<https://ex.org/Person:fd323f79-5c93-4b21-a3f2-2a76ca22cd89> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:44be4333-ea7a-bf38-1e90-25afaa6ab2d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Willem"@nl ;
+            pnv:literalName "Willem Isacksz"@nl ;
+            pnv:patronym "Isacksz"@nl ] ;
+    sdo:children <https://ex.org/Person:a416bf51-d690-1b7e-4081-b04707341b42> ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Willem"@nl ;
+    sdo:knows <https://ex.org/Person:6d0b47f6-7c01-8dba-bb11-b9dfa041d8d7>,
+        <https://ex.org/Person:71a92f26-f8a0-62a3-1977-af5ebad21db8>,
+        <https://ex.org/Person:d01600c6-e9b9-15bf-c189-4afaa29c303f> ;
+    sdo:name "Willem Isacksz"@nl ;
+    sdo:spouse <https://ex.org/Person:bf159e6c-091f-94fa-9c91-fe44e728b8c2> .
+
+<https://ex.org/Source:44be4333-ea7a-bf38-1e90-25afaa6ab2d0> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/6f59f1d9-256f-4702-89c9-66c6bb32e248/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/44be4333-ea7a-bf38-1e90-25afaa6ab2d0"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/6f59f1d9-256f-4702-89c9-66c6bb32e248/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1669-08-21"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1667-1674"@nl,
+        "238"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 21-08-1669<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/238\">Inventarisnummer 238 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 238, Periode: 1..., (toegangsnr. 1004), inv.nr. 238, Doopboek van de Hooglandse Kerk (NH) te Leiden, 1667 - 29 maart 1674., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/44be4333-ea7a-bf38-1e90-25afaa6ab2d0"^^xsd:anyURI .
+

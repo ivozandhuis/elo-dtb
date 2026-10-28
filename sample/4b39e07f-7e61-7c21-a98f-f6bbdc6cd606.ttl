@@ -1,0 +1,61 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:9a5d70c3-3a8b-5735-eabc-d183ce4c6f68> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:4b39e07f-7e61-7c21-a98f-f6bbdc6cd606> ;
+    picom:hasLifeEvent <https://ex.org/Source:4b39e07f-7e61-7c21-a98f-f6bbdc6cd606_huwelijk_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:address "Noortwijk"@nl ;
+    sdo:description "Burgerlijke staat voor het huwelijk: j.d."@nl ;
+    sdo:familyName "Oostenrijk"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Hendrickje"@nl ;
+    sdo:name "Hendrickje Oostenrijk"@nl ;
+    sdo:spouse <https://ex.org/Person:b8dea7a0-d7b6-38ae-970d-c6a6ce0dcd17> .
+
+<https://ex.org/Person:b8dea7a0-d7b6-38ae-970d-c6a6ce0dcd17> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:4b39e07f-7e61-7c21-a98f-f6bbdc6cd606> ;
+    picom:hasLifeEvent <https://ex.org/Source:4b39e07f-7e61-7c21-a98f-f6bbdc6cd606_huwelijk_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Maarl"@nl ;
+            pnv:givenName "Jan"@nl ;
+            pnv:literalName "Jan van der Maarl"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:address "Hillegom"@nl ;
+    sdo:birthPlace "Noortwijk"@nl ;
+    sdo:description "Burgerlijke staat voor het huwelijk: j.m."@nl ;
+    sdo:familyName "van der Maarl"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jan"@nl ;
+    sdo:name "Jan van der Maarl"@nl ;
+    sdo:spouse <https://ex.org/Person:9a5d70c3-3a8b-5735-eabc-d183ce4c6f68> .
+
+<https://ex.org/Source:4b39e07f-7e61-7c21-a98f-f6bbdc6cd606> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/ec3d6c9d-a99d-444a-869b-91874f5b7502/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/4b39e07f-7e61-7c21-a98f-f6bbdc6cd606"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/ec3d6c9d-a99d-444a-869b-91874f5b7502/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1730-09-24"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1692-1749"@nl,
+        "3"@nl,
+        "Datum trouwen: 24-09-1730<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/0837/file/3\">Inventarisnummer 3 van archiefnummer 0837 in Archieven</a>"@nl,
+        "Doop-, Trouw- en Begraafregisters Hillegom"@nl ;
+    sdo:locationCreated "Hillegom"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, Trouw- en Begraafregisters Hillegom, Deel: 3, Periode: 1692-1749, (toegangsnr. 0837), inv.nr. 3, Doopboek en trouwboek (NH) van Hillegom, 1692 - 1749, 26v, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/4b39e07f-7e61-7c21-a98f-f6bbdc6cd606"^^xsd:anyURI .
+
+<https://ex.org/Source:4b39e07f-7e61-7c21-a98f-f6bbdc6cd606_huwelijk_event> a picom:LifeEvent ;
+    picom:eventDate "1730-09-24"@nl ;
+    picom:eventPlace "Hillegom"@nl ;
+    picom:eventType picot_eventtypes:83 .
+

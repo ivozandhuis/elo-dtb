@@ -1,0 +1,80 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:2b9f87c6-09ca-9a6d-e519-35ddc2f0f2d0_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1807-08-02"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:25149805-8790-a5bc-463f-ce9e08fe07b8> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:2b9f87c6-09ca-9a6d-e519-35ddc2f0f2d0> ;
+    sdo:children <https://ex.org/Person:4092245b-561a-e90b-df6c-71a03d490d6c> ;
+    sdo:familyName "Bankeman"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Elizabeth"@nl ;
+    sdo:knows <https://ex.org/Person:3a991b3d-ce4a-54c9-839f-4733e63cb5e0> ;
+    sdo:name "Elizabeth Bankeman"@nl ;
+    sdo:spouse <https://ex.org/Person:9b52c364-0b9b-c6d1-9eba-313dd7effd8e> .
+
+<https://ex.org/Person:3a991b3d-ce4a-54c9-839f-4733e63cb5e0> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:2b9f87c6-09ca-9a6d-e519-35ddc2f0f2d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Felling"@nl ;
+    sdo:givenName "Maria"@nl ;
+    sdo:name "Maria Felling"@nl .
+
+<https://ex.org/Person:4092245b-561a-e90b-df6c-71a03d490d6c> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:2b9f87c6-09ca-9a6d-e519-35ddc2f0f2d0> ;
+    picom:hasLifeEvent <https://ex.org/Source:2b9f87c6-09ca-9a6d-e519-35ddc2f0f2d0_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Zeeuw"@nl ;
+            pnv:givenName "Pieter"@nl ;
+            pnv:literalName "Pieter van der Zeeuw"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:birthDate "1807-07-26"^^xsd:date ;
+    sdo:description "Doopdatum: 02-08-1807"@nl ;
+    sdo:familyName "van der Zeeuw"@nl ;
+    sdo:givenName "Pieter"@nl ;
+    sdo:name "Pieter van der Zeeuw"@nl ;
+    sdo:parent <https://ex.org/Person:25149805-8790-a5bc-463f-ce9e08fe07b8>,
+        <https://ex.org/Person:9b52c364-0b9b-c6d1-9eba-313dd7effd8e> .
+
+<https://ex.org/Person:9b52c364-0b9b-c6d1-9eba-313dd7effd8e> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:2b9f87c6-09ca-9a6d-e519-35ddc2f0f2d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Zeeuw"@nl ;
+            pnv:givenName "Arie"@nl ;
+            pnv:literalName "Arie van der Zeeuw"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:children <https://ex.org/Person:4092245b-561a-e90b-df6c-71a03d490d6c> ;
+    sdo:familyName "van der Zeeuw"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Arie"@nl ;
+    sdo:knows <https://ex.org/Person:3a991b3d-ce4a-54c9-839f-4733e63cb5e0> ;
+    sdo:name "Arie van der Zeeuw"@nl ;
+    sdo:spouse <https://ex.org/Person:25149805-8790-a5bc-463f-ce9e08fe07b8> .
+
+<https://ex.org/Source:2b9f87c6-09ca-9a6d-e519-35ddc2f0f2d0> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/e7a70c01-91c4-4df1-8cd2-cd84028023df/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/2b9f87c6-09ca-9a6d-e519-35ddc2f0f2d0"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/e7a70c01-91c4-4df1-8cd2-cd84028023df/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1807-08-02"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1796-1811"@nl,
+        "231"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 02-08-1807<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/231\">Inventarisnummer 231 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 231, Periode: 1..., (toegangsnr. 1004), inv.nr. 231, Doopboek van de Pieterskerk (NH) te Leiden, 1796 - 1811., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/2b9f87c6-09ca-9a6d-e519-35ddc2f0f2d0"^^xsd:anyURI .
+

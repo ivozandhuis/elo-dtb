@@ -1,0 +1,70 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:889cd95a-bf29-2c71-d492-1b39b664bb06> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:69e99ba2-9c62-1345-50b1-ce48ca814606> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Lambert"@nl ;
+            pnv:literalName "Lambert Pietersz"@nl ;
+            pnv:patronym "Pietersz"@nl ] ;
+    sdo:givenName "Lambert"@nl ;
+    sdo:name "Lambert Pietersz"@nl .
+
+<https://ex.org/Person:a4a9a284-7784-9897-baaa-5555e646d895> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:69e99ba2-9c62-1345-50b1-ce48ca814606> ;
+    picom:hasLifeEvent <https://ex.org/Source:69e99ba2-9c62-1345-50b1-ce48ca814606_huwelijk_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Ariaentje"@nl ;
+            pnv:literalName "Ariaentje Cornelis"@nl ;
+            pnv:patronym "Cornelis"@nl ] ;
+    sdo:birthPlace "Nieuwveen"@nl ;
+    sdo:description "Burgerlijke staat voor het huwelijk: wed."@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Ariaentje"@nl ;
+    sdo:name "Ariaentje Cornelis"@nl ;
+    sdo:spouse <https://ex.org/Person:dcacda9f-b9fa-0b2c-d85b-3f4b94703cd3> .
+
+<https://ex.org/Person:dcacda9f-b9fa-0b2c-d85b-3f4b94703cd3> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:69e99ba2-9c62-1345-50b1-ce48ca814606> ;
+    picom:hasLifeEvent <https://ex.org/Source:69e99ba2-9c62-1345-50b1-ce48ca814606_huwelijk_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Gerrit"@nl ;
+            pnv:literalName "Gerrit Leendertsz"@nl ;
+            pnv:patronym "Leendertsz"@nl ] ;
+    sdo:birthPlace "Noorden"@nl ;
+    sdo:description "Burgerlijke staat voor het huwelijk: j.m."@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Gerrit"@nl ;
+    sdo:name "Gerrit Leendertsz"@nl ;
+    sdo:spouse <https://ex.org/Person:a4a9a284-7784-9897-baaa-5555e646d895> .
+
+<https://ex.org/Source:69e99ba2-9c62-1345-50b1-ce48ca814606_huwelijk_event> a picom:LifeEvent ;
+    picom:eventDate "1638-07-11"@nl ;
+    picom:eventPlace "Nieuwkoop"@nl ;
+    picom:eventType picot_eventtypes:83 .
+
+<https://ex.org/Source:69e99ba2-9c62-1345-50b1-ce48ca814606> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/806ba591-8074-455b-ac2e-e9cefc4de497/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/69e99ba2-9c62-1345-50b1-ce48ca814606"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/806ba591-8074-455b-ac2e-e9cefc4de497/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1638-07-11"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1620-1650"@nl,
+        "23"@nl,
+        "Datum trouwen: 11-07-1638<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/162.1.07/file/23\">Inventarisnummer 23 van archiefnummer 162.1.07 in Archieven</a>"@nl,
+        "Doop-, trouw- en begraafregisters Nieuwkoop"@nl ;
+    sdo:locationCreated "Nieuwkoop"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw- en begraafregisters Nieuwkoop, Deel: 23, Periode: 1620-1650, (toegangsnr. 162.1.07), inv.nr. 23, Doopinschrijvingen (doopboek) (NH) van Noorden, 23 februari 1620 - 18 december 1650 en trouwinschrijving (trouwboek)en, 15 februari 1620 - 11 december 1650., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/69e99ba2-9c62-1345-50b1-ce48ca814606"^^xsd:anyURI .
+

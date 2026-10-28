@@ -1,0 +1,89 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:f6daa5e2-db59-8ea7-a113-ebe09830e2d0_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1631-02-09"@nl ;
+    picom:eventPlace "Noordwijk"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:3f9551b9-5824-2839-3afb-8ff1ee10aa12> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:f6daa5e2-db59-8ea7-a113-ebe09830e2d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Claes"@nl ;
+            pnv:literalName "Claes Theunisz"@nl ;
+            pnv:patronym "Theunisz"@nl ] ;
+    sdo:givenName "Claes"@nl ;
+    sdo:name "Claes Theunisz"@nl .
+
+<https://ex.org/Person:4de0d1b4-1c3e-55a1-50ef-9a0f4ffef863> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:f6daa5e2-db59-8ea7-a113-ebe09830e2d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Maertje"@nl ;
+            pnv:literalName "Maertje Theunis"@nl ;
+            pnv:patronym "Theunis"@nl ] ;
+    sdo:children <https://ex.org/Person:d95117fc-b88f-efd4-c15a-58033c0cad48> ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Maertje"@nl ;
+    sdo:knows <https://ex.org/Person:3f9551b9-5824-2839-3afb-8ff1ee10aa12>,
+        <https://ex.org/Person:73d3018a-f976-c023-9f61-aeb34239eea4> ;
+    sdo:name "Maertje Theunis"@nl ;
+    sdo:spouse <https://ex.org/Person:a2b3a87b-0bed-a637-1ef8-b4b6b6e12cac> .
+
+<https://ex.org/Person:73d3018a-f976-c023-9f61-aeb34239eea4> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:f6daa5e2-db59-8ea7-a113-ebe09830e2d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Lijsbeth"@nl ;
+            pnv:literalName "Lijsbeth Pieters"@nl ;
+            pnv:patronym "Pieters"@nl ] ;
+    sdo:givenName "Lijsbeth"@nl ;
+    sdo:name "Lijsbeth Pieters"@nl .
+
+<https://ex.org/Person:a2b3a87b-0bed-a637-1ef8-b4b6b6e12cac> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:f6daa5e2-db59-8ea7-a113-ebe09830e2d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Dirc"@nl ;
+            pnv:literalName "Dirc Jorisz"@nl ;
+            pnv:patronym "Jorisz"@nl ] ;
+    sdo:children <https://ex.org/Person:d95117fc-b88f-efd4-c15a-58033c0cad48> ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Dirc"@nl ;
+    sdo:knows <https://ex.org/Person:3f9551b9-5824-2839-3afb-8ff1ee10aa12>,
+        <https://ex.org/Person:73d3018a-f976-c023-9f61-aeb34239eea4> ;
+    sdo:name "Dirc Jorisz"@nl ;
+    sdo:spouse <https://ex.org/Person:4de0d1b4-1c3e-55a1-50ef-9a0f4ffef863> .
+
+<https://ex.org/Person:d95117fc-b88f-efd4-c15a-58033c0cad48> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:f6daa5e2-db59-8ea7-a113-ebe09830e2d0> ;
+    picom:hasLifeEvent <https://ex.org/Source:f6daa5e2-db59-8ea7-a113-ebe09830e2d0_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 09-02-1631"@nl ;
+    sdo:givenName "Grietge"@nl ;
+    sdo:name "Grietge"@nl ;
+    sdo:parent <https://ex.org/Person:4de0d1b4-1c3e-55a1-50ef-9a0f4ffef863>,
+        <https://ex.org/Person:a2b3a87b-0bed-a637-1ef8-b4b6b6e12cac> .
+
+<https://ex.org/Source:f6daa5e2-db59-8ea7-a113-ebe09830e2d0> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/b24a8c99-8ce7-4164-bec8-ed4e3a0d57c5/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/f6daa5e2-db59-8ea7-a113-ebe09830e2d0"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/b24a8c99-8ce7-4164-bec8-ed4e3a0d57c5/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1631-02-09"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1"@nl,
+        "1621-1811"@nl,
+        "Doop-, Trouw- en Begraafregisters (retroacta B.S.) Noordwijk"@nl,
+        "Doopdatum: 09-02-1631<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/0910/file/1\">Inventarisnummer 1 van archiefnummer 0910 in Archieven</a>"@nl ;
+    sdo:locationCreated "Noordwijk"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, Trouw- en Begraafregisters (retroacta B.S.) Noordwijk, Deel: 1, Periode: 1621..., (toegangsnr. 0910), inv.nr. 1, Doopboek (NH) van Noordwijk-Binnen, 1621 maart 14 - 1807 oktober 10 en vervolgens een ingehecht katern met doopinschrijvingen, 1807 oktober 27 - 1811., 15vs, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/f6daa5e2-db59-8ea7-a113-ebe09830e2d0"^^xsd:anyURI .
+

@@ -1,0 +1,67 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:a811cf1d-be39-3d71-5c83-aa0dd459d258> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:f86cb3d9-b1df-518d-467e-e85dd40f6606> ;
+    picom:hasLifeEvent <https://ex.org/Source:f86cb3d9-b1df-518d-467e-e85dd40f6606_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Jagt"@nl ;
+            pnv:givenName "Klaas"@nl ;
+            pnv:literalName "Klaas Janze van der Jagt"@nl ;
+            pnv:patronym "Janze"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:address "Woubrugge"@nl ;
+    sdo:description "Burgerlijke staat voor het huwelijk: j.m."@nl ;
+    sdo:familyName "van der Jagt"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Klaas"@nl ;
+    sdo:name "Klaas Janze van der Jagt"@nl ;
+    sdo:spouse <https://ex.org/Person:edaea2c4-a24d-ad0c-84c7-9239fca6db7b> .
+
+<https://ex.org/Person:edaea2c4-a24d-ad0c-84c7-9239fca6db7b> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:f86cb3d9-b1df-518d-467e-e85dd40f6606> ;
+    picom:hasLifeEvent <https://ex.org/Source:f86cb3d9-b1df-518d-467e-e85dd40f6606_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Egmond"@nl ;
+            pnv:givenName "Antje"@nl ;
+            pnv:literalName "Antje Gerrits van Egmond"@nl ;
+            pnv:patronym "Gerrits"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:address "Woubrugge"@nl ;
+    sdo:description "Burgerlijke staat voor het huwelijk: j.d."@nl ;
+    sdo:familyName "van Egmond"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Antje"@nl ;
+    sdo:name "Antje Gerrits van Egmond"@nl ;
+    sdo:spouse <https://ex.org/Person:a811cf1d-be39-3d71-5c83-aa0dd459d258> .
+
+<https://ex.org/Source:f86cb3d9-b1df-518d-467e-e85dd40f6606> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/b4818c54-284b-4ccb-8578-762f89e3346c/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/f86cb3d9-b1df-518d-467e-e85dd40f6606"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/b4818c54-284b-4ccb-8578-762f89e3346c/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1754-04-26"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1744-1758"@nl,
+        "2"@nl,
+        "Gaarder van Woubrugge"@nl,
+        "aangegeven onder de classis van drie gulden<br>Datum ondertrouw: 26-04-1754<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/125.1.19/file/2\">Inventarisnummer 2 van archiefnummer 125.1.19 in Archieven</a>"@nl ;
+    sdo:locationCreated "Woubrugge"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Gaarder van Woubrugge, Deel: 2, Periode: 1744-1758, (toegangsnr. 125.1.19), inv.nr. 2, Register van ontvangst van de impost op het trouwen en begraven van Woubrugge, 1744 - 1758;, 25, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/f86cb3d9-b1df-518d-467e-e85dd40f6606"^^xsd:anyURI .
+
+<https://ex.org/Source:f86cb3d9-b1df-518d-467e-e85dd40f6606_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1754-04-26"@nl ;
+    picom:eventPlace "Woubrugge"@nl ;
+    picom:eventType picot_eventtypes:99 .
+

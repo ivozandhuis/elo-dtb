@@ -1,0 +1,93 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:7ca73116-1909-4955-cd46-e6e76fd632d0_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1692-09-28"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:08638c22-ff6c-d523-9c4a-763622033566> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:7ca73116-1909-4955-cd46-e6e76fd632d0> ;
+    sdo:children <https://ex.org/Person:23fb8f37-6f6b-9033-3ea2-ee9c553fb468> ;
+    sdo:familyName "Ceuller"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Roeland"@nl ;
+    sdo:knows <https://ex.org/Person:11d5d7ad-1a31-03c5-b9f5-4cbe9a936433>,
+        <https://ex.org/Person:5751394c-1e20-abec-2692-e3ba237c075b>,
+        <https://ex.org/Person:a7d09c2d-6ed4-1c7a-7213-1ab937ff3a86> ;
+    sdo:name "Roeland Ceuller"@nl ;
+    sdo:spouse <https://ex.org/Person:5866273e-46e2-685f-8424-da43420638f5> .
+
+<https://ex.org/Person:11d5d7ad-1a31-03c5-b9f5-4cbe9a936433> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:7ca73116-1909-4955-cd46-e6e76fd632d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Ceuller"@nl ;
+    sdo:givenName "Roeland"@nl ;
+    sdo:name "Roeland Ceuller"@nl .
+
+<https://ex.org/Person:23fb8f37-6f6b-9033-3ea2-ee9c553fb468> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:7ca73116-1909-4955-cd46-e6e76fd632d0> ;
+    picom:hasLifeEvent <https://ex.org/Source:7ca73116-1909-4955-cd46-e6e76fd632d0_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 28-09-1692"@nl ;
+    sdo:familyName "Ceuller"@nl ;
+    sdo:givenName "Johannes"@nl ;
+    sdo:name "Johannes Ceuller"@nl ;
+    sdo:parent <https://ex.org/Person:08638c22-ff6c-d523-9c4a-763622033566>,
+        <https://ex.org/Person:5866273e-46e2-685f-8424-da43420638f5> .
+
+<https://ex.org/Person:5751394c-1e20-abec-2692-e3ba237c075b> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:7ca73116-1909-4955-cd46-e6e76fd632d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Serret"@nl ;
+    sdo:givenName "Catharina"@nl ;
+    sdo:name "Catharina Serret"@nl .
+
+<https://ex.org/Person:5866273e-46e2-685f-8424-da43420638f5> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:7ca73116-1909-4955-cd46-e6e76fd632d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Maria"@nl ;
+            pnv:literalName "Maria Claasd"@nl ;
+            pnv:patronym "Claasd"@nl ] ;
+    sdo:children <https://ex.org/Person:23fb8f37-6f6b-9033-3ea2-ee9c553fb468> ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Maria"@nl ;
+    sdo:knows <https://ex.org/Person:11d5d7ad-1a31-03c5-b9f5-4cbe9a936433>,
+        <https://ex.org/Person:5751394c-1e20-abec-2692-e3ba237c075b>,
+        <https://ex.org/Person:a7d09c2d-6ed4-1c7a-7213-1ab937ff3a86> ;
+    sdo:name "Maria Claasd"@nl ;
+    sdo:spouse <https://ex.org/Person:08638c22-ff6c-d523-9c4a-763622033566> .
+
+<https://ex.org/Person:a7d09c2d-6ed4-1c7a-7213-1ab937ff3a86> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:7ca73116-1909-4955-cd46-e6e76fd632d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Anna"@nl ;
+            pnv:literalName "Anna Claasd"@nl ;
+            pnv:patronym "Claasd"@nl ] ;
+    sdo:givenName "Anna"@nl ;
+    sdo:name "Anna Claasd"@nl .
+
+<https://ex.org/Source:7ca73116-1909-4955-cd46-e6e76fd632d0> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/b8dfb128-656a-42b0-b18d-bf7370a089b8/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/7ca73116-1909-4955-cd46-e6e76fd632d0"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/b8dfb128-656a-42b0-b18d-bf7370a089b8/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1692-09-28"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1684-1700"@nl,
+        "260"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Toevoeging onderzoeker over achternaam vader : R. Keuckelaer, zie kerk. ondertr. reg. 2A fol. 55<br>Doopdatum: 28-09-1692<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/260\">Inventarisnummer 260 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 260, Periode: 1..., (toegangsnr. 1004), inv.nr. 260, Doopboek van de Nieuwe- of Marekerk (NH) te Leiden, 3 december 1684 - 1700., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/7ca73116-1909-4955-cd46-e6e76fd632d0"^^xsd:anyURI .
+

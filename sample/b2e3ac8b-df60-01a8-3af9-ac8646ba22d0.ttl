@@ -1,0 +1,93 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:b2e3ac8b-df60-01a8-3af9-ac8646ba22d0_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1722-12-30"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:1283d628-9053-0215-a3f0-23eca3faaa83> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b2e3ac8b-df60-01a8-3af9-ac8646ba22d0> ;
+    picom:hasLifeEvent <https://ex.org/Source:b2e3ac8b-df60-01a8-3af9-ac8646ba22d0_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Bruin"@nl ;
+            pnv:givenName "Jacobus"@nl ;
+            pnv:literalName "Jacobus de Bruin"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:description "Doopdatum: 30-12-1722"@nl ;
+    sdo:familyName "de Bruin"@nl ;
+    sdo:givenName "Jacobus"@nl ;
+    sdo:name "Jacobus de Bruin"@nl ;
+    sdo:parent <https://ex.org/Person:2ab17ddc-b382-79f7-aca1-5e6349596f5f>,
+        <https://ex.org/Person:822bf7e5-877d-3add-4821-135952275181> .
+
+<https://ex.org/Person:2ab17ddc-b382-79f7-aca1-5e6349596f5f> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b2e3ac8b-df60-01a8-3af9-ac8646ba22d0> ;
+    sdo:children <https://ex.org/Person:1283d628-9053-0215-a3f0-23eca3faaa83> ;
+    sdo:familyName "Masse"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Jannetie"@nl ;
+    sdo:knows <https://ex.org/Person:5279c0e4-1c7f-b5ab-2dc6-d7014ef0c81e>,
+        <https://ex.org/Person:ef2eb909-7a5f-0bb9-3e0b-0c51ef6af1dd> ;
+    sdo:name "Jannetie Masse"@nl ;
+    sdo:spouse <https://ex.org/Person:822bf7e5-877d-3add-4821-135952275181> .
+
+<https://ex.org/Person:5279c0e4-1c7f-b5ab-2dc6-d7014ef0c81e> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b2e3ac8b-df60-01a8-3af9-ac8646ba22d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Groot"@nl ;
+            pnv:givenName "Jacobus"@nl ;
+            pnv:literalName "Jacobus de Groot"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:familyName "de Groot"@nl ;
+    sdo:givenName "Jacobus"@nl ;
+    sdo:name "Jacobus de Groot"@nl .
+
+<https://ex.org/Person:822bf7e5-877d-3add-4821-135952275181> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b2e3ac8b-df60-01a8-3af9-ac8646ba22d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Bruin"@nl ;
+            pnv:givenName "Willem"@nl ;
+            pnv:literalName "Willem de Bruin"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:children <https://ex.org/Person:1283d628-9053-0215-a3f0-23eca3faaa83> ;
+    sdo:familyName "de Bruin"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Willem"@nl ;
+    sdo:knows <https://ex.org/Person:5279c0e4-1c7f-b5ab-2dc6-d7014ef0c81e>,
+        <https://ex.org/Person:ef2eb909-7a5f-0bb9-3e0b-0c51ef6af1dd> ;
+    sdo:name "Willem de Bruin"@nl ;
+    sdo:spouse <https://ex.org/Person:2ab17ddc-b382-79f7-aca1-5e6349596f5f> .
+
+<https://ex.org/Person:ef2eb909-7a5f-0bb9-3e0b-0c51ef6af1dd> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b2e3ac8b-df60-01a8-3af9-ac8646ba22d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Grason"@nl ;
+    sdo:givenName "Marijtie"@nl ;
+    sdo:name "Marijtie Grason"@nl .
+
+<https://ex.org/Source:b2e3ac8b-df60-01a8-3af9-ac8646ba22d0> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/5f25b9c4-e033-4051-b686-b90009452927/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/b2e3ac8b-df60-01a8-3af9-ac8646ba22d0"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/5f25b9c4-e033-4051-b686-b90009452927/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1722-12-30"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1710-1724"@nl,
+        "227"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 30-12-1722<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/227\">Inventarisnummer 227 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 227, Periode: 1..., (toegangsnr. 1004), inv.nr. 227, Doopboek van de Pieterskerk (NH) te Leiden, 2 mei 1710 - 1724., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/b2e3ac8b-df60-01a8-3af9-ac8646ba22d0"^^xsd:anyURI .
+

@@ -1,0 +1,88 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:9d0db054-4c32-1989-511c-baf87fe1f2d0_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1759-07-29"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:391d6bce-4572-a0bd-416d-783d912a5e25> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:9d0db054-4c32-1989-511c-baf87fe1f2d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Krop"@nl ;
+    sdo:givenName "Rosetta"@nl ;
+    sdo:name "Rosetta Krop"@nl .
+
+<https://ex.org/Person:6590c2b5-e384-e0e7-357d-13598dc3e5ae> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:9d0db054-4c32-1989-511c-baf87fe1f2d0> ;
+    picom:hasLifeEvent <https://ex.org/Source:9d0db054-4c32-1989-511c-baf87fe1f2d0_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Weeren"@nl ;
+            pnv:givenName "Anna"@nl ;
+            pnv:literalName "Anna van Weeren"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:description "Doopdatum: 29-07-1759"@nl ;
+    sdo:familyName "van Weeren"@nl ;
+    sdo:givenName "Anna"@nl ;
+    sdo:name "Anna van Weeren"@nl ;
+    sdo:parent <https://ex.org/Person:c8c03e37-2f87-44cd-0813-e8b30df46300>,
+        <https://ex.org/Person:f283ae0a-47c2-6c4a-9366-708abc867894> .
+
+<https://ex.org/Person:9d6f938d-6ab2-ca7e-e235-1ebb462c864b> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:9d0db054-4c32-1989-511c-baf87fe1f2d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Isebout"@nl ;
+    sdo:givenName "Cornelis"@nl ;
+    sdo:name "Cornelis Isebout"@nl .
+
+<https://ex.org/Person:c8c03e37-2f87-44cd-0813-e8b30df46300> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:9d0db054-4c32-1989-511c-baf87fe1f2d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Weeren"@nl ;
+            pnv:givenName "Willem"@nl ;
+            pnv:literalName "Willem van Weeren"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:children <https://ex.org/Person:6590c2b5-e384-e0e7-357d-13598dc3e5ae> ;
+    sdo:familyName "van Weeren"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Willem"@nl ;
+    sdo:knows <https://ex.org/Person:391d6bce-4572-a0bd-416d-783d912a5e25>,
+        <https://ex.org/Person:9d6f938d-6ab2-ca7e-e235-1ebb462c864b> ;
+    sdo:name "Willem van Weeren"@nl ;
+    sdo:spouse <https://ex.org/Person:f283ae0a-47c2-6c4a-9366-708abc867894> .
+
+<https://ex.org/Person:f283ae0a-47c2-6c4a-9366-708abc867894> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:9d0db054-4c32-1989-511c-baf87fe1f2d0> ;
+    sdo:children <https://ex.org/Person:6590c2b5-e384-e0e7-357d-13598dc3e5ae> ;
+    sdo:familyName "Isebout"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Rachel"@nl ;
+    sdo:knows <https://ex.org/Person:391d6bce-4572-a0bd-416d-783d912a5e25>,
+        <https://ex.org/Person:9d6f938d-6ab2-ca7e-e235-1ebb462c864b> ;
+    sdo:name "Rachel Isebout"@nl ;
+    sdo:spouse <https://ex.org/Person:c8c03e37-2f87-44cd-0813-e8b30df46300> .
+
+<https://ex.org/Source:9d0db054-4c32-1989-511c-baf87fe1f2d0> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/915bf0bc-a549-4491-a75f-8bb0e8cec5df/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/9d0db054-4c32-1989-511c-baf87fe1f2d0"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/915bf0bc-a549-4491-a75f-8bb0e8cec5df/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1759-07-29"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1755-1767"@nl,
+        "252"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 29-07-1759<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/252\">Inventarisnummer 252 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 252, Periode: 1..., (toegangsnr. 1004), inv.nr. 252, Doopboek van de Hooglandse Kerk (NH) te Leiden, 1755 - 28 juni 1767., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/9d0db054-4c32-1989-511c-baf87fe1f2d0"^^xsd:anyURI .
+

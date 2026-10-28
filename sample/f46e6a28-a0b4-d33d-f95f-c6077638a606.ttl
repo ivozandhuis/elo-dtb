@@ -1,0 +1,112 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:428c1228-4dfc-6a96-66e1-661cfc41c609> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:f46e6a28-a0b4-d33d-f95f-c6077638a606> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Jheronimus"@nl ;
+            pnv:literalName "Jheronimus Jansz"@nl ;
+            pnv:patronym "Jansz"@nl ] ;
+    sdo:description "getuige van de bruidegom, relatie tot de bruidegom: bekende"@nl ;
+    sdo:givenName "Jheronimus"@nl ;
+    sdo:name "Jheronimus Jansz"@nl .
+
+<https://ex.org/Person:6392690b-8fec-654c-d4b0-355346acc9f3> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:f46e6a28-a0b4-d33d-f95f-c6077638a606> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Joryntge"@nl ;
+            pnv:literalName "Joryntge Zegers"@nl ;
+            pnv:patronym "Zegers"@nl ] ;
+    sdo:description "getuige van de bruid, relatie tot de bruid: bekende"@nl ;
+    sdo:givenName "Joryntge"@nl ;
+    sdo:name "Joryntge Zegers"@nl .
+
+<https://ex.org/Person:cc4c3e80-7aae-0edf-b109-e91715d85ba8> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:f46e6a28-a0b4-d33d-f95f-c6077638a606> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Gheus"@nl ;
+            pnv:givenName "Sara"@nl ;
+            pnv:literalName "Sara van Gheus"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:description "getuige van de bruid, relatie tot de bruid: bekende"@nl ;
+    sdo:familyName "van Gheus"@nl ;
+    sdo:givenName "Sara"@nl ;
+    sdo:name "Sara van Gheus"@nl .
+
+<https://ex.org/Person:d098b8c6-b923-3d03-bf08-4456ac7e3915> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:f46e6a28-a0b4-d33d-f95f-c6077638a606> ;
+    picom:hasLifeEvent <https://ex.org/Source:f46e6a28-a0b4-d33d-f95f-c6077638a606_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Jan"@nl ;
+            pnv:literalName "Jan Andriesz"@nl ;
+            pnv:patronym "Andriesz"@nl ] ;
+    sdo:birthPlace "Rommerssom (Duitsl.)"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jan"@nl ;
+    sdo:hasOccupation "schoenmaker"@nl ;
+    sdo:knows <https://ex.org/Person:428c1228-4dfc-6a96-66e1-661cfc41c609>,
+        <https://ex.org/Person:d787adf1-c623-521d-3d42-41745f5fa653> ;
+    sdo:name "Jan Andriesz"@nl ;
+    sdo:spouse <https://ex.org/Person:de33b56d-9ff8-63f3-f5de-b40e1690f951> .
+
+<https://ex.org/Person:d787adf1-c623-521d-3d42-41745f5fa653> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:f46e6a28-a0b4-d33d-f95f-c6077638a606> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Raet"@nl ;
+            pnv:givenName "Claes"@nl ;
+            pnv:literalName "Claes de Raet"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:description "getuige van de bruidegom, relatie tot de bruidegom: bekende"@nl ;
+    sdo:familyName "de Raet"@nl ;
+    sdo:givenName "Claes"@nl ;
+    sdo:name "Claes de Raet"@nl .
+
+<https://ex.org/Person:de33b56d-9ff8-63f3-f5de-b40e1690f951> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:f46e6a28-a0b4-d33d-f95f-c6077638a606> ;
+    picom:hasLifeEvent <https://ex.org/Source:f46e6a28-a0b4-d33d-f95f-c6077638a606_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Marytgen"@nl ;
+            pnv:literalName "Marytgen Lenaerts"@nl ;
+            pnv:patronym "Lenaerts"@nl ] ;
+    sdo:birthPlace "Luyck"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Marytgen"@nl ;
+    sdo:knows <https://ex.org/Person:6392690b-8fec-654c-d4b0-355346acc9f3>,
+        <https://ex.org/Person:cc4c3e80-7aae-0edf-b109-e91715d85ba8> ;
+    sdo:name "Marytgen Lenaerts"@nl ;
+    sdo:spouse <https://ex.org/Person:d098b8c6-b923-3d03-bf08-4456ac7e3915> .
+
+<https://ex.org/Source:f46e6a28-a0b4-d33d-f95f-c6077638a606_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1601-04-14"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
+<https://ex.org/Source:f46e6a28-a0b4-d33d-f95f-c6077638a606> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/1d09819d-388e-41c2-8d7a-5be1374fb13a/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/f46e6a28-a0b4-d33d-f95f-c6077638a606"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/1d09819d-388e-41c2-8d7a-5be1374fb13a/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1601-04-14"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1597-1602"@nl,
+        "4"@nl,
+        "Datum ondertrouw: 14-04-1601<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/4\">Inventarisnummer 4 van archiefnummer 1004 in Archieven</a>"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 4, Periode: 159..., (toegangsnr. 1004), inv.nr. 4, D. Kerkelijk ondertrouwboek (NH) van Leiden, maart 1597 - mei 1602., 134, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/f46e6a28-a0b4-d33d-f95f-c6077638a606"^^xsd:anyURI .
+

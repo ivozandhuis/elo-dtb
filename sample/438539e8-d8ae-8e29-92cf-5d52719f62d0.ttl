@@ -1,0 +1,80 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:438539e8-d8ae-8e29-92cf-5d52719f62d0_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1694-02-21"@nl ;
+    picom:eventPlace "Noordwijk"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:7135da95-309d-ecf2-0152-394f0f01ead2> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:438539e8-d8ae-8e29-92cf-5d52719f62d0> ;
+    picom:hasLifeEvent <https://ex.org/Source:438539e8-d8ae-8e29-92cf-5d52719f62d0_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 21-02-1694"@nl ;
+    sdo:familyName "Onderwater"@nl ;
+    sdo:givenName "Willem"@nl ;
+    sdo:name "Willem Onderwater"@nl ;
+    sdo:parent <https://ex.org/Person:a03ebb8d-fd0d-210e-3668-3f4e4640db59>,
+        <https://ex.org/Person:a89eea38-e7fc-40d0-7be1-085f62253252> .
+
+<https://ex.org/Person:a03ebb8d-fd0d-210e-3668-3f4e4640db59> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:438539e8-d8ae-8e29-92cf-5d52719f62d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Onderwater"@nl ;
+            pnv:givenName "Thomas"@nl ;
+            pnv:literalName "Thomas Cornelisz Onderwater"@nl ;
+            pnv:patronym "Cornelisz"@nl ] ;
+    sdo:children <https://ex.org/Person:7135da95-309d-ecf2-0152-394f0f01ead2> ;
+    sdo:familyName "Onderwater"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Thomas"@nl ;
+    sdo:knows <https://ex.org/Person:b72883b5-5f8b-6071-e419-01125bd73585> ;
+    sdo:name "Thomas Cornelisz Onderwater"@nl ;
+    sdo:spouse <https://ex.org/Person:a89eea38-e7fc-40d0-7be1-085f62253252> .
+
+<https://ex.org/Person:a89eea38-e7fc-40d0-7be1-085f62253252> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:438539e8-d8ae-8e29-92cf-5d52719f62d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Neeltje"@nl ;
+            pnv:literalName "Neeltje Willmsdr"@nl ;
+            pnv:patronym "Willmsdr"@nl ] ;
+    sdo:children <https://ex.org/Person:7135da95-309d-ecf2-0152-394f0f01ead2> ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Neeltje"@nl ;
+    sdo:knows <https://ex.org/Person:b72883b5-5f8b-6071-e419-01125bd73585> ;
+    sdo:name "Neeltje Willmsdr"@nl ;
+    sdo:spouse <https://ex.org/Person:a03ebb8d-fd0d-210e-3668-3f4e4640db59> .
+
+<https://ex.org/Person:b72883b5-5f8b-6071-e419-01125bd73585> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:438539e8-d8ae-8e29-92cf-5d52719f62d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Aaltje"@nl ;
+            pnv:literalName "Aaltje Jansdr"@nl ;
+            pnv:patronym "Jansdr"@nl ] ;
+    sdo:givenName "Aaltje"@nl ;
+    sdo:name "Aaltje Jansdr"@nl .
+
+<https://ex.org/Source:438539e8-d8ae-8e29-92cf-5d52719f62d0> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/62506915-c2d9-44c3-98ed-96c03106b79b/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/438539e8-d8ae-8e29-92cf-5d52719f62d0"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/62506915-c2d9-44c3-98ed-96c03106b79b/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1694-02-21"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1675-1757"@nl,
+        "3"@nl,
+        "Doop-, Trouw- en Begraafregisters (retroacta B.S.) Noordwijk"@nl,
+        "Doopdatum: 21-02-1694<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/0910/file/3\">Inventarisnummer 3 van archiefnummer 0910 in Archieven</a>"@nl ;
+    sdo:locationCreated "Noordwijk"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, Trouw- en Begraafregisters (retroacta B.S.) Noordwijk, Deel: 3, Periode: 1675..., (toegangsnr. 0910), inv.nr. 3, Doopboek (NH) van Noordwijk aan Zee, 1675 juni 23 - 1757 oktober 9., 29, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/438539e8-d8ae-8e29-92cf-5d52719f62d0"^^xsd:anyURI .
+

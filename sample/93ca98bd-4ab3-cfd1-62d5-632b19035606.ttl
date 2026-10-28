@@ -1,0 +1,51 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:5ce72465-eb8a-bca0-62bf-9ff5c1813e8e> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:93ca98bd-4ab3-cfd1-62d5-632b19035606> ;
+    picom:hasLifeEvent <https://ex.org/Source:93ca98bd-4ab3-cfd1-62d5-632b19035606_huwelijk_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:familyName "Wurts"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Hendrick"@nl ;
+    sdo:hasOccupation "lakenwerker"@nl ;
+    sdo:name "Hendrick Wurts"@nl ;
+    sdo:spouse <https://ex.org/Person:90d98c7d-48aa-bfa3-e4e8-2cc2fc5cf41c> .
+
+<https://ex.org/Person:90d98c7d-48aa-bfa3-e4e8-2cc2fc5cf41c> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:93ca98bd-4ab3-cfd1-62d5-632b19035606> ;
+    picom:hasLifeEvent <https://ex.org/Source:93ca98bd-4ab3-cfd1-62d5-632b19035606_huwelijk_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:familyName "Griffier"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Ragel"@nl ;
+    sdo:name "Ragel Griffier"@nl ;
+    sdo:spouse <https://ex.org/Person:5ce72465-eb8a-bca0-62bf-9ff5c1813e8e> .
+
+<https://ex.org/Source:93ca98bd-4ab3-cfd1-62d5-632b19035606> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/d08587ab-61f8-47ee-88f7-ee5972ec1e83/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/93ca98bd-4ab3-cfd1-62d5-632b19035606"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/d08587ab-61f8-47ee-88f7-ee5972ec1e83/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1695-11-19"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1695-1724"@nl,
+        "211A"@nl,
+        "Impost 6 gulden<br>Datum trouwen: 19-11-1695<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/0508/file/211A\">Inventarisnummer 211A van archiefnummer 0508 in Archieven</a>"@nl,
+        "Schepenbank (Oud Rechterlijk Archief) van Leiden"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Schepenbank (Oud Rechterlijk Archief) van Leiden, Deel: 211A, Periode: 1695-1724, (toegangsnr. 0508), inv.nr. 211A, A. 1695-1724 maart., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/93ca98bd-4ab3-cfd1-62d5-632b19035606"^^xsd:anyURI .
+
+<https://ex.org/Source:93ca98bd-4ab3-cfd1-62d5-632b19035606_huwelijk_event> a picom:LifeEvent ;
+    picom:eventDate "1695-11-19"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:83 .
+

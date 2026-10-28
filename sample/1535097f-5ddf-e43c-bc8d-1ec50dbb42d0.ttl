@@ -1,0 +1,92 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:1535097f-5ddf-e43c-bc8d-1ec50dbb42d0_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1681-11-09"@nl ;
+    picom:eventPlace "Nieuwkoop"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:060dd9d0-0dfa-44dc-0c14-fb29f7db7a58> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:1535097f-5ddf-e43c-bc8d-1ec50dbb42d0> ;
+    picom:hasLifeEvent <https://ex.org/Source:1535097f-5ddf-e43c-bc8d-1ec50dbb42d0_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 09-11-1681"@nl ;
+    sdo:familyName "Groenewout"@nl ;
+    sdo:givenName "Roelof"@nl ;
+    sdo:name "Roelof Groenewout"@nl ;
+    sdo:parent <https://ex.org/Person:8fb7480a-97a7-2e93-35ae-6c6d4345501e>,
+        <https://ex.org/Person:9ab7ac2c-29ec-4f1d-1780-0b1a72b57e54> .
+
+<https://ex.org/Person:299052bc-cc88-3ede-5885-05985e78c302> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:1535097f-5ddf-e43c-bc8d-1ec50dbb42d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Marritje"@nl ;
+            pnv:literalName "Marritje Roelen"@nl ;
+            pnv:patronym "Roelen"@nl ] ;
+    sdo:givenName "Marritje"@nl ;
+    sdo:name "Marritje Roelen"@nl .
+
+<https://ex.org/Person:8fb7480a-97a7-2e93-35ae-6c6d4345501e> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:1535097f-5ddf-e43c-bc8d-1ec50dbb42d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Groenewout"@nl ;
+            pnv:givenName "Dirck"@nl ;
+            pnv:literalName "Dirck Gijsbertsz Groenewout"@nl ;
+            pnv:patronym "Gijsbertsz"@nl ] ;
+    sdo:children <https://ex.org/Person:060dd9d0-0dfa-44dc-0c14-fb29f7db7a58> ;
+    sdo:familyName "Groenewout"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Dirck"@nl ;
+    sdo:knows <https://ex.org/Person:299052bc-cc88-3ede-5885-05985e78c302>,
+        <https://ex.org/Person:999fe374-1cda-9cfc-f094-d5708ee1de2d> ;
+    sdo:name "Dirck Gijsbertsz Groenewout"@nl ;
+    sdo:spouse <https://ex.org/Person:9ab7ac2c-29ec-4f1d-1780-0b1a72b57e54> .
+
+<https://ex.org/Person:999fe374-1cda-9cfc-f094-d5708ee1de2d> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:1535097f-5ddf-e43c-bc8d-1ec50dbb42d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Leendert"@nl ;
+            pnv:literalName "Leendert Roelen"@nl ;
+            pnv:patronym "Roelen"@nl ] ;
+    sdo:givenName "Leendert"@nl ;
+    sdo:name "Leendert Roelen"@nl .
+
+<https://ex.org/Person:9ab7ac2c-29ec-4f1d-1780-0b1a72b57e54> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:1535097f-5ddf-e43c-bc8d-1ec50dbb42d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Annitjen"@nl ;
+            pnv:literalName "Annitjen Roelen"@nl ;
+            pnv:patronym "Roelen"@nl ] ;
+    sdo:children <https://ex.org/Person:060dd9d0-0dfa-44dc-0c14-fb29f7db7a58> ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Annitjen"@nl ;
+    sdo:knows <https://ex.org/Person:299052bc-cc88-3ede-5885-05985e78c302>,
+        <https://ex.org/Person:999fe374-1cda-9cfc-f094-d5708ee1de2d> ;
+    sdo:name "Annitjen Roelen"@nl ;
+    sdo:spouse <https://ex.org/Person:8fb7480a-97a7-2e93-35ae-6c6d4345501e> .
+
+<https://ex.org/Source:1535097f-5ddf-e43c-bc8d-1ec50dbb42d0> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/1e11916e-6e11-4356-a30c-8e7cb8c00d6c/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/1535097f-5ddf-e43c-bc8d-1ec50dbb42d0"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/1e11916e-6e11-4356-a30c-8e7cb8c00d6c/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1681-11-09"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "14"@nl,
+        "1648-1684"@nl,
+        "Doopdatum: 09-11-1681<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/162.2.02/file/14\">Inventarisnummer 14 van archiefnummer 162.2.02 in Archieven</a>"@nl,
+        "Hervormde gemeente te Nieuwkoop"@nl ;
+    sdo:locationCreated "Nieuwkoop"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Hervormde gemeente te Nieuwkoop, Deel: 14, Periode: 1648-1684, (toegangsnr. 162.2.02), inv.nr. 14, Register, bestaande uit Huwelijken, 1648 - 1659; Dopen, 1669 - 1684., 29, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/1535097f-5ddf-e43c-bc8d-1ec50dbb42d0"^^xsd:anyURI .
+

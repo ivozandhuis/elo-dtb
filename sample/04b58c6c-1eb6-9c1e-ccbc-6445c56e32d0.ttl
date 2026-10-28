@@ -1,0 +1,77 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:04b58c6c-1eb6-9c1e-ccbc-6445c56e32d0_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1731-01-08"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:76515c66-9e78-cfb2-1583-58fa48801b68> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:04b58c6c-1eb6-9c1e-ccbc-6445c56e32d0> ;
+    sdo:children <https://ex.org/Person:ab5b6b03-01bb-38fe-c310-79a7f117a3c0> ;
+    sdo:familyName "Foelen"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Susanna"@nl ;
+    sdo:knows <https://ex.org/Person:9d44ca76-88ac-78f0-8010-b3d6a80958e7>,
+        <https://ex.org/Person:d635e6b3-5dff-1369-8840-401ab89d2c73> ;
+    sdo:name "Susanna Foelen"@nl ;
+    sdo:spouse <https://ex.org/Person:775cac77-50bb-d710-5712-c64cea91c73a> .
+
+<https://ex.org/Person:775cac77-50bb-d710-5712-c64cea91c73a> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:04b58c6c-1eb6-9c1e-ccbc-6445c56e32d0> ;
+    sdo:children <https://ex.org/Person:ab5b6b03-01bb-38fe-c310-79a7f117a3c0> ;
+    sdo:familyName "Bonte"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Matthijs"@nl ;
+    sdo:knows <https://ex.org/Person:9d44ca76-88ac-78f0-8010-b3d6a80958e7>,
+        <https://ex.org/Person:d635e6b3-5dff-1369-8840-401ab89d2c73> ;
+    sdo:name "Matthijs Bonte"@nl ;
+    sdo:spouse <https://ex.org/Person:76515c66-9e78-cfb2-1583-58fa48801b68> .
+
+<https://ex.org/Person:9d44ca76-88ac-78f0-8010-b3d6a80958e7> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:04b58c6c-1eb6-9c1e-ccbc-6445c56e32d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Pond"@nl ;
+    sdo:givenName "Lodewijk"@nl ;
+    sdo:name "Lodewijk Pond"@nl .
+
+<https://ex.org/Person:ab5b6b03-01bb-38fe-c310-79a7f117a3c0> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:04b58c6c-1eb6-9c1e-ccbc-6445c56e32d0> ;
+    picom:hasLifeEvent <https://ex.org/Source:04b58c6c-1eb6-9c1e-ccbc-6445c56e32d0_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 08-01-1731"@nl ;
+    sdo:familyName "Bonte"@nl ;
+    sdo:givenName "Helena"@nl ;
+    sdo:name "Helena Bonte"@nl ;
+    sdo:parent <https://ex.org/Person:76515c66-9e78-cfb2-1583-58fa48801b68>,
+        <https://ex.org/Person:775cac77-50bb-d710-5712-c64cea91c73a> .
+
+<https://ex.org/Person:d635e6b3-5dff-1369-8840-401ab89d2c73> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:04b58c6c-1eb6-9c1e-ccbc-6445c56e32d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Bonte"@nl ;
+    sdo:givenName "Elisabeth"@nl ;
+    sdo:name "Elisabeth Bonte"@nl .
+
+<https://ex.org/Source:04b58c6c-1eb6-9c1e-ccbc-6445c56e32d0> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/1a4f0225-0d99-4d89-a905-68c6891dc8a3/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/04b58c6c-1eb6-9c1e-ccbc-6445c56e32d0"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/1a4f0225-0d99-4d89-a905-68c6891dc8a3/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1731-01-08"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1670-1802"@nl,
+        "295"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 08-01-1731<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/295\">Inventarisnummer 295 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 295, Periode: 1..., (toegangsnr. 1004), inv.nr. 295, Doopboek en trouwboek van de kerk aan de St. Jorissteeg (RK) te Leiden, 1670 - 1802, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/04b58c6c-1eb6-9c1e-ccbc-6445c56e32d0"^^xsd:anyURI .
+

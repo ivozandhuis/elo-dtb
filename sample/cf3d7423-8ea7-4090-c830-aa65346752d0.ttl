@@ -1,0 +1,86 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:cf3d7423-8ea7-4090-c830-aa65346752d0_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1686-03-15"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:0bb0e717-f230-c74d-7577-e2b561d7f82b> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:cf3d7423-8ea7-4090-c830-aa65346752d0> ;
+    sdo:children <https://ex.org/Person:7a3ca885-a66d-be63-dee0-0320b62d0073> ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Nn"@nl ;
+    sdo:knows <https://ex.org/Person:9311396b-eb18-e1f5-8be4-82ae7fc98cef>,
+        <https://ex.org/Person:98d0aaea-86b8-c439-5e6b-958c986fd9a7> ;
+    sdo:name "Nn"@nl ;
+    sdo:spouse <https://ex.org/Person:f6357107-9251-f4c2-c511-c7900316a5fd> .
+
+<https://ex.org/Person:7a3ca885-a66d-be63-dee0-0320b62d0073> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:cf3d7423-8ea7-4090-c830-aa65346752d0> ;
+    picom:hasLifeEvent <https://ex.org/Source:cf3d7423-8ea7-4090-c830-aa65346752d0_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Loenart"@nl ;
+            pnv:givenName "Maria"@nl ;
+            pnv:literalName "Maria van Loenart"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:description "Doopdatum: 15-03-1686"@nl ;
+    sdo:familyName "van Loenart"@nl ;
+    sdo:givenName "Maria"@nl ;
+    sdo:name "Maria van Loenart"@nl ;
+    sdo:parent <https://ex.org/Person:0bb0e717-f230-c74d-7577-e2b561d7f82b>,
+        <https://ex.org/Person:f6357107-9251-f4c2-c511-c7900316a5fd> .
+
+<https://ex.org/Person:9311396b-eb18-e1f5-8be4-82ae7fc98cef> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:cf3d7423-8ea7-4090-c830-aa65346752d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:givenName "Maria"@nl ;
+    sdo:name "Maria"@nl .
+
+<https://ex.org/Person:98d0aaea-86b8-c439-5e6b-958c986fd9a7> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:cf3d7423-8ea7-4090-c830-aa65346752d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Rome"@nl ;
+    sdo:givenName "Lambert"@nl ;
+    sdo:name "Lambert Rome"@nl .
+
+<https://ex.org/Person:f6357107-9251-f4c2-c511-c7900316a5fd> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:cf3d7423-8ea7-4090-c830-aa65346752d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Loenart"@nl ;
+            pnv:givenName "Gerrit"@nl ;
+            pnv:literalName "Gerrit van Loenart"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:children <https://ex.org/Person:7a3ca885-a66d-be63-dee0-0320b62d0073> ;
+    sdo:familyName "van Loenart"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Gerrit"@nl ;
+    sdo:knows <https://ex.org/Person:9311396b-eb18-e1f5-8be4-82ae7fc98cef>,
+        <https://ex.org/Person:98d0aaea-86b8-c439-5e6b-958c986fd9a7> ;
+    sdo:name "Gerrit van Loenart"@nl ;
+    sdo:spouse <https://ex.org/Person:0bb0e717-f230-c74d-7577-e2b561d7f82b> .
+
+<https://ex.org/Source:cf3d7423-8ea7-4090-c830-aa65346752d0> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/c958a674-9d05-4b6d-924f-e72063d575e4/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/cf3d7423-8ea7-4090-c830-aa65346752d0"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/c958a674-9d05-4b6d-924f-e72063d575e4/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1686-03-15"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1664-1710"@nl,
+        "287"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 15-03-1686<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/287\">Inventarisnummer 287 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 287, Periode: 1..., (toegangsnr. 1004), inv.nr. 287, Doopboek en trouwboek van de kerk aan de Appelmarkt (RK) te Leiden, 1664 - 1710, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/cf3d7423-8ea7-4090-c830-aa65346752d0"^^xsd:anyURI .
+

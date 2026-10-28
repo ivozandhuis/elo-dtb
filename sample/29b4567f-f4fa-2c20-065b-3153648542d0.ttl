@@ -1,0 +1,68 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:29b4567f-f4fa-2c20-065b-3153648542d0_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1775-01-19"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:04a8a7b3-b264-3301-50ff-e4f926dc782a> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:29b4567f-f4fa-2c20-065b-3153648542d0> ;
+    sdo:children <https://ex.org/Person:2f25c9b6-73f6-03a1-cb2f-a26d5e5ab4e3> ;
+    sdo:familyName "Lut"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Gerardus"@nl ;
+    sdo:knows <https://ex.org/Person:b4982684-12a4-53e2-2f78-15a12ad521db> ;
+    sdo:name "Gerardus Lut"@nl ;
+    sdo:spouse <https://ex.org/Person:7ab2d766-464b-2cd5-50df-ec3f12237e7f> .
+
+<https://ex.org/Person:2f25c9b6-73f6-03a1-cb2f-a26d5e5ab4e3> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:29b4567f-f4fa-2c20-065b-3153648542d0> ;
+    picom:hasLifeEvent <https://ex.org/Source:29b4567f-f4fa-2c20-065b-3153648542d0_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 19-01-1775"@nl ;
+    sdo:familyName "Lut"@nl ;
+    sdo:givenName "Ida"@nl ;
+    sdo:name "Ida Lut"@nl ;
+    sdo:parent <https://ex.org/Person:04a8a7b3-b264-3301-50ff-e4f926dc782a>,
+        <https://ex.org/Person:7ab2d766-464b-2cd5-50df-ec3f12237e7f> .
+
+<https://ex.org/Person:7ab2d766-464b-2cd5-50df-ec3f12237e7f> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:29b4567f-f4fa-2c20-065b-3153648542d0> ;
+    sdo:children <https://ex.org/Person:2f25c9b6-73f6-03a1-cb2f-a26d5e5ab4e3> ;
+    sdo:familyName "Montfoort"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Susanna"@nl ;
+    sdo:knows <https://ex.org/Person:b4982684-12a4-53e2-2f78-15a12ad521db> ;
+    sdo:name "Susanna Montfoort"@nl ;
+    sdo:spouse <https://ex.org/Person:04a8a7b3-b264-3301-50ff-e4f926dc782a> .
+
+<https://ex.org/Person:b4982684-12a4-53e2-2f78-15a12ad521db> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:29b4567f-f4fa-2c20-065b-3153648542d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Montfoort"@nl ;
+    sdo:givenName "Alida"@nl ;
+    sdo:name "Alida Montfoort"@nl .
+
+<https://ex.org/Source:29b4567f-f4fa-2c20-065b-3153648542d0> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/2dd02819-a71a-4fd2-9435-826b90ea0b57/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/29b4567f-f4fa-2c20-065b-3153648542d0"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/2dd02819-a71a-4fd2-9435-826b90ea0b57/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1775-01-19"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1768-1810"@nl,
+        "300"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 19-01-1775<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/300\">Inventarisnummer 300 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 300, Periode: 1..., (toegangsnr. 1004), inv.nr. 300, Doopboek en trouwboek van de kerk aan de Kuipersteeg (RK) te Leiden, 1768 - 1810., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/29b4567f-f4fa-2c20-065b-3153648542d0"^^xsd:anyURI .
+

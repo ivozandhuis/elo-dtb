@@ -1,0 +1,93 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:2f8f7e85-1b5b-e865-9056-06a28529123b> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:2ed8a8eb-e9f2-0e19-8a4f-32307f920606> ;
+    picom:hasLifeEvent <https://ex.org/Source:2ed8a8eb-e9f2-0e19-8a4f-32307f920606_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Jannetgen"@nl ;
+            pnv:literalName "Jannetgen Goverts"@nl ;
+            pnv:patronym "Goverts"@nl ] ;
+    sdo:address "Rijn in de Oude Voorstadt"@nl ;
+    sdo:birthPlace "Leyden"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Jannetgen"@nl ;
+    sdo:name "Jannetgen Goverts"@nl ;
+    sdo:parent <https://ex.org/Person:a9a3b54c-7418-fe7d-8acb-3bdf6c5370ea> ;
+    sdo:spouse <https://ex.org/Person:594ce9a1-db34-779b-55a3-707888fb5e70> .
+
+<https://ex.org/Person:594ce9a1-db34-779b-55a3-707888fb5e70> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:2ed8a8eb-e9f2-0e19-8a4f-32307f920606> ;
+    picom:hasLifeEvent <https://ex.org/Source:2ed8a8eb-e9f2-0e19-8a4f-32307f920606_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Meershouck"@nl ;
+            pnv:givenName "Sacharias"@nl ;
+            pnv:literalName "Sacharias Paulsz van Meershouck"@nl ;
+            pnv:patronym "Paulsz"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:address "Rijn in de Oude Voorstadt"@nl ;
+    sdo:birthPlace "Leyden"@nl ;
+    sdo:familyName "van Meershouck"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Sacharias"@nl ;
+    sdo:hasOccupation "scheepmaker"@nl ;
+    sdo:name "Sacharias Paulsz van Meershouck"@nl ;
+    sdo:parent <https://ex.org/Person:dc99a2b1-165f-2ba1-0b1f-938869d19d89> ;
+    sdo:spouse <https://ex.org/Person:2f8f7e85-1b5b-e865-9056-06a28529123b> .
+
+<https://ex.org/Person:a9a3b54c-7418-fe7d-8acb-3bdf6c5370ea> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:2ed8a8eb-e9f2-0e19-8a4f-32307f920606> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Neeltgen"@nl ;
+            pnv:literalName "Neeltgen Claes"@nl ;
+            pnv:patronym "Claes"@nl ] ;
+    sdo:address "Rijn in de Oude Voorstadt"@nl ;
+    sdo:description "getuige van de bruid, relatie tot de bruid: moeder, adres: Rijn in de Oude Voorstadt"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Neeltgen"@nl ;
+    sdo:name "Neeltgen Claes"@nl .
+
+<https://ex.org/Person:dc99a2b1-165f-2ba1-0b1f-938869d19d89> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:2ed8a8eb-e9f2-0e19-8a4f-32307f920606> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Ary"@nl ;
+            pnv:literalName "Ary Jansz"@nl ;
+            pnv:patronym "Jansz"@nl ] ;
+    sdo:address "Rijn in de Oude Voorstadt"@nl ;
+    sdo:description "getuige van de bruidegom, relatie tot de bruidegom: vader, adres: Rijn in de Oude Voorstadt"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Ary"@nl ;
+    sdo:name "Ary Jansz"@nl .
+
+<https://ex.org/Source:2ed8a8eb-e9f2-0e19-8a4f-32307f920606_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1656-08-15"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
+<https://ex.org/Source:2ed8a8eb-e9f2-0e19-8a4f-32307f920606> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/a3995c31-4131-4117-a81e-836b5d349942/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/2ed8a8eb-e9f2-0e19-8a4f-32307f920606"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/a3995c31-4131-4117-a81e-836b5d349942/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1656-08-15"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "15"@nl,
+        "1653-1657"@nl,
+        "Datum ondertrouw: 15-08-1656<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/15\">Inventarisnummer 15 van archiefnummer 1004 in Archieven</a>"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 15, Periode: 16..., (toegangsnr. 1004), inv.nr. 15, P. Kerkelijk ondertrouwboek (NH) van Leiden, juni 1653 - januari 1657., 318, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/2ed8a8eb-e9f2-0e19-8a4f-32307f920606"^^xsd:anyURI .
+

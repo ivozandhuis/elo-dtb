@@ -1,0 +1,67 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:12ca8499-382e-5c84-a608-1ed622174188> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:8fc72d3a-876d-2b83-60cc-77564295f606> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Bruijn"@nl ;
+            pnv:givenName "Geertje"@nl ;
+            pnv:literalName "Geertje de Bruijn"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:familyName "de Bruijn"@nl ;
+    sdo:givenName "Geertje"@nl ;
+    sdo:name "Geertje de Bruijn"@nl .
+
+<https://ex.org/Person:12d32845-3a98-4a7e-edcc-0e7711781148> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:8fc72d3a-876d-2b83-60cc-77564295f606> ;
+    picom:hasLifeEvent <https://ex.org/Source:8fc72d3a-876d-2b83-60cc-77564295f606_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:address "Leiden, Koolgracht"@nl ;
+    sdo:birthPlace "Leiden"@nl ;
+    sdo:description "Burgerlijke staat voor het huwelijk: j.d."@nl ;
+    sdo:familyName "Kasse"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Catarina"@nl ;
+    sdo:name "Catarina Kasse"@nl ;
+    sdo:spouse <https://ex.org/Person:1bb6007f-af04-1128-3018-aa4852f44d01> .
+
+<https://ex.org/Person:1bb6007f-af04-1128-3018-aa4852f44d01> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:8fc72d3a-876d-2b83-60cc-77564295f606> ;
+    picom:hasLifeEvent <https://ex.org/Source:8fc72d3a-876d-2b83-60cc-77564295f606_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:address "Leiden, Crauwelsteeg"@nl ;
+    sdo:description "Burgerlijke staat voor het huwelijk: wed."@nl ;
+    sdo:familyName "Schop"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Tomas"@nl ;
+    sdo:name "Tomas Schop"@nl ;
+    sdo:spouse <https://ex.org/Person:12d32845-3a98-4a7e-edcc-0e7711781148> .
+
+<https://ex.org/Source:8fc72d3a-876d-2b83-60cc-77564295f606_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1722-05-28"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
+<https://ex.org/Source:8fc72d3a-876d-2b83-60cc-77564295f606> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/3878f0d7-0562-4957-bccf-7d51b713e214/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/8fc72d3a-876d-2b83-60cc-77564295f606"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/3878f0d7-0562-4957-bccf-7d51b713e214/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1722-05-28"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "142"@nl,
+        "1722-1725"@nl,
+        "Datum ondertrouw: 28-05-1722<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/142\">Inventarisnummer 142 van archiefnummer 1004 in Archieven</a>"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 142, Periode: 1..., (toegangsnr. 1004), inv.nr. 142, Trouwboek van de Nieuwe- of Marekerk (NH) te Leiden, 1722 - 22 juni 1725., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/8fc72d3a-876d-2b83-60cc-77564295f606"^^xsd:anyURI .
+

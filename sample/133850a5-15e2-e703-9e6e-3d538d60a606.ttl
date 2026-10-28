@@ -1,0 +1,73 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:4b75964d-ad0d-0efd-fdf1-f0125c5ba5ba> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:133850a5-15e2-e703-9e6e-3d538d60a606> ;
+    picom:deceased true ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Clouck"@nl ;
+            pnv:givenName "Frans"@nl ;
+            pnv:literalName "Frans Pietersz Clouck"@nl ;
+            pnv:patronym "Pietersz"@nl ] ;
+    sdo:description "Relatie tot bruid: wed."@nl ;
+    sdo:familyName "Clouck"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Frans"@nl ;
+    sdo:name "Frans Pietersz Clouck"@nl .
+
+<https://ex.org/Person:ba93788a-9603-5af9-867c-b7e89fd1fbec> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:133850a5-15e2-e703-9e6e-3d538d60a606> ;
+    picom:hasLifeEvent <https://ex.org/Source:133850a5-15e2-e703-9e6e-3d538d60a606_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    picom:isWidOf <https://ex.org/Person:4b75964d-ad0d-0efd-fdf1-f0125c5ba5ba> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Jaecquemijntgen"@nl ;
+            pnv:literalName "Jaecquemijntgen Isaacx"@nl ;
+            pnv:patronym "Isaacx"@nl ] ;
+    sdo:address "Barbersteech"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Jaecquemijntgen"@nl ;
+    sdo:name "Jaecquemijntgen Isaacx"@nl ;
+    sdo:spouse <https://ex.org/Person:dfde97c6-576e-9a71-dc3a-e9f6cf118dab> .
+
+<https://ex.org/Person:dfde97c6-576e-9a71-dc3a-e9f6cf118dab> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:133850a5-15e2-e703-9e6e-3d538d60a606> ;
+    picom:hasLifeEvent <https://ex.org/Source:133850a5-15e2-e703-9e6e-3d538d60a606_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:address "Barbersteech"@nl ;
+    sdo:birthPlace "Bremen. Stift -"@nl ;
+    sdo:familyName "Steven"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Casper"@nl ;
+    sdo:hasOccupation "lakenwerker"@nl ;
+    sdo:name "Casper Steven"@nl ;
+    sdo:spouse <https://ex.org/Person:ba93788a-9603-5af9-867c-b7e89fd1fbec> .
+
+<https://ex.org/Source:133850a5-15e2-e703-9e6e-3d538d60a606_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1656-10-11"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
+<https://ex.org/Source:133850a5-15e2-e703-9e6e-3d538d60a606> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/3e585bd8-dee0-4284-afe0-e7fbcba4ba22/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/133850a5-15e2-e703-9e6e-3d538d60a606"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/3e585bd8-dee0-4284-afe0-e7fbcba4ba22/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1656-10-11"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "15"@nl,
+        "1653-1657"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Getuigen bruidegom: Jan Fredericxsz  Lanckhaer neef Dullebackersteech - Getuigen bruid: Lydia  Tonis moei Oude Vest -  Naam bruidegom in orig: Steven<br>Datum ondertrouw: 11-10-1656<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/15\">Inventarisnummer 15 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 15, Periode: 16..., (toegangsnr. 1004), inv.nr. 15, P. Kerkelijk ondertrouwboek (NH) van Leiden, juni 1653 - januari 1657., 339v, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/133850a5-15e2-e703-9e6e-3d538d60a606"^^xsd:anyURI .
+

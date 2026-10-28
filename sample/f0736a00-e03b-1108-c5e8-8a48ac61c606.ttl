@@ -1,0 +1,77 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:0c3b1a59-572c-edd0-ecc0-15bd7e355e8f> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:f0736a00-e03b-1108-c5e8-8a48ac61c606> ;
+    picom:hasLifeEvent <https://ex.org/Source:f0736a00-e03b-1108-c5e8-8a48ac61c606_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:address "Lange Groenesteegh"@nl ;
+    sdo:birthPlace "Leijden"@nl ;
+    sdo:description "Burgerlijke staat voor het huwelijk: j.m."@nl ;
+    sdo:familyName "Doterom"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Pieter"@nl ;
+    sdo:hasOccupation "kaardemakersknegt"@nl ;
+    sdo:name "Pieter Doterom"@nl ;
+    sdo:parent <https://ex.org/Person:5fb6a309-546e-10a9-c01d-912d6052b4aa> ;
+    sdo:spouse <https://ex.org/Person:0d26c74a-fff4-8ebd-fcda-9b5d2161f2df> .
+
+<https://ex.org/Person:0d26c74a-fff4-8ebd-fcda-9b5d2161f2df> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:f0736a00-e03b-1108-c5e8-8a48ac61c606> ;
+    picom:hasLifeEvent <https://ex.org/Source:f0736a00-e03b-1108-c5e8-8a48ac61c606_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:address "Middelstegragt"@nl ;
+    sdo:birthPlace "Leijden"@nl ;
+    sdo:description "Burgerlijke staat voor het huwelijk: j.d."@nl ;
+    sdo:familyName "Kouwenhoorn"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Maria"@nl ;
+    sdo:name "Maria Kouwenhoorn"@nl ;
+    sdo:parent <https://ex.org/Person:a0435811-645f-e7e8-78c0-82ebaee46107> ;
+    sdo:spouse <https://ex.org/Person:0c3b1a59-572c-edd0-ecc0-15bd7e355e8f> .
+
+<https://ex.org/Person:5fb6a309-546e-10a9-c01d-912d6052b4aa> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:f0736a00-e03b-1108-c5e8-8a48ac61c606> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:description "getuige van de bruidegom, relatie tot de bruidegom: vader"@nl ;
+    sdo:familyName "Doterom"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Huijbert"@nl ;
+    sdo:name "Huijbert Doterom"@nl .
+
+<https://ex.org/Person:a0435811-645f-e7e8-78c0-82ebaee46107> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:f0736a00-e03b-1108-c5e8-8a48ac61c606> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:description "getuige van de bruid, relatie tot de bruid: vader"@nl ;
+    sdo:familyName "Kouwenhoorn"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Johannes"@nl ;
+    sdo:name "Johannes Kouwenhoorn"@nl .
+
+<https://ex.org/Source:f0736a00-e03b-1108-c5e8-8a48ac61c606_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1757-09-03"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
+<https://ex.org/Source:f0736a00-e03b-1108-c5e8-8a48ac61c606> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/237c6012-eb2e-42c6-9aba-15141eb01f33/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/f0736a00-e03b-1108-c5e8-8a48ac61c606"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/237c6012-eb2e-42c6-9aba-15141eb01f33/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1757-09-03"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1756-1761"@nl,
+        "41"@nl,
+        "Datum ondertrouw: 03-09-1757<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/41\">Inventarisnummer 41 van archiefnummer 1004 in Archieven</a>"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 41, Periode: 17..., (toegangsnr. 1004), inv.nr. 41, RR. Kerkelijk ondertrouwboek (NH) van Leiden, 1756 - 1761., 72v, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/f0736a00-e03b-1108-c5e8-8a48ac61c606"^^xsd:anyURI .
+

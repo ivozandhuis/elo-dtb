@@ -1,0 +1,88 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:b8442896-fd73-7ac5-909d-0652020f52d0_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1789-09-07"@nl ;
+    picom:eventPlace "Sassenheim"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:27f62ae8-fca6-7ff4-634e-22cecb80aff6> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b8442896-fd73-7ac5-909d-0652020f52d0> ;
+    sdo:children <https://ex.org/Person:55d84120-6f53-c646-9702-5535167e7fcd> ;
+    sdo:familyName "Hillenaar"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Francijntje"@nl ;
+    sdo:knows <https://ex.org/Person:8913cd99-ba37-7dca-7f4a-14e4eddeafe1>,
+        <https://ex.org/Person:a014ef22-fe26-5bb9-70ab-36aad6e29485> ;
+    sdo:name "Francijntje Hillenaar"@nl ;
+    sdo:spouse <https://ex.org/Person:8626c020-3258-cfac-8350-e68131c27c7f> .
+
+<https://ex.org/Person:55d84120-6f53-c646-9702-5535167e7fcd> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b8442896-fd73-7ac5-909d-0652020f52d0> ;
+    picom:hasLifeEvent <https://ex.org/Source:b8442896-fd73-7ac5-909d-0652020f52d0_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 07-09-1789"@nl ;
+    sdo:familyName "Snikker"@nl ;
+    sdo:givenName "Martinus"@nl ;
+    sdo:name "Martinus Snikker"@nl ;
+    sdo:parent <https://ex.org/Person:27f62ae8-fca6-7ff4-634e-22cecb80aff6>,
+        <https://ex.org/Person:8626c020-3258-cfac-8350-e68131c27c7f> .
+
+<https://ex.org/Person:8626c020-3258-cfac-8350-e68131c27c7f> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b8442896-fd73-7ac5-909d-0652020f52d0> ;
+    sdo:children <https://ex.org/Person:55d84120-6f53-c646-9702-5535167e7fcd> ;
+    sdo:familyName "Snikker"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Gerrit"@nl ;
+    sdo:knows <https://ex.org/Person:8913cd99-ba37-7dca-7f4a-14e4eddeafe1>,
+        <https://ex.org/Person:a014ef22-fe26-5bb9-70ab-36aad6e29485> ;
+    sdo:name "Gerrit Snikker"@nl ;
+    sdo:spouse <https://ex.org/Person:27f62ae8-fca6-7ff4-634e-22cecb80aff6> .
+
+<https://ex.org/Person:8913cd99-ba37-7dca-7f4a-14e4eddeafe1> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b8442896-fd73-7ac5-909d-0652020f52d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Stijn"@nl ;
+            pnv:givenName "Keetje"@nl ;
+            pnv:literalName "Keetje van Stijn"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:familyName "van Stijn"@nl ;
+    sdo:givenName "Keetje"@nl ;
+    sdo:name "Keetje van Stijn"@nl .
+
+<https://ex.org/Person:a014ef22-fe26-5bb9-70ab-36aad6e29485> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b8442896-fd73-7ac5-909d-0652020f52d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Dam"@nl ;
+            pnv:givenName "Pieter"@nl ;
+            pnv:literalName "Pieter van Dam"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:familyName "van Dam"@nl ;
+    sdo:givenName "Pieter"@nl ;
+    sdo:name "Pieter van Dam"@nl .
+
+<https://ex.org/Source:b8442896-fd73-7ac5-909d-0652020f52d0> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/8f2ee074-e1cd-463e-9b51-ed551714ebcf/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/b8442896-fd73-7ac5-909d-0652020f52d0"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/8f2ee074-e1cd-463e-9b51-ed551714ebcf/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1789-09-07"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1715-1812"@nl,
+        "3"@nl,
+        "Retroacta Burgerlijke Stand en DTB gemeente Sassenheim"@nl,
+        "Sassenheim<br>Doopdatum: 07-09-1789<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/0661A/file/3\">Inventarisnummer 3 van archiefnummer 0661A in Archieven</a>"@nl ;
+    sdo:locationCreated "Sassenheim"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Retroacta Burgerlijke Stand en DTB gemeente Sassenheim, Deel: 3, Periode: 1715-1812, (toegangsnr. 0661A), inv.nr. 3, Doopboek en trouwboek (RK) van Sassenheim, 1715 - 1812., 175, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/b8442896-fd73-7ac5-909d-0652020f52d0"^^xsd:anyURI .
+

@@ -1,0 +1,56 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:0b1f5909-b19b-421a-93ea-da368a1a8f84> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:24f99380-25cd-09ba-a20c-287410d3e2d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Brouwers"@nl ;
+    sdo:givenName "Prijntje"@nl ;
+    sdo:name "Prijntje Brouwers"@nl .
+
+<https://ex.org/Person:4a2dbb3f-4465-8cb3-44ef-a0b6cdeea1b2> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:24f99380-25cd-09ba-a20c-287410d3e2d0> ;
+    sdo:children <https://ex.org/Person:5e7f0f10-00bc-224d-423d-ad7494c10861> ;
+    sdo:familyName "Lichtvoet"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jaques"@nl ;
+    sdo:knows <https://ex.org/Person:0b1f5909-b19b-421a-93ea-da368a1a8f84> ;
+    sdo:name "Jaques Lichtvoet"@nl .
+
+<https://ex.org/Person:5e7f0f10-00bc-224d-423d-ad7494c10861> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:24f99380-25cd-09ba-a20c-287410d3e2d0> ;
+    picom:hasLifeEvent <https://ex.org/Source:24f99380-25cd-09ba-a20c-287410d3e2d0_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 26-01-1648"@nl ;
+    sdo:familyName "Lichtvoet"@nl ;
+    sdo:givenName "Dina"@nl ;
+    sdo:name "Dina Lichtvoet"@nl ;
+    sdo:parent <https://ex.org/Person:4a2dbb3f-4465-8cb3-44ef-a0b6cdeea1b2> .
+
+<https://ex.org/Source:24f99380-25cd-09ba-a20c-287410d3e2d0_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1648-01-26"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Source:24f99380-25cd-09ba-a20c-287410d3e2d0> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/017d3697-a725-4c6c-987f-2b29c9192abe/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/24f99380-25cd-09ba-a20c-287410d3e2d0"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/017d3697-a725-4c6c-987f-2b29c9192abe/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1648-01-26"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1644-1652"@nl,
+        "235"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 26-01-1648<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/235\">Inventarisnummer 235 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 235, Periode: 1..., (toegangsnr. 1004), inv.nr. 235, Doopboek van de Hooglandse Kerk (NH) te Leiden, 11 december 1644 - 11 augustus 1652., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/24f99380-25cd-09ba-a20c-287410d3e2d0"^^xsd:anyURI .
+

@@ -1,0 +1,77 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:c3f9322d-c9a2-be2f-8fe9-b0a0846252d0_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1702-02-08"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:057c0ec7-3dab-1704-0f9c-36b571474cbf> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:c3f9322d-c9a2-be2f-8fe9-b0a0846252d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Blankert"@nl ;
+    sdo:givenName "Joannes"@nl ;
+    sdo:name "Joannes Blankert"@nl .
+
+<https://ex.org/Person:301f06dd-4463-837d-2792-6aee1531d0ea> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:c3f9322d-c9a2-be2f-8fe9-b0a0846252d0> ;
+    sdo:children <https://ex.org/Person:97e7215b-9c8d-59ef-f34c-c75e6e3b8544> ;
+    sdo:familyName "Blankert"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Abraham"@nl ;
+    sdo:knows <https://ex.org/Person:057c0ec7-3dab-1704-0f9c-36b571474cbf>,
+        <https://ex.org/Person:d13070dd-a7c0-c983-6a61-eb9eb289bcfa> ;
+    sdo:name "Abraham Blankert"@nl ;
+    sdo:spouse <https://ex.org/Person:6206411e-7087-68f3-87ca-1e337d02c835> .
+
+<https://ex.org/Person:6206411e-7087-68f3-87ca-1e337d02c835> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:c3f9322d-c9a2-be2f-8fe9-b0a0846252d0> ;
+    sdo:children <https://ex.org/Person:97e7215b-9c8d-59ef-f34c-c75e6e3b8544> ;
+    sdo:familyName "Blankaert"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Lijsbeth"@nl ;
+    sdo:knows <https://ex.org/Person:057c0ec7-3dab-1704-0f9c-36b571474cbf>,
+        <https://ex.org/Person:d13070dd-a7c0-c983-6a61-eb9eb289bcfa> ;
+    sdo:name "Lijsbeth Blankaert"@nl ;
+    sdo:spouse <https://ex.org/Person:301f06dd-4463-837d-2792-6aee1531d0ea> .
+
+<https://ex.org/Person:97e7215b-9c8d-59ef-f34c-c75e6e3b8544> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:c3f9322d-c9a2-be2f-8fe9-b0a0846252d0> ;
+    picom:hasLifeEvent <https://ex.org/Source:c3f9322d-c9a2-be2f-8fe9-b0a0846252d0_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 08-02-1702"@nl ;
+    sdo:familyName "Blankert"@nl ;
+    sdo:givenName "IJsaac"@nl ;
+    sdo:name "IJsaac Blankert"@nl ;
+    sdo:parent <https://ex.org/Person:301f06dd-4463-837d-2792-6aee1531d0ea>,
+        <https://ex.org/Person:6206411e-7087-68f3-87ca-1e337d02c835> .
+
+<https://ex.org/Person:d13070dd-a7c0-c983-6a61-eb9eb289bcfa> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:c3f9322d-c9a2-be2f-8fe9-b0a0846252d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Blankert"@nl ;
+    sdo:givenName "Sophia"@nl ;
+    sdo:name "Sophia Blankert"@nl .
+
+<https://ex.org/Source:c3f9322d-c9a2-be2f-8fe9-b0a0846252d0> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/5e89503e-f217-4990-9feb-4bfdf6b259b0/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/c3f9322d-c9a2-be2f-8fe9-b0a0846252d0"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/5e89503e-f217-4990-9feb-4bfdf6b259b0/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1702-02-08"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1701-1705"@nl,
+        "245"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 08-02-1702<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/245\">Inventarisnummer 245 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 245, Periode: 1..., (toegangsnr. 1004), inv.nr. 245, Doopboek van de Hooglandse Kerk (NH) te Leiden, 1701 - 30 september 1705., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/c3f9322d-c9a2-be2f-8fe9-b0a0846252d0"^^xsd:anyURI .
+

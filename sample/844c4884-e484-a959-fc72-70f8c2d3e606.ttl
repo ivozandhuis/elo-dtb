@@ -1,0 +1,68 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:3c1731ae-abf4-0386-5cef-391c32395ab2> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:844c4884-e484-a959-fc72-70f8c2d3e606> ;
+    picom:hasLifeEvent <https://ex.org/Source:844c4884-e484-a959-fc72-70f8c2d3e606_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Bueren"@nl ;
+            pnv:givenName "Maria"@nl ;
+            pnv:literalName "Maria van Bueren"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:address "Cingelstraat, Leiden"@nl ;
+    sdo:birthPlace "Leiden"@nl ;
+    sdo:description "Burgerlijke staat voor het huwelijk: j.d."@nl ;
+    sdo:familyName "van Bueren"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Maria"@nl ;
+    sdo:name "Maria van Bueren"@nl ;
+    sdo:spouse <https://ex.org/Person:82815a28-7f66-149b-5172-81d7865b71a2> .
+
+<https://ex.org/Person:82815a28-7f66-149b-5172-81d7865b71a2> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:844c4884-e484-a959-fc72-70f8c2d3e606> ;
+    picom:hasLifeEvent <https://ex.org/Source:844c4884-e484-a959-fc72-70f8c2d3e606_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Swijger"@nl ;
+            pnv:givenName "Jacob"@nl ;
+            pnv:literalName "Jacob de Swijger"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:address "Cingelstraat, Leiden"@nl ;
+    sdo:birthPlace "Leiden"@nl ;
+    sdo:description "Burgerlijke staat voor het huwelijk: j.m."@nl ;
+    sdo:familyName "de Swijger"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jacob"@nl ;
+    sdo:hasOccupation "boeselwerker"@nl ;
+    sdo:name "Jacob de Swijger"@nl ;
+    sdo:spouse <https://ex.org/Person:3c1731ae-abf4-0386-5cef-391c32395ab2> .
+
+<https://ex.org/Source:844c4884-e484-a959-fc72-70f8c2d3e606> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/ef53c009-2bcf-4f55-8e48-b9d0c0d8cbf9/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/844c4884-e484-a959-fc72-70f8c2d3e606"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/ef53c009-2bcf-4f55-8e48-b9d0c0d8cbf9/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1722-02-14"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "112"@nl,
+        "1719-1722"@nl,
+        "Datum ondertrouw: 14-02-1722<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/112\">Inventarisnummer 112 van archiefnummer 1004 in Archieven</a>"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 112, Periode: 1..., (toegangsnr. 1004), inv.nr. 112, Trouwboek van de Hooglandse Kerk (NH) te Leiden, 28 april 1719 - 25 september 1722., 179, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/844c4884-e484-a959-fc72-70f8c2d3e606"^^xsd:anyURI .
+
+<https://ex.org/Source:844c4884-e484-a959-fc72-70f8c2d3e606_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1722-02-14"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+

@@ -1,0 +1,81 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:0eff37ee-81bd-beae-336d-3b8f4ffe5b56> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:4237315c-4c7c-2fee-a0a4-7ba1029b42d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Werve"@nl ;
+            pnv:givenName "Isaac"@nl ;
+            pnv:literalName "Isaac van de Werve"@nl ;
+            pnv:surnamePrefix "van de"@nl ] ;
+    sdo:familyName "van de Werve"@nl ;
+    sdo:givenName "Isaac"@nl ;
+    sdo:name "Isaac van de Werve"@nl .
+
+<https://ex.org/Person:21090269-b729-ddee-dd15-0701f3f1a008> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:4237315c-4c7c-2fee-a0a4-7ba1029b42d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Jannetien"@nl ;
+            pnv:literalName "Jannetien Pieters"@nl ;
+            pnv:patronym "Pieters"@nl ] ;
+    sdo:givenName "Jannetien"@nl ;
+    sdo:name "Jannetien Pieters"@nl .
+
+<https://ex.org/Person:3fa076a0-14f5-4f9d-aa7c-311b4e0ed487> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:4237315c-4c7c-2fee-a0a4-7ba1029b42d0> ;
+    picom:hasLifeEvent <https://ex.org/Source:4237315c-4c7c-2fee-a0a4-7ba1029b42d0_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 03-03-1639"@nl ;
+    sdo:familyName "Vercruysse"@nl ;
+    sdo:givenName "Neeltien"@nl ;
+    sdo:name "Neeltien Vercruysse"@nl ;
+    sdo:parent <https://ex.org/Person:9fe47764-123d-4f43-b39a-54fd3007f80f> .
+
+<https://ex.org/Person:9fe47764-123d-4f43-b39a-54fd3007f80f> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:4237315c-4c7c-2fee-a0a4-7ba1029b42d0> ;
+    sdo:children <https://ex.org/Person:3fa076a0-14f5-4f9d-aa7c-311b4e0ed487> ;
+    sdo:familyName "Vercruysse"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Pieter"@nl ;
+    sdo:knows <https://ex.org/Person:0eff37ee-81bd-beae-336d-3b8f4ffe5b56>,
+        <https://ex.org/Person:21090269-b729-ddee-dd15-0701f3f1a008>,
+        <https://ex.org/Person:b06396ef-250e-bd04-d4a5-40b64432c5f0> ;
+    sdo:name "Pieter Vercruysse"@nl .
+
+<https://ex.org/Person:b06396ef-250e-bd04-d4a5-40b64432c5f0> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:4237315c-4c7c-2fee-a0a4-7ba1029b42d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Hoecke"@nl ;
+    sdo:givenName "Clara"@nl ;
+    sdo:name "Clara Hoecke"@nl .
+
+<https://ex.org/Source:4237315c-4c7c-2fee-a0a4-7ba1029b42d0_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1639-03-03"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Source:4237315c-4c7c-2fee-a0a4-7ba1029b42d0> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/e8829a0c-5694-4d1b-8e49-5f29b8f78538/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/4237315c-4c7c-2fee-a0a4-7ba1029b42d0"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/e8829a0c-5694-4d1b-8e49-5f29b8f78538/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1639-03-03"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1636-1644"@nl,
+        "234"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 03-03-1639<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/234\">Inventarisnummer 234 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 234, Periode: 1..., (toegangsnr. 1004), inv.nr. 234, Doopboek van de Hooglandse Kerk (NH) te Leiden, 1636 - 6 december 1644., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/4237315c-4c7c-2fee-a0a4-7ba1029b42d0"^^xsd:anyURI .
+

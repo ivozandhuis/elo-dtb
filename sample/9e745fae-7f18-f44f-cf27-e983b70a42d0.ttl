@@ -1,0 +1,95 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:9e745fae-7f18-f44f-cf27-e983b70a42d0_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1755-12-14"@nl ;
+    picom:eventPlace "Noordwijk"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:6e97157d-baea-d5af-b1ba-3b74363039b6> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:9e745fae-7f18-f44f-cf27-e983b70a42d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Leeren"@nl ;
+            pnv:givenName "Laurisje"@nl ;
+            pnv:literalName "Laurisje van Leeren"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:children <https://ex.org/Person:f31c1ba5-6226-d5fb-11e7-769da09ba4f3> ;
+    sdo:familyName "van Leeren"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Laurisje"@nl ;
+    sdo:knows <https://ex.org/Person:a45956ac-4649-5277-14aa-a634a327cf78>,
+        <https://ex.org/Person:d1827291-4ac5-4f0d-cd8b-f8193e363bc5> ;
+    sdo:name "Laurisje van Leeren"@nl ;
+    sdo:spouse <https://ex.org/Person:d629ccdd-4522-5d42-fcf8-254936a53529> .
+
+<https://ex.org/Person:a45956ac-4649-5277-14aa-a634a327cf78> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:9e745fae-7f18-f44f-cf27-e983b70a42d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Leeren"@nl ;
+            pnv:givenName "Cornelis"@nl ;
+            pnv:literalName "Cornelis van Leeren"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:familyName "van Leeren"@nl ;
+    sdo:givenName "Cornelis"@nl ;
+    sdo:name "Cornelis van Leeren"@nl .
+
+<https://ex.org/Person:d1827291-4ac5-4f0d-cd8b-f8193e363bc5> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:9e745fae-7f18-f44f-cf27-e983b70a42d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Bruin"@nl ;
+            pnv:givenName "Geertje"@nl ;
+            pnv:literalName "Geertje de Bruin"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:familyName "de Bruin"@nl ;
+    sdo:givenName "Geertje"@nl ;
+    sdo:name "Geertje de Bruin"@nl .
+
+<https://ex.org/Person:d629ccdd-4522-5d42-fcf8-254936a53529> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:9e745fae-7f18-f44f-cf27-e983b70a42d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Adam"@nl ;
+            pnv:literalName "Adam Wijnands"@nl ;
+            pnv:patronym "Wijnands"@nl ] ;
+    sdo:children <https://ex.org/Person:f31c1ba5-6226-d5fb-11e7-769da09ba4f3> ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Adam"@nl ;
+    sdo:knows <https://ex.org/Person:a45956ac-4649-5277-14aa-a634a327cf78>,
+        <https://ex.org/Person:d1827291-4ac5-4f0d-cd8b-f8193e363bc5> ;
+    sdo:name "Adam Wijnands"@nl ;
+    sdo:spouse <https://ex.org/Person:6e97157d-baea-d5af-b1ba-3b74363039b6> .
+
+<https://ex.org/Person:f31c1ba5-6226-d5fb-11e7-769da09ba4f3> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:9e745fae-7f18-f44f-cf27-e983b70a42d0> ;
+    picom:hasLifeEvent <https://ex.org/Source:9e745fae-7f18-f44f-cf27-e983b70a42d0_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 14-12-1755"@nl ;
+    sdo:givenName "Jannitje"@nl ;
+    sdo:name "Jannitje"@nl ;
+    sdo:parent <https://ex.org/Person:6e97157d-baea-d5af-b1ba-3b74363039b6>,
+        <https://ex.org/Person:d629ccdd-4522-5d42-fcf8-254936a53529> .
+
+<https://ex.org/Source:9e745fae-7f18-f44f-cf27-e983b70a42d0> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/12df4f78-7717-4cab-8747-530427d781a5/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/9e745fae-7f18-f44f-cf27-e983b70a42d0"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/12df4f78-7717-4cab-8747-530427d781a5/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1755-12-14"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1732-1811"@nl,
+        "8"@nl,
+        "Doop-, Trouw- en Begraafregisters (retroacta B.S.) Noordwijk"@nl,
+        "Doopdatum: 14-12-1755<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/0910/file/8\">Inventarisnummer 8 van archiefnummer 0910 in Archieven</a>"@nl ;
+    sdo:locationCreated "Noordwijk"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, Trouw- en Begraafregisters (retroacta B.S.) Noordwijk, Deel: 8, Periode: 1732..., (toegangsnr. 0910), inv.nr. 8, Doopboek en trouwboek (RK) van Noordwijk-Binnen en Noordwijk aan Zee, 1732-1811., 151, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/9e745fae-7f18-f44f-cf27-e983b70a42d0"^^xsd:anyURI .
+

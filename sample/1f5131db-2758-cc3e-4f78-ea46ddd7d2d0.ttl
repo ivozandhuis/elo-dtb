@@ -1,0 +1,101 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:1f5131db-2758-cc3e-4f78-ea46ddd7d2d0_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1625-04-20"@nl ;
+    picom:eventPlace "Leiderdorp"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:0ae5e0ac-af60-8b27-1e11-385f678d3f10> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:1f5131db-2758-cc3e-4f78-ea46ddd7d2d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Pieter"@nl ;
+            pnv:literalName "Pieter Jacobsz"@nl ;
+            pnv:patronym "Jacobsz"@nl ] ;
+    sdo:givenName "Pieter"@nl ;
+    sdo:name "Pieter Jacobsz"@nl .
+
+<https://ex.org/Person:9a7430b3-eaff-07de-ddd8-da9a8d99ac6b> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:1f5131db-2758-cc3e-4f78-ea46ddd7d2d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Willem"@nl ;
+            pnv:literalName "Willem Jansz"@nl ;
+            pnv:patronym "Jansz"@nl ] ;
+    sdo:children <https://ex.org/Person:f06678e9-3e5e-f728-f40c-76e938651fa8> ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Willem"@nl ;
+    sdo:knows <https://ex.org/Person:0ae5e0ac-af60-8b27-1e11-385f678d3f10>,
+        <https://ex.org/Person:a7fd7ee7-6344-cd42-e722-0c9fbf903d34>,
+        <https://ex.org/Person:e8f9fa93-c096-7659-f93c-9e65dcfe0dab> ;
+    sdo:name "Willem Jansz"@nl ;
+    sdo:spouse <https://ex.org/Person:f1675bcc-70a7-d3f7-f491-6b0b7e02ab8a> .
+
+<https://ex.org/Person:a7fd7ee7-6344-cd42-e722-0c9fbf903d34> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:1f5131db-2758-cc3e-4f78-ea46ddd7d2d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Pietertge"@nl ;
+            pnv:literalName "Pietertge Coijs"@nl ;
+            pnv:patronym "Coijs"@nl ] ;
+    sdo:givenName "Pietertge"@nl ;
+    sdo:name "Pietertge Coijs"@nl .
+
+<https://ex.org/Person:e8f9fa93-c096-7659-f93c-9e65dcfe0dab> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:1f5131db-2758-cc3e-4f78-ea46ddd7d2d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Aeltgen"@nl ;
+            pnv:literalName "Aeltgen Wouters"@nl ;
+            pnv:patronym "Wouters"@nl ] ;
+    sdo:givenName "Aeltgen"@nl ;
+    sdo:name "Aeltgen Wouters"@nl .
+
+<https://ex.org/Person:f06678e9-3e5e-f728-f40c-76e938651fa8> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:1f5131db-2758-cc3e-4f78-ea46ddd7d2d0> ;
+    picom:hasLifeEvent <https://ex.org/Source:1f5131db-2758-cc3e-4f78-ea46ddd7d2d0_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 20-04-1625"@nl ;
+    sdo:givenName "Maertge"@nl ;
+    sdo:name "Maertge"@nl ;
+    sdo:parent <https://ex.org/Person:9a7430b3-eaff-07de-ddd8-da9a8d99ac6b>,
+        <https://ex.org/Person:f1675bcc-70a7-d3f7-f491-6b0b7e02ab8a> .
+
+<https://ex.org/Person:f1675bcc-70a7-d3f7-f491-6b0b7e02ab8a> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:1f5131db-2758-cc3e-4f78-ea46ddd7d2d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Crijntge"@nl ;
+            pnv:literalName "Crijntge Wouters"@nl ;
+            pnv:patronym "Wouters"@nl ] ;
+    sdo:children <https://ex.org/Person:f06678e9-3e5e-f728-f40c-76e938651fa8> ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Crijntge"@nl ;
+    sdo:knows <https://ex.org/Person:0ae5e0ac-af60-8b27-1e11-385f678d3f10>,
+        <https://ex.org/Person:a7fd7ee7-6344-cd42-e722-0c9fbf903d34>,
+        <https://ex.org/Person:e8f9fa93-c096-7659-f93c-9e65dcfe0dab> ;
+    sdo:name "Crijntge Wouters"@nl ;
+    sdo:spouse <https://ex.org/Person:9a7430b3-eaff-07de-ddd8-da9a8d99ac6b> .
+
+<https://ex.org/Source:1f5131db-2758-cc3e-4f78-ea46ddd7d2d0> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/32292e03-640c-436e-a6e2-e59c7fdc18da/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/1f5131db-2758-cc3e-4f78-ea46ddd7d2d0"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/32292e03-640c-436e-a6e2-e59c7fdc18da/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1625-04-20"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1473"@nl,
+        "1619-1641"@nl,
+        "Doopdatum: 20-04-1625<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/0800/file/1473\">Inventarisnummer 1473 van archiefnummer 0800 in Archieven</a>"@nl,
+        "Dorps- en gemeentebestuur van Leiderdorp (1561-1958)"@nl ;
+    sdo:locationCreated "Leiderdorp"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Dorps- en gemeentebestuur van Leiderdorp (1561-1958), Deel: 1473, Periode: 1619-1641, (toegangsnr. 0800), inv.nr. 1473, Register van dopen (doopboek), trouwen (trouwboek) en lidmaten (NH) van Leiderdorp, 1619 - 1641., 78, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/1f5131db-2758-cc3e-4f78-ea46ddd7d2d0"^^xsd:anyURI .
+

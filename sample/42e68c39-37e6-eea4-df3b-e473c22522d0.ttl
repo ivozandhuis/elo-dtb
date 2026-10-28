@@ -1,0 +1,83 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:42e68c39-37e6-eea4-df3b-e473c22522d0_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1746-04-24"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:02b6cd43-cb5c-c867-83f8-2875bbfe1174> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:42e68c39-37e6-eea4-df3b-e473c22522d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Wanrooden"@nl ;
+            pnv:givenName "Jacoba"@nl ;
+            pnv:literalName "Jacoba van Wanrooden"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:children <https://ex.org/Person:58c27a1c-a80d-f56e-3753-d32f21954de9> ;
+    sdo:familyName "van Wanrooden"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Jacoba"@nl ;
+    sdo:knows <https://ex.org/Person:3b4d7feb-c7c9-a0af-bd60-9caff79c081e>,
+        <https://ex.org/Person:50756b05-03aa-49da-829d-efb940f28b55> ;
+    sdo:name "Jacoba van Wanrooden"@nl ;
+    sdo:spouse <https://ex.org/Person:4d1df392-7833-afc5-ea6b-1ef7e3040985> .
+
+<https://ex.org/Person:3b4d7feb-c7c9-a0af-bd60-9caff79c081e> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:42e68c39-37e6-eea4-df3b-e473c22522d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Ruijtenbeek"@nl ;
+    sdo:givenName "Susanna"@nl ;
+    sdo:name "Susanna Ruijtenbeek"@nl .
+
+<https://ex.org/Person:4d1df392-7833-afc5-ea6b-1ef7e3040985> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:42e68c39-37e6-eea4-df3b-e473c22522d0> ;
+    sdo:children <https://ex.org/Person:58c27a1c-a80d-f56e-3753-d32f21954de9> ;
+    sdo:familyName "Civaal"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Antonij"@nl ;
+    sdo:knows <https://ex.org/Person:3b4d7feb-c7c9-a0af-bd60-9caff79c081e>,
+        <https://ex.org/Person:50756b05-03aa-49da-829d-efb940f28b55> ;
+    sdo:name "Antonij Civaal"@nl ;
+    sdo:spouse <https://ex.org/Person:02b6cd43-cb5c-c867-83f8-2875bbfe1174> .
+
+<https://ex.org/Person:50756b05-03aa-49da-829d-efb940f28b55> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:42e68c39-37e6-eea4-df3b-e473c22522d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Civaal"@nl ;
+    sdo:givenName "Antonij"@nl ;
+    sdo:name "Antonij Civaal"@nl .
+
+<https://ex.org/Person:58c27a1c-a80d-f56e-3753-d32f21954de9> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:42e68c39-37e6-eea4-df3b-e473c22522d0> ;
+    picom:hasLifeEvent <https://ex.org/Source:42e68c39-37e6-eea4-df3b-e473c22522d0_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 24-04-1746"@nl ;
+    sdo:familyName "Civaal"@nl ;
+    sdo:givenName "Judik"@nl ;
+    sdo:name "Judik Civaal"@nl ;
+    sdo:parent <https://ex.org/Person:02b6cd43-cb5c-c867-83f8-2875bbfe1174>,
+        <https://ex.org/Person:4d1df392-7833-afc5-ea6b-1ef7e3040985> .
+
+<https://ex.org/Source:42e68c39-37e6-eea4-df3b-e473c22522d0> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/b057bba6-e5f3-4d0c-9665-54846fadd85c/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/42e68c39-37e6-eea4-df3b-e473c22522d0"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/b057bba6-e5f3-4d0c-9665-54846fadd85c/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1746-04-24"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1741-1754"@nl,
+        "251"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "toevoeging onderzoeker: bij achternaam vader: de jonge<br>Doopdatum: 24-04-1746<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/251\">Inventarisnummer 251 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 251, Periode: 1..., (toegangsnr. 1004), inv.nr. 251, Doopboek van de Hooglandse Kerk (NH) te Leiden, 2 mei 1741 - 1754., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/42e68c39-37e6-eea4-df3b-e473c22522d0"^^xsd:anyURI .
+

@@ -1,0 +1,74 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:e7787fd0-efd0-fd28-d1cb-c3a8f09ae2d0_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1721-01-01"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:4670ae49-dfee-57e8-0903-8d5da10563ad> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:e7787fd0-efd0-fd28-d1cb-c3a8f09ae2d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Segaar"@nl ;
+    sdo:givenName "Maria"@nl ;
+    sdo:name "Maria Segaar"@nl .
+
+<https://ex.org/Person:74664d9d-eae8-a60c-2927-636017803690> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:e7787fd0-efd0-fd28-d1cb-c3a8f09ae2d0> ;
+    sdo:children <https://ex.org/Person:f447316d-2dc5-fd9d-1ac1-880e9e2a7843> ;
+    sdo:familyName "Clavant"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Adam"@nl ;
+    sdo:knows <https://ex.org/Person:4670ae49-dfee-57e8-0903-8d5da10563ad> ;
+    sdo:name "Adam Clavant"@nl ;
+    sdo:spouse <https://ex.org/Person:d6ed8699-3680-2883-60ec-dc2867f8471d> .
+
+<https://ex.org/Person:d6ed8699-3680-2883-60ec-dc2867f8471d> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:e7787fd0-efd0-fd28-d1cb-c3a8f09ae2d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Steen"@nl ;
+            pnv:givenName "Kaatje"@nl ;
+            pnv:literalName "Kaatje van der Steen"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:children <https://ex.org/Person:f447316d-2dc5-fd9d-1ac1-880e9e2a7843> ;
+    sdo:familyName "van der Steen"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Kaatje"@nl ;
+    sdo:knows <https://ex.org/Person:4670ae49-dfee-57e8-0903-8d5da10563ad> ;
+    sdo:name "Kaatje van der Steen"@nl ;
+    sdo:spouse <https://ex.org/Person:74664d9d-eae8-a60c-2927-636017803690> .
+
+<https://ex.org/Person:f447316d-2dc5-fd9d-1ac1-880e9e2a7843> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:e7787fd0-efd0-fd28-d1cb-c3a8f09ae2d0> ;
+    picom:hasLifeEvent <https://ex.org/Source:e7787fd0-efd0-fd28-d1cb-c3a8f09ae2d0_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 01-01-1721"@nl ;
+    sdo:familyName "Clavant"@nl ;
+    sdo:givenName "Maria"@nl ;
+    sdo:name "Maria Clavant"@nl ;
+    sdo:parent <https://ex.org/Person:74664d9d-eae8-a60c-2927-636017803690>,
+        <https://ex.org/Person:d6ed8699-3680-2883-60ec-dc2867f8471d> .
+
+<https://ex.org/Source:e7787fd0-efd0-fd28-d1cb-c3a8f09ae2d0> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/ac9c5866-5131-42e2-8706-5c53da482b51/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/e7787fd0-efd0-fd28-d1cb-c3a8f09ae2d0"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/ac9c5866-5131-42e2-8706-5c53da482b51/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1721-01-01"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1707-1740"@nl,
+        "267"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 01-01-1721<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/267\">Inventarisnummer 267 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 267, Periode: 1..., (toegangsnr. 1004), inv.nr. 267, Doopboek van de Loots- of Oosterkerk (NH) te Leiden, 4 juli 1707 - 18 september 1740., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/e7787fd0-efd0-fd28-d1cb-c3a8f09ae2d0"^^xsd:anyURI .
+

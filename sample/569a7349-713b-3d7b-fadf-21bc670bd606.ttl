@@ -1,0 +1,89 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:0c295cd4-0217-4183-f17f-e2dd6dcf24db> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:569a7349-713b-3d7b-fadf-21bc670bd606> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Cathalyntge"@nl ;
+            pnv:literalName "Cathalyntge Gilles"@nl ;
+            pnv:patronym "Gilles"@nl ] ;
+    sdo:address "St Annestraet"@nl ;
+    sdo:description "getuige van de bruid, relatie tot de bruid: moeder, adres: St Annestraet"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Cathalyntge"@nl ;
+    sdo:name "Cathalyntge Gilles"@nl .
+
+<https://ex.org/Person:1a22246e-c529-ffb7-363b-534e95fb7d1d> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:569a7349-713b-3d7b-fadf-21bc670bd606> ;
+    picom:hasLifeEvent <https://ex.org/Source:569a7349-713b-3d7b-fadf-21bc670bd606_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Annetge"@nl ;
+            pnv:literalName "Annetge Claes"@nl ;
+            pnv:patronym "Claes"@nl ] ;
+    sdo:address "St Annestraet"@nl ;
+    sdo:birthPlace "Leyden"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Annetge"@nl ;
+    sdo:name "Annetge Claes"@nl ;
+    sdo:parent <https://ex.org/Person:0c295cd4-0217-4183-f17f-e2dd6dcf24db> ;
+    sdo:spouse <https://ex.org/Person:d180f9ee-f082-443d-10ca-d0d3bff865c1> .
+
+<https://ex.org/Person:d180f9ee-f082-443d-10ca-d0d3bff865c1> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:569a7349-713b-3d7b-fadf-21bc670bd606> ;
+    picom:hasLifeEvent <https://ex.org/Source:569a7349-713b-3d7b-fadf-21bc670bd606_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Teunis"@nl ;
+            pnv:literalName "Teunis Hendricksz"@nl ;
+            pnv:patronym "Hendricksz"@nl ] ;
+    sdo:address "St Annestraet"@nl ;
+    sdo:birthPlace "Deventer"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Teunis"@nl ;
+    sdo:hasOccupation "handschoenenmaker"@nl ;
+    sdo:knows <https://ex.org/Person:e1d443ea-4c7d-34f6-6186-05bfede6b657> ;
+    sdo:name "Teunis Hendricksz"@nl ;
+    sdo:spouse <https://ex.org/Person:1a22246e-c529-ffb7-363b-534e95fb7d1d> .
+
+<https://ex.org/Person:e1d443ea-4c7d-34f6-6186-05bfede6b657> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:569a7349-713b-3d7b-fadf-21bc670bd606> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Pieter"@nl ;
+            pnv:literalName "Pieter Maertensz"@nl ;
+            pnv:patronym "Maertensz"@nl ] ;
+    sdo:address "St Annestraet"@nl ;
+    sdo:description "getuige van de bruidegom, relatie tot de bruidegom: bekende, adres: St Annestraet"@nl ;
+    sdo:givenName "Pieter"@nl ;
+    sdo:name "Pieter Maertensz"@nl .
+
+<https://ex.org/Source:569a7349-713b-3d7b-fadf-21bc670bd606_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1685-05-25"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
+<https://ex.org/Source:569a7349-713b-3d7b-fadf-21bc670bd606> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/a4b008ad-7a20-4f88-9382-087dd6986d71/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/569a7349-713b-3d7b-fadf-21bc670bd606"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/a4b008ad-7a20-4f88-9382-087dd6986d71/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1685-05-25"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1682-1686"@nl,
+        "23"@nl,
+        "Datum ondertrouw: 25-05-1685<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/23\">Inventarisnummer 23 van archiefnummer 1004 in Archieven</a>"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 23, Periode: 16..., (toegangsnr. 1004), inv.nr. 23, Y. Kerkelijk ondertrouwboek (NH) van Leiden, 1682 - januari 1686., 242, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/569a7349-713b-3d7b-fadf-21bc670bd606"^^xsd:anyURI .
+

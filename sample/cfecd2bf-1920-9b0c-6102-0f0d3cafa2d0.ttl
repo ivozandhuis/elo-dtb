@@ -1,0 +1,95 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:cfecd2bf-1920-9b0c-6102-0f0d3cafa2d0_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1621-07-02"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:06eaadc6-7749-8878-e18e-461f72b9159b> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:cfecd2bf-1920-9b0c-6102-0f0d3cafa2d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Heijltien"@nl ;
+            pnv:literalName "Heijltien Jacobs"@nl ;
+            pnv:patronym "Jacobs"@nl ] ;
+    sdo:givenName "Heijltien"@nl ;
+    sdo:name "Heijltien Jacobs"@nl .
+
+<https://ex.org/Person:0926bfaf-807c-bd2c-2983-f707d5a89a72> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:cfecd2bf-1920-9b0c-6102-0f0d3cafa2d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Vereucu"@nl ;
+    sdo:givenName "Marijtgen"@nl ;
+    sdo:name "Marijtgen Vereucu"@nl .
+
+<https://ex.org/Person:2fbe6393-85e2-2cfa-6ff0-5418ffba43b4> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:cfecd2bf-1920-9b0c-6102-0f0d3cafa2d0> ;
+    picom:hasLifeEvent <https://ex.org/Source:cfecd2bf-1920-9b0c-6102-0f0d3cafa2d0_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Green"@nl ;
+            pnv:givenName "Pieter"@nl ;
+            pnv:literalName "Pieter van der Green"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:description "Doopdatum: 02-07-1621"@nl ;
+    sdo:familyName "van der Green"@nl ;
+    sdo:givenName "Pieter"@nl ;
+    sdo:name "Pieter van der Green"@nl ;
+    sdo:parent <https://ex.org/Person:9888bee2-8414-09b2-c601-ad51935c1eb8>,
+        <https://ex.org/Person:abafe41f-9b9a-8715-3d42-5bb7321aa8e1> .
+
+<https://ex.org/Person:9888bee2-8414-09b2-c601-ad51935c1eb8> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:cfecd2bf-1920-9b0c-6102-0f0d3cafa2d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Willemken"@nl ;
+            pnv:literalName "Willemken Jansen"@nl ;
+            pnv:patronym "Jansen"@nl ] ;
+    sdo:children <https://ex.org/Person:2fbe6393-85e2-2cfa-6ff0-5418ffba43b4> ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Willemken"@nl ;
+    sdo:knows <https://ex.org/Person:06eaadc6-7749-8878-e18e-461f72b9159b>,
+        <https://ex.org/Person:0926bfaf-807c-bd2c-2983-f707d5a89a72> ;
+    sdo:name "Willemken Jansen"@nl ;
+    sdo:spouse <https://ex.org/Person:abafe41f-9b9a-8715-3d42-5bb7321aa8e1> .
+
+<https://ex.org/Person:abafe41f-9b9a-8715-3d42-5bb7321aa8e1> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:cfecd2bf-1920-9b0c-6102-0f0d3cafa2d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Green"@nl ;
+            pnv:givenName "Jores"@nl ;
+            pnv:literalName "Jores Daniels van der Green"@nl ;
+            pnv:patronym "Daniels"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:children <https://ex.org/Person:2fbe6393-85e2-2cfa-6ff0-5418ffba43b4> ;
+    sdo:familyName "van der Green"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jores"@nl ;
+    sdo:knows <https://ex.org/Person:06eaadc6-7749-8878-e18e-461f72b9159b>,
+        <https://ex.org/Person:0926bfaf-807c-bd2c-2983-f707d5a89a72> ;
+    sdo:name "Jores Daniels van der Green"@nl ;
+    sdo:spouse <https://ex.org/Person:9888bee2-8414-09b2-c601-ad51935c1eb8> .
+
+<https://ex.org/Source:cfecd2bf-1920-9b0c-6102-0f0d3cafa2d0> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/ff820e54-112f-4096-a51e-8e36e65be8c8/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/cfecd2bf-1920-9b0c-6102-0f0d3cafa2d0"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/ff820e54-112f-4096-a51e-8e36e65be8c8/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1621-07-02"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1621-1628"@nl,
+        "232"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 02-07-1621<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/232\">Inventarisnummer 232 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 232, Periode: 1..., (toegangsnr. 1004), inv.nr. 232, Doopboek van de Hooglandse Kerk (NH) te Leiden, 1621 - 17 augustus 1628., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/cfecd2bf-1920-9b0c-6102-0f0d3cafa2d0"^^xsd:anyURI .
+

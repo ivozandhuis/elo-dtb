@@ -1,0 +1,81 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:a87d39c1-1bb2-dc61-a919-6212ba4632d0_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1716-07-28"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:07a7f17b-7d89-9728-2b67-a327f953b12b> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:a87d39c1-1bb2-dc61-a919-6212ba4632d0> ;
+    sdo:children <https://ex.org/Person:b6721ead-0015-b9d8-deeb-7b97210f1368> ;
+    sdo:familyName "Martiael"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Henricus"@nl ;
+    sdo:knows <https://ex.org/Person:680a9cfd-4b01-5f75-d211-815cadd4344d>,
+        <https://ex.org/Person:cbc8b23b-340a-01fe-0cb1-02423a836c85> ;
+    sdo:name "Henricus Martiael"@nl ;
+    sdo:spouse <https://ex.org/Person:948065b9-6759-5a89-0539-e9f1f2f6b8be> .
+
+<https://ex.org/Person:680a9cfd-4b01-5f75-d211-815cadd4344d> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:a87d39c1-1bb2-dc61-a919-6212ba4632d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Ester"@nl ;
+            pnv:literalName "Ester Pieters"@nl ;
+            pnv:patronym "Pieters"@nl ] ;
+    sdo:givenName "Ester"@nl ;
+    sdo:name "Ester Pieters"@nl .
+
+<https://ex.org/Person:948065b9-6759-5a89-0539-e9f1f2f6b8be> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:a87d39c1-1bb2-dc61-a919-6212ba4632d0> ;
+    sdo:children <https://ex.org/Person:b6721ead-0015-b9d8-deeb-7b97210f1368> ;
+    sdo:familyName "Nons"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Joanna"@nl ;
+    sdo:knows <https://ex.org/Person:680a9cfd-4b01-5f75-d211-815cadd4344d>,
+        <https://ex.org/Person:cbc8b23b-340a-01fe-0cb1-02423a836c85> ;
+    sdo:name "Joanna Nons"@nl ;
+    sdo:spouse <https://ex.org/Person:07a7f17b-7d89-9728-2b67-a327f953b12b> .
+
+<https://ex.org/Person:b6721ead-0015-b9d8-deeb-7b97210f1368> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:a87d39c1-1bb2-dc61-a919-6212ba4632d0> ;
+    picom:hasLifeEvent <https://ex.org/Source:a87d39c1-1bb2-dc61-a919-6212ba4632d0_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 28-07-1716"@nl ;
+    sdo:familyName "Martiael"@nl ;
+    sdo:givenName "Theodorus"@nl ;
+    sdo:name "Theodorus Martiael"@nl ;
+    sdo:parent <https://ex.org/Person:07a7f17b-7d89-9728-2b67-a327f953b12b>,
+        <https://ex.org/Person:948065b9-6759-5a89-0539-e9f1f2f6b8be> .
+
+<https://ex.org/Person:cbc8b23b-340a-01fe-0cb1-02423a836c85> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:a87d39c1-1bb2-dc61-a919-6212ba4632d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Nile"@nl ;
+    sdo:givenName "Dirck"@nl ;
+    sdo:name "Dirck Nile"@nl .
+
+<https://ex.org/Source:a87d39c1-1bb2-dc61-a919-6212ba4632d0> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/e0687b15-e9e3-4f9b-8ce3-a6a500673953/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/a87d39c1-1bb2-dc61-a919-6212ba4632d0"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/e0687b15-e9e3-4f9b-8ce3-a6a500673953/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1716-07-28"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1646-1788"@nl,
+        "302"@nl,
+        "Aantekeningen onderzoeker: 1) Bij achternaam vader: Marechal en Smit; 2) Gehuwd 28-04-1714 als de Smit. Vorige echtgenote Catharina Heus.<br>Doopdatum: 28-07-1716<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/302\">Inventarisnummer 302 van archiefnummer 1004 in Archieven</a>"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 302, Periode: 1..., (toegangsnr. 1004), inv.nr. 302, Doopboek van de kerk aan de Utrechtse Veer (RK) te Leiden, 1646 - 1788., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/a87d39c1-1bb2-dc61-a919-6212ba4632d0"^^xsd:anyURI .
+

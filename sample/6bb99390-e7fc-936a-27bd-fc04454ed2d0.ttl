@@ -1,0 +1,98 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:6bb99390-e7fc-936a-27bd-fc04454ed2d0_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1756-02-22"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:027471b3-7e27-04fb-78c1-9ea6198291ef> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:6bb99390-e7fc-936a-27bd-fc04454ed2d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Houdema"@nl ;
+            pnv:givenName "Albert"@nl ;
+            pnv:literalName "Albert van Houdema"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:familyName "van Houdema"@nl ;
+    sdo:givenName "Albert"@nl ;
+    sdo:name "Albert van Houdema"@nl .
+
+<https://ex.org/Person:55d0f061-0c6b-c1f6-245e-b89c80b6057f> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:6bb99390-e7fc-936a-27bd-fc04454ed2d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Houdema"@nl ;
+            pnv:givenName "Johannes"@nl ;
+            pnv:literalName "Johannes van Houdema"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:children <https://ex.org/Person:9eb47ae9-c01b-96ea-9e83-2575eadbd537> ;
+    sdo:familyName "van Houdema"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Johannes"@nl ;
+    sdo:knows <https://ex.org/Person:027471b3-7e27-04fb-78c1-9ea6198291ef>,
+        <https://ex.org/Person:62d725c6-3205-ad28-33b7-e7cc2977963f> ;
+    sdo:name "Johannes van Houdema"@nl ;
+    sdo:spouse <https://ex.org/Person:d358e820-9811-8f21-0f55-807f120dae61> .
+
+<https://ex.org/Person:62d725c6-3205-ad28-33b7-e7cc2977963f> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:6bb99390-e7fc-936a-27bd-fc04454ed2d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Kappelhof"@nl ;
+    sdo:givenName "Alida"@nl ;
+    sdo:name "Alida Kappelhof"@nl .
+
+<https://ex.org/Person:9eb47ae9-c01b-96ea-9e83-2575eadbd537> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:6bb99390-e7fc-936a-27bd-fc04454ed2d0> ;
+    picom:hasLifeEvent <https://ex.org/Source:6bb99390-e7fc-936a-27bd-fc04454ed2d0_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Houdema"@nl ;
+            pnv:givenName "Johannes Albertus"@nl ;
+            pnv:literalName "Johannes Albertus van Houdema"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:description "Doopdatum: 22-02-1756"@nl ;
+    sdo:familyName "van Houdema"@nl ;
+    sdo:givenName "Johannes Albertus"@nl ;
+    sdo:name "Johannes Albertus van Houdema"@nl ;
+    sdo:parent <https://ex.org/Person:55d0f061-0c6b-c1f6-245e-b89c80b6057f>,
+        <https://ex.org/Person:d358e820-9811-8f21-0f55-807f120dae61> .
+
+<https://ex.org/Person:d358e820-9811-8f21-0f55-807f120dae61> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:6bb99390-e7fc-936a-27bd-fc04454ed2d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Kodde"@nl ;
+            pnv:givenName "Johanna"@nl ;
+            pnv:literalName "Johanna van der Kodde"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:children <https://ex.org/Person:9eb47ae9-c01b-96ea-9e83-2575eadbd537> ;
+    sdo:familyName "van der Kodde"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Johanna"@nl ;
+    sdo:knows <https://ex.org/Person:027471b3-7e27-04fb-78c1-9ea6198291ef>,
+        <https://ex.org/Person:62d725c6-3205-ad28-33b7-e7cc2977963f> ;
+    sdo:name "Johanna van der Kodde"@nl ;
+    sdo:spouse <https://ex.org/Person:55d0f061-0c6b-c1f6-245e-b89c80b6057f> .
+
+<https://ex.org/Source:6bb99390-e7fc-936a-27bd-fc04454ed2d0> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/259d0b67-7f31-4497-8e5a-1b8a1892a664/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/6bb99390-e7fc-936a-27bd-fc04454ed2d0"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/259d0b67-7f31-4497-8e5a-1b8a1892a664/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1756-02-22"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1755-1767"@nl,
+        "252"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 22-02-1756<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/252\">Inventarisnummer 252 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 252, Periode: 1..., (toegangsnr. 1004), inv.nr. 252, Doopboek van de Hooglandse Kerk (NH) te Leiden, 1755 - 28 juni 1767., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/6bb99390-e7fc-936a-27bd-fc04454ed2d0"^^xsd:anyURI .
+

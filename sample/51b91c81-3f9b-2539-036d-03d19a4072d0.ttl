@@ -1,0 +1,77 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:51b91c81-3f9b-2539-036d-03d19a4072d0_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1770-04-15"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:254be643-ae71-31db-6f68-bcbfe8ddf62b> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:51b91c81-3f9b-2539-036d-03d19a4072d0> ;
+    sdo:children <https://ex.org/Person:3e954228-7753-ccba-7f58-5625bcdfcec1> ;
+    sdo:familyName "Mauve"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Leonorie Elisabeth"@nl ;
+    sdo:knows <https://ex.org/Person:7a49a35b-9ebf-62b9-5f96-3547963c02da>,
+        <https://ex.org/Person:e93b9e5e-cd71-db97-020a-dc22f19e6f2c> ;
+    sdo:name "Leonorie Elisabeth Mauve"@nl ;
+    sdo:spouse <https://ex.org/Person:874bb7b5-9326-6751-be17-291095961cd6> .
+
+<https://ex.org/Person:3e954228-7753-ccba-7f58-5625bcdfcec1> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:51b91c81-3f9b-2539-036d-03d19a4072d0> ;
+    picom:hasLifeEvent <https://ex.org/Source:51b91c81-3f9b-2539-036d-03d19a4072d0_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 15-04-1770"@nl ;
+    sdo:familyName "Huijbers"@nl ;
+    sdo:givenName "Dirkje"@nl ;
+    sdo:name "Dirkje Huijbers"@nl ;
+    sdo:parent <https://ex.org/Person:254be643-ae71-31db-6f68-bcbfe8ddf62b>,
+        <https://ex.org/Person:874bb7b5-9326-6751-be17-291095961cd6> .
+
+<https://ex.org/Person:7a49a35b-9ebf-62b9-5f96-3547963c02da> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:51b91c81-3f9b-2539-036d-03d19a4072d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Huijbers"@nl ;
+    sdo:givenName "Yzak"@nl ;
+    sdo:name "Yzak Huijbers"@nl .
+
+<https://ex.org/Person:874bb7b5-9326-6751-be17-291095961cd6> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:51b91c81-3f9b-2539-036d-03d19a4072d0> ;
+    sdo:children <https://ex.org/Person:3e954228-7753-ccba-7f58-5625bcdfcec1> ;
+    sdo:familyName "Huijbers"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jan"@nl ;
+    sdo:knows <https://ex.org/Person:7a49a35b-9ebf-62b9-5f96-3547963c02da>,
+        <https://ex.org/Person:e93b9e5e-cd71-db97-020a-dc22f19e6f2c> ;
+    sdo:name "Jan Huijbers"@nl ;
+    sdo:spouse <https://ex.org/Person:254be643-ae71-31db-6f68-bcbfe8ddf62b> .
+
+<https://ex.org/Person:e93b9e5e-cd71-db97-020a-dc22f19e6f2c> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:51b91c81-3f9b-2539-036d-03d19a4072d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Blijkersveld"@nl ;
+    sdo:givenName "Dirkje"@nl ;
+    sdo:name "Dirkje Blijkersveld"@nl .
+
+<https://ex.org/Source:51b91c81-3f9b-2539-036d-03d19a4072d0> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/3f591905-7050-4dff-93a7-334778494bf5/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/51b91c81-3f9b-2539-036d-03d19a4072d0"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/3f591905-7050-4dff-93a7-334778494bf5/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1770-04-15"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1766-1811"@nl,
+        "264"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 15-04-1770<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/264\">Inventarisnummer 264 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 264, Periode: 1..., (toegangsnr. 1004), inv.nr. 264, Doopboek van de Nieuwe- of Marekerk (NH) te Leiden, 21 september 1766 - 1811., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/51b91c81-3f9b-2539-036d-03d19a4072d0"^^xsd:anyURI .
+

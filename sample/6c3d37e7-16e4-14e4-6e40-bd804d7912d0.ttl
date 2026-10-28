@@ -1,0 +1,71 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:6c3d37e7-16e4-14e4-6e40-bd804d7912d0_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1806-03-23"@nl ;
+    picom:eventPlace "Zoeterwoude"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:2155ccd5-4dff-4f8b-f678-d780ccac1203> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:6c3d37e7-16e4-14e4-6e40-bd804d7912d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Rossum"@nl ;
+            pnv:givenName "Teunis Pieter"@nl ;
+            pnv:literalName "Teunis Pieter van Rossum"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:children <https://ex.org/Person:e50f9318-9928-2414-d5d9-02389b43f178> ;
+    sdo:familyName "van Rossum"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Teunis Pieter"@nl ;
+    sdo:name "Teunis Pieter van Rossum"@nl ;
+    sdo:spouse <https://ex.org/Person:257d7c28-eabb-0a92-bdc7-aa10e0321722> .
+
+<https://ex.org/Person:257d7c28-eabb-0a92-bdc7-aa10e0321722> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:6c3d37e7-16e4-14e4-6e40-bd804d7912d0> ;
+    sdo:children <https://ex.org/Person:e50f9318-9928-2414-d5d9-02389b43f178> ;
+    sdo:familyName "Keijzer"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Angenieta"@nl ;
+    sdo:name "Angenieta Keijzer"@nl ;
+    sdo:spouse <https://ex.org/Person:2155ccd5-4dff-4f8b-f678-d780ccac1203> .
+
+<https://ex.org/Person:e50f9318-9928-2414-d5d9-02389b43f178> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:6c3d37e7-16e4-14e4-6e40-bd804d7912d0> ;
+    picom:hasLifeEvent <https://ex.org/Source:6c3d37e7-16e4-14e4-6e40-bd804d7912d0_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Rossum"@nl ;
+            pnv:givenName "Arie"@nl ;
+            pnv:literalName "Arie van Rossum"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:birthDate "1806-03-19"^^xsd:date ;
+    sdo:description "Doopdatum: 23-03-1806"@nl ;
+    sdo:familyName "van Rossum"@nl ;
+    sdo:givenName "Arie"@nl ;
+    sdo:name "Arie van Rossum"@nl ;
+    sdo:parent <https://ex.org/Person:2155ccd5-4dff-4f8b-f678-d780ccac1203>,
+        <https://ex.org/Person:257d7c28-eabb-0a92-bdc7-aa10e0321722> .
+
+<https://ex.org/Source:6c3d37e7-16e4-14e4-6e40-bd804d7912d0> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/6db2993f-3427-400a-8024-11592a3cddae/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/6c3d37e7-16e4-14e4-6e40-bd804d7912d0"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/6db2993f-3427-400a-8024-11592a3cddae/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1806-03-23"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1028"@nl,
+        "1732-1812"@nl,
+        "Doopdatum: 23-03-1806<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/0500B/file/1028\">Inventarisnummer 1028 van archiefnummer 0500B in Archieven</a>"@nl,
+        "Gemeentebestuur van Zoeterwoude (tot 1803: de Municipaliteit) (1734-1960)"@nl ;
+    sdo:locationCreated "Zoeterwoude"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Gemeentebestuur van Zoeterwoude (tot 1803: de Municipaliteit) (1734-1960), Deel: 102..., (toegangsnr. 0500B), inv.nr. 1028, Doopboek (NH) van Zoeterwoude, 1732 jun - 1812, 103, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/6c3d37e7-16e4-14e4-6e40-bd804d7912d0"^^xsd:anyURI .
+

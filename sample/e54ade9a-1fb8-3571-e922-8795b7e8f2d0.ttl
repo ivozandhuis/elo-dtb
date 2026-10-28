@@ -1,0 +1,104 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:e54ade9a-1fb8-3571-e922-8795b7e8f2d0_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1653-03-02"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:0af52d04-3aee-abd7-0158-93d764f8c9b1> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:e54ade9a-1fb8-3571-e922-8795b7e8f2d0> ;
+    picom:hasLifeEvent <https://ex.org/Source:e54ade9a-1fb8-3571-e922-8795b7e8f2d0_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 02-03-1653"@nl ;
+    sdo:givenName "Maria"@nl ;
+    sdo:name "Maria"@nl ;
+    sdo:parent <https://ex.org/Person:4c352e3d-f60c-cbed-c93a-6ebede9dcba1>,
+        <https://ex.org/Person:6a8f02f0-e5ba-dece-1e29-2bee25518696> .
+
+<https://ex.org/Person:1dd50830-269c-2254-ab0e-5ea1deb2d0d4> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:e54ade9a-1fb8-3571-e922-8795b7e8f2d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Dirck"@nl ;
+            pnv:literalName "Dirck Claesz"@nl ;
+            pnv:patronym "Claesz"@nl ] ;
+    sdo:givenName "Dirck"@nl ;
+    sdo:name "Dirck Claesz"@nl .
+
+<https://ex.org/Person:4c352e3d-f60c-cbed-c93a-6ebede9dcba1> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:e54ade9a-1fb8-3571-e922-8795b7e8f2d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Jan"@nl ;
+            pnv:literalName "Jan Dirckxz"@nl ;
+            pnv:patronym "Dirckxz"@nl ] ;
+    sdo:children <https://ex.org/Person:0af52d04-3aee-abd7-0158-93d764f8c9b1> ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jan"@nl ;
+    sdo:knows <https://ex.org/Person:1dd50830-269c-2254-ab0e-5ea1deb2d0d4>,
+        <https://ex.org/Person:aec5d668-60ab-db3b-937b-4ac1f7bafe43>,
+        <https://ex.org/Person:e0e90b70-d1f9-1769-f83d-1a4d5441f101> ;
+    sdo:name "Jan Dirckxz"@nl ;
+    sdo:spouse <https://ex.org/Person:6a8f02f0-e5ba-dece-1e29-2bee25518696> .
+
+<https://ex.org/Person:6a8f02f0-e5ba-dece-1e29-2bee25518696> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:e54ade9a-1fb8-3571-e922-8795b7e8f2d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Kouwenhoven"@nl ;
+            pnv:givenName "Geertje"@nl ;
+            pnv:literalName "Geertje Maertens van Kouwenhoven"@nl ;
+            pnv:patronym "Maertens"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:children <https://ex.org/Person:0af52d04-3aee-abd7-0158-93d764f8c9b1> ;
+    sdo:familyName "van Kouwenhoven"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Geertje"@nl ;
+    sdo:knows <https://ex.org/Person:1dd50830-269c-2254-ab0e-5ea1deb2d0d4>,
+        <https://ex.org/Person:aec5d668-60ab-db3b-937b-4ac1f7bafe43>,
+        <https://ex.org/Person:e0e90b70-d1f9-1769-f83d-1a4d5441f101> ;
+    sdo:name "Geertje Maertens van Kouwenhoven"@nl ;
+    sdo:spouse <https://ex.org/Person:4c352e3d-f60c-cbed-c93a-6ebede9dcba1> .
+
+<https://ex.org/Person:aec5d668-60ab-db3b-937b-4ac1f7bafe43> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:e54ade9a-1fb8-3571-e922-8795b7e8f2d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Annitje"@nl ;
+            pnv:literalName "Annitje Cornelis"@nl ;
+            pnv:patronym "Cornelis"@nl ] ;
+    sdo:givenName "Annitje"@nl ;
+    sdo:name "Annitje Cornelis"@nl .
+
+<https://ex.org/Person:e0e90b70-d1f9-1769-f83d-1a4d5441f101> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:e54ade9a-1fb8-3571-e922-8795b7e8f2d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Annitje"@nl ;
+            pnv:literalName "Annitje Gerrits"@nl ;
+            pnv:patronym "Gerrits"@nl ] ;
+    sdo:givenName "Annitje"@nl ;
+    sdo:name "Annitje Gerrits"@nl .
+
+<https://ex.org/Source:e54ade9a-1fb8-3571-e922-8795b7e8f2d0> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/1b8b4466-502f-4579-9c95-3ff22c2c3f1d/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/e54ade9a-1fb8-3571-e922-8795b7e8f2d0"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/1b8b4466-502f-4579-9c95-3ff22c2c3f1d/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1653-03-02"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1652-1659"@nl,
+        "236"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 02-03-1653<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/236\">Inventarisnummer 236 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 236, Periode: 1..., (toegangsnr. 1004), inv.nr. 236, Doopboek van de Hooglandse Kerk (NH) te Leiden, 13 augustus 1652 - 29 juni 1659., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/e54ade9a-1fb8-3571-e922-8795b7e8f2d0"^^xsd:anyURI .
+

@@ -1,0 +1,55 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:e60935b0-6a5c-8d89-0ef3-3f23ae659722> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:2d15dd81-a69d-29b9-02b4-f81df7ad6606> ;
+    picom:hasLifeEvent <https://ex.org/Source:2d15dd81-a69d-29b9-02b4-f81df7ad6606_huwelijk_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:birthPlace "Bremen"@nl ;
+    sdo:description "Burgerlijke staat voor het huwelijk: j.m."@nl ;
+    sdo:familyName "Sterenvegs"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Claes"@nl ;
+    sdo:hasOccupation "verversknecht"@nl ;
+    sdo:name "Claes Sterenvegs"@nl ;
+    sdo:spouse <https://ex.org/Person:ed41c61a-32da-16ee-7863-e295e5a36e42> .
+
+<https://ex.org/Person:ed41c61a-32da-16ee-7863-e295e5a36e42> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:2d15dd81-a69d-29b9-02b4-f81df7ad6606> ;
+    picom:hasLifeEvent <https://ex.org/Source:2d15dd81-a69d-29b9-02b4-f81df7ad6606_huwelijk_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:birthPlace "Altena"@nl ;
+    sdo:description "Burgerlijke staat voor het huwelijk: j.d."@nl ;
+    sdo:familyName "Nieuhuijs"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Anna"@nl ;
+    sdo:name "Anna Nieuhuijs"@nl ;
+    sdo:spouse <https://ex.org/Person:e60935b0-6a5c-8d89-0ef3-3f23ae659722> .
+
+<https://ex.org/Source:2d15dd81-a69d-29b9-02b4-f81df7ad6606> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/ee5844bd-0bbf-4364-96eb-7bf8b07a85f6/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/2d15dd81-a69d-29b9-02b4-f81df7ad6606"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/ee5844bd-0bbf-4364-96eb-7bf8b07a85f6/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "Datum trouwen: 1659<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/0028/file/48\">Inventarisnummer 48 van archiefnummer 0028 in Archieven</a>"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1646-1897"@nl,
+        "48"@nl,
+        "Datum trouwen: 1659<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/0028/file/48\">Inventarisnummer 48 van archiefnummer 0028 in Archieven</a>"@nl,
+        "Evangelisch-Lutherse gemeente, Leiden"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Evangelisch-Lutherse gemeente, Leiden, Deel: 48, Periode: 1646-1897, (toegangsnr. 0028), inv.nr. 48, Huwelijksregisters, 1646-1809, 1824-1865, 1866-1897., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/2d15dd81-a69d-29b9-02b4-f81df7ad6606"^^xsd:anyURI .
+
+<https://ex.org/Source:2d15dd81-a69d-29b9-02b4-f81df7ad6606_huwelijk_event> a picom:LifeEvent ;
+    picom:eventDate "Datum trouwen: 1659<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/0028/file/48\">Inventarisnummer 48 van archiefnummer 0028 in Archieven</a>"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:83 .
+

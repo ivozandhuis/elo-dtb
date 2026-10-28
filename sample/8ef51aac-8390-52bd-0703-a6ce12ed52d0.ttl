@@ -1,0 +1,83 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:8ef51aac-8390-52bd-0703-a6ce12ed52d0_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1732-05-07"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:2b8c2d1b-eccb-7cbb-ee20-c28794f19909> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:8ef51aac-8390-52bd-0703-a6ce12ed52d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Jong"@nl ;
+            pnv:givenName "Margarita"@nl ;
+            pnv:literalName "Margarita de Jong"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:familyName "de Jong"@nl ;
+    sdo:givenName "Margarita"@nl ;
+    sdo:name "Margarita de Jong"@nl .
+
+<https://ex.org/Person:64bdb467-6154-e891-d555-d81daec175f6> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:8ef51aac-8390-52bd-0703-a6ce12ed52d0> ;
+    sdo:children <https://ex.org/Person:d09b9222-bbea-9518-c47f-77e1440c418a> ;
+    sdo:familyName "Leemans"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Catarina"@nl ;
+    sdo:knows <https://ex.org/Person:2b8c2d1b-eccb-7cbb-ee20-c28794f19909>,
+        <https://ex.org/Person:b2416b7a-a0d7-58e3-556f-bd960d9900ad> ;
+    sdo:name "Catarina Leemans"@nl ;
+    sdo:spouse <https://ex.org/Person:c8d251c6-1ab8-e02b-622b-d5841e83fa41> .
+
+<https://ex.org/Person:b2416b7a-a0d7-58e3-556f-bd960d9900ad> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:8ef51aac-8390-52bd-0703-a6ce12ed52d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Liebran"@nl ;
+    sdo:givenName "Samuel"@nl ;
+    sdo:name "Samuel Liebran"@nl .
+
+<https://ex.org/Person:c8d251c6-1ab8-e02b-622b-d5841e83fa41> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:8ef51aac-8390-52bd-0703-a6ce12ed52d0> ;
+    sdo:children <https://ex.org/Person:d09b9222-bbea-9518-c47f-77e1440c418a> ;
+    sdo:familyName "Liebran"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Mattheus"@nl ;
+    sdo:knows <https://ex.org/Person:2b8c2d1b-eccb-7cbb-ee20-c28794f19909>,
+        <https://ex.org/Person:b2416b7a-a0d7-58e3-556f-bd960d9900ad> ;
+    sdo:name "Mattheus Liebran"@nl ;
+    sdo:spouse <https://ex.org/Person:64bdb467-6154-e891-d555-d81daec175f6> .
+
+<https://ex.org/Person:d09b9222-bbea-9518-c47f-77e1440c418a> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:8ef51aac-8390-52bd-0703-a6ce12ed52d0> ;
+    picom:hasLifeEvent <https://ex.org/Source:8ef51aac-8390-52bd-0703-a6ce12ed52d0_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 07-05-1732"@nl ;
+    sdo:familyName "Liebran"@nl ;
+    sdo:givenName "Maria"@nl ;
+    sdo:name "Maria Liebran"@nl ;
+    sdo:parent <https://ex.org/Person:64bdb467-6154-e891-d555-d81daec175f6>,
+        <https://ex.org/Person:c8d251c6-1ab8-e02b-622b-d5841e83fa41> .
+
+<https://ex.org/Source:8ef51aac-8390-52bd-0703-a6ce12ed52d0> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/c6afa0bc-29fd-4f43-906c-b36e0cbbbe5d/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/8ef51aac-8390-52bd-0703-a6ce12ed52d0"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/c6afa0bc-29fd-4f43-906c-b36e0cbbbe5d/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1732-05-07"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1725-1740"@nl,
+        "228"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 07-05-1732<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/228\">Inventarisnummer 228 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 228, Periode: 1..., (toegangsnr. 1004), inv.nr. 228, Doopboek van de Pieterskerk (NH) te Leiden, 1725 - 1740., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/8ef51aac-8390-52bd-0703-a6ce12ed52d0"^^xsd:anyURI .
+

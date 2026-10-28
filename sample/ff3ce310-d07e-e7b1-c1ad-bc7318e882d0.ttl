@@ -1,0 +1,108 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:ff3ce310-d07e-e7b1-c1ad-bc7318e882d0_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1654-08-02"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:3038e213-40e9-46da-deeb-912243e612f0> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:ff3ce310-d07e-e7b1-c1ad-bc7318e882d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Dam"@nl ;
+            pnv:givenName "Josina"@nl ;
+            pnv:literalName "Josina van Dam"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:familyName "van Dam"@nl ;
+    sdo:givenName "Josina"@nl ;
+    sdo:name "Josina van Dam"@nl .
+
+<https://ex.org/Person:3433eb67-ea89-5d7c-6548-502b84ca2158> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:ff3ce310-d07e-e7b1-c1ad-bc7318e882d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Schrevelius"@nl ;
+    sdo:givenName "Cornelius"@nl ;
+    sdo:name "Cornelius Schrevelius"@nl .
+
+<https://ex.org/Person:3f657301-dabc-6000-b1c6-178caac83bf6> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:ff3ce310-d07e-e7b1-c1ad-bc7318e882d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Poelgeest"@nl ;
+            pnv:givenName "Dirck"@nl ;
+            pnv:literalName "Dirck Willemsz van Poelgeest"@nl ;
+            pnv:patronym "Willemsz"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:children <https://ex.org/Person:e8f14604-5b58-7140-f04f-50ac4c18ff9b> ;
+    sdo:familyName "van Poelgeest"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Dirck"@nl ;
+    sdo:knows <https://ex.org/Person:3038e213-40e9-46da-deeb-912243e612f0>,
+        <https://ex.org/Person:3433eb67-ea89-5d7c-6548-502b84ca2158>,
+        <https://ex.org/Person:b95f9435-27f7-7816-a660-49332148f940> ;
+    sdo:name "Dirck Willemsz van Poelgeest"@nl ;
+    sdo:spouse <https://ex.org/Person:ce4f8df6-96d0-d173-bf8f-6957e7014e0a> .
+
+<https://ex.org/Person:b95f9435-27f7-7816-a660-49332148f940> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:ff3ce310-d07e-e7b1-c1ad-bc7318e882d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Hackes"@nl ;
+    sdo:givenName "François"@nl ;
+    sdo:name "François Hackes"@nl .
+
+<https://ex.org/Person:ce4f8df6-96d0-d173-bf8f-6957e7014e0a> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:ff3ce310-d07e-e7b1-c1ad-bc7318e882d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Spreeuwen"@nl ;
+            pnv:givenName "Marij"@nl ;
+            pnv:literalName "Marij van Spreeuwen"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:children <https://ex.org/Person:e8f14604-5b58-7140-f04f-50ac4c18ff9b> ;
+    sdo:familyName "van Spreeuwen"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Marij"@nl ;
+    sdo:knows <https://ex.org/Person:3038e213-40e9-46da-deeb-912243e612f0>,
+        <https://ex.org/Person:3433eb67-ea89-5d7c-6548-502b84ca2158>,
+        <https://ex.org/Person:b95f9435-27f7-7816-a660-49332148f940> ;
+    sdo:name "Marij van Spreeuwen"@nl ;
+    sdo:spouse <https://ex.org/Person:3f657301-dabc-6000-b1c6-178caac83bf6> .
+
+<https://ex.org/Person:e8f14604-5b58-7140-f04f-50ac4c18ff9b> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:ff3ce310-d07e-e7b1-c1ad-bc7318e882d0> ;
+    picom:hasLifeEvent <https://ex.org/Source:ff3ce310-d07e-e7b1-c1ad-bc7318e882d0_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Poelgeest"@nl ;
+            pnv:givenName "Cornelis"@nl ;
+            pnv:literalName "Cornelis van Poelgeest"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:description "Doopdatum: 02-08-1654"@nl ;
+    sdo:familyName "van Poelgeest"@nl ;
+    sdo:givenName "Cornelis"@nl ;
+    sdo:name "Cornelis van Poelgeest"@nl ;
+    sdo:parent <https://ex.org/Person:3f657301-dabc-6000-b1c6-178caac83bf6>,
+        <https://ex.org/Person:ce4f8df6-96d0-d173-bf8f-6957e7014e0a> .
+
+<https://ex.org/Source:ff3ce310-d07e-e7b1-c1ad-bc7318e882d0> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/fc5e8c1c-b072-4f82-9b7f-3d387ef7bb38/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/ff3ce310-d07e-e7b1-c1ad-bc7318e882d0"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/fc5e8c1c-b072-4f82-9b7f-3d387ef7bb38/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1654-08-02"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1652-1659"@nl,
+        "236"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Toevoeging onderzoeker: Franchois Hackes<br>Doopdatum: 02-08-1654<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/236\">Inventarisnummer 236 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 236, Periode: 1..., (toegangsnr. 1004), inv.nr. 236, Doopboek van de Hooglandse Kerk (NH) te Leiden, 13 augustus 1652 - 29 juni 1659., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/ff3ce310-d07e-e7b1-c1ad-bc7318e882d0"^^xsd:anyURI .
+

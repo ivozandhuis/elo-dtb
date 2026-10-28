@@ -1,0 +1,85 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:74782a23-3faa-fe6c-97ed-6bdf916402d0_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1728-11-14"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:821f850f-dd74-d4e1-ffb1-17d8ff9f9b39> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:74782a23-3faa-fe6c-97ed-6bdf916402d0> ;
+    picom:hasLifeEvent <https://ex.org/Source:74782a23-3faa-fe6c-97ed-6bdf916402d0_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 14-11-1728"@nl ;
+    sdo:givenName "Francijntje"@nl ;
+    sdo:name "Francijntje"@nl ;
+    sdo:parent <https://ex.org/Person:c7551e42-fa4f-ed00-c773-4c95388d916a>,
+        <https://ex.org/Person:f7af1699-5120-7bc4-a5c7-21d2cfa425a8> .
+
+<https://ex.org/Person:88fd0573-0bbc-e8d8-2e52-fdb05ee7571c> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:74782a23-3faa-fe6c-97ed-6bdf916402d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Os"@nl ;
+    sdo:givenName "Marij"@nl ;
+    sdo:name "Marij Os"@nl .
+
+<https://ex.org/Person:c5595884-2bbf-9a48-0b09-4e218f89f5c5> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:74782a23-3faa-fe6c-97ed-6bdf916402d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Mulder"@nl ;
+            pnv:givenName "Frans"@nl ;
+            pnv:literalName "Frans de Mulder"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:familyName "de Mulder"@nl ;
+    sdo:givenName "Frans"@nl ;
+    sdo:name "Frans de Mulder"@nl .
+
+<https://ex.org/Person:c7551e42-fa4f-ed00-c773-4c95388d916a> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:74782a23-3faa-fe6c-97ed-6bdf916402d0> ;
+    sdo:children <https://ex.org/Person:821f850f-dd74-d4e1-ffb1-17d8ff9f9b39> ;
+    sdo:familyName "Wep"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Sandrina"@nl ;
+    sdo:knows <https://ex.org/Person:88fd0573-0bbc-e8d8-2e52-fdb05ee7571c>,
+        <https://ex.org/Person:c5595884-2bbf-9a48-0b09-4e218f89f5c5> ;
+    sdo:name "Sandrina Wep"@nl ;
+    sdo:spouse <https://ex.org/Person:f7af1699-5120-7bc4-a5c7-21d2cfa425a8> .
+
+<https://ex.org/Person:f7af1699-5120-7bc4-a5c7-21d2cfa425a8> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:74782a23-3faa-fe6c-97ed-6bdf916402d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Frans"@nl ;
+            pnv:literalName "Frans Jansz"@nl ;
+            pnv:patronym "Jansz"@nl ] ;
+    sdo:children <https://ex.org/Person:821f850f-dd74-d4e1-ffb1-17d8ff9f9b39> ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Frans"@nl ;
+    sdo:knows <https://ex.org/Person:88fd0573-0bbc-e8d8-2e52-fdb05ee7571c>,
+        <https://ex.org/Person:c5595884-2bbf-9a48-0b09-4e218f89f5c5> ;
+    sdo:name "Frans Jansz"@nl ;
+    sdo:spouse <https://ex.org/Person:c7551e42-fa4f-ed00-c773-4c95388d916a> .
+
+<https://ex.org/Source:74782a23-3faa-fe6c-97ed-6bdf916402d0> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/8286f69a-6ca0-4140-99b8-acbae0be1497/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/74782a23-3faa-fe6c-97ed-6bdf916402d0"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/8286f69a-6ca0-4140-99b8-acbae0be1497/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1728-11-14"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1726-1733"@nl,
+        "249"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 14-11-1728<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/249\">Inventarisnummer 249 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 249, Periode: 1..., (toegangsnr. 1004), inv.nr. 249, Doopboek van de Hooglandse Kerk (NH) te Leiden, 3 maart 1726 - 28 april 1733., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/74782a23-3faa-fe6c-97ed-6bdf916402d0"^^xsd:anyURI .
+

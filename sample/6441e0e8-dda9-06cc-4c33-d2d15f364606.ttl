@@ -1,0 +1,68 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:28327c52-c3a4-30c8-350f-24891c1c1fb8> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:6441e0e8-dda9-06cc-4c33-d2d15f364606> ;
+    picom:hasLifeEvent <https://ex.org/Source:6441e0e8-dda9-06cc-4c33-d2d15f364606_huwelijk_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Leeuwen"@nl ;
+            pnv:givenName "Susanna"@nl ;
+            pnv:literalName "Susanna van Leeuwen"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:address "Haarlem"@nl ;
+    sdo:familyName "van Leeuwen"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Susanna"@nl ;
+    sdo:name "Susanna van Leeuwen"@nl ;
+    sdo:spouse <https://ex.org/Person:70d03525-0e17-6d86-7ed6-bdc885ba08f9> .
+
+<https://ex.org/Person:70d03525-0e17-6d86-7ed6-bdc885ba08f9> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:6441e0e8-dda9-06cc-4c33-d2d15f364606> ;
+    picom:hasLifeEvent <https://ex.org/Source:6441e0e8-dda9-06cc-4c33-d2d15f364606_huwelijk_event> ;
+    picom:hasRole picot_roles:574 ;
+    picom:isWidOf <https://ex.org/Person:96c71140-2410-a9c4-2f83-684b69468d12> ;
+    sdo:address "Rhijnsburg"@nl ;
+    sdo:familyName "Lammens"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Simon"@nl ;
+    sdo:name "Simon Lammens"@nl ;
+    sdo:spouse <https://ex.org/Person:28327c52-c3a4-30c8-350f-24891c1c1fb8> .
+
+<https://ex.org/Person:96c71140-2410-a9c4-2f83-684b69468d12> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:6441e0e8-dda9-06cc-4c33-d2d15f364606> ;
+    picom:deceased true ;
+    sdo:description "Relatie tot bruidegom: wed."@nl ;
+    sdo:familyName "Vlaming"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Susanna"@nl ;
+    sdo:name "Susanna Vlaming"@nl .
+
+<https://ex.org/Source:6441e0e8-dda9-06cc-4c33-d2d15f364606_huwelijk_event> a picom:LifeEvent ;
+    picom:eventDate "1721-06-01"@nl ;
+    picom:eventPlace "Rijnsburg"@nl ;
+    picom:eventType picot_eventtypes:83 .
+
+<https://ex.org/Source:6441e0e8-dda9-06cc-4c33-d2d15f364606> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/98d0fac0-52e5-4773-8431-fdcc6c5a3728/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/6441e0e8-dda9-06cc-4c33-d2d15f364606"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/98d0fac0-52e5-4773-8431-fdcc6c5a3728/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1721-06-01"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1217"@nl,
+        "1627-1807"@nl,
+        "Ambachts-, Dorps- en Gemeentebestuur van Rijnsburg"@nl,
+        "Datum trouwen: 01-06-1721<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/0700/file/1217\">Inventarisnummer 1217 van archiefnummer 0700 in Archieven</a>"@nl ;
+    sdo:locationCreated "Rijnsburg"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Ambachts-, Dorps- en Gemeentebestuur van Rijnsburg, Deel: 1217, Periode: 1627-1807, (toegangsnr. 0700), inv.nr. 1217, Trouwboek (NH) van Rijnsburg, 1627 - 1654, 1691 - 1807., 85, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/6441e0e8-dda9-06cc-4c33-d2d15f364606"^^xsd:anyURI .
+

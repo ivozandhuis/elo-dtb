@@ -1,0 +1,87 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:11c0d3d2-1447-4513-56ef-309717302262> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:fa81e44a-93b9-b51a-3ba5-af36bff4a606> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Westerloo"@nl ;
+            pnv:givenName "Gertrudis"@nl ;
+            pnv:literalName "Gertrudis van Westerloo"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:familyName "van Westerloo"@nl ;
+    sdo:givenName "Gertrudis"@nl ;
+    sdo:name "Gertrudis van Westerloo"@nl .
+
+<https://ex.org/Person:4a25e382-d314-28cf-7f88-37148a555bad> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:fa81e44a-93b9-b51a-3ba5-af36bff4a606> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Nijs"@nl ;
+            pnv:givenName "Catharina"@nl ;
+            pnv:literalName "Catharina de Nijs"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:familyName "de Nijs"@nl ;
+    sdo:givenName "Catharina"@nl ;
+    sdo:name "Catharina de Nijs"@nl .
+
+<https://ex.org/Person:13b7de67-5077-0377-cbf4-001664d9b0b9> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:fa81e44a-93b9-b51a-3ba5-af36bff4a606> ;
+    picom:hasLifeEvent <https://ex.org/Source:fa81e44a-93b9-b51a-3ba5-af36bff4a606_huwelijk_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Tol"@nl ;
+            pnv:givenName "Martinus"@nl ;
+            pnv:literalName "Martinus Leendersze van Tol"@nl ;
+            pnv:patronym "Leendersze"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:familyName "van Tol"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Martinus"@nl ;
+    sdo:name "Martinus Leendersze van Tol"@nl ;
+    sdo:spouse <https://ex.org/Person:fa6540a0-9d18-d575-23ab-f6d72b526338> .
+
+<https://ex.org/Person:fa6540a0-9d18-d575-23ab-f6d72b526338> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:fa81e44a-93b9-b51a-3ba5-af36bff4a606> ;
+    picom:hasLifeEvent <https://ex.org/Source:fa81e44a-93b9-b51a-3ba5-af36bff4a606_huwelijk_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Veen"@nl ;
+            pnv:givenName "Anna"@nl ;
+            pnv:literalName "Anna Cornelisze van Veen"@nl ;
+            pnv:patronym "Cornelisze"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:familyName "van Veen"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Anna"@nl ;
+    sdo:name "Anna Cornelisze van Veen"@nl ;
+    sdo:spouse <https://ex.org/Person:13b7de67-5077-0377-cbf4-001664d9b0b9> .
+
+<https://ex.org/Source:fa81e44a-93b9-b51a-3ba5-af36bff4a606_huwelijk_event> a picom:LifeEvent ;
+    picom:eventDate "1774-11-21"@nl ;
+    picom:eventPlace "Alkemade"@nl ;
+    picom:eventType picot_eventtypes:83 .
+
+<https://ex.org/Source:fa81e44a-93b9-b51a-3ba5-af36bff4a606> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/2666e418-ecf1-4661-893f-9a54df5bc22a/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/fa81e44a-93b9-b51a-3ba5-af36bff4a606"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/2666e418-ecf1-4661-893f-9a54df5bc22a/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1774-11-21"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1770-1810"@nl,
+        "20"@nl,
+        "Datum trouwen: 21-11-1774<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/170.1.05/file/20\">Inventarisnummer 20 van archiefnummer 170.1.05 in Archieven</a>"@nl,
+        "Doop-, trouw- en begraafregisters van Alkemade"@nl ;
+    sdo:locationCreated "Alkemade"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw- en begraafregisters van Alkemade, Deel: 20, Periode: 1770-1810, (toegangsnr. 170.1.05), inv.nr. 20, Doopboek en trouwboek (RK) van Rijpwetering, 30 mei 1770 - 1810., 16, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/fa81e44a-93b9-b51a-3ba5-af36bff4a606"^^xsd:anyURI .
+

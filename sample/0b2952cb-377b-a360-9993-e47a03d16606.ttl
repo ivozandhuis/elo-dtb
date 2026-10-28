@@ -1,0 +1,59 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:40c05e04-dda6-fc8b-5dbd-b41fcf5ea9b6> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:0b2952cb-377b-a360-9993-e47a03d16606> ;
+    picom:hasLifeEvent <https://ex.org/Source:0b2952cb-377b-a360-9993-e47a03d16606_huwelijk_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Aeltje"@nl ;
+            pnv:literalName "Aeltje Jans"@nl ;
+            pnv:patronym "Jans"@nl ] ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Aeltje"@nl ;
+    sdo:name "Aeltje Jans"@nl ;
+    sdo:spouse <https://ex.org/Person:9e9f3c55-20a8-712b-cef0-ce67f53d47f5> .
+
+<https://ex.org/Person:9e9f3c55-20a8-712b-cef0-ce67f53d47f5> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:0b2952cb-377b-a360-9993-e47a03d16606> ;
+    picom:hasLifeEvent <https://ex.org/Source:0b2952cb-377b-a360-9993-e47a03d16606_huwelijk_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Smeth"@nl ;
+            pnv:givenName "Jan"@nl ;
+            pnv:literalName "Jan Michiel Smeth"@nl ;
+            pnv:patronym "Michiel"@nl ] ;
+    sdo:familyName "Smeth"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jan"@nl ;
+    sdo:name "Jan Michiel Smeth"@nl ;
+    sdo:spouse <https://ex.org/Person:40c05e04-dda6-fc8b-5dbd-b41fcf5ea9b6> .
+
+<https://ex.org/Source:0b2952cb-377b-a360-9993-e47a03d16606> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/70cdc79c-eddf-49b9-8e53-ea2aa361b71a/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/0b2952cb-377b-a360-9993-e47a03d16606"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/70cdc79c-eddf-49b9-8e53-ea2aa361b71a/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1649-11-14"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1645-1671"@nl,
+        "715"@nl,
+        "Gemeente Warmond (1575-1930)"@nl,
+        "Sijn hier op betooch van Leyden den 14 november getrouwt.<br>Datum trouwen: 14-11-1649<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/0600/file/715\">Inventarisnummer 715 van archiefnummer 0600 in Archieven</a>"@nl ;
+    sdo:locationCreated "Warmond"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Gemeente Warmond (1575-1930), Deel: 715, Periode: 1645-1671, (toegangsnr. 0600), inv.nr. 715, Doopboek en trouwboek (NH) van Warmond, 1645 - 1721., 37, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/0b2952cb-377b-a360-9993-e47a03d16606"^^xsd:anyURI .
+
+<https://ex.org/Source:0b2952cb-377b-a360-9993-e47a03d16606_huwelijk_event> a picom:LifeEvent ;
+    picom:eventDate "1649-11-14"@nl ;
+    picom:eventPlace "Warmond"@nl ;
+    picom:eventType picot_eventtypes:83 .
+

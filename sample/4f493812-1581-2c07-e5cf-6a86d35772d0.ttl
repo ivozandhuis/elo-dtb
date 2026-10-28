@@ -1,0 +1,91 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:4f493812-1581-2c07-e5cf-6a86d35772d0_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1648-09-13"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:2521e560-9e95-1a7e-d09f-3fca5b1208f2> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:4f493812-1581-2c07-e5cf-6a86d35772d0> ;
+    sdo:children <https://ex.org/Person:a8e80ff6-3fb1-8035-75e8-68cbada3410b> ;
+    sdo:familyName "Roussel"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Pierre"@nl ;
+    sdo:knows <https://ex.org/Person:48fad0bb-8f8a-0b53-3999-46bfad89b7c7>,
+        <https://ex.org/Person:6fb4e310-28a8-8bf0-b3af-fb0c578e6e66> ;
+    sdo:name "Pierre Roussel"@nl ;
+    sdo:spouse <https://ex.org/Person:487e6f89-2b53-04fd-78cc-c70507300bad> .
+
+<https://ex.org/Person:487e6f89-2b53-04fd-78cc-c70507300bad> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:4f493812-1581-2c07-e5cf-6a86d35772d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Pair"@nl ;
+            pnv:givenName "Marquerite"@nl ;
+            pnv:literalName "Marquerite le Pair"@nl ;
+            pnv:surnamePrefix "le"@nl ] ;
+    sdo:children <https://ex.org/Person:a8e80ff6-3fb1-8035-75e8-68cbada3410b> ;
+    sdo:familyName "le Pair"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Marquerite"@nl ;
+    sdo:knows <https://ex.org/Person:48fad0bb-8f8a-0b53-3999-46bfad89b7c7>,
+        <https://ex.org/Person:6fb4e310-28a8-8bf0-b3af-fb0c578e6e66> ;
+    sdo:name "Marquerite le Pair"@nl ;
+    sdo:spouse <https://ex.org/Person:2521e560-9e95-1a7e-d09f-3fca5b1208f2> .
+
+<https://ex.org/Person:48fad0bb-8f8a-0b53-3999-46bfad89b7c7> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:4f493812-1581-2c07-e5cf-6a86d35772d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Planque"@nl ;
+            pnv:givenName "Marie"@nl ;
+            pnv:literalName "Marie des Planque"@nl ;
+            pnv:surnamePrefix "des"@nl ] ;
+    sdo:familyName "des Planque"@nl ;
+    sdo:givenName "Marie"@nl ;
+    sdo:name "Marie des Planque"@nl .
+
+<https://ex.org/Person:6fb4e310-28a8-8bf0-b3af-fb0c578e6e66> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:4f493812-1581-2c07-e5cf-6a86d35772d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Jacques"@nl ;
+            pnv:literalName "Jacques Mahieu"@nl ;
+            pnv:patronym "Mahieu"@nl ] ;
+    sdo:givenName "Jacques"@nl ;
+    sdo:name "Jacques Mahieu"@nl .
+
+<https://ex.org/Person:a8e80ff6-3fb1-8035-75e8-68cbada3410b> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:4f493812-1581-2c07-e5cf-6a86d35772d0> ;
+    picom:hasLifeEvent <https://ex.org/Source:4f493812-1581-2c07-e5cf-6a86d35772d0_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 13-09-1648"@nl ;
+    sdo:familyName "Roussel"@nl ;
+    sdo:givenName "Marie"@nl ;
+    sdo:name "Marie Roussel"@nl ;
+    sdo:parent <https://ex.org/Person:2521e560-9e95-1a7e-d09f-3fca5b1208f2>,
+        <https://ex.org/Person:487e6f89-2b53-04fd-78cc-c70507300bad> .
+
+<https://ex.org/Source:4f493812-1581-2c07-e5cf-6a86d35772d0> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/6437c7d2-ba75-45ea-a401-626cbb04e151/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/4f493812-1581-2c07-e5cf-6a86d35772d0"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/6437c7d2-ba75-45ea-a401-626cbb04e151/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1648-09-13"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1647-1655"@nl,
+        "272"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Zie: Kerk. Ondertrouwreg. N 49v<br>Doopdatum: 13-09-1648<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/272\">Inventarisnummer 272 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 272, Periode: 1..., (toegangsnr. 1004), inv.nr. 272, Doopboek van de Vrouwekerk (Waals, NH) te Leiden, 1647 - 28 april 1655., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/4f493812-1581-2c07-e5cf-6a86d35772d0"^^xsd:anyURI .
+

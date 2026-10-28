@@ -1,0 +1,98 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:24d66f08-f98f-ad1b-1407-37a4c851da0b> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:1d60fdc1-e0c2-379e-22bc-809914140606> ;
+    picom:hasLifeEvent <https://ex.org/Source:1d60fdc1-e0c2-379e-22bc-809914140606_huwelijk_event>,
+        <https://ex.org/Source:1d60fdc1-e0c2-379e-22bc-809914140606_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Marya"@nl ;
+            pnv:literalName "Marya Jaspaer"@nl ;
+            pnv:patronym "Jaspaer"@nl ] ;
+    sdo:address "Langegraft"@nl ;
+    sdo:birthPlace "Luyck"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Marya"@nl ;
+    sdo:name "Marya Jaspaer"@nl ;
+    sdo:parent <https://ex.org/Person:63e445c4-4340-d3ba-694c-ca926a00d148> ;
+    sdo:spouse <https://ex.org/Person:c4f23978-7a3a-f3db-be3d-c315c0886ea4> .
+
+<https://ex.org/Person:27eb342d-3648-ea3c-a31e-4768916142ff> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:1d60fdc1-e0c2-379e-22bc-809914140606> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Maerten"@nl ;
+            pnv:literalName "Maerten Joris"@nl ;
+            pnv:patronym "Joris"@nl ] ;
+    sdo:address "Baelstraet"@nl ;
+    sdo:description "getuige van de bruidegom, relatie tot de bruidegom: oom, adres: Baelstraet"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Maerten"@nl ;
+    sdo:name "Maerten Joris"@nl .
+
+<https://ex.org/Person:63e445c4-4340-d3ba-694c-ca926a00d148> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:1d60fdc1-e0c2-379e-22bc-809914140606> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Jennetge"@nl ;
+            pnv:literalName "Jennetge Cornelis"@nl ;
+            pnv:patronym "Cornelis"@nl ] ;
+    sdo:address "Langegraft"@nl ;
+    sdo:description "getuige van de bruid, relatie tot de bruid: moeder, adres: Langegraft"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Jennetge"@nl ;
+    sdo:name "Jennetge Cornelis"@nl .
+
+<https://ex.org/Person:c4f23978-7a3a-f3db-be3d-c315c0886ea4> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:1d60fdc1-e0c2-379e-22bc-809914140606> ;
+    picom:hasLifeEvent <https://ex.org/Source:1d60fdc1-e0c2-379e-22bc-809914140606_huwelijk_event>,
+        <https://ex.org/Source:1d60fdc1-e0c2-379e-22bc-809914140606_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    picom:hasUncle_Aunt <https://ex.org/Person:27eb342d-3648-ea3c-a31e-4768916142ff> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Joris"@nl ;
+            pnv:literalName "Joris Paulis"@nl ;
+            pnv:patronym "Paulis"@nl ] ;
+    sdo:address "Baelstraet"@nl ;
+    sdo:birthPlace "Luyck"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Joris"@nl ;
+    sdo:hasOccupation "lakenwr"@nl ;
+    sdo:name "Joris Paulis"@nl ;
+    sdo:spouse <https://ex.org/Person:24d66f08-f98f-ad1b-1407-37a4c851da0b> .
+
+<https://ex.org/Source:1d60fdc1-e0c2-379e-22bc-809914140606_huwelijk_event> a picom:LifeEvent ;
+    picom:eventDate "1682-05-30"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:83 .
+
+<https://ex.org/Source:1d60fdc1-e0c2-379e-22bc-809914140606_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1682-05-09"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
+<https://ex.org/Source:1d60fdc1-e0c2-379e-22bc-809914140606> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/692ba145-284e-41aa-b6e5-36c2c3b372dc/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/1d60fdc1-e0c2-379e-22bc-809914140606"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/692ba145-284e-41aa-b6e5-36c2c3b372dc/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1682-05-09"@nl,
+        "1682-05-30"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1674-1687"@nl,
+        "202"@nl,
+        "Datum trouwen: 30-05-1682<br>Datum ondertrouw: 09-05-1682<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/202\">Inventarisnummer 202 van archiefnummer 1004 in Archieven</a>"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 202, Periode: 1..., (toegangsnr. 1004), inv.nr. 202, F. Ondertrouwboek en trouwboek voor schepenen van Leiden, 1674 - mei 1687, 180, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/1d60fdc1-e0c2-379e-22bc-809914140606"^^xsd:anyURI .
+

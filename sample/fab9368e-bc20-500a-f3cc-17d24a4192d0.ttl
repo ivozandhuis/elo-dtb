@@ -1,0 +1,65 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:fab9368e-bc20-500a-f3cc-17d24a4192d0_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1793-10-13"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:7410d224-06d3-ca87-f5fc-25d17912aebe> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:fab9368e-bc20-500a-f3cc-17d24a4192d0> ;
+    picom:hasLifeEvent <https://ex.org/Source:fab9368e-bc20-500a-f3cc-17d24a4192d0_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 13-10-1793"@nl ;
+    sdo:familyName "Stieva"@nl ;
+    sdo:givenName "Nicolaas"@nl ;
+    sdo:name "Nicolaas Stieva"@nl ;
+    sdo:parent <https://ex.org/Person:e3a0928a-3753-b7a5-9cee-c57d3f11e669>,
+        <https://ex.org/Person:ef3ca969-0b76-7a2b-36eb-b743cecbeee4> .
+
+<https://ex.org/Person:e3a0928a-3753-b7a5-9cee-c57d3f11e669> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:fab9368e-bc20-500a-f3cc-17d24a4192d0> ;
+    sdo:children <https://ex.org/Person:7410d224-06d3-ca87-f5fc-25d17912aebe> ;
+    sdo:familyName "Stieva"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Thomas"@nl ;
+    sdo:name "Thomas Stieva"@nl ;
+    sdo:spouse <https://ex.org/Person:ef3ca969-0b76-7a2b-36eb-b743cecbeee4> .
+
+<https://ex.org/Person:ef3ca969-0b76-7a2b-36eb-b743cecbeee4> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:fab9368e-bc20-500a-f3cc-17d24a4192d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Jong"@nl ;
+            pnv:givenName "Maria"@nl ;
+            pnv:literalName "Maria de Jong"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:children <https://ex.org/Person:7410d224-06d3-ca87-f5fc-25d17912aebe> ;
+    sdo:familyName "de Jong"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Maria"@nl ;
+    sdo:name "Maria de Jong"@nl ;
+    sdo:spouse <https://ex.org/Person:e3a0928a-3753-b7a5-9cee-c57d3f11e669> .
+
+<https://ex.org/Source:fab9368e-bc20-500a-f3cc-17d24a4192d0> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/33226824-af2b-49b1-8859-668d69b6ac5b/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/fab9368e-bc20-500a-f3cc-17d24a4192d0"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/33226824-af2b-49b1-8859-668d69b6ac5b/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1793-10-13"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1789-1796"@nl,
+        "255"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 13-10-1793<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/255\">Inventarisnummer 255 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 255, Periode: 1..., (toegangsnr. 1004), inv.nr. 255, Doopboek van de Hooglandse Kerk (NH) te Leiden, 1 oktober 1789 - 30 juni 1796., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/fab9368e-bc20-500a-f3cc-17d24a4192d0"^^xsd:anyURI .
+

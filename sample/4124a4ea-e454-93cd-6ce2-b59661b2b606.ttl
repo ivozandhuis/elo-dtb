@@ -1,0 +1,63 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:a3903105-31c2-fbd3-4c2a-3082c1dc59c9> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:4124a4ea-e454-93cd-6ce2-b59661b2b606> ;
+    picom:hasLifeEvent <https://ex.org/Source:4124a4ea-e454-93cd-6ce2-b59661b2b606_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:address "Speksteeg op de Langegraft"@nl ;
+    sdo:birthPlace "Leijden"@nl ;
+    sdo:description "Burgerlijke staat voor het huwelijk: j.m."@nl ;
+    sdo:familyName "Wezel"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Philippus"@nl ;
+    sdo:hasOccupation "lakenwerker"@nl ;
+    sdo:name "Philippus Wezel"@nl ;
+    sdo:spouse <https://ex.org/Person:e4e7ddf3-3f6b-786a-a1b9-829c35c7f73d> .
+
+<https://ex.org/Person:e4e7ddf3-3f6b-786a-a1b9-829c35c7f73d> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:4124a4ea-e454-93cd-6ce2-b59661b2b606> ;
+    picom:hasLifeEvent <https://ex.org/Source:4124a4ea-e454-93cd-6ce2-b59661b2b606_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Velden"@nl ;
+            pnv:givenName "Maria"@nl ;
+            pnv:literalName "Maria van der Velden"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:address "Oostvoldersgraft"@nl ;
+    sdo:birthPlace "Leijden"@nl ;
+    sdo:description "Burgerlijke staat voor het huwelijk: j.d."@nl ;
+    sdo:familyName "van der Velden"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Maria"@nl ;
+    sdo:name "Maria van der Velden"@nl ;
+    sdo:spouse <https://ex.org/Person:a3903105-31c2-fbd3-4c2a-3082c1dc59c9> .
+
+<https://ex.org/Source:4124a4ea-e454-93cd-6ce2-b59661b2b606> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/3b144557-b9a2-40e6-bb02-bff08cb516b0/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/4124a4ea-e454-93cd-6ce2-b59661b2b606"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/3b144557-b9a2-40e6-bb02-bff08cb516b0/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1726-05-17"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1724-1729"@nl,
+        "194"@nl,
+        "Datum ondertrouw: 17-05-1726<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/194\">Inventarisnummer 194 van archiefnummer 1004 in Archieven</a>"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 194, Periode: 1..., (toegangsnr. 1004), inv.nr. 194, Trouwboek van de Hoogduits-Gereformeerde Gemeente te Leiden, 1724 - 19 januari 1729., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/4124a4ea-e454-93cd-6ce2-b59661b2b606"^^xsd:anyURI .
+
+<https://ex.org/Source:4124a4ea-e454-93cd-6ce2-b59661b2b606_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1726-05-17"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+

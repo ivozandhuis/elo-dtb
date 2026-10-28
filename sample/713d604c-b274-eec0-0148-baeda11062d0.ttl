@@ -1,0 +1,75 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:713d604c-b274-eec0-0148-baeda11062d0_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1802-02-21"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:22f218d1-7b8e-76d6-cbcf-9b9fc999c4d8> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:713d604c-b274-eec0-0148-baeda11062d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Deuren"@nl ;
+            pnv:givenName "Hester"@nl ;
+            pnv:literalName "Hester van Deuren"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:children <https://ex.org/Person:f4d4ded0-fdc2-32e8-1520-8ecf609c0f13> ;
+    sdo:familyName "van Deuren"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Hester"@nl ;
+    sdo:name "Hester van Deuren"@nl ;
+    sdo:spouse <https://ex.org/Person:8f36a85b-00cf-883d-2703-aac80e31efa9> .
+
+<https://ex.org/Person:8f36a85b-00cf-883d-2703-aac80e31efa9> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:713d604c-b274-eec0-0148-baeda11062d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Horn"@nl ;
+            pnv:givenName "Hendrik"@nl ;
+            pnv:literalName "Hendrik van der Horn"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:children <https://ex.org/Person:f4d4ded0-fdc2-32e8-1520-8ecf609c0f13> ;
+    sdo:familyName "van der Horn"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Hendrik"@nl ;
+    sdo:name "Hendrik van der Horn"@nl ;
+    sdo:spouse <https://ex.org/Person:22f218d1-7b8e-76d6-cbcf-9b9fc999c4d8> .
+
+<https://ex.org/Person:f4d4ded0-fdc2-32e8-1520-8ecf609c0f13> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:713d604c-b274-eec0-0148-baeda11062d0> ;
+    picom:hasLifeEvent <https://ex.org/Source:713d604c-b274-eec0-0148-baeda11062d0_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Horn"@nl ;
+            pnv:givenName "Hester"@nl ;
+            pnv:literalName "Hester van der Horn"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:description "Doopdatum: 21-02-1802"@nl ;
+    sdo:familyName "van der Horn"@nl ;
+    sdo:givenName "Hester"@nl ;
+    sdo:name "Hester van der Horn"@nl ;
+    sdo:parent <https://ex.org/Person:22f218d1-7b8e-76d6-cbcf-9b9fc999c4d8>,
+        <https://ex.org/Person:8f36a85b-00cf-883d-2703-aac80e31efa9> .
+
+<https://ex.org/Source:713d604c-b274-eec0-0148-baeda11062d0> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/5db9ea72-0742-42f3-9bb6-6d6f852a8af1/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/713d604c-b274-eec0-0148-baeda11062d0"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/5db9ea72-0742-42f3-9bb6-6d6f852a8af1/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1802-02-21"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1796-1803"@nl,
+        "256"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 21-02-1802<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/256\">Inventarisnummer 256 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 256, Periode: 1..., (toegangsnr. 1004), inv.nr. 256, Doopboek van de Hooglandse Kerk (NH) te Leiden, 3 juli 1796 - 1803., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/713d604c-b274-eec0-0148-baeda11062d0"^^xsd:anyURI .
+

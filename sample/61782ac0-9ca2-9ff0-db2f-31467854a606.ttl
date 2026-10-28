@@ -1,0 +1,87 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:c749ca05-590c-a0e9-1583-3c55579b6f12> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:61782ac0-9ca2-9ff0-db2f-31467854a606> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Spengen"@nl ;
+            pnv:givenName "Marrigje"@nl ;
+            pnv:literalName "Marrigje Harmens van Spengen"@nl ;
+            pnv:patronym "Harmens"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:familyName "van Spengen"@nl ;
+    sdo:givenName "Marrigje"@nl ;
+    sdo:name "Marrigje Harmens van Spengen"@nl .
+
+<https://ex.org/Person:9a6117d0-df90-dd73-47f1-49afb375e52d> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:61782ac0-9ca2-9ff0-db2f-31467854a606> ;
+    picom:hasLifeEvent <https://ex.org/Source:61782ac0-9ca2-9ff0-db2f-31467854a606_huwelijk_event>,
+        <https://ex.org/Source:61782ac0-9ca2-9ff0-db2f-31467854a606_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Oosterkerk"@nl ;
+            pnv:givenName "Pietje"@nl ;
+            pnv:literalName "Pietje Jans Oosterkerk"@nl ;
+            pnv:patronym "Jans"@nl ] ;
+    sdo:address "Nieuwkoop"@nl ;
+    sdo:birthPlace "Noorden"@nl ;
+    sdo:description "Noorden, onder t geregt van Zevenhoven<br>Burgerlijke staat voor het huwelijk: j.d."@nl ;
+    sdo:familyName "Oosterkerk"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Pietje"@nl ;
+    sdo:name "Pietje Jans Oosterkerk"@nl ;
+    sdo:spouse <https://ex.org/Person:a66b4c04-aad1-c228-1ac8-ac23c5c58f90> .
+
+<https://ex.org/Person:a66b4c04-aad1-c228-1ac8-ac23c5c58f90> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:61782ac0-9ca2-9ff0-db2f-31467854a606> ;
+    picom:hasLifeEvent <https://ex.org/Source:61782ac0-9ca2-9ff0-db2f-31467854a606_huwelijk_event>,
+        <https://ex.org/Source:61782ac0-9ca2-9ff0-db2f-31467854a606_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Koos"@nl ;
+            pnv:givenName "Jan"@nl ;
+            pnv:literalName "Jan Jansz Koos"@nl ;
+            pnv:patronym "Jansz"@nl ] ;
+    sdo:address "Nieuwkoop"@nl ;
+    sdo:birthPlace "Nieuwkoop"@nl ;
+    sdo:description "Burgerlijke staat voor het huwelijk: wed."@nl ;
+    sdo:familyName "Koos"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jan"@nl ;
+    sdo:name "Jan Jansz Koos"@nl ;
+    sdo:spouse <https://ex.org/Person:9a6117d0-df90-dd73-47f1-49afb375e52d> .
+
+<https://ex.org/Source:61782ac0-9ca2-9ff0-db2f-31467854a606_huwelijk_event> a picom:LifeEvent ;
+    picom:eventDate "1703-12-26"@nl ;
+    picom:eventPlace "Nieuwkoop"@nl ;
+    picom:eventType picot_eventtypes:83 .
+
+<https://ex.org/Source:61782ac0-9ca2-9ff0-db2f-31467854a606_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1703-12-01"@nl ;
+    picom:eventPlace "Nieuwkoop"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
+<https://ex.org/Source:61782ac0-9ca2-9ff0-db2f-31467854a606> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/d05ec68b-d0e7-461a-9df7-58247ce5cc65/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/61782ac0-9ca2-9ff0-db2f-31467854a606"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/d05ec68b-d0e7-461a-9df7-58247ce5cc65/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1703-12-01"@nl,
+        "1703-12-26"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "\"hebben t regt voldaan hier en te Sevenhoven\"<br>Datum trouwen: 26-12-1703<br>Datum ondertrouw: 01-12-1703<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/162.2.02/file/15\">Inventarisnummer 15 van archiefnummer 162.2.02 in Archieven</a>"@nl,
+        "15"@nl,
+        "1648-1721"@nl,
+        "Hervormde gemeente te Nieuwkoop"@nl ;
+    sdo:locationCreated "Nieuwkoop"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Hervormde gemeente te Nieuwkoop, Deel: 15, Periode: 1648-1721, (toegangsnr. 162.2.02), inv.nr. 15, Register, bestaande uit Lidmaten, 1648 - 1721; Dopen, 1684 - 1721; Huwelijken, 1684 - 1721., 23, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/61782ac0-9ca2-9ff0-db2f-31467854a606"^^xsd:anyURI .
+

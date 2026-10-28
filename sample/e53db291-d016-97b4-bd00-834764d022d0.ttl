@@ -1,0 +1,81 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:e53db291-d016-97b4-bd00-834764d022d0_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1693-11-10"@nl ;
+    picom:eventPlace "Zevenhoven"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:2e17736f-c428-68b0-aadd-fd74446ad74c> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:e53db291-d016-97b4-bd00-834764d022d0> ;
+    picom:hasLifeEvent <https://ex.org/Source:e53db291-d016-97b4-bd00-834764d022d0_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Martje"@nl ;
+            pnv:literalName "Martje Pieters"@nl ;
+            pnv:patronym "Pieters"@nl ] ;
+    sdo:description "Doopdatum: 10-11-1693"@nl ;
+    sdo:givenName "Martje"@nl ;
+    sdo:name "Martje Pieters"@nl ;
+    sdo:parent <https://ex.org/Person:842ddc44-2735-2d5f-02a7-e455c14302a5>,
+        <https://ex.org/Person:dd30c084-7245-9755-faeb-526841653652> .
+
+<https://ex.org/Person:842ddc44-2735-2d5f-02a7-e455c14302a5> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:e53db291-d016-97b4-bd00-834764d022d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Pieter"@nl ;
+            pnv:literalName "Pieter Willemse"@nl ;
+            pnv:patronym "Willemse"@nl ] ;
+    sdo:children <https://ex.org/Person:2e17736f-c428-68b0-aadd-fd74446ad74c> ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Pieter"@nl ;
+    sdo:knows <https://ex.org/Person:a8d79e66-f611-75e1-82de-b3cd1ccae268> ;
+    sdo:name "Pieter Willemse"@nl ;
+    sdo:spouse <https://ex.org/Person:dd30c084-7245-9755-faeb-526841653652> .
+
+<https://ex.org/Person:a8d79e66-f611-75e1-82de-b3cd1ccae268> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:e53db291-d016-97b4-bd00-834764d022d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Bastiaan"@nl ;
+            pnv:literalName "Bastiaan Bouwens"@nl ;
+            pnv:patronym "Bouwens"@nl ] ;
+    sdo:givenName "Bastiaan"@nl ;
+    sdo:name "Bastiaan Bouwens"@nl .
+
+<https://ex.org/Person:dd30c084-7245-9755-faeb-526841653652> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:e53db291-d016-97b4-bd00-834764d022d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Jannigie"@nl ;
+            pnv:literalName "Jannigie Bouwens"@nl ;
+            pnv:patronym "Bouwens"@nl ] ;
+    sdo:children <https://ex.org/Person:2e17736f-c428-68b0-aadd-fd74446ad74c> ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Jannigie"@nl ;
+    sdo:knows <https://ex.org/Person:a8d79e66-f611-75e1-82de-b3cd1ccae268> ;
+    sdo:name "Jannigie Bouwens"@nl ;
+    sdo:spouse <https://ex.org/Person:842ddc44-2735-2d5f-02a7-e455c14302a5> .
+
+<https://ex.org/Source:e53db291-d016-97b4-bd00-834764d022d0> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/563db4ea-6fd9-4d3d-b1f3-2dd16ab92c71/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/e53db291-d016-97b4-bd00-834764d022d0"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/563db4ea-6fd9-4d3d-b1f3-2dd16ab92c71/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1693-11-10"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1682-1811"@nl,
+        "4"@nl,
+        "Doop-, trouw- en begraafregisters Zevenhoven"@nl,
+        "Doopdatum: 10-11-1693<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/132.1.10/file/4\">Inventarisnummer 4 van archiefnummer 132.1.10 in Archieven</a>"@nl ;
+    sdo:locationCreated "Zevenhoven"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw- en begraafregisters Zevenhoven, Deel: 4, Periode: 1682-1811, (toegangsnr. 132.1.10), inv.nr. 4, \"Doopboek, trouwboek en doodboek (RK) van Zevenhoven\", doopinschrijvingen, 11 maart 1682 - 1807 (fol. 5-153) met daaraan vooraf (fol. 1-4) een inschrijving van een abnormale geborene, 21 maart 1765, enkele inschrijvingen van gedoopten in Den Hoef, 1729 - 1743 en in 1753 vervaardigde kopie-inschrijvingen, 20 maart 1682 - 4 april 1684; trouwinschrijvingen 25 november 1697 - 30 juli 1751 (fol. 28-110) en aan de keerzijde, 21 maart 1753 - 21 oktober 1805 (fol. 1-7verso); namen van overledenen, 28 februari 1697 -18 oktober 1752 (fol. 27-111) een aan de keerzijde, 1753 - oktober 1811 (fol. 9-18 verso) met alfabetische index over het 1753 - 1811., 22v, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/e53db291-d016-97b4-bd00-834764d022d0"^^xsd:anyURI .
+

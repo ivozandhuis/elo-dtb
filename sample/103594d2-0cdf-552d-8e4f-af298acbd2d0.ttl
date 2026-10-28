@@ -1,0 +1,87 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:103594d2-0cdf-552d-8e4f-af298acbd2d0_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1720-02-21"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:0dd4ef8f-e31f-70d8-dd73-fda1f5db28a1> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:103594d2-0cdf-552d-8e4f-af298acbd2d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Kade"@nl ;
+            pnv:givenName "Arij"@nl ;
+            pnv:literalName "Arij van der Kade"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:children <https://ex.org/Person:982f1d27-67ff-58ff-fbc9-b5d4a0a869ad> ;
+    sdo:familyName "van der Kade"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Arij"@nl ;
+    sdo:knows <https://ex.org/Person:d0cb3c81-fd9b-7d99-f4e8-4fc9af7b5111> ;
+    sdo:name "Arij van der Kade"@nl ;
+    sdo:spouse <https://ex.org/Person:7cb07453-2e4d-73f8-3b83-0bb3b7dc4380> .
+
+<https://ex.org/Person:7cb07453-2e4d-73f8-3b83-0bb3b7dc4380> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:103594d2-0cdf-552d-8e4f-af298acbd2d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Kade"@nl ;
+            pnv:givenName "Jannetje"@nl ;
+            pnv:literalName "Jannetje van der Kade"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:children <https://ex.org/Person:982f1d27-67ff-58ff-fbc9-b5d4a0a869ad> ;
+    sdo:familyName "van der Kade"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Jannetje"@nl ;
+    sdo:knows <https://ex.org/Person:d0cb3c81-fd9b-7d99-f4e8-4fc9af7b5111> ;
+    sdo:name "Jannetje van der Kade"@nl ;
+    sdo:spouse <https://ex.org/Person:0dd4ef8f-e31f-70d8-dd73-fda1f5db28a1> .
+
+<https://ex.org/Person:982f1d27-67ff-58ff-fbc9-b5d4a0a869ad> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:103594d2-0cdf-552d-8e4f-af298acbd2d0> ;
+    picom:hasLifeEvent <https://ex.org/Source:103594d2-0cdf-552d-8e4f-af298acbd2d0_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Kade"@nl ;
+            pnv:givenName "Maghteld"@nl ;
+            pnv:literalName "Maghteld van der Kade"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:description "Doopdatum: 21-02-1720"@nl ;
+    sdo:familyName "van der Kade"@nl ;
+    sdo:givenName "Maghteld"@nl ;
+    sdo:name "Maghteld van der Kade"@nl ;
+    sdo:parent <https://ex.org/Person:0dd4ef8f-e31f-70d8-dd73-fda1f5db28a1>,
+        <https://ex.org/Person:7cb07453-2e4d-73f8-3b83-0bb3b7dc4380> .
+
+<https://ex.org/Person:d0cb3c81-fd9b-7d99-f4e8-4fc9af7b5111> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:103594d2-0cdf-552d-8e4f-af298acbd2d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Aaltje"@nl ;
+            pnv:literalName "Aaltje Robbertz"@nl ;
+            pnv:patronym "Robbertz"@nl ] ;
+    sdo:givenName "Aaltje"@nl ;
+    sdo:name "Aaltje Robbertz"@nl .
+
+<https://ex.org/Source:103594d2-0cdf-552d-8e4f-af298acbd2d0> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/4428d14c-b0bd-4f02-83ea-3334121a0e13/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/103594d2-0cdf-552d-8e4f-af298acbd2d0"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/4428d14c-b0bd-4f02-83ea-3334121a0e13/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1720-02-21"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1710-1724"@nl,
+        "227"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 21-02-1720<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/227\">Inventarisnummer 227 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 227, Periode: 1..., (toegangsnr. 1004), inv.nr. 227, Doopboek van de Pieterskerk (NH) te Leiden, 2 mei 1710 - 1724., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/103594d2-0cdf-552d-8e4f-af298acbd2d0"^^xsd:anyURI .
+

@@ -1,0 +1,81 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:7b4d6462-b63c-1f36-82af-1c4c1405301a> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:668813a7-3c6e-6590-6643-3e2329fa62d0> ;
+    picom:hasLifeEvent <https://ex.org/Source:668813a7-3c6e-6590-6643-3e2329fa62d0_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 1653"@nl ;
+    sdo:familyName "Barcleij"@nl ;
+    sdo:givenName "Wilm"@nl ;
+    sdo:name "Wilm Barcleij"@nl ;
+    sdo:parent <https://ex.org/Person:8871b9a2-ed4a-8b5b-5c70-9bab4fe998fb> .
+
+<https://ex.org/Person:8871b9a2-ed4a-8b5b-5c70-9bab4fe998fb> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:668813a7-3c6e-6590-6643-3e2329fa62d0> ;
+    sdo:children <https://ex.org/Person:7b4d6462-b63c-1f36-82af-1c4c1405301a> ;
+    sdo:familyName "Barcleij"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Hermen"@nl ;
+    sdo:knows <https://ex.org/Person:a410dd48-3f75-7fed-dd7c-c8adef9595e7>,
+        <https://ex.org/Person:a5638de6-eb5f-2715-2c54-cd65c35a4c0a>,
+        <https://ex.org/Person:f5ab5858-ab2c-5941-8a10-684e1edac209> ;
+    sdo:name "Hermen Barcleij"@nl .
+
+<https://ex.org/Person:a410dd48-3f75-7fed-dd7c-c8adef9595e7> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:668813a7-3c6e-6590-6643-3e2329fa62d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Ariaentje"@nl ;
+            pnv:literalName "Ariaentje Heinrichsen"@nl ;
+            pnv:patronym "Heinrichsen"@nl ] ;
+    sdo:givenName "Ariaentje"@nl ;
+    sdo:name "Ariaentje Heinrichsen"@nl .
+
+<https://ex.org/Person:a5638de6-eb5f-2715-2c54-cd65c35a4c0a> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:668813a7-3c6e-6590-6643-3e2329fa62d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Hester"@nl ;
+            pnv:givenName "Heinrich"@nl ;
+            pnv:literalName "Heinrich Pitersen Hester"@nl ;
+            pnv:patronym "Pitersen"@nl ] ;
+    sdo:familyName "Hester"@nl ;
+    sdo:givenName "Heinrich"@nl ;
+    sdo:name "Heinrich Pitersen Hester"@nl .
+
+<https://ex.org/Person:f5ab5858-ab2c-5941-8a10-684e1edac209> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:668813a7-3c6e-6590-6643-3e2329fa62d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Hagedoorn"@nl ;
+    sdo:givenName "Johan"@nl ;
+    sdo:name "Johan Hagedoorn"@nl .
+
+<https://ex.org/Source:668813a7-3c6e-6590-6643-3e2329fa62d0_doop_event> a picom:LifeEvent ;
+    picom:eventDate "Doopdatum: 1653<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/0028/file/49a\">Inventarisnummer 49a van archiefnummer 0028 in Archieven</a>"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Source:668813a7-3c6e-6590-6643-3e2329fa62d0> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/d4eddcf6-eb3d-4842-8075-73c8e15d4626/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/668813a7-3c6e-6590-6643-3e2329fa62d0"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/d4eddcf6-eb3d-4842-8075-73c8e15d4626/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1653"^^xsd:gYear ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1642-1729"@nl,
+        "49a"@nl,
+        "Doopdatum: 1653<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/0028/file/49a\">Inventarisnummer 49a van archiefnummer 0028 in Archieven</a>"@nl,
+        "Evangelisch-Lutherse gemeente, Leiden"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Evangelisch-Lutherse gemeente, Leiden, Deel: 49a, Periode: 1642-1729, (toegangsnr. 0028), inv.nr. 49a, 1642 - 1729., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/668813a7-3c6e-6590-6643-3e2329fa62d0"^^xsd:anyURI .
+

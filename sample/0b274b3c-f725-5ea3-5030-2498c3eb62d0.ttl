@@ -1,0 +1,77 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:0b274b3c-f725-5ea3-5030-2498c3eb62d0_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1687-05-08"@nl ;
+    picom:eventPlace "Leimuiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:395bbdf1-f60d-96c1-cd7a-19a9a9e4abe9> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:0b274b3c-f725-5ea3-5030-2498c3eb62d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Aegje"@nl ;
+            pnv:literalName "Aegje Ariens"@nl ;
+            pnv:patronym "Ariens"@nl ] ;
+    sdo:givenName "Aegje"@nl ;
+    sdo:name "Aegje Ariens"@nl .
+
+<https://ex.org/Person:3a4b5c69-7858-ecf1-45a3-0d83ca355740> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:0b274b3c-f725-5ea3-5030-2498c3eb62d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Gerrit"@nl ;
+            pnv:literalName "Gerrit Jansz"@nl ;
+            pnv:patronym "Jansz"@nl ] ;
+    sdo:children <https://ex.org/Person:f8e83bab-be73-97a7-0944-63151ce9a95e> ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Gerrit"@nl ;
+    sdo:knows <https://ex.org/Person:395bbdf1-f60d-96c1-cd7a-19a9a9e4abe9> ;
+    sdo:name "Gerrit Jansz"@nl ;
+    sdo:spouse <https://ex.org/Person:70fb8630-60be-df4b-cf30-2ed99d47fd3e> .
+
+<https://ex.org/Person:70fb8630-60be-df4b-cf30-2ed99d47fd3e> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:0b274b3c-f725-5ea3-5030-2498c3eb62d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Martje"@nl ;
+            pnv:literalName "Martje Ariens"@nl ;
+            pnv:patronym "Ariens"@nl ] ;
+    sdo:children <https://ex.org/Person:f8e83bab-be73-97a7-0944-63151ce9a95e> ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Martje"@nl ;
+    sdo:knows <https://ex.org/Person:395bbdf1-f60d-96c1-cd7a-19a9a9e4abe9> ;
+    sdo:name "Martje Ariens"@nl ;
+    sdo:spouse <https://ex.org/Person:3a4b5c69-7858-ecf1-45a3-0d83ca355740> .
+
+<https://ex.org/Person:f8e83bab-be73-97a7-0944-63151ce9a95e> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:0b274b3c-f725-5ea3-5030-2498c3eb62d0> ;
+    picom:hasLifeEvent <https://ex.org/Source:0b274b3c-f725-5ea3-5030-2498c3eb62d0_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 08-05-1687"@nl ;
+    sdo:givenName "Gerrit"@nl ;
+    sdo:name "Gerrit"@nl ;
+    sdo:parent <https://ex.org/Person:3a4b5c69-7858-ecf1-45a3-0d83ca355740>,
+        <https://ex.org/Person:70fb8630-60be-df4b-cf30-2ed99d47fd3e> .
+
+<https://ex.org/Source:0b274b3c-f725-5ea3-5030-2498c3eb62d0> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/c66ae56e-f816-446c-9443-7356ce2a4ed6/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/0b274b3c-f725-5ea3-5030-2498c3eb62d0"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/c66ae56e-f816-446c-9443-7356ce2a4ed6/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1687-05-08"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1674-1719"@nl,
+        "2"@nl,
+        "Collectie doop-, trouw- en begraafregisters Leimuiden"@nl,
+        "Doopdatum: 08-05-1687<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/123.1.14/file/2\">Inventarisnummer 2 van archiefnummer 123.1.14 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leimuiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Collectie doop-, trouw- en begraafregisters Leimuiden, Deel: 2, Periode: 1674-1719, (toegangsnr. 123.1.14), inv.nr. 2, Doopboek (NH) van Leimuiden, 1674 - 7 april 1719;, 50, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/0b274b3c-f725-5ea3-5030-2498c3eb62d0"^^xsd:anyURI .
+

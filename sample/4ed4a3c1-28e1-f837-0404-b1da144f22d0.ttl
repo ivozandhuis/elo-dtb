@@ -1,0 +1,103 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:4ed4a3c1-28e1-f837-0404-b1da144f22d0_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1696-08-24"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:878dec8c-d023-5381-c2db-ad9dba3cf315> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:4ed4a3c1-28e1-f837-0404-b1da144f22d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Broek"@nl ;
+            pnv:givenName "Frederik"@nl ;
+            pnv:literalName "Frederik van den Broek"@nl ;
+            pnv:surnamePrefix "van den"@nl ] ;
+    sdo:children <https://ex.org/Person:d0bf5b9a-6470-38ac-9a12-b4431c7e40c6> ;
+    sdo:familyName "van den Broek"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Frederik"@nl ;
+    sdo:knows <https://ex.org/Person:da1462fe-025b-75e0-80cb-14226fa9acc1>,
+        <https://ex.org/Person:fcdbe32c-897b-439e-583d-7322d76daf12> ;
+    sdo:name "Frederik van den Broek"@nl ;
+    sdo:spouse <https://ex.org/Person:a3f6690a-b86c-835f-2e34-4350b0ed5cb7> .
+
+<https://ex.org/Person:a3f6690a-b86c-835f-2e34-4350b0ed5cb7> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:4ed4a3c1-28e1-f837-0404-b1da144f22d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Moor"@nl ;
+            pnv:givenName "Catharina"@nl ;
+            pnv:literalName "Catharina de Moor"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:children <https://ex.org/Person:d0bf5b9a-6470-38ac-9a12-b4431c7e40c6> ;
+    sdo:familyName "de Moor"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Catharina"@nl ;
+    sdo:knows <https://ex.org/Person:da1462fe-025b-75e0-80cb-14226fa9acc1>,
+        <https://ex.org/Person:fcdbe32c-897b-439e-583d-7322d76daf12> ;
+    sdo:name "Catharina de Moor"@nl ;
+    sdo:spouse <https://ex.org/Person:878dec8c-d023-5381-c2db-ad9dba3cf315> .
+
+<https://ex.org/Person:d0bf5b9a-6470-38ac-9a12-b4431c7e40c6> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:4ed4a3c1-28e1-f837-0404-b1da144f22d0> ;
+    picom:hasLifeEvent <https://ex.org/Source:4ed4a3c1-28e1-f837-0404-b1da144f22d0_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Broek"@nl ;
+            pnv:givenName "Rijk"@nl ;
+            pnv:literalName "Rijk van den Broek"@nl ;
+            pnv:surnamePrefix "van den"@nl ] ;
+    sdo:description "Doopdatum: 24-08-1696"@nl ;
+    sdo:familyName "van den Broek"@nl ;
+    sdo:givenName "Rijk"@nl ;
+    sdo:name "Rijk van den Broek"@nl ;
+    sdo:parent <https://ex.org/Person:878dec8c-d023-5381-c2db-ad9dba3cf315>,
+        <https://ex.org/Person:a3f6690a-b86c-835f-2e34-4350b0ed5cb7> .
+
+<https://ex.org/Person:da1462fe-025b-75e0-80cb-14226fa9acc1> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:4ed4a3c1-28e1-f837-0404-b1da144f22d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Broek"@nl ;
+            pnv:givenName "Johannes"@nl ;
+            pnv:literalName "Johannes van den Broek"@nl ;
+            pnv:surnamePrefix "van den"@nl ] ;
+    sdo:familyName "van den Broek"@nl ;
+    sdo:givenName "Johannes"@nl ;
+    sdo:name "Johannes van den Broek"@nl .
+
+<https://ex.org/Person:fcdbe32c-897b-439e-583d-7322d76daf12> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:4ed4a3c1-28e1-f837-0404-b1da144f22d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Hoven"@nl ;
+            pnv:givenName "Alida"@nl ;
+            pnv:literalName "Alida van den Hoven"@nl ;
+            pnv:surnamePrefix "van den"@nl ] ;
+    sdo:familyName "van den Hoven"@nl ;
+    sdo:givenName "Alida"@nl ;
+    sdo:name "Alida van den Hoven"@nl .
+
+<https://ex.org/Source:4ed4a3c1-28e1-f837-0404-b1da144f22d0> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/fc1122de-5539-4618-955c-660eeebb617d/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/4ed4a3c1-28e1-f837-0404-b1da144f22d0"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/fc1122de-5539-4618-955c-660eeebb617d/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1696-08-24"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1689-1698"@nl,
+        "225"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 24-08-1696<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/225\">Inventarisnummer 225 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 225, Periode: 1..., (toegangsnr. 1004), inv.nr. 225, Doopboek van de Pieterskerk (NH) te Leiden, 3 oktober 1689 - 1698., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/4ed4a3c1-28e1-f837-0404-b1da144f22d0"^^xsd:anyURI .
+

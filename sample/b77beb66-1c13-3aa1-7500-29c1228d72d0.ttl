@@ -1,0 +1,93 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:b77beb66-1c13-3aa1-7500-29c1228d72d0_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1756-01-15"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:0167c53a-8699-eb29-cc51-1295994eb8a2> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b77beb66-1c13-3aa1-7500-29c1228d72d0> ;
+    picom:hasLifeEvent <https://ex.org/Source:b77beb66-1c13-3aa1-7500-29c1228d72d0_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Raatingen"@nl ;
+            pnv:givenName "Henricus"@nl ;
+            pnv:literalName "Henricus van Raatingen"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:description "Doopdatum: 15-01-1756"@nl ;
+    sdo:familyName "van Raatingen"@nl ;
+    sdo:givenName "Henricus"@nl ;
+    sdo:name "Henricus van Raatingen"@nl ;
+    sdo:parent <https://ex.org/Person:97d5beba-8f4a-c1a8-ab37-ad07ab0c7e85>,
+        <https://ex.org/Person:d919cdb7-4214-6d5a-509d-4d0fd98915a4> .
+
+<https://ex.org/Person:075e5371-d606-3df8-1916-8405e263ff34> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b77beb66-1c13-3aa1-7500-29c1228d72d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Kannegieter"@nl ;
+    sdo:givenName "Sijbilla"@nl ;
+    sdo:name "Sijbilla Kannegieter"@nl .
+
+<https://ex.org/Person:2f42624e-ed25-e249-a96d-43967b579aa5> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b77beb66-1c13-3aa1-7500-29c1228d72d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Ratingen"@nl ;
+            pnv:givenName "Jan"@nl ;
+            pnv:literalName "Jan van Ratingen"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:familyName "van Ratingen"@nl ;
+    sdo:givenName "Jan"@nl ;
+    sdo:name "Jan van Ratingen"@nl .
+
+<https://ex.org/Person:97d5beba-8f4a-c1a8-ab37-ad07ab0c7e85> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b77beb66-1c13-3aa1-7500-29c1228d72d0> ;
+    sdo:children <https://ex.org/Person:0167c53a-8699-eb29-cc51-1295994eb8a2> ;
+    sdo:familyName "Coenen"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Coernelia"@nl ;
+    sdo:knows <https://ex.org/Person:075e5371-d606-3df8-1916-8405e263ff34>,
+        <https://ex.org/Person:2f42624e-ed25-e249-a96d-43967b579aa5> ;
+    sdo:name "Coernelia Coenen"@nl ;
+    sdo:spouse <https://ex.org/Person:d919cdb7-4214-6d5a-509d-4d0fd98915a4> .
+
+<https://ex.org/Person:d919cdb7-4214-6d5a-509d-4d0fd98915a4> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b77beb66-1c13-3aa1-7500-29c1228d72d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Raatingen"@nl ;
+            pnv:givenName "Dirrik"@nl ;
+            pnv:literalName "Dirrik van Raatingen"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:children <https://ex.org/Person:0167c53a-8699-eb29-cc51-1295994eb8a2> ;
+    sdo:familyName "van Raatingen"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Dirrik"@nl ;
+    sdo:knows <https://ex.org/Person:075e5371-d606-3df8-1916-8405e263ff34>,
+        <https://ex.org/Person:2f42624e-ed25-e249-a96d-43967b579aa5> ;
+    sdo:name "Dirrik van Raatingen"@nl ;
+    sdo:spouse <https://ex.org/Person:97d5beba-8f4a-c1a8-ab37-ad07ab0c7e85> .
+
+<https://ex.org/Source:b77beb66-1c13-3aa1-7500-29c1228d72d0> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/9ff95830-ea83-433c-8c48-e055e3d35425/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/b77beb66-1c13-3aa1-7500-29c1228d72d0"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/9ff95830-ea83-433c-8c48-e055e3d35425/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1756-01-15"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1712-1767"@nl,
+        "299"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 15-01-1756<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/299\">Inventarisnummer 299 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 299, Periode: 1..., (toegangsnr. 1004), inv.nr. 299, Doopboek en trouwboek van de kerk aan de Kuipersteeg (RK) te Leiden, 1712 - 1767., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/b77beb66-1c13-3aa1-7500-29c1228d72d0"^^xsd:anyURI .
+

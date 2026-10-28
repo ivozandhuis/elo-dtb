@@ -1,0 +1,62 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:084ab240-0a56-9f4a-783b-fd68515ea5d8> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:554812f6-2595-3d0d-6741-2be847dde606> ;
+    picom:hasLifeEvent <https://ex.org/Source:554812f6-2595-3d0d-6741-2be847dde606_huwelijk_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:address "Rotterdam"@nl ;
+    sdo:birthPlace "Leijden"@nl ;
+    sdo:description "Burgerlijke staat voor het huwelijk: j.m."@nl ;
+    sdo:familyName "Bruijns"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Cornelis"@nl ;
+    sdo:name "Cornelis Bruijns"@nl ;
+    sdo:spouse <https://ex.org/Person:c47babe2-0fa8-a7f4-a444-9745f39adfd7> .
+
+<https://ex.org/Person:c47babe2-0fa8-a7f4-a444-9745f39adfd7> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:554812f6-2595-3d0d-6741-2be847dde606> ;
+    picom:hasLifeEvent <https://ex.org/Source:554812f6-2595-3d0d-6741-2be847dde606_huwelijk_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Bosch"@nl ;
+            pnv:givenName "Jacoba"@nl ;
+            pnv:literalName "Jacoba van den Bosch"@nl ;
+            pnv:surnamePrefix "van den"@nl ] ;
+    sdo:address "Warmond"@nl ;
+    sdo:birthPlace "Warmond"@nl ;
+    sdo:description "Burgerlijke staat voor het huwelijk: j.d."@nl ;
+    sdo:familyName "van den Bosch"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Jacoba"@nl ;
+    sdo:name "Jacoba van den Bosch"@nl ;
+    sdo:spouse <https://ex.org/Person:084ab240-0a56-9f4a-783b-fd68515ea5d8> .
+
+<https://ex.org/Source:554812f6-2595-3d0d-6741-2be847dde606> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/0c602d10-da7a-4d8c-b799-39217b1771fa/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/554812f6-2595-3d0d-6741-2be847dde606"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/0c602d10-da7a-4d8c-b799-39217b1771fa/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1745-04-27"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1235"@nl,
+        "1719-1811"@nl,
+        "Datum trouwen: 27-04-1745<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/0600/file/1235\">Inventarisnummer 1235 van archiefnummer 0600 in Archieven</a>"@nl,
+        "Gemeente Warmond (1575-1930)"@nl ;
+    sdo:locationCreated "Warmond"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Gemeente Warmond (1575-1930), Deel: 1235, Periode: 1719-1811, (toegangsnr. 0600), inv.nr. 1235, 1719 sept. 24 - 1811., 28, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/554812f6-2595-3d0d-6741-2be847dde606"^^xsd:anyURI .
+
+<https://ex.org/Source:554812f6-2595-3d0d-6741-2be847dde606_huwelijk_event> a picom:LifeEvent ;
+    picom:eventDate "1745-04-27"@nl ;
+    picom:eventPlace "Warmond"@nl ;
+    picom:eventType picot_eventtypes:83 .
+

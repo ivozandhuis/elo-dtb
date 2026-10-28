@@ -1,0 +1,76 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:03027f67-244d-8e76-7a25-a7fc59977260> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:8beb9ae7-8d6c-3961-2084-f22e7a5ba606> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Bonefas"@nl ;
+    sdo:givenName "Grietje"@nl ;
+    sdo:name "Grietje Bonefas"@nl .
+
+<https://ex.org/Person:710b01ae-5490-051b-2145-c5511b7b5a75> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:8beb9ae7-8d6c-3961-2084-f22e7a5ba606> ;
+    sdo:description "Relatie tot bruidegom: overleden echtgenote"@nl ;
+    sdo:familyName "Werlee"@nl ;
+    sdo:givenName "Maria"@nl ;
+    sdo:name "Maria Werlee"@nl .
+
+<https://ex.org/Person:836e9aa6-8026-961c-75dd-dd7205afcefb> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:8beb9ae7-8d6c-3961-2084-f22e7a5ba606> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Densen"@nl ;
+    sdo:givenName "Willem"@nl ;
+    sdo:name "Willem Densen"@nl .
+
+<https://ex.org/Person:19dea225-e08f-b39c-9c60-ad0b15a4514f> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:8beb9ae7-8d6c-3961-2084-f22e7a5ba606> ;
+    picom:hasLifeEvent <https://ex.org/Source:8beb9ae7-8d6c-3961-2084-f22e7a5ba606_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:address "Leiden, Lange Oosthavestraat"@nl ;
+    sdo:birthPlace "Leiden"@nl ;
+    sdo:description "Burgerlijke staat voor het huwelijk: j.d."@nl ;
+    sdo:familyName "Kettenes"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Antonetta"@nl ;
+    sdo:name "Antonetta Kettenes"@nl ;
+    sdo:spouse <https://ex.org/Person:48629114-2538-b2ee-67b8-1270ac4b5857> .
+
+<https://ex.org/Person:48629114-2538-b2ee-67b8-1270ac4b5857> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:8beb9ae7-8d6c-3961-2084-f22e7a5ba606> ;
+    picom:hasLifeEvent <https://ex.org/Source:8beb9ae7-8d6c-3961-2084-f22e7a5ba606_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:address "Leiden, Korte Oosthavestraat"@nl ;
+    sdo:description "Burgerlijke staat voor het huwelijk: wed."@nl ;
+    sdo:familyName "Densen"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Cornelis"@nl ;
+    sdo:name "Cornelis Densen"@nl ;
+    sdo:spouse <https://ex.org/Person:19dea225-e08f-b39c-9c60-ad0b15a4514f> .
+
+<https://ex.org/Source:8beb9ae7-8d6c-3961-2084-f22e7a5ba606_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1730-02-03"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
+<https://ex.org/Source:8beb9ae7-8d6c-3961-2084-f22e7a5ba606> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/3646a4a0-e2f7-4f86-8667-e9ba66051d90/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/8beb9ae7-8d6c-3961-2084-f22e7a5ba606"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/3646a4a0-e2f7-4f86-8667-e9ba66051d90/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1730-02-03"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1729-1732"@nl,
+        "35"@nl,
+        "De bruidegom brengt 3 kinderen mee uit een eerder huwelijk.<br>Datum ondertrouw: 03-02-1730<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/35\">Inventarisnummer 35 van archiefnummer 1004 in Archieven</a>"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 35, Periode: 17..., (toegangsnr. 1004), inv.nr. 35, LL. Kerkelijk ondertrouwboek (NH) van Leiden, 1729 - juni 1732., 80, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/8beb9ae7-8d6c-3961-2084-f22e7a5ba606"^^xsd:anyURI .
+

@@ -1,0 +1,103 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:f02c2f47-f266-ce57-44ba-1fa8fd58d2d0_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1809-10-15"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:385deaa7-f961-3231-4085-9e53cacb87a6> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:f02c2f47-f266-ce57-44ba-1fa8fd58d2d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Stijn"@nl ;
+            pnv:givenName "Joanna"@nl ;
+            pnv:literalName "Joanna van Stijn"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:familyName "van Stijn"@nl ;
+    sdo:givenName "Joanna"@nl ;
+    sdo:name "Joanna van Stijn"@nl .
+
+<https://ex.org/Person:5d5ed774-ff1b-d056-d034-c6baad302c40> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:f02c2f47-f266-ce57-44ba-1fa8fd58d2d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Prijt"@nl ;
+            pnv:givenName "Henricus"@nl ;
+            pnv:literalName "Henricus van der Prijt"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:familyName "van der Prijt"@nl ;
+    sdo:givenName "Henricus"@nl ;
+    sdo:name "Henricus van der Prijt"@nl .
+
+<https://ex.org/Person:85d7dc3a-4dd2-0540-abc6-17f3c9246167> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:f02c2f47-f266-ce57-44ba-1fa8fd58d2d0> ;
+    picom:hasLifeEvent <https://ex.org/Source:f02c2f47-f266-ce57-44ba-1fa8fd58d2d0_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Esseland"@nl ;
+            pnv:givenName "Cornelis Josephus Henricus"@nl ;
+            pnv:literalName "Cornelis Josephus Henricus van Esseland"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:description "Doopdatum: 15-10-1809"@nl ;
+    sdo:familyName "van Esseland"@nl ;
+    sdo:givenName "Cornelis Josephus Henricus"@nl ;
+    sdo:name "Cornelis Josephus Henricus van Esseland"@nl ;
+    sdo:parent <https://ex.org/Person:94f13ede-85e0-3adb-d4d3-8140fb98da48>,
+        <https://ex.org/Person:d8246c7a-9c07-9f9e-1f06-affce96e44cb> .
+
+<https://ex.org/Person:94f13ede-85e0-3adb-d4d3-8140fb98da48> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:f02c2f47-f266-ce57-44ba-1fa8fd58d2d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Dort"@nl ;
+            pnv:givenName "Joanna Henrica"@nl ;
+            pnv:literalName "Joanna Henrica van Dort"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:children <https://ex.org/Person:85d7dc3a-4dd2-0540-abc6-17f3c9246167> ;
+    sdo:familyName "van Dort"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Joanna Henrica"@nl ;
+    sdo:knows <https://ex.org/Person:385deaa7-f961-3231-4085-9e53cacb87a6>,
+        <https://ex.org/Person:5d5ed774-ff1b-d056-d034-c6baad302c40> ;
+    sdo:name "Joanna Henrica van Dort"@nl ;
+    sdo:spouse <https://ex.org/Person:d8246c7a-9c07-9f9e-1f06-affce96e44cb> .
+
+<https://ex.org/Person:d8246c7a-9c07-9f9e-1f06-affce96e44cb> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:f02c2f47-f266-ce57-44ba-1fa8fd58d2d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Esseland"@nl ;
+            pnv:givenName "Cornelis"@nl ;
+            pnv:literalName "Cornelis van Esseland"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:children <https://ex.org/Person:85d7dc3a-4dd2-0540-abc6-17f3c9246167> ;
+    sdo:familyName "van Esseland"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Cornelis"@nl ;
+    sdo:knows <https://ex.org/Person:385deaa7-f961-3231-4085-9e53cacb87a6>,
+        <https://ex.org/Person:5d5ed774-ff1b-d056-d034-c6baad302c40> ;
+    sdo:name "Cornelis van Esseland"@nl ;
+    sdo:spouse <https://ex.org/Person:94f13ede-85e0-3adb-d4d3-8140fb98da48> .
+
+<https://ex.org/Source:f02c2f47-f266-ce57-44ba-1fa8fd58d2d0> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/b3e4e5f0-136c-4975-b997-3ae4d2fe7dcb/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/f02c2f47-f266-ce57-44ba-1fa8fd58d2d0"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/b3e4e5f0-136c-4975-b997-3ae4d2fe7dcb/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1809-10-15"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1793-1811"@nl,
+        "301"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 15-10-1809<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/301\">Inventarisnummer 301 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 301, Periode: 1..., (toegangsnr. 1004), inv.nr. 301, Doopboek van de kerk aan de Kuipersteeg (RK) te Leiden, 1793 - 1811., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/f02c2f47-f266-ce57-44ba-1fa8fd58d2d0"^^xsd:anyURI .
+

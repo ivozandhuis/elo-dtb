@@ -1,0 +1,88 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:9977aa9b-3095-1805-ee54-8402eb1602d0_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1741-04-19"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:5133e51f-33f1-91a7-23db-e0ea1b1952c8> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:9977aa9b-3095-1805-ee54-8402eb1602d0> ;
+    sdo:children <https://ex.org/Person:f61584bc-83d7-1abe-d521-0e2c35259721> ;
+    sdo:familyName "Vermaas"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Margaretha"@nl ;
+    sdo:knows <https://ex.org/Person:9236adb2-bb9b-2abc-2a64-4a43fedfd2eb>,
+        <https://ex.org/Person:dbe8f31a-c0d8-d234-3778-7b7d68630f09> ;
+    sdo:name "Margaretha Vermaas"@nl ;
+    sdo:spouse <https://ex.org/Person:6cf3f0a7-df0a-694f-097d-7b54a1a42866> .
+
+<https://ex.org/Person:6cf3f0a7-df0a-694f-097d-7b54a1a42866> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:9977aa9b-3095-1805-ee54-8402eb1602d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Renten"@nl ;
+            pnv:givenName "Jan"@nl ;
+            pnv:literalName "Jan van Renten"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:children <https://ex.org/Person:f61584bc-83d7-1abe-d521-0e2c35259721> ;
+    sdo:familyName "van Renten"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jan"@nl ;
+    sdo:knows <https://ex.org/Person:9236adb2-bb9b-2abc-2a64-4a43fedfd2eb>,
+        <https://ex.org/Person:dbe8f31a-c0d8-d234-3778-7b7d68630f09> ;
+    sdo:name "Jan van Renten"@nl ;
+    sdo:spouse <https://ex.org/Person:5133e51f-33f1-91a7-23db-e0ea1b1952c8> .
+
+<https://ex.org/Person:9236adb2-bb9b-2abc-2a64-4a43fedfd2eb> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:9977aa9b-3095-1805-ee54-8402eb1602d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Vermaas"@nl ;
+    sdo:givenName "Kasper"@nl ;
+    sdo:name "Kasper Vermaas"@nl .
+
+<https://ex.org/Person:dbe8f31a-c0d8-d234-3778-7b7d68630f09> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:9977aa9b-3095-1805-ee54-8402eb1602d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Spruijt"@nl ;
+    sdo:givenName "Emmerentia"@nl ;
+    sdo:name "Emmerentia Spruijt"@nl .
+
+<https://ex.org/Person:f61584bc-83d7-1abe-d521-0e2c35259721> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:9977aa9b-3095-1805-ee54-8402eb1602d0> ;
+    picom:hasLifeEvent <https://ex.org/Source:9977aa9b-3095-1805-ee54-8402eb1602d0_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Renten"@nl ;
+            pnv:givenName "Emmerentia"@nl ;
+            pnv:literalName "Emmerentia van Renten"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:description "Doopdatum: 19-04-1741"@nl ;
+    sdo:familyName "van Renten"@nl ;
+    sdo:givenName "Emmerentia"@nl ;
+    sdo:name "Emmerentia van Renten"@nl ;
+    sdo:parent <https://ex.org/Person:5133e51f-33f1-91a7-23db-e0ea1b1952c8>,
+        <https://ex.org/Person:6cf3f0a7-df0a-694f-097d-7b54a1a42866> .
+
+<https://ex.org/Source:9977aa9b-3095-1805-ee54-8402eb1602d0> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/3a00dc8e-c520-415b-b08c-c0d89a341390/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/9977aa9b-3095-1805-ee54-8402eb1602d0"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/3a00dc8e-c520-415b-b08c-c0d89a341390/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1741-04-19"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1741-1769"@nl,
+        "229"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 19-04-1741<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/229\">Inventarisnummer 229 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 229, Periode: 1..., (toegangsnr. 1004), inv.nr. 229, Doopboek van de Pieterskerk (NH) te Leiden, 1741 - 1769., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/9977aa9b-3095-1805-ee54-8402eb1602d0"^^xsd:anyURI .
+

@@ -1,0 +1,100 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:6faf582b-1ef3-1450-9c6d-1709252f4685> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b631b7f1-22dc-036e-4657-db4d97181606> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Vos"@nl ;
+            pnv:givenName "Jan"@nl ;
+            pnv:literalName "Jan de Vos"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:description "getuige van de bruidegom, relatie tot de bruidegom: cosijn"@nl ;
+    sdo:familyName "de Vos"@nl ;
+    sdo:givenName "Jan"@nl ;
+    sdo:name "Jan de Vos"@nl .
+
+<https://ex.org/Person:c6f42561-5b8f-d0c7-5da9-eaf61412871f> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b631b7f1-22dc-036e-4657-db4d97181606> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Vos"@nl ;
+            pnv:givenName "Anthonis"@nl ;
+            pnv:literalName "Anthonis de Vos"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:description "getuige van de bruidegom, relatie tot de bruidegom: cosijn"@nl ;
+    sdo:familyName "de Vos"@nl ;
+    sdo:givenName "Anthonis"@nl ;
+    sdo:name "Anthonis de Vos"@nl .
+
+<https://ex.org/Person:542a31b0-a0b3-cdce-b9ff-cbdba43a65ed> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b631b7f1-22dc-036e-4657-db4d97181606> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:description "weduwe van Maerten de Smidt, getuige van de bruid, relatie tot de bruid: moeder"@nl ;
+    sdo:familyName "Smits"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Neeltgen"@nl ;
+    sdo:name "Neeltgen Smits"@nl .
+
+<https://ex.org/Person:8b22a565-cb9c-068f-b505-810ed0fb4046> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b631b7f1-22dc-036e-4657-db4d97181606> ;
+    picom:hasLifeEvent <https://ex.org/Source:b631b7f1-22dc-036e-4657-db4d97181606_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Vos"@nl ;
+            pnv:givenName "Jaecques"@nl ;
+            pnv:literalName "Jaecques de Vos"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:address "Haerlem"@nl ;
+    sdo:birthPlace "Ronselael [Rouselaer"@nl ;
+    sdo:familyName "de Vos"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jaecques"@nl ;
+    sdo:name "Jaecques de Vos"@nl ;
+    sdo:spouse <https://ex.org/Person:a45ab7be-67ab-5271-2f24-95430acacf1e> .
+
+<https://ex.org/Person:a45ab7be-67ab-5271-2f24-95430acacf1e> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b631b7f1-22dc-036e-4657-db4d97181606> ;
+    picom:hasLifeEvent <https://ex.org/Source:b631b7f1-22dc-036e-4657-db4d97181606_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Smidt"@nl ;
+            pnv:givenName "Ommeryntgen"@nl ;
+            pnv:literalName "Ommeryntgen de Smidt"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:birthPlace "Loo"@nl ;
+    sdo:familyName "de Smidt"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Ommeryntgen"@nl ;
+    sdo:name "Ommeryntgen de Smidt"@nl ;
+    sdo:parent <https://ex.org/Person:542a31b0-a0b3-cdce-b9ff-cbdba43a65ed> ;
+    sdo:spouse <https://ex.org/Person:8b22a565-cb9c-068f-b505-810ed0fb4046> .
+
+<https://ex.org/Source:b631b7f1-22dc-036e-4657-db4d97181606_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1592-08-17"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
+<https://ex.org/Source:b631b7f1-22dc-036e-4657-db4d97181606> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/85421693-7775-48e4-b90a-f94e52d2d1d0/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/b631b7f1-22dc-036e-4657-db4d97181606"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/85421693-7775-48e4-b90a-f94e52d2d1d0/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1592-08-17"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1592-1611"@nl,
+        "197"@nl,
+        "Datum ondertrouw: 17-08-1592<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/197\">Inventarisnummer 197 van archiefnummer 1004 in Archieven</a>"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 197, Periode: 1..., (toegangsnr. 1004), inv.nr. 197, A. Ondertrouwboek en trouwboek voor schepenen van Leiden, 1592 - juni 1611., 6v, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/b631b7f1-22dc-036e-4657-db4d97181606"^^xsd:anyURI .
+

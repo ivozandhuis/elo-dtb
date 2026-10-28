@@ -1,0 +1,84 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:9fa5a281-efe0-5462-2b05-ae18052e22d0_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1811-03-10"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:299c07d4-23bb-665c-f54b-494e8336b1fc> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:9fa5a281-efe0-5462-2b05-ae18052e22d0> ;
+    picom:hasLifeEvent <https://ex.org/Source:9fa5a281-efe0-5462-2b05-ae18052e22d0_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:birthDate "1811-03-04"^^xsd:date ;
+    sdo:description "Doopdatum: 10-03-1811"@nl ;
+    sdo:familyName "Vogelezang"@nl ;
+    sdo:givenName "Jannetje"@nl ;
+    sdo:name "Jannetje Vogelezang"@nl ;
+    sdo:parent <https://ex.org/Person:691478c9-75dd-4e92-a13f-33e4b606f961>,
+        <https://ex.org/Person:900583da-db2b-b586-b5ef-11cd01795cf1> .
+
+<https://ex.org/Person:691478c9-75dd-4e92-a13f-33e4b606f961> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:9fa5a281-efe0-5462-2b05-ae18052e22d0> ;
+    sdo:children <https://ex.org/Person:299c07d4-23bb-665c-f54b-494e8336b1fc> ;
+    sdo:familyName "Vogelezang"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Martinus"@nl ;
+    sdo:knows <https://ex.org/Person:aa8a940f-3e50-82a0-eae9-f7a0829174e6>,
+        <https://ex.org/Person:f15e0cdb-d6b8-876d-405f-834f2aa920ea> ;
+    sdo:name "Martinus Vogelezang"@nl ;
+    sdo:spouse <https://ex.org/Person:900583da-db2b-b586-b5ef-11cd01795cf1> .
+
+<https://ex.org/Person:900583da-db2b-b586-b5ef-11cd01795cf1> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:9fa5a281-efe0-5462-2b05-ae18052e22d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Vianen"@nl ;
+            pnv:givenName "Johanna"@nl ;
+            pnv:literalName "Johanna van Vianen"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:children <https://ex.org/Person:299c07d4-23bb-665c-f54b-494e8336b1fc> ;
+    sdo:familyName "van Vianen"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Johanna"@nl ;
+    sdo:knows <https://ex.org/Person:aa8a940f-3e50-82a0-eae9-f7a0829174e6>,
+        <https://ex.org/Person:f15e0cdb-d6b8-876d-405f-834f2aa920ea> ;
+    sdo:name "Johanna van Vianen"@nl ;
+    sdo:spouse <https://ex.org/Person:691478c9-75dd-4e92-a13f-33e4b606f961> .
+
+<https://ex.org/Person:aa8a940f-3e50-82a0-eae9-f7a0829174e6> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:9fa5a281-efe0-5462-2b05-ae18052e22d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Vogelezang"@nl ;
+    sdo:givenName "Martinus"@nl ;
+    sdo:name "Martinus Vogelezang"@nl .
+
+<https://ex.org/Person:f15e0cdb-d6b8-876d-405f-834f2aa920ea> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:9fa5a281-efe0-5462-2b05-ae18052e22d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Brouwers"@nl ;
+    sdo:givenName "Jannetje"@nl ;
+    sdo:name "Jannetje Brouwers"@nl .
+
+<https://ex.org/Source:9fa5a281-efe0-5462-2b05-ae18052e22d0> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/cf87f555-4ca1-45ba-bffe-4cd554a9416c/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/9fa5a281-efe0-5462-2b05-ae18052e22d0"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/cf87f555-4ca1-45ba-bffe-4cd554a9416c/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1811-03-10"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1804-1811"@nl,
+        "257"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 10-03-1811<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/257\">Inventarisnummer 257 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 257, Periode: 1..., (toegangsnr. 1004), inv.nr. 257, Doopboek van de Hooglandse Kerk (NH) te Leiden, 1804 - 1811., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/9fa5a281-efe0-5462-2b05-ae18052e22d0"^^xsd:anyURI .
+

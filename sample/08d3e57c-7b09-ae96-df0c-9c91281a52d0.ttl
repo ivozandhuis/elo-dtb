@@ -1,0 +1,89 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:08d3e57c-7b09-ae96-df0c-9c91281a52d0_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1637-12-26"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:0831a380-a22e-307f-50ae-c5fbfbc367e3> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:08d3e57c-7b09-ae96-df0c-9c91281a52d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Marytgen"@nl ;
+            pnv:literalName "Marytgen Claesdr"@nl ;
+            pnv:patronym "Claesdr"@nl ] ;
+    sdo:givenName "Marytgen"@nl ;
+    sdo:name "Marytgen Claesdr"@nl .
+
+<https://ex.org/Person:0b6d608a-6bcc-a8dd-369a-752fb152e99a> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:08d3e57c-7b09-ae96-df0c-9c91281a52d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Trijntgen"@nl ;
+            pnv:literalName "Trijntgen Claesdr"@nl ;
+            pnv:patronym "Claesdr"@nl ] ;
+    sdo:children <https://ex.org/Person:1922320f-e1cb-f351-b38e-028ceb17024b> ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Trijntgen"@nl ;
+    sdo:knows <https://ex.org/Person:0831a380-a22e-307f-50ae-c5fbfbc367e3>,
+        <https://ex.org/Person:3c30d5fd-b1b6-7d78-7e49-4ff70def12cc> ;
+    sdo:name "Trijntgen Claesdr"@nl ;
+    sdo:spouse <https://ex.org/Person:7a255045-11b8-5abd-1450-e0fca31db8da> .
+
+<https://ex.org/Person:1922320f-e1cb-f351-b38e-028ceb17024b> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:08d3e57c-7b09-ae96-df0c-9c91281a52d0> ;
+    picom:hasLifeEvent <https://ex.org/Source:08d3e57c-7b09-ae96-df0c-9c91281a52d0_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 26-12-1637"@nl ;
+    sdo:givenName "Anna"@nl ;
+    sdo:name "Anna"@nl ;
+    sdo:parent <https://ex.org/Person:0b6d608a-6bcc-a8dd-369a-752fb152e99a>,
+        <https://ex.org/Person:7a255045-11b8-5abd-1450-e0fca31db8da> .
+
+<https://ex.org/Person:3c30d5fd-b1b6-7d78-7e49-4ff70def12cc> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:08d3e57c-7b09-ae96-df0c-9c91281a52d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Dirck"@nl ;
+            pnv:literalName "Dirck Cornelisz"@nl ;
+            pnv:patronym "Cornelisz"@nl ] ;
+    sdo:givenName "Dirck"@nl ;
+    sdo:name "Dirck Cornelisz"@nl .
+
+<https://ex.org/Person:7a255045-11b8-5abd-1450-e0fca31db8da> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:08d3e57c-7b09-ae96-df0c-9c91281a52d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Hillebrandt"@nl ;
+            pnv:literalName "Hillebrandt Tobias"@nl ;
+            pnv:patronym "Tobias"@nl ] ;
+    sdo:children <https://ex.org/Person:1922320f-e1cb-f351-b38e-028ceb17024b> ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Hillebrandt"@nl ;
+    sdo:knows <https://ex.org/Person:0831a380-a22e-307f-50ae-c5fbfbc367e3>,
+        <https://ex.org/Person:3c30d5fd-b1b6-7d78-7e49-4ff70def12cc> ;
+    sdo:name "Hillebrandt Tobias"@nl ;
+    sdo:spouse <https://ex.org/Person:0b6d608a-6bcc-a8dd-369a-752fb152e99a> .
+
+<https://ex.org/Source:08d3e57c-7b09-ae96-df0c-9c91281a52d0> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/85179428-4a01-4425-b7b3-8ab6b5a66f67/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/08d3e57c-7b09-ae96-df0c-9c91281a52d0"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/85179428-4a01-4425-b7b3-8ab6b5a66f67/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1637-12-26"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1636-1644"@nl,
+        "234"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 26-12-1637<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/234\">Inventarisnummer 234 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 234, Periode: 1..., (toegangsnr. 1004), inv.nr. 234, Doopboek van de Hooglandse Kerk (NH) te Leiden, 1636 - 6 december 1644., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/08d3e57c-7b09-ae96-df0c-9c91281a52d0"^^xsd:anyURI .
+

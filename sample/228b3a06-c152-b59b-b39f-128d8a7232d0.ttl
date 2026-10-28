@@ -1,0 +1,88 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:228b3a06-c152-b59b-b39f-128d8a7232d0_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1682-07-05"@nl ;
+    picom:eventPlace "Noordwijk"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:331eef3c-baf3-22df-d497-c37d7d866a67> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:228b3a06-c152-b59b-b39f-128d8a7232d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Marck"@nl ;
+            pnv:givenName "Maritie"@nl ;
+            pnv:literalName "Maritie Jacobs van der Marck"@nl ;
+            pnv:patronym "Jacobs"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:children <https://ex.org/Person:56b8f68f-bac4-cf6e-002d-c5cf001bb980> ;
+    sdo:familyName "van der Marck"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Maritie"@nl ;
+    sdo:knows <https://ex.org/Person:6e4c5eab-7740-8913-721f-162b03d74d1f> ;
+    sdo:name "Maritie Jacobs van der Marck"@nl ;
+    sdo:spouse <https://ex.org/Person:957cc88c-550e-e023-d20b-04e089cebba3> .
+
+<https://ex.org/Person:56b8f68f-bac4-cf6e-002d-c5cf001bb980> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:228b3a06-c152-b59b-b39f-128d8a7232d0> ;
+    picom:hasLifeEvent <https://ex.org/Source:228b3a06-c152-b59b-b39f-128d8a7232d0_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Berch"@nl ;
+            pnv:givenName "Anna"@nl ;
+            pnv:literalName "Anna van den Berch"@nl ;
+            pnv:surnamePrefix "van den"@nl ] ;
+    sdo:description "Doopdatum: 05-07-1682"@nl ;
+    sdo:familyName "van den Berch"@nl ;
+    sdo:givenName "Anna"@nl ;
+    sdo:name "Anna van den Berch"@nl ;
+    sdo:parent <https://ex.org/Person:331eef3c-baf3-22df-d497-c37d7d866a67>,
+        <https://ex.org/Person:957cc88c-550e-e023-d20b-04e089cebba3> .
+
+<https://ex.org/Person:6e4c5eab-7740-8913-721f-162b03d74d1f> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:228b3a06-c152-b59b-b39f-128d8a7232d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Jannetie"@nl ;
+            pnv:literalName "Jannetie Engels"@nl ;
+            pnv:patronym "Engels"@nl ] ;
+    sdo:givenName "Jannetie"@nl ;
+    sdo:name "Jannetie Engels"@nl .
+
+<https://ex.org/Person:957cc88c-550e-e023-d20b-04e089cebba3> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:228b3a06-c152-b59b-b39f-128d8a7232d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Berch"@nl ;
+            pnv:givenName "Jan"@nl ;
+            pnv:literalName "Jan van den Berch"@nl ;
+            pnv:surnamePrefix "van den"@nl ] ;
+    sdo:children <https://ex.org/Person:56b8f68f-bac4-cf6e-002d-c5cf001bb980> ;
+    sdo:familyName "van den Berch"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jan"@nl ;
+    sdo:knows <https://ex.org/Person:6e4c5eab-7740-8913-721f-162b03d74d1f> ;
+    sdo:name "Jan van den Berch"@nl ;
+    sdo:spouse <https://ex.org/Person:331eef3c-baf3-22df-d497-c37d7d866a67> .
+
+<https://ex.org/Source:228b3a06-c152-b59b-b39f-128d8a7232d0> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/19fc5f73-f4b6-4abe-a9ef-809bc5e76ad3/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/228b3a06-c152-b59b-b39f-128d8a7232d0"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/19fc5f73-f4b6-4abe-a9ef-809bc5e76ad3/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1682-07-05"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1"@nl,
+        "1621-1811"@nl,
+        "Doop-, Trouw- en Begraafregisters (retroacta B.S.) Noordwijk"@nl,
+        "Doopdatum: 05-07-1682<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/0910/file/1\">Inventarisnummer 1 van archiefnummer 0910 in Archieven</a>"@nl ;
+    sdo:locationCreated "Noordwijk"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, Trouw- en Begraafregisters (retroacta B.S.) Noordwijk, Deel: 1, Periode: 1621..., (toegangsnr. 0910), inv.nr. 1, Doopboek (NH) van Noordwijk-Binnen, 1621 maart 14 - 1807 oktober 10 en vervolgens een ingehecht katern met doopinschrijvingen, 1807 oktober 27 - 1811., 76vs, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/228b3a06-c152-b59b-b39f-128d8a7232d0"^^xsd:anyURI .
+

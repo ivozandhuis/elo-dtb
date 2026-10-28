@@ -1,0 +1,88 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:a0ba98f2-daf3-f8b9-874a-683eb0a832d0_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1723-08-26"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:3e65e5e8-906e-fa1b-3ccf-d75ba7a4199f> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:a0ba98f2-daf3-f8b9-874a-683eb0a832d0> ;
+    picom:hasLifeEvent <https://ex.org/Source:a0ba98f2-daf3-f8b9-874a-683eb0a832d0_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:description "Doopdatum: 26-08-1723"@nl ;
+    sdo:givenName "Lijsbet"@nl ;
+    sdo:name "Lijsbet"@nl ;
+    sdo:parent <https://ex.org/Person:47f57c12-9bae-76c4-9c64-edf12a2a1b3a>,
+        <https://ex.org/Person:64015519-250e-ad7b-702b-70ef5dad01c9> .
+
+<https://ex.org/Person:47f57c12-9bae-76c4-9c64-edf12a2a1b3a> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:a0ba98f2-daf3-f8b9-874a-683eb0a832d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Susanna"@nl ;
+            pnv:literalName "Susanna Henriks"@nl ;
+            pnv:patronym "Henriks"@nl ] ;
+    sdo:children <https://ex.org/Person:3e65e5e8-906e-fa1b-3ccf-d75ba7a4199f> ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Susanna"@nl ;
+    sdo:knows <https://ex.org/Person:a5c5e8f6-229c-1f1a-fff0-97c807742f5d>,
+        <https://ex.org/Person:c2d7e7a1-2595-5249-e0b5-f8737b7e1b20> ;
+    sdo:name "Susanna Henriks"@nl ;
+    sdo:spouse <https://ex.org/Person:64015519-250e-ad7b-702b-70ef5dad01c9> .
+
+<https://ex.org/Person:64015519-250e-ad7b-702b-70ef5dad01c9> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:a0ba98f2-daf3-f8b9-874a-683eb0a832d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Jacobus"@nl ;
+            pnv:literalName "Jacobus Karelsz"@nl ;
+            pnv:patronym "Karelsz"@nl ] ;
+    sdo:children <https://ex.org/Person:3e65e5e8-906e-fa1b-3ccf-d75ba7a4199f> ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jacobus"@nl ;
+    sdo:knows <https://ex.org/Person:a5c5e8f6-229c-1f1a-fff0-97c807742f5d>,
+        <https://ex.org/Person:c2d7e7a1-2595-5249-e0b5-f8737b7e1b20> ;
+    sdo:name "Jacobus Karelsz"@nl ;
+    sdo:spouse <https://ex.org/Person:47f57c12-9bae-76c4-9c64-edf12a2a1b3a> .
+
+<https://ex.org/Person:a5c5e8f6-229c-1f1a-fff0-97c807742f5d> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:a0ba98f2-daf3-f8b9-874a-683eb0a832d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Linden"@nl ;
+            pnv:givenName "Arent"@nl ;
+            pnv:literalName "Arent van der Linden"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:familyName "van der Linden"@nl ;
+    sdo:givenName "Arent"@nl ;
+    sdo:name "Arent van der Linden"@nl .
+
+<https://ex.org/Person:c2d7e7a1-2595-5249-e0b5-f8737b7e1b20> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:a0ba98f2-daf3-f8b9-874a-683eb0a832d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Meeters"@nl ;
+    sdo:givenName "Susanna"@nl ;
+    sdo:name "Susanna Meeters"@nl .
+
+<https://ex.org/Source:a0ba98f2-daf3-f8b9-874a-683eb0a832d0> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/5a90dddf-b305-4eaf-bd7c-80152de788df/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/a0ba98f2-daf3-f8b9-874a-683eb0a832d0"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/5a90dddf-b305-4eaf-bd7c-80152de788df/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1723-08-26"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1718-1726"@nl,
+        "248"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 26-08-1723<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/248\">Inventarisnummer 248 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 248, Periode: 1..., (toegangsnr. 1004), inv.nr. 248, Doopboek van de Hooglandse Kerk (NH) te Leiden, 2 oktober 1718 - 28 februari 1726., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/a0ba98f2-daf3-f8b9-874a-683eb0a832d0"^^xsd:anyURI .
+

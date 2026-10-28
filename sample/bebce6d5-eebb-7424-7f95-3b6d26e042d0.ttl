@@ -1,0 +1,98 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:bebce6d5-eebb-7424-7f95-3b6d26e042d0_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1651-02-28"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:606c63e7-5f02-b740-4990-a6bc510feec4> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:bebce6d5-eebb-7424-7f95-3b6d26e042d0> ;
+    picom:hasLifeEvent <https://ex.org/Source:bebce6d5-eebb-7424-7f95-3b6d26e042d0_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Swijger"@nl ;
+            pnv:givenName "Jacob"@nl ;
+            pnv:literalName "Jacob de Swijger"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:description "Doopdatum: 28-02-1651"@nl ;
+    sdo:familyName "de Swijger"@nl ;
+    sdo:givenName "Jacob"@nl ;
+    sdo:name "Jacob de Swijger"@nl ;
+    sdo:parent <https://ex.org/Person:698fcf44-6f3f-d646-d8ce-24ac93061914>,
+        <https://ex.org/Person:d9347853-27fc-d20a-da49-5d894d630916> .
+
+<https://ex.org/Person:698fcf44-6f3f-d646-d8ce-24ac93061914> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:bebce6d5-eebb-7424-7f95-3b6d26e042d0> ;
+    sdo:children <https://ex.org/Person:606c63e7-5f02-b740-4990-a6bc510feec4> ;
+    sdo:familyName "Busschop"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Janneken"@nl ;
+    sdo:knows <https://ex.org/Person:d1a2466b-a46d-1293-600b-721d82acd41f>,
+        <https://ex.org/Person:dcf76b61-8ca0-afb9-4686-c602c0d979ab> ;
+    sdo:name "Janneken Busschop"@nl ;
+    sdo:spouse <https://ex.org/Person:d9347853-27fc-d20a-da49-5d894d630916> .
+
+<https://ex.org/Person:d1a2466b-a46d-1293-600b-721d82acd41f> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:bebce6d5-eebb-7424-7f95-3b6d26e042d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Raedt"@nl ;
+            pnv:givenName "Rachel"@nl ;
+            pnv:literalName "Rachel de Raedt"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:familyName "de Raedt"@nl ;
+    sdo:givenName "Rachel"@nl ;
+    sdo:name "Rachel de Raedt"@nl .
+
+<https://ex.org/Person:d9347853-27fc-d20a-da49-5d894d630916> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:bebce6d5-eebb-7424-7f95-3b6d26e042d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Swijger"@nl ;
+            pnv:givenName "Jan"@nl ;
+            pnv:literalName "Jan de Swijger"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:children <https://ex.org/Person:606c63e7-5f02-b740-4990-a6bc510feec4> ;
+    sdo:familyName "de Swijger"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jan"@nl ;
+    sdo:knows <https://ex.org/Person:d1a2466b-a46d-1293-600b-721d82acd41f>,
+        <https://ex.org/Person:dcf76b61-8ca0-afb9-4686-c602c0d979ab> ;
+    sdo:name "Jan de Swijger"@nl ;
+    sdo:spouse <https://ex.org/Person:698fcf44-6f3f-d646-d8ce-24ac93061914> .
+
+<https://ex.org/Person:dcf76b61-8ca0-afb9-4686-c602c0d979ab> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:bebce6d5-eebb-7424-7f95-3b6d26e042d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Steene"@nl ;
+            pnv:givenName "Claes"@nl ;
+            pnv:literalName "Claes van de Steene"@nl ;
+            pnv:surnamePrefix "van de"@nl ] ;
+    sdo:familyName "van de Steene"@nl ;
+    sdo:givenName "Claes"@nl ;
+    sdo:name "Claes van de Steene"@nl .
+
+<https://ex.org/Source:bebce6d5-eebb-7424-7f95-3b6d26e042d0> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/9a9bedd8-7e7e-4800-96ac-967396429cdb/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/bebce6d5-eebb-7424-7f95-3b6d26e042d0"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/9a9bedd8-7e7e-4800-96ac-967396429cdb/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1651-02-28"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1644-1652"@nl,
+        "235"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 28-02-1651<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/235\">Inventarisnummer 235 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 235, Periode: 1..., (toegangsnr. 1004), inv.nr. 235, Doopboek van de Hooglandse Kerk (NH) te Leiden, 11 december 1644 - 11 augustus 1652., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/bebce6d5-eebb-7424-7f95-3b6d26e042d0"^^xsd:anyURI .
+

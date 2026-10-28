@@ -1,0 +1,98 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:9da5d97b-835c-a543-0cd3-faf89e7ba44c> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:a605fd1a-a028-b3b3-b1a9-a90ac6a09606> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:address "Bij de Wittepoort"@nl ;
+    sdo:description "getuige van de bruid, relatie tot de bruid: schoonmoeder, adres: Bij de Wittepoort"@nl ;
+    sdo:familyName "Pervee"@nl ;
+    sdo:givenName "Sjenne"@nl ;
+    sdo:name "Sjenne Pervee"@nl .
+
+<https://ex.org/Person:2f8647da-85e3-ec87-6c40-7972cef16dd6> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:a605fd1a-a028-b3b3-b1a9-a90ac6a09606> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:description "getuige van de bruidegom, relatie tot de bruidegom: bekende"@nl ;
+    sdo:familyName "Rosee"@nl ;
+    sdo:givenName "Pieter"@nl ;
+    sdo:name "Pieter Rosee"@nl .
+
+<https://ex.org/Person:692b7aa0-9352-70df-98e5-4c61fbe30a03> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:a605fd1a-a028-b3b3-b1a9-a90ac6a09606> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:address "Langegraft"@nl ;
+    sdo:description "getuige van de bruid, relatie tot de bruid: bekende, adres: Langegraft"@nl ;
+    sdo:familyName "Ramack"@nl ;
+    sdo:givenName "Mary"@nl ;
+    sdo:name "Mary Ramack"@nl .
+
+<https://ex.org/Person:97e9ab66-969b-ddbc-e59c-cda8f52ee832> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:a605fd1a-a028-b3b3-b1a9-a90ac6a09606> ;
+    picom:hasLifeEvent <https://ex.org/Source:a605fd1a-a028-b3b3-b1a9-a90ac6a09606_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:address "Langegraft"@nl ;
+    sdo:birthPlace "Sjeneve"@nl ;
+    sdo:familyName "Galjardou"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jan"@nl ;
+    sdo:hasOccupation "trijpwerker"@nl ;
+    sdo:knows <https://ex.org/Person:2f8647da-85e3-ec87-6c40-7972cef16dd6> ;
+    sdo:name "Jan Galjardou"@nl ;
+    sdo:spouse <https://ex.org/Person:de1c80a8-201c-ad6a-bccc-d73371c9a13d> .
+
+<https://ex.org/Person:d4ca9d8f-a332-c975-1178-321ef03a331a> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:a605fd1a-a028-b3b3-b1a9-a90ac6a09606> ;
+    picom:deceased true ;
+    sdo:description "Relatie tot bruid: wed."@nl ;
+    sdo:familyName "Beaumon"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Abraham"@nl ;
+    sdo:name "Abraham Beaumon"@nl .
+
+<https://ex.org/Person:de1c80a8-201c-ad6a-bccc-d73371c9a13d> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:a605fd1a-a028-b3b3-b1a9-a90ac6a09606> ;
+    picom:hasLifeEvent <https://ex.org/Source:a605fd1a-a028-b3b3-b1a9-a90ac6a09606_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    picom:isWidOf <https://ex.org/Person:d4ca9d8f-a332-c975-1178-321ef03a331a> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Tombe"@nl ;
+            pnv:givenName "Bastiaantje"@nl ;
+            pnv:literalName "Bastiaantje de Tombe"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:address "Scheystraet"@nl ;
+    sdo:familyName "de Tombe"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Bastiaantje"@nl ;
+    sdo:knows <https://ex.org/Person:692b7aa0-9352-70df-98e5-4c61fbe30a03> ;
+    sdo:name "Bastiaantje de Tombe"@nl ;
+    sdo:spouse <https://ex.org/Person:97e9ab66-969b-ddbc-e59c-cda8f52ee832> .
+
+<https://ex.org/Source:a605fd1a-a028-b3b3-b1a9-a90ac6a09606_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1695-12-16"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
+<https://ex.org/Source:a605fd1a-a028-b3b3-b1a9-a90ac6a09606> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/d1238eb5-f4bc-4a47-911b-ec92f14d7531/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/a605fd1a-a028-b3b3-b1a9-a90ac6a09606"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/d1238eb5-f4bc-4a47-911b-ec92f14d7531/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1695-12-16"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1694-1698"@nl,
+        "26"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "W = huwelijk gesloten in de Waalse kerk<br>Datum ondertrouw: 16-12-1695<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/26\">Inventarisnummer 26 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 26, Periode: 16..., (toegangsnr. 1004), inv.nr. 26, BB. Kerkelijk ondertrouwboek (NH) van Leiden, mei 1694 - mei 1698., 128v, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/a605fd1a-a028-b3b3-b1a9-a90ac6a09606"^^xsd:anyURI .
+

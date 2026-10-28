@@ -1,0 +1,87 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:9e2d9417-7125-7a14-4759-c3aa696192d0_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1699-05-17"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:873f0463-0ecb-ff3a-728b-58928076b2ee> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:9e2d9417-7125-7a14-4759-c3aa696192d0> ;
+    picom:hasLifeEvent <https://ex.org/Source:9e2d9417-7125-7a14-4759-c3aa696192d0_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Bruijn"@nl ;
+            pnv:givenName "Isaäk"@nl ;
+            pnv:literalName "Isaäk de Bruijn"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:description "Doopdatum: 17-05-1699"@nl ;
+    sdo:familyName "de Bruijn"@nl ;
+    sdo:givenName "Isaäk"@nl ;
+    sdo:name "Isaäk de Bruijn"@nl ;
+    sdo:parent <https://ex.org/Person:a4b5b2e5-2c11-a317-e3f2-347a77b16791>,
+        <https://ex.org/Person:c563dc7d-05cb-c855-97dd-89d8147e2a06> .
+
+<https://ex.org/Person:a4b5b2e5-2c11-a317-e3f2-347a77b16791> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:9e2d9417-7125-7a14-4759-c3aa696192d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Katrina"@nl ;
+            pnv:literalName "Katrina Reijn"@nl ;
+            pnv:patronym "Reijn"@nl ] ;
+    sdo:children <https://ex.org/Person:873f0463-0ecb-ff3a-728b-58928076b2ee> ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Katrina"@nl ;
+    sdo:knows <https://ex.org/Person:cfb53016-39eb-c071-f0c2-a27b29864adf> ;
+    sdo:name "Katrina Reijn"@nl ;
+    sdo:spouse <https://ex.org/Person:c563dc7d-05cb-c855-97dd-89d8147e2a06> .
+
+<https://ex.org/Person:c563dc7d-05cb-c855-97dd-89d8147e2a06> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:9e2d9417-7125-7a14-4759-c3aa696192d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Bruijn"@nl ;
+            pnv:givenName "Isaäk"@nl ;
+            pnv:literalName "Isaäk de Bruijn"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:children <https://ex.org/Person:873f0463-0ecb-ff3a-728b-58928076b2ee> ;
+    sdo:familyName "de Bruijn"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Isaäk"@nl ;
+    sdo:knows <https://ex.org/Person:cfb53016-39eb-c071-f0c2-a27b29864adf> ;
+    sdo:name "Isaäk de Bruijn"@nl ;
+    sdo:spouse <https://ex.org/Person:a4b5b2e5-2c11-a317-e3f2-347a77b16791> .
+
+<https://ex.org/Person:cfb53016-39eb-c071-f0c2-a27b29864adf> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:9e2d9417-7125-7a14-4759-c3aa696192d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Bruijn"@nl ;
+            pnv:givenName "Isaäk"@nl ;
+            pnv:literalName "Isaäk de Bruijn"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:familyName "de Bruijn"@nl ;
+    sdo:givenName "Isaäk"@nl ;
+    sdo:name "Isaäk de Bruijn"@nl .
+
+<https://ex.org/Source:9e2d9417-7125-7a14-4759-c3aa696192d0> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/27b9c7b1-c280-4f37-aa51-c8af34d71f40/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/9e2d9417-7125-7a14-4759-c3aa696192d0"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/27b9c7b1-c280-4f37-aa51-c8af34d71f40/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1699-05-17"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1696-1707"@nl,
+        "266"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 17-05-1699<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/266\">Inventarisnummer 266 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 266, Periode: 1..., (toegangsnr. 1004), inv.nr. 266, Doopboek van de Loots- of Oosterkerk (NH) te Leiden, 1696 - 26 juni 1707., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/9e2d9417-7125-7a14-4759-c3aa696192d0"^^xsd:anyURI .
+

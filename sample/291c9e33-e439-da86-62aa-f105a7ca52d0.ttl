@@ -1,0 +1,93 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:291c9e33-e439-da86-62aa-f105a7ca52d0_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1685-11-13"@nl ;
+    picom:eventPlace "Zevenhoven"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:424cc8df-0719-3bc3-1b3a-15ef9dc7547a> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:291c9e33-e439-da86-62aa-f105a7ca52d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Cornelis"@nl ;
+            pnv:literalName "Cornelis Claasen"@nl ;
+            pnv:patronym "Claasen"@nl ] ;
+    sdo:children <https://ex.org/Person:c2e374aa-08dc-fc04-3a23-e6d3fc3abee0> ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Cornelis"@nl ;
+    sdo:knows <https://ex.org/Person:88a07080-6dba-878e-ed91-10e7815e90af>,
+        <https://ex.org/Person:eafdba54-6399-a339-eff4-ef9d205a4fac> ;
+    sdo:name "Cornelis Claasen"@nl ;
+    sdo:spouse <https://ex.org/Person:be4de9d4-3307-4e60-5a91-8a009c78dbce> .
+
+<https://ex.org/Person:88a07080-6dba-878e-ed91-10e7815e90af> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:291c9e33-e439-da86-62aa-f105a7ca52d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Martje"@nl ;
+            pnv:literalName "Martje Ariens"@nl ;
+            pnv:patronym "Ariens"@nl ] ;
+    sdo:givenName "Martje"@nl ;
+    sdo:name "Martje Ariens"@nl .
+
+<https://ex.org/Person:be4de9d4-3307-4e60-5a91-8a009c78dbce> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:291c9e33-e439-da86-62aa-f105a7ca52d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Neeltje"@nl ;
+            pnv:literalName "Neeltje Pieters"@nl ;
+            pnv:patronym "Pieters"@nl ] ;
+    sdo:children <https://ex.org/Person:c2e374aa-08dc-fc04-3a23-e6d3fc3abee0> ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Neeltje"@nl ;
+    sdo:knows <https://ex.org/Person:88a07080-6dba-878e-ed91-10e7815e90af>,
+        <https://ex.org/Person:eafdba54-6399-a339-eff4-ef9d205a4fac> ;
+    sdo:name "Neeltje Pieters"@nl ;
+    sdo:spouse <https://ex.org/Person:424cc8df-0719-3bc3-1b3a-15ef9dc7547a> .
+
+<https://ex.org/Person:c2e374aa-08dc-fc04-3a23-e6d3fc3abee0> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:291c9e33-e439-da86-62aa-f105a7ca52d0> ;
+    picom:hasLifeEvent <https://ex.org/Source:291c9e33-e439-da86-62aa-f105a7ca52d0_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Claassie"@nl ;
+            pnv:literalName "Claassie Cornelis"@nl ;
+            pnv:patronym "Cornelis"@nl ] ;
+    sdo:description "Doopdatum: 13-11-1685"@nl ;
+    sdo:givenName "Claassie"@nl ;
+    sdo:name "Claassie Cornelis"@nl ;
+    sdo:parent <https://ex.org/Person:424cc8df-0719-3bc3-1b3a-15ef9dc7547a>,
+        <https://ex.org/Person:be4de9d4-3307-4e60-5a91-8a009c78dbce> .
+
+<https://ex.org/Person:eafdba54-6399-a339-eff4-ef9d205a4fac> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:291c9e33-e439-da86-62aa-f105a7ca52d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Apolonia"@nl ;
+            pnv:literalName "Apolonia Claas"@nl ;
+            pnv:patronym "Claas"@nl ] ;
+    sdo:givenName "Apolonia"@nl ;
+    sdo:name "Apolonia Claas"@nl .
+
+<https://ex.org/Source:291c9e33-e439-da86-62aa-f105a7ca52d0> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/e2dfe197-63fe-4f5a-8dc0-a72d4dc6ab4b/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/291c9e33-e439-da86-62aa-f105a7ca52d0"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/e2dfe197-63fe-4f5a-8dc0-a72d4dc6ab4b/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1685-11-13"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1682-1811"@nl,
+        "4"@nl,
+        "Doop-, trouw- en begraafregisters Zevenhoven"@nl,
+        "Doopdatum: 13-11-1685<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/132.1.10/file/4\">Inventarisnummer 4 van archiefnummer 132.1.10 in Archieven</a>"@nl ;
+    sdo:locationCreated "Zevenhoven"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw- en begraafregisters Zevenhoven, Deel: 4, Periode: 1682-1811, (toegangsnr. 132.1.10), inv.nr. 4, \"Doopboek, trouwboek en doodboek (RK) van Zevenhoven\", doopinschrijvingen, 11 maart 1682 - 1807 (fol. 5-153) met daaraan vooraf (fol. 1-4) een inschrijving van een abnormale geborene, 21 maart 1765, enkele inschrijvingen van gedoopten in Den Hoef, 1729 - 1743 en in 1753 vervaardigde kopie-inschrijvingen, 20 maart 1682 - 4 april 1684; trouwinschrijvingen 25 november 1697 - 30 juli 1751 (fol. 28-110) en aan de keerzijde, 21 maart 1753 - 21 oktober 1805 (fol. 1-7verso); namen van overledenen, 28 februari 1697 -18 oktober 1752 (fol. 27-111) een aan de keerzijde, 1753 - oktober 1811 (fol. 9-18 verso) met alfabetische index over het 1753 - 1811., 11v, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/291c9e33-e439-da86-62aa-f105a7ca52d0"^^xsd:anyURI .
+

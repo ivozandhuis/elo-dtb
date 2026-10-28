@@ -1,0 +1,88 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Source:7aec371b-3594-fbbc-b8ed-6e8dce5c82d0_doop_event> a picom:LifeEvent ;
+    picom:eventDate "1709-12-29"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:75 .
+
+<https://ex.org/Person:066d4fe1-6d4e-be49-8422-015064df3a54> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:7aec371b-3594-fbbc-b8ed-6e8dce5c82d0> ;
+    picom:hasLifeEvent <https://ex.org/Source:7aec371b-3594-fbbc-b8ed-6e8dce5c82d0_doop_event> ;
+    picom:hasRole picot_roles:575 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Kaathoven"@nl ;
+            pnv:givenName "Judith"@nl ;
+            pnv:literalName "Judith van Kaathoven"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:description "Doopdatum: 29-12-1709"@nl ;
+    sdo:familyName "van Kaathoven"@nl ;
+    sdo:givenName "Judith"@nl ;
+    sdo:name "Judith van Kaathoven"@nl ;
+    sdo:parent <https://ex.org/Person:3134e116-4d71-ecbf-c9dc-6454005ed6bf>,
+        <https://ex.org/Person:3d525e56-8416-c0cd-f6a7-7a7a258d235a> .
+
+<https://ex.org/Person:23b50bac-7484-f67b-996e-542c430a5563> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:7aec371b-3594-fbbc-b8ed-6e8dce5c82d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Hamman"@nl ;
+    sdo:givenName "Judith"@nl ;
+    sdo:name "Judith Hamman"@nl .
+
+<https://ex.org/Person:3134e116-4d71-ecbf-c9dc-6454005ed6bf> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:7aec371b-3594-fbbc-b8ed-6e8dce5c82d0> ;
+    sdo:children <https://ex.org/Person:066d4fe1-6d4e-be49-8422-015064df3a54> ;
+    sdo:familyName "Delfos"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Margrietje"@nl ;
+    sdo:knows <https://ex.org/Person:23b50bac-7484-f67b-996e-542c430a5563>,
+        <https://ex.org/Person:8e110dab-dd32-610c-6a90-b825b01310c9> ;
+    sdo:name "Margrietje Delfos"@nl ;
+    sdo:spouse <https://ex.org/Person:3d525e56-8416-c0cd-f6a7-7a7a258d235a> .
+
+<https://ex.org/Person:3d525e56-8416-c0cd-f6a7-7a7a258d235a> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:7aec371b-3594-fbbc-b8ed-6e8dce5c82d0> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Kaathoven"@nl ;
+            pnv:givenName "Henric"@nl ;
+            pnv:literalName "Henric van Kaathoven"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:children <https://ex.org/Person:066d4fe1-6d4e-be49-8422-015064df3a54> ;
+    sdo:familyName "van Kaathoven"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Henric"@nl ;
+    sdo:knows <https://ex.org/Person:23b50bac-7484-f67b-996e-542c430a5563>,
+        <https://ex.org/Person:8e110dab-dd32-610c-6a90-b825b01310c9> ;
+    sdo:name "Henric van Kaathoven"@nl ;
+    sdo:spouse <https://ex.org/Person:3134e116-4d71-ecbf-c9dc-6454005ed6bf> .
+
+<https://ex.org/Person:8e110dab-dd32-610c-6a90-b825b01310c9> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:7aec371b-3594-fbbc-b8ed-6e8dce5c82d0> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Kouwelier"@nl ;
+    sdo:givenName "Henric"@nl ;
+    sdo:name "Henric Kouwelier"@nl .
+
+<https://ex.org/Source:7aec371b-3594-fbbc-b8ed-6e8dce5c82d0> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:548,
+        "other: "@nl ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/64ae738e-6e24-407e-8234-13dcd5e5de76/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/7aec371b-3594-fbbc-b8ed-6e8dce5c82d0"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/64ae738e-6e24-407e-8234-13dcd5e5de76/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1709-12-29"^^xsd:date ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1705-1710"@nl,
+        "246"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Doopdatum: 29-12-1709<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/246\">Inventarisnummer 246 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 246, Periode: 1..., (toegangsnr. 1004), inv.nr. 246, Doopboek van de Hooglandse Kerk (NH) te Leiden, 10 oktober 1705 - 1710., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/7aec371b-3594-fbbc-b8ed-6e8dce5c82d0"^^xsd:anyURI .
+
