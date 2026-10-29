@@ -14,11 +14,15 @@ This directory contains a sample of the data
 
 Notice that Lydia Thonis, 'moei' of the bride in the marriage (1649), the witness Lydia Teunis at the baptism (1651), the witness Lydia Tonis, moei of the bride, at the marriage (1656) should be flagged as (potential) match.
 
-At the first marriage of Frans Fransz (1678) his 'schoonvader' is mentioned as witness. Should be his grandfather. (Remember that Frans Fransz' mother was called Jacomijntje Isaaks de Graaf). The Cecilia Gasthuys is typically a place for (old) people that can not take care of themselves.
+At the first marriage of Frans Fransz (1678) his 'schoonvader' is mentioned as witness. Should be his grandfather. (Remember that Frans Fransz' mother was called Jacomijntje Isaaks de Graaf). The Cecilia Gasthuys (now location of the Boerhaave Museum) is typically a place for (old) people that can not take care of themselves.
 
 In the second marriage of Frans Fransz (1687) the father (source states father, but should be: STEPfather. Apparently that is considered roughly the same) Casper Steven (second husband of the grooms mother) and Casper Steedink (spelling in the marriage of Frans Fransz) are the same.
 
-Notice that the data about the burial (1707) of Frans Cloek, spinner, is very thin. It should be Frans Fransz instead of Frans Pietersz, because the widow of Frans Pietersz remarried in 1656.
+Notice that the data about the burial (1707) of Frans Cloek, spinner, is very thin. It should at least be Frans Fransz instead of Frans Pietersz, because Jacomijntje Isaaks, the widow of Frans Pietersz remarried in 1656.
+
+Complete (handmade) reconstructions:
+[Jacomijntje Isaaks](https://www.genealogieonline.nl/kwartierstaten-zandhuis-van-der-sloot-borgman-meijer/I1242.php)
+[Frans Fransz](https://www.genealogieonline.nl/kwartierstaten-zandhuis-van-der-sloot-borgman-meijer/I1233.php)
 
 # data
 For now the data contains
