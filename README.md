@@ -16,3 +16,6 @@ Improve and normalize the original data by creating extra statements mainly with
 
 ### Qlever
 Read the improvements into the endpoint.
+
+## PiCo-Wikidata
+Vocabulary-level crosswalk between the PiCo model and Wikidata, done for the hack-a-lod (NDE) challenge. See [pico-wikidata/](pico-wikidata/).
