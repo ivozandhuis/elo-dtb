@@ -5,6 +5,8 @@ additions/normalizations/
 additions/improvements/
 qlever/data
 !qlever/data/data-collector.sh
+qlever/testdata
+!qlever/testdata/data-collector.sh
 qlever/elo-dtb.*
 a2a-to-pico/*
 !a2a-to-pico/PUT-CODE-HERE.md
