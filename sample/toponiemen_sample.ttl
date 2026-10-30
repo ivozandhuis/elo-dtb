@@ -8,27 +8,47 @@
 
 <https://ex.org/Person:01e9f39b-b630-381d-8523-d640b87bf4f7> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
+<https://ex.org/Person:0221317f-603a-2986-3300-0e6c7ed613ce> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
 <https://ex.org/Person:03e00717-111b-7ef2-2d81-17892cd1e03c> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:06493379-4016-e27a-761c-a002e907a62d> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Deventer_Deventer_Overijssel_Nederland> ;
+    sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Deventer_Deventer_Overijssel_Nederland> .
 
 <https://ex.org/Person:079c419e-acc5-70d0-c81a-d16110d12e5e> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Warmond_Warmond_Zuid-Holland_Nederland> .
 
 <https://ex.org/Person:084ab240-0a56-9f4a-783b-fd68515ea5d8> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Rotterdam_Rotterdam_Zuid-Holland_Nederland> ;
     sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
+<https://ex.org/Person:0a060098-5faf-ff98-3562-c97be558f02d> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
 <https://ex.org/Person:0a0d98b5-0ba1-7ccf-cb40-c29a8abd1bc5> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Kaag_Alkemade_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:0ad62d44-7bc0-f921-ff12-4145b74f3032> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Person:0c3b1a59-572c-edd0-ecc0-15bd7e355e8f> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Person:0d26c74a-fff4-8ebd-fcda-9b5d2161f2df> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
+<https://ex.org/Person:0e27bdd0-ca77-7bbd-a8a2-b709e04d6a48> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
 <https://ex.org/Person:0ef43a76-ea44-779b-cd6a-f627db2c8536> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Nieuwe-Wetering_Alkemade_Zuid-Holland_Nederland> .
 
+<https://ex.org/Person:0f9ed5fc-dd40-2be9-b14a-32ebc3027cc0> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
 <https://ex.org/Person:10bf4f4f-5d79-3839-4fee-eb6d5f383337> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Utrecht_Utrecht_Utrecht_Nederland> .
+
+<https://ex.org/Person:125fc334-36a5-3bbd-c978-f920909fe21b> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> ;
+    sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Person:12d32845-3a98-4a7e-edcc-0e7711781148> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> ;
     sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Person:14885ea1-14b8-fc9f-b2a7-0cd03e623553> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:14cbedb5-7610-b9dc-2f53-12318f7667e4> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Nieuwpoort_Nieuwpoort_Unclear_Unclear> .
+
+<https://ex.org/Person:18f4e63e-4ddf-5331-3865-c52998a5abed> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Person:19dea225-e08f-b39c-9c60-ad0b15a4514f> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> ;
     sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
@@ -41,27 +61,78 @@
 
 <https://ex.org/Person:1caaaa4b-cebc-7deb-f90d-bcdca2659866> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
+<https://ex.org/Person:1dd816d5-86d3-bb07-9b68-3ace24e6e311> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
 <https://ex.org/Person:1e8f8f39-a73c-b0dd-5ab2-745097144b61> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Dordrecht_Dordrecht_Zuid-Holland_Nederland> ;
     sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Oudshoorn_Oudshoorn_Zuid-Holland_Nederland> .
 
+<https://ex.org/Person:1fb371e0-20a5-acdc-2026-e28e250794c5> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> ;
+    sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Yperen_Ieper_West-Vlaanderen_Belgie> .
+
+<https://ex.org/Person:203e1e9a-ce2a-8f06-d4c5-6e86f6f08023> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Noordwijk-Binnen_Noordwijk_Zuid-Holland_Nederland> ;
+    sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Noordwijk-Binnen_Noordwijk_Zuid-Holland_Nederland> .
+
 <https://ex.org/Person:208021f6-8cf1-a939-bd4b-e2126dd5e0cf> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Haarlem_Haarlem_Noord-Holland_Nederland> .
+
+<https://ex.org/Person:20a3e0b6-4e2f-10bd-fa6c-5babfda30835> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:21519e5e-24bf-3dfc-725a-896192d734ea> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:21f6abdf-b66c-a333-9621-f7e6607b7986> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:23656840-53d8-2284-3cf3-6b17406acef1> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Person:243d483d-aeca-6eca-e146-3456a58b7197> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Rijpwetering_Alkemade_Zuid-Holland_Nederland> .
 
 <https://ex.org/Person:24db1058-04db-86f7-78b4-5111abf00e48> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Schoonhoven_Schoonhoven_Zuid-Holland_Nederland> ;
     sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Schoonhoven_Schoonhoven_Zuid-Holland_Nederland> .
 
+<https://ex.org/Person:258cf53b-9dd2-4066-fa6f-be94af49b598> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Noordwijk_Noordwijk_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:26078ca1-476b-500e-998e-04de145fd5f9> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Zoeterwoude_Zoeterwoude_Zuid-Holland_Nederland> .
+
 <https://ex.org/Person:26840c51-c781-ed03-0737-f129e9de5aa2> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:2697dd39-0f04-a282-a709-92b006458dd6> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Eupen_Eupen_Unclear_Unclear> .
 
 <https://ex.org/Person:28327c52-c3a4-30c8-350f-24891c1c1fb8> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Haarlem_Haarlem_Noord-Holland_Nederland> .
 
+<https://ex.org/Person:28481dd1-eebd-7f7e-5105-1efe11347cbe> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Oegstgeest_Oegstgeest_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:2868aa64-917a-e422-d519-1c630172063c> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:288c23f9-c397-6e5d-dcc9-c788115a6690> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> ;
+    sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
 <https://ex.org/Person:2a0151c6-035b-317f-4158-664ee97c9255> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Langeraar_Ter-Aar_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:2a4121ef-bfe3-c5c7-aacb-874a86f6131e> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Zoeterwoude_Zoeterwoude_Zuid-Holland_Nederland> .
 
 <https://ex.org/Person:2ad69130-a432-c567-b4de-5b33a64063d2> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
-<https://ex.org/Person:2c67f9e4-6c46-8b92-c46b-d24d9da90b03> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Vliet_Vliet_Zuid-Holland_Nederland> .
+<https://ex.org/Person:2af916ee-e11d-73d4-a050-3d32b0831f70> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> ;
+    sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:2c67f9e4-6c46-8b92-c46b-d24d9da90b03> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Vliet_Vliet_Zuid-Holland_Nederland> ;
+    sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Ypres_Ieper_West-Vlaanderen_Belgie> .
+
+<https://ex.org/Person:2cb4b6da-696b-e8f0-6261-cb5c2e623eba> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:2cc581f4-649b-c433-8673-3285b27af534> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:2e40fc59-01b3-ea7f-1e76-6a787cd72b12> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Bodegraven_Bodegraven_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:2e728a35-35d7-5c07-dab5-7dbdf9293cd8> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Weert_Weert_Limburg_Nederland> .
+
+<https://ex.org/Person:2f5cbe64-3cba-d630-7b59-70fb9e33ec59> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Rijnsburg_Rijnsburg_Zuid-Holland_Nederland> ;
+    sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Rijnsburg_Rijnsburg_Zuid-Holland_Nederland> .
 
 <https://ex.org/Person:2f8f7e85-1b5b-e865-9056-06a28529123b> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:38e1f075-2069-bb8e-60f4-21ce06cbd480> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:3b96dbf9-8d24-60c5-d743-9db0ae743988> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Deventer_Deventer_Overijssel_Nederland> ;
+    sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Person:3c1731ae-abf4-0386-5cef-391c32395ab2> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> ;
     sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
@@ -70,38 +141,87 @@
 
 <https://ex.org/Person:4109ea8f-b6d9-b270-c2c3-10eff9ceeeee> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
+<https://ex.org/Person:42549fed-9ead-8604-d011-ca3f42a34532> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:435a49b5-daad-f96f-c777-336c0319e370> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
 <https://ex.org/Person:437e3ea6-cd2e-3657-f7fa-25f7fc33ba55> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Rotterdam_Rotterdam_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:44120c3f-3e34-2416-9455-eda91bddebed> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> ;
+    sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Delft_Delft_Zuid-Holland_Nederland> .
 
 <https://ex.org/Person:4465eec1-e2ec-3227-1ca4-78f2daabbdde> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Noordwijk_Noordwijk_Zuid-Holland_Nederland> ;
     sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Noordwijk_Noordwijk_Zuid-Holland_Nederland> .
 
 <https://ex.org/Person:46dbafb3-3adc-1629-8b78-35e2216dfe91> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Zoeterwoude_Zoeterwoude_Zuid-Holland_Nederland> .
 
+<https://ex.org/Person:4747516e-ed82-dd0a-b069-c23eef71f576> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Amsterdam_Amsterdam_Noord-Holland_Nederland> .
+
 <https://ex.org/Person:4774c30f-9d10-4039-38e8-d795812bf74d> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Krommenie_Krommenie_Noord-Holland_Nederland> ;
     sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Nijkerk_Oostdongeradeel_Friesland_Nederland> .
+
+<https://ex.org/Person:477a8541-81f8-84d2-cee0-cad86d21bb6d> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Unstandardized_Belgie> .
 
 <https://ex.org/Person:47e1407c-d77c-07f9-52e3-6f47b35bc6ae> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Oude-Wetering_Alkemade_Zuid-Holland_Nederland> .
 
 <https://ex.org/Person:48629114-2538-b2ee-67b8-1270ac4b5857> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
+<https://ex.org/Person:48ac2d1e-839c-4853-5f39-2e9a71809368> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Zoeterwoude_Zoeterwoude_Zuid-Holland_Nederland> ;
+    sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Woerden_Woerden_Zuid-Holland_Nederland> .
+
 <https://ex.org/Person:4a615d9a-50d5-846c-ee88-e2704b26f45a> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:4bb3e04e-2404-5aa4-f4f8-73721d58387e> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:4ce27ec5-ac1d-6c61-7b8c-a56ad7fa940d> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:4e3c2cad-60e5-565e-655f-7d3c42c604af> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Oudenrijn_Oudenrijn_Utrecht_Nederland> .
 
 <https://ex.org/Person:4f4401f8-1548-3ee2-1136-443c553c7b16> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
+<https://ex.org/Person:509fd814-db6e-9bfe-b89a-9357b5b285a9> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
 <https://ex.org/Person:51b6f15d-2135-f00d-2064-f9b8e7db4e4a> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:52e6b919-8102-750b-d739-8310221dcb45> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Zoeterwoude_Zoeterwoude_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:54376197-2c27-5452-532b-d3f3d3aa7814> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> ;
+    sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:56e29ff4-62ea-563f-9b6d-53573d552775> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Delft_Delft_Zuid-Holland_Nederland> .
 
 <https://ex.org/Person:571cc560-d33d-5b41-e8ce-c0e856f418b5> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
+<https://ex.org/Person:5768ac8c-661d-b088-bf60-07401d9c2d15> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
 <https://ex.org/Person:5887cc79-9d3c-8ce5-9f18-c6df9083c075> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:59158bbe-5fe3-1189-3ff8-cddf15ceb1ee> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Delft_Delft_Zuid-Holland_Nederland> .
 
 <https://ex.org/Person:594ce9a1-db34-779b-55a3-707888fb5e70> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
+<https://ex.org/Person:5c29483d-b367-bf5d-9f9d-7fcc2a452726> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:5c683630-13b0-5409-366b-26e2e4132bda> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
 <https://ex.org/Person:5c6ba5fb-857a-a174-d08e-d62b7e6e0ff9> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:5d00225e-10fd-9932-9865-9b4b056f0f34> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Person:5ec144c6-84ee-f388-5406-12096f3e217d> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/s-Gravenhage_s-Gravenhage_Zuid-Holland_Nederland> ;
     sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/s-Gravenhage_s-Gravenhage_Zuid-Holland_Nederland> .
 
+<https://ex.org/Person:5f1df074-b0a3-be40-f3c4-f6209de571ec> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:5f3e0d18-47d3-c27a-1d94-6acf691091d2> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Oudenrijn_Oudenrijn_Utrecht_Nederland> .
+
 <https://ex.org/Person:5fc827f0-dde6-6afa-2e79-19c0e7e93142> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:601eebad-4bf7-f987-645d-6dd2d2328977> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:6054adfe-80d5-9bf2-3d1c-2f425c528bc7> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:67044d1f-0f0b-2097-eeae-6d54ffc4dbdc> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Person:68a9df5e-0447-7dce-e7cd-fd0af9cbadee> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> ;
     sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Delft_Delft_Zuid-Holland_Nederland> .
@@ -109,6 +229,10 @@
 <https://ex.org/Person:699c095d-e400-e29f-344a-03fc6a50e15d> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Person:6a38f871-bd8f-82af-bc19-932d4c07c19b> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:6b4adc36-a5a9-c192-7d02-33a1a78179ed> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:6d49e39b-aefb-36fc-2c14-f0a6c5b1563c> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Person:6fc12836-1c8c-9707-1f86-8ea84f0fdc44> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
@@ -118,6 +242,8 @@
 
 <https://ex.org/Person:731cce55-0ff3-023c-0ad9-5533289f4f0a> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Noordwijk-aan-Zee_Noordwijk_Zuid-Holland_Nederland> ;
     sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Noordwijk-aan-Zee_Noordwijk_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:768180f5-499d-db28-ae79-69c58c1cbc28> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Person:776df44b-a57c-91cb-a97d-4e5a424d063b> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Rotterdam_Rotterdam_Zuid-Holland_Nederland> .
 
@@ -130,13 +256,22 @@
 <https://ex.org/Person:789c5489-3fec-32ae-08ea-cca69b50c1c8> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> ;
     sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
+<https://ex.org/Person:799b9965-cfca-d0bf-5f4d-c8f2423e0704> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
 <https://ex.org/Person:7a11fbd3-34f6-d593-5881-28fd575cc404> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Rotterdam_Rotterdam_Zuid-Holland_Nederland> .
 
 <https://ex.org/Person:7a3faa5f-40c5-b047-c7a9-d758d7c845f5> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> ;
     sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
+<https://ex.org/Person:7aeae1f6-8fef-a778-3823-331356c69a3d> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:7af37375-08bc-a3e5-f314-c5205dccdda1> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
 <https://ex.org/Person:7ba280d6-075e-f2e0-b0eb-f4cc8ed6346e> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> ;
     sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:7be818ab-76fd-6b5b-d148-7f80f4a4c8b5> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Rijnsburg_Rijnsburg_Zuid-Holland_Nederland> ;
+    sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Rijnsburg_Rijnsburg_Zuid-Holland_Nederland> .
 
 <https://ex.org/Person:7ca0d75f-e50d-9ecf-a7d8-e152bc00927b> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
@@ -149,21 +284,38 @@
 
 <https://ex.org/Person:8155597e-93c3-6f2d-4a23-1849aaf36d6d> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
+<https://ex.org/Person:827b9029-4afa-7809-ab7e-4cb562654bad> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
 <https://ex.org/Person:82815a28-7f66-149b-5172-81d7865b71a2> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> ;
     sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Person:82c626fc-0012-fdd3-5006-948b4e50d8aa> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> ;
     sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Haarlem_Haarlem_Noord-Holland_Nederland> .
 
+<https://ex.org/Person:82cdca1b-2192-3f0f-7583-2b2cfb69eda0> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Hillegom_Hillegom_Zuid-Holland_Nederland> ;
+    sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Noordwijkerhout_Noordwijkerhout_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:8557d0ad-b324-76ec-0651-54daf08a7aed> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Nieuwpoort_Nieuwpoort_Unclear_Unclear> .
+
 <https://ex.org/Person:8569a68a-5017-5df8-928f-fcda7129659e> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:880f7a13-ad75-48e0-04d0-81ca3fa48144> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Person:887bdb11-fd13-203a-6d16-8b8265c40350> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Schiedam_Schiedam_Zuid-Holland_Nederland> .
 
 <https://ex.org/Person:88d2d112-d413-d60e-d925-e1ac0c091226> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
-<https://ex.org/Person:8b22a565-cb9c-068f-b505-810ed0fb4046> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Haarlem_Haarlem_Noord-Holland_Nederland> .
+<https://ex.org/Person:8b22a565-cb9c-068f-b505-810ed0fb4046> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Haarlem_Haarlem_Noord-Holland_Nederland> ;
+    sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Rouselaer_Roeselare_West-Vlaanderen_Belgie> .
+
+<https://ex.org/Person:8c0aec87-ea95-7ae4-4ff8-1763feaf7f1a> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:8c701f56-e85f-a1b3-ddbf-aae6ffef854a> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> ;
+    sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Person:8cfb9757-e0d1-6963-a1ae-1ea86d3c4c1c> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Warmond_Warmond_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:8fcf90cb-4b4f-ddf1-79b2-1c9a7fb326f2> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Person:900e1248-5241-cee7-ecf7-1e4fb3a93c30> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Kaag_Alkemade_Zuid-Holland_Nederland> .
 
@@ -175,6 +327,11 @@
 
 <https://ex.org/Person:91b31341-2bcb-63a8-f170-44e174221703> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> ;
     sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:91c67558-d0ad-68c5-647d-e3a6c099e63a> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> ;
+    sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:92ad2f68-cb62-9346-8d9b-58a2f6e017ef> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Person:94377f8e-d265-21d8-f17e-fa0665b431a0> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
@@ -194,7 +351,25 @@
 
 <https://ex.org/Person:9a6bbbd3-1af1-dd96-44e8-601a5602ac34> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Dordrecht_Dordrecht_Zuid-Holland_Nederland> .
 
+<https://ex.org/Person:9d09e4f2-4b8a-960b-c28a-d086f00107bd> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:9e32ab3f-770f-d8c3-448a-2f1ead9d8ebc> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Doornik_Bemmel_Gelderland_Nederland> .
+
 <https://ex.org/Person:9e342e96-1626-e2a1-8896-1ea6270b9de9> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:9f98cb67-2d7c-0b7f-fce5-630a8c0ed749> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Lisse_Lisse_Zuid-Holland_Nederland> ;
+    sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Lisse_Lisse_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:a0a72828-4b31-3508-af99-0852ff7d6575> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Yperen_Ieper_West-Vlaanderen_Belgie> .
+
+<https://ex.org/Person:a0f3bf9d-29d3-73e5-3340-03c5be6d0929> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Hillegom_Hillegom_Zuid-Holland_Nederland> ;
+    sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Hillegom_Hillegom_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:a0fdf8dd-0ae3-c211-6431-ba8d016af994> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Rijnsburg_Rijnsburg_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:a12e4bda-3563-e824-2176-7d5d1243c2ba> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Kampen_Kampen_Overijssel_Nederland> .
+
+<https://ex.org/Person:a3074218-7103-2b39-3cb2-8b9fe2654833> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiderdorp_Leiderdorp_Zuid-Holland_Nederland> .
 
 <https://ex.org/Person:a3903105-31c2-fbd3-4c2a-3082c1dc59c9> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
@@ -205,13 +380,31 @@
 <https://ex.org/Person:a66b4c04-aad1-c228-1ac8-ac23c5c58f90> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Nieuwkoop_Nieuwkoop_Zuid-Holland_Nederland> ;
     sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Nieuwkoop_Nieuwkoop_Zuid-Holland_Nederland> .
 
+<https://ex.org/Person:a692f301-c02c-2970-f19b-5a7e6c609c8e> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Amsterdam_Amsterdam_Noord-Holland_Nederland> .
+
 <https://ex.org/Person:a811cf1d-be39-3d71-5c83-aa0dd459d258> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Woubrugge_Woubrugge_Zuid-Holland_Nederland> .
 
 <https://ex.org/Person:a82a23d5-1078-ab93-ae05-6e5152421a85> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Nijmegen_Nijmegen_Gelderland_Nederland> .
 
+<https://ex.org/Person:ab37ccb5-1107-2acc-1f73-8043834c663f> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:acf179e6-006b-e471-f601-ab4c7c71d9de> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
 <https://ex.org/Person:ad4ce080-5292-ee7a-895d-edf272dc9bd7> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
+<https://ex.org/Person:af69989f-ad5b-7c13-f10d-f9fdb3650285> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
 <https://ex.org/Person:b27d71ca-4fb9-ca2b-9561-9f3957e2e6de> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Zoeterwoude_Zoeterwoude_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:b3a0ae30-eb66-2fa5-0cbd-8944ff963699> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> ;
+    sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:b3e337f8-3a23-65f6-f493-7cd4f1fb69b6> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Noordwijk-Binnen_Noordwijk_Zuid-Holland_Nederland> ;
+    sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Katwijk-aan-Zee_Katwijk_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:b491080c-7edc-d657-8f43-b706058cba02> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Rotterdam_Rotterdam_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:b50ad53a-a881-7903-4889-8bc526fea29f> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Delft_Delft_Zuid-Holland_Nederland> .
 
 <https://ex.org/Person:b5d6612f-9952-3c8c-3d69-5627ac56196e> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Dordrecht_Dordrecht_Zuid-Holland_Nederland> .
 
@@ -229,11 +422,15 @@
 <https://ex.org/Person:bdb54a79-c0ac-8e9b-06d6-2e8f0d54a8cc> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Rijnsburg_Rijnsburg_Zuid-Holland_Nederland> ;
     sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Rijnsburg_Rijnsburg_Zuid-Holland_Nederland> .
 
+<https://ex.org/Person:bdceb050-764b-43ba-9f00-265af879b95a> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
 <https://ex.org/Person:bf3ee313-a3b9-21ee-975b-80f92ddcc634> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Dordrecht_Dordrecht_Zuid-Holland_Nederland> ;
     sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Dordrecht_Dordrecht_Zuid-Holland_Nederland> .
 
 <https://ex.org/Person:bf73a767-936a-700c-9757-1e5b6466d079> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Noordwijk_Noordwijk_Zuid-Holland_Nederland> ;
     sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Rijnsburg_Rijnsburg_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:bfa8dd63-7739-af55-18a7-d12fb6b2d7c8> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Person:c12b7f43-a524-e64c-d13e-29c9a17b91ac> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
@@ -245,7 +442,16 @@
 <https://ex.org/Person:c53fc8e8-d3fc-0f8b-5059-939ba4328e87> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> ;
     sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
+<https://ex.org/Person:c76c8a89-5133-ebfd-104a-3bbcf42d7514> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Zevenhoven_Zevenhoven_Zuid-Holland_Nederland> ;
+    sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Zevenhoven_Zevenhoven_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:c82b8cb3-2e3a-7020-bf49-9525572d51fa> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:ca10a4ac-7447-ca73-d1fe-f8d1c474fd1f> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
 <https://ex.org/Person:ca23d9db-cf99-3c52-7efc-b6cf9f06635a> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:caf7a8b3-1cb1-59fe-baa1-f4b64d09b952> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Delft_Delft_Zuid-Holland_Nederland> .
 
 <https://ex.org/Person:cba9f821-a709-55bd-77ef-8a8519c95685> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
@@ -254,6 +460,10 @@
 <https://ex.org/Person:cc9082aa-e1d7-82e5-2bb0-9fef1fd75e23> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Rotterdam_Rotterdam_Zuid-Holland_Nederland> .
 
 <https://ex.org/Person:cce9ef00-293c-6309-9e31-31d88a68bf29> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Katwijk-aan-Zee_Katwijk_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:cdb6696c-5699-5477-a6af-bb38fb9fd811> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:ce14034a-644a-4604-e678-70c5fec171ff> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Person:ceb1d675-820f-b386-07f3-1de79aefee04> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
@@ -270,24 +480,56 @@
 
 <https://ex.org/Person:d67e1e7e-989c-6ab3-6ac7-a1a37bf3123c> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Den-Haag_s-Gravenhage_Zuid-Holland_Nederland> .
 
+<https://ex.org/Person:d8332a9d-62ad-0fc4-6f91-10565892d6cc> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
 <https://ex.org/Person:d99bba1a-61dc-d1e9-b553-6a9e161f9480> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:da06a1ce-a61d-41cf-38f7-6146a44cb598> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:dc4f59e6-8c7d-5b68-83e9-2b01c7571fef> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Person:dcacda9f-b9fa-0b2c-d85b-3f4b94703cd3> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Noorden_Nieuwkoop_Zuid-Holland_Nederland> .
 
 <https://ex.org/Person:dda146c8-bef8-060b-7ee0-490da0ba65b5> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Voorhout_Voorhout_Zuid-Holland_Nederland> .
 
+<https://ex.org/Person:df796651-5ceb-cbc1-4baa-1ceebf111207> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Zevenhoven_Zevenhoven_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:e011d9a7-da0c-7dfb-4a94-5a21a1e2499d> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Rijnsburg_Rijnsburg_Zuid-Holland_Nederland> .
+
 <https://ex.org/Person:e1cdeb74-fd83-bd13-d562-c96f5357b1db> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Nijmegen_Nijmegen_Gelderland_Nederland> .
 
 <https://ex.org/Person:e4e7ddf3-3f6b-786a-a1b9-829c35c7f73d> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
+<https://ex.org/Person:e79c90b7-e830-1d24-5043-4221b65ff4b5> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
 <https://ex.org/Person:e926ca84-25d0-f9bc-1218-d038c5d15179> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
+<https://ex.org/Person:ea2e5906-5984-c8c5-60b7-a0e492964658> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:eb2222b5-142d-5cd6-deb2-817edb8b7ab1> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/s-Hertogenbosch_s-Hertogenbosch_Noord-Brabant_Nederland> .
+
+<https://ex.org/Person:ed1b4ddd-ee6e-3e18-2700-c1d375e71c65> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Hoorn_Unclear_Unclear_Nederland> .
+
 <https://ex.org/Person:edaea2c4-a24d-ad0c-84c7-9239fca6db7b> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Woubrugge_Woubrugge_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:ef7dfc80-228d-9bd2-765b-ab76615bd3e5> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:f1a1dc00-948b-6704-840b-31051d319d81> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:f226392a-44d6-9976-4353-d277ac8a1c3a> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Wateringen_Wateringen_Zuid-Holland_Nederland> .
+
+<https://ex.org/Person:f2c348f7-a37c-afdf-8c91-4f8fa5dfa2cc> sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Person:f6152289-c1a6-3fae-3285-b0b97cb6937a> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> ;
     sdo:birthPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Person:f64a8692-acdf-e963-fdbc-04279ab29804> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Oudenrijn_Oudenrijn_Utrecht_Nederland> .
+
+<https://ex.org/Person:f7ed4827-e9a0-9647-35aa-0c672646ad7e> sdo:address <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:00be996d-32f7-73c5-466f-b3e2b90c3025> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:00be996d-32f7-73c5-466f-b3e2b90c3025_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:011660f9-b8fc-91b2-3afe-0d5d84a1cc35> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
@@ -296,6 +538,10 @@
 <https://ex.org/Source:014a0235-cb1a-4f9c-70b8-1afd0c6319a1> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:014a0235-cb1a-4f9c-70b8-1afd0c6319a1_doop_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:0263f52d-3ba3-d76a-7b93-bd9cc72caf83> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:0263f52d-3ba3-d76a-7b93-bd9cc72caf83_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:02be8652-8878-7600-70a6-57353c17f9a1> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
@@ -321,6 +567,10 @@
 
 <https://ex.org/Source:04b58c6c-1eb6-9c1e-ccbc-6445c56e32d0_doop_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
+<https://ex.org/Source:058b38f3-f7ff-ebc5-a5dd-44fad9770f83> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:058b38f3-f7ff-ebc5-a5dd-44fad9770f83_huwelijk_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
 <https://ex.org/Source:060301e8-5bf5-e697-b689-d559b9682606> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:060301e8-5bf5-e697-b689-d559b9682606_huwelijk_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
@@ -330,6 +580,10 @@
 <https://ex.org/Source:06827146-844c-c846-483b-9b6e62a20bee> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:06827146-844c-c846-483b-9b6e62a20bee_doop_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:072e2bea-142d-a551-c943-9ce734241025> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:072e2bea-142d-a551-c943-9ce734241025_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:08b51c36-4214-202d-5b73-7a68e910fc35> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Rijnsburg_Rijnsburg_Zuid-Holland_Nederland> .
 
@@ -342,6 +596,10 @@
 <https://ex.org/Source:0991f91f-76d0-1484-5f57-653c935849a1> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Noordwijk_Noordwijk_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:0991f91f-76d0-1484-5f57-653c935849a1_doop_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Noordwijk_Noordwijk_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:0adc5f53-8f13-f0e0-c3ad-c91b87458025> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Noordwijk_Noordwijk_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:0adc5f53-8f13-f0e0-c3ad-c91b87458025_huwelijk_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Noordwijk_Noordwijk_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:0b274b3c-f725-5ea3-5030-2498c3eb62d0> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leimuiden_Leimuiden_Zuid-Holland_Nederland> .
 
@@ -371,6 +629,10 @@
 
 <https://ex.org/Source:0c3e4b71-ccf0-9f83-b9a9-f94462c0cc35_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Warmond_Warmond_Zuid-Holland_Nederland> .
 
+<https://ex.org/Source:0ce42924-ffa3-db9e-d832-58b087f2f025> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:0ce42924-ffa3-db9e-d832-58b087f2f025_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
 <https://ex.org/Source:0f60334f-04de-76a1-144b-c0ce0ef809a1> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:0f60334f-04de-76a1-144b-c0ce0ef809a1_doop_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
@@ -395,9 +657,25 @@
 
 <https://ex.org/Source:10c62b35-550c-38cf-b760-4d099e1b52d0_doop_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
+<https://ex.org/Source:10ff7504-612f-2b6c-52af-39d812043f83> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:10ff7504-612f-2b6c-52af-39d812043f83_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:128a4649-9d45-58c9-0734-9223818aaf83> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:128a4649-9d45-58c9-0734-9223818aaf83_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
 <https://ex.org/Source:133850a5-15e2-e703-9e6e-3d538d60a606> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:133850a5-15e2-e703-9e6e-3d538d60a606_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:13929f7d-b1d0-a42e-11fb-dd6c84894025> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiderdorp_Leiderdorp_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:13929f7d-b1d0-a42e-11fb-dd6c84894025_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiderdorp_Leiderdorp_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:1396b691-4ecf-2da2-6912-48ea1f114025> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:1396b691-4ecf-2da2-6912-48ea1f114025_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:13dccccb-d69b-b294-5c9a-b156eb00a5f2> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Zoeterwoude_Zoeterwoude_Zuid-Holland_Nederland> .
 
@@ -426,6 +704,16 @@
 <https://ex.org/Source:154e33bd-7a48-e136-8ed1-3baa837e1bee_doop_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:15634f6a-4757-4bf1-b32c-2a1d5bea85f2> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiderdorp_Leiderdorp_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:16154bb7-49da-29cf-9049-de9793b35f83> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Zoeterwoude_Zoeterwoude_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:16154bb7-49da-29cf-9049-de9793b35f83_huwelijk_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Zoeterwoude_Zoeterwoude_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:16154bb7-49da-29cf-9049-de9793b35f83_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Zoeterwoude_Zoeterwoude_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:16892cb1-3320-9aa1-0c25-3c30a7d2a025> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:16892cb1-3320-9aa1-0c25-3c30a7d2a025_huwelijk_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:18b7b885-6298-bf94-f83f-3446796f19a1> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Noordwijk_Noordwijk_Zuid-Holland_Nederland> .
 
@@ -459,6 +747,10 @@
 
 <https://ex.org/Source:1b9a63b6-5d8a-bbae-dc2b-190559b2b606_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
+<https://ex.org/Source:1c0fed60-7356-7e59-8f36-581e26ec4025> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:1c0fed60-7356-7e59-8f36-581e26ec4025_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
 <https://ex.org/Source:1c1c97e7-f9a7-40ea-c147-226c6817c9a1> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:1c1c97e7-f9a7-40ea-c147-226c6817c9a1_doop_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
@@ -466,6 +758,10 @@
 <https://ex.org/Source:1c4c7d48-d616-a8c9-dc6b-8f3cd2127bee> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:1c4c7d48-d616-a8c9-dc6b-8f3cd2127bee_doop_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:1c5938e4-fb66-45f1-24ce-b62683e16f83> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:1c5938e4-fb66-45f1-24ce-b62683e16f83_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:1cdd23c9-471b-d5bf-fd2f-ee5a15770bee> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
@@ -507,13 +803,27 @@
 
 <https://ex.org/Source:1f2821f2-f637-9b88-b803-9c3a7851ec35_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
+<https://ex.org/Source:1f3eb9ca-486c-8e07-33cd-e2a3945cbf83> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Rijnsburg_Rijnsburg_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:1f3eb9ca-486c-8e07-33cd-e2a3945cbf83_huwelijk_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Rijnsburg_Rijnsburg_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:1f3eb9ca-486c-8e07-33cd-e2a3945cbf83_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Rijnsburg_Rijnsburg_Zuid-Holland_Nederland> .
+
 <https://ex.org/Source:1f5131db-2758-cc3e-4f78-ea46ddd7d2d0> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiderdorp_Leiderdorp_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:1f5131db-2758-cc3e-4f78-ea46ddd7d2d0_doop_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiderdorp_Leiderdorp_Zuid-Holland_Nederland> .
 
+<https://ex.org/Source:201274c8-18dd-1429-6460-6f59ff59b025> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:201274c8-18dd-1429-6460-6f59ff59b025_huwelijk_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
 <https://ex.org/Source:2050793d-2b4a-f5ca-86db-82a96c766bee> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:2050793d-2b4a-f5ca-86db-82a96c766bee_doop_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:20dcb1ae-1ded-7f23-aefe-f107bae19025> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:20dcb1ae-1ded-7f23-aefe-f107bae19025_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:211f5c1b-7f56-79ba-332a-226301446bee> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Ter-Aar_Ter-Aar_Zuid-Holland_Nederland> .
 
@@ -573,6 +883,10 @@
 
 <https://ex.org/Source:2a12a0d2-f6cb-a898-8a67-e220c9e365f2> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
+<https://ex.org/Source:2a7e3b71-8cc9-b9c4-3acd-f7e4ff59b025> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:2a7e3b71-8cc9-b9c4-3acd-f7e4ff59b025_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
 <https://ex.org/Source:2a9b3d9b-6a0f-13d5-afcf-1ad52d828c35> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:2a9b3d9b-6a0f-13d5-afcf-1ad52d828c35_huwelijk_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
@@ -617,6 +931,10 @@
 
 <https://ex.org/Source:2ee8b936-29a1-b0bb-4da9-2c2d2e11c9a1_doop_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
+<https://ex.org/Source:2ef4776a-5184-a9ef-ec0b-03becba36025> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:2ef4776a-5184-a9ef-ec0b-03becba36025_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
 <https://ex.org/Source:30d74283-feae-c9cf-0739-c2d9fcc4abee> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:30d74283-feae-c9cf-0739-c2d9fcc4abee_doop_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
@@ -624,6 +942,10 @@
 <https://ex.org/Source:30edb285-19c5-e147-5f94-06f7735eebee> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:30edb285-19c5-e147-5f94-06f7735eebee_doop_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:310afbe5-2790-3802-a444-162de18c9025> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:310afbe5-2790-3802-a444-162de18c9025_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:31e78d38-2de0-243d-b2fd-f35f60539bee> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
@@ -669,6 +991,16 @@
 
 <https://ex.org/Source:3841612d-4093-ecbb-d93a-2c23f5f0dbee_doop_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
+<https://ex.org/Source:386758c5-5e59-2767-5494-2388aa6bb025> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:386758c5-5e59-2767-5494-2388aa6bb025_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:3a96a82d-ea7e-0b71-2c33-2ab9db0f7f83> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:3a96a82d-ea7e-0b71-2c33-2ab9db0f7f83_huwelijk_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:3a96a82d-ea7e-0b71-2c33-2ab9db0f7f83_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
 <https://ex.org/Source:3b57847e-5119-66bd-2f37-2194f4bddbee> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:3b57847e-5119-66bd-2f37-2194f4bddbee_doop_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
@@ -689,11 +1021,19 @@
 
 <https://ex.org/Source:3e79a5c2-20f7-46eb-f3a4-51a032d3fc35_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
+<https://ex.org/Source:3eaa8ecd-3e3b-ace8-fb38-3216a9482f83> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:3eaa8ecd-3e3b-ace8-fb38-3216a9482f83_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
 <https://ex.org/Source:3fdcc941-0a09-eefb-89c4-bb9dfe1e75f2> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:4124a4ea-e454-93cd-6ce2-b59661b2b606> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:4124a4ea-e454-93cd-6ce2-b59661b2b606_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:41379dc5-8bf0-3af8-280d-f12e4a99cf83> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:41379dc5-8bf0-3af8-280d-f12e4a99cf83_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:41ea3166-6593-059e-bbd3-19d958f3dbee> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
@@ -703,6 +1043,10 @@
 
 <https://ex.org/Source:4237315c-4c7c-2fee-a0a4-7ba1029b42d0_doop_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
+<https://ex.org/Source:429b6a70-2ac1-beaa-cb02-a5fbfc6c0025> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:429b6a70-2ac1-beaa-cb02-a5fbfc6c0025_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
 <https://ex.org/Source:42e68c39-37e6-eea4-df3b-e473c22522d0> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:42e68c39-37e6-eea4-df3b-e473c22522d0_doop_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
@@ -710,6 +1054,14 @@
 <https://ex.org/Source:433e8710-473d-e564-5a0b-54771fecf2d0> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:433e8710-473d-e564-5a0b-54771fecf2d0_doop_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:4359e16f-1128-0614-f249-05e79c6e8f83> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:4359e16f-1128-0614-f249-05e79c6e8f83_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:435c9710-d090-2c15-ffcd-2ac759af3025> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:435c9710-d090-2c15-ffcd-2ac759af3025_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:438539e8-d8ae-8e29-92cf-5d52719f62d0> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Noordwijk_Noordwijk_Zuid-Holland_Nederland> .
 
@@ -726,6 +1078,16 @@
 <https://ex.org/Source:455935b2-9336-e23a-a5cd-cfa87d8cebee> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Hillegom_Hillegom_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:455935b2-9336-e23a-a5cd-cfa87d8cebee_doop_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Hillegom_Hillegom_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:456157a1-487e-d0cd-9934-7b2bb5693025> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:456157a1-487e-d0cd-9934-7b2bb5693025_huwelijk_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:458326bc-9676-5203-ef45-c2e192688f83> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Noordwijk_Noordwijk_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:458326bc-9676-5203-ef45-c2e192688f83_huwelijk_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Noordwijk_Noordwijk_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:458326bc-9676-5203-ef45-c2e192688f83_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Noordwijk_Noordwijk_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:45ca4f08-4e70-7dc4-007f-a247202eb5f2> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Alkemade_Alkemade_Zuid-Holland_Nederland> .
 
@@ -745,11 +1107,31 @@
 
 <https://ex.org/Source:46c6abb8-2224-5cb7-44d5-f8a4875c4bee_doop_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
+<https://ex.org/Source:4787ca51-dd37-d544-f627-5399524b9f83> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:4787ca51-dd37-d544-f627-5399524b9f83_huwelijk_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:47b73424-b095-d55b-0ccd-54e778c53025> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:47b73424-b095-d55b-0ccd-54e778c53025_huwelijk_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:49ed7797-ac2e-be5c-8c03-31961aae2f83> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:49ed7797-ac2e-be5c-8c03-31961aae2f83_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:4a0a6dd9-fcb0-184c-950a-567aebe9d025> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:4a0a6dd9-fcb0-184c-950a-567aebe9d025_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
 <https://ex.org/Source:4b39e07f-7e61-7c21-a98f-f6bbdc6cd606> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Hillegom_Hillegom_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:4b39e07f-7e61-7c21-a98f-f6bbdc6cd606_huwelijk_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Hillegom_Hillegom_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:4c3c3db4-92b3-92e7-7ba5-d60d522c25f2> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:4e061a76-fae8-a2aa-af4e-2248e619f025> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:4e061a76-fae8-a2aa-af4e-2248e619f025_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:4e6141b8-8c4c-5da4-15f8-8805224099a1> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
@@ -780,6 +1162,12 @@
 <https://ex.org/Source:50627eb6-a77e-0c8a-ccac-28a4906819a1> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:50627eb6-a77e-0c8a-ccac-28a4906819a1_doop_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:50dfefdb-20d0-50de-cf31-e9fe1bc52025> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Zevenhoven_Zevenhoven_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:50dfefdb-20d0-50de-cf31-e9fe1bc52025_huwelijk_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Zevenhoven_Zevenhoven_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:50dfefdb-20d0-50de-cf31-e9fe1bc52025_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Zevenhoven_Zevenhoven_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:518b9839-cb99-8229-0383-ecd8f8343bee> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Alkemade_Alkemade_Zuid-Holland_Nederland> .
 
@@ -871,6 +1259,10 @@
 
 <https://ex.org/Source:61782ac0-9ca2-9ff0-db2f-31467854a606_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Nieuwkoop_Nieuwkoop_Zuid-Holland_Nederland> .
 
+<https://ex.org/Source:62959e0b-70b3-12b3-3f47-6c3dde6f2f83> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:62959e0b-70b3-12b3-3f47-6c3dde6f2f83_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
 <https://ex.org/Source:6441e0e8-dda9-06cc-4c33-d2d15f364606> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Rijnsburg_Rijnsburg_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:6441e0e8-dda9-06cc-4c33-d2d15f364606_huwelijk_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Rijnsburg_Rijnsburg_Zuid-Holland_Nederland> .
@@ -880,6 +1272,10 @@
 <https://ex.org/Source:65366c62-0d9e-b276-5e98-cc745d5c39a1> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:65366c62-0d9e-b276-5e98-cc745d5c39a1_doop_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:65b07400-68f1-77e6-ddae-a50bccea5025> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:65b07400-68f1-77e6-ddae-a50bccea5025_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:668813a7-3c6e-6590-6643-3e2329fa62d0> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
@@ -912,6 +1308,16 @@
 <https://ex.org/Source:67e31877-6aed-49d9-fb75-c677171d39a1> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:67e31877-6aed-49d9-fb75-c677171d39a1_doop_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:682dd137-b940-3b02-9904-2c1f31e0bf83> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:682dd137-b940-3b02-9904-2c1f31e0bf83_huwelijk_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:682dd137-b940-3b02-9904-2c1f31e0bf83_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:684fb538-67ed-1ebd-a9ac-e168964ee025> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:684fb538-67ed-1ebd-a9ac-e168964ee025_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:68b39b4f-c7d7-3a03-5e89-635e96daebee> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
@@ -961,7 +1367,23 @@
 
 <https://ex.org/Source:6c6aa42c-5a1f-8f39-63d9-4c4d95e359a1_doop_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Zoeterwoude_Zoeterwoude_Zuid-Holland_Nederland> .
 
+<https://ex.org/Source:6caa6115-a762-d340-295b-3a66883c6f83> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:6caa6115-a762-d340-295b-3a66883c6f83_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
 <https://ex.org/Source:6eb1eefa-68ba-d3ec-6f8a-478b50cc75f2> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:6fee7c3f-c36c-c614-aab2-f051a1c76025> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:6fee7c3f-c36c-c614-aab2-f051a1c76025_huwelijk_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:6fee7c3f-c36c-c614-aab2-f051a1c76025_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:705250da-54c3-877a-9e49-a1cb8657af83> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:705250da-54c3-877a-9e49-a1cb8657af83_huwelijk_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:705250da-54c3-877a-9e49-a1cb8657af83_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:70cc435d-c8dd-192a-a7e4-9b3075c50606> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
@@ -974,6 +1396,10 @@
 <https://ex.org/Source:7165a1aa-a1cd-8e7a-deaa-1c1ab5d059a1> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:7165a1aa-a1cd-8e7a-deaa-1c1ab5d059a1_doop_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:71addf42-c4a7-abf8-dc4c-46db7f5a0025> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Alkemade_Alkemade_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:71addf42-c4a7-abf8-dc4c-46db7f5a0025_huwelijk_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Alkemade_Alkemade_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:71f19fe4-7c5b-8504-4211-c8999b7015f2> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
@@ -1013,9 +1439,17 @@
 
 <https://ex.org/Source:7bf4d11d-78cd-3879-3697-d925575e2bee_doop_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
+<https://ex.org/Source:7c9f56bb-7195-540a-418e-af7ee5e2c025> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:7c9f56bb-7195-540a-418e-af7ee5e2c025_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
 <https://ex.org/Source:7ca73116-1909-4955-cd46-e6e76fd632d0> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:7ca73116-1909-4955-cd46-e6e76fd632d0_doop_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:7cb0e54f-1f82-c36d-5b36-4abf8c0e5f83> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:7cb0e54f-1f82-c36d-5b36-4abf8c0e5f83_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:7ef574af-798c-54a8-e6e8-5125260f19a1> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
@@ -1067,6 +1501,10 @@
 
 <https://ex.org/Source:8c61ab62-eebb-44a9-f8c6-412c2a879bee_doop_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
+<https://ex.org/Source:8c6abe0a-3b9f-315c-d68f-8c2b5c49c025> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:8c6abe0a-3b9f-315c-d68f-8c2b5c49c025_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
 <https://ex.org/Source:8dab5030-19d9-e54a-266d-5990bc312c35> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:8dab5030-19d9-e54a-266d-5990bc312c35_huwelijk_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
@@ -1078,6 +1516,10 @@
 <https://ex.org/Source:8f17a76d-cd5b-7bee-59be-e9b7a10cebee> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Alkemade_Alkemade_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:8f17a76d-cd5b-7bee-59be-e9b7a10cebee_doop_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Alkemade_Alkemade_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:8f4d13c7-5ff7-e80b-9eb7-bc0e838d6f83> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:8f4d13c7-5ff7-e80b-9eb7-bc0e838d6f83_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:8fc72d3a-876d-2b83-60cc-77564295f606> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
@@ -1135,6 +1577,10 @@
 
 <https://ex.org/Source:965e67b1-b62b-2e8c-23d7-8f5e11908c35_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
+<https://ex.org/Source:9677f97e-d1f0-0ee9-9910-2e17ca09f025> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:9677f97e-d1f0-0ee9-9910-2e17ca09f025_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
 <https://ex.org/Source:9686f325-11cb-ed6c-929c-4b8e9d95cbee> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:9686f325-11cb-ed6c-929c-4b8e9d95cbee_doop_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
@@ -1142,6 +1588,14 @@
 <https://ex.org/Source:981d4486-5b82-848e-0ebb-4d4a3c12ec35> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:981d4486-5b82-848e-0ebb-4d4a3c12ec35_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:98eeaf5b-ee20-95c8-0ea1-3bdb29643025> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:98eeaf5b-ee20-95c8-0ea1-3bdb29643025_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:98f3b65e-6e54-b94e-5221-f18a087c9f83> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:98f3b65e-6e54-b94e-5221-f18a087c9f83_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:9977aa9b-3095-1805-ee54-8402eb1602d0> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
@@ -1164,6 +1618,10 @@
 <https://ex.org/Source:9a678d6f-107d-5e8f-1657-a9cd5f3d4c35> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:9a678d6f-107d-5e8f-1657-a9cd5f3d4c35_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:9b42ab39-f18f-46b7-e34e-e537948fdf83> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:9b42ab39-f18f-46b7-e34e-e537948fdf83_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:9b6c0e38-91b1-6eeb-86a5-05aa1e08fbee> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Alkemade_Alkemade_Zuid-Holland_Nederland> .
 
@@ -1214,6 +1672,14 @@
 <https://ex.org/Source:a0ba98f2-daf3-f8b9-874a-683eb0a832d0_doop_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:a0fbf853-20b5-7518-666b-e10ddd1bd5f2> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:a109c54e-51e0-cdbd-f7e0-de4e8bb74f83> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:a109c54e-51e0-cdbd-f7e0-de4e8bb74f83_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:a1223e76-37ec-d949-c5cb-304f1a08bf83> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:a1223e76-37ec-d949-c5cb-304f1a08bf83_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:a1de19a7-b8a1-f6a4-e957-32e0c987ebee> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Rijnsaterwoude_Rijnsaterwoude_Zuid-Holland_Nederland> .
 
@@ -1275,6 +1741,10 @@
 
 <https://ex.org/Source:a61ad1c0-a4cb-1435-0336-50ca758b09a1_doop_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
+<https://ex.org/Source:a685dc23-5d48-8e6e-129f-fe3ecb075025> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Hillegom_Hillegom_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:a685dc23-5d48-8e6e-129f-fe3ecb075025_huwelijk_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Hillegom_Hillegom_Zuid-Holland_Nederland> .
+
 <https://ex.org/Source:a6c53eae-5c9b-ded9-bcf0-7cb34dc39c35> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:a6c53eae-5c9b-ded9-bcf0-7cb34dc39c35_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
@@ -1286,6 +1756,10 @@
 <https://ex.org/Source:a6f8e457-0895-68f2-9cac-c934ff03a9a1> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:a6f8e457-0895-68f2-9cac-c934ff03a9a1_doop_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:a7ac4b72-ed89-1aeb-5287-75e499981f83> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:a7ac4b72-ed89-1aeb-5287-75e499981f83_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:a87d39c1-1bb2-dc61-a919-6212ba4632d0> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
@@ -1306,6 +1780,10 @@
 <https://ex.org/Source:a9a340be-2824-aec9-1f92-f3cc53153bee> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:a9a340be-2824-aec9-1f92-f3cc53153bee_doop_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:aa07d312-dc16-f1e4-ffbd-ea6b13255025> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:aa07d312-dc16-f1e4-ffbd-ea6b13255025_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:aa324954-50d6-0b24-052a-c32f8b588bee> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
@@ -1328,6 +1806,10 @@
 <https://ex.org/Source:af76fab0-3914-37c1-0ec2-1314c626a9a1> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:af76fab0-3914-37c1-0ec2-1314c626a9a1_doop_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:af8d9f73-2d5b-cdd5-1722-51f697b8ef83> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:af8d9f73-2d5b-cdd5-1722-51f697b8ef83_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:af9eb142-87a9-d0d7-9bd9-1115513bb5f2> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Nieuwkoop_Nieuwkoop_Zuid-Holland_Nederland> .
 
@@ -1352,6 +1834,18 @@
 <https://ex.org/Source:b0e6ce3c-378a-d685-ae5c-508b1f65d606> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:b0e6ce3c-378a-d685-ae5c-508b1f65d606_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:b119fd90-bc09-c50c-8822-08cba3e54025> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:b119fd90-bc09-c50c-8822-08cba3e54025_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:b11a0fda-9e5c-edf8-5464-23d5e6e28025> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:b11a0fda-9e5c-edf8-5464-23d5e6e28025_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:b1f0b8ab-c29c-4598-d11a-36366b031f83> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:b1f0b8ab-c29c-4598-d11a-36366b031f83_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:b2e3ac8b-df60-01a8-3af9-ac8646ba22d0> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
@@ -1411,6 +1905,10 @@
 
 <https://ex.org/Source:b9d94904-086e-be6d-1a8f-7f612519e5f2> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
+<https://ex.org/Source:babe0318-5df1-3719-c63a-892a80f1d025> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:babe0318-5df1-3719-c63a-892a80f1d025_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
 <https://ex.org/Source:bbd96b6f-a128-24ab-f8fe-9e960f7112d0> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Zoeterwoude_Zoeterwoude_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:bbd96b6f-a128-24ab-f8fe-9e960f7112d0_doop_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Zoeterwoude_Zoeterwoude_Zuid-Holland_Nederland> .
@@ -1423,13 +1921,31 @@
 
 <https://ex.org/Source:bc79377f-a05c-304f-3288-145b8c84fbee_doop_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
+<https://ex.org/Source:bcd66c4c-bceb-d5b7-a850-e7e79d511f83> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Voorhout_Voorhout_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:bcd66c4c-bceb-d5b7-a850-e7e79d511f83_huwelijk_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Voorhout_Voorhout_Zuid-Holland_Nederland> .
+
 <https://ex.org/Source:bcf25969-87e2-4f2f-47ae-f9659378d2d0> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Warmond_Warmond_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:bcf25969-87e2-4f2f-47ae-f9659378d2d0_doop_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Warmond_Warmond_Zuid-Holland_Nederland> .
 
+<https://ex.org/Source:bd56e2c3-60be-9b44-ece6-052789a24025> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:bd56e2c3-60be-9b44-ece6-052789a24025_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:bd9518d5-1d0e-aa7a-3321-904aec5ecf83> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:bd9518d5-1d0e-aa7a-3321-904aec5ecf83_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
 <https://ex.org/Source:bdc09318-27e5-5e61-c8b4-bc06f6018bee> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:bdc09318-27e5-5e61-c8b4-bc06f6018bee_doop_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:bdc0ca57-7d1d-987a-8b57-3f0448df6025> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:bdc0ca57-7d1d-987a-8b57-3f0448df6025_huwelijk_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:bdc0ca57-7d1d-987a-8b57-3f0448df6025_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:be13b28d-39c4-235e-edf5-b8679e8125f2> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
@@ -1463,6 +1979,14 @@
 
 <https://ex.org/Source:c497ad53-311b-d335-ac1f-691586e199a1_doop_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
+<https://ex.org/Source:c7732c99-4e13-8f4e-44c5-425a8957af83> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:c7732c99-4e13-8f4e-44c5-425a8957af83_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:c86c20d8-0889-2c11-7a2f-be0d31510f83> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:c86c20d8-0889-2c11-7a2f-be0d31510f83_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
 <https://ex.org/Source:c908f36e-95c7-45fb-ec5c-ab2428236bee> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:c908f36e-95c7-45fb-ec5c-ab2428236bee_doop_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
@@ -1491,6 +2015,10 @@
 
 <https://ex.org/Source:cb207091-f4ce-f941-0ec5-827279f969a1_doop_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Sassenheim_Sassenheim_Zuid-Holland_Nederland> .
 
+<https://ex.org/Source:cbaf19b2-f5e0-5b23-e10c-f9f39188c025> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:cbaf19b2-f5e0-5b23-e10c-f9f39188c025_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
 <https://ex.org/Source:cd6eed77-d661-7714-4015-f5af96cc32d0> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Zevenhoven_Zevenhoven_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:cd6eed77-d661-7714-4015-f5af96cc32d0_doop_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Zevenhoven_Zevenhoven_Zuid-Holland_Nederland> .
@@ -1511,9 +2039,21 @@
 
 <https://ex.org/Source:d02b4eb1-7055-bc17-4d4f-bb5cc6cdc2d0_doop_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
+<https://ex.org/Source:d18d89a8-65c4-2554-8711-1bb2811e7025> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:d18d89a8-65c4-2554-8711-1bb2811e7025_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
 <https://ex.org/Source:d1cf7e05-5653-7c84-faed-765eb5d4e2d0> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:d1cf7e05-5653-7c84-faed-765eb5d4e2d0_doop_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:d2190933-6eba-8018-2734-641ffcc38025> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:d2190933-6eba-8018-2734-641ffcc38025_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:d2467107-d1f3-92e2-1a47-2473ace57025> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:d2467107-d1f3-92e2-1a47-2473ace57025_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:d254e081-a774-a593-c107-2ef76038ac35> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
@@ -1539,11 +2079,21 @@
 
 <https://ex.org/Source:d4f82ea2-0f46-0b6b-e459-5ad56be75c35_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
+<https://ex.org/Source:d55b81e5-de1b-445d-ab5e-5def45d40f83> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:d55b81e5-de1b-445d-ab5e-5def45d40f83_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
 <https://ex.org/Source:d5eca0c3-248a-729c-9e9d-b9a62a9152d0> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:d5eca0c3-248a-729c-9e9d-b9a62a9152d0_doop_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:d6014273-0213-d625-ab9f-5e04c01395f2> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:d7fe76bb-b907-d65d-0037-d321b2016025> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:d7fe76bb-b907-d65d-0037-d321b2016025_huwelijk_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:d7fe76bb-b907-d65d-0037-d321b2016025_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:d87b9fbf-7b97-ec74-022b-99049fa6dbee> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
@@ -1609,7 +2159,15 @@
 
 <https://ex.org/Source:e1c3b4d6-2706-43dc-f195-a7c3513cb606_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
+<https://ex.org/Source:e1ed620a-6465-e384-b6f6-022f79b40f83> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:e1ed620a-6465-e384-b6f6-022f79b40f83_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
 <https://ex.org/Source:e24c3f10-071c-6247-773d-61b948a705f2> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:e28a53ca-d80b-5f45-65c6-f80ba2331f83> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:e28a53ca-d80b-5f45-65c6-f80ba2331f83_huwelijk_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:e3874d61-4a8c-1b63-827f-625f013ed5f2> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Ter-Aar_Ter-Aar_Zuid-Holland_Nederland> .
 
@@ -1641,6 +2199,12 @@
 
 <https://ex.org/Source:e5e47f40-672d-677d-6c20-36e3bb859c35_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
+<https://ex.org/Source:e7104fd8-c3be-dca5-4491-67234ab85025> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:e7104fd8-c3be-dca5-4491-67234ab85025_huwelijk_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:e7104fd8-c3be-dca5-4491-67234ab85025_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
 <https://ex.org/Source:e7787fd0-efd0-fd28-d1cb-c3a8f09ae2d0> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:e7787fd0-efd0-fd28-d1cb-c3a8f09ae2d0_doop_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
@@ -1667,6 +2231,10 @@
 
 <https://ex.org/Source:eb63b0a5-caff-f838-3a8d-967c6176e9a1_doop_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
+<https://ex.org/Source:ebab23a8-d377-9700-371c-aba9d052bf83> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:ebab23a8-d377-9700-371c-aba9d052bf83_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
 <https://ex.org/Source:ebc4724f-31d2-7ca1-0285-c0b5676d4606> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:ebc4724f-31d2-7ca1-0285-c0b5676d4606_huwelijk_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
@@ -1687,6 +2255,10 @@
 
 <https://ex.org/Source:ec589638-05d9-c67a-a34f-a4fc523f99a1_doop_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
+<https://ex.org/Source:ec7c73b9-f066-6f89-7cda-7a90509c9025> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:ec7c73b9-f066-6f89-7cda-7a90509c9025_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
 <https://ex.org/Source:ecb08563-3621-6069-8854-2eccd0143bee> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:ecb08563-3621-6069-8854-2eccd0143bee_doop_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
@@ -1698,6 +2270,12 @@
 <https://ex.org/Source:ece1ce8d-e5e4-83ad-4b58-6af54056d9a1> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:ece1ce8d-e5e4-83ad-4b58-6af54056d9a1_doop_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:ee35c3a6-a067-ba00-4dfc-b899fc739025> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:ee35c3a6-a067-ba00-4dfc-b899fc739025_huwelijk_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:ee35c3a6-a067-ba00-4dfc-b899fc739025_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:ef99e7d7-2c10-6aa8-197e-dc77c7f39c35> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
@@ -1711,6 +2289,12 @@
 
 <https://ex.org/Source:f0736a00-e03b-1108-c5e8-8a48ac61c606_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
+<https://ex.org/Source:f1a23c87-d983-419e-ea8a-739c3d9d4f83> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Rijnsburg_Rijnsburg_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:f1a23c87-d983-419e-ea8a-739c3d9d4f83_huwelijk_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Rijnsburg_Rijnsburg_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:f1a23c87-d983-419e-ea8a-739c3d9d4f83_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Rijnsburg_Rijnsburg_Zuid-Holland_Nederland> .
+
 <https://ex.org/Source:f1da4508-b940-e3af-496f-3901e75055f2> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:f1e68173-f005-c41f-6b1a-4eccde229bee> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
@@ -1718,6 +2302,10 @@
 <https://ex.org/Source:f1e68173-f005-c41f-6b1a-4eccde229bee_doop_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:f28b2437-66f8-a234-86df-3c69275d85f2> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Hoogmade_Hoogmade_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:f330acad-4fbe-0d9b-6ce2-e3c98cd3df83> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:f330acad-4fbe-0d9b-6ce2-e3c98cd3df83_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:f395b42e-cd8e-a60a-5be0-dd40a3aa35f2> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
@@ -1759,6 +2347,10 @@
 
 <https://ex.org/Source:f8dc46b7-ef85-e8e8-4741-2b4183e85bee_doop_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Woubrugge_Woubrugge_Zuid-Holland_Nederland> .
 
+<https://ex.org/Source:f904d4cb-68b0-39e2-59b9-f73d29d67f83> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:f904d4cb-68b0-39e2-59b9-f73d29d67f83_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
 <https://ex.org/Source:f982aff4-24d7-cecf-b934-b4f2422debee> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:f982aff4-24d7-cecf-b934-b4f2422debee_doop_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
@@ -1774,6 +2366,10 @@
 <https://ex.org/Source:fbfbd500-11b2-581c-1723-13115f93e606> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:fbfbd500-11b2-581c-1723-13115f93e606_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:fdcaf988-1a11-766d-a73f-4ec6f67ce025> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
+
+<https://ex.org/Source:fdcaf988-1a11-766d-a73f-4ec6f67ce025_ondertrouw_event> picom:eventPlace <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
 <https://ex.org/Source:fe0bf28c-e481-bdaa-48aa-fd2619b70c35> sdo:locationCreated <https://iisg.amsterdam/resource/ListOfToponyms/location/Leiden_Leiden_Zuid-Holland_Nederland> .
 
