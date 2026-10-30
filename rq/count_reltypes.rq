@@ -1,0 +1,16 @@
+PREFIX sdo: <https://schema.org/>
+PREFIX picom: <https://personsincontext.org/model#>
+PREFIX pnv: <https://w3id.org/pnv#>
+PREFIX prov: <http://www.w3.org/ns/prov#> 
+
+SELECT ?rel ?type1 (COUNT(?rel) AS ?countREL) WHERE {
+  ?po1 ?rel ?po2 .
+  ?po1 a picom:PersonObservation ;
+       prov:hadPrimarySource ?src1 .
+  ?po2 a picom:PersonObservation ;
+       prov:hadPrimarySource ?src1 .
+  ?src1 sdo:additionalType ?type1 .
+  
+} 
+GROUP BY ?rel ?type1
+ORDER BY ?type1 DESC(?countREL) 

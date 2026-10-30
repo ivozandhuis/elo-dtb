@@ -1,0 +1,31 @@
+PREFIX sdo: <https://schema.org/>
+PREFIX picom: <https://personsincontext.org/model#>
+PREFIX picot_roles: <https://terms.personsincontext.org/roles/> 
+PREFIX pnv: <https://w3id.org/pnv#>
+PREFIX prov: <http://www.w3.org/ns/prov#> 
+
+SELECT *
+  WHERE {
+  ?dopeling a picom:PersonObservation ;
+		picom:hasRole picot_roles:575 ;
+		picom:hasLifeEvent/picom:eventDate ?doopdatum ;
+		picom:hasLifeEvent/picom:eventPlace ?doopplaats ;
+		sdo:familyName ?familienaam_dopeling ;
+		sdo:givenName ?voornamen_dopeling .
+        OPTIONAL { ?dopeling sdo:additionalName/pnv:patronym ?patroniem_dopeling }
+        OPTIONAL { ?dopeling sdo:additionalName/pnv:surnamePrefix ?tussenvoegsel_dopeling }
+   ?vader a picom:PersonObservation ;
+		sdo:children ?dopeling ;
+		sdo:gender sdo:Male ;
+		sdo:familyName ?familienaam_vader ;
+		sdo:givenName ?voornamen_vader .
+        OPTIONAL { ?vader sdo:additionalName/pnv:patronym ?patroniem_vader }
+        OPTIONAL { ?vader sdo:additionalName/pnv:surnamePrefix ?tussenvoegsel_vader }
+  ?moeder a picom:PersonObservation ;
+		sdo:children ?dopeling ;
+		sdo:gender sdo:Female ;
+		sdo:familyName ?familienaam_moeder ;
+		sdo:givenName ?voornamen_moeder .
+        OPTIONAL { ?moeder sdo:additionalName/pnv:patronym ?patroniem_moeder }
+        OPTIONAL { ?moeder sdo:additionalName/pnv:surnamePrefix ?tussenvoegsel_moeder }
+} 

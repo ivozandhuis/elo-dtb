@@ -1,0 +1,30 @@
+PREFIX sdo: <https://schema.org/>
+PREFIX picom: <https://personsincontext.org/model#>
+PREFIX picot_roles: <https://terms.personsincontext.org/roles/> 
+PREFIX picot_eventtypes: <https://terms.personsincontext.org/eventtypes/>
+PREFIX pnv: <https://w3id.org/pnv#>
+PREFIX prov: <http://www.w3.org/ns/prov#> 
+
+SELECT *
+  WHERE {
+  ?bruidegom a picom:PersonObservation ;
+		sdo:gender sdo:Male ;
+        picom:hasRole picot_roles:574 ;
+        picom:hasLifeEvent ?event .
+		OPTIONAL { ?bruidegom sdo:familyName ?familienaam_bruidegom }
+		OPTIONAL { ?bruidegom sdo:givenName ?voornamen_bruidegom }
+        OPTIONAL { ?bruidegom sdo:additionalName/pnv:patronym ?patroniem_bruidegom }
+        OPTIONAL { ?bruidegom sdo:additionalName/pnv:surnamePrefix ?tussenvoegsel_bruidegom }
+  ?bruid a picom:PersonObservation ;
+		sdo:gender sdo:Female ;
+        picom:hasRole picot_roles:574 ;
+        picom:hasLifeEvent ?event .
+		OPTIONAL { ?bruid sdo:familyName ?familienaam_bruid }
+		OPTIONAL { ?bruid sdo:givenName ?voornamen_bruid }
+        OPTIONAL { ?bruid sdo:additionalName/pnv:patronym ?patroniem_bruid }
+        OPTIONAL { ?bruid sdo:additionalName/pnv:surnamePrefix ?tussenvoegsel_bruid }
+#  ?event picom:eventType picot_eventtypes:99 . # ondertrouw
+  ?event picom:eventType picot_eventtypes:83 . # huwelijk
+       OPTIONAL { ?event picom:eventDate ?trouwdatum }
+       OPTIONAL { ?event picom:eventPlace ?trouwplaats }
+} 

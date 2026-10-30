@@ -4,7 +4,7 @@ PREFIX pnv: <https://w3id.org/pnv#>
 
 SELECT ?famname (COUNT(?famname) AS ?famnameCount) WHERE {
   ?po a picom:PersonObservation ;
-      sdo:additionalName/pnv:baseSurname ?famname .
+      sdo:familyName ?famname .
 } 
 GROUP BY ?famname
 ORDER BY DESC(?famnameCount)
