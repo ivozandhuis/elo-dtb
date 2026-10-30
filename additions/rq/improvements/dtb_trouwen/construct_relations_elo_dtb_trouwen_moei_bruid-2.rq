@@ -12,7 +12,7 @@ CONSTRUCT {
 	?bride picom:hasUncle_Aunt ?witness .
 }
 WHERE {
-    ?text ql:contains-word "bruid moei*" .
+    ?text ql:contains-word "bruid moei" .
     ?text ql:contains-entity ?desc .
     ?bride a picom:PersonObservation ; 
     	prov:hadPrimarySource ?src ;
@@ -21,7 +21,8 @@ WHERE {
     ?src sdo:description ?desc .
     FILTER(CONTAINS(LCASE(?desc), "getuigen bruid:"))
     FILTER(CONTAINS(LCASE(?desc), "moei"))
-    BIND (replace(?desc, ".*Getuigen bruid: (.*) moei (.*) - .*", "$1") AS ?rel_name)
+    BIND (replace(?desc, ".*Getuigen bruid: (.*) moei (.*) - .*", "$1") AS ?rel_name1)
     BIND (replace(?desc, ".*Getuigen bruid: (.*) moei (.*) - .*", "$2") AS ?rel_adres)
+    BIND (replace(?rel_name1, "  ", " ") AS ?rel_name)
     BIND (IRI(CONCAT(STR(?src), "_bruid_moei")) AS ?witness)
 }
