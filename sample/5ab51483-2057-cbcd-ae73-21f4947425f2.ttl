@@ -1,4 +1,5 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix sdo: <https://schema.org/> .
@@ -6,6 +7,7 @@
 
 <https://ex.org/Person:cefd4e56-97bf-2989-3f31-be28c4fc93b7> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:5ab51483-2057-cbcd-ae73-21f4947425f2> ;
+    picom:hasLifeEvent <https://ex.org/Source:5ab51483-2057-cbcd-ae73-21f4947425f2_begraaf_event> ;
     picom:hasRole picot_roles:479 ;
     sdo:address "Mierennest"@nl ;
     sdo:familyName "Bruneel"@nl ;
@@ -13,6 +15,7 @@
     sdo:name "Kasten Bruneel"@nl .
 
 <https://ex.org/Source:5ab51483-2057-cbcd-ae73-21f4947425f2> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:526 ;
     sdo:dateModified "1970-01-01"^^xsd:date ;
     sdo:description "1315"@nl,
         "1609-1617"@nl,
@@ -21,4 +24,9 @@
     sdo:locationCreated "Leiden"@nl ;
     sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Stadsarchief van Leiden (SA II) (1574-1816), Deel: 1315, Periode: 1609-1617, (toegangsnr. 0501A), inv.nr. 1315, Register van begravenen te Leiden, 1609 april 5-1617 september 23., "@nl ;
     sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/5ab51483-2057-cbcd-ae73-21f4947425f2"^^xsd:anyURI .
+
+<https://ex.org/Source:5ab51483-2057-cbcd-ae73-21f4947425f2_begraaf_event> a picom:LifeEvent ;
+    picom:eventDate "1611-10-25"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:76 .
 

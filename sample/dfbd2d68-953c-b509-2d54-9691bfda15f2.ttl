@@ -1,4 +1,5 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -7,6 +8,7 @@
 
 <https://ex.org/Person:23af7df2-8f91-41fd-f8d8-542f9c1eadde> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:dfbd2d68-953c-b509-2d54-9691bfda15f2> ;
+    picom:hasLifeEvent <https://ex.org/Source:dfbd2d68-953c-b509-2d54-9691bfda15f2_begraaf_event> ;
     picom:hasRole picot_roles:479 ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:baseSurname "Cooperslaeger"@nl ;
@@ -19,6 +21,7 @@
     sdo:name "NN de Cooperslaeger"@nl .
 
 <https://ex.org/Source:dfbd2d68-953c-b509-2d54-9691bfda15f2> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:526 ;
     sdo:dateModified "1970-01-01"^^xsd:date ;
     sdo:description "1322"@nl,
         "1655-1657"@nl,
@@ -27,4 +30,9 @@
     sdo:locationCreated "Leiden"@nl ;
     sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Stadsarchief van Leiden (SA II) (1574-1816), Deel: 1322, Periode: 1655-1657, (toegangsnr. 0501A), inv.nr. 1322, Register van begravenen te Leiden, 1655 augustus 1-1657 januari 27., "@nl ;
     sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/dfbd2d68-953c-b509-2d54-9691bfda15f2"^^xsd:anyURI .
+
+<https://ex.org/Source:dfbd2d68-953c-b509-2d54-9691bfda15f2_begraaf_event> a picom:LifeEvent ;
+    picom:eventDate "1656-03-16"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:76 .
 

@@ -1,4 +1,5 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -7,6 +8,7 @@
 
 <https://ex.org/Person:1c293801-0cdd-1491-f3d6-7848dc29c240> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:f28b2437-66f8-a234-86df-3c69275d85f2> ;
+    picom:hasLifeEvent <https://ex.org/Source:f28b2437-66f8-a234-86df-3c69275d85f2_begraaf_event> ;
     picom:hasRole picot_roles:479 ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:givenName "Lucas"@nl ;
@@ -17,6 +19,7 @@
     sdo:name "Lucas Piterze"@nl .
 
 <https://ex.org/Source:f28b2437-66f8-a234-86df-3c69275d85f2> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:526 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/5c835975-1942-4d9c-9f41-1ad4b01ec905/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/f28b2437-66f8-a234-86df-3c69275d85f2"^^xsd:anyURI ;
@@ -30,4 +33,9 @@
     sdo:locationCreated "Hoogmade"@nl ;
     sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw- en begraafregisters van Hoogmade, Deel: 6, Periode: 1714-1811, (toegangsnr. 121.1.03), inv.nr. 6, \"Doopboek, trouwboek en begraafboek\", doopinschrijvingen, april 1714 - 1811, trouwinschrijvingen, 23 april 1814 - 1810 en naamlijst van begravenen van de Rooms-katholieke statie (RK) te Hoogmade, 16 juli 1714 - 1811., 262, "@nl ;
     sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/f28b2437-66f8-a234-86df-3c69275d85f2"^^xsd:anyURI .
+
+<https://ex.org/Source:f28b2437-66f8-a234-86df-3c69275d85f2_begraaf_event> a picom:LifeEvent ;
+    picom:eventDate "1730-08-16"@nl ;
+    picom:eventPlace "Hoogmade"@nl ;
+    picom:eventType picot_eventtypes:76 .
 

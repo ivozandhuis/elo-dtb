@@ -1,4 +1,5 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix sdo: <https://schema.org/> .
@@ -14,13 +15,20 @@
 
 <https://ex.org/Person:409fc3f6-6dfb-f495-3603-f33cd405e8c9> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:64da2344-03ac-620b-84bd-60ec72f545f2> ;
+    picom:hasLifeEvent <https://ex.org/Source:64da2344-03ac-620b-84bd-60ec72f545f2_begraaf_event> ;
     picom:hasRole picot_roles:479 ;
     sdo:description "Zoeterwoude"@nl ;
     sdo:familyName "Houwniet"@nl ;
     sdo:givenName "NN"@nl ;
     sdo:name "NN Houwniet"@nl .
 
+<https://ex.org/Source:64da2344-03ac-620b-84bd-60ec72f545f2_begraaf_event> a picom:LifeEvent ;
+    picom:eventDate "1762-08-30"@nl ;
+    picom:eventPlace "Zoeterwoude"@nl ;
+    picom:eventType picot_eventtypes:76 .
+
 <https://ex.org/Source:64da2344-03ac-620b-84bd-60ec72f545f2> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:526 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/ed70754a-5fb5-40f6-8147-8781ced2c5ec/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/64da2344-03ac-620b-84bd-60ec72f545f2"^^xsd:anyURI ;

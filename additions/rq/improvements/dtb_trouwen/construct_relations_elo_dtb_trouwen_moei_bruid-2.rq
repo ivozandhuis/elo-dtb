@@ -1,0 +1,27 @@
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX picom: <https://personsincontext.org/model#>
+PREFIX sdo: <https://schema.org/>
+PREFIX picot_roles: <https://terms.personsincontext.org/roles/>
+PREFIX ql: <http://qlever.cs.uni-freiburg.de/builtin-functions/>
+
+CONSTRUCT {
+    ?witness a picom:PersonObservation ;
+        sdo:name ?rel_name ;
+        sdo:address ?rel_adres ;
+        sdo:gender sdo:Female .
+	?bride picom:hasUncle_Aunt ?witness .
+}
+WHERE {
+    ?text ql:contains-word "bruid moei*" .
+    ?text ql:contains-entity ?desc .
+    ?bride a picom:PersonObservation ; 
+    	prov:hadPrimarySource ?src ;
+    	picom:hasRole picot_roles:574 ;
+    	sdo:gender sdo:Female .
+    ?src sdo:description ?desc .
+    FILTER(CONTAINS(LCASE(?desc), "getuigen bruid:"))
+    FILTER(CONTAINS(LCASE(?desc), "moei"))
+    BIND (replace(?desc, ".*Getuigen bruid: (.*) moei (.*) - .*", "$1") AS ?rel_name)
+    BIND (replace(?desc, ".*Getuigen bruid: (.*) moei (.*) - .*", "$2") AS ?rel_adres)
+    BIND (IRI(CONCAT(STR(?src), "_bruid_moei")) AS ?witness)
+}

@@ -1,4 +1,5 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -20,13 +21,20 @@
 
 <https://ex.org/Person:900e1248-5241-cee7-ecf7-1e4fb3a93c30> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:0b5280d7-583c-9b44-2a0b-9b532ff4b5f2> ;
+    picom:hasLifeEvent <https://ex.org/Source:0b5280d7-583c-9b44-2a0b-9b532ff4b5f2_begraaf_event> ;
     picom:hasRole picot_roles:479 ;
     sdo:address "Kaag"@nl ;
     sdo:familyName "Baas"@nl ;
     sdo:givenName "Jan"@nl ;
     sdo:name "Jan Baas"@nl .
 
+<https://ex.org/Source:0b5280d7-583c-9b44-2a0b-9b532ff4b5f2_begraaf_event> a picom:LifeEvent ;
+    picom:eventDate "1751-04-12"@nl ;
+    picom:eventPlace "Alkemade"@nl ;
+    picom:eventType picot_eventtypes:76 .
+
 <https://ex.org/Source:0b5280d7-583c-9b44-2a0b-9b532ff4b5f2> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:526 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/df09bbf5-2179-4772-95d6-688eedc86e79/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/0b5280d7-583c-9b44-2a0b-9b532ff4b5f2"^^xsd:anyURI ;

@@ -1,9 +1,18 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:e3fda3c8-b268-3bf5-56e2-fbe23bbc7db7> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:6799b40c-3125-c9af-104b-3ffdbf8e25f2> ;
+    picom:hasLifeEvent <https://ex.org/Source:6799b40c-3125-c9af-104b-3ffdbf8e25f2_begraaf_event> ;
+    picom:hasRole picot_roles:479 ;
+    sdo:givenName "NN"@nl ;
+    sdo:name "NN"@nl ;
+    sdo:spouse <https://ex.org/Person:377feab3-9f4c-4f5e-b432-31dbbd3f67a7> .
 
 <https://ex.org/Person:377feab3-9f4c-4f5e-b432-31dbbd3f67a7> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:6799b40c-3125-c9af-104b-3ffdbf8e25f2> ;
@@ -15,13 +24,13 @@
     sdo:givenName "Tomas"@nl ;
     sdo:name "Tomas Heydrickse"@nl .
 
-<https://ex.org/Person:e3fda3c8-b268-3bf5-56e2-fbe23bbc7db7> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:6799b40c-3125-c9af-104b-3ffdbf8e25f2> ;
-    picom:hasRole picot_roles:479 ;
-    sdo:givenName "NN"@nl ;
-    sdo:name "NN"@nl .
+<https://ex.org/Source:6799b40c-3125-c9af-104b-3ffdbf8e25f2_begraaf_event> a picom:LifeEvent ;
+    picom:eventDate "1649-09-05"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:76 .
 
 <https://ex.org/Source:6799b40c-3125-c9af-104b-3ffdbf8e25f2> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:526 ;
     sdo:dateModified "1970-01-01"^^xsd:date ;
     sdo:description "1321"@nl,
         "1646-1655"@nl,

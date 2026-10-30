@@ -1,4 +1,5 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -7,9 +8,12 @@
 
 <https://ex.org/Person:b8b60d72-40b7-264c-b0c8-acba5eb181e3> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:18e5a8af-11e3-43bd-6d3d-68f87487f5f2> ;
+    picom:hasLifeEvent <https://ex.org/Source:18e5a8af-11e3-43bd-6d3d-68f87487f5f2_begraaf_event> ;
     picom:hasRole picot_roles:479 ;
+    sdo:gender sdo:Female ;
     sdo:givenName "NN"@nl ;
-    sdo:name "NN"@nl .
+    sdo:name "NN"@nl ;
+    sdo:spouse <https://ex.org/Person:f83feb67-6c49-a6b5-2bc7-4a96eb568a29> .
 
 <https://ex.org/Person:f83feb67-6c49-a6b5-2bc7-4a96eb568a29> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:18e5a8af-11e3-43bd-6d3d-68f87487f5f2> ;
@@ -24,7 +28,13 @@
     sdo:hasOccupation "lakenwerker"@nl ;
     sdo:name "Simon van der Greent"@nl .
 
+<https://ex.org/Source:18e5a8af-11e3-43bd-6d3d-68f87487f5f2_begraaf_event> a picom:LifeEvent ;
+    picom:eventDate "1702-11-28"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:76 .
+
 <https://ex.org/Source:18e5a8af-11e3-43bd-6d3d-68f87487f5f2> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:526 ;
     sdo:dateModified "1970-01-01"^^xsd:date ;
     sdo:description "1684-1707"@nl,
         "2064"@nl,

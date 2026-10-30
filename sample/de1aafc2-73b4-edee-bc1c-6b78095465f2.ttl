@@ -1,9 +1,20 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:360928a5-7a67-42bc-5dbc-4ddd1329840b> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:de1aafc2-73b4-edee-bc1c-6b78095465f2> ;
+    picom:hasLifeEvent <https://ex.org/Source:de1aafc2-73b4-edee-bc1c-6b78095465f2_begraaf_event> ;
+    picom:hasRole picot_roles:479 ;
+    sdo:address "Marendorp"@nl ;
+    sdo:child <https://ex.org/Person:be864689-424f-b16a-0e8d-44eb5797c7e0> ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "NN"@nl ;
+    sdo:name "NN"@nl .
 
 <https://ex.org/Person:be864689-424f-b16a-0e8d-44eb5797c7e0> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:de1aafc2-73b4-edee-bc1c-6b78095465f2> ;
@@ -17,14 +28,13 @@
     sdo:givenName "Frans"@nl ;
     sdo:name "Frans Theunisz"@nl .
 
-<https://ex.org/Person:360928a5-7a67-42bc-5dbc-4ddd1329840b> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:de1aafc2-73b4-edee-bc1c-6b78095465f2> ;
-    picom:hasRole picot_roles:479 ;
-    sdo:address "Marendorp"@nl ;
-    sdo:givenName "NN"@nl ;
-    sdo:name "NN"@nl .
+<https://ex.org/Source:de1aafc2-73b4-edee-bc1c-6b78095465f2_begraaf_event> a picom:LifeEvent ;
+    picom:eventDate "1635-10-20"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:76 .
 
 <https://ex.org/Source:de1aafc2-73b4-edee-bc1c-6b78095465f2> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:526 ;
     sdo:dateModified "1970-01-01"^^xsd:date ;
     sdo:description "1319"@nl,
         "1635-1636"@nl,

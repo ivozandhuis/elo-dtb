@@ -24,6 +24,7 @@
     prov:hadPrimarySource <https://ex.org/Source:133850a5-15e2-e703-9e6e-3d538d60a606> ;
     picom:hasLifeEvent <https://ex.org/Source:133850a5-15e2-e703-9e6e-3d538d60a606_ondertrouw_event> ;
     picom:hasRole picot_roles:574 ;
+    picom:hasUncle_Aunt <https://ex.org/Source:133850a5-15e2-e703-9e6e-3d538d60a606_bruid_moei> ;
     picom:isWidOf <https://ex.org/Person:4b75964d-ad0d-0efd-fdf1-f0125c5ba5ba> ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:givenName "Jaecquemijntgen"@nl ;
@@ -47,6 +48,11 @@
     sdo:hasOccupation "lakenwerker"@nl ;
     sdo:name "Casper Steven"@nl ;
     sdo:spouse <https://ex.org/Person:ba93788a-9603-5af9-867c-b7e89fd1fbec> .
+
+<https://ex.org/Source:133850a5-15e2-e703-9e6e-3d538d60a606_bruid_moei> a picom:PersonObservation ;
+    sdo:address "Oude Vest"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:name "Lydia  Tonis"@nl .
 
 <https://ex.org/Source:133850a5-15e2-e703-9e6e-3d538d60a606_ondertrouw_event> a picom:LifeEvent ;
     picom:eventDate "1656-10-11"@nl ;

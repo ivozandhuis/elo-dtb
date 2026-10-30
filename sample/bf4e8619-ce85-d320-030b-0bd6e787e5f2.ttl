@@ -1,4 +1,5 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix sdo: <https://schema.org/> .
@@ -14,13 +15,20 @@
 
 <https://ex.org/Person:d32d1df7-800e-d9bd-5ee8-c9c220574cb7> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:bf4e8619-ce85-d320-030b-0bd6e787e5f2> ;
+    picom:hasLifeEvent <https://ex.org/Source:bf4e8619-ce85-d320-030b-0bd6e787e5f2_begraaf_event> ;
     picom:hasRole picot_roles:479 ;
     sdo:address "Rijnsaterwoude"@nl ;
     sdo:familyName "Otto"@nl ;
     sdo:givenName "Egbertus"@nl ;
     sdo:name "Egbertus Otto"@nl .
 
+<https://ex.org/Source:bf4e8619-ce85-d320-030b-0bd6e787e5f2_begraaf_event> a picom:LifeEvent ;
+    picom:eventDate "1814-10-17"@nl ;
+    picom:eventPlace "Rijnsaterwoude"@nl ;
+    picom:eventType picot_eventtypes:76 .
+
 <https://ex.org/Source:bf4e8619-ce85-d320-030b-0bd6e787e5f2> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:526 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/78ec8754-b399-46db-9b26-1919b350fcaa/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/bf4e8619-ce85-d320-030b-0bd6e787e5f2"^^xsd:anyURI ;

@@ -1,4 +1,5 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix sdo: <https://schema.org/> .
@@ -6,12 +7,14 @@
 
 <https://ex.org/Person:abf0673f-0713-daf1-5e7f-5b414b684458> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:4fef7a24-56a2-e702-dfae-f7ae529385f2> ;
+    picom:hasLifeEvent <https://ex.org/Source:4fef7a24-56a2-e702-dfae-f7ae529385f2_begraaf_event> ;
     picom:hasRole picot_roles:479 ;
     sdo:familyName "Bellaer"@nl ;
     sdo:givenName "Quyringh"@nl ;
     sdo:name "Quyringh Bellaer"@nl .
 
 <https://ex.org/Source:4fef7a24-56a2-e702-dfae-f7ae529385f2> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:526 ;
     sdo:dateModified "1970-01-01"^^xsd:date ;
     sdo:description "1684-1707"@nl,
         "2064"@nl,
@@ -20,4 +23,9 @@
     sdo:locationCreated "Leiden"@nl ;
     sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Stadsarchief van Leiden (SA II) (1574-1816), Deel: 2064, Periode: 1684-1707, (toegangsnr. 0501A), inv.nr. 2064, 1684-1707., Inv.nr. 2064, "@nl ;
     sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/4fef7a24-56a2-e702-dfae-f7ae529385f2"^^xsd:anyURI .
+
+<https://ex.org/Source:4fef7a24-56a2-e702-dfae-f7ae529385f2_begraaf_event> a picom:LifeEvent ;
+    picom:eventDate "1684-01-07"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:76 .
 

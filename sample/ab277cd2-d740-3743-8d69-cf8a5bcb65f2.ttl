@@ -1,4 +1,5 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix sdo: <https://schema.org/> .
@@ -14,12 +15,19 @@
 
 <https://ex.org/Person:4265763c-0fa5-0ffb-553e-627f6c7aa709> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:ab277cd2-d740-3743-8d69-cf8a5bcb65f2> ;
+    picom:hasLifeEvent <https://ex.org/Source:ab277cd2-d740-3743-8d69-cf8a5bcb65f2_begraaf_event> ;
     picom:hasRole picot_roles:479 ;
     sdo:familyName "Langla"@nl ;
     sdo:givenName "NN"@nl ;
     sdo:name "NN Langla"@nl .
 
+<https://ex.org/Source:ab277cd2-d740-3743-8d69-cf8a5bcb65f2_begraaf_event> a picom:LifeEvent ;
+    picom:eventDate "1655-09-24"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:76 .
+
 <https://ex.org/Source:ab277cd2-d740-3743-8d69-cf8a5bcb65f2> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:526 ;
     sdo:dateModified "1970-01-01"^^xsd:date ;
     sdo:description "1322"@nl,
         "1655-1657"@nl,

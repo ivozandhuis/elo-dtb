@@ -1,4 +1,5 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -20,13 +21,20 @@
 
 <https://ex.org/Person:419852b7-cf54-ce84-4cf2-499ef0bab236> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:de506698-7083-cf10-510d-140f817395f2> ;
+    picom:hasLifeEvent <https://ex.org/Source:de506698-7083-cf10-510d-140f817395f2_begraaf_event> ;
     picom:hasRole picot_roles:479 ;
     sdo:description "Voorhout"@nl ;
     sdo:familyName "Heemskerk"@nl ;
     sdo:givenName "Jan"@nl ;
     sdo:name "Jan Heemskerk"@nl .
 
+<https://ex.org/Source:de506698-7083-cf10-510d-140f817395f2_begraaf_event> a picom:LifeEvent ;
+    picom:eventDate "1737-11-11"@nl ;
+    picom:eventPlace "Voorhout"@nl ;
+    picom:eventType picot_eventtypes:76 .
+
 <https://ex.org/Source:de506698-7083-cf10-510d-140f817395f2> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:526 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/113bc53b-f533-446f-bf06-1c656ff52802/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/de506698-7083-cf10-510d-140f817395f2"^^xsd:anyURI ;

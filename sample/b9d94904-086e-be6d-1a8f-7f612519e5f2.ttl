@@ -1,4 +1,5 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix sdo: <https://schema.org/> .
@@ -14,13 +15,20 @@
 
 <https://ex.org/Person:823a0b51-c136-8b0f-3d1b-6c8b5e6ae2d5> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:b9d94904-086e-be6d-1a8f-7f612519e5f2> ;
+    picom:hasLifeEvent <https://ex.org/Source:b9d94904-086e-be6d-1a8f-7f612519e5f2_begraaf_event> ;
     picom:hasRole picot_roles:479 ;
     sdo:address "Breestraat"@nl ;
     sdo:familyName "Tyelant"@nl ;
     sdo:givenName "NN"@nl ;
     sdo:name "NN Tyelant"@nl .
 
+<https://ex.org/Source:b9d94904-086e-be6d-1a8f-7f612519e5f2_begraaf_event> a picom:LifeEvent ;
+    picom:eventDate "1627-10-25"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:76 .
+
 <https://ex.org/Source:b9d94904-086e-be6d-1a8f-7f612519e5f2> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:526 ;
     sdo:dateModified "1970-01-01"^^xsd:date ;
     sdo:description "1318"@nl,
         "1627-1635"@nl,

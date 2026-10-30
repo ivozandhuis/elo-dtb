@@ -1,4 +1,5 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix sdo: <https://schema.org/> .
@@ -14,13 +15,21 @@
 
 <https://ex.org/Person:9051bb60-7c78-5f80-71da-d7b52f0fe742> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:e3dade04-d7fe-ac1b-32d2-54b6dfa695f2> ;
+    picom:hasLifeEvent <https://ex.org/Source:e3dade04-d7fe-ac1b-32d2-54b6dfa695f2_begraaf_event> ;
     picom:hasRole picot_roles:479 ;
     sdo:address "Korteraar"@nl ;
     sdo:familyName "Houweling"@nl ;
     sdo:givenName "NN"@nl ;
     sdo:name "NN Houweling"@nl .
 
+<https://ex.org/Source:e3dade04-d7fe-ac1b-32d2-54b6dfa695f2_begraaf_event> a picom:LifeEvent ;
+    picom:eventDate """Begraafdatum is registratiedatum
+1808-09-05"""@nl ;
+    picom:eventPlace "Ter Aar"@nl ;
+    picom:eventType picot_eventtypes:76 .
+
 <https://ex.org/Source:e3dade04-d7fe-ac1b-32d2-54b6dfa695f2> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:526 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/cc227a68-3d86-4285-973f-b7f4ef7725b7/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/e3dade04-d7fe-ac1b-32d2-54b6dfa695f2"^^xsd:anyURI ;

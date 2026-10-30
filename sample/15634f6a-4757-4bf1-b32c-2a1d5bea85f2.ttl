@@ -1,8 +1,18 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:5549c0e9-bd39-4925-5a07-1f0ae20db30c> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:15634f6a-4757-4bf1-b32c-2a1d5bea85f2> ;
+    picom:hasLifeEvent <https://ex.org/Source:15634f6a-4757-4bf1-b32c-2a1d5bea85f2_begraaf_event> ;
+    picom:hasRole picot_roles:479 ;
+    sdo:familyName "Looi"@nl ;
+    sdo:givenName "Sophia Catharina"@nl ;
+    sdo:name "Sophia Catharina Looi"@nl ;
+    sdo:spouse <https://ex.org/Person:323e5bd7-7836-6d68-5970-2cc9fc0af475> .
 
 <https://ex.org/Person:323e5bd7-7836-6d68-5970-2cc9fc0af475> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:15634f6a-4757-4bf1-b32c-2a1d5bea85f2> ;
@@ -11,14 +21,13 @@
     sdo:givenName "Carel"@nl ;
     sdo:name "Carel Hartsman"@nl .
 
-<https://ex.org/Person:5549c0e9-bd39-4925-5a07-1f0ae20db30c> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:15634f6a-4757-4bf1-b32c-2a1d5bea85f2> ;
-    picom:hasRole picot_roles:479 ;
-    sdo:familyName "Looi"@nl ;
-    sdo:givenName "Sophia Catharina"@nl ;
-    sdo:name "Sophia Catharina Looi"@nl .
+<https://ex.org/Source:15634f6a-4757-4bf1-b32c-2a1d5bea85f2_begraaf_event> a picom:LifeEvent ;
+    picom:eventDate "1774-03-21"@nl ;
+    picom:eventPlace "Leiderdorp"@nl ;
+    picom:eventType picot_eventtypes:76 .
 
 <https://ex.org/Source:15634f6a-4757-4bf1-b32c-2a1d5bea85f2> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:526 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/6b082aa5-e0f5-4766-a333-7c89d9a6a938/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/15634f6a-4757-4bf1-b32c-2a1d5bea85f2"^^xsd:anyURI ;

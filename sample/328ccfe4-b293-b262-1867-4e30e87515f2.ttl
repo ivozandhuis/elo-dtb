@@ -1,9 +1,19 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:e857dab4-43af-c794-e5c4-7994e6c606d9> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:328ccfe4-b293-b262-1867-4e30e87515f2> ;
+    picom:hasLifeEvent <https://ex.org/Source:328ccfe4-b293-b262-1867-4e30e87515f2_begraaf_event> ;
+    picom:hasRole picot_roles:479 ;
+    sdo:address "Koepoortsgracht"@nl ;
+    sdo:givenName "NN"@nl ;
+    sdo:name "NN"@nl ;
+    sdo:spouse <https://ex.org/Person:b01462c7-8a6b-e7db-9f2d-22f6593a7252> .
 
 <https://ex.org/Person:b01462c7-8a6b-e7db-9f2d-22f6593a7252> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:328ccfe4-b293-b262-1867-4e30e87515f2> ;
@@ -15,14 +25,13 @@
     sdo:givenName "Guylljamen"@nl ;
     sdo:name "Guylljamen Aertijn"@nl .
 
-<https://ex.org/Person:e857dab4-43af-c794-e5c4-7994e6c606d9> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:328ccfe4-b293-b262-1867-4e30e87515f2> ;
-    picom:hasRole picot_roles:479 ;
-    sdo:address "Koepoortsgracht"@nl ;
-    sdo:givenName "NN"@nl ;
-    sdo:name "NN"@nl .
+<https://ex.org/Source:328ccfe4-b293-b262-1867-4e30e87515f2_begraaf_event> a picom:LifeEvent ;
+    picom:eventDate "1610-12-10"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:76 .
 
 <https://ex.org/Source:328ccfe4-b293-b262-1867-4e30e87515f2> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:526 ;
     sdo:dateModified "1970-01-01"^^xsd:date ;
     sdo:description "1315"@nl,
         "1609-1617"@nl,

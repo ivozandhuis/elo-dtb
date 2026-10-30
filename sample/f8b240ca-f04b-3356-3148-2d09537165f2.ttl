@@ -1,8 +1,18 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:d547cdd3-d398-02e9-a1de-28f902c2739e> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:f8b240ca-f04b-3356-3148-2d09537165f2> ;
+    picom:hasLifeEvent <https://ex.org/Source:f8b240ca-f04b-3356-3148-2d09537165f2_begraaf_event> ;
+    picom:hasRole picot_roles:479 ;
+    sdo:address "Middelstegracht"@nl ;
+    sdo:givenName "NN"@nl ;
+    sdo:name "NN"@nl ;
+    sdo:spouse <https://ex.org/Person:7aa98479-3212-a885-e96a-6ce72dd912e6> .
 
 <https://ex.org/Person:7aa98479-3212-a885-e96a-6ce72dd912e6> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:f8b240ca-f04b-3356-3148-2d09537165f2> ;
@@ -11,14 +21,13 @@
     sdo:givenName "Markes"@nl ;
     sdo:name "Markes Sijl"@nl .
 
-<https://ex.org/Person:d547cdd3-d398-02e9-a1de-28f902c2739e> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:f8b240ca-f04b-3356-3148-2d09537165f2> ;
-    picom:hasRole picot_roles:479 ;
-    sdo:address "Middelstegracht"@nl ;
-    sdo:givenName "NN"@nl ;
-    sdo:name "NN"@nl .
+<https://ex.org/Source:f8b240ca-f04b-3356-3148-2d09537165f2_begraaf_event> a picom:LifeEvent ;
+    picom:eventDate "1609-09-10"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:76 .
 
 <https://ex.org/Source:f8b240ca-f04b-3356-3148-2d09537165f2> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:526 ;
     sdo:dateModified "1970-01-01"^^xsd:date ;
     sdo:description "1315"@nl,
         "1609-1617"@nl,

@@ -1,4 +1,5 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -21,6 +22,7 @@
 
 <https://ex.org/Person:7f9cf1e0-56df-9da0-f586-b0a278002cc1> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:45ca4f08-4e70-7dc4-007f-a247202eb5f2> ;
+    picom:hasLifeEvent <https://ex.org/Source:45ca4f08-4e70-7dc4-007f-a247202eb5f2_begraaf_event> ;
     picom:hasRole picot_roles:479 ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:baseSurname "Jong"@nl ;
@@ -33,7 +35,13 @@
     sdo:givenName "NN"@nl ;
     sdo:name "NN de Jong"@nl .
 
+<https://ex.org/Source:45ca4f08-4e70-7dc4-007f-a247202eb5f2_begraaf_event> a picom:LifeEvent ;
+    picom:eventDate "1729-07-08"@nl ;
+    picom:eventPlace "Alkemade"@nl ;
+    picom:eventType picot_eventtypes:76 .
+
 <https://ex.org/Source:45ca4f08-4e70-7dc4-007f-a247202eb5f2> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:526 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/5b39d842-e470-4dff-8edd-cc95145fd011/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/45ca4f08-4e70-7dc4-007f-a247202eb5f2"^^xsd:anyURI ;

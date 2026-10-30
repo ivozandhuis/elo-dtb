@@ -1,4 +1,5 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -7,6 +8,7 @@
 
 <https://ex.org/Person:adcb0325-f2f4-7a27-cb1e-28bb42a24b23> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:df7707cb-d643-9c85-e3b6-5ba91c9715f2> ;
+    picom:hasLifeEvent <https://ex.org/Source:df7707cb-d643-9c85-e3b6-5ba91c9715f2_begraaf_event> ;
     picom:hasRole picot_roles:479 ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:baseSurname "Rijn"@nl ;
@@ -19,6 +21,7 @@
     sdo:name "Aaltje van Rijn"@nl .
 
 <https://ex.org/Source:df7707cb-d643-9c85-e3b6-5ba91c9715f2> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:526 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/d1c3f860-cd35-42d0-8e67-2896b447cf52/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/df7707cb-d643-9c85-e3b6-5ba91c9715f2"^^xsd:anyURI ;
@@ -32,4 +35,9 @@
     sdo:locationCreated "Nieuwkoop"@nl ;
     sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw- en begraafregisters Nieuwkoop, Deel: 3, Periode: 1744-1781, (toegangsnr. 162.1.07), inv.nr. 3, Register van begravenen (NH) van Nieuwkoop, met aantekening van het verschuldigde kerkerecht, 1744 - 1781., 194, "@nl ;
     sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/df7707cb-d643-9c85-e3b6-5ba91c9715f2"^^xsd:anyURI .
+
+<https://ex.org/Source:df7707cb-d643-9c85-e3b6-5ba91c9715f2_begraaf_event> a picom:LifeEvent ;
+    picom:eventDate "1766-04-08"@nl ;
+    picom:eventPlace "Nieuwkoop"@nl ;
+    picom:eventType picot_eventtypes:76 .
 

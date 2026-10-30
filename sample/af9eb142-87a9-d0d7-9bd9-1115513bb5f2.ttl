@@ -1,4 +1,5 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -8,6 +9,7 @@
 <https://ex.org/Person:cc8485a6-d1fc-403d-3cbc-31fe7d2c1687> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:af9eb142-87a9-d0d7-9bd9-1115513bb5f2> ;
     picom:hasAge "4 jaar" ;
+    picom:hasLifeEvent <https://ex.org/Source:af9eb142-87a9-d0d7-9bd9-1115513bb5f2_begraaf_event> ;
     picom:hasRole picot_roles:479 ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:baseSurname "Rooij"@nl ;
@@ -21,6 +23,7 @@
     sdo:name "Abraham de Rooij"@nl .
 
 <https://ex.org/Source:af9eb142-87a9-d0d7-9bd9-1115513bb5f2> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:526 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/3cbcd288-5656-4bb0-ae7f-020814c63377/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/af9eb142-87a9-d0d7-9bd9-1115513bb5f2"^^xsd:anyURI ;
@@ -34,4 +37,9 @@
     sdo:locationCreated "Nieuwkoop"@nl ;
     sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Gaarder van Nieuwkoop en Noorden, Deel: 9, Periode: 1806-1811, (toegangsnr. 162.1.08), inv.nr. 9, Register van aangegeven lijken van Nieuwkoop en Noorden, 1806 - 1811., 15v, "@nl ;
     sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/af9eb142-87a9-d0d7-9bd9-1115513bb5f2"^^xsd:anyURI .
+
+<https://ex.org/Source:af9eb142-87a9-d0d7-9bd9-1115513bb5f2_begraaf_event> a picom:LifeEvent ;
+    picom:eventDate "1809-03-28"@nl ;
+    picom:eventPlace "Nieuwkoop"@nl ;
+    picom:eventType picot_eventtypes:76 .
 

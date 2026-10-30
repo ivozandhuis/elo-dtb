@@ -1,4 +1,5 @@
 @prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
 @prefix picot_roles: <https://terms.personsincontext.org/roles/> .
 @prefix pnv: <https://w3id.org/pnv#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -21,6 +22,7 @@
 
 <https://ex.org/Person:fcbb68d8-5216-b62f-1340-63193102eabe> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:e3874d61-4a8c-1b63-827f-625f013ed5f2> ;
+    picom:hasLifeEvent <https://ex.org/Source:e3874d61-4a8c-1b63-827f-625f013ed5f2_begraaf_event> ;
     picom:hasRole picot_roles:479 ;
     sdo:additionalName [ a pnv:PersonName ;
             pnv:baseSurname "Tang"@nl ;
@@ -32,7 +34,15 @@
     sdo:givenName "Maartje"@nl ;
     sdo:name "Maartje van der Tang"@nl .
 
+<https://ex.org/Source:e3874d61-4a8c-1b63-827f-625f013ed5f2_begraaf_event> a picom:LifeEvent ;
+    picom:eventDate """Begraafdatum is registratiedatum.
+Impost pro deo
+1798-03-07"""@nl ;
+    picom:eventPlace "Ter Aar"@nl ;
+    picom:eventType picot_eventtypes:76 .
+
 <https://ex.org/Source:e3874d61-4a8c-1b63-827f-625f013ed5f2> a sdo:ArchiveComponent ;
+    sdo:additionalType picot_eventtypes:526 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/fa88e1e7-6a03-4575-be43-12e0d10c0f1a/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/e3874d61-4a8c-1b63-827f-625f013ed5f2"^^xsd:anyURI ;
