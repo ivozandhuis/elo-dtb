@@ -1,0 +1,82 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:02c06642-4112-7d4d-8888-4a61a9f6111b> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:65b07400-68f1-77e6-ddae-a50bccea5025> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:address "Groenesteeg"@nl ;
+    sdo:description "getuige van de bruidegom, relatie tot de bruidegom: moeder, adres: Groenesteeg"@nl ;
+    sdo:familyName "Moolhuyzen"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Jannetje"@nl ;
+    sdo:name "Jannetje Moolhuyzen"@nl .
+
+<https://ex.org/Person:5604d49d-f5da-34b8-b408-2f2976a17e36> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:65b07400-68f1-77e6-ddae-a50bccea5025> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:address "Uytterstegragt"@nl ;
+    sdo:description "getuige van de bruid, relatie tot de bruid: moeder, adres: Uytterstegragt"@nl ;
+    sdo:familyName "Bink"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Jannetje"@nl ;
+    sdo:name "Jannetje Bink"@nl .
+
+<https://ex.org/Person:67044d1f-0f0b-2097-eeae-6d54ffc4dbdc> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:65b07400-68f1-77e6-ddae-a50bccea5025> ;
+    picom:hasLifeEvent <https://ex.org/Source:65b07400-68f1-77e6-ddae-a50bccea5025_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:address "Uytterstegragt"@nl ;
+    sdo:birthPlace "Leyden"@nl ;
+    sdo:familyName "Benning"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Johanna"@nl ;
+    sdo:name "Johanna Benning"@nl ;
+    sdo:parent <https://ex.org/Person:5604d49d-f5da-34b8-b408-2f2976a17e36> ;
+    sdo:spouse <https://ex.org/Person:bfa8dd63-7739-af55-18a7-d12fb6b2d7c8> .
+
+<https://ex.org/Person:bfa8dd63-7739-af55-18a7-d12fb6b2d7c8> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:65b07400-68f1-77e6-ddae-a50bccea5025> ;
+    picom:hasLifeEvent <https://ex.org/Source:65b07400-68f1-77e6-ddae-a50bccea5025_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Haarlem"@nl ;
+            pnv:givenName "Johannes"@nl ;
+            pnv:literalName "Johannes van Haarlem"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:address "Groenesteeg"@nl ;
+    sdo:birthPlace "Leyden"@nl ;
+    sdo:familyName "van Haarlem"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Johannes"@nl ;
+    sdo:hasOccupation "rokjesw"@nl ;
+    sdo:name "Johannes van Haarlem"@nl ;
+    sdo:parent <https://ex.org/Person:02c06642-4112-7d4d-8888-4a61a9f6111b> ;
+    sdo:spouse <https://ex.org/Person:67044d1f-0f0b-2097-eeae-6d54ffc4dbdc> .
+
+<https://ex.org/Source:65b07400-68f1-77e6-ddae-a50bccea5025_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1787-03-23"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
+<https://ex.org/Source:65b07400-68f1-77e6-ddae-a50bccea5025> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549> ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/d5523e5c-8f2b-422f-8aad-7a4c09c00a42/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/65b07400-68f1-77e6-ddae-a50bccea5025"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/d5523e5c-8f2b-422f-8aad-7a4c09c00a42/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1787-03-23"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1784-1790"@nl,
+        "46"@nl,
+        "Datum ondertrouw: 23-03-1787<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/46\">Inventarisnummer 46 van archiefnummer 1004 in Archieven</a>"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 46, Periode: 17..., (toegangsnr. 1004), inv.nr. 46, XX. Kerkelijk ondertrouwboek (NH) van Leiden, juli 1784 - april 1790., 120v, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/65b07400-68f1-77e6-ddae-a50bccea5025"^^xsd:anyURI .
+

@@ -69,8 +69,7 @@
     sdo:name "Magdaleentje Lues"@nl .
 
 <https://ex.org/Source:c99316c2-8991-5197-8604-67a7f1f929a1> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/95f95958-d326-47f4-8ed0-0b9b0123cfad/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/c99316c2-8991-5197-8604-67a7f1f929a1"^^xsd:anyURI ;

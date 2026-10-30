@@ -74,8 +74,7 @@
     sdo:name "Anna Claasd"@nl .
 
 <https://ex.org/Source:7ca73116-1909-4955-cd46-e6e76fd632d0> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/b8dfb128-656a-42b0-b18d-bf7370a089b8/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/7ca73116-1909-4955-cd46-e6e76fd632d0"^^xsd:anyURI ;

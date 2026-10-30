@@ -23,7 +23,6 @@
     sdo:name "Pieter Roelant"@nl .
 
 <https://ex.org/Source:3fdcc941-0a09-eefb-89c4-bb9dfe1e75f2> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
     sdo:dateModified "1970-01-01"^^xsd:date ;
     sdo:description "1321"@nl,
         "1646-1655"@nl,

@@ -74,8 +74,7 @@
     sdo:name "Apolonia Claas"@nl .
 
 <https://ex.org/Source:291c9e33-e439-da86-62aa-f105a7ca52d0> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/e2dfe197-63fe-4f5a-8dc0-a72d4dc6ab4b/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/291c9e33-e439-da86-62aa-f105a7ca52d0"^^xsd:anyURI ;

@@ -1,0 +1,99 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:c76c8a89-5133-ebfd-104a-3bbcf42d7514> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:50dfefdb-20d0-50de-cf31-e9fe1bc52025> ;
+    picom:hasLifeEvent <https://ex.org/Source:50dfefdb-20d0-50de-cf31-e9fe1bc52025_huwelijk_event>,
+        <https://ex.org/Source:50dfefdb-20d0-50de-cf31-e9fe1bc52025_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Ruijten"@nl ;
+            pnv:givenName "Aaltje"@nl ;
+            pnv:literalName "Aaltje van Ruijten"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:address "Zevenhoven"@nl ;
+    sdo:birthPlace "Zevenhoven"@nl ;
+    sdo:description "* Burgerlijke staat: jongedochter"@nl ;
+    sdo:familyName "van Ruijten"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Aaltje"@nl ;
+    sdo:name "Aaltje van Ruijten"@nl ;
+    sdo:spouse <https://ex.org/Person:df796651-5ceb-cbc1-4baa-1ceebf111207> .
+
+<https://ex.org/Person:df796651-5ceb-cbc1-4baa-1ceebf111207> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:50dfefdb-20d0-50de-cf31-e9fe1bc52025> ;
+    picom:hasLifeEvent <https://ex.org/Source:50dfefdb-20d0-50de-cf31-e9fe1bc52025_huwelijk_event>,
+        <https://ex.org/Source:50dfefdb-20d0-50de-cf31-e9fe1bc52025_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Richeling"@nl ;
+            pnv:givenName "Joost"@nl ;
+            pnv:literalName "Joost Hendrik Richeling"@nl ;
+            pnv:patronym "Hendrik"@nl ] ;
+    sdo:address "Zevenhoven"@nl ;
+    sdo:birthPlace "Nederlistinge in Duitsland"@nl ;
+    sdo:description "* Burgerlijke staat: jongeman"@nl ;
+    sdo:familyName "Richeling"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Joost"@nl ;
+    sdo:name "Joost Hendrik Richeling"@nl ;
+    sdo:spouse <https://ex.org/Person:c76c8a89-5133-ebfd-104a-3bbcf42d7514> .
+
+<https://ex.org/Source:50dfefdb-20d0-50de-cf31-e9fe1bc52025> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549> ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/913747ff-6d52-4747-8c2b-8b82a464dde8/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/50dfefdb-20d0-50de-cf31-e9fe1bc52025"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/913747ff-6d52-4747-8c2b-8b82a464dde8/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated """* Aktenaam: Trouwinschrijving Joost Hendrik Richeling en Aaltje van Ruijten, 22-04-1764, Zevenhoven
+* beginjaar: 1764
+* eindjaar: 1764
+* Registratiedatum: 22-04-1764
+* Toegangsnummer: 132.2.01
+1764-04-06"""@nl,
+        """* Aktenaam: Trouwinschrijving Joost Hendrik Richeling en Aaltje van Ruijten, 22-04-1764, Zevenhoven
+* beginjaar: 1764
+* eindjaar: 1764
+* Registratiedatum: 22-04-1764
+* Toegangsnummer: 132.2.01
+1764-04-22"""@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description """* Aktenaam: Trouwinschrijving Joost Hendrik Richeling en Aaltje van Ruijten, 22-04-1764, Zevenhoven
+* beginjaar: 1764
+* eindjaar: 1764
+* Registratiedatum: 22-04-1764
+* Toegangsnummer: 132.2.01
+* Inventarisnummer: 28<br>Datum trouwen: 22-04-1764<br>Datum ondertrouw: 06-04-1764<br/><br/><a href="/collecties/archieven/archievenoverzicht/search/list/findingaid/132.2.01/file/28">Inventarisnummer 28 van archiefnummer 132.2.01 in Archieven</a>"""@nl,
+        "1736-1898"@nl,
+        "28"@nl,
+        "Hervormde gemeente te Zevenhoven"@nl ;
+    sdo:locationCreated "Zevenhoven"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Hervormde gemeente te Zevenhoven, Deel: 28, Periode: 1736-1898, (toegangsnr. 132.2.01), inv.nr. 28, 22 juni 1736-17 maart 1898, 23, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/50dfefdb-20d0-50de-cf31-e9fe1bc52025"^^xsd:anyURI .
+
+<https://ex.org/Source:50dfefdb-20d0-50de-cf31-e9fe1bc52025_huwelijk_event> a picom:LifeEvent ;
+    picom:eventDate """* Aktenaam: Trouwinschrijving Joost Hendrik Richeling en Aaltje van Ruijten, 22-04-1764, Zevenhoven
+* beginjaar: 1764
+* eindjaar: 1764
+* Registratiedatum: 22-04-1764
+* Toegangsnummer: 132.2.01
+1764-04-22"""@nl ;
+    picom:eventPlace "Zevenhoven"@nl ;
+    picom:eventType picot_eventtypes:83 .
+
+<https://ex.org/Source:50dfefdb-20d0-50de-cf31-e9fe1bc52025_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate """* Aktenaam: Trouwinschrijving Joost Hendrik Richeling en Aaltje van Ruijten, 22-04-1764, Zevenhoven
+* beginjaar: 1764
+* eindjaar: 1764
+* Registratiedatum: 22-04-1764
+* Toegangsnummer: 132.2.01
+1764-04-06"""@nl ;
+    picom:eventPlace "Zevenhoven"@nl ;
+    picom:eventType picot_eventtypes:99 .
+

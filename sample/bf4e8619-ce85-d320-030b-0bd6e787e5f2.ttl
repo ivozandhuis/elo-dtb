@@ -6,6 +6,7 @@
 
 <https://ex.org/Person:4b3d974c-8e9e-706a-e3d1-0818cf1f7e18> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:bf4e8619-ce85-d320-030b-0bd6e787e5f2> ;
+    sdo:children <https://ex.org/Person:d32d1df7-800e-d9bd-5ee8-c9c220574cb7> ;
     sdo:familyName "Otto"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Hendrik"@nl ;
@@ -20,7 +21,6 @@
     sdo:name "Egbertus Otto"@nl .
 
 <https://ex.org/Source:bf4e8619-ce85-d320-030b-0bd6e787e5f2> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/78ec8754-b399-46db-9b26-1919b350fcaa/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/bf4e8619-ce85-d320-030b-0bd6e787e5f2"^^xsd:anyURI ;

@@ -75,8 +75,7 @@
     sdo:name "Arent Claessen"@nl .
 
 <https://ex.org/Source:2050793d-2b4a-f5ca-86db-82a96c766bee> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/71b986d3-0cce-49c4-bea6-0112417baf7e/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/2050793d-2b4a-f5ca-86db-82a96c766bee"^^xsd:anyURI ;

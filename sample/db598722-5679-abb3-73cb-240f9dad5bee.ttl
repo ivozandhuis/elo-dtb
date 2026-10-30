@@ -64,8 +64,7 @@
     sdo:name "Josijntje van Emmerseel"@nl .
 
 <https://ex.org/Source:db598722-5679-abb3-73cb-240f9dad5bee> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/a75feb56-7933-460d-9465-9088b27d7ce2/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/db598722-5679-abb3-73cb-240f9dad5bee"^^xsd:anyURI ;

@@ -1,0 +1,55 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:150e682a-97a4-1034-706b-d3e461a60cd9> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:e28a53ca-d80b-5f45-65c6-f80ba2331f83> ;
+    picom:hasLifeEvent <https://ex.org/Source:e28a53ca-d80b-5f45-65c6-f80ba2331f83_huwelijk_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Eijcke"@nl ;
+            pnv:givenName "Elisabeth"@nl ;
+            pnv:literalName "Elisabeth van Eijcke"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:familyName "van Eijcke"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Elisabeth"@nl ;
+    sdo:name "Elisabeth van Eijcke"@nl ;
+    sdo:spouse <https://ex.org/Person:432179da-b6ca-3025-7465-1aa71ce9cfd9> .
+
+<https://ex.org/Person:432179da-b6ca-3025-7465-1aa71ce9cfd9> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:e28a53ca-d80b-5f45-65c6-f80ba2331f83> ;
+    picom:hasLifeEvent <https://ex.org/Source:e28a53ca-d80b-5f45-65c6-f80ba2331f83_huwelijk_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Ebbe"@nl ;
+            pnv:givenName "Petrus"@nl ;
+            pnv:literalName "Petrus van Ebbe"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:familyName "van Ebbe"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Petrus"@nl ;
+    sdo:name "Petrus van Ebbe"@nl ;
+    sdo:spouse <https://ex.org/Person:150e682a-97a4-1034-706b-d3e461a60cd9> .
+
+<https://ex.org/Source:e28a53ca-d80b-5f45-65c6-f80ba2331f83> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549> ;
+    sdo:dateCreated "1710-10-11"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1654-1727"@nl,
+        "9"@nl,
+        "Parochie van OLV Hemelvaart (Mon Pèrekerk) en de H. Joseph, Leiden"@nl,
+        "testes Gertrudis Bonse et Catharina Cuijpers zie ook schepentrouwboek H - 198  26 september 1710<br>Datum trouwen: 11-10-1710<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/0544B/file/9\">Inventarisnummer 9 van archiefnummer 0544B in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Parochie van OLV Hemelvaart (Mon Pèrekerk) en de H. Joseph, Leiden, Deel: 9, Period..., (toegangsnr. 0544B), inv.nr. 9, 1654 juni 28-1727 mei 4., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/e28a53ca-d80b-5f45-65c6-f80ba2331f83"^^xsd:anyURI .
+
+<https://ex.org/Source:e28a53ca-d80b-5f45-65c6-f80ba2331f83_huwelijk_event> a picom:LifeEvent ;
+    picom:eventDate "1710-10-11"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:83 .
+

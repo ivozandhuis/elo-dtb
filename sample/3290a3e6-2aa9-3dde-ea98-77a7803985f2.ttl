@@ -15,7 +15,6 @@
     sdo:name "Marijtje Groenintwoud"@nl .
 
 <https://ex.org/Source:3290a3e6-2aa9-3dde-ea98-77a7803985f2> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/79ce4760-b1e3-4827-aea3-bf51303ea8b0/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/3290a3e6-2aa9-3dde-ea98-77a7803985f2"^^xsd:anyURI ;

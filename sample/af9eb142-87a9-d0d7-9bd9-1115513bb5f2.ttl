@@ -21,7 +21,6 @@
     sdo:name "Abraham de Rooij"@nl .
 
 <https://ex.org/Source:af9eb142-87a9-d0d7-9bd9-1115513bb5f2> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/3cbcd288-5656-4bb0-ae7f-020814c63377/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/af9eb142-87a9-d0d7-9bd9-1115513bb5f2"^^xsd:anyURI ;

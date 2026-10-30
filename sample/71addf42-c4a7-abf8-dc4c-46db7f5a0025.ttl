@@ -1,0 +1,62 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:0ed2de5f-dd87-a208-ea68-d9a4328e38c1> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:71addf42-c4a7-abf8-dc4c-46db7f5a0025> ;
+    picom:hasLifeEvent <https://ex.org/Source:71addf42-c4a7-abf8-dc4c-46db7f5a0025_huwelijk_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Laan"@nl ;
+            pnv:givenName "Claasje"@nl ;
+            pnv:literalName "Claasje Cornelisse van der Laan"@nl ;
+            pnv:patronym "Cornelisse"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:familyName "van der Laan"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Claasje"@nl ;
+    sdo:name "Claasje Cornelisse van der Laan"@nl ;
+    sdo:spouse <https://ex.org/Person:1ad4373c-f634-43a4-f1d7-6c8b31345723> .
+
+<https://ex.org/Person:1ad4373c-f634-43a4-f1d7-6c8b31345723> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:71addf42-c4a7-abf8-dc4c-46db7f5a0025> ;
+    picom:hasLifeEvent <https://ex.org/Source:71addf42-c4a7-abf8-dc4c-46db7f5a0025_huwelijk_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Tol"@nl ;
+            pnv:givenName "Jacob"@nl ;
+            pnv:literalName "Jacob Corse van Tol"@nl ;
+            pnv:patronym "Corse"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:familyName "van Tol"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jacob"@nl ;
+    sdo:name "Jacob Corse van Tol"@nl ;
+    sdo:spouse <https://ex.org/Person:0ed2de5f-dd87-a208-ea68-d9a4328e38c1> .
+
+<https://ex.org/Source:71addf42-c4a7-abf8-dc4c-46db7f5a0025> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549> ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/01a041d4-effd-41a8-8053-b0869d2466e5/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/71addf42-c4a7-abf8-dc4c-46db7f5a0025"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/01a041d4-effd-41a8-8053-b0869d2466e5/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1782-02-03"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1770-1810"@nl,
+        "20"@nl,
+        "Datum trouwen: 03-02-1782<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/170.1.05/file/20\">Inventarisnummer 20 van archiefnummer 170.1.05 in Archieven</a>"@nl,
+        "Doop-, trouw- en begraafregisters van Alkemade"@nl ;
+    sdo:locationCreated "Alkemade"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw- en begraafregisters van Alkemade, Deel: 20, Periode: 1770-1810, (toegangsnr. 170.1.05), inv.nr. 20, Doopboek en trouwboek (RK) van Rijpwetering, 30 mei 1770 - 1810., 32, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/71addf42-c4a7-abf8-dc4c-46db7f5a0025"^^xsd:anyURI .
+
+<https://ex.org/Source:71addf42-c4a7-abf8-dc4c-46db7f5a0025_huwelijk_event> a picom:LifeEvent ;
+    picom:eventDate "1782-02-03"@nl ;
+    picom:eventPlace "Alkemade"@nl ;
+    picom:eventType picot_eventtypes:83 .
+

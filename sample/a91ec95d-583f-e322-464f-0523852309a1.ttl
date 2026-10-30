@@ -72,8 +72,7 @@
     sdo:name "Henricus Kwakkenbosch"@nl .
 
 <https://ex.org/Source:a91ec95d-583f-e322-464f-0523852309a1> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/ebfbc218-df91-4dde-86e6-45b5323306d0/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/a91ec95d-583f-e322-464f-0523852309a1"^^xsd:anyURI ;

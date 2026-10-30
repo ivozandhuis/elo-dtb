@@ -70,8 +70,7 @@
     sdo:name "Cornelis Cornelisz"@nl .
 
 <https://ex.org/Source:5e2b46bd-f4b9-8415-01be-116a6a9109a1> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/7ae730a4-6b36-4340-b8f2-c0a67f40efbc/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/5e2b46bd-f4b9-8415-01be-116a6a9109a1"^^xsd:anyURI ;

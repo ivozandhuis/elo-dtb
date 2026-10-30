@@ -71,8 +71,7 @@
     sdo:name "Lijsbeth Dirks"@nl .
 
 <https://ex.org/Source:2befd695-f287-1acc-b9de-d0ae86ca9bee> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/7d54bae1-30af-4445-8657-19fe244acf5b/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/2befd695-f287-1acc-b9de-d0ae86ca9bee"^^xsd:anyURI ;

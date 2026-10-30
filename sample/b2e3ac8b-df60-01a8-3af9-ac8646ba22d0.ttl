@@ -74,8 +74,7 @@
     sdo:name "Marijtie Grason"@nl .
 
 <https://ex.org/Source:b2e3ac8b-df60-01a8-3af9-ac8646ba22d0> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/5f25b9c4-e033-4051-b686-b90009452927/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/b2e3ac8b-df60-01a8-3af9-ac8646ba22d0"^^xsd:anyURI ;

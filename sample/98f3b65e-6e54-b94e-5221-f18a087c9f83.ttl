@@ -1,0 +1,127 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:4de549de-bb9a-dca3-01f5-513300de9e49> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:98f3b65e-6e54-b94e-5221-f18a087c9f83> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:address "Rijn"@nl ;
+    sdo:description "getuige van de bruidegom, relatie tot de bruidegom: zwager, adres: Rijn"@nl ;
+    sdo:familyName "Vorster"@nl ;
+    sdo:givenName "Antonis"@nl ;
+    sdo:name "Antonis Vorster"@nl .
+
+<https://ex.org/Person:2e5f97b4-90d1-b98d-75f3-60a92039b6c3> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:98f3b65e-6e54-b94e-5221-f18a087c9f83> ;
+    picom:hasLifeEvent <https://ex.org/Source:98f3b65e-6e54-b94e-5221-f18a087c9f83_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    picom:isWidOf <https://ex.org/Person:aeade74a-86c5-cd16-7ab2-68ca35f431a6> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Tack"@nl ;
+            pnv:givenName "Grietje"@nl ;
+            pnv:literalName "Grietje Teunis van der Tack"@nl ;
+            pnv:patronym "Teunis"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:address "Coolstraet"@nl ;
+    sdo:familyName "van der Tack"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Grietje"@nl ;
+    sdo:knows <https://ex.org/Person:d7f05eae-e1c8-8156-5657-31ff60d2db5d> ;
+    sdo:name "Grietje Teunis van der Tack"@nl ;
+    sdo:sibling <https://ex.org/Person:90a10f57-2252-3a42-405e-4076c45089db> ;
+    sdo:spouse <https://ex.org/Person:47f2d75a-b209-baf3-30f6-28f8f2e81e04> .
+
+<https://ex.org/Person:47f2d75a-b209-baf3-30f6-28f8f2e81e04> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:98f3b65e-6e54-b94e-5221-f18a087c9f83> ;
+    picom:hasLifeEvent <https://ex.org/Source:98f3b65e-6e54-b94e-5221-f18a087c9f83_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    picom:isWidOf <https://ex.org/Person:f1a69a85-d6b7-2c97-7581-56920ec9c1b3> ;
+    sdo:address "Oude Cingel"@nl ;
+    sdo:description "kinderen uit eerder(e) huwelijk(en): 6"@nl ;
+    sdo:familyName "Brouwer"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Johannes"@nl ;
+    sdo:name "Johannes Brouwer"@nl ;
+    sdo:spouse <https://ex.org/Person:2e5f97b4-90d1-b98d-75f3-60a92039b6c3> .
+
+<https://ex.org/Person:90a10f57-2252-3a42-405e-4076c45089db> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:98f3b65e-6e54-b94e-5221-f18a087c9f83> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Tak"@nl ;
+            pnv:givenName "Marytge"@nl ;
+            pnv:literalName "Marytge Teunis van der Tak"@nl ;
+            pnv:patronym "Teunis"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:address "Haegse Schouw"@nl ;
+    sdo:description "getuige van de bruid, relatie tot de bruid: zuster, adres: Haegse Schouw"@nl ;
+    sdo:familyName "van der Tak"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Marytge"@nl ;
+    sdo:name "Marytge Teunis van der Tak"@nl .
+
+<https://ex.org/Person:aeade74a-86c5-cd16-7ab2-68ca35f431a6> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:98f3b65e-6e54-b94e-5221-f18a087c9f83> ;
+    picom:deceased true ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Werff"@nl ;
+            pnv:givenName "Adam"@nl ;
+            pnv:literalName "Adam Jans van der Werff"@nl ;
+            pnv:patronym "Jans"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:description "Relatie tot bruid: wed."@nl ;
+    sdo:familyName "van der Werff"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Adam"@nl ;
+    sdo:name "Adam Jans van der Werff"@nl .
+
+<https://ex.org/Person:d7f05eae-e1c8-8156-5657-31ff60d2db5d> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:98f3b65e-6e54-b94e-5221-f18a087c9f83> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:address "Coolstraet"@nl ;
+    sdo:description "getuige van de bruid, relatie tot de bruid: bekende, adres: Coolstraet"@nl ;
+    sdo:familyName "Vissendiep"@nl ;
+    sdo:givenName "Marijtje"@nl ;
+    sdo:name "Marijtje Vissendiep"@nl .
+
+<https://ex.org/Person:f1a69a85-d6b7-2c97-7581-56920ec9c1b3> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:98f3b65e-6e54-b94e-5221-f18a087c9f83> ;
+    picom:deceased true ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Roon"@nl ;
+            pnv:givenName "Maria"@nl ;
+            pnv:literalName "Maria Lamberts van Roon"@nl ;
+            pnv:patronym "Lamberts"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:description "Relatie tot bruidegom: wed."@nl ;
+    sdo:familyName "van Roon"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Maria"@nl ;
+    sdo:name "Maria Lamberts van Roon"@nl .
+
+<https://ex.org/Source:98f3b65e-6e54-b94e-5221-f18a087c9f83_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1692-08-23"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
+<https://ex.org/Source:98f3b65e-6e54-b94e-5221-f18a087c9f83> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549> ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/db6ea74c-44b0-417c-bf89-c19b5de397da/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/98f3b65e-6e54-b94e-5221-f18a087c9f83"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/db6ea74c-44b0-417c-bf89-c19b5de397da/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1692-08-23"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1690-1694"@nl,
+        "25"@nl,
+        "Datum ondertrouw: 23-08-1692<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/25\">Inventarisnummer 25 van archiefnummer 1004 in Archieven</a>"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 25, Periode: 16..., (toegangsnr. 1004), inv.nr. 25, AA. Kerkelijk ondertrouwboek (NH) van Leiden, april 1690 - mei 1694., 166v, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/98f3b65e-6e54-b94e-5221-f18a087c9f83"^^xsd:anyURI .
+

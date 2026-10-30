@@ -65,8 +65,7 @@
     sdo:name "Maertje Ferdinandus"@nl .
 
 <https://ex.org/Source:f88e737b-5627-b37f-b9a9-adededfc22d0> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/be45f2b1-814c-48e6-8f49-73ccc3326776/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/f88e737b-5627-b37f-b9a9-adededfc22d0"^^xsd:anyURI ;

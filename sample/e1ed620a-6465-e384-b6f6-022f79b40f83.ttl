@@ -1,0 +1,119 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:68c6fef2-a1e4-f026-cdc4-61f22d567ca0> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:e1ed620a-6465-e384-b6f6-022f79b40f83> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Gunst"@nl ;
+            pnv:givenName "Pieter"@nl ;
+            pnv:literalName "Pieter de Gunst"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:address "Langegragt in de 24 Huijzen"@nl ;
+    sdo:description "getuige van de bruidegom, relatie tot de bruidegom: zwager, adres: Langegragt in de 24 Huijzen"@nl ;
+    sdo:familyName "de Gunst"@nl ;
+    sdo:givenName "Pieter"@nl ;
+    sdo:name "Pieter de Gunst"@nl .
+
+<https://ex.org/Person:076345f3-6e48-011e-aac4-8a800f11d47d> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:e1ed620a-6465-e384-b6f6-022f79b40f83> ;
+    picom:hasLifeEvent <https://ex.org/Source:e1ed620a-6465-e384-b6f6-022f79b40f83_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    picom:isWidOf <https://ex.org/Person:f3fb5888-c9c6-eee7-564e-af48d7ac4da5> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Heijden"@nl ;
+            pnv:givenName "Hendrik"@nl ;
+            pnv:literalName "Hendrik van der Heijden"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:address "Claaresteeg"@nl ;
+    sdo:description "kinderen uit eerder(e) huwelijk(en): 3"@nl ;
+    sdo:familyName "van der Heijden"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Hendrik"@nl ;
+    sdo:name "Hendrik van der Heijden"@nl ;
+    sdo:spouse <https://ex.org/Person:c53a8390-758d-b2c5-4d8d-c54fd6859d6b> .
+
+<https://ex.org/Person:14f09cd3-4395-862e-28e1-b70b157c2c01> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:e1ed620a-6465-e384-b6f6-022f79b40f83> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:address "Noordeynde"@nl ;
+    sdo:description "getuige van de bruid, relatie tot de bruid: bekende, adres: Noordeynde"@nl ;
+    sdo:familyName "Linvoort"@nl ;
+    sdo:givenName "Geertruy"@nl ;
+    sdo:name "Geertruy Linvoort"@nl .
+
+<https://ex.org/Person:5bdec406-e3d2-54c5-04d0-5ee956814e93> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:e1ed620a-6465-e384-b6f6-022f79b40f83> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:address "Claaresteeg"@nl ;
+    sdo:description "getuige van de bruid, relatie tot de bruid: broer, adres: Claaresteeg"@nl ;
+    sdo:familyName "Steenstraat"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jacob"@nl ;
+    sdo:name "Jacob Steenstraat"@nl .
+
+<https://ex.org/Person:b6b7686b-24db-21e8-1cfd-de2b1881583f> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:e1ed620a-6465-e384-b6f6-022f79b40f83> ;
+    picom:deceased true ;
+    sdo:description "Relatie tot bruid: wed."@nl ;
+    sdo:familyName "Griffioen"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Claus"@nl ;
+    sdo:name "Claus Griffioen"@nl .
+
+<https://ex.org/Person:c53a8390-758d-b2c5-4d8d-c54fd6859d6b> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:e1ed620a-6465-e384-b6f6-022f79b40f83> ;
+    picom:hasLifeEvent <https://ex.org/Source:e1ed620a-6465-e384-b6f6-022f79b40f83_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    picom:isWidOf <https://ex.org/Person:b6b7686b-24db-21e8-1cfd-de2b1881583f> ;
+    sdo:address "Claaresteeg"@nl ;
+    sdo:description "kinderen uit eerder(e) huwelijk(en): 4"@nl ;
+    sdo:familyName "Steenstraat"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Lena"@nl ;
+    sdo:knows <https://ex.org/Person:14f09cd3-4395-862e-28e1-b70b157c2c01> ;
+    sdo:name "Lena Steenstraat"@nl ;
+    sdo:sibling <https://ex.org/Person:5bdec406-e3d2-54c5-04d0-5ee956814e93> ;
+    sdo:spouse <https://ex.org/Person:076345f3-6e48-011e-aac4-8a800f11d47d> .
+
+<https://ex.org/Person:f3fb5888-c9c6-eee7-564e-af48d7ac4da5> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:e1ed620a-6465-e384-b6f6-022f79b40f83> ;
+    picom:deceased true ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Gunst"@nl ;
+            pnv:givenName "Marijtje"@nl ;
+            pnv:literalName "Marijtje de Gunst"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:description "Relatie tot bruidegom: wed."@nl ;
+    sdo:familyName "de Gunst"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Marijtje"@nl ;
+    sdo:name "Marijtje de Gunst"@nl .
+
+<https://ex.org/Source:e1ed620a-6465-e384-b6f6-022f79b40f83_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1773-07-03"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
+<https://ex.org/Source:e1ed620a-6465-e384-b6f6-022f79b40f83> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549> ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/51121a5b-89ba-48d7-9a2e-cd11b89216e0/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/e1ed620a-6465-e384-b6f6-022f79b40f83"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/51121a5b-89ba-48d7-9a2e-cd11b89216e0/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1773-07-03"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1772-1778"@nl,
+        "44"@nl,
+        "Datum ondertrouw: 03-07-1773<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/44\">Inventarisnummer 44 van archiefnummer 1004 in Archieven</a>"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 44, Periode: 17..., (toegangsnr. 1004), inv.nr. 44, VV. Kerkelijk ondertrouwboek (NH) van Leiden, september 1772 - 1778., 34, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/e1ed620a-6465-e384-b6f6-022f79b40f83"^^xsd:anyURI .
+

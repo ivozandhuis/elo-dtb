@@ -68,8 +68,7 @@
     sdo:name "Margerata Jaspersen"@nl .
 
 <https://ex.org/Source:7bf4d11d-78cd-3879-3697-d925575e2bee> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/4196be58-fd52-43de-b82c-4cca201698ae/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/7bf4d11d-78cd-3879-3697-d925575e2bee"^^xsd:anyURI ;

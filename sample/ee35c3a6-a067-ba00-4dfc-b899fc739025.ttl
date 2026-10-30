@@ -1,0 +1,130 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:0aa4fb7b-2b87-64c2-be6a-f38e57f9f8d8> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:ee35c3a6-a067-ba00-4dfc-b899fc739025> ;
+    picom:hasLifeEvent <https://ex.org/Source:ee35c3a6-a067-ba00-4dfc-b899fc739025_huwelijk_event>,
+        <https://ex.org/Source:ee35c3a6-a067-ba00-4dfc-b899fc739025_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    picom:isWidOf <https://ex.org/Person:c5e595cd-8e41-9045-2985-fdad25e0b157> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Nieusloot"@nl ;
+            pnv:givenName "Lijsbeth"@nl ;
+            pnv:literalName "Lijsbeth Pieters Nieusloot"@nl ;
+            pnv:patronym "Pieters"@nl ] ;
+    sdo:address "Noorteynde"@nl ;
+    sdo:description "kinderen uit eerder(e) huwelijk(en): 1"@nl ;
+    sdo:familyName "Nieusloot"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Lijsbeth"@nl ;
+    sdo:knows <https://ex.org/Person:cbc0188f-a31a-0e59-a543-9cdc83399419>,
+        <https://ex.org/Person:e011d9a7-da0c-7dfb-4a94-5a21a1e2499d> ;
+    sdo:name "Lijsbeth Pieters Nieusloot"@nl ;
+    sdo:spouse <https://ex.org/Person:a0fdf8dd-0ae3-c211-6431-ba8d016af994> .
+
+<https://ex.org/Person:a0fdf8dd-0ae3-c211-6431-ba8d016af994> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:ee35c3a6-a067-ba00-4dfc-b899fc739025> ;
+    picom:hasLifeEvent <https://ex.org/Source:ee35c3a6-a067-ba00-4dfc-b899fc739025_huwelijk_event>,
+        <https://ex.org/Source:ee35c3a6-a067-ba00-4dfc-b899fc739025_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Vinck"@nl ;
+            pnv:givenName "Willem"@nl ;
+            pnv:literalName "Willem Arentsz de Vinck"@nl ;
+            pnv:patronym "Arentsz"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:address "Noorteynde"@nl ;
+    sdo:birthPlace "Rijnsburgh"@nl ;
+    sdo:familyName "de Vinck"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Willem"@nl ;
+    sdo:hasOccupation "tuinman"@nl ;
+    sdo:name "Willem Arentsz de Vinck"@nl ;
+    sdo:parent <https://ex.org/Person:e988e586-938d-4b3f-cb14-0f8319f59b6c> ;
+    sdo:spouse <https://ex.org/Person:0aa4fb7b-2b87-64c2-be6a-f38e57f9f8d8> .
+
+<https://ex.org/Person:c5e595cd-8e41-9045-2985-fdad25e0b157> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:ee35c3a6-a067-ba00-4dfc-b899fc739025> ;
+    picom:deceased true ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Swanenburgh"@nl ;
+            pnv:givenName "Huybert"@nl ;
+            pnv:literalName "Huybert Jansz Swanenburgh"@nl ;
+            pnv:patronym "Jansz"@nl ] ;
+    sdo:description "Relatie tot bruid: wed."@nl ;
+    sdo:familyName "Swanenburgh"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Huybert"@nl ;
+    sdo:name "Huybert Jansz Swanenburgh"@nl .
+
+<https://ex.org/Person:cbc0188f-a31a-0e59-a543-9cdc83399419> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:ee35c3a6-a067-ba00-4dfc-b899fc739025> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:address "Noorteynde"@nl ;
+    sdo:description "getuige van de bruid, relatie tot de bruid: bekende, adres: Noorteynde"@nl ;
+    sdo:familyName "Propers"@nl ;
+    sdo:givenName "Agnietge"@nl ;
+    sdo:name "Agnietge Propers"@nl .
+
+<https://ex.org/Person:e011d9a7-da0c-7dfb-4a94-5a21a1e2499d> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:ee35c3a6-a067-ba00-4dfc-b899fc739025> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Bogaert"@nl ;
+            pnv:givenName "Aert"@nl ;
+            pnv:literalName "Aert Gerritsz Bogaert"@nl ;
+            pnv:patronym "Gerritsz"@nl ] ;
+    sdo:address "Rijnsburg"@nl ;
+    sdo:description "getuige van de bruid, relatie tot de bruid: bekende"@nl ;
+    sdo:familyName "Bogaert"@nl ;
+    sdo:givenName "Aert"@nl ;
+    sdo:name "Aert Gerritsz Bogaert"@nl .
+
+<https://ex.org/Person:e988e586-938d-4b3f-cb14-0f8319f59b6c> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:ee35c3a6-a067-ba00-4dfc-b899fc739025> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Beckers"@nl ;
+            pnv:givenName "Jannetge"@nl ;
+            pnv:literalName "Jannetge Huyberts Beckers"@nl ;
+            pnv:patronym "Huyberts"@nl ] ;
+    sdo:address "Noorteynde"@nl ;
+    sdo:description "getuige van de bruidegom, relatie tot de bruidegom: moeder, adres: Noorteynde"@nl ;
+    sdo:familyName "Beckers"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Jannetge"@nl ;
+    sdo:name "Jannetge Huyberts Beckers"@nl .
+
+<https://ex.org/Source:ee35c3a6-a067-ba00-4dfc-b899fc739025_huwelijk_event> a picom:LifeEvent ;
+    picom:eventDate "1698-04-06"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:83 .
+
+<https://ex.org/Source:ee35c3a6-a067-ba00-4dfc-b899fc739025_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1698-03-21"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
+<https://ex.org/Source:ee35c3a6-a067-ba00-4dfc-b899fc739025> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549> ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/fbbf04e7-079c-4f6c-8fe1-5141e695fccc/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/ee35c3a6-a067-ba00-4dfc-b899fc739025"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/fbbf04e7-079c-4f6c-8fe1-5141e695fccc/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1698-03-21"@nl,
+        "1698-04-06"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1694-1698"@nl,
+        "26"@nl,
+        "Datum trouwen: 06-04-1698<br>Datum ondertrouw: 21-03-1698<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/26\">Inventarisnummer 26 van archiefnummer 1004 in Archieven</a>"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 26, Periode: 16..., (toegangsnr. 1004), inv.nr. 26, BB. Kerkelijk ondertrouwboek (NH) van Leiden, mei 1694 - mei 1698., 284v, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/ee35c3a6-a067-ba00-4dfc-b899fc739025"^^xsd:anyURI .
+

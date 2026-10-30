@@ -1,0 +1,85 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:3a6b598d-3e92-99d0-5b18-4a0fde04ac53> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:1c5938e4-fb66-45f1-24ce-b62683e16f83> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Nobel"@nl ;
+            pnv:givenName "Daniel"@nl ;
+            pnv:literalName "Daniel de Nobel"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:familyName "de Nobel"@nl ;
+    sdo:givenName "Daniel"@nl ;
+    sdo:name "Daniel de Nobel"@nl .
+
+<https://ex.org/Person:40a5f71a-f920-cc0e-16a9-0704a7ad2b0e> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:1c5938e4-fb66-45f1-24ce-b62683e16f83> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Franc"@nl ;
+            pnv:givenName "Anne"@nl ;
+            pnv:literalName "Anne le Franc"@nl ;
+            pnv:surnamePrefix "le"@nl ] ;
+    sdo:familyName "le Franc"@nl ;
+    sdo:givenName "Anne"@nl ;
+    sdo:name "Anne le Franc"@nl .
+
+<https://ex.org/Person:5fefc27a-5264-aa09-5f3f-2896a1954690> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:1c5938e4-fb66-45f1-24ce-b62683e16f83> ;
+    sdo:familyName "Chaudron"@nl ;
+    sdo:givenName "Elisabet"@nl ;
+    sdo:name "Elisabet Chaudron"@nl .
+
+<https://ex.org/Person:3db376a4-7ad7-1cb3-6fc7-5b14925eb2c6> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:1c5938e4-fb66-45f1-24ce-b62683e16f83> ;
+    picom:hasLifeEvent <https://ex.org/Source:1c5938e4-fb66-45f1-24ce-b62683e16f83_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:address "Korte Scheijstraet"@nl ;
+    sdo:description "Burgerlijke staat voor het huwelijk: wed."@nl ;
+    sdo:familyName "Charité"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jean"@nl ;
+    sdo:name "Jean Charité"@nl ;
+    sdo:spouse <https://ex.org/Person:f2c348f7-a37c-afdf-8c91-4f8fa5dfa2cc> .
+
+<https://ex.org/Person:f2c348f7-a37c-afdf-8c91-4f8fa5dfa2cc> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:1c5938e4-fb66-45f1-24ce-b62683e16f83> ;
+    picom:hasLifeEvent <https://ex.org/Source:1c5938e4-fb66-45f1-24ce-b62683e16f83_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:address "Baeijstraet"@nl ;
+    sdo:birthPlace "Leijden"@nl ;
+    sdo:description "Burgerlijke staat voor het huwelijk: j.d."@nl ;
+    sdo:familyName "Simon"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Susanne"@nl ;
+    sdo:name "Susanne Simon"@nl ;
+    sdo:spouse <https://ex.org/Person:3db376a4-7ad7-1cb3-6fc7-5b14925eb2c6> .
+
+<https://ex.org/Source:1c5938e4-fb66-45f1-24ce-b62683e16f83_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1733-04-04"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
+<https://ex.org/Source:1c5938e4-fb66-45f1-24ce-b62683e16f83> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549> ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/3a8b0657-457b-4d7e-98ef-fe8ceb745a6c/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/1c5938e4-fb66-45f1-24ce-b62683e16f83"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/3a8b0657-457b-4d7e-98ef-fe8ceb745a6c/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1733-04-04"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1732-1736"@nl,
+        "36"@nl,
+        "Datum ondertrouw: 04-04-1733<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/36\">Inventarisnummer 36 van archiefnummer 1004 in Archieven</a>"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 36, Periode: 17..., (toegangsnr. 1004), inv.nr. 36, MM. Kerkelijk ondertrouwboek (NH) van Leiden, juli 1732 - mei 1736., 45v, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/1c5938e4-fb66-45f1-24ce-b62683e16f83"^^xsd:anyURI .
+

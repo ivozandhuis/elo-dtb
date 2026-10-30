@@ -1,0 +1,83 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:3d856b3d-02e1-63ae-8b64-b60401fc65ab> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:c7732c99-4e13-8f4e-44c5-425a8957af83> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Geertruyd"@nl ;
+            pnv:literalName "Geertruyd Dircx"@nl ;
+            pnv:patronym "Dircx"@nl ] ;
+    sdo:address "Korte Langegraft"@nl ;
+    sdo:description "getuige van de bruid, relatie tot de bruid: moeder, adres: Korte Langegraft"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Geertruyd"@nl ;
+    sdo:name "Geertruyd Dircx"@nl .
+
+<https://ex.org/Person:5c29483d-b367-bf5d-9f9d-7fcc2a452726> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:c7732c99-4e13-8f4e-44c5-425a8957af83> ;
+    picom:hasLifeEvent <https://ex.org/Source:c7732c99-4e13-8f4e-44c5-425a8957af83_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:address "Langegraft, Korte"@nl ;
+    sdo:birthPlace "Leyden"@nl ;
+    sdo:familyName "Morcum"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Beatrix"@nl ;
+    sdo:name "Beatrix Morcum"@nl ;
+    sdo:parent <https://ex.org/Person:3d856b3d-02e1-63ae-8b64-b60401fc65ab> ;
+    sdo:spouse <https://ex.org/Person:a692f301-c02c-2970-f19b-5a7e6c609c8e> .
+
+<https://ex.org/Person:7490899f-77b5-d550-34b9-ea0cce8af29f> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:c7732c99-4e13-8f4e-44c5-425a8957af83> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Jan"@nl ;
+            pnv:literalName "Jan Marca"@nl ;
+            pnv:patronym "Marca"@nl ] ;
+    sdo:address "Aan de Hoogelandschekerck"@nl ;
+    sdo:description "getuige van de bruidegom, relatie tot de bruidegom: broer, adres: Aan de Hoogelandschekerck"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jan"@nl ;
+    sdo:name "Jan Marca"@nl .
+
+<https://ex.org/Person:a692f301-c02c-2970-f19b-5a7e6c609c8e> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:c7732c99-4e13-8f4e-44c5-425a8957af83> ;
+    picom:hasLifeEvent <https://ex.org/Source:c7732c99-4e13-8f4e-44c5-425a8957af83_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:address "Langegraft, Korte"@nl ;
+    sdo:birthPlace "Amsterdam"@nl ;
+    sdo:familyName "Marca"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Pieter"@nl ;
+    sdo:hasOccupation "lakenwerker"@nl ;
+    sdo:name "Pieter Marca"@nl ;
+    sdo:sibling <https://ex.org/Person:7490899f-77b5-d550-34b9-ea0cce8af29f> ;
+    sdo:spouse <https://ex.org/Person:5c29483d-b367-bf5d-9f9d-7fcc2a452726> .
+
+<https://ex.org/Source:c7732c99-4e13-8f4e-44c5-425a8957af83_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1706-10-22"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
+<https://ex.org/Source:c7732c99-4e13-8f4e-44c5-425a8957af83> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549> ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/5ff46df7-2fcf-402a-ae62-e811c027e71c/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/c7732c99-4e13-8f4e-44c5-425a8957af83"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/5ff46df7-2fcf-402a-ae62-e811c027e71c/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1706-10-22"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1703-1707"@nl,
+        "28"@nl,
+        "Datum ondertrouw: 22-10-1706<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/28\">Inventarisnummer 28 van archiefnummer 1004 in Archieven</a>"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 28, Periode: 17..., (toegangsnr. 1004), inv.nr. 28, DD. Kerkelijk ondertrouwboek (NH) van Leiden, 1703 - juli 1707., 244, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/c7732c99-4e13-8f4e-44c5-425a8957af83"^^xsd:anyURI .
+

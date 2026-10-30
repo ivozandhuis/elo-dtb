@@ -1,0 +1,56 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:0221317f-603a-2986-3300-0e6c7ed613ce> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:4a0a6dd9-fcb0-184c-950a-567aebe9d025> ;
+    picom:hasLifeEvent <https://ex.org/Source:4a0a6dd9-fcb0-184c-950a-567aebe9d025_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:address "Specksteegh"@nl ;
+    sdo:birthPlace "Leijden"@nl ;
+    sdo:description "Burgerlijke staat voor het huwelijk: j.d."@nl ;
+    sdo:familyName "Knol"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Maria"@nl ;
+    sdo:name "Maria Knol"@nl ;
+    sdo:spouse <https://ex.org/Person:799b9965-cfca-d0bf-5f4d-c8f2423e0704> .
+
+<https://ex.org/Person:799b9965-cfca-d0bf-5f4d-c8f2423e0704> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:4a0a6dd9-fcb0-184c-950a-567aebe9d025> ;
+    picom:hasLifeEvent <https://ex.org/Source:4a0a6dd9-fcb0-184c-950a-567aebe9d025_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:address "Specksteegh"@nl ;
+    sdo:birthPlace "Leijden"@nl ;
+    sdo:description "Burgerlijke staat voor het huwelijk: j.m."@nl ;
+    sdo:familyName "Mote"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jan"@nl ;
+    sdo:hasOccupation "lakenwerker"@nl ;
+    sdo:name "Jan Mote"@nl ;
+    sdo:spouse <https://ex.org/Person:0221317f-603a-2986-3300-0e6c7ed613ce> .
+
+<https://ex.org/Source:4a0a6dd9-fcb0-184c-950a-567aebe9d025> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549> ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/a0565bc1-f885-47ec-84fb-fa1caa106b30/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/4a0a6dd9-fcb0-184c-950a-567aebe9d025"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/a0565bc1-f885-47ec-84fb-fa1caa106b30/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1710-01-03"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "109"@nl,
+        "1707-1711"@nl,
+        "Datum ondertrouw: 03-01-1710<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/109\">Inventarisnummer 109 van archiefnummer 1004 in Archieven</a>"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 109, Periode: 1..., (toegangsnr. 1004), inv.nr. 109, Trouwboek van de Hooglandse Kerk (NH) te Leiden, 27 mei 1707 - 24 september 1711., 141, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/4a0a6dd9-fcb0-184c-950a-567aebe9d025"^^xsd:anyURI .
+
+<https://ex.org/Source:4a0a6dd9-fcb0-184c-950a-567aebe9d025_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1710-01-03"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+

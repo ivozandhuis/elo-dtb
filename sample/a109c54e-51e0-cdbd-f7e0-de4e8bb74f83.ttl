@@ -1,0 +1,115 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:81da1c2e-c81d-7baf-806d-55689f4b59e4> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:a109c54e-51e0-cdbd-f7e0-de4e8bb74f83> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Ouwen"@nl ;
+            pnv:givenName "Jacob"@nl ;
+            pnv:literalName "Jacob van Ouwen"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:description "getuige van de bruidegom, relatie tot de bruidegom: broer"@nl ;
+    sdo:familyName "van Ouwen"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jacob"@nl ;
+    sdo:name "Jacob van Ouwen"@nl .
+
+<https://ex.org/Person:9c43afca-e5b4-0300-17ff-9557e42cda92> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:a109c54e-51e0-cdbd-f7e0-de4e8bb74f83> ;
+    picom:deceased true ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Evert"@nl ;
+            pnv:literalName "Evert Pauwelsz"@nl ;
+            pnv:patronym "Pauwelsz"@nl ] ;
+    sdo:description "Relatie tot bruid: wed."@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Evert"@nl ;
+    sdo:name "Evert Pauwelsz"@nl .
+
+<https://ex.org/Person:c82b8cb3-2e3a-7020-bf49-9525572d51fa> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:a109c54e-51e0-cdbd-f7e0-de4e8bb74f83> ;
+    picom:hasLifeEvent <https://ex.org/Source:a109c54e-51e0-cdbd-f7e0-de4e8bb74f83_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    picom:isWidOf <https://ex.org/Person:9c43afca-e5b4-0300-17ff-9557e42cda92> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Tryn"@nl ;
+            pnv:literalName "Tryn Jansdr"@nl ;
+            pnv:patronym "Jansdr"@nl ] ;
+    sdo:birthPlace "Leyden"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Tryn"@nl ;
+    sdo:name "Tryn Jansdr"@nl ;
+    sdo:parent <https://ex.org/Person:e8fe90d1-207c-0969-195e-f7c51af54621> ;
+    sdo:spouse <https://ex.org/Person:eb2222b5-142d-5cd6-deb2-817edb8b7ab1> .
+
+<https://ex.org/Person:e6978138-a2c4-b60c-fc86-815e85f897ea> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:a109c54e-51e0-cdbd-f7e0-de4e8bb74f83> ;
+    picom:deceased true ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Josyntgen"@nl ;
+            pnv:literalName "Josyntgen Oliviers"@nl ;
+            pnv:patronym "Oliviers"@nl ] ;
+    sdo:description "Relatie tot bruidegom: wed."@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Josyntgen"@nl ;
+    sdo:name "Josyntgen Oliviers"@nl .
+
+<https://ex.org/Person:e8fe90d1-207c-0969-195e-f7c51af54621> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:a109c54e-51e0-cdbd-f7e0-de4e8bb74f83> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Marytgen"@nl ;
+            pnv:literalName "Marytgen Franssen"@nl ;
+            pnv:patronym "Franssen"@nl ] ;
+    sdo:description "getuige van de bruid, relatie tot de bruid: moeder"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Marytgen"@nl ;
+    sdo:name "Marytgen Franssen"@nl .
+
+<https://ex.org/Person:eb2222b5-142d-5cd6-deb2-817edb8b7ab1> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:a109c54e-51e0-cdbd-f7e0-de4e8bb74f83> ;
+    picom:hasLifeEvent <https://ex.org/Source:a109c54e-51e0-cdbd-f7e0-de4e8bb74f83_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    picom:isWidOf <https://ex.org/Person:e6978138-a2c4-b60c-fc86-815e85f897ea> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Ouwen"@nl ;
+            pnv:givenName "Jan"@nl ;
+            pnv:literalName "Jan van Ouwen"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:birthPlace "'s Hertogenbosch"@nl ;
+    sdo:familyName "van Ouwen"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jan"@nl ;
+    sdo:hasOccupation "glasmaker"@nl ;
+    sdo:name "Jan van Ouwen"@nl ;
+    sdo:sibling <https://ex.org/Person:81da1c2e-c81d-7baf-806d-55689f4b59e4> ;
+    sdo:spouse <https://ex.org/Person:c82b8cb3-2e3a-7020-bf49-9525572d51fa> .
+
+<https://ex.org/Source:a109c54e-51e0-cdbd-f7e0-de4e8bb74f83_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1608-07-26"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
+<https://ex.org/Source:a109c54e-51e0-cdbd-f7e0-de4e8bb74f83> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549> ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/4d2ee64c-b016-424a-aab0-067a01487d69/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/a109c54e-51e0-cdbd-f7e0-de4e8bb74f83"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/4d2ee64c-b016-424a-aab0-067a01487d69/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1608-07-26"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1608-1614"@nl,
+        "7"@nl,
+        "Datum ondertrouw: 26-07-1608<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/7\">Inventarisnummer 7 van archiefnummer 1004 in Archieven</a>"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 7, Periode: 160..., (toegangsnr. 1004), inv.nr. 7, G. Kerkelijk ondertrouwboek (NH) van Leiden, april 1608 - januari 1614., 14, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/a109c54e-51e0-cdbd-f7e0-de4e8bb74f83"^^xsd:anyURI .
+

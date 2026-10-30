@@ -74,8 +74,7 @@
     sdo:name "Pieter de Geer"@nl .
 
 <https://ex.org/Source:bc79377f-a05c-304f-3288-145b8c84fbee> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/9884f1bd-6237-4f82-9c80-14807b9c9cfe/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/bc79377f-a05c-304f-3288-145b8c84fbee"^^xsd:anyURI ;

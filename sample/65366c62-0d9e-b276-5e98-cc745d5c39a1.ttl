@@ -82,8 +82,7 @@
     sdo:name "Annetje Abrams"@nl .
 
 <https://ex.org/Source:65366c62-0d9e-b276-5e98-cc745d5c39a1> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/a0f05922-ac1f-4609-9ae0-d82eecff8f19/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/65366c62-0d9e-b276-5e98-cc745d5c39a1"^^xsd:anyURI ;

@@ -1,0 +1,98 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:0583ce0a-7130-f380-dd13-8f1a0b02063f> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:bd56e2c3-60be-9b44-ece6-052789a24025> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Jannetgen"@nl ;
+            pnv:literalName "Jannetgen Cornelis"@nl ;
+            pnv:patronym "Cornelis"@nl ] ;
+    sdo:address "Marendorp"@nl ;
+    sdo:description "getuige van de bruid, relatie tot de bruid: moeder, adres: Marendorp"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Jannetgen"@nl ;
+    sdo:name "Jannetgen Cornelis"@nl .
+
+<https://ex.org/Person:2bdf05d8-dbd5-ff55-607c-f9a1470ae1bd> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:bd56e2c3-60be-9b44-ece6-052789a24025> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Louw"@nl ;
+            pnv:givenName "Martijn"@nl ;
+            pnv:literalName "Martijn la Louw"@nl ;
+            pnv:surnamePrefix "la"@nl ] ;
+    sdo:address "Langegraft"@nl ;
+    sdo:description "getuige van de bruidegom, relatie tot de bruidegom: vader, adres: Langegraft"@nl ;
+    sdo:familyName "la Louw"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Martijn"@nl ;
+    sdo:name "Martijn la Louw"@nl .
+
+<https://ex.org/Person:31b877b4-3ed5-852b-1f80-a7282cc46cba> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:bd56e2c3-60be-9b44-ece6-052789a24025> ;
+    picom:hasLifeEvent <https://ex.org/Source:bd56e2c3-60be-9b44-ece6-052789a24025_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    picom:isWidOf <https://ex.org/Person:3a8ce429-9c2d-54fe-716e-7f9736728f20> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Lou"@nl ;
+            pnv:givenName "Louys"@nl ;
+            pnv:literalName "Louys la Lou"@nl ;
+            pnv:surnamePrefix "la"@nl ] ;
+    sdo:address "Langegraft"@nl ;
+    sdo:familyName "la Lou"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Louys"@nl ;
+    sdo:name "Louys la Lou"@nl ;
+    sdo:parent <https://ex.org/Person:2bdf05d8-dbd5-ff55-607c-f9a1470ae1bd> ;
+    sdo:spouse <https://ex.org/Person:bdceb050-764b-43ba-9f00-265af879b95a> .
+
+<https://ex.org/Person:3a8ce429-9c2d-54fe-716e-7f9736728f20> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:bd56e2c3-60be-9b44-ece6-052789a24025> ;
+    picom:deceased true ;
+    sdo:description "Relatie tot bruidegom: wed."@nl ;
+    sdo:familyName "Droville"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Anthonetta"@nl ;
+    sdo:name "Anthonetta Droville"@nl .
+
+<https://ex.org/Person:bdceb050-764b-43ba-9f00-265af879b95a> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:bd56e2c3-60be-9b44-ece6-052789a24025> ;
+    picom:hasLifeEvent <https://ex.org/Source:bd56e2c3-60be-9b44-ece6-052789a24025_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:address "Marendorp"@nl ;
+    sdo:birthPlace "Leyden"@nl ;
+    sdo:familyName "Beurseau"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Marya"@nl ;
+    sdo:name "Marya Beurseau"@nl ;
+    sdo:parent <https://ex.org/Person:0583ce0a-7130-f380-dd13-8f1a0b02063f> ;
+    sdo:spouse <https://ex.org/Person:31b877b4-3ed5-852b-1f80-a7282cc46cba> .
+
+<https://ex.org/Source:bd56e2c3-60be-9b44-ece6-052789a24025_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1656-02-19"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
+<https://ex.org/Source:bd56e2c3-60be-9b44-ece6-052789a24025> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549> ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/3e0bb259-6a72-4ddd-84a5-fb38043cc437/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/bd56e2c3-60be-9b44-ece6-052789a24025"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/3e0bb259-6a72-4ddd-84a5-fb38043cc437/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1656-02-19"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "15"@nl,
+        "1653-1657"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "W = huwelijk gesloten in de Waalse kerk<br>Datum ondertrouw: 19-02-1656<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/15\">Inventarisnummer 15 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 15, Periode: 16..., (toegangsnr. 1004), inv.nr. 15, P. Kerkelijk ondertrouwboek (NH) van Leiden, juni 1653 - januari 1657., 227, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/bd56e2c3-60be-9b44-ece6-052789a24025"^^xsd:anyURI .
+

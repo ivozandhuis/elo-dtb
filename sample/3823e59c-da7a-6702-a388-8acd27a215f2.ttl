@@ -16,7 +16,6 @@
     sdo:name "Catarina Clement"@nl .
 
 <https://ex.org/Source:3823e59c-da7a-6702-a388-8acd27a215f2> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
     sdo:dateModified "1970-01-01"^^xsd:date ;
     sdo:description "1684-1707"@nl,
         "2064"@nl,

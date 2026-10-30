@@ -17,7 +17,6 @@
     sdo:name "Gertgen Senten"@nl .
 
 <https://ex.org/Source:ad2d1e97-adfa-1939-eb31-85d8246015f2> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
     sdo:dateModified "1970-01-01"^^xsd:date ;
     sdo:description "1316"@nl,
         "1617-1624"@nl,

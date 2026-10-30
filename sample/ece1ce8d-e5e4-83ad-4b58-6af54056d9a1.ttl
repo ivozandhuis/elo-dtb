@@ -68,8 +68,7 @@
     sdo:name "Dirk Dirksz"@nl .
 
 <https://ex.org/Source:ece1ce8d-e5e4-83ad-4b58-6af54056d9a1> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/9a3f3b70-b0b9-4a4b-b122-d1e9fd2c2474/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/ece1ce8d-e5e4-83ad-4b58-6af54056d9a1"^^xsd:anyURI ;

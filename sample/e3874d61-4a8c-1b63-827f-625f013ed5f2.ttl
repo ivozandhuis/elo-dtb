@@ -12,6 +12,7 @@
             pnv:givenName "Teunis"@nl ;
             pnv:literalName "Teunis van der Tang"@nl ;
             pnv:surnamePrefix "van der"@nl ] ;
+    sdo:children <https://ex.org/Person:fcbb68d8-5216-b62f-1340-63193102eabe> ;
     sdo:description "Teunis van der Tang is schoonzoon van Johannis Langhout"@nl ;
     sdo:familyName "van der Tang"@nl ;
     sdo:gender sdo:Male ;
@@ -32,7 +33,6 @@
     sdo:name "Maartje van der Tang"@nl .
 
 <https://ex.org/Source:e3874d61-4a8c-1b63-827f-625f013ed5f2> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/fa88e1e7-6a03-4575-be43-12e0d10c0f1a/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/e3874d61-4a8c-1b63-827f-625f013ed5f2"^^xsd:anyURI ;

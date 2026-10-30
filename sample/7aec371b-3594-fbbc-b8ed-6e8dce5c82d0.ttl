@@ -69,8 +69,7 @@
     sdo:name "Henric Kouwelier"@nl .
 
 <https://ex.org/Source:7aec371b-3594-fbbc-b8ed-6e8dce5c82d0> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/64ae738e-6e24-407e-8234-13dcd5e5de76/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/7aec371b-3594-fbbc-b8ed-6e8dce5c82d0"^^xsd:anyURI ;

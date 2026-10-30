@@ -88,8 +88,7 @@
     sdo:name "Heiltje Rechters"@nl .
 
 <https://ex.org/Source:58ffa423-952b-9840-534e-9691fbfba9a1> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/acd6db9a-2dbf-4d0e-bf2e-a08fa3f89425/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/58ffa423-952b-9840-534e-9691fbfba9a1"^^xsd:anyURI ;

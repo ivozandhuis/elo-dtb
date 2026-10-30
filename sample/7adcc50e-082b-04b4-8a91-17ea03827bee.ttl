@@ -88,8 +88,7 @@
     sdo:name "Lijvijntje Eijnhoudt"@nl .
 
 <https://ex.org/Source:7adcc50e-082b-04b4-8a91-17ea03827bee> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/18bab02a-27df-4fed-abe7-f3bfc85448c9/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/7adcc50e-082b-04b4-8a91-17ea03827bee"^^xsd:anyURI ;

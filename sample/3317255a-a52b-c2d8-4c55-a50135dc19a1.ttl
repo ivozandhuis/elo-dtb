@@ -79,8 +79,7 @@
     sdo:name "Abraham Silvius"@nl .
 
 <https://ex.org/Source:3317255a-a52b-c2d8-4c55-a50135dc19a1> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/97de6650-49e5-4401-ad9f-112043f967e7/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/3317255a-a52b-c2d8-4c55-a50135dc19a1"^^xsd:anyURI ;

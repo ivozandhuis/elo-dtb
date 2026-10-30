@@ -5,6 +5,20 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Person:7b0d10de-a55f-b31d-3280-dd434138da0e> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:ca61eff1-cb87-84a1-58a9-460cbb6505f2> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Dusseldorp"@nl ;
+            pnv:givenName "Arij"@nl ;
+            pnv:literalName "Arij Pietersz van Dusseldorp"@nl ;
+            pnv:patronym "Pietersz"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:children <https://ex.org/Person:3ce328e5-ea08-ed77-cd64-44d4869d2588> ;
+    sdo:familyName "van Dusseldorp"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Arij"@nl ;
+    sdo:name "Arij Pietersz van Dusseldorp"@nl .
+
 <https://ex.org/Person:3ce328e5-ea08-ed77-cd64-44d4869d2588> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:ca61eff1-cb87-84a1-58a9-460cbb6505f2> ;
     picom:hasRole picot_roles:479 ;
@@ -17,21 +31,7 @@
     sdo:givenName "Pieter"@nl ;
     sdo:name "Pieter van Dusseldorp"@nl .
 
-<https://ex.org/Person:7b0d10de-a55f-b31d-3280-dd434138da0e> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:ca61eff1-cb87-84a1-58a9-460cbb6505f2> ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:baseSurname "Dusseldorp"@nl ;
-            pnv:givenName "Arij"@nl ;
-            pnv:literalName "Arij Pietersz van Dusseldorp"@nl ;
-            pnv:patronym "Pietersz"@nl ;
-            pnv:surnamePrefix "van"@nl ] ;
-    sdo:familyName "van Dusseldorp"@nl ;
-    sdo:gender sdo:Male ;
-    sdo:givenName "Arij"@nl ;
-    sdo:name "Arij Pietersz van Dusseldorp"@nl .
-
 <https://ex.org/Source:ca61eff1-cb87-84a1-58a9-460cbb6505f2> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/daf555f0-335d-4354-b7b9-1edd3cbcd2e3/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/ca61eff1-cb87-84a1-58a9-460cbb6505f2"^^xsd:anyURI ;

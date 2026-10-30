@@ -1,0 +1,64 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:a3074218-7103-2b39-3cb2-8b9fe2654833> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:13929f7d-b1d0-a42e-11fb-dd6c84894025> ;
+    picom:hasLifeEvent <https://ex.org/Source:13929f7d-b1d0-a42e-11fb-dd6c84894025_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Verhoogh"@nl ;
+            pnv:givenName "Jannetje"@nl ;
+            pnv:literalName "Jannetje Bastiaens Verhoogh"@nl ;
+            pnv:patronym "Bastiaens"@nl ] ;
+    sdo:address "Leiderdorp"@nl ;
+    sdo:description "Burgerlijke staat voor het huwelijk: j.d."@nl ;
+    sdo:familyName "Verhoogh"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Jannetje"@nl ;
+    sdo:name "Jannetje Bastiaens Verhoogh"@nl ;
+    sdo:spouse <https://ex.org/Person:ef7dfc80-228d-9bd2-765b-ab76615bd3e5> .
+
+<https://ex.org/Person:ef7dfc80-228d-9bd2-765b-ab76615bd3e5> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:13929f7d-b1d0-a42e-11fb-dd6c84894025> ;
+    picom:hasLifeEvent <https://ex.org/Source:13929f7d-b1d0-a42e-11fb-dd6c84894025_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Kellenaar"@nl ;
+            pnv:givenName "Jan"@nl ;
+            pnv:literalName "Jan Jansen Kellenaar"@nl ;
+            pnv:patronym "Jansen"@nl ] ;
+    sdo:address "Leijden"@nl ;
+    sdo:description "Burgerlijke staat voor het huwelijk: j.m."@nl ;
+    sdo:familyName "Kellenaar"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jan"@nl ;
+    sdo:name "Jan Jansen Kellenaar"@nl ;
+    sdo:spouse <https://ex.org/Person:a3074218-7103-2b39-3cb2-8b9fe2654833> .
+
+<https://ex.org/Source:13929f7d-b1d0-a42e-11fb-dd6c84894025> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549> ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/07a9b62b-607f-48c2-8de1-261791a5fd86/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/13929f7d-b1d0-a42e-11fb-dd6c84894025"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/07a9b62b-607f-48c2-8de1-261791a5fd86/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1668-05-22"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1474"@nl,
+        "1641-1691"@nl,
+        "Datum ondertrouw: 22-05-1668<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/0800/file/1474\">Inventarisnummer 1474 van archiefnummer 0800 in Archieven</a>"@nl,
+        "Dorps- en gemeentebestuur van Leiderdorp (1561-1958)"@nl ;
+    sdo:locationCreated "Leiderdorp"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Dorps- en gemeentebestuur van Leiderdorp (1561-1958), Deel: 1474, Periode: 1641-1691, (toegangsnr. 0800), inv.nr. 1474, Register van dopen (doopboek), trouwen (trouwregister) en lidmaten (NH) van Leiderdorp, 1641 - 1691., 171, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/13929f7d-b1d0-a42e-11fb-dd6c84894025"^^xsd:anyURI .
+
+<https://ex.org/Source:13929f7d-b1d0-a42e-11fb-dd6c84894025_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1668-05-22"@nl ;
+    picom:eventPlace "Leiderdorp"@nl ;
+    picom:eventType picot_eventtypes:99 .
+

@@ -19,7 +19,6 @@
     sdo:name "NN de Cooperslaeger"@nl .
 
 <https://ex.org/Source:dfbd2d68-953c-b509-2d54-9691bfda15f2> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
     sdo:dateModified "1970-01-01"^^xsd:date ;
     sdo:description "1322"@nl,
         "1655-1657"@nl,

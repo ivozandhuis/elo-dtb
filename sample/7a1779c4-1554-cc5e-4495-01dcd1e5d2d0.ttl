@@ -53,8 +53,7 @@
     sdo:name "Henrikje Pieters"@nl .
 
 <https://ex.org/Source:7a1779c4-1554-cc5e-4495-01dcd1e5d2d0> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/d071921d-856a-4b96-bcff-e8d07e786d57/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/7a1779c4-1554-cc5e-4495-01dcd1e5d2d0"^^xsd:anyURI ;

@@ -71,8 +71,7 @@
     sdo:name "Gerrit van Slingeland"@nl .
 
 <https://ex.org/Source:6c6aa42c-5a1f-8f39-63d9-4c4d95e359a1> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/f70df16b-a551-4fc0-87b5-c33553168296/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/6c6aa42c-5a1f-8f39-63d9-4c4d95e359a1"^^xsd:anyURI ;

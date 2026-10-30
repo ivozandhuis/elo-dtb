@@ -68,8 +68,7 @@
     sdo:name "Isaäk de Bruijn"@nl .
 
 <https://ex.org/Source:9e2d9417-7125-7a14-4759-c3aa696192d0> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/27b9c7b1-c280-4f37-aa51-c8af34d71f40/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/9e2d9417-7125-7a14-4759-c3aa696192d0"^^xsd:anyURI ;

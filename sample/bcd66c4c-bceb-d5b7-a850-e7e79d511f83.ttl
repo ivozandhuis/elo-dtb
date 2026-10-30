@@ -1,0 +1,61 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:46c11c48-69d0-1250-6b47-7c77eb7192b6> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:bcd66c4c-bceb-d5b7-a850-e7e79d511f83> ;
+    picom:hasLifeEvent <https://ex.org/Source:bcd66c4c-bceb-d5b7-a850-e7e79d511f83_huwelijk_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:birthPlace "Grooten Reken in Munsterland"@nl ;
+    sdo:description """Naam bruidegom ontbreekt.
+Bruidegom is onvermogend om trouwrecht te betalen."""@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "NN"@nl ;
+    sdo:name "NN"@nl ;
+    sdo:spouse <https://ex.org/Person:9f98cb67-2d7c-0b7f-fce5-630a8c0ed749> .
+
+<https://ex.org/Person:9f98cb67-2d7c-0b7f-fce5-630a8c0ed749> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:bcd66c4c-bceb-d5b7-a850-e7e79d511f83> ;
+    picom:hasLifeEvent <https://ex.org/Source:bcd66c4c-bceb-d5b7-a850-e7e79d511f83_huwelijk_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Beyeren"@nl ;
+            pnv:givenName "Willempje"@nl ;
+            pnv:literalName "Willempje Jans van Beyeren"@nl ;
+            pnv:patronym "Jans"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:address "Lisse"@nl ;
+    sdo:birthPlace "Lisse"@nl ;
+    sdo:description "Burgerlijke staat voor het huwelijk: j.d."@nl ;
+    sdo:familyName "van Beyeren"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Willempje"@nl ;
+    sdo:name "Willempje Jans van Beyeren"@nl ;
+    sdo:spouse <https://ex.org/Person:46c11c48-69d0-1250-6b47-7c77eb7192b6> .
+
+<https://ex.org/Source:bcd66c4c-bceb-d5b7-a850-e7e79d511f83> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549> ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/c7503b94-aea3-4e97-8de2-f538e54d84e1/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/bcd66c4c-bceb-d5b7-a850-e7e79d511f83"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/c7503b94-aea3-4e97-8de2-f538e54d84e1/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "Datum trouwen: 04-1749<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/0633B/file/1\">Inventarisnummer 1 van archiefnummer 0633B in Archieven</a>"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1"@nl,
+        "1745-1768"@nl,
+        "Datum trouwen: 04-1749<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/0633B/file/1\">Inventarisnummer 1 van archiefnummer 0633B in Archieven</a>"@nl,
+        "Gaarders van Voorhout"@nl ;
+    sdo:locationCreated "Voorhout"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Gaarders van Voorhout, Deel: 1, Periode: 1745-1768, (toegangsnr. 0633B), inv.nr. 1, Registers van ontvangst van impost op trouwen en begraven van Voorhout, 1745-1768., 12, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/bcd66c4c-bceb-d5b7-a850-e7e79d511f83"^^xsd:anyURI .
+
+<https://ex.org/Source:bcd66c4c-bceb-d5b7-a850-e7e79d511f83_huwelijk_event> a picom:LifeEvent ;
+    picom:eventDate "Datum trouwen: 04-1749<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/0633B/file/1\">Inventarisnummer 1 van archiefnummer 0633B in Archieven</a>"@nl ;
+    picom:eventPlace "Voorhout"@nl ;
+    picom:eventType picot_eventtypes:83 .
+

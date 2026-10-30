@@ -58,8 +58,7 @@
     sdo:name "Willem Blankert"@nl .
 
 <https://ex.org/Source:43da79cc-e8e7-9e31-61a7-5b5b63993bee> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/10de618c-ea29-492c-b989-cd7ba81236c7/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/43da79cc-e8e7-9e31-61a7-5b5b63993bee"^^xsd:anyURI ;

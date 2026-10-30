@@ -69,8 +69,7 @@
     sdo:name "Pieternelle van Kuijk"@nl .
 
 <https://ex.org/Source:014a0235-cb1a-4f9c-70b8-1afd0c6319a1> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/68595d42-2d90-4050-8acc-92d76e3ff6ce/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/014a0235-cb1a-4f9c-70b8-1afd0c6319a1"^^xsd:anyURI ;

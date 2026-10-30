@@ -5,6 +5,18 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Person:be864689-424f-b16a-0e8d-44eb5797c7e0> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:de1aafc2-73b4-edee-bc1c-6b78095465f2> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Frans"@nl ;
+            pnv:literalName "Frans Theunisz"@nl ;
+            pnv:patronym "Theunisz"@nl ] ;
+    sdo:children <https://ex.org/Person:360928a5-7a67-42bc-5dbc-4ddd1329840b> ;
+    sdo:description "relatie: Dochter"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Frans"@nl ;
+    sdo:name "Frans Theunisz"@nl .
+
 <https://ex.org/Person:360928a5-7a67-42bc-5dbc-4ddd1329840b> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:de1aafc2-73b4-edee-bc1c-6b78095465f2> ;
     picom:hasRole picot_roles:479 ;
@@ -12,19 +24,7 @@
     sdo:givenName "NN"@nl ;
     sdo:name "NN"@nl .
 
-<https://ex.org/Person:be864689-424f-b16a-0e8d-44eb5797c7e0> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:de1aafc2-73b4-edee-bc1c-6b78095465f2> ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:givenName "Frans"@nl ;
-            pnv:literalName "Frans Theunisz"@nl ;
-            pnv:patronym "Theunisz"@nl ] ;
-    sdo:description "relatie: Dochter"@nl ;
-    sdo:gender sdo:Male ;
-    sdo:givenName "Frans"@nl ;
-    sdo:name "Frans Theunisz"@nl .
-
 <https://ex.org/Source:de1aafc2-73b4-edee-bc1c-6b78095465f2> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
     sdo:dateModified "1970-01-01"^^xsd:date ;
     sdo:description "1319"@nl,
         "1635-1636"@nl,

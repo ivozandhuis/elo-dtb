@@ -1,0 +1,108 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:f1f2dc11-0cee-ceda-23a1-4d0b40a7f5b9> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:3a96a82d-ea7e-0b71-2c33-2ab9db0f7f83> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Lijsbeth"@nl ;
+            pnv:literalName "Lijsbeth Daniels"@nl ;
+            pnv:patronym "Daniels"@nl ] ;
+    sdo:address "Middelstegraft"@nl ;
+    sdo:description "getuige van de bruid, relatie tot de bruid: schoonmoeder, adres: Middelstegraft"@nl ;
+    sdo:givenName "Lijsbeth"@nl ;
+    sdo:name "Lijsbeth Daniels"@nl .
+
+<https://ex.org/Person:0ccb9b48-f945-e80d-5370-5f011e8ec213> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:3a96a82d-ea7e-0b71-2c33-2ab9db0f7f83> ;
+    picom:deceased true ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Jan"@nl ;
+            pnv:literalName "Jan Claesz"@nl ;
+            pnv:patronym "Claesz"@nl ] ;
+    sdo:description "Relatie tot bruid: wed."@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jan"@nl ;
+    sdo:name "Jan Claesz"@nl .
+
+<https://ex.org/Person:6c76a25c-12d4-07b3-ec51-226b9ddc4e31> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:3a96a82d-ea7e-0b71-2c33-2ab9db0f7f83> ;
+    picom:hasLifeEvent <https://ex.org/Source:3a96a82d-ea7e-0b71-2c33-2ab9db0f7f83_huwelijk_event>,
+        <https://ex.org/Source:3a96a82d-ea7e-0b71-2c33-2ab9db0f7f83_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Huybert"@nl ;
+            pnv:literalName "Huybert Geurtsz"@nl ;
+            pnv:patronym "Geurtsz"@nl ] ;
+    sdo:address "Groenesteech"@nl ;
+    sdo:birthPlace "Culenburch"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Huybert"@nl ;
+    sdo:hasOccupation "schoenmaker"@nl ;
+    sdo:knows <https://ex.org/Person:af747232-bdcd-abf1-cea7-636ccae712a6> ;
+    sdo:name "Huybert Geurtsz"@nl ;
+    sdo:spouse <https://ex.org/Person:79ac8f87-5bb4-c08b-2e5d-66fd6e2071aa> .
+
+<https://ex.org/Person:79ac8f87-5bb4-c08b-2e5d-66fd6e2071aa> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:3a96a82d-ea7e-0b71-2c33-2ab9db0f7f83> ;
+    picom:hasLifeEvent <https://ex.org/Source:3a96a82d-ea7e-0b71-2c33-2ab9db0f7f83_huwelijk_event>,
+        <https://ex.org/Source:3a96a82d-ea7e-0b71-2c33-2ab9db0f7f83_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    picom:isWidOf <https://ex.org/Person:0ccb9b48-f945-e80d-5370-5f011e8ec213> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Jannetge"@nl ;
+            pnv:literalName "Jannetge Gysberts"@nl ;
+            pnv:patronym "Gysberts"@nl ] ;
+    sdo:address "Groenesteech"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Jannetge"@nl ;
+    sdo:name "Jannetge Gysberts"@nl ;
+    sdo:spouse <https://ex.org/Person:6c76a25c-12d4-07b3-ec51-226b9ddc4e31> .
+
+<https://ex.org/Person:af747232-bdcd-abf1-cea7-636ccae712a6> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:3a96a82d-ea7e-0b71-2c33-2ab9db0f7f83> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Backer van Dras"@nl ;
+            pnv:givenName "Jan"@nl ;
+            pnv:literalName "Jan de Backer van Dras"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:address "Middelsteraemsteech"@nl ;
+    sdo:description "getuige van de bruidegom, relatie tot de bruidegom: bekende, adres: Middelsteraemsteech"@nl ;
+    sdo:familyName "de Backer van Dras"@nl ;
+    sdo:givenName "Jan"@nl ;
+    sdo:name "Jan de Backer van Dras"@nl .
+
+<https://ex.org/Source:3a96a82d-ea7e-0b71-2c33-2ab9db0f7f83_huwelijk_event> a picom:LifeEvent ;
+    picom:eventDate "1660-11-01"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:83 .
+
+<https://ex.org/Source:3a96a82d-ea7e-0b71-2c33-2ab9db0f7f83_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1660-10-08"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
+<https://ex.org/Source:3a96a82d-ea7e-0b71-2c33-2ab9db0f7f83> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549> ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/6f41a941-9e44-48be-96dc-09bdf1f99079/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/3a96a82d-ea7e-0b71-2c33-2ab9db0f7f83"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/6f41a941-9e44-48be-96dc-09bdf1f99079/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1660-10-08"@nl,
+        "1660-11-01"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "16"@nl,
+        "1657-1661"@nl,
+        "Datum trouwen: 01-11-1660<br>Datum ondertrouw: 08-10-1660<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/16\">Inventarisnummer 16 van archiefnummer 1004 in Archieven</a>"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 16, Periode: 16..., (toegangsnr. 1004), inv.nr. 16, Q. Kerkelijk ondertrouwboek (NH) van Leiden, januari 1657 - februari 1661., 338v, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/3a96a82d-ea7e-0b71-2c33-2ab9db0f7f83"^^xsd:anyURI .
+

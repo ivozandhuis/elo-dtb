@@ -1,0 +1,69 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:2a4121ef-bfe3-c5c7-aacb-874a86f6131e> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:16154bb7-49da-29cf-9049-de9793b35f83> ;
+    picom:hasLifeEvent <https://ex.org/Source:16154bb7-49da-29cf-9049-de9793b35f83_huwelijk_event>,
+        <https://ex.org/Source:16154bb7-49da-29cf-9049-de9793b35f83_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:address "Onder Soeterwouden"@nl ;
+    sdo:birthPlace "Voorschooten"@nl ;
+    sdo:description "Burgerlijke staat voor het huwelijk: j.m."@nl ;
+    sdo:familyName "Vromestijn"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Cornelis"@nl ;
+    sdo:name "Cornelis Vromestijn"@nl ;
+    sdo:spouse <https://ex.org/Person:48ac2d1e-839c-4853-5f39-2e9a71809368> .
+
+<https://ex.org/Person:48ac2d1e-839c-4853-5f39-2e9a71809368> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:16154bb7-49da-29cf-9049-de9793b35f83> ;
+    picom:hasLifeEvent <https://ex.org/Source:16154bb7-49da-29cf-9049-de9793b35f83_huwelijk_event>,
+        <https://ex.org/Source:16154bb7-49da-29cf-9049-de9793b35f83_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Zijl"@nl ;
+            pnv:givenName "Ariaantje"@nl ;
+            pnv:literalName "Ariaantje van Zijl"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:address "Onder Soeterwouden"@nl ;
+    sdo:birthPlace "Woerden"@nl ;
+    sdo:description "Burgerlijke staat voor het huwelijk: j.d."@nl ;
+    sdo:familyName "van Zijl"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Ariaantje"@nl ;
+    sdo:name "Ariaantje van Zijl"@nl ;
+    sdo:spouse <https://ex.org/Person:2a4121ef-bfe3-c5c7-aacb-874a86f6131e> .
+
+<https://ex.org/Source:16154bb7-49da-29cf-9049-de9793b35f83> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549> ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/b4be88af-990c-4689-b926-975b77879b81/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/16154bb7-49da-29cf-9049-de9793b35f83"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/b4be88af-990c-4689-b926-975b77879b81/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1787-04-27"@nl,
+        "1787-05-13"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1783-1797"@nl,
+        "182"@nl,
+        "Datum trouwen: 13-05-1787<br>Datum ondertrouw: 27-04-1787<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/0500D/file/182\">Inventarisnummer 182 van archiefnummer 0500D in Archieven</a>"@nl,
+        "Schout en schepenen van Zoeterwoude (oud rechterlijk archief)"@nl ;
+    sdo:locationCreated "Zoeterwoude"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Schout en schepenen van Zoeterwoude (oud rechterlijk archief), Deel: 182, Periode: 1..., (toegangsnr. 0500D), inv.nr. 182, Ondertrouwboek en trouwboek van Zoeterwoude, 1783 mei - 1797 nov, 37v, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/16154bb7-49da-29cf-9049-de9793b35f83"^^xsd:anyURI .
+
+<https://ex.org/Source:16154bb7-49da-29cf-9049-de9793b35f83_huwelijk_event> a picom:LifeEvent ;
+    picom:eventDate "1787-05-13"@nl ;
+    picom:eventPlace "Zoeterwoude"@nl ;
+    picom:eventType picot_eventtypes:83 .
+
+<https://ex.org/Source:16154bb7-49da-29cf-9049-de9793b35f83_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1787-04-27"@nl ;
+    picom:eventPlace "Zoeterwoude"@nl ;
+    picom:eventType picot_eventtypes:99 .
+

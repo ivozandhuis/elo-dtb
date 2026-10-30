@@ -55,8 +55,7 @@
     sdo:name "Annetjen Thijssen"@nl .
 
 <https://ex.org/Source:c908f36e-95c7-45fb-ec5c-ab2428236bee> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/fad9d399-bef7-497e-8014-e3a32b2ea376/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/c908f36e-95c7-45fb-ec5c-ab2428236bee"^^xsd:anyURI ;

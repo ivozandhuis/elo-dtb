@@ -1,0 +1,110 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:38e1f075-2069-bb8e-60f4-21ce06cbd480> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:41379dc5-8bf0-3af8-280d-f12e4a99cf83> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:address "Levendael"@nl ;
+    sdo:description "getuige van de bruidegom, relatie tot de bruidegom: cosijn, adres: Levendael"@nl ;
+    sdo:familyName "Pardu"@nl ;
+    sdo:givenName "Nicolaes"@nl ;
+    sdo:name "Nicolaes Pardu"@nl .
+
+<https://ex.org/Person:7a14a473-016f-3432-2079-54ef1a49e3a6> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:41379dc5-8bf0-3af8-280d-f12e4a99cf83> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Leyne"@nl ;
+            pnv:givenName "Robbert"@nl ;
+            pnv:literalName "Robbert de Leyne"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:description "getuige van de bruidegom, relatie tot de bruidegom: meester"@nl ;
+    sdo:familyName "de Leyne"@nl ;
+    sdo:givenName "Robbert"@nl ;
+    sdo:name "Robbert de Leyne"@nl .
+
+<https://ex.org/Person:ea2e5906-5984-c8c5-60b7-a0e492964658> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:41379dc5-8bf0-3af8-280d-f12e4a99cf83> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:address "Levendael"@nl ;
+    sdo:description "getuige van de bruid, relatie tot de bruid: cosijne, adres: Levendael"@nl ;
+    sdo:familyName "Beyes"@nl ;
+    sdo:givenName "Martijne"@nl ;
+    sdo:name "Martijne Beyes"@nl .
+
+<https://ex.org/Person:03ccd354-3b62-0ba8-229d-c2dd2f77f164> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:41379dc5-8bf0-3af8-280d-f12e4a99cf83> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:address "Heeresteech"@nl ;
+    sdo:description "getuige van de bruid, relatie tot de bruid: bekende, adres: Heeresteech"@nl ;
+    sdo:familyName "Luverechts"@nl ;
+    sdo:givenName "Sanneken"@nl ;
+    sdo:name "Sanneken Luverechts"@nl .
+
+<https://ex.org/Person:5768ac8c-661d-b088-bf60-07401d9c2d15> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:41379dc5-8bf0-3af8-280d-f12e4a99cf83> ;
+    picom:hasLifeEvent <https://ex.org/Source:41379dc5-8bf0-3af8-280d-f12e4a99cf83_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    picom:isWidOf <https://ex.org/Person:7a9bf059-2e1f-2a36-d7b5-28e518e28cbf> ;
+    sdo:address "Levendael"@nl ;
+    sdo:familyName "Gae"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Maddalena"@nl ;
+    sdo:knows <https://ex.org/Person:03ccd354-3b62-0ba8-229d-c2dd2f77f164> ;
+    sdo:name "Maddalena Gae"@nl ;
+    sdo:spouse <https://ex.org/Person:8c0aec87-ea95-7ae4-4ff8-1763feaf7f1a> .
+
+<https://ex.org/Person:7a9bf059-2e1f-2a36-d7b5-28e518e28cbf> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:41379dc5-8bf0-3af8-280d-f12e4a99cf83> ;
+    picom:deceased true ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Steene"@nl ;
+            pnv:givenName "Jean"@nl ;
+            pnv:literalName "Jean van de Steene"@nl ;
+            pnv:surnamePrefix "van de"@nl ] ;
+    sdo:description "Relatie tot bruid: wed."@nl ;
+    sdo:familyName "van de Steene"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jean"@nl ;
+    sdo:name "Jean van de Steene"@nl .
+
+<https://ex.org/Person:8c0aec87-ea95-7ae4-4ff8-1763feaf7f1a> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:41379dc5-8bf0-3af8-280d-f12e4a99cf83> ;
+    picom:hasLifeEvent <https://ex.org/Source:41379dc5-8bf0-3af8-280d-f12e4a99cf83_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:address "Levendael"@nl ;
+    sdo:birthPlace "Atrecht. Bij -"@nl ;
+    sdo:familyName "Logo"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Pierre"@nl ;
+    sdo:hasOccupation "wolkammer"@nl ;
+    sdo:name "Pierre Logo"@nl ;
+    sdo:spouse <https://ex.org/Person:5768ac8c-661d-b088-bf60-07401d9c2d15> .
+
+<https://ex.org/Source:41379dc5-8bf0-3af8-280d-f12e4a99cf83_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1633-08-26"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
+<https://ex.org/Source:41379dc5-8bf0-3af8-280d-f12e4a99cf83> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549> ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/7daa7dda-21f9-486f-b945-5fa78124f027/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/41379dc5-8bf0-3af8-280d-f12e4a99cf83"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/7daa7dda-21f9-486f-b945-5fa78124f027/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1633-08-26"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "11"@nl,
+        "1633-1637"@nl,
+        "Datum ondertrouw: 26-08-1633<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/11\">Inventarisnummer 11 van archiefnummer 1004 in Archieven</a>"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 11, Periode: 16..., (toegangsnr. 1004), inv.nr. 11, L. Kerkelijk ondertrouwboek (NH) van Leiden, augustus 1633 - 1637., 3, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/41379dc5-8bf0-3af8-280d-f12e4a99cf83"^^xsd:anyURI .
+

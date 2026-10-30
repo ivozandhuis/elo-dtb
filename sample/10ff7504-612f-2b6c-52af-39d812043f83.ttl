@@ -1,0 +1,105 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:7875e227-ceae-29cf-b91a-e70ade337cc5> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:10ff7504-612f-2b6c-52af-39d812043f83> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Willigh"@nl ;
+            pnv:givenName "Trijntje"@nl ;
+            pnv:literalName "Trijntje van der Willigh"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:description "Relatie tot bruidegom: overleden vrouw"@nl ;
+    sdo:familyName "van der Willigh"@nl ;
+    sdo:givenName "Trijntje"@nl ;
+    sdo:name "Trijntje van der Willigh"@nl .
+
+<https://ex.org/Person:a3d1387b-3fc8-ab8b-f647-18e2e1365ea9> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:10ff7504-612f-2b6c-52af-39d812043f83> ;
+    sdo:description "Relatie tot bruid: overleden man"@nl ;
+    sdo:familyName "Karthuijsen"@nl ;
+    sdo:givenName "Jan"@nl ;
+    sdo:name "Jan Karthuijsen"@nl .
+
+<https://ex.org/Person:a9939511-8177-aa52-d5cd-1579b03a2b31> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:10ff7504-612f-2b6c-52af-39d812043f83> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Goede"@nl ;
+            pnv:givenName "Martijntje"@nl ;
+            pnv:literalName "Martijntje de Goede"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:familyName "de Goede"@nl ;
+    sdo:givenName "Martijntje"@nl ;
+    sdo:name "Martijntje de Goede"@nl .
+
+<https://ex.org/Person:b7605d4b-734c-81ed-bcc3-15f3da0321ff> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:10ff7504-612f-2b6c-52af-39d812043f83> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Isaak"@nl ;
+            pnv:literalName "Isaak Boudewijn"@nl ;
+            pnv:patronym "Boudewijn"@nl ] ;
+    sdo:givenName "Isaak"@nl ;
+    sdo:name "Isaak Boudewijn"@nl .
+
+<https://ex.org/Person:f69cd84d-23c6-dc8e-aebf-2ffb7c4efc36> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:10ff7504-612f-2b6c-52af-39d812043f83> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:familyName "Seronde"@nl ;
+    sdo:givenName "Johanna Maria"@nl ;
+    sdo:name "Johanna Maria Seronde"@nl .
+
+<https://ex.org/Person:11201c71-906c-371a-4fc5-d4c801236c66> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:10ff7504-612f-2b6c-52af-39d812043f83> ;
+    picom:hasLifeEvent <https://ex.org/Source:10ff7504-612f-2b6c-52af-39d812043f83_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Tieleman"@nl ;
+            pnv:literalName "Tieleman Heeren"@nl ;
+            pnv:patronym "Heeren"@nl ] ;
+    sdo:address "Haarlemstraat"@nl ;
+    sdo:description "Burgerlijke staat voor het huwelijk: wed."@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Tieleman"@nl ;
+    sdo:name "Tieleman Heeren"@nl ;
+    sdo:spouse <https://ex.org/Person:21f56dcc-2b40-cc13-1c60-53bd8ab22035> .
+
+<https://ex.org/Person:21f56dcc-2b40-cc13-1c60-53bd8ab22035> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:10ff7504-612f-2b6c-52af-39d812043f83> ;
+    picom:hasLifeEvent <https://ex.org/Source:10ff7504-612f-2b6c-52af-39d812043f83_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:address "Doelesteeg"@nl ;
+    sdo:description "Burgerlijke staat voor het huwelijk: wed."@nl ;
+    sdo:familyName "Ingeneger"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Jannetje"@nl ;
+    sdo:name "Jannetje Ingeneger"@nl ;
+    sdo:spouse <https://ex.org/Person:11201c71-906c-371a-4fc5-d4c801236c66> .
+
+<https://ex.org/Source:10ff7504-612f-2b6c-52af-39d812043f83_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1727-07-11"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
+<https://ex.org/Source:10ff7504-612f-2b6c-52af-39d812043f83> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549> ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/01e84a40-e334-4071-9c51-745310422ba1/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/10ff7504-612f-2b6c-52af-39d812043f83"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/01e84a40-e334-4071-9c51-745310422ba1/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1727-07-11"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1725-1728"@nl,
+        "34"@nl,
+        "Datum ondertrouw: 11-07-1727<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/34\">Inventarisnummer 34 van archiefnummer 1004 in Archieven</a>"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 34, Periode: 17..., (toegangsnr. 1004), inv.nr. 34, KK. Kerkelijk ondertrouwboek (NH) van Leiden, 1725 - 1728., 190, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/10ff7504-612f-2b6c-52af-39d812043f83"^^xsd:anyURI .
+

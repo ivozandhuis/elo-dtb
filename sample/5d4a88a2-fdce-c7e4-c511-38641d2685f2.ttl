@@ -4,6 +4,14 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Person:928eb00d-b2df-49bf-0f8d-573b80dcb89c> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:5d4a88a2-fdce-c7e4-c511-38641d2685f2> ;
+    sdo:children <https://ex.org/Person:8c33e218-b8ad-f8a5-79c5-6d753c45f8e4> ;
+    sdo:familyName "Donne"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Pieter"@nl ;
+    sdo:name "Pieter Donne"@nl .
+
 <https://ex.org/Person:8c33e218-b8ad-f8a5-79c5-6d753c45f8e4> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:5d4a88a2-fdce-c7e4-c511-38641d2685f2> ;
     picom:hasRole picot_roles:479 ;
@@ -12,15 +20,7 @@
     sdo:givenName "NN"@nl ;
     sdo:name "NN Donne"@nl .
 
-<https://ex.org/Person:928eb00d-b2df-49bf-0f8d-573b80dcb89c> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:5d4a88a2-fdce-c7e4-c511-38641d2685f2> ;
-    sdo:familyName "Donne"@nl ;
-    sdo:gender sdo:Male ;
-    sdo:givenName "Pieter"@nl ;
-    sdo:name "Pieter Donne"@nl .
-
 <https://ex.org/Source:5d4a88a2-fdce-c7e4-c511-38641d2685f2> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
     sdo:dateModified "1970-01-01"^^xsd:date ;
     sdo:description "1321"@nl,
         "1646-1655"@nl,

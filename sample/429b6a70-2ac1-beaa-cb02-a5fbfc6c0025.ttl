@@ -1,0 +1,87 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:06a2ad77-5300-9041-8b37-ded31a0d7210> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:429b6a70-2ac1-beaa-cb02-a5fbfc6c0025> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:address "Coepoortgraft"@nl ;
+    sdo:description "getuige van de bruid, relatie tot de bruid: zuster, adres: Coepoortgraft"@nl ;
+    sdo:familyName "Calffs"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Jaecquemijntgen"@nl ;
+    sdo:name "Jaecquemijntgen Calffs"@nl .
+
+<https://ex.org/Person:0ad62d44-7bc0-f921-ff12-4145b74f3032> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:429b6a70-2ac1-beaa-cb02-a5fbfc6c0025> ;
+    picom:hasLifeEvent <https://ex.org/Source:429b6a70-2ac1-beaa-cb02-a5fbfc6c0025_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Santvoort"@nl ;
+            pnv:givenName "Caerl"@nl ;
+            pnv:literalName "Caerl van Santvoort"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:address "Middelstegraft"@nl ;
+    sdo:birthPlace "Leyden"@nl ;
+    sdo:familyName "van Santvoort"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Caerl"@nl ;
+    sdo:hasOccupation "fusteinwerker"@nl ;
+    sdo:name "Caerl van Santvoort"@nl ;
+    sdo:parent <https://ex.org/Person:3469899a-8f31-dc52-aad2-3ac33a70bdf5> ;
+    sdo:spouse <https://ex.org/Person:8f54c3e8-fc6e-dac7-bdb1-fe017cd12b7d> .
+
+<https://ex.org/Person:3469899a-8f31-dc52-aad2-3ac33a70bdf5> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:429b6a70-2ac1-beaa-cb02-a5fbfc6c0025> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Santvoort"@nl ;
+            pnv:givenName "Glaude"@nl ;
+            pnv:literalName "Glaude van Santvoort"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:address "Middelstegraft"@nl ;
+    sdo:description "getuige van de bruidegom, relatie tot de bruidegom: vader, adres: Middelstegraft"@nl ;
+    sdo:familyName "van Santvoort"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Glaude"@nl ;
+    sdo:name "Glaude van Santvoort"@nl .
+
+<https://ex.org/Person:8f54c3e8-fc6e-dac7-bdb1-fe017cd12b7d> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:429b6a70-2ac1-beaa-cb02-a5fbfc6c0025> ;
+    picom:hasLifeEvent <https://ex.org/Source:429b6a70-2ac1-beaa-cb02-a5fbfc6c0025_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:address "Uytterstegraft"@nl ;
+    sdo:birthPlace "Cemmeele Vlaenderen"@nl ;
+    sdo:familyName "Calffsdr"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Prontgen"@nl ;
+    sdo:name "Prontgen Calffsdr"@nl ;
+    sdo:sibling <https://ex.org/Person:06a2ad77-5300-9041-8b37-ded31a0d7210> ;
+    sdo:spouse <https://ex.org/Person:0ad62d44-7bc0-f921-ff12-4145b74f3032> .
+
+<https://ex.org/Source:429b6a70-2ac1-beaa-cb02-a5fbfc6c0025_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1629-10-05"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
+<https://ex.org/Source:429b6a70-2ac1-beaa-cb02-a5fbfc6c0025> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549> ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/d9771395-dbd9-45d3-82f9-899111ac602e/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/429b6a70-2ac1-beaa-cb02-a5fbfc6c0025"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/d9771395-dbd9-45d3-82f9-899111ac602e/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1629-10-05"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "10"@nl,
+        "1626-1633"@nl,
+        "Datum ondertrouw: 05-10-1629<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/10\">Inventarisnummer 10 van archiefnummer 1004 in Archieven</a>"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 10, Periode: 16..., (toegangsnr. 1004), inv.nr. 10, K. Kerkelijk ondertrouwboek (NH) van Leiden, september 1626 - augustus 1633., 164v, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/429b6a70-2ac1-beaa-cb02-a5fbfc6c0025"^^xsd:anyURI .
+

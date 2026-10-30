@@ -112,8 +112,7 @@
     sdo:name "Michiel van Peenen"@nl .
 
 <https://ex.org/Source:df047c98-039a-bb53-59c6-6a31306222d0> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/e2dafa53-a038-4bce-b6a1-ee083cf1c7cd/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/df047c98-039a-bb53-59c6-6a31306222d0"^^xsd:anyURI ;

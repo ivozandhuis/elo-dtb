@@ -71,8 +71,7 @@
     sdo:name "Anna Gijse"@nl .
 
 <https://ex.org/Source:60766a05-9c02-9caa-6c3b-948d568bfbee> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/07e75b35-24fe-407f-9855-3bcbce1300f1/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/60766a05-9c02-9caa-6c3b-948d568bfbee"^^xsd:anyURI ;

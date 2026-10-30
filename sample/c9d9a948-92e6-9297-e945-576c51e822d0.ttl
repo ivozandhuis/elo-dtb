@@ -58,8 +58,7 @@
     sdo:name "Catharina Albers"@nl .
 
 <https://ex.org/Source:c9d9a948-92e6-9297-e945-576c51e822d0> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/4fa73cc6-b722-4d10-a726-628d4931d9a5/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/c9d9a948-92e6-9297-e945-576c51e822d0"^^xsd:anyURI ;

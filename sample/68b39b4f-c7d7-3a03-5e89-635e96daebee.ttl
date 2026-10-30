@@ -69,8 +69,7 @@
     sdo:name "Henrikjen de Groet"@nl .
 
 <https://ex.org/Source:68b39b4f-c7d7-3a03-5e89-635e96daebee> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/55e2beec-9955-48e7-aeb9-1ee557a25c7c/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/68b39b4f-c7d7-3a03-5e89-635e96daebee"^^xsd:anyURI ;

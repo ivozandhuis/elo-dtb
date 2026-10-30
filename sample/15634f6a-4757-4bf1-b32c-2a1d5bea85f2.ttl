@@ -19,7 +19,6 @@
     sdo:name "Sophia Catharina Looi"@nl .
 
 <https://ex.org/Source:15634f6a-4757-4bf1-b32c-2a1d5bea85f2> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/6b082aa5-e0f5-4766-a333-7c89d9a6a938/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/15634f6a-4757-4bf1-b32c-2a1d5bea85f2"^^xsd:anyURI ;

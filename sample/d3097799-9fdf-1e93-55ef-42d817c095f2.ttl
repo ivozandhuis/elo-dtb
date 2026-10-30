@@ -15,7 +15,6 @@
     sdo:name "H. Janssen"@nl .
 
 <https://ex.org/Source:d3097799-9fdf-1e93-55ef-42d817c095f2> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
     sdo:dateModified "1970-01-01"^^xsd:date ;
     sdo:description "7411"@nl,
         "Inhoud record = inhoud bron! Opname: 24-10-1800.<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/0501A/file/7411\">Inventarisnummer 7411 van archiefnummer 0501A in Archieven</a>"@nl,

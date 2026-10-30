@@ -62,8 +62,7 @@
     sdo:name "Dirck Nile"@nl .
 
 <https://ex.org/Source:a87d39c1-1bb2-dc61-a919-6212ba4632d0> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/e0687b15-e9e3-4f9b-8ce3-a6a500673953/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/a87d39c1-1bb2-dc61-a919-6212ba4632d0"^^xsd:anyURI ;

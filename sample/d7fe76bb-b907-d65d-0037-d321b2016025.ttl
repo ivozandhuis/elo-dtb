@@ -1,0 +1,81 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:1b8eb1dc-0edc-e3f9-e1fa-87497cc2c405> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:d7fe76bb-b907-d65d-0037-d321b2016025> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:address "Buyten Zijlpoort, 2e bleek"@nl ;
+    sdo:description "getuige van de bruid, relatie tot de bruid: aanbehuwdzuster, adres: Buyten Zijlpoort, 2e bleek"@nl ;
+    sdo:familyName "Kamps"@nl ;
+    sdo:givenName "Geertruy"@nl ;
+    sdo:name "Geertruy Kamps"@nl .
+
+<https://ex.org/Person:123c3d1d-5fa9-482c-62ff-155edb9900c0> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:d7fe76bb-b907-d65d-0037-d321b2016025> ;
+    picom:hasLifeEvent <https://ex.org/Source:d7fe76bb-b907-d65d-0037-d321b2016025_huwelijk_event>,
+        <https://ex.org/Source:d7fe76bb-b907-d65d-0037-d321b2016025_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:address "Zijlpoort. Buyten - 2e bleek"@nl ;
+    sdo:birthPlace "Bekum (Munsterland)"@nl ;
+    sdo:familyName "Leeromvelt"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Maria"@nl ;
+    sdo:name "Maria Leeromvelt"@nl ;
+    sdo:spouse <https://ex.org/Person:ca10a4ac-7447-ca73-d1fe-f8d1c474fd1f> .
+
+<https://ex.org/Person:8b3d29bb-ba16-f0b3-683a-3831c229fa98> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:d7fe76bb-b907-d65d-0037-d321b2016025> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:address "Buyten Hogewoerdsepoort - bleek"@nl ;
+    sdo:description "getuige van de bruidegom, relatie tot de bruidegom: bekende, adres: Buyten Hogewoerdsepoort - bleek"@nl ;
+    sdo:familyName "Zuur"@nl ;
+    sdo:givenName "Pieter"@nl ;
+    sdo:name "Pieter Zuur"@nl .
+
+<https://ex.org/Person:ca10a4ac-7447-ca73-d1fe-f8d1c474fd1f> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:d7fe76bb-b907-d65d-0037-d321b2016025> ;
+    picom:hasLifeEvent <https://ex.org/Source:d7fe76bb-b907-d65d-0037-d321b2016025_huwelijk_event>,
+        <https://ex.org/Source:d7fe76bb-b907-d65d-0037-d321b2016025_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:address "Hogewoerdsepoort. Buyten - bleek"@nl ;
+    sdo:birthPlace "Hell (Luykerland)"@nl ;
+    sdo:familyName "Goede"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Ary"@nl ;
+    sdo:hasOccupation "blekersknecht"@nl ;
+    sdo:knows <https://ex.org/Person:8b3d29bb-ba16-f0b3-683a-3831c229fa98> ;
+    sdo:name "Ary Goede"@nl ;
+    sdo:spouse <https://ex.org/Person:123c3d1d-5fa9-482c-62ff-155edb9900c0> .
+
+<https://ex.org/Source:d7fe76bb-b907-d65d-0037-d321b2016025_huwelijk_event> a picom:LifeEvent ;
+    picom:eventDate "1775-11-18"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:83 .
+
+<https://ex.org/Source:d7fe76bb-b907-d65d-0037-d321b2016025_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1775-11-03"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
+<https://ex.org/Source:d7fe76bb-b907-d65d-0037-d321b2016025> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549> ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/993e7e53-60a5-4826-b6c0-8e663e03f5cd/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/d7fe76bb-b907-d65d-0037-d321b2016025"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/993e7e53-60a5-4826-b6c0-8e663e03f5cd/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1775-11-03"@nl,
+        "1775-11-18"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1768-1784"@nl,
+        "209"@nl,
+        "Datum trouwen: 18-11-1775<br>Datum ondertrouw: 03-11-1775<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/209\">Inventarisnummer 209 van archiefnummer 1004 in Archieven</a>"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 209, Periode: 1..., (toegangsnr. 1004), inv.nr. 209, N. Ondertrouwboek en trouwboek voor schepenen van Leiden, 1768 - januari 1784., 121, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/d7fe76bb-b907-d65d-0037-d321b2016025"^^xsd:anyURI .
+

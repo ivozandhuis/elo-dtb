@@ -50,8 +50,7 @@
     sdo:name "Pieternella Marijt"@nl .
 
 <https://ex.org/Source:a4bdc085-571b-c0b2-c3b0-0993a00732d0> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/a8c969fc-345e-4fe8-82fe-1b83121a3fb6/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/a4bdc085-571b-c0b2-c3b0-0993a00732d0"^^xsd:anyURI ;

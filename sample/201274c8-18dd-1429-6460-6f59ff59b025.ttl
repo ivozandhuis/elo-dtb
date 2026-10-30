@@ -1,0 +1,74 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:26078ca1-476b-500e-998e-04de145fd5f9> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:201274c8-18dd-1429-6460-6f59ff59b025> ;
+    picom:hasLifeEvent <https://ex.org/Source:201274c8-18dd-1429-6460-6f59ff59b025_huwelijk_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Vlasman"@nl ;
+            pnv:givenName "Jacob"@nl ;
+            pnv:literalName "Jacob Willemsz Vlasman"@nl ;
+            pnv:patronym "Willemsz"@nl ] ;
+    sdo:address "Soeterwoude"@nl ;
+    sdo:description "N.B.: De bruidegom is weduwnaar."@nl ;
+    sdo:familyName "Vlasman"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jacob"@nl ;
+    sdo:name "Jacob Willemsz Vlasman"@nl ;
+    sdo:spouse <https://ex.org/Person:52e6b919-8102-750b-d739-8310221dcb45> .
+
+<https://ex.org/Person:52e6b919-8102-750b-d739-8310221dcb45> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:201274c8-18dd-1429-6460-6f59ff59b025> ;
+    picom:hasLifeEvent <https://ex.org/Source:201274c8-18dd-1429-6460-6f59ff59b025_huwelijk_event> ;
+    picom:hasRole picot_roles:574 ;
+    picom:isWidOf <https://ex.org/Person:78441c76-a18b-f34d-8c51-ff1755da1d77> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Neeltgen"@nl ;
+            pnv:literalName "Neeltgen Lourisdr"@nl ;
+            pnv:patronym "Lourisdr"@nl ] ;
+    sdo:address "Soeterwoude"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Neeltgen"@nl ;
+    sdo:name "Neeltgen Lourisdr"@nl ;
+    sdo:spouse <https://ex.org/Person:26078ca1-476b-500e-998e-04de145fd5f9> .
+
+<https://ex.org/Person:78441c76-a18b-f34d-8c51-ff1755da1d77> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:201274c8-18dd-1429-6460-6f59ff59b025> ;
+    picom:deceased true ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Jacob"@nl ;
+            pnv:literalName "Jacob Jacobsz"@nl ;
+            pnv:patronym "Jacobsz"@nl ] ;
+    sdo:description "Relatie tot bruid: wed."@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jacob"@nl ;
+    sdo:name "Jacob Jacobsz"@nl .
+
+<https://ex.org/Source:201274c8-18dd-1429-6460-6f59ff59b025_huwelijk_event> a picom:LifeEvent ;
+    picom:eventDate "1633-07-31"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:83 .
+
+<https://ex.org/Source:201274c8-18dd-1429-6460-6f59ff59b025> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549> ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/76cbccf5-52ac-48c0-b3d2-f83580acdc30/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/201274c8-18dd-1429-6460-6f59ff59b025"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/76cbccf5-52ac-48c0-b3d2-f83580acdc30/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1633-07-31"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1633-1646"@nl,
+        "199"@nl,
+        "Datum trouwen: 31-07-1633<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/199\">Inventarisnummer 199 van archiefnummer 1004 in Archieven</a>"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 199, Periode: 1..., (toegangsnr. 1004), inv.nr. 199, C. Ondertrouwboek en trouwboek voor schepenen van Leiden, juli 1633 - juli 1646., C - 005v, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/201274c8-18dd-1429-6460-6f59ff59b025"^^xsd:anyURI .
+

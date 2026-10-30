@@ -58,8 +58,7 @@
     sdo:name "Maria Nuij"@nl .
 
 <https://ex.org/Source:c90e8f55-a85c-516f-5f17-c6c9b9db89a1> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/b70bf7ad-b68e-436b-b1cd-4a9dbd1ace23/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/c90e8f55-a85c-516f-5f17-c6c9b9db89a1"^^xsd:anyURI ;

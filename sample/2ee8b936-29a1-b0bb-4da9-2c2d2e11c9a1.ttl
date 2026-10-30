@@ -73,8 +73,7 @@
     sdo:name "Anna Abrahams van Waelswijck"@nl .
 
 <https://ex.org/Source:2ee8b936-29a1-b0bb-4da9-2c2d2e11c9a1> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/40c27e8f-7451-412b-99ee-190cab58c85d/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/2ee8b936-29a1-b0bb-4da9-2c2d2e11c9a1"^^xsd:anyURI ;

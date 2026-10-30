@@ -11,6 +11,7 @@
             pnv:givenName "Willem"@nl ;
             pnv:literalName "Willem Joosten"@nl ;
             pnv:patronym "Joosten"@nl ] ;
+    sdo:children <https://ex.org/Person:73968221-457c-6d07-e4bc-8f4e21fcdab9> ;
     sdo:gender sdo:Male ;
     sdo:givenName "Willem"@nl ;
     sdo:name "Willem Joosten"@nl .
@@ -23,7 +24,6 @@
     sdo:name "NN"@nl .
 
 <https://ex.org/Source:afd10b35-eb1e-ab50-b4d3-6c78868cc5f2> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
     sdo:dateModified "1970-01-01"^^xsd:date ;
     sdo:description "1319"@nl,
         "1635-1636"@nl,

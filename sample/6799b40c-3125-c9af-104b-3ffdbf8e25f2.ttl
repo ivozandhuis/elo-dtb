@@ -22,7 +22,6 @@
     sdo:name "NN"@nl .
 
 <https://ex.org/Source:6799b40c-3125-c9af-104b-3ffdbf8e25f2> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
     sdo:dateModified "1970-01-01"^^xsd:date ;
     sdo:description "1321"@nl,
         "1646-1655"@nl,

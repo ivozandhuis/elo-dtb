@@ -70,8 +70,7 @@
     sdo:name "Maritgen Vermaeschen"@nl .
 
 <https://ex.org/Source:c9d3ec0d-ede3-159d-40c3-0d8a2b261bee> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/842c07b2-e134-4090-96dc-faea91ea75da/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/c9d3ec0d-ede3-159d-40c3-0d8a2b261bee"^^xsd:anyURI ;

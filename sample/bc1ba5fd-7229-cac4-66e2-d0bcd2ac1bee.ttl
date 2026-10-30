@@ -67,8 +67,7 @@
     sdo:name "Christiaen Hendrickxsz"@nl .
 
 <https://ex.org/Source:bc1ba5fd-7229-cac4-66e2-d0bcd2ac1bee> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/371d6c69-02bf-402d-b3c0-b739d15e2d99/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/bc1ba5fd-7229-cac4-66e2-d0bcd2ac1bee"^^xsd:anyURI ;

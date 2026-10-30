@@ -68,8 +68,7 @@
     sdo:name "Jean Dieckhuyse"@nl .
 
 <https://ex.org/Source:6768a54a-a682-b835-385a-647e6dd919a1> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/bf6cecc5-a553-4d24-a61f-f7bbd27c7a95/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/6768a54a-a682-b835-385a-647e6dd919a1"^^xsd:anyURI ;

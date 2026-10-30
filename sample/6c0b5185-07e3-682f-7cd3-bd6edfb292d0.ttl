@@ -61,8 +61,7 @@
     sdo:name "Wibrandus Steen"@nl .
 
 <https://ex.org/Source:6c0b5185-07e3-682f-7cd3-bd6edfb292d0> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/40c6f09f-9a0d-4226-b9ab-be6e7e267096/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/6c0b5185-07e3-682f-7cd3-bd6edfb292d0"^^xsd:anyURI ;

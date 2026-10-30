@@ -91,8 +91,7 @@
     sdo:name "Joost Adriaensz"@nl .
 
 <https://ex.org/Source:c39e6b00-e1d5-ed7a-ca3c-7f5ac98162d0> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/0ffb9d37-4979-4eb1-a0cd-65281452c103/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/c39e6b00-e1d5-ed7a-ca3c-7f5ac98162d0"^^xsd:anyURI ;

@@ -1,0 +1,51 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:1d68afab-a541-07c2-4032-0f583197a32c> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:47b73424-b095-d55b-0ccd-54e778c53025> ;
+    picom:hasLifeEvent <https://ex.org/Source:47b73424-b095-d55b-0ccd-54e778c53025_huwelijk_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:description "Titel: de Heer"@nl ;
+    sdo:familyName "Dunant"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Charles Alexander"@nl ;
+    sdo:name "Charles Alexander Dunant"@nl ;
+    sdo:spouse <https://ex.org/Person:b057cfd1-4b71-efea-7a79-a810f76cb9be> .
+
+<https://ex.org/Person:b057cfd1-4b71-efea-7a79-a810f76cb9be> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:47b73424-b095-d55b-0ccd-54e778c53025> ;
+    picom:hasLifeEvent <https://ex.org/Source:47b73424-b095-d55b-0ccd-54e778c53025_huwelijk_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:description "Titel: Vrouwe"@nl ;
+    sdo:familyName "Kanter"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Johanna"@nl ;
+    sdo:name "Johanna Kanter"@nl ;
+    sdo:spouse <https://ex.org/Person:1d68afab-a541-07c2-4032-0f583197a32c> .
+
+<https://ex.org/Source:47b73424-b095-d55b-0ccd-54e778c53025> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549> ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/d71e11c1-5633-4d92-a2b6-34be8bde8ebc/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/47b73424-b095-d55b-0ccd-54e778c53025"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/d71e11c1-5633-4d92-a2b6-34be8bde8ebc/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1772-07-23"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1759-1795"@nl,
+        "211C"@nl,
+        "Impost: 60 gulden<br>Datum trouwen: 23-07-1772<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/0508/file/211C\">Inventarisnummer 211C van archiefnummer 0508 in Archieven</a>"@nl,
+        "Schepenbank (Oud Rechterlijk Archief) van Leiden"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Schepenbank (Oud Rechterlijk Archief) van Leiden, Deel: 211C, Periode: 1759-1795, (toegangsnr. 0508), inv.nr. 211C, C. 1759 jan.-1795 dec., 11, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/47b73424-b095-d55b-0ccd-54e778c53025"^^xsd:anyURI .
+
+<https://ex.org/Source:47b73424-b095-d55b-0ccd-54e778c53025_huwelijk_event> a picom:LifeEvent ;
+    picom:eventDate "1772-07-23"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:83 .
+

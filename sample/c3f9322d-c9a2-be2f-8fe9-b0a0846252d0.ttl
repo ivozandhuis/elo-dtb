@@ -58,8 +58,7 @@
     sdo:name "Sophia Blankert"@nl .
 
 <https://ex.org/Source:c3f9322d-c9a2-be2f-8fe9-b0a0846252d0> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/5e89503e-f217-4990-9feb-4bfdf6b259b0/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/c3f9322d-c9a2-be2f-8fe9-b0a0846252d0"^^xsd:anyURI ;

@@ -5,6 +5,19 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Person:a7f82c3e-a780-36f4-e3f8-2801c48bfc57> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:0b5280d7-583c-9b44-2a0b-9b532ff4b5f2> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Baas"@nl ;
+            pnv:givenName "Engel"@nl ;
+            pnv:literalName "Engel Janze Baas"@nl ;
+            pnv:patronym "Janze"@nl ] ;
+    sdo:children <https://ex.org/Person:900e1248-5241-cee7-ecf7-1e4fb3a93c30> ;
+    sdo:familyName "Baas"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Engel"@nl ;
+    sdo:name "Engel Janze Baas"@nl .
+
 <https://ex.org/Person:900e1248-5241-cee7-ecf7-1e4fb3a93c30> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:0b5280d7-583c-9b44-2a0b-9b532ff4b5f2> ;
     picom:hasRole picot_roles:479 ;
@@ -13,20 +26,7 @@
     sdo:givenName "Jan"@nl ;
     sdo:name "Jan Baas"@nl .
 
-<https://ex.org/Person:a7f82c3e-a780-36f4-e3f8-2801c48bfc57> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:0b5280d7-583c-9b44-2a0b-9b532ff4b5f2> ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:baseSurname "Baas"@nl ;
-            pnv:givenName "Engel"@nl ;
-            pnv:literalName "Engel Janze Baas"@nl ;
-            pnv:patronym "Janze"@nl ] ;
-    sdo:familyName "Baas"@nl ;
-    sdo:gender sdo:Male ;
-    sdo:givenName "Engel"@nl ;
-    sdo:name "Engel Janze Baas"@nl .
-
 <https://ex.org/Source:0b5280d7-583c-9b44-2a0b-9b532ff4b5f2> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/df09bbf5-2179-4772-95d6-688eedc86e79/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/0b5280d7-583c-9b44-2a0b-9b532ff4b5f2"^^xsd:anyURI ;

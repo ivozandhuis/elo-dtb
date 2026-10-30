@@ -74,8 +74,7 @@
     sdo:spouse <https://ex.org/Person:58cc475f-4569-8496-a638-fc1313f261f0> .
 
 <https://ex.org/Source:3bc9471b-6dfc-b704-3345-b306477debee> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/06d3f40a-64aa-4eea-96e1-5f0567c837c9/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/3bc9471b-6dfc-b704-3345-b306477debee"^^xsd:anyURI ;

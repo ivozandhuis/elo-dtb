@@ -58,8 +58,7 @@
     sdo:name "Hendrik Heus"@nl .
 
 <https://ex.org/Source:293722a3-55da-b9aa-7880-6a9dda3929a1> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/60dd4471-2bf3-497d-b39f-4221d67138b2/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/293722a3-55da-b9aa-7880-6a9dda3929a1"^^xsd:anyURI ;

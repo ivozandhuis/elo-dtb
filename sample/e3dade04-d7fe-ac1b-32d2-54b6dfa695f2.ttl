@@ -6,6 +6,7 @@
 
 <https://ex.org/Person:71f139ff-e6f2-19b2-5ac2-261cc16f1fe8> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:e3dade04-d7fe-ac1b-32d2-54b6dfa695f2> ;
+    sdo:children <https://ex.org/Person:9051bb60-7c78-5f80-71da-d7b52f0fe742> ;
     sdo:familyName "Houweling"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Jan"@nl ;
@@ -20,7 +21,6 @@
     sdo:name "NN Houweling"@nl .
 
 <https://ex.org/Source:e3dade04-d7fe-ac1b-32d2-54b6dfa695f2> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/cc227a68-3d86-4285-973f-b7f4ef7725b7/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/e3dade04-d7fe-ac1b-32d2-54b6dfa695f2"^^xsd:anyURI ;

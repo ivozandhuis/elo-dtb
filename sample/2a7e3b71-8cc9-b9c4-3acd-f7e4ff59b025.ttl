@@ -1,0 +1,51 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:9e32ab3f-770f-d8c3-448a-2f1ead9d8ebc> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:2a7e3b71-8cc9-b9c4-3acd-f7e4ff59b025> ;
+    picom:hasLifeEvent <https://ex.org/Source:2a7e3b71-8cc9-b9c4-3acd-f7e4ff59b025_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:birthPlace "Dornick"@nl ;
+    sdo:familyName "Wony"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Pacquet"@nl ;
+    sdo:name "Pacquet Wony"@nl ;
+    sdo:spouse <https://ex.org/Person:c6a8e6a4-4048-41de-c247-ebf0ee182a72> .
+
+<https://ex.org/Person:c6a8e6a4-4048-41de-c247-ebf0ee182a72> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:2a7e3b71-8cc9-b9c4-3acd-f7e4ff59b025> ;
+    picom:hasLifeEvent <https://ex.org/Source:2a7e3b71-8cc9-b9c4-3acd-f7e4ff59b025_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:birthPlace "Novile"@nl ;
+    sdo:familyName "Malijsij"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Pieter"@nl ;
+    sdo:name "Pieter Malijsij"@nl ;
+    sdo:spouse <https://ex.org/Person:9e32ab3f-770f-d8c3-448a-2f1ead9d8ebc> .
+
+<https://ex.org/Source:2a7e3b71-8cc9-b9c4-3acd-f7e4ff59b025> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549> ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/b9cb293e-10d2-454b-8148-cbe043e60f71/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/2a7e3b71-8cc9-b9c4-3acd-f7e4ff59b025"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/b9cb293e-10d2-454b-8148-cbe043e60f71/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1596-02-17"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1592-1597"@nl,
+        "3"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl,
+        "Getuigen bruidegom: Joos  Drucour   - Ousten del Tour   -     Getuigen bruid: Mary  Wony   - Mary  Venne   -      Waalse Kerk. Getuige bruidegom van Tourcongen en 2 van Mouvron<br>Datum ondertrouw: 17-02-1596<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/3\">Inventarisnummer 3 van archiefnummer 1004 in Archieven</a>"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 3, Periode: 159..., (toegangsnr. 1004), inv.nr. 3, C. Kerkelijk ondertrouwboek (NH) van Leiden, 1592 - maart 1597., 145v, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/2a7e3b71-8cc9-b9c4-3acd-f7e4ff59b025"^^xsd:anyURI .
+
+<https://ex.org/Source:2a7e3b71-8cc9-b9c4-3acd-f7e4ff59b025_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1596-02-17"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+

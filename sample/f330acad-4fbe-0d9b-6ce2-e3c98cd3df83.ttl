@@ -1,0 +1,62 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:2af916ee-e11d-73d4-a050-3d32b0831f70> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:f330acad-4fbe-0d9b-6ce2-e3c98cd3df83> ;
+    picom:hasLifeEvent <https://ex.org/Source:f330acad-4fbe-0d9b-6ce2-e3c98cd3df83_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:address "Haarlemstraat, Leiden"@nl ;
+    sdo:birthPlace "Leiden"@nl ;
+    sdo:description "Burgerlijke staat voor het huwelijk: j.d."@nl ;
+    sdo:familyName "Planke"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Eva"@nl ;
+    sdo:name "Eva Planke"@nl ;
+    sdo:spouse <https://ex.org/Person:54376197-2c27-5452-532b-d3f3d3aa7814> .
+
+<https://ex.org/Person:54376197-2c27-5452-532b-d3f3d3aa7814> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:f330acad-4fbe-0d9b-6ce2-e3c98cd3df83> ;
+    picom:hasLifeEvent <https://ex.org/Source:f330acad-4fbe-0d9b-6ce2-e3c98cd3df83_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Mer"@nl ;
+            pnv:givenName "Arent"@nl ;
+            pnv:literalName "Arent la Mer"@nl ;
+            pnv:surnamePrefix "la"@nl ] ;
+    sdo:address "Langegraft, Leiden"@nl ;
+    sdo:birthPlace "Leiden"@nl ;
+    sdo:description "Burgerlijke staat voor het huwelijk: j.m."@nl ;
+    sdo:familyName "la Mer"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Arent"@nl ;
+    sdo:hasOccupation "droogscheerder"@nl ;
+    sdo:name "Arent la Mer"@nl ;
+    sdo:spouse <https://ex.org/Person:2af916ee-e11d-73d4-a050-3d32b0831f70> .
+
+<https://ex.org/Source:f330acad-4fbe-0d9b-6ce2-e3c98cd3df83> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549> ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/b2cc1a7d-cfec-469f-96a0-76e6b5403f94/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/f330acad-4fbe-0d9b-6ce2-e3c98cd3df83"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/b2cc1a7d-cfec-469f-96a0-76e6b5403f94/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1721-06-05"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "112"@nl,
+        "1719-1722"@nl,
+        "Datum ondertrouw: 05-06-1721<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/112\">Inventarisnummer 112 van archiefnummer 1004 in Archieven</a>"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 112, Periode: 1..., (toegangsnr. 1004), inv.nr. 112, Trouwboek van de Hooglandse Kerk (NH) te Leiden, 28 april 1719 - 25 september 1722., 131, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/f330acad-4fbe-0d9b-6ce2-e3c98cd3df83"^^xsd:anyURI .
+
+<https://ex.org/Source:f330acad-4fbe-0d9b-6ce2-e3c98cd3df83_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1721-06-05"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+

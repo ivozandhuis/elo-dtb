@@ -79,8 +79,7 @@
     sdo:name "Claes van de Steene"@nl .
 
 <https://ex.org/Source:bebce6d5-eebb-7424-7f95-3b6d26e042d0> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/9a9bedd8-7e7e-4800-96ac-967396429cdb/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/bebce6d5-eebb-7424-7f95-3b6d26e042d0"^^xsd:anyURI ;

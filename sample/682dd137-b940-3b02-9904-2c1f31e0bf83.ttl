@@ -1,0 +1,70 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:125fc334-36a5-3bbd-c978-f920909fe21b> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:682dd137-b940-3b02-9904-2c1f31e0bf83> ;
+    picom:hasLifeEvent <https://ex.org/Source:682dd137-b940-3b02-9904-2c1f31e0bf83_huwelijk_event>,
+        <https://ex.org/Source:682dd137-b940-3b02-9904-2c1f31e0bf83_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:address "Breestraat, Leiden"@nl ;
+    sdo:birthPlace "Leiden"@nl ;
+    sdo:description "Burgerlijke staat voor het huwelijk: j.m."@nl ;
+    sdo:familyName "Ingenegen"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Pieter"@nl ;
+    sdo:hasOccupation "commissaris van het Amsterdamse veer"@nl ;
+    sdo:name "Pieter Ingenegen"@nl ;
+    sdo:spouse <https://ex.org/Person:44120c3f-3e34-2416-9455-eda91bddebed> .
+
+<https://ex.org/Person:44120c3f-3e34-2416-9455-eda91bddebed> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:682dd137-b940-3b02-9904-2c1f31e0bf83> ;
+    picom:hasLifeEvent <https://ex.org/Source:682dd137-b940-3b02-9904-2c1f31e0bf83_huwelijk_event>,
+        <https://ex.org/Source:682dd137-b940-3b02-9904-2c1f31e0bf83_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Weijden"@nl ;
+            pnv:givenName "Maria"@nl ;
+            pnv:literalName "Maria van der Weijden"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:address "Papegracht, Leiden"@nl ;
+    sdo:birthPlace "Delft"@nl ;
+    sdo:description "Burgerlijke staat voor het huwelijk: j.d."@nl ;
+    sdo:familyName "van der Weijden"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Maria"@nl ;
+    sdo:name "Maria van der Weijden"@nl ;
+    sdo:spouse <https://ex.org/Person:125fc334-36a5-3bbd-c978-f920909fe21b> .
+
+<https://ex.org/Source:682dd137-b940-3b02-9904-2c1f31e0bf83> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549> ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/8360e6b9-d314-42bf-8017-1ae7be8c74e5/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/682dd137-b940-3b02-9904-2c1f31e0bf83"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/8360e6b9-d314-42bf-8017-1ae7be8c74e5/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1730-04-20"@nl,
+        "1730-05-07"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1729-1733"@nl,
+        "195"@nl,
+        "Datum trouwen: 07-05-1730<br>Datum ondertrouw: 20-04-1730<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/195\">Inventarisnummer 195 van archiefnummer 1004 in Archieven</a>"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 195, Periode: 1..., (toegangsnr. 1004), inv.nr. 195, Trouwboek van de Hoogduits-Gereformeerde Gemeente te Leiden, 28 januari 1729 - 26 juni 1733., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/682dd137-b940-3b02-9904-2c1f31e0bf83"^^xsd:anyURI .
+
+<https://ex.org/Source:682dd137-b940-3b02-9904-2c1f31e0bf83_huwelijk_event> a picom:LifeEvent ;
+    picom:eventDate "1730-05-07"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:83 .
+
+<https://ex.org/Source:682dd137-b940-3b02-9904-2c1f31e0bf83_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1730-04-20"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+

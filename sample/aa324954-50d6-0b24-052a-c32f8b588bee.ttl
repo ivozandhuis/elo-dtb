@@ -69,8 +69,7 @@
     sdo:name "Jan Hogenboom"@nl .
 
 <https://ex.org/Source:aa324954-50d6-0b24-052a-c32f8b588bee> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/3b94ec3c-180a-4d6f-ba02-eb94b4413fc5/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/aa324954-50d6-0b24-052a-c32f8b588bee"^^xsd:anyURI ;

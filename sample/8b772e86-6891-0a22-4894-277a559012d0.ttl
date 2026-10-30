@@ -58,8 +58,7 @@
     sdo:name "Maentje Francken"@nl .
 
 <https://ex.org/Source:8b772e86-6891-0a22-4894-277a559012d0> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/b2320e2b-5fdc-4649-a29b-82a69b6b24fd/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/8b772e86-6891-0a22-4894-277a559012d0"^^xsd:anyURI ;

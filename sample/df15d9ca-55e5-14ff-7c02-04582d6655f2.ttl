@@ -5,6 +5,19 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Person:a799f625-8256-f45b-7ee9-e43d5b0be529> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:df15d9ca-55e5-14ff-7c02-04582d6655f2> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Narm"@nl ;
+            pnv:givenName "Johan"@nl ;
+            pnv:literalName "Johan de Narm"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:children <https://ex.org/Person:2f43478b-a702-d930-0662-4c733bae5c97> ;
+    sdo:familyName "de Narm"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Johan"@nl ;
+    sdo:name "Johan de Narm"@nl .
+
 <https://ex.org/Person:2f43478b-a702-d930-0662-4c733bae5c97> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:df15d9ca-55e5-14ff-7c02-04582d6655f2> ;
     picom:hasRole picot_roles:479 ;
@@ -18,20 +31,7 @@
     sdo:givenName "NN"@nl ;
     sdo:name "NN de Narm"@nl .
 
-<https://ex.org/Person:a799f625-8256-f45b-7ee9-e43d5b0be529> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:df15d9ca-55e5-14ff-7c02-04582d6655f2> ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:baseSurname "Narm"@nl ;
-            pnv:givenName "Johan"@nl ;
-            pnv:literalName "Johan de Narm"@nl ;
-            pnv:surnamePrefix "de"@nl ] ;
-    sdo:familyName "de Narm"@nl ;
-    sdo:gender sdo:Male ;
-    sdo:givenName "Johan"@nl ;
-    sdo:name "Johan de Narm"@nl .
-
 <https://ex.org/Source:df15d9ca-55e5-14ff-7c02-04582d6655f2> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
     sdo:dateModified "1970-01-01"^^xsd:date ;
     sdo:description "1319"@nl,
         "1635-1636"@nl,

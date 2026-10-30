@@ -94,8 +94,7 @@
     sdo:name "Maria van Vliet"@nl .
 
 <https://ex.org/Source:0489a302-3d83-6012-f3da-7e0d445e59a1> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/21568f75-181c-488c-b66f-d20113743621/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/0489a302-3d83-6012-f3da-7e0d445e59a1"^^xsd:anyURI ;

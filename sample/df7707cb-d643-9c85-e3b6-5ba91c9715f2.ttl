@@ -19,7 +19,6 @@
     sdo:name "Aaltje van Rijn"@nl .
 
 <https://ex.org/Source:df7707cb-d643-9c85-e3b6-5ba91c9715f2> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/d1c3f860-cd35-42d0-8e67-2896b447cf52/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/df7707cb-d643-9c85-e3b6-5ba91c9715f2"^^xsd:anyURI ;

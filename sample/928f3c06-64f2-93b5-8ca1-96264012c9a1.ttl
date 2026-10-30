@@ -63,8 +63,7 @@
     sdo:name "Pierre Alleaume"@nl .
 
 <https://ex.org/Source:928f3c06-64f2-93b5-8ca1-96264012c9a1> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/a19af049-1832-4144-bdae-2277203712fd/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/928f3c06-64f2-93b5-8ca1-96264012c9a1"^^xsd:anyURI ;

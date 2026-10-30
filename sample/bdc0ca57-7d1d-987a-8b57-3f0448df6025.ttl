@@ -1,0 +1,91 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:116bf083-4fbf-529d-aca7-661d678747b9> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:bdc0ca57-7d1d-987a-8b57-3f0448df6025> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Borchs"@nl ;
+            pnv:givenName "Engeltgen"@nl ;
+            pnv:literalName "Engeltgen van der Borchs"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:address "Havenstraet"@nl ;
+    sdo:description "getuige van de bruid, relatie tot de bruid: bekende, adres: Havenstraet"@nl ;
+    sdo:familyName "van der Borchs"@nl ;
+    sdo:givenName "Engeltgen"@nl ;
+    sdo:name "Engeltgen van der Borchs"@nl .
+
+<https://ex.org/Person:2697dd39-0f04-a282-a709-92b006458dd6> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:bdc0ca57-7d1d-987a-8b57-3f0448df6025> ;
+    picom:hasLifeEvent <https://ex.org/Source:bdc0ca57-7d1d-987a-8b57-3f0448df6025_huwelijk_event>,
+        <https://ex.org/Source:bdc0ca57-7d1d-987a-8b57-3f0448df6025_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Elsgen"@nl ;
+            pnv:literalName "Elsgen Cornelisdr"@nl ;
+            pnv:patronym "Cornelisdr"@nl ] ;
+    sdo:address "Havenstraet"@nl ;
+    sdo:birthPlace "Eupen"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Elsgen"@nl ;
+    sdo:knows <https://ex.org/Person:116bf083-4fbf-529d-aca7-661d678747b9> ;
+    sdo:name "Elsgen Cornelisdr"@nl ;
+    sdo:spouse <https://ex.org/Person:980f2021-4648-2e74-a008-18ad2b157735> .
+
+<https://ex.org/Person:6f7aeff0-5014-05f4-8b15-e92ed80961e5> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:bdc0ca57-7d1d-987a-8b57-3f0448df6025> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:address "Havenstraet"@nl ;
+    sdo:description "getuige van de bruidegom, relatie tot de bruidegom: bekende, adres: Havenstraet"@nl ;
+    sdo:familyName "Snaphaen"@nl ;
+    sdo:givenName "Pieter"@nl ;
+    sdo:name "Pieter Snaphaen"@nl .
+
+<https://ex.org/Person:980f2021-4648-2e74-a008-18ad2b157735> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:bdc0ca57-7d1d-987a-8b57-3f0448df6025> ;
+    picom:hasLifeEvent <https://ex.org/Source:bdc0ca57-7d1d-987a-8b57-3f0448df6025_huwelijk_event>,
+        <https://ex.org/Source:bdc0ca57-7d1d-987a-8b57-3f0448df6025_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:address "Havenstraet"@nl ;
+    sdo:birthPlace "Lennippen"@nl ;
+    sdo:familyName "Saelbrecht"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Pieter"@nl ;
+    sdo:hasOccupation "lakenwerker"@nl ;
+    sdo:knows <https://ex.org/Person:6f7aeff0-5014-05f4-8b15-e92ed80961e5> ;
+    sdo:name "Pieter Saelbrecht"@nl ;
+    sdo:spouse <https://ex.org/Person:2697dd39-0f04-a282-a709-92b006458dd6> .
+
+<https://ex.org/Source:bdc0ca57-7d1d-987a-8b57-3f0448df6025_huwelijk_event> a picom:LifeEvent ;
+    picom:eventDate "1646-09-16"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:83 .
+
+<https://ex.org/Source:bdc0ca57-7d1d-987a-8b57-3f0448df6025_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1646-08-24"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
+<https://ex.org/Source:bdc0ca57-7d1d-987a-8b57-3f0448df6025> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549> ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/0bd9e7fb-96b8-4b6c-ab83-5aa87581d5e1/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/bdc0ca57-7d1d-987a-8b57-3f0448df6025"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/0bd9e7fb-96b8-4b6c-ab83-5aa87581d5e1/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1646-08-24"@nl,
+        "1646-09-16"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1646-1661"@nl,
+        "200"@nl,
+        "Datum trouwen: 16-09-1646<br>Datum ondertrouw: 24-08-1646<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/200\">Inventarisnummer 200 van archiefnummer 1004 in Archieven</a>"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 200, Periode: 1..., (toegangsnr. 1004), inv.nr. 200, D. Ondertrouwboek en trouwboek voor schepenen van Leiden, augustus 1646 - augustus 1661., 1v, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/bdc0ca57-7d1d-987a-8b57-3f0448df6025"^^xsd:anyURI .
+

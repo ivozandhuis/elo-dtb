@@ -69,8 +69,7 @@
     sdo:name "Jan Boom"@nl .
 
 <https://ex.org/Source:1474302e-efe3-bff3-bd7c-b126f9f029a1> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/8abffbc9-7664-40aa-bc78-73c7a8427473/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/1474302e-efe3-bff3-bd7c-b126f9f029a1"^^xsd:anyURI ;

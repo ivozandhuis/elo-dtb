@@ -18,7 +18,6 @@
     sdo:name "Neeltie Corssen"@nl .
 
 <https://ex.org/Source:13dccccb-d69b-b294-5c9a-b156eb00a5f2> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/39a566b8-6a63-4bf4-9a8b-336900179a41/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/13dccccb-d69b-b294-5c9a-b156eb00a5f2"^^xsd:anyURI ;

@@ -1,0 +1,76 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:6b4adc36-a5a9-c192-7d02-33a1a78179ed> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:4359e16f-1128-0614-f249-05e79c6e8f83> ;
+    picom:hasLifeEvent <https://ex.org/Source:4359e16f-1128-0614-f249-05e79c6e8f83_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:address "Oraniegraft"@nl ;
+    sdo:birthPlace "Leyden"@nl ;
+    sdo:familyName "Verstraten"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Samuel"@nl ;
+    sdo:hasOccupation "lakenwerker"@nl ;
+    sdo:name "Samuel Verstraten"@nl ;
+    sdo:sibling <https://ex.org/Person:b2b360b4-01bc-6eeb-0292-9d544b1e0821> ;
+    sdo:spouse <https://ex.org/Person:a969e38e-03cf-7251-fee1-fc61a9fcfb4f> .
+
+<https://ex.org/Person:a969e38e-03cf-7251-fee1-fc61a9fcfb4f> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:4359e16f-1128-0614-f249-05e79c6e8f83> ;
+    picom:hasLifeEvent <https://ex.org/Source:4359e16f-1128-0614-f249-05e79c6e8f83_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:address "Verwerstraet"@nl ;
+    sdo:birthPlace "Naerden"@nl ;
+    sdo:familyName "Kolijn"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Grietge"@nl ;
+    sdo:name "Grietge Kolijn"@nl ;
+    sdo:parent <https://ex.org/Person:bcdeffea-089c-3fe8-0a51-0a978cde7038> ;
+    sdo:spouse <https://ex.org/Person:6b4adc36-a5a9-c192-7d02-33a1a78179ed> .
+
+<https://ex.org/Person:b2b360b4-01bc-6eeb-0292-9d544b1e0821> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:4359e16f-1128-0614-f249-05e79c6e8f83> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:address "Oude Vest"@nl ;
+    sdo:description "getuige van de bruidegom, relatie tot de bruidegom: broer, adres: Oude Vest"@nl ;
+    sdo:familyName "Verstraten"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Johannes"@nl ;
+    sdo:name "Johannes Verstraten"@nl .
+
+<https://ex.org/Person:bcdeffea-089c-3fe8-0a51-0a978cde7038> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:4359e16f-1128-0614-f249-05e79c6e8f83> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:address "Verwerstraet"@nl ;
+    sdo:description "getuige van de bruid, relatie tot de bruid: moeder, adres: Verwerstraet"@nl ;
+    sdo:familyName "Tulck"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Grietge"@nl ;
+    sdo:name "Grietge Tulck"@nl .
+
+<https://ex.org/Source:4359e16f-1128-0614-f249-05e79c6e8f83_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1694-05-07"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
+<https://ex.org/Source:4359e16f-1128-0614-f249-05e79c6e8f83> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549> ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/feb7b2fb-1e1e-4e72-9917-cddaa332eeae/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/4359e16f-1128-0614-f249-05e79c6e8f83"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/feb7b2fb-1e1e-4e72-9917-cddaa332eeae/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1694-05-07"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1690-1694"@nl,
+        "25"@nl,
+        "Datum ondertrouw: 07-05-1694<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/25\">Inventarisnummer 25 van archiefnummer 1004 in Archieven</a>"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 25, Periode: 16..., (toegangsnr. 1004), inv.nr. 25, AA. Kerkelijk ondertrouwboek (NH) van Leiden, april 1690 - mei 1694., 288v, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/4359e16f-1128-0614-f249-05e79c6e8f83"^^xsd:anyURI .
+

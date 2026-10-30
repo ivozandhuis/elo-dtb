@@ -79,8 +79,7 @@
     sdo:name "Willem de Koning"@nl .
 
 <https://ex.org/Source:69580d73-9258-65da-42fd-69589be3b2d0> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/16ca2b75-1b98-4dbc-99c4-5b2fde1f7c5b/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/69580d73-9258-65da-42fd-69589be3b2d0"^^xsd:anyURI ;

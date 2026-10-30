@@ -1,0 +1,92 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:21f5eb45-80a3-928a-de71-cc6ad5d3f569> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:8c6abe0a-3b9f-315c-d68f-8c2b5c49c025> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Smith"@nl ;
+            pnv:givenName "Hendrick"@nl ;
+            pnv:literalName "Hendrick Alderts Smith"@nl ;
+            pnv:patronym "Alderts"@nl ] ;
+    sdo:address "Crauwelsteegh"@nl ;
+    sdo:description "getuige van de bruidegom, relatie tot de bruidegom: bekende, adres: Crauwelsteegh"@nl ;
+    sdo:familyName "Smith"@nl ;
+    sdo:givenName "Hendrick"@nl ;
+    sdo:name "Hendrick Alderts Smith"@nl .
+
+<https://ex.org/Person:a91b4b2b-64bb-22a6-9c20-118c5e2ca0b3> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:8c6abe0a-3b9f-315c-d68f-8c2b5c49c025> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Catharina"@nl ;
+            pnv:literalName "Catharina Joris"@nl ;
+            pnv:patronym "Joris"@nl ] ;
+    sdo:address "Crauwelsteegh"@nl ;
+    sdo:description "getuige van de bruid, relatie tot de bruid: zuster, adres: Crauwelsteegh"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Catharina"@nl ;
+    sdo:name "Catharina Joris"@nl .
+
+<https://ex.org/Person:ab37ccb5-1107-2acc-1f73-8043834c663f> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:8c6abe0a-3b9f-315c-d68f-8c2b5c49c025> ;
+    picom:hasLifeEvent <https://ex.org/Source:8c6abe0a-3b9f-315c-d68f-8c2b5c49c025_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Meer"@nl ;
+            pnv:givenName "Jacob"@nl ;
+            pnv:literalName "Jacob van der Meer"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:address "Zuytsy"@nl ;
+    sdo:birthPlace "Leyden"@nl ;
+    sdo:familyName "van der Meer"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jacob"@nl ;
+    sdo:hasOccupation "wolwasser"@nl ;
+    sdo:knows <https://ex.org/Person:21f5eb45-80a3-928a-de71-cc6ad5d3f569> ;
+    sdo:name "Jacob van der Meer"@nl ;
+    sdo:spouse <https://ex.org/Person:caf7a8b3-1cb1-59fe-baa1-f4b64d09b952> .
+
+<https://ex.org/Person:caf7a8b3-1cb1-59fe-baa1-f4b64d09b952> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:8c6abe0a-3b9f-315c-d68f-8c2b5c49c025> ;
+    picom:hasLifeEvent <https://ex.org/Source:8c6abe0a-3b9f-315c-d68f-8c2b5c49c025_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Aeltge"@nl ;
+            pnv:literalName "Aeltge Joris"@nl ;
+            pnv:patronym "Joris"@nl ] ;
+    sdo:address "Zuytsy"@nl ;
+    sdo:birthPlace "Delft"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Aeltge"@nl ;
+    sdo:name "Aeltge Joris"@nl ;
+    sdo:sibling <https://ex.org/Person:a91b4b2b-64bb-22a6-9c20-118c5e2ca0b3> ;
+    sdo:spouse <https://ex.org/Person:ab37ccb5-1107-2acc-1f73-8043834c663f> .
+
+<https://ex.org/Source:8c6abe0a-3b9f-315c-d68f-8c2b5c49c025_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1685-03-17"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
+<https://ex.org/Source:8c6abe0a-3b9f-315c-d68f-8c2b5c49c025> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549> ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/55071406-7dab-47bd-9feb-e1abcaedddb3/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/8c6abe0a-3b9f-315c-d68f-8c2b5c49c025"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/55071406-7dab-47bd-9feb-e1abcaedddb3/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1685-03-17"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1682-1686"@nl,
+        "23"@nl,
+        "Datum ondertrouw: 17-03-1685<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/23\">Inventarisnummer 23 van archiefnummer 1004 in Archieven</a>"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 23, Periode: 16..., (toegangsnr. 1004), inv.nr. 23, Y. Kerkelijk ondertrouwboek (NH) van Leiden, 1682 - januari 1686., 219v, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/8c6abe0a-3b9f-315c-d68f-8c2b5c49c025"^^xsd:anyURI .
+

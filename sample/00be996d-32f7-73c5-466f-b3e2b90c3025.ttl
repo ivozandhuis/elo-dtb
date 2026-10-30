@@ -1,0 +1,92 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:6d49e39b-aefb-36fc-2c14-f0a6c5b1563c> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:00be996d-32f7-73c5-466f-b3e2b90c3025> ;
+    picom:hasLifeEvent <https://ex.org/Source:00be996d-32f7-73c5-466f-b3e2b90c3025_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Adriaentgen"@nl ;
+            pnv:literalName "Adriaentgen Willemsdr"@nl ;
+            pnv:patronym "Willemsdr"@nl ] ;
+    sdo:address "Suytchingel"@nl ;
+    sdo:birthPlace "Leyden"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Adriaentgen"@nl ;
+    sdo:name "Adriaentgen Willemsdr"@nl ;
+    sdo:parent <https://ex.org/Person:cd16917f-6de4-77ba-578b-4b7eb3cada1b> ;
+    sdo:spouse <https://ex.org/Person:a0a72828-4b31-3508-af99-0852ff7d6575> .
+
+<https://ex.org/Person:a0a72828-4b31-3508-af99-0852ff7d6575> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:00be996d-32f7-73c5-466f-b3e2b90c3025> ;
+    picom:hasLifeEvent <https://ex.org/Source:00be996d-32f7-73c5-466f-b3e2b90c3025_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Wijser"@nl ;
+            pnv:givenName "Jan"@nl ;
+            pnv:literalName "Jan de Wijser"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:address "Middelwech"@nl ;
+    sdo:birthPlace "Yperen"@nl ;
+    sdo:familyName "de Wijser"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jan"@nl ;
+    sdo:hasOccupation "lakenbereider"@nl ;
+    sdo:knows <https://ex.org/Person:c8a2d885-5d92-33dc-bbd1-ca6a27707f41> ;
+    sdo:name "Jan de Wijser"@nl ;
+    sdo:spouse <https://ex.org/Person:6d49e39b-aefb-36fc-2c14-f0a6c5b1563c> .
+
+<https://ex.org/Person:c8a2d885-5d92-33dc-bbd1-ca6a27707f41> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:00be996d-32f7-73c5-466f-b3e2b90c3025> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Dutmarsen"@nl ;
+            pnv:givenName "Heyndrick"@nl ;
+            pnv:literalName "Heyndrick van Dutmarsen"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:address "Middelwech"@nl ;
+    sdo:description "getuige van de bruidegom, relatie tot de bruidegom: bekende, adres: Middelwech"@nl ;
+    sdo:familyName "van Dutmarsen"@nl ;
+    sdo:givenName "Heyndrick"@nl ;
+    sdo:name "Heyndrick van Dutmarsen"@nl .
+
+<https://ex.org/Person:cd16917f-6de4-77ba-578b-4b7eb3cada1b> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:00be996d-32f7-73c5-466f-b3e2b90c3025> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Maertge"@nl ;
+            pnv:literalName "Maertge Jacobs"@nl ;
+            pnv:patronym "Jacobs"@nl ] ;
+    sdo:address "Suytchingel"@nl ;
+    sdo:description "getuige van de bruid, relatie tot de bruid: moeder, adres: Suytchingel"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Maertge"@nl ;
+    sdo:name "Maertge Jacobs"@nl .
+
+<https://ex.org/Source:00be996d-32f7-73c5-466f-b3e2b90c3025_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1650-10-27"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
+<https://ex.org/Source:00be996d-32f7-73c5-466f-b3e2b90c3025> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549> ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/f97893d7-15b3-4217-9a17-15b7bf8556b1/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/00be996d-32f7-73c5-466f-b3e2b90c3025"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/f97893d7-15b3-4217-9a17-15b7bf8556b1/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1650-10-27"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "14"@nl,
+        "1647-1653"@nl,
+        "Datum ondertrouw: 27-10-1650<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/14\">Inventarisnummer 14 van archiefnummer 1004 in Archieven</a>"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 14, Periode: 16..., (toegangsnr. 1004), inv.nr. 14, O. Kerkelijk ondertrouwboek (NH) van Leiden, juli 1647 - juni 1653., 188v, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/00be996d-32f7-73c5-466f-b3e2b90c3025"^^xsd:anyURI .
+

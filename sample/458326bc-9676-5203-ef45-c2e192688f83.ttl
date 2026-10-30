@@ -1,0 +1,69 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:203e1e9a-ce2a-8f06-d4c5-6e86f6f08023> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:458326bc-9676-5203-ef45-c2e192688f83> ;
+    picom:hasLifeEvent <https://ex.org/Source:458326bc-9676-5203-ef45-c2e192688f83_huwelijk_event>,
+        <https://ex.org/Source:458326bc-9676-5203-ef45-c2e192688f83_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:address "Noordwijk Binnen"@nl ;
+    sdo:birthPlace "Noordwijk Binnen"@nl ;
+    sdo:description "Burgerlijke staat voor het huwelijk: j.m."@nl ;
+    sdo:familyName "La Ros"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Leendert"@nl ;
+    sdo:name "Leendert La Ros"@nl ;
+    sdo:spouse <https://ex.org/Person:b3e337f8-3a23-65f6-f493-7cd4f1fb69b6> .
+
+<https://ex.org/Person:b3e337f8-3a23-65f6-f493-7cd4f1fb69b6> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:458326bc-9676-5203-ef45-c2e192688f83> ;
+    picom:hasLifeEvent <https://ex.org/Source:458326bc-9676-5203-ef45-c2e192688f83_huwelijk_event>,
+        <https://ex.org/Source:458326bc-9676-5203-ef45-c2e192688f83_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Jong"@nl ;
+            pnv:givenName "Aaftje"@nl ;
+            pnv:literalName "Aaftje de Jong"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:address "Noordwijk Binnen"@nl ;
+    sdo:birthPlace "Katwijk aan Zee"@nl ;
+    sdo:description "Burgerlijke staat voor het huwelijk: j.d."@nl ;
+    sdo:familyName "de Jong"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Aaftje"@nl ;
+    sdo:name "Aaftje de Jong"@nl ;
+    sdo:spouse <https://ex.org/Person:203e1e9a-ce2a-8f06-d4c5-6e86f6f08023> .
+
+<https://ex.org/Source:458326bc-9676-5203-ef45-c2e192688f83> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549> ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/5ba7488c-299b-44aa-a49c-26aaeba1f06d/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/458326bc-9676-5203-ef45-c2e192688f83"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/5ba7488c-299b-44aa-a49c-26aaeba1f06d/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1770-04-20"@nl,
+        "1770-05-06"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1620-1810"@nl,
+        "2"@nl,
+        "Datum trouwen: 06-05-1770<br>Datum ondertrouw: 20-04-1770<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/0910/file/2\">Inventarisnummer 2 van archiefnummer 0910 in Archieven</a>"@nl,
+        "Doop-, Trouw- en Begraafregisters (retroacta B.S.) Noordwijk"@nl ;
+    sdo:locationCreated "Noordwijk"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, Trouw- en Begraafregisters (retroacta B.S.) Noordwijk, Deel: 2, Periode: 1620..., (toegangsnr. 0910), inv.nr. 2, Trouwboek (NH) van Noordwijk-Binnen, 1620 april 10 - 1810 november 11., 293, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/458326bc-9676-5203-ef45-c2e192688f83"^^xsd:anyURI .
+
+<https://ex.org/Source:458326bc-9676-5203-ef45-c2e192688f83_huwelijk_event> a picom:LifeEvent ;
+    picom:eventDate "1770-05-06"@nl ;
+    picom:eventPlace "Noordwijk"@nl ;
+    picom:eventType picot_eventtypes:83 .
+
+<https://ex.org/Source:458326bc-9676-5203-ef45-c2e192688f83_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1770-04-20"@nl ;
+    picom:eventPlace "Noordwijk"@nl ;
+    picom:eventType picot_eventtypes:99 .
+

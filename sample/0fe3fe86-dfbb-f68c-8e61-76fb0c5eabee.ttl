@@ -75,8 +75,7 @@
         <https://ex.org/Person:c892f6a1-b1dd-51d1-c718-92e95e214120> .
 
 <https://ex.org/Source:0fe3fe86-dfbb-f68c-8e61-76fb0c5eabee> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/42e4dd62-5a9f-459b-8f6f-70f7cfbaa8f9/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/0fe3fe86-dfbb-f68c-8e61-76fb0c5eabee"^^xsd:anyURI ;

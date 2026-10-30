@@ -58,8 +58,7 @@
     sdo:name "Dirkje Blijkersveld"@nl .
 
 <https://ex.org/Source:51b91c81-3f9b-2539-036d-03d19a4072d0> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/3f591905-7050-4dff-93a7-334778494bf5/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/51b91c81-3f9b-2539-036d-03d19a4072d0"^^xsd:anyURI ;

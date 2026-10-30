@@ -1,0 +1,103 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:45f08df2-2222-6a5a-da66-63d33384d747> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:aa07d312-dc16-f1e4-ffbd-ea6b13255025> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Veltgroen"@nl ;
+            pnv:givenName "Annetge"@nl ;
+            pnv:literalName "Annetge Willems Veltgroen"@nl ;
+            pnv:patronym "Willems"@nl ] ;
+    sdo:address "Cort Rapenburch"@nl ;
+    sdo:description "getuige van de bruid, relatie tot de bruid: nicht, adres: Cort Rapenburch"@nl ;
+    sdo:familyName "Veltgroen"@nl ;
+    sdo:givenName "Annetge"@nl ;
+    sdo:name "Annetge Willems Veltgroen"@nl .
+
+<https://ex.org/Person:14cbedb5-7610-b9dc-2f53-12318f7667e4> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:aa07d312-dc16-f1e4-ffbd-ea6b13255025> ;
+    picom:hasLifeEvent <https://ex.org/Source:aa07d312-dc16-f1e4-ffbd-ea6b13255025_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Bollaert"@nl ;
+            pnv:givenName "Elysabeth"@nl ;
+            pnv:literalName "Elysabeth Clementsdr Bollaert"@nl ;
+            pnv:patronym "Clementsdr"@nl ] ;
+    sdo:address "Cellebroedersgraft"@nl ;
+    sdo:birthPlace "Nieupoort"@nl ;
+    sdo:familyName "Bollaert"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Elysabeth"@nl ;
+    sdo:name "Elysabeth Clementsdr Bollaert"@nl ;
+    sdo:spouse <https://ex.org/Person:7953d988-f800-da18-fdce-b4e05bb51ce0> .
+
+<https://ex.org/Person:7953d988-f800-da18-fdce-b4e05bb51ce0> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:aa07d312-dc16-f1e4-ffbd-ea6b13255025> ;
+    picom:hasLifeEvent <https://ex.org/Source:aa07d312-dc16-f1e4-ffbd-ea6b13255025_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    picom:isWidOf <https://ex.org/Person:dcbad408-a5e8-6b50-3543-c522e387d389> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Duyren"@nl ;
+            pnv:givenName "Maerten"@nl ;
+            pnv:literalName "Maerten Jacobsz van Duyren"@nl ;
+            pnv:patronym "Jacobsz"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:address "Caerdesteech"@nl ;
+    sdo:familyName "van Duyren"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Maerten"@nl ;
+    sdo:knows <https://ex.org/Person:ff1159c1-6041-bee1-ae7c-7fb6d2e09912> ;
+    sdo:name "Maerten Jacobsz van Duyren"@nl ;
+    sdo:spouse <https://ex.org/Person:14cbedb5-7610-b9dc-2f53-12318f7667e4> .
+
+<https://ex.org/Person:dcbad408-a5e8-6b50-3543-c522e387d389> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:aa07d312-dc16-f1e4-ffbd-ea6b13255025> ;
+    picom:deceased true ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Nieusté"@nl ;
+            pnv:givenName "Annetje"@nl ;
+            pnv:literalName "Annetje Jacobs Nieusté"@nl ;
+            pnv:patronym "Jacobs"@nl ] ;
+    sdo:description "Relatie tot bruidegom: wed."@nl ;
+    sdo:familyName "Nieusté"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Annetje"@nl ;
+    sdo:name "Annetje Jacobs Nieusté"@nl .
+
+<https://ex.org/Person:ff1159c1-6041-bee1-ae7c-7fb6d2e09912> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:aa07d312-dc16-f1e4-ffbd-ea6b13255025> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:address "Caerdesteech"@nl ;
+    sdo:description "getuige van de bruidegom, relatie tot de bruidegom: bekende, adres: Caerdesteech"@nl ;
+    sdo:familyName "Vis"@nl ;
+    sdo:givenName "Willem"@nl ;
+    sdo:name "Willem Vis"@nl .
+
+<https://ex.org/Source:aa07d312-dc16-f1e4-ffbd-ea6b13255025_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1661-08-27"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
+<https://ex.org/Source:aa07d312-dc16-f1e4-ffbd-ea6b13255025> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549> ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/07c1266a-bb50-4485-b9ea-62cb0842054e/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/aa07d312-dc16-f1e4-ffbd-ea6b13255025"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/07c1266a-bb50-4485-b9ea-62cb0842054e/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1661-08-27"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1661-1664"@nl,
+        "17"@nl,
+        "Datum ondertrouw: 27-08-1661<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/17\">Inventarisnummer 17 van archiefnummer 1004 in Archieven</a>"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 17, Periode: 16..., (toegangsnr. 1004), inv.nr. 17, R. Kerkelijk ondertrouwboek (NH) van Leiden, februari 1661 - mei 1664., 41, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/aa07d312-dc16-f1e4-ffbd-ea6b13255025"^^xsd:anyURI .
+

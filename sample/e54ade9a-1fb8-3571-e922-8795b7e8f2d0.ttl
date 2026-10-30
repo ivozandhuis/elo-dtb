@@ -85,8 +85,7 @@
     sdo:name "Annitje Gerrits"@nl .
 
 <https://ex.org/Source:e54ade9a-1fb8-3571-e922-8795b7e8f2d0> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/1b8b4466-502f-4579-9c95-3ff22c2c3f1d/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/e54ade9a-1fb8-3571-e922-8795b7e8f2d0"^^xsd:anyURI ;

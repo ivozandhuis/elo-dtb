@@ -82,8 +82,7 @@
     sdo:name "Katrina van Dalen"@nl .
 
 <https://ex.org/Source:f41c2e7f-bb23-bbdc-36ff-365be01fabee> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/8286f69a-6ca0-4140-99b8-acbae0be1497/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/f41c2e7f-bb23-bbdc-36ff-365be01fabee"^^xsd:anyURI ;

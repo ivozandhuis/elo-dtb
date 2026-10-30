@@ -30,7 +30,6 @@
     sdo:name "Coenraad van der Pals"@nl .
 
 <https://ex.org/Source:668a55d9-7237-f171-25ba-d58f84da85f2> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/7ef2901e-3b57-4198-8c53-168edc574f71/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/668a55d9-7237-f171-25ba-d58f84da85f2"^^xsd:anyURI ;

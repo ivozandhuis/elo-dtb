@@ -58,8 +58,7 @@
     sdo:name "Elisabeth Bonte"@nl .
 
 <https://ex.org/Source:04b58c6c-1eb6-9c1e-ccbc-6445c56e32d0> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/1a4f0225-0d99-4d89-a905-68c6891dc8a3/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/04b58c6c-1eb6-9c1e-ccbc-6445c56e32d0"^^xsd:anyURI ;

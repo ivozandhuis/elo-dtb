@@ -5,6 +5,19 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Person:e966dc24-6868-b352-7692-a4cb36115008> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:de506698-7083-cf10-510d-140f817395f2> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Heemnskerk"@nl ;
+            pnv:givenName "Sijmon"@nl ;
+            pnv:literalName "Sijmon Aartse Heemnskerk"@nl ;
+            pnv:patronym "Aartse"@nl ] ;
+    sdo:children <https://ex.org/Person:419852b7-cf54-ce84-4cf2-499ef0bab236> ;
+    sdo:familyName "Heemnskerk"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Sijmon"@nl ;
+    sdo:name "Sijmon Aartse Heemnskerk"@nl .
+
 <https://ex.org/Person:419852b7-cf54-ce84-4cf2-499ef0bab236> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:de506698-7083-cf10-510d-140f817395f2> ;
     picom:hasRole picot_roles:479 ;
@@ -13,20 +26,7 @@
     sdo:givenName "Jan"@nl ;
     sdo:name "Jan Heemskerk"@nl .
 
-<https://ex.org/Person:e966dc24-6868-b352-7692-a4cb36115008> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:de506698-7083-cf10-510d-140f817395f2> ;
-    sdo:additionalName [ a pnv:PersonName ;
-            pnv:baseSurname "Heemnskerk"@nl ;
-            pnv:givenName "Sijmon"@nl ;
-            pnv:literalName "Sijmon Aartse Heemnskerk"@nl ;
-            pnv:patronym "Aartse"@nl ] ;
-    sdo:familyName "Heemnskerk"@nl ;
-    sdo:gender sdo:Male ;
-    sdo:givenName "Sijmon"@nl ;
-    sdo:name "Sijmon Aartse Heemnskerk"@nl .
-
 <https://ex.org/Source:de506698-7083-cf10-510d-140f817395f2> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/113bc53b-f533-446f-bf06-1c656ff52802/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/de506698-7083-cf10-510d-140f817395f2"^^xsd:anyURI ;

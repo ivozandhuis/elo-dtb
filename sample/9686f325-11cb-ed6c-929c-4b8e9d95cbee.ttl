@@ -69,8 +69,7 @@
     sdo:name "Otto Jacobus van der Vin"@nl .
 
 <https://ex.org/Source:9686f325-11cb-ed6c-929c-4b8e9d95cbee> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/4694377a-c1dd-4531-ad24-6c4df1d242e4/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/9686f325-11cb-ed6c-929c-4b8e9d95cbee"^^xsd:anyURI ;

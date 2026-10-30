@@ -1,0 +1,84 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:0f9ed5fc-dd40-2be9-b14a-32ebc3027cc0> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:babe0318-5df1-3719-c63a-892a80f1d025> ;
+    picom:hasLifeEvent <https://ex.org/Source:babe0318-5df1-3719-c63a-892a80f1d025_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Ruijter"@nl ;
+            pnv:givenName "Leuntje"@nl ;
+            pnv:literalName "Leuntje de Ruijter"@nl ;
+            pnv:surnamePrefix "de"@nl ] ;
+    sdo:address "Zuijd Rundersteeg"@nl ;
+    sdo:birthPlace "Leijden"@nl ;
+    sdo:description "Burgerlijke staat voor het huwelijk: j.d."@nl ;
+    sdo:familyName "de Ruijter"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Leuntje"@nl ;
+    sdo:name "Leuntje de Ruijter"@nl ;
+    sdo:parent <https://ex.org/Person:7b38f1c2-ee27-9b14-501d-a393fcdea83e> ;
+    sdo:spouse <https://ex.org/Person:1dd816d5-86d3-bb07-9b68-3ace24e6e311> .
+
+<https://ex.org/Person:1dd816d5-86d3-bb07-9b68-3ace24e6e311> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:babe0318-5df1-3719-c63a-892a80f1d025> ;
+    picom:hasLifeEvent <https://ex.org/Source:babe0318-5df1-3719-c63a-892a80f1d025_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:address "Korte Bouwelouwesteeg"@nl ;
+    sdo:birthPlace "Leijden"@nl ;
+    sdo:description "Burgerlijke staat voor het huwelijk: j.m."@nl ;
+    sdo:familyName "Berg"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Philippus"@nl ;
+    sdo:hasOccupation "greijnwerker"@nl ;
+    sdo:name "Philippus Berg"@nl ;
+    sdo:parent <https://ex.org/Person:a9070f1f-e221-d8a6-e333-8fabca27ec7f> ;
+    sdo:spouse <https://ex.org/Person:0f9ed5fc-dd40-2be9-b14a-32ebc3027cc0> .
+
+<https://ex.org/Person:7b38f1c2-ee27-9b14-501d-a393fcdea83e> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:babe0318-5df1-3719-c63a-892a80f1d025> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:address "Zuijd Rundersteeg"@nl ;
+    sdo:description "getuige van de bruid, relatie tot de bruid: moeder, adres: Zuijd Rundersteeg"@nl ;
+    sdo:familyName "Verbeek"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Jannetje"@nl ;
+    sdo:name "Jannetje Verbeek"@nl .
+
+<https://ex.org/Person:a9070f1f-e221-d8a6-e333-8fabca27ec7f> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:babe0318-5df1-3719-c63a-892a80f1d025> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:address "Korte Bouwelouwesteeg"@nl ;
+    sdo:description "getuige van de bruidegom, relatie tot de bruidegom: vader, adres: Korte Bouwelouwesteeg"@nl ;
+    sdo:familyName "Berg"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Gregorius"@nl ;
+    sdo:name "Gregorius Berg"@nl .
+
+<https://ex.org/Source:babe0318-5df1-3719-c63a-892a80f1d025_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1754-05-03"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
+<https://ex.org/Source:babe0318-5df1-3719-c63a-892a80f1d025> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549> ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/35ab946e-38d0-4e25-8b1d-dee9ed4d1d59/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/babe0318-5df1-3719-c63a-892a80f1d025"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/35ab946e-38d0-4e25-8b1d-dee9ed4d1d59/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1754-05-03"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1751-1755"@nl,
+        "40"@nl,
+        "Datum ondertrouw: 03-05-1754<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/40\">Inventarisnummer 40 van archiefnummer 1004 in Archieven</a>"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 40, Periode: 17..., (toegangsnr. 1004), inv.nr. 40, QQ. Kerkelijk ondertrouwboek (NH) van Leiden, 1751 - 1755., 182v, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/babe0318-5df1-3719-c63a-892a80f1d025"^^xsd:anyURI .
+

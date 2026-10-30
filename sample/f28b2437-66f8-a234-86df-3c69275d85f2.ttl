@@ -17,7 +17,6 @@
     sdo:name "Lucas Piterze"@nl .
 
 <https://ex.org/Source:f28b2437-66f8-a234-86df-3c69275d85f2> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/5c835975-1942-4d9c-9f41-1ad4b01ec905/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/f28b2437-66f8-a234-86df-3c69275d85f2"^^xsd:anyURI ;

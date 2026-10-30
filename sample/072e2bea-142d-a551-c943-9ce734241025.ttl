@@ -1,0 +1,88 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:9aa44ce5-5a00-75df-5756-4ebcd86b6698> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:072e2bea-142d-a551-c943-9ce734241025> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:address "Bredestraet"@nl ;
+    sdo:description "getuige van de bruid, relatie tot de bruid: nicht, adres: Bredestraet"@nl ;
+    sdo:familyName "Calanderijn"@nl ;
+    sdo:givenName "Susanna"@nl ;
+    sdo:name "Susanna Calanderijn"@nl .
+
+<https://ex.org/Person:e6525099-c199-f0a0-747c-5af81591341b> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:072e2bea-142d-a551-c943-9ce734241025> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Hoogheveen"@nl ;
+            pnv:givenName "Geraerdt"@nl ;
+            pnv:literalName "Geraerdt van Hoogheveen"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:address "Pieterskerckhoff"@nl ;
+    sdo:description "voorvoegsel: Mr., getuige van de bruidegom, adres: Pieterskerckhoff"@nl ;
+    sdo:familyName "van Hoogheveen"@nl ;
+    sdo:givenName "Geraerdt"@nl ;
+    sdo:hasOccupation "hoofdofficier dezer stede"@nl ;
+    sdo:name "Geraerdt van Hoogheveen"@nl .
+
+<https://ex.org/Person:435a49b5-daad-f96f-c777-336c0319e370> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:072e2bea-142d-a551-c943-9ce734241025> ;
+    picom:hasLifeEvent <https://ex.org/Source:072e2bea-142d-a551-c943-9ce734241025_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Vorst"@nl ;
+            pnv:givenName "Catharyna"@nl ;
+            pnv:literalName "Catharyna van Vorst"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:address "Raepenburch"@nl ;
+    sdo:birthPlace "Leyden"@nl ;
+    sdo:familyName "van Vorst"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Catharyna"@nl ;
+    sdo:name "Catharyna van Vorst"@nl ;
+    sdo:spouse <https://ex.org/Person:d8332a9d-62ad-0fc4-6f91-10565892d6cc> .
+
+<https://ex.org/Person:d8332a9d-62ad-0fc4-6f91-10565892d6cc> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:072e2bea-142d-a551-c943-9ce734241025> ;
+    picom:hasLifeEvent <https://ex.org/Source:072e2bea-142d-a551-c943-9ce734241025_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Meulen"@nl ;
+            pnv:givenName "Gerard"@nl ;
+            pnv:literalName "Gerard van der Meulen"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:address "Gravesteyn. Over 't pleyn van 's -"@nl ;
+    sdo:birthPlace "Ceulen"@nl ;
+    sdo:familyName "van der Meulen"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Gerard"@nl ;
+    sdo:name "Gerard van der Meulen"@nl ;
+    sdo:spouse <https://ex.org/Person:435a49b5-daad-f96f-c777-336c0319e370> .
+
+<https://ex.org/Source:072e2bea-142d-a551-c943-9ce734241025_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1668-05-23"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
+<https://ex.org/Source:072e2bea-142d-a551-c943-9ce734241025> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549> ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/26a3e72b-9a0e-4159-a51e-f2343529416d/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/072e2bea-142d-a551-c943-9ce734241025"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/26a3e72b-9a0e-4159-a51e-f2343529416d/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1668-05-23"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1667-1670"@nl,
+        "19"@nl,
+        "Datum ondertrouw: 23-05-1668<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/19\">Inventarisnummer 19 van archiefnummer 1004 in Archieven</a>"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 19, Periode: 16..., (toegangsnr. 1004), inv.nr. 19, T. Kerkelijk ondertrouwboek (NH) van Leiden, juli 1667 - augustus 1670., 71, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/072e2bea-142d-a551-c943-9ce734241025"^^xsd:anyURI .
+

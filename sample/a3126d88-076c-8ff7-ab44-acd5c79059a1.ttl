@@ -61,8 +61,7 @@
     sdo:name "Maria Dupont"@nl .
 
 <https://ex.org/Source:a3126d88-076c-8ff7-ab44-acd5c79059a1> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/8bd5fa4a-2db9-4e00-9d76-0c4e281db33d/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/a3126d88-076c-8ff7-ab44-acd5c79059a1"^^xsd:anyURI ;

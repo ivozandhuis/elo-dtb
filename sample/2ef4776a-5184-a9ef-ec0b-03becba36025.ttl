@@ -1,0 +1,99 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:723ba5d1-1621-e570-3d88-879cb3e14a91> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:2ef4776a-5184-a9ef-ec0b-03becba36025> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Maartge"@nl ;
+            pnv:literalName "Maartge Jacobs"@nl ;
+            pnv:patronym "Jacobs"@nl ] ;
+    sdo:address "Geergraft"@nl ;
+    sdo:description "getuige van de bruid, relatie tot de bruid: bekende, adres: Geergraft"@nl ;
+    sdo:givenName "Maartge"@nl ;
+    sdo:name "Maartge Jacobs"@nl .
+
+<https://ex.org/Person:768180f5-499d-db28-ae79-69c58c1cbc28> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:2ef4776a-5184-a9ef-ec0b-03becba36025> ;
+    picom:hasLifeEvent <https://ex.org/Source:2ef4776a-5184-a9ef-ec0b-03becba36025_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Houtingh"@nl ;
+            pnv:givenName "Maddeleen"@nl ;
+            pnv:literalName "Maddeleen Jans van Houtingh"@nl ;
+            pnv:patronym "Jans"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:address "Levendael"@nl ;
+    sdo:birthPlace "Briel, De"@nl ;
+    sdo:familyName "van Houtingh"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Maddeleen"@nl ;
+    sdo:knows <https://ex.org/Person:723ba5d1-1621-e570-3d88-879cb3e14a91> ;
+    sdo:name "Maddeleen Jans van Houtingh"@nl ;
+    sdo:spouse <https://ex.org/Person:b17939c4-f7f3-8e7c-a7b7-6d12f5666982> .
+
+<https://ex.org/Person:b17939c4-f7f3-8e7c-a7b7-6d12f5666982> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:2ef4776a-5184-a9ef-ec0b-03becba36025> ;
+    picom:hasLifeEvent <https://ex.org/Source:2ef4776a-5184-a9ef-ec0b-03becba36025_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    picom:isWidOf <https://ex.org/Person:de1ced8e-f768-4389-c9be-b4efcf0ea166> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Frans"@nl ;
+            pnv:literalName "Frans Fransz"@nl ;
+            pnv:patronym "Fransz"@nl ] ;
+    sdo:address "Ickersteegje"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Frans"@nl ;
+    sdo:name "Frans Fransz"@nl ;
+    sdo:parent <https://ex.org/Person:c1d7db16-bf1f-6023-747e-39c712e1252f> ;
+    sdo:spouse <https://ex.org/Person:768180f5-499d-db28-ae79-69c58c1cbc28> .
+
+<https://ex.org/Person:c1d7db16-bf1f-6023-747e-39c712e1252f> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:2ef4776a-5184-a9ef-ec0b-03becba36025> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:address "Oude Vest"@nl ;
+    sdo:description "getuige van de bruidegom, relatie tot de bruidegom: vader, adres: Oude Vest"@nl ;
+    sdo:familyName "Steedink"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Casper"@nl ;
+    sdo:name "Casper Steedink"@nl .
+
+<https://ex.org/Person:de1ced8e-f768-4389-c9be-b4efcf0ea166> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:2ef4776a-5184-a9ef-ec0b-03becba36025> ;
+    picom:deceased true ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:givenName "Elsge"@nl ;
+            pnv:literalName "Elsge Frans"@nl ;
+            pnv:patronym "Frans"@nl ] ;
+    sdo:description "Relatie tot bruidegom: wed."@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Elsge"@nl ;
+    sdo:name "Elsge Frans"@nl .
+
+<https://ex.org/Source:2ef4776a-5184-a9ef-ec0b-03becba36025_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1687-04-18"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
+<https://ex.org/Source:2ef4776a-5184-a9ef-ec0b-03becba36025> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549> ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/e8fa81bc-6911-4d40-af55-d3dc2711ee6e/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/2ef4776a-5184-a9ef-ec0b-03becba36025"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/e8fa81bc-6911-4d40-af55-d3dc2711ee6e/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1687-04-18"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1686-1690"@nl,
+        "24"@nl,
+        "Datum ondertrouw: 18-04-1687<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/24\">Inventarisnummer 24 van archiefnummer 1004 in Archieven</a>"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 24, Periode: 16..., (toegangsnr. 1004), inv.nr. 24, Z. Kerkelijk ondertrouwboek (NH) van Leiden, februari 1686 - april 1690., 88v, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/2ef4776a-5184-a9ef-ec0b-03becba36025"^^xsd:anyURI .
+

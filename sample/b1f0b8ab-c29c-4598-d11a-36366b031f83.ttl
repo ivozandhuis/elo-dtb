@@ -1,0 +1,72 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:4747516e-ed82-dd0a-b069-c23eef71f576> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b1f0b8ab-c29c-4598-d11a-36366b031f83> ;
+    picom:hasLifeEvent <https://ex.org/Source:b1f0b8ab-c29c-4598-d11a-36366b031f83_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:address "Amsterdam"@nl ;
+    sdo:familyName "Mareschal"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Abraham"@nl ;
+    sdo:hasOccupation "koopman"@nl ;
+    sdo:knows <https://ex.org/Person:d899fee9-527a-21ef-a320-77d0df53ba27> ;
+    sdo:name "Abraham Mareschal"@nl ;
+    sdo:spouse <https://ex.org/Person:9d09e4f2-4b8a-960b-c28a-d086f00107bd> .
+
+<https://ex.org/Person:9d09e4f2-4b8a-960b-c28a-d086f00107bd> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b1f0b8ab-c29c-4598-d11a-36366b031f83> ;
+    picom:hasLifeEvent <https://ex.org/Source:b1f0b8ab-c29c-4598-d11a-36366b031f83_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    picom:hasUncle_Aunt <https://ex.org/Person:fd683acb-24e2-4607-e1e2-812291e8f086> ;
+    sdo:address "Mandemaeckersteech"@nl ;
+    sdo:birthPlace "Leyden"@nl ;
+    sdo:familyName "Sirjacobs"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Jannetgen"@nl ;
+    sdo:name "Jannetgen Sirjacobs"@nl ;
+    sdo:spouse <https://ex.org/Person:4747516e-ed82-dd0a-b069-c23eef71f576> .
+
+<https://ex.org/Person:d899fee9-527a-21ef-a320-77d0df53ba27> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b1f0b8ab-c29c-4598-d11a-36366b031f83> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:description "getuige van de bruidegom, relatie tot de bruidegom: bekende"@nl ;
+    sdo:familyName "Moijaert"@nl ;
+    sdo:givenName "Franchoijs"@nl ;
+    sdo:name "Franchoijs Moijaert"@nl .
+
+<https://ex.org/Person:fd683acb-24e2-4607-e1e2-812291e8f086> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:b1f0b8ab-c29c-4598-d11a-36366b031f83> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:description "getuige van de bruid, relatie tot de bruid: moei"@nl ;
+    sdo:familyName "Lieffrinc"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Susannetgen"@nl ;
+    sdo:name "Susannetgen Lieffrinc"@nl .
+
+<https://ex.org/Source:b1f0b8ab-c29c-4598-d11a-36366b031f83_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1630-12-27"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
+<https://ex.org/Source:b1f0b8ab-c29c-4598-d11a-36366b031f83> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549> ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/1a94bff1-d8f0-4789-a105-d8dd29ed19ad/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/b1f0b8ab-c29c-4598-d11a-36366b031f83"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/1a94bff1-d8f0-4789-a105-d8dd29ed19ad/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1630-12-27"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "10"@nl,
+        "1626-1633"@nl,
+        "Datum ondertrouw: 27-12-1630<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/10\">Inventarisnummer 10 van archiefnummer 1004 in Archieven</a>"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 10, Periode: 16..., (toegangsnr. 1004), inv.nr. 10, K. Kerkelijk ondertrouwboek (NH) van Leiden, september 1626 - augustus 1633., 215, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/b1f0b8ab-c29c-4598-d11a-36366b031f83"^^xsd:anyURI .
+

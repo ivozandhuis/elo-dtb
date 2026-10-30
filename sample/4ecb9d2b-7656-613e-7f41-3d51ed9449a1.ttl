@@ -64,8 +64,7 @@
     sdo:name "Carel Speck"@nl .
 
 <https://ex.org/Source:4ecb9d2b-7656-613e-7f41-3d51ed9449a1> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/717e7f96-12da-4598-ad3c-13403db74079/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/4ecb9d2b-7656-613e-7f41-3d51ed9449a1"^^xsd:anyURI ;

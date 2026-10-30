@@ -1,0 +1,109 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:577cc0f3-67c4-3010-cbd8-ffe0fe735606> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:20dcb1ae-1ded-7f23-aefe-f107bae19025> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Burgh"@nl ;
+            pnv:givenName "Pieter"@nl ;
+            pnv:literalName "Pieter van der Burgh"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:description "Relatie tot bruid: overleden echtgenoot"@nl ;
+    sdo:familyName "van der Burgh"@nl ;
+    sdo:givenName "Pieter"@nl ;
+    sdo:name "Pieter van der Burgh"@nl .
+
+<https://ex.org/Person:79f6c0df-24a6-4165-a1ef-fda789ca68f8> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:20dcb1ae-1ded-7f23-aefe-f107bae19025> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Burgh"@nl ;
+            pnv:givenName "Anna"@nl ;
+            pnv:literalName "Anna van der Burgh"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:familyName "van der Burgh"@nl ;
+    sdo:givenName "Anna"@nl ;
+    sdo:name "Anna van der Burgh"@nl .
+
+<https://ex.org/Person:9d833c0b-25a7-fdc5-1f2b-4cd9b4b57b4a> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:20dcb1ae-1ded-7f23-aefe-f107bae19025> ;
+    sdo:description "Relatie tot bruidegom: overleden echtgenote"@nl ;
+    sdo:familyName "Toorenburgh"@nl ;
+    sdo:givenName "Maria"@nl ;
+    sdo:name "Maria Toorenburgh"@nl .
+
+<https://ex.org/Person:ccad2c1d-f212-12c3-1b14-ecfcf75baba1> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:20dcb1ae-1ded-7f23-aefe-f107bae19025> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Leeuwen"@nl ;
+            pnv:givenName "Maria"@nl ;
+            pnv:literalName "Maria van Leeuwen"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:familyName "van Leeuwen"@nl ;
+    sdo:givenName "Maria"@nl ;
+    sdo:name "Maria van Leeuwen"@nl .
+
+<https://ex.org/Person:ec242d19-c913-4b2e-8c00-258df9326a87> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:20dcb1ae-1ded-7f23-aefe-f107bae19025> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Burgh"@nl ;
+            pnv:givenName "Geertruijd"@nl ;
+            pnv:literalName "Geertruijd van der Burgh"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:familyName "van der Burgh"@nl ;
+    sdo:givenName "Geertruijd"@nl ;
+    sdo:name "Geertruijd van der Burgh"@nl .
+
+<https://ex.org/Person:21f6abdf-b66c-a333-9621-f7e6607b7986> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:20dcb1ae-1ded-7f23-aefe-f107bae19025> ;
+    picom:hasLifeEvent <https://ex.org/Source:20dcb1ae-1ded-7f23-aefe-f107bae19025_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:address "Leiden, Langegragt"@nl ;
+    sdo:description "Burgerlijke staat voor het huwelijk: wed."@nl ;
+    sdo:familyName "Russegeer"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Maria"@nl ;
+    sdo:name "Maria Russegeer"@nl ;
+    sdo:spouse <https://ex.org/Person:7af37375-08bc-a3e5-f314-c5205dccdda1> .
+
+<https://ex.org/Person:7af37375-08bc-a3e5-f314-c5205dccdda1> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:20dcb1ae-1ded-7f23-aefe-f107bae19025> ;
+    picom:hasLifeEvent <https://ex.org/Source:20dcb1ae-1ded-7f23-aefe-f107bae19025_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:address "Leiden, Langegragt"@nl ;
+    sdo:description "Burgerlijke staat voor het huwelijk: wed."@nl ;
+    sdo:familyName "Gresse"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jacobus"@nl ;
+    sdo:name "Jacobus Gresse"@nl ;
+    sdo:spouse <https://ex.org/Person:21f6abdf-b66c-a333-9621-f7e6607b7986> .
+
+<https://ex.org/Source:20dcb1ae-1ded-7f23-aefe-f107bae19025_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1731-11-09"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
+<https://ex.org/Source:20dcb1ae-1ded-7f23-aefe-f107bae19025> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549> ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/264e8829-6421-4e48-aa14-6e523c49d296/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/20dcb1ae-1ded-7f23-aefe-f107bae19025"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/264e8829-6421-4e48-aa14-6e523c49d296/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1731-11-09"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1729-1732"@nl,
+        "35"@nl,
+        "De bruidegom brengt 2-, de bruid 1 kind mee uit een eerder huwelijk.<br>Datum ondertrouw: 09-11-1731<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/35\">Inventarisnummer 35 van archiefnummer 1004 in Archieven</a>"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 35, Periode: 17..., (toegangsnr. 1004), inv.nr. 35, LL. Kerkelijk ondertrouwboek (NH) van Leiden, 1729 - juni 1732., 19v, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/20dcb1ae-1ded-7f23-aefe-f107bae19025"^^xsd:anyURI .
+

@@ -4,6 +4,14 @@
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://ex.org/Person:565e8afd-a44f-4ebd-2be9-b4e36d5daf0d> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:64da2344-03ac-620b-84bd-60ec72f545f2> ;
+    sdo:children <https://ex.org/Person:409fc3f6-6dfb-f495-3603-f33cd405e8c9> ;
+    sdo:familyName "Houwniet"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jan"@nl ;
+    sdo:name "Jan Houwniet"@nl .
+
 <https://ex.org/Person:409fc3f6-6dfb-f495-3603-f33cd405e8c9> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:64da2344-03ac-620b-84bd-60ec72f545f2> ;
     picom:hasRole picot_roles:479 ;
@@ -12,15 +20,7 @@
     sdo:givenName "NN"@nl ;
     sdo:name "NN Houwniet"@nl .
 
-<https://ex.org/Person:565e8afd-a44f-4ebd-2be9-b4e36d5daf0d> a picom:PersonObservation ;
-    prov:hadPrimarySource <https://ex.org/Source:64da2344-03ac-620b-84bd-60ec72f545f2> ;
-    sdo:familyName "Houwniet"@nl ;
-    sdo:gender sdo:Male ;
-    sdo:givenName "Jan"@nl ;
-    sdo:name "Jan Houwniet"@nl .
-
 <https://ex.org/Source:64da2344-03ac-620b-84bd-60ec72f545f2> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/ed70754a-5fb5-40f6-8147-8781ced2c5ec/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/64da2344-03ac-620b-84bd-60ec72f545f2"^^xsd:anyURI ;

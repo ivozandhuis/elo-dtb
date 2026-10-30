@@ -19,7 +19,6 @@
     sdo:name "Willem Mourynsz van Swanenburch"@nl .
 
 <https://ex.org/Source:88f57a9b-e7b7-858d-bd79-4a6b422b85f2> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
     sdo:dateModified "1970-01-01"^^xsd:date ;
     sdo:description "1319"@nl,
         "1635-1636"@nl,

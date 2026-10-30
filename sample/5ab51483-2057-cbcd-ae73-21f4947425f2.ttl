@@ -13,7 +13,6 @@
     sdo:name "Kasten Bruneel"@nl .
 
 <https://ex.org/Source:5ab51483-2057-cbcd-ae73-21f4947425f2> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
     sdo:dateModified "1970-01-01"^^xsd:date ;
     sdo:description "1315"@nl,
         "1609-1617"@nl,

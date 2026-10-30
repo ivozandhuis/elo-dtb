@@ -74,8 +74,7 @@
     picom:eventType picot_eventtypes:99 .
 
 <https://ex.org/Source:2a9b3d9b-6a0f-13d5-afcf-1ad52d828c35> a sdo:ArchiveComponent ;
-    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549>,
-        "other: "@nl ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549> ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/10da0ff8-8233-4d9f-95e5-02f8c00da7e7/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/2a9b3d9b-6a0f-13d5-afcf-1ad52d828c35"^^xsd:anyURI ;

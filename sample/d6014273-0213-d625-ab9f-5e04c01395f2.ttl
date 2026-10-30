@@ -6,6 +6,7 @@
 
 <https://ex.org/Person:7c5b5778-5a3f-dca9-07f0-0f81f5ee65d1> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:d6014273-0213-d625-ab9f-5e04c01395f2> ;
+    sdo:children <https://ex.org/Person:89721453-eb23-fba4-4ca9-8ba20657c0c3> ;
     sdo:familyName "Bastijn"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Dirck"@nl ;
@@ -20,7 +21,6 @@
     sdo:name "NN Bastijn"@nl .
 
 <https://ex.org/Source:d6014273-0213-d625-ab9f-5e04c01395f2> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
     sdo:dateModified "1970-01-01"^^xsd:date ;
     sdo:description "1321"@nl,
         "1646-1655"@nl,

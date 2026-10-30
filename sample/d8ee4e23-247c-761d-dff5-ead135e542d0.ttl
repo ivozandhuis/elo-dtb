@@ -64,8 +64,7 @@
     sdo:name "Klaasje Schaap"@nl .
 
 <https://ex.org/Source:d8ee4e23-247c-761d-dff5-ead135e542d0> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/359cc2e0-5249-4b83-a98b-68ad5ffe4cc7/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/d8ee4e23-247c-761d-dff5-ead135e542d0"^^xsd:anyURI ;

@@ -13,6 +13,7 @@
             pnv:literalName "Pieter Pieterse de Jong"@nl ;
             pnv:patronym "Pieterse"@nl ;
             pnv:surnamePrefix "de"@nl ] ;
+    sdo:children <https://ex.org/Person:7f9cf1e0-56df-9da0-f586-b0a278002cc1> ;
     sdo:familyName "de Jong"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName "Pieter"@nl ;
@@ -33,7 +34,6 @@
     sdo:name "NN de Jong"@nl .
 
 <https://ex.org/Source:45ca4f08-4e70-7dc4-007f-a247202eb5f2> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/5b39d842-e470-4dff-8edd-cc95145fd011/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/45ca4f08-4e70-7dc4-007f-a247202eb5f2"^^xsd:anyURI ;

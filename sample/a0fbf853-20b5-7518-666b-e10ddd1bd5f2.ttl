@@ -26,7 +26,6 @@
     sdo:name "Maria de Gunst"@nl .
 
 <https://ex.org/Source:a0fbf853-20b5-7518-666b-e10ddd1bd5f2> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
     sdo:dateModified "1970-01-01"^^xsd:date ;
     sdo:description "1341"@nl,
         "1794-1804"@nl,

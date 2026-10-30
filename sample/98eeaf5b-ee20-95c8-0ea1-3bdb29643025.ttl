@@ -1,0 +1,91 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:4e3c2cad-60e5-565e-655f-7d3c42c604af> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:98eeaf5b-ee20-95c8-0ea1-3bdb29643025> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Waas"@nl ;
+            pnv:givenName "Jan"@nl ;
+            pnv:literalName "Jan Fredrik Waas"@nl ;
+            pnv:patronym "Fredrik"@nl ] ;
+    sdo:address "Ouden Rhijn"@nl ;
+    sdo:description "getuige van de bruidegom, relatie tot de bruidegom: bekende, adres: Ouden Rhijn"@nl ;
+    sdo:familyName "Waas"@nl ;
+    sdo:givenName "Jan"@nl ;
+    sdo:name "Jan Fredrik Waas"@nl .
+
+<https://ex.org/Person:57579698-20b5-1f00-2e47-19c6680689eb> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:98eeaf5b-ee20-95c8-0ea1-3bdb29643025> ;
+    picom:hasLifeEvent <https://ex.org/Source:98eeaf5b-ee20-95c8-0ea1-3bdb29643025_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Richter"@nl ;
+            pnv:givenName "Johan"@nl ;
+            pnv:literalName "Johan Henrich Richter"@nl ;
+            pnv:patronym "Henrich"@nl ] ;
+    sdo:address "Noordeijnde"@nl ;
+    sdo:birthPlace "Hoffgysmer Hessische"@nl ;
+    sdo:familyName "Richter"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Johan"@nl ;
+    sdo:hasOccupation "zadelmaker"@nl ;
+    sdo:knows <https://ex.org/Person:4e3c2cad-60e5-565e-655f-7d3c42c604af> ;
+    sdo:name "Johan Henrich Richter"@nl ;
+    sdo:spouse <https://ex.org/Person:af69989f-ad5b-7c13-f10d-f9fdb3650285> .
+
+<https://ex.org/Person:af69989f-ad5b-7c13-f10d-f9fdb3650285> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:98eeaf5b-ee20-95c8-0ea1-3bdb29643025> ;
+    picom:hasLifeEvent <https://ex.org/Source:98eeaf5b-ee20-95c8-0ea1-3bdb29643025_ondertrouw_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:address "Oude Vest"@nl ;
+    sdo:birthPlace "Leyden"@nl ;
+    sdo:familyName "Hollende"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Anna Elisabeth"@nl ;
+    sdo:name "Anna Elisabeth Hollende"@nl ;
+    sdo:parent <https://ex.org/Person:b0218a9a-a85e-e78e-6a08-cf88113a7ada> ;
+    sdo:spouse <https://ex.org/Person:57579698-20b5-1f00-2e47-19c6680689eb> .
+
+<https://ex.org/Person:b0218a9a-a85e-e78e-6a08-cf88113a7ada> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:98eeaf5b-ee20-95c8-0ea1-3bdb29643025> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Hollende"@nl ;
+            pnv:givenName "Jan"@nl ;
+            pnv:literalName "Jan Willem Hollende"@nl ;
+            pnv:patronym "Willem"@nl ] ;
+    sdo:address "Oude Vest"@nl ;
+    sdo:description "getuige van de bruid, relatie tot de bruid: vader, adres: Oude Vest"@nl ;
+    sdo:familyName "Hollende"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jan"@nl ;
+    sdo:name "Jan Willem Hollende"@nl .
+
+<https://ex.org/Source:98eeaf5b-ee20-95c8-0ea1-3bdb29643025_ondertrouw_event> a picom:LifeEvent ;
+    picom:eventDate "1791-04-14"@nl ;
+    picom:eventPlace "Leiden"@nl ;
+    picom:eventType picot_eventtypes:99 .
+
+<https://ex.org/Source:98eeaf5b-ee20-95c8-0ea1-3bdb29643025> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549> ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/ce2add6e-265c-4009-a8eb-a828dfc983df/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/98eeaf5b-ee20-95c8-0ea1-3bdb29643025"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/ce2add6e-265c-4009-a8eb-a828dfc983df/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1791-04-14"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1790-1795"@nl,
+        "47"@nl,
+        "Datum ondertrouw: 14-04-1791<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/47\">Inventarisnummer 47 van archiefnummer 1004 in Archieven</a>"@nl,
+        "Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden)"@nl ;
+    sdo:locationCreated "Leiden"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, trouw-, begraaf- en geboorteboeken Leiden (DTB Leiden), Deel: 47, Periode: 17..., (toegangsnr. 1004), inv.nr. 47, YY. Kerkelijk ondertrouwboek (NH) van Leiden, mei 1790 - mei 1795., 41, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/98eeaf5b-ee20-95c8-0ea1-3bdb29643025"^^xsd:anyURI .
+

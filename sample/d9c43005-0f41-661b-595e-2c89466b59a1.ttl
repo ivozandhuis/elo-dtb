@@ -80,8 +80,7 @@
     sdo:name "Wouter Gerretse"@nl .
 
 <https://ex.org/Source:d9c43005-0f41-661b-595e-2c89466b59a1> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/9a7397c8-68fb-40d3-abd7-9f6d4ac3b44c/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/d9c43005-0f41-661b-595e-2c89466b59a1"^^xsd:anyURI ;

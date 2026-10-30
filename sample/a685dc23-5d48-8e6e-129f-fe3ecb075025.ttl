@@ -1,0 +1,107 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:114da23f-a9ab-d063-d186-25b5bb06dfb9> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:a685dc23-5d48-8e6e-129f-fe3ecb075025> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Dorp"@nl ;
+            pnv:givenName "Jan"@nl ;
+            pnv:literalName "Jan Abrahamse van Dorp"@nl ;
+            pnv:patronym "Abrahamse"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:familyName "van Dorp"@nl ;
+    sdo:givenName "Jan"@nl ;
+    sdo:hasOccupation "schepen"@nl ;
+    sdo:name "Jan Abrahamse van Dorp"@nl .
+
+<https://ex.org/Person:36c67285-301e-e1a7-5a8b-058288ab9d2c> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:a685dc23-5d48-8e6e-129f-fe3ecb075025> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Dorp"@nl ;
+            pnv:givenName "Jacob"@nl ;
+            pnv:literalName "Jacob van Dorp"@nl ;
+            pnv:surnamePrefix "van"@nl ] ;
+    sdo:familyName "van Dorp"@nl ;
+    sdo:givenName "Jacob"@nl ;
+    sdo:hasOccupation "schout"@nl ;
+    sdo:name "Jacob van Dorp"@nl .
+
+<https://ex.org/Person:6acafaf3-9f90-ce70-1b68-91bec78099ea> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:a685dc23-5d48-8e6e-129f-fe3ecb075025> ;
+    picom:hasRole picot_roles:573 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Bijl"@nl ;
+            pnv:givenName "Bruijn"@nl ;
+            pnv:literalName "Bruijn Arendse van der Bijl"@nl ;
+            pnv:patronym "Arendse"@nl ;
+            pnv:surnamePrefix "van der"@nl ] ;
+    sdo:familyName "van der Bijl"@nl ;
+    sdo:givenName "Bruijn"@nl ;
+    sdo:hasOccupation "schepen"@nl ;
+    sdo:name "Bruijn Arendse van der Bijl"@nl .
+
+<https://ex.org/Person:82cdca1b-2192-3f0f-7583-2b2cfb69eda0> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:a685dc23-5d48-8e6e-129f-fe3ecb075025> ;
+    picom:hasLifeEvent <https://ex.org/Source:a685dc23-5d48-8e6e-129f-fe3ecb075025_huwelijk_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Westerhoven"@nl ;
+            pnv:givenName "Anna"@nl ;
+            pnv:literalName "Anna Adriaans Westerhoven"@nl ;
+            pnv:patronym "Adriaans"@nl ] ;
+    sdo:address "Hillegom"@nl ;
+    sdo:birthPlace "Noordwijkerhout"@nl ;
+    sdo:description "Burgerlijke staat voor het huwelijk: j.d."@nl ;
+    sdo:familyName "Westerhoven"@nl ;
+    sdo:gender sdo:Female ;
+    sdo:givenName "Anna"@nl ;
+    sdo:name "Anna Adriaans Westerhoven"@nl ;
+    sdo:spouse <https://ex.org/Person:a0f3bf9d-29d3-73e5-3340-03c5be6d0929> .
+
+<https://ex.org/Person:a0f3bf9d-29d3-73e5-3340-03c5be6d0929> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:a685dc23-5d48-8e6e-129f-fe3ecb075025> ;
+    picom:hasLifeEvent <https://ex.org/Source:a685dc23-5d48-8e6e-129f-fe3ecb075025_huwelijk_event> ;
+    picom:hasRole picot_roles:574 ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Korteman"@nl ;
+            pnv:givenName "Jan"@nl ;
+            pnv:literalName "Jan Willemse Korteman"@nl ;
+            pnv:patronym "Willemse"@nl ] ;
+    sdo:address "Hillegom"@nl ;
+    sdo:birthPlace "Hillegom"@nl ;
+    sdo:description "Burgerlijke staat voor het huwelijk: j.m."@nl ;
+    sdo:familyName "Korteman"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName "Jan"@nl ;
+    sdo:name "Jan Willemse Korteman"@nl ;
+    sdo:spouse <https://ex.org/Person:82cdca1b-2192-3f0f-7583-2b2cfb69eda0> .
+
+<https://ex.org/Source:a685dc23-5d48-8e6e-129f-fe3ecb075025_huwelijk_event> a picom:LifeEvent ;
+    picom:eventDate "1718-09-11"@nl ;
+    picom:eventPlace "Hillegom"@nl ;
+    picom:eventType picot_eventtypes:83 .
+
+<https://ex.org/Source:a685dc23-5d48-8e6e-129f-fe3ecb075025> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/549> ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/66a392d6-1b62-4a98-9002-0ea5e7b6249f/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/a685dc23-5d48-8e6e-129f-fe3ecb075025"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/66a392d6-1b62-4a98-9002-0ea5e7b6249f/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1718-09-11"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "11"@nl,
+        "1715-1731"@nl,
+        "Datum trouwen: 11-09-1718<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/0837/file/11\">Inventarisnummer 11 van archiefnummer 0837 in Archieven</a>"@nl,
+        "Doop-, Trouw- en Begraafregisters Hillegom"@nl ;
+    sdo:locationCreated "Hillegom"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Doop-, Trouw- en Begraafregisters Hillegom, Deel: 11, Periode: 1715-1731, (toegangsnr. 0837), inv.nr. 11, Trouwboek van het gerecht van Hillegom, 1715 - 23 januari 1731., 17, "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/a685dc23-5d48-8e6e-129f-fe3ecb075025"^^xsd:anyURI .
+

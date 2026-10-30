@@ -82,8 +82,7 @@
     sdo:name "Cornelis van Dogt"@nl .
 
 <https://ex.org/Source:6717e9ff-3711-cd19-8f62-b0bfbda79bee> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548,
-        "other: "@nl ;
+    sdo:additionalType picot_eventtypes:548 ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/1ac71481-0afe-455c-985a-1c6b1f10e4dd/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/6717e9ff-3711-cd19-8f62-b0bfbda79bee"^^xsd:anyURI ;

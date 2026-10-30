@@ -18,7 +18,6 @@
     sdo:name "Gooltgen Maertensdr"@nl .
 
 <https://ex.org/Source:2a12a0d2-f6cb-a898-8a67-e220c9e365f2> a sdo:ArchiveComponent ;
-    sdo:additionalType "other: "@nl ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/7fc6c833-cb6e-42a6-ad8e-41027b018e4e/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/2a12a0d2-f6cb-a898-8a67-e220c9e365f2"^^xsd:anyURI ;
