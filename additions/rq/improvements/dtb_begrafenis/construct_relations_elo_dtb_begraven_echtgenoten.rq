@@ -18,6 +18,5 @@ WHERE {
     	sdo:description ?desc .
     ?deceased a picom:PersonObservation ; 
     	prov:hadPrimarySource ?src ;
-    	picom:hasRole picot_roles:479 ;
-    	sdo:gender sdo:Female .
+    	picom:hasRole picot_roles:479 .
 }
