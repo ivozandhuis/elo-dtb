@@ -6,7 +6,6 @@ PREFIX ql: <http://qlever.cs.uni-freiburg.de/builtin-functions/>
 
 CONSTRUCT {
 	?deceased sdo:spouse ?witness .
-    ?witness sdo:spouse ?deceased .
 }
 
 WHERE {
