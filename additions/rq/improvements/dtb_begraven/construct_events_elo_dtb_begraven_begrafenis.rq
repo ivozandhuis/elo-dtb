@@ -12,6 +12,9 @@ CONSTRUCT {
     picom:eventType picot_eventtypes:76 ;
     picom:eventPlace ?event_place ;
     picom:eventDate ?event_date .
+
+    ?source sdo:dateCreated ?event_date ;
+         sdo:additionalType picot_sourcetypes:526 .
 }
 WHERE {
   ?text ql:contains-word "begraven" .
