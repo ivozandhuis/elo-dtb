@@ -1,0 +1,19 @@
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX picom: <https://personsincontext.org/model#>
+PREFIX sdo: <https://schema.org/>
+PREFIX picot_roles: <https://terms.personsincontext.org/roles/>
+PREFIX ql: <http://qlever.cs.uni-freiburg.de/builtin-functions/>
+PREFIX iisg_religions: <https://iisg.amsterdam/resource/TaxonomyOfReligions/>
+
+CONSTRUCT {
+  ?dopeling picom:hasReligion iisg_religions:Rooms-Katholieke-Kerk .
+}
+WHERE {
+  ?dopeling a picom:PersonObservation ;
+            prov:hadPrimarySource ?src ;
+            picom:hasRole picot_roles:575 .
+  ?src a sdo:ArchiveComponent ;
+       sdo:name ?name .
+  FILTER (CONTAINS(?name, "Alkemade (Rijpwetering)") ||
+          CONTAINS(?name, "Alkemade (Roelofsarendsveen)))
+}
