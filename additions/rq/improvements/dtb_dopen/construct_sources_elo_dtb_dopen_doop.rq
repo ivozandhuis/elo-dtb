@@ -8,7 +8,7 @@ PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX ql: <http://qlever.cs.uni-freiburg.de/builtin-functions/>
 
 CONSTRUCT {
-  ?source sdo:additionalType picot_eventtypes:548 . 
+  ?source sdo:additionalType picot_sourcetypes:548 . 
 }
 WHERE {
   ?text ql:contains-word "doopdatum" .
