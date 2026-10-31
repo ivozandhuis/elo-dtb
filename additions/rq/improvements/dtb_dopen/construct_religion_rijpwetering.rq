@@ -15,5 +15,5 @@ WHERE {
   ?src a sdo:ArchiveComponent ;
        sdo:name ?name .
   FILTER (CONTAINS(?name, "Alkemade (Rijpwetering)") ||
-          CONTAINS(?name, "Alkemade (Roelofsarendsveen)))
+          CONTAINS(?name, "Alkemade (Roelofsarendsveen)"))
 }

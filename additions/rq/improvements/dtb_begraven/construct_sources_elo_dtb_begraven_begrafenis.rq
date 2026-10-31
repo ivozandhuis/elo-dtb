@@ -8,7 +8,7 @@ PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX ql: <http://qlever.cs.uni-freiburg.de/builtin-functions/>
 
 CONSTRUCT {
-  ?source sdo:additionalType picot_eventtypes:526 . 
+  ?source sdo:additionalType picot_sourcetypes:526 . 
 }
 WHERE {
   ?text ql:contains-word "begraven" .
