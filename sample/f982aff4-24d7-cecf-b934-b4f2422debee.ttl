@@ -77,13 +77,14 @@
     sdo:spouse <https://ex.org/Person:0db9cf8b-158a-64bc-88ea-de9969739657> .
 
 <https://ex.org/Source:f982aff4-24d7-cecf-b934-b4f2422debee> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548 ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/548> ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/a49e06a1-da9e-4505-b048-babbc300a681/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/f982aff4-24d7-cecf-b934-b4f2422debee"^^xsd:anyURI ;
             sdo:position "1" ;
             sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/a49e06a1-da9e-4505-b048-babbc300a681/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
-    sdo:dateCreated "1604-09"^^xsd:gYearMonth ;
+    sdo:dateCreated "1604-09"^^xsd:gYearMonth,
+        "getuige 4 : Kateline, dochter van Quintin du Breuck<br>Doopdatum: 09-1604<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/1004/file/270\">Inventarisnummer 270 van archiefnummer 1004 in Archieven</a>"@nl ;
     sdo:dateModified "1970-01-01"^^xsd:date ;
     sdo:description "1599-1627"@nl,
         "270"@nl,

@@ -29,12 +29,15 @@
     picom:eventType picot_eventtypes:76 .
 
 <https://ex.org/Source:e3dade04-d7fe-ac1b-32d2-54b6dfa695f2> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:526 ;
+    sdo:additionalType picot_eventtypes:526,
+        <https://terms.personsincontext.org/sourcetypes/526> ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/cc227a68-3d86-4285-973f-b7f4ef7725b7/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/e3dade04-d7fe-ac1b-32d2-54b6dfa695f2"^^xsd:anyURI ;
             sdo:position "1" ;
             sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/cc227a68-3d86-4285-973f-b7f4ef7725b7/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated """Begraafdatum is registratiedatum
+1808-09-05"""@nl ;
     sdo:dateModified "1970-01-01"^^xsd:date ;
     sdo:description "1793-1808"@nl,
         "4"@nl,

@@ -15,7 +15,9 @@
     sdo:name "Franchoys Balier"@nl .
 
 <https://ex.org/Source:379a4ed9-427d-1dcb-7146-0dcd8a6c85f2> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:526 ;
+    sdo:additionalType picot_eventtypes:526,
+        <https://terms.personsincontext.org/sourcetypes/526> ;
+    sdo:dateCreated "1635-09-14"@nl ;
     sdo:dateModified "1970-01-01"^^xsd:date ;
     sdo:description "1319"@nl,
         "1635-1636"@nl,

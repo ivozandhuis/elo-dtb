@@ -74,13 +74,14 @@
     sdo:name "Marijtie Grason"@nl .
 
 <https://ex.org/Source:b2e3ac8b-df60-01a8-3af9-ac8646ba22d0> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548 ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/548> ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/5f25b9c4-e033-4051-b686-b90009452927/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/b2e3ac8b-df60-01a8-3af9-ac8646ba22d0"^^xsd:anyURI ;
             sdo:position "1" ;
             sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/5f25b9c4-e033-4051-b686-b90009452927/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
-    sdo:dateCreated "1722-12-30"^^xsd:date ;
+    sdo:dateCreated "1722-12-30"^^xsd:date,
+        "1722-12-30"@nl ;
     sdo:dateModified "1970-01-01"^^xsd:date ;
     sdo:description "1710-1724"@nl,
         "227"@nl,

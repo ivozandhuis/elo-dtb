@@ -77,13 +77,14 @@
     picom:eventType picot_eventtypes:75 .
 
 <https://ex.org/Source:2e40637f-b226-6a40-8e8c-56c10191f9a1> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548 ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/548> ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/0fb6ad37-73ed-4479-858c-8dc5e6f87a29/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/2e40637f-b226-6a40-8e8c-56c10191f9a1"^^xsd:anyURI ;
             sdo:position "1" ;
             sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/0fb6ad37-73ed-4479-858c-8dc5e6f87a29/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
-    sdo:dateCreated "1625-05-11"^^xsd:date ;
+    sdo:dateCreated "1625-05-11"^^xsd:date,
+        "1625-05-11"@nl ;
     sdo:dateModified "1970-01-01"^^xsd:date ;
     sdo:description "1621-1628"@nl,
         "232"@nl,

@@ -89,13 +89,14 @@
     sdo:name "Jeane Bauduin"@nl .
 
 <https://ex.org/Source:99bc38a8-0047-b11c-4097-076cff5f79a1> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548 ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/548> ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/b9d64c71-3bb1-4fc0-aebb-d85ac6ee0134/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/99bc38a8-0047-b11c-4097-076cff5f79a1"^^xsd:anyURI ;
             sdo:position "1" ;
             sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/b9d64c71-3bb1-4fc0-aebb-d85ac6ee0134/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
-    sdo:dateCreated "1658-11-24"^^xsd:date ;
+    sdo:dateCreated "1658-11-24"^^xsd:date,
+        "1658-11-24"@nl ;
     sdo:dateModified "1970-01-01"^^xsd:date ;
     sdo:description "1655-1669"@nl,
         "273"@nl,

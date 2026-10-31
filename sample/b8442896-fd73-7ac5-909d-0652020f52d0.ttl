@@ -69,13 +69,14 @@
     sdo:name "Pieter van Dam"@nl .
 
 <https://ex.org/Source:b8442896-fd73-7ac5-909d-0652020f52d0> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548 ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/548> ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/8f2ee074-e1cd-463e-9b51-ed551714ebcf/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/b8442896-fd73-7ac5-909d-0652020f52d0"^^xsd:anyURI ;
             sdo:position "1" ;
             sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/8f2ee074-e1cd-463e-9b51-ed551714ebcf/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
-    sdo:dateCreated "1789-09-07"^^xsd:date ;
+    sdo:dateCreated "1789-09-07"^^xsd:date,
+        "1789-09-07"@nl ;
     sdo:dateModified "1970-01-01"^^xsd:date ;
     sdo:description "1715-1812"@nl,
         "3"@nl,

@@ -69,13 +69,14 @@
     sdo:name "Henrikjen de Groet"@nl .
 
 <https://ex.org/Source:68b39b4f-c7d7-3a03-5e89-635e96daebee> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548 ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/548> ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/55e2beec-9955-48e7-aeb9-1ee557a25c7c/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/68b39b4f-c7d7-3a03-5e89-635e96daebee"^^xsd:anyURI ;
             sdo:position "1" ;
             sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/55e2beec-9955-48e7-aeb9-1ee557a25c7c/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
-    sdo:dateCreated "1707-09-04"^^xsd:date ;
+    sdo:dateCreated "1707-09-04"^^xsd:date,
+        "1707-09-04"@nl ;
     sdo:dateModified "1970-01-01"^^xsd:date ;
     sdo:description "1701-1713"@nl,
         "261"@nl,

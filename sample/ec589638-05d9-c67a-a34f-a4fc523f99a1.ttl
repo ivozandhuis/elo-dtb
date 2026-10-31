@@ -77,13 +77,14 @@
     sdo:name "Claas Kuijsten"@nl .
 
 <https://ex.org/Source:ec589638-05d9-c67a-a34f-a4fc523f99a1> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548 ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/548> ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/8dcee40b-87af-4093-8426-41be8d1747ae/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/ec589638-05d9-c67a-a34f-a4fc523f99a1"^^xsd:anyURI ;
             sdo:position "1" ;
             sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/8dcee40b-87af-4093-8426-41be8d1747ae/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
-    sdo:dateCreated "1681-11-04"^^xsd:date ;
+    sdo:dateCreated "1681-11-04"^^xsd:date,
+        "1681-11-04"@nl ;
     sdo:dateModified "1970-01-01"^^xsd:date ;
     sdo:description "1680-1683"@nl,
         "240"@nl,

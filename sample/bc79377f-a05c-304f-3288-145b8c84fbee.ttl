@@ -74,13 +74,14 @@
     sdo:name "Pieter de Geer"@nl .
 
 <https://ex.org/Source:bc79377f-a05c-304f-3288-145b8c84fbee> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548 ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/548> ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/9884f1bd-6237-4f82-9c80-14807b9c9cfe/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/bc79377f-a05c-304f-3288-145b8c84fbee"^^xsd:anyURI ;
             sdo:position "1" ;
             sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/9884f1bd-6237-4f82-9c80-14807b9c9cfe/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
-    sdo:dateCreated "1754-10-16"^^xsd:date ;
+    sdo:dateCreated "1754-10-16"^^xsd:date,
+        "1754-10-16"@nl ;
     sdo:dateModified "1970-01-01"^^xsd:date ;
     sdo:description "1741-1769"@nl,
         "229"@nl,

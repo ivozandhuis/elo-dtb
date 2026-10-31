@@ -16,7 +16,9 @@
     sdo:name "Willem Verburgh"@nl .
 
 <https://ex.org/Source:5ab83db0-84f9-edfe-fe65-ab94e91b45f2> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:526 ;
+    sdo:additionalType picot_eventtypes:526,
+        <https://terms.personsincontext.org/sourcetypes/526> ;
+    sdo:dateCreated "1724-07-29"@nl ;
     sdo:dateModified "1970-01-01"^^xsd:date ;
     sdo:description "1707-1733"@nl,
         "2065"@nl,

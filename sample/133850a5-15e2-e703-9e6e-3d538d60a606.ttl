@@ -52,7 +52,7 @@
 <https://ex.org/Source:133850a5-15e2-e703-9e6e-3d538d60a606_bruid_moei> a picom:PersonObservation ;
     sdo:address "Oude Vest"@nl ;
     sdo:gender sdo:Female ;
-    sdo:name "Lydia  Tonis"@nl .
+    sdo:name "Lydia Tonis"@nl .
 
 <https://ex.org/Source:133850a5-15e2-e703-9e6e-3d538d60a606_ondertrouw_event> a picom:LifeEvent ;
     picom:eventDate "1656-10-11"@nl ;

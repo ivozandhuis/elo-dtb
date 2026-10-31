@@ -23,12 +23,14 @@
     sdo:name "Abraham de Rooij"@nl .
 
 <https://ex.org/Source:af9eb142-87a9-d0d7-9bd9-1115513bb5f2> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:526 ;
+    sdo:additionalType picot_eventtypes:526,
+        <https://terms.personsincontext.org/sourcetypes/526> ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/3cbcd288-5656-4bb0-ae7f-020814c63377/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/af9eb142-87a9-d0d7-9bd9-1115513bb5f2"^^xsd:anyURI ;
             sdo:position "1" ;
             sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/3cbcd288-5656-4bb0-ae7f-020814c63377/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1809-03-28"@nl ;
     sdo:dateModified "1970-01-01"^^xsd:date ;
     sdo:description "1806-1811"@nl,
         "9"@nl,

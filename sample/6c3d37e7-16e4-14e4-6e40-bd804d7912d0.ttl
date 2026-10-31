@@ -52,13 +52,14 @@
         <https://ex.org/Person:257d7c28-eabb-0a92-bdc7-aa10e0321722> .
 
 <https://ex.org/Source:6c3d37e7-16e4-14e4-6e40-bd804d7912d0> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548 ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/548> ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/6db2993f-3427-400a-8024-11592a3cddae/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/6c3d37e7-16e4-14e4-6e40-bd804d7912d0"^^xsd:anyURI ;
             sdo:position "1" ;
             sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/6db2993f-3427-400a-8024-11592a3cddae/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
-    sdo:dateCreated "1806-03-23"^^xsd:date ;
+    sdo:dateCreated "1806-03-23"^^xsd:date,
+        "1806-03-23"@nl ;
     sdo:dateModified "1970-01-01"^^xsd:date ;
     sdo:description "1028"@nl,
         "1732-1812"@nl,

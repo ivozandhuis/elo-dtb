@@ -65,13 +65,14 @@
     sdo:name "Maertje Ferdinandus"@nl .
 
 <https://ex.org/Source:f88e737b-5627-b37f-b9a9-adededfc22d0> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548 ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/548> ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/be45f2b1-814c-48e6-8f49-73ccc3326776/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/f88e737b-5627-b37f-b9a9-adededfc22d0"^^xsd:anyURI ;
             sdo:position "1" ;
             sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/be45f2b1-814c-48e6-8f49-73ccc3326776/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
-    sdo:dateCreated "1678-03-24"^^xsd:date ;
+    sdo:dateCreated "1678-03-24"^^xsd:date,
+        "1678-03-24"@nl ;
     sdo:dateModified "1970-01-01"^^xsd:date ;
     sdo:description "1674-1679"@nl,
         "239"@nl,

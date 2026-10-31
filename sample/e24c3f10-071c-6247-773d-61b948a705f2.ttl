@@ -31,7 +31,9 @@
     picom:eventType picot_eventtypes:76 .
 
 <https://ex.org/Source:e24c3f10-071c-6247-773d-61b948a705f2> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:526 ;
+    sdo:additionalType picot_eventtypes:526,
+        <https://terms.personsincontext.org/sourcetypes/526> ;
+    sdo:dateCreated "1626-09-03"@nl ;
     sdo:dateModified "1970-01-01"^^xsd:date ;
     sdo:description "1317"@nl,
         "1624-1627"@nl,

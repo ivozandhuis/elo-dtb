@@ -65,13 +65,14 @@
     sdo:name "Jannetje Brouwers"@nl .
 
 <https://ex.org/Source:9fa5a281-efe0-5462-2b05-ae18052e22d0> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548 ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/548> ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/cf87f555-4ca1-45ba-bffe-4cd554a9416c/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/9fa5a281-efe0-5462-2b05-ae18052e22d0"^^xsd:anyURI ;
             sdo:position "1" ;
             sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/cf87f555-4ca1-45ba-bffe-4cd554a9416c/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
-    sdo:dateCreated "1811-03-10"^^xsd:date ;
+    sdo:dateCreated "1811-03-10"^^xsd:date,
+        "1811-03-10"@nl ;
     sdo:dateModified "1970-01-01"^^xsd:date ;
     sdo:description "1804-1811"@nl,
         "257"@nl,

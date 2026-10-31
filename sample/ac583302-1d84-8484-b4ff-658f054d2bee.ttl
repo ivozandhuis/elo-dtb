@@ -69,8 +69,9 @@
     sdo:name "Hendrik van der Aa"@nl .
 
 <https://ex.org/Source:ac583302-1d84-8484-b4ff-658f054d2bee> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548 ;
-    sdo:dateCreated "1718-05-15"^^xsd:date ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/548> ;
+    sdo:dateCreated "1718-05-15"^^xsd:date,
+        "1718-05-15"@nl ;
     sdo:dateModified "1970-01-01"^^xsd:date ;
     sdo:description "1711-1718"@nl,
         "247"@nl,

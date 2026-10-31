@@ -92,13 +92,14 @@
     sdo:spouse <https://ex.org/Person:649996e9-1440-f0e5-d3af-0e0a7643b51e> .
 
 <https://ex.org/Source:0bcf61e3-5659-4115-f763-3d3a9de7f2d0> a sdo:ArchiveComponent ;
-    sdo:additionalType picot_eventtypes:548 ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/548> ;
     sdo:associatedMedia [ a sdo:ImageObject ;
             sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/0dde07a5-2fe2-415b-8440-7b221c113427/info.json"^^xsd:anyURI ;
             sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/0bcf61e3-5659-4115-f763-3d3a9de7f2d0"^^xsd:anyURI ;
             sdo:position "1" ;
             sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/0dde07a5-2fe2-415b-8440-7b221c113427/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
-    sdo:dateCreated "1629-10-21"^^xsd:date ;
+    sdo:dateCreated "1629-10-21"^^xsd:date,
+        "1629-10-21"@nl ;
     sdo:dateModified "1970-01-01"^^xsd:date ;
     sdo:description "1627-1646"@nl,
         "271"@nl,
