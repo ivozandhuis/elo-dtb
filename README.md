@@ -12,10 +12,10 @@ Code to obtain the data from the [ELO OAI-PMH endpoint in A2A](https://webservic
 Get a [qlever](https://en.wikipedia.org/wiki/QLever) endpoint running with this data. I originally pushed the resulting data in the data-directory to github, but that grew to big. Use the sample data for a first experiment.
 
 ### Improvements
-Improve the original data by creating extra statements mainly with SPARQL CONSTRUCT queries, using the qlever endpoint. Order of the queries is unimportant.
+Improve the original data by creating extra statements mainly with SPARQL CONSTRUCT queries, using the qlever endpoint. For instance, construct a proper xsd:date, or find a family relation in the description. Order of the queries is unimportant.
 
 ### Normalizations
-Make additional statements that normalize/standardize the data after improvements by creating extra statements mainly with SPARQL CONSTRUCT queries, using the qlever endpoint. Order of the queries is unimportant.
+Make additional statements that normalize/standardize the data after improvements by creating extra statements mainly with SPARQL CONSTRUCT queries, using the qlever endpoint. For instance, find normalized links to givennames and toponyms. Order of the queries is unimportant. 
 
 ### Inferences (TBD)
 Inferences are made with SPARQL CONSTRUCT queries as well. They follow logic rules, like "two siblings have the same parents", "if person A is spouse of person B, person B is spouse of person A", "if persons A and B are spouses and person A is male, person B is female". Notice that these rules are culturally dependent and in this case apply in The Netherlands before the year 2000.
