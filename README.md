@@ -11,11 +11,14 @@ Code to obtain the data from the [ELO OAI-PMH endpoint in A2A](https://webservic
 ### Qlever
 Get a [qlever](https://en.wikipedia.org/wiki/QLever) endpoint running with this data. I originally pushed the resulting data in the data-directory to github, but that grew to big ...
 
-### Additions
-Improve and normalize the original data by creating extra statements mainly with SPARQL CONSTRUCT queries, using the qlever endpoint.
+### Improvements
+Improve the original data by creating extra statements mainly with SPARQL CONSTRUCT queries, using the qlever endpoint. Order of the queries is unimportant.
 
-### Qlever
-Read the improvements into the endpoint.
+### Normalizations
+Make additional statements that normalize/standardize the data after improvements by creating extra statements mainly with SPARQL CONSTRUCT queries, using the qlever endpoint. Order of the 
+
+### Inferences
+Inferences are made with SPARQL CONSTRUCT queries as well. They follow logic rules, like "two siblings have the same parents", "if person A is spuse of person B, person B is spouse of person A", "if persons A and B are spouses and person A is male, before the year 2000, in The Netherlands, person B is female".
 
 ## PiCo-Wikidata
 Vocabulary-level crosswalk between the PiCo model and Wikidata, done for the hack-a-lod (NDE) challenge. See [pico-wikidata/](pico-wikidata/).

@@ -4,8 +4,8 @@ PREFIX pnv: <https://w3id.org/pnv#>
 
 SELECT ?gname (COUNT(?gname) AS ?gnameCount) WHERE {
   ?po a picom:PersonObservation ;
-      sdo:additionalName/pnv:givenName ?gname .
+      sdo:givenName ?gname .
 } 
 GROUP BY ?gname
 ORDER BY DESC(?gnameCount)
-LIMIT 100
+

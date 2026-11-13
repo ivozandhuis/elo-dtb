@@ -1,8 +1,11 @@
 etl/dtb_trouwen/
 etl/dtb_dopen/
 etl/dtb_begraven/
-additions/normalizations/
-additions/improvements/
+improvements/dtb_trouwen/
+improvements/dtb_dopen/
+improvements/dtb_begraven/
+normalizations/data/
+materializations/data/
 qlever/data
 !qlever/data/data-collector.sh
 qlever/testdata

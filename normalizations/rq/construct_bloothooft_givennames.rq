@@ -1,0 +1,28 @@
+PREFIX sdo: <https://schema.org/>
+PREFIX picom: <https://personsincontext.org/model#>
+PREFIX pnv: <https://w3id.org/pnv#>
+PREFIX bloothooft: <https://linkeddata.cultureelerfgoed.nl/clariahnames/vocab/>
+
+CONSTRUCT {
+  ?po sdo:givenName ?gn_uri .
+}
+WHERE {
+  {
+    SELECT ?po (STR(?givenname) AS ?key) ?gender
+    WHERE {
+      ?po a picom:PersonObservation ;
+          sdo:givenName ?givenname ;
+          sdo:gender ?gender .
+    }
+  }
+  SERVICE <https://api.linkeddata.cultureelerfgoed.nl/datasets/rce/dutch-given-names/sparql> 
+  {
+    {
+      SELECT ?gn_uri (STR(?gn) AS ?key) ?gender
+      WHERE {
+        ?gn_uri bloothooft:gn ?gn ;
+                sdo:gender ?gender .
+      }
+    }
+  }
+}

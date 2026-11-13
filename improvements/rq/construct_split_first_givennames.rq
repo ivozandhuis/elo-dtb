@@ -1,0 +1,18 @@
+PREFIX sdo: <https://schema.org/>
+PREFIX picom: <https://personsincontext.org/model#>
+PREFIX pnv: <https://w3id.org/pnv#>
+
+CONSTRUCT {
+  ?po sdo:givenName ?first_name ;
+    sdo:givenName ?rest_name .
+}
+WHERE {
+  ?po a picom:PersonObservation ;
+      sdo:givenName ?gname .
+
+  # split on space in ?gname into ?first_name and ?rest_name
+  BIND(REPLACE(?gname, "^\\s+", "") AS ?trimmed)
+  FILTER(CONTAINS(?trimmed, " "))
+  BIND(STRBEFORE(?trimmed, " ") AS ?first_name)
+  BIND(STRAFTER(?trimmed, " ") AS ?rest_name)
+}
