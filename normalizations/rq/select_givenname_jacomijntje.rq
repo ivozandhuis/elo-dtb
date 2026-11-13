@@ -1,0 +1,12 @@
+PREFIX sdo: <https://schema.org/>
+PREFIX picom: <https://personsincontext.org/model#>
+PREFIX pnv: <https://w3id.org/pnv#>
+
+SELECT ?gname (COUNT(?gname) AS ?gnameCount)
+WHERE {
+  ?po a picom:PersonObservation ;
+      sdo:givenName ?gname .
+  FILTER (REGEX(?gname, "^ja(c|q|k){1,2}(o|e|ue)m(ie|y|ij|i|eij|ey|ei)n(a|e)?((tje|c?ke|tge|tie|tgie)n?)?$", "i"))
+}
+GROUP BY ?gname
+ORDER BY DESC(?gnameCount)

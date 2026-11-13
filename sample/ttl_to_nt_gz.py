@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Convert all *.ttl files in the current directory (or a given directory)
+Convert all *.ttl files in a directory AND its subdirectories
 into a single gzipped N-Triples file (*.nt.gz).
 
 Requires: pip install rdflib
@@ -21,14 +21,15 @@ from rdflib import Graph
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Merge *.ttl files into one *.nt.gz")
-    parser.add_argument("-d", "--directory", default=".", help="Directory with .ttl files (default: current)")
+    parser = argparse.ArgumentParser(description="Recursively merge *.ttl files into one *.nt.gz")
+    parser.add_argument("-d", "--directory", default=".", help="Root directory to scan (default: current)")
     parser.add_argument("-o", "--output", default="merged.nt.gz", help="Output file (default: merged.nt.gz)")
     args = parser.parse_args()
 
-    ttl_files = sorted(glob.glob(os.path.join(args.directory, "*.ttl")))
+    # Recursive search: **/*.ttl with recursive=True matches the directory itself and all subdirectories.
+    ttl_files = sorted(glob.glob(os.path.join(args.directory, "**", "*.ttl"), recursive=True))
     if not ttl_files:
-        print(f"No .ttl files found in {os.path.abspath(args.directory)}", file=sys.stderr)
+        print(f"No .ttl files found in {os.path.abspath(args.directory)} (or subdirectories)", file=sys.stderr)
         sys.exit(1)
 
     total = 0
