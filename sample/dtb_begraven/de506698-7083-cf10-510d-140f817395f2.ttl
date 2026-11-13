@@ -1,0 +1,55 @@
+@prefix picom: <https://personsincontext.org/model#> .
+@prefix picot_eventtypes: <https://terms.personsincontext.org/eventtypes/> .
+@prefix picot_roles: <https://terms.personsincontext.org/roles/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ex.org/Person:e966dc24-6868-b352-7692-a4cb36115008> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:de506698-7083-cf10-510d-140f817395f2> ;
+    sdo:additionalName [ a pnv:PersonName ;
+            pnv:baseSurname "Heemnskerk"@nl ;
+            pnv:givenName "Sijmon"@nl ;
+            pnv:literalName "Sijmon Aartse Heemnskerk"@nl ;
+            pnv:patronym "Aartse"@nl ] ;
+    sdo:children <https://ex.org/Person:419852b7-cf54-ce84-4cf2-499ef0bab236> ;
+    sdo:familyName "Heemnskerk"@nl ;
+    sdo:gender sdo:Male ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-041134>,
+        "Sijmon"@nl ;
+    sdo:name "Sijmon Aartse Heemnskerk"@nl .
+
+<https://ex.org/Person:419852b7-cf54-ce84-4cf2-499ef0bab236> a picom:PersonObservation ;
+    prov:hadPrimarySource <https://ex.org/Source:de506698-7083-cf10-510d-140f817395f2> ;
+    picom:hasLifeEvent <https://ex.org/Source:de506698-7083-cf10-510d-140f817395f2_begraaf_event> ;
+    picom:hasRole picot_roles:479 ;
+    sdo:description "Voorhout"@nl ;
+    sdo:familyName "Heemskerk"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024647>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024648>,
+        "Jan"@nl ;
+    sdo:name "Jan Heemskerk"@nl .
+
+<https://ex.org/Source:de506698-7083-cf10-510d-140f817395f2_begraaf_event> a picom:LifeEvent ;
+    picom:eventDate "1737-11-11"@nl ;
+    picom:eventPlace "Voorhout"@nl ;
+    picom:eventType picot_eventtypes:76 .
+
+<https://ex.org/Source:de506698-7083-cf10-510d-140f817395f2> a sdo:ArchiveComponent ;
+    sdo:additionalType <https://terms.personsincontext.org/sourcetypes/526> ;
+    sdo:associatedMedia [ a sdo:ImageObject ;
+            sdo:contentUrl "https://elo.memorix.io/resources/iiif/3/113bc53b-f533-446f-bf06-1c656ff52802/info.json"^^xsd:anyURI ;
+            sdo:embedUrl "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/de506698-7083-cf10-510d-140f817395f2"^^xsd:anyURI ;
+            sdo:position "1" ;
+            sdo:thumbnailUrl "https://elo.memorix.io/resources/iiif/3/113bc53b-f533-446f-bf06-1c656ff52802/full/!250,250/0/default.jpg"^^xsd:anyURI ] ;
+    sdo:dateCreated "1737-11-11"@nl ;
+    sdo:dateModified "1970-01-01"^^xsd:date ;
+    sdo:description "1695-1744"@nl,
+        "3"@nl,
+        "Datum begraven: 11-11-1737<br/><br/><a href=\"/collecties/archieven/archievenoverzicht/search/list/findingaid/0633B/file/3\">Inventarisnummer 3 van archiefnummer 0633B in Archieven</a>"@nl,
+        "Gaarders van Voorhout"@nl ;
+    sdo:locationCreated "Voorhout"@nl ;
+    sdo:name "Erfgoed Leiden (Leiden), Archiefnaam: Gaarders van Voorhout, Deel: 3, Periode: 1695-1744, (toegangsnr. 0633B), inv.nr. 3, Registers van ontvangst van impost op trouwen en begraven van Voorhout, 1695 december 4-1744 october 30., "@nl ;
+    sdo:url "https://www.erfgoedleiden.nl/collecties/personen/zoek-op-personen/deeds/de506698-7083-cf10-510d-140f817395f2"^^xsd:anyURI .
+

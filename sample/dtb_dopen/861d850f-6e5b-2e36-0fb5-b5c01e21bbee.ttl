@@ -19,7 +19,9 @@
     sdo:birthPlace "Nieuwe Wetering"@nl ;
     sdo:description "Doopdatum: 16-07-1765"@nl ;
     sdo:familyName "Nieuwkamp"@nl ;
-    sdo:givenName "Maria"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-032338>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-032339>,
+        "Maria"@nl ;
     sdo:name "Maria Nieuwkamp"@nl ;
     sdo:parent <https://ex.org/Person:b136a0ba-fa22-b5ab-73c2-1a4e8cef2310>,
         <https://ex.org/Person:fda08907-1e39-d5ce-e04b-65696d33a67d> .
@@ -34,7 +36,8 @@
             pnv:patronym "Cornelisse"@nl ;
             pnv:surnamePrefix "van der"@nl ] ;
     sdo:familyName "van der Meer"@nl ;
-    sdo:givenName "Lijb"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-141040>,
+        "Lijb"@nl ;
     sdo:name "Lijb Cornelisse van der Meer"@nl .
 
 <https://ex.org/Person:b136a0ba-fa22-b5ab-73c2-1a4e8cef2310> a picom:PersonObservation ;
@@ -48,6 +51,7 @@
     sdo:familyName "Nieuwkamp"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-021509>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-021510>,
         "Hermen"@nl ;
     sdo:knows <https://ex.org/Person:5310a8d5-6205-bad9-dbda-e245f0505847>,
         <https://ex.org/Person:bbdb33e6-c3c0-b099-f581-b37a0010d6b0> ;
@@ -63,7 +67,8 @@
             pnv:literalName "Gerret Dirkse Tijs"@nl ;
             pnv:patronym "Dirkse"@nl ] ;
     sdo:familyName "Tijs"@nl ;
-    sdo:givenName "Gerret"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-017028>,
+        "Gerret"@nl ;
     sdo:name "Gerret Dirkse Tijs"@nl .
 
 <https://ex.org/Person:fda08907-1e39-d5ce-e04b-65696d33a67d> a picom:PersonObservation ;
@@ -77,6 +82,7 @@
     sdo:familyName "Kiewit"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-032920>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-202552>,
         "Martje"@nl ;
     sdo:knows <https://ex.org/Person:5310a8d5-6205-bad9-dbda-e245f0505847>,
         <https://ex.org/Person:bbdb33e6-c3c0-b099-f581-b37a0010d6b0> ;

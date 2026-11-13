@@ -25,6 +25,7 @@
     sdo:children <https://ex.org/Person:65c6f052-a8c2-bb63-39fa-09997253b8f0> ;
     sdo:gender sdo:Male ;
     sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-046803>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-046804>,
         "Willem"@nl ;
     sdo:knows <https://ex.org/Person:10449e06-9f77-70d0-ba82-8a8d466809f7> ;
     sdo:name "Willem Willemsz"@nl .
@@ -35,7 +36,9 @@
     picom:hasReligion <https://iisg.amsterdam/resource/TaxonomyOfReligions/Nederduitse-Gereformeerde-Kerk> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 26-05-1648"@nl ;
-    sdo:givenName "Maria"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-032338>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-032339>,
+        "Maria"@nl ;
     sdo:name "Maria"@nl ;
     sdo:parent <https://ex.org/Person:21ee7348-b78d-5db3-f4c2-7870a298cae5> .
 

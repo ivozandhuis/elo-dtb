@@ -11,8 +11,7 @@ WHERE {
     SELECT ?po (STR(?givenname) AS ?key) ?gender
     WHERE {
       ?po a picom:PersonObservation ;
-          sdo:givenName ?givenname ;
-          sdo:gender ?gender .
+          sdo:givenName ?givenname .
     }
   }
   SERVICE <https://api.linkeddata.cultureelerfgoed.nl/datasets/rce/dutch-given-names/sparql> 
@@ -20,8 +19,7 @@ WHERE {
     {
       SELECT ?gn_uri (STR(?gn) AS ?key) ?gender
       WHERE {
-        ?gn_uri bloothooft:gn ?gn ;
-                sdo:gender ?gender .
+        ?gn_uri bloothooft:gn ?gn .
       }
     }
   }

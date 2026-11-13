@@ -18,7 +18,9 @@
             pnv:surnamePrefix "le"@nl ] ;
     sdo:description "Doopdatum: 23-12-1668"@nl ;
     sdo:familyName "le Pla"@nl ;
-    sdo:givenName "Johannes"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-026311>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-026312>,
+        "Johannes"@nl ;
     sdo:name "Johannes le Pla"@nl ;
     sdo:parent <https://ex.org/Person:dd169141-1586-df6b-98c3-6112f322c61e> .
 
@@ -33,6 +35,7 @@
     sdo:familyName "le Pla"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-000892>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-000893>,
         "Adriaan"@nl ;
     sdo:name "Adriaan le Pla"@nl .
 

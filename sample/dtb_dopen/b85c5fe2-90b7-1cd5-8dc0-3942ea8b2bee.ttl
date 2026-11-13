@@ -20,7 +20,9 @@
             pnv:literalName "Gijsje van Delft"@nl ;
             pnv:surnamePrefix "van"@nl ] ;
     sdo:familyName "van Delft"@nl ;
-    sdo:givenName "Gijsje"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-017901>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-017902>,
+        "Gijsje"@nl ;
     sdo:name "Gijsje van Delft"@nl .
 
 <https://ex.org/Person:58cb6453-cf51-50db-28ef-abeea8656dbe> a picom:PersonObservation ;
@@ -34,6 +36,7 @@
     sdo:familyName "Zwaan"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024647>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024648>,
         "Jan"@nl ;
     sdo:knows <https://ex.org/Person:3cce11b8-20a2-ff8e-2ef5-cb531ebb90ee>,
         <https://ex.org/Person:b0a3c87b-2ffb-a55f-ce4e-339d027a155c> ;
@@ -47,7 +50,9 @@
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 20-05-1770"@nl ;
     sdo:familyName "Zwaan"@nl ;
-    sdo:givenName "Jannetje"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024809>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024810>,
+        "Jannetje"@nl ;
     sdo:name "Jannetje Zwaan"@nl ;
     sdo:parent <https://ex.org/Person:58cb6453-cf51-50db-28ef-abeea8656dbe>,
         <https://ex.org/Person:e2983f86-2c27-96d6-047c-7eed7a0e64ab> .
@@ -61,7 +66,9 @@
             pnv:literalName "Cornelis van Delft"@nl ;
             pnv:surnamePrefix "van"@nl ] ;
     sdo:familyName "van Delft"@nl ;
-    sdo:givenName "Cornelis"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-008575>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-008576>,
+        "Cornelis"@nl ;
     sdo:name "Cornelis van Delft"@nl .
 
 <https://ex.org/Person:e2983f86-2c27-96d6-047c-7eed7a0e64ab> a picom:PersonObservation ;
@@ -75,6 +82,7 @@
     sdo:familyName "van Delft"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-044635>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-203164>,
         "Trijntje"@nl ;
     sdo:knows <https://ex.org/Person:3cce11b8-20a2-ff8e-2ef5-cb531ebb90ee>,
         <https://ex.org/Person:b0a3c87b-2ffb-a55f-ce4e-339d027a155c> ;

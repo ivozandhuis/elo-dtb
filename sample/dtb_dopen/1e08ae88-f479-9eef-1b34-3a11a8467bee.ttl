@@ -36,7 +36,9 @@
             pnv:givenName "Arij"@nl ;
             pnv:literalName "Arij Claesz"@nl ;
             pnv:patronym "Claesz"@nl ] ;
-    sdo:givenName "Arij"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-003847>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-201167>,
+        "Arij"@nl ;
     sdo:name "Arij Claesz"@nl .
 
 <https://ex.org/Person:50b210ab-1f87-0e60-a1a4-e3e620ea12b1> a picom:PersonObservation ;
@@ -46,7 +48,8 @@
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 08-05-1663"@nl ;
     sdo:familyName "Knotter"@nl ;
-    sdo:givenName "Dirck"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-009961>,
+        "Dirck"@nl ;
     sdo:name "Dirck Knotter"@nl ;
     sdo:parent <https://ex.org/Person:1ddf6d3d-6532-d178-0858-a8461bd1aeca>,
         <https://ex.org/Person:d5a282cc-54fc-7c08-58aa-786075463e5a> .
@@ -55,7 +58,9 @@
     prov:hadPrimarySource <https://ex.org/Source:1e08ae88-f479-9eef-1b34-3a11a8467bee> ;
     picom:hasRole picot_roles:573 ;
     sdo:familyName "Heijndrickse"@nl ;
-    sdo:givenName "Jannetje"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024809>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024810>,
+        "Jannetje"@nl ;
     sdo:name "Jannetje Heijndrickse"@nl .
 
 <https://ex.org/Person:d5a282cc-54fc-7c08-58aa-786075463e5a> a picom:PersonObservation ;

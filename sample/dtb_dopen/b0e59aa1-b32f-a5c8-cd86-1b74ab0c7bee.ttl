@@ -41,7 +41,9 @@
     prov:hadPrimarySource <https://ex.org/Source:b0e59aa1-b32f-a5c8-cd86-1b74ab0c7bee> ;
     picom:hasRole picot_roles:573 ;
     sdo:familyName "Rijckewaert"@nl ;
-    sdo:givenName "Jannetje"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024809>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024810>,
+        "Jannetje"@nl ;
     sdo:name "Jannetje Rijckewaert"@nl .
 
 <https://ex.org/Person:f4fa04eb-c1e4-46ff-1bb5-e1756e22a54f> a picom:PersonObservation ;
@@ -50,6 +52,7 @@
     sdo:familyName "Gavre"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-002961>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-201134>,
         "Anneken"@nl ;
     sdo:knows <https://ex.org/Person:3b3522f7-e734-c7e6-73c7-e4f0071bde21>,
         <https://ex.org/Person:a7d672c0-f39d-fe73-b711-3d3a4e9100e1>,
@@ -64,7 +67,9 @@
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 02-05-1649"@nl ;
     sdo:familyName "Vermeulen"@nl ;
-    sdo:givenName "Samuel"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-039891>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-039892>,
+        "Samuel"@nl ;
     sdo:name "Samuel Vermeulen"@nl ;
     sdo:parent <https://ex.org/Person:68a0f035-711b-2fd0-0deb-23a978d5a23c>,
         <https://ex.org/Person:f4fa04eb-c1e4-46ff-1bb5-e1756e22a54f> .

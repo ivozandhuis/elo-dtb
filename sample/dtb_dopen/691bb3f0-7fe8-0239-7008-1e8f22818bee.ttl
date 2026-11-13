@@ -20,7 +20,8 @@
             pnv:literalName "Claas Arentsz Glasbergen"@nl ;
             pnv:patronym "Arentsz"@nl ] ;
     sdo:familyName "Glasbergen"@nl ;
-    sdo:givenName "Claas"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-007991>,
+        "Claas"@nl ;
     sdo:name "Claas Arentsz Glasbergen"@nl .
 
 <https://ex.org/Person:7791afe5-0901-e735-13b4-364a8264e110> a picom:PersonObservation ;
@@ -45,7 +46,8 @@
             pnv:givenName "Jannetie"@nl ;
             pnv:literalName "Jannetie Arents"@nl ;
             pnv:patronym "Arents"@nl ] ;
-    sdo:givenName "Jannetie"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024805>,
+        "Jannetie"@nl ;
     sdo:name "Jannetie Arents"@nl .
 
 <https://ex.org/Person:96a420ba-2774-d470-473f-80e9eef37779> a picom:PersonObservation ;
@@ -60,7 +62,9 @@
             pnv:surnamePrefix "van"@nl ] ;
     sdo:description "Doopdatum: 09-09-1663"@nl ;
     sdo:familyName "van Glasbergen"@nl ;
-    sdo:givenName "Jan"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024647>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024648>,
+        "Jan"@nl ;
     sdo:name "Jan van Glasbergen"@nl ;
     sdo:parent <https://ex.org/Person:7791afe5-0901-e735-13b4-364a8264e110>,
         <https://ex.org/Person:ad28ca11-6ff3-b1bc-d97f-a127e040c150> .
@@ -77,6 +81,7 @@
     sdo:familyName "van Glasbergen"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024647>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024648>,
         "Jan"@nl ;
     sdo:knows <https://ex.org/Person:6215e5fb-d8b1-f711-8150-28f35dd548a4>,
         <https://ex.org/Person:87b4808a-68d6-0ca3-f820-4e1871232c7f> ;

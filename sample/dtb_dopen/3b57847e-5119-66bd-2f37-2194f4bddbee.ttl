@@ -15,7 +15,8 @@
     sdo:children <https://ex.org/Person:ea1300c8-abf0-b040-9482-7cfe67c520a3> ;
     sdo:familyName "Orson"@nl ;
     sdo:gender sdo:Female ;
-    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-032339>,
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-032338>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-032339>,
         "Maria"@nl ;
     sdo:knows <https://ex.org/Person:91d87ce1-22c2-4e8a-26c8-ffd83ccccfee> ;
     sdo:name "Maria Orson"@nl ;
@@ -27,6 +28,7 @@
     sdo:familyName "Lichtvoet"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024647>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024648>,
         "Jan"@nl ;
     sdo:knows <https://ex.org/Person:91d87ce1-22c2-4e8a-26c8-ffd83ccccfee> ;
     sdo:name "Jan Lichtvoet"@nl ;
@@ -36,7 +38,9 @@
     prov:hadPrimarySource <https://ex.org/Source:3b57847e-5119-66bd-2f37-2194f4bddbee> ;
     picom:hasRole picot_roles:573 ;
     sdo:familyName "Orson"@nl ;
-    sdo:givenName "Barber"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-004667>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-201219>,
+        "Barber"@nl ;
     sdo:name "Barber Orson"@nl .
 
 <https://ex.org/Person:ea1300c8-abf0-b040-9482-7cfe67c520a3> a picom:PersonObservation ;
@@ -46,7 +50,9 @@
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 07-10-1738"@nl ;
     sdo:familyName "Lichtvoet"@nl ;
-    sdo:givenName "Jacobus"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024363>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024364>,
+        "Jacobus"@nl ;
     sdo:name "Jacobus Lichtvoet"@nl ;
     sdo:parent <https://ex.org/Person:0e09a015-1f05-4f6b-6f87-70a1abb54ba5>,
         <https://ex.org/Person:35144d9f-4a5e-072f-3ee7-76040726f0fc> .

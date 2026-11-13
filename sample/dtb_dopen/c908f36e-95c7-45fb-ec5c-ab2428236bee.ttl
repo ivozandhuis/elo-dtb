@@ -28,7 +28,8 @@
     picom:hasReligion <https://iisg.amsterdam/resource/TaxonomyOfReligions/Nederduitse-Gereformeerde-Kerk> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 06-02-1671"@nl ;
-    sdo:givenName "Annetjen"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-002996>,
+        "Annetjen"@nl ;
     sdo:name "Annetjen"@nl ;
     sdo:parent <https://ex.org/Person:01a79838-e0f4-c358-454a-02722ce1a8dc>,
         <https://ex.org/Person:c25ab023-8cfa-feaa-8268-972b2faa5548> .
@@ -54,7 +55,8 @@
             pnv:givenName "Annetjen"@nl ;
             pnv:literalName "Annetjen Thijssen"@nl ;
             pnv:patronym "Thijssen"@nl ] ;
-    sdo:givenName "Annetjen"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-002996>,
+        "Annetjen"@nl ;
     sdo:name "Annetjen Thijssen"@nl .
 
 <https://ex.org/Source:c908f36e-95c7-45fb-ec5c-ab2428236bee> a sdo:ArchiveComponent ;

@@ -18,7 +18,9 @@
             pnv:givenName "Neeltje"@nl ;
             pnv:literalName "Neeltje Jans"@nl ;
             pnv:patronym "Jans"@nl ] ;
-    sdo:givenName "Neeltje"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-035169>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-202671>,
+        "Neeltje"@nl ;
     sdo:name "Neeltje Jans"@nl .
 
 <https://ex.org/Person:31dcf671-a4ec-ad13-f525-276f66954872> a picom:PersonObservation ;
@@ -32,6 +34,7 @@
     sdo:familyName "Ploos"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-003847>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-201167>,
         "Arij"@nl ;
     sdo:knows <https://ex.org/Person:0d553e03-5a62-6283-ee80-da349b263516>,
         <https://ex.org/Person:84ffb3ca-5ab7-e7ae-aec7-a0a1afd49131> ;
@@ -57,7 +60,9 @@
     prov:hadPrimarySource <https://ex.org/Source:21ac7e44-0a52-1322-2254-ba27a92a9bee> ;
     picom:hasRole picot_roles:573 ;
     sdo:familyName "Dijffa"@nl ;
-    sdo:givenName "Andries"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-002562>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-002563>,
+        "Andries"@nl ;
     sdo:name "Andries Dijffa"@nl .
 
 <https://ex.org/Person:e01756b5-9c16-518b-8dd0-d3680ab3a3f5> a picom:PersonObservation ;
@@ -67,7 +72,9 @@
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 28-08-1720"@nl ;
     sdo:familyName "Ploos"@nl ;
-    sdo:givenName "Arij"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-003847>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-201167>,
+        "Arij"@nl ;
     sdo:name "Arij Ploos"@nl ;
     sdo:parent <https://ex.org/Person:31dcf671-a4ec-ad13-f525-276f66954872>,
         <https://ex.org/Person:64dad45d-63c8-1ceb-3538-d2d0e9cc1b83> .

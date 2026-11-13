@@ -21,7 +21,8 @@
     sdo:children <https://ex.org/Person:47b594cf-86b2-78b3-a341-541a404d28cd> ;
     sdo:familyName "de Grostes"@nl ;
     sdo:gender sdo:Female ;
-    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-002903>,
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-002902>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-002903>,
         "Anne"@nl ;
     sdo:knows <https://ex.org/Person:4b9d7c0f-0470-d954-6794-2ddc3e8c5b1c>,
         <https://ex.org/Person:9d6d9d61-718a-d527-d69e-c7f2624aeddc> ;
@@ -40,7 +41,9 @@
             pnv:surnamePrefix "de"@nl ] ;
     sdo:description "Doopdatum: 26-02-1687"@nl ;
     sdo:familyName "de Coufle"@nl ;
-    sdo:givenName "Anna"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-002856>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-002857>,
+        "Anna"@nl ;
     sdo:name "Anna de Coufle"@nl ;
     sdo:parent <https://ex.org/Person:0d0cbccb-4c63-65e4-2325-7112d3aa1f1d>,
         <https://ex.org/Person:d8fa7012-fc70-5457-e7b0-8e3b8fa843ea> .
@@ -49,14 +52,20 @@
     prov:hadPrimarySource <https://ex.org/Source:e0b6b543-c802-9a7d-0e59-0db2596eabee> ;
     picom:hasRole picot_roles:573 ;
     sdo:familyName "Bilot"@nl ;
-    sdo:givenName "Sara"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-039964>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-039965>,
+        "Sara"@nl ;
     sdo:name "Sara Bilot"@nl .
 
 <https://ex.org/Person:9d6d9d61-718a-d527-d69e-c7f2624aeddc> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:e0b6b543-c802-9a7d-0e59-0db2596eabee> ;
     picom:hasRole picot_roles:573 ;
     sdo:familyName "Pereau"@nl ;
-    sdo:givenName "François"@nl,
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-014780>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-014781>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-025200>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-025201>,
+        "François"@nl,
         "Jean"@nl,
         "Jean François"@nl ;
     sdo:name "Jean François Pereau"@nl .
@@ -72,6 +81,7 @@
     sdo:familyName "de Coufle"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-036500>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-036501>,
         "Philippe"@nl ;
     sdo:knows <https://ex.org/Person:4b9d7c0f-0470-d954-6794-2ddc3e8c5b1c>,
         <https://ex.org/Person:9d6d9d61-718a-d527-d69e-c7f2624aeddc> ;

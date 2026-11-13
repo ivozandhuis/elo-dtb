@@ -51,7 +51,7 @@ for set in sets:
 
             # run specific improvement queries and add the result to graph 'g'
             rq_dir = Path("../improvements/rq/" + set)
-            for rq_file in rq_dir.glob("**/*construct*.rq"):
+            for rq_file in rq_dir.glob("*construct*.rq"):
                 # read SPARQL CONSTRUCT query
                 query = rq_file.read_text(encoding="utf-8")
 
@@ -72,7 +72,7 @@ for set in sets:
 
             # run general improvement queries and add the result to graph 'g'
             rq_dir = Path("../improvements/rq")
-            for rq_file in rq_dir.glob("**/*construct*.rq"):
+            for rq_file in rq_dir.glob("*construct*.rq"):
                 query = rq_file.read_text(encoding="utf-8")
                 query = "\n".join(
                     line for line in query.splitlines() if "ql:" not in line
@@ -87,7 +87,7 @@ for set in sets:
 
             # run all normalizations queries and add the result to graph 'g'
             rq_dir = Path("../normalizations/rq")
-            for rq_file in rq_dir.glob("**/*construct*.rq"):
+            for rq_file in rq_dir.glob("*construct*.rq"):
                 query = rq_file.read_text(encoding="utf-8")
                 query = "\n".join(
                     line for line in query.splitlines() if "ql:" not in line

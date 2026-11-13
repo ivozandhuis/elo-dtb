@@ -18,7 +18,9 @@
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 08-04-1672"@nl ;
     sdo:familyName "Minewijncks"@nl ;
-    sdo:givenName "Catharina"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-007195>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-007196>,
+        "Catharina"@nl ;
     sdo:name "Catharina Minewijncks"@nl ;
     sdo:parent <https://ex.org/Person:6ac1c983-515d-1e3a-3da6-94d2685ccf00>,
         <https://ex.org/Person:76a60437-4d0d-dde6-a741-12ab6367ef67> .

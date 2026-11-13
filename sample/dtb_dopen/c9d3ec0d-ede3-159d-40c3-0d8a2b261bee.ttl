@@ -60,7 +60,9 @@
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 14-03-1627"@nl ;
     sdo:familyName "Scheen"@nl ;
-    sdo:givenName "Jan"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024647>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024648>,
+        "Jan"@nl ;
     sdo:name "Jan Scheen"@nl ;
     sdo:parent <https://ex.org/Person:2c2c758b-4710-2032-9344-a732177a66a2>,
         <https://ex.org/Person:cb80897f-ff16-f98f-c82b-c8527cefc4d9> .

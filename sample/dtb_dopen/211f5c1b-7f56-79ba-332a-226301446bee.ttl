@@ -21,7 +21,9 @@
             pnv:patronym "Willem"@nl ;
             pnv:surnamePrefix "van der"@nl ] ;
     sdo:familyName "van der Veer"@nl ;
-    sdo:givenName "Kornelis"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-028170>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-028171>,
+        "Kornelis"@nl ;
     sdo:name "Kornelis Willem van der Veer"@nl .
 
 <https://ex.org/Person:92d7459c-e99b-3416-86a0-1ad753bfc0b8> a picom:PersonObservation ;
@@ -33,7 +35,9 @@
             pnv:literalName "Marijtje van der Veer"@nl ;
             pnv:surnamePrefix "van der"@nl ] ;
     sdo:familyName "van der Veer"@nl ;
-    sdo:givenName "Marijtje"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-032481>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-202530>,
+        "Marijtje"@nl ;
     sdo:name "Marijtje van der Veer"@nl .
 
 <https://ex.org/Person:b17e0448-6349-072d-17e6-0d34aaa11c02> a picom:PersonObservation ;
@@ -42,6 +46,7 @@
     sdo:familyName "Swanevelt"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024647>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024648>,
         "Jan"@nl ;
     sdo:knows <https://ex.org/Person:01772081-3eef-3b5b-1fca-52639423656a>,
         <https://ex.org/Person:92d7459c-e99b-3416-86a0-1ad753bfc0b8> ;
@@ -59,7 +64,8 @@
     sdo:children <https://ex.org/Person:de44101f-b1d1-64e1-73f0-0d74572fabbf> ;
     sdo:familyName "van der Veer"@nl ;
     sdo:gender sdo:Female ;
-    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-003289>,
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-003288>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-003289>,
         "Antje"@nl ;
     sdo:knows <https://ex.org/Person:01772081-3eef-3b5b-1fca-52639423656a>,
         <https://ex.org/Person:92d7459c-e99b-3416-86a0-1ad753bfc0b8> ;
@@ -73,7 +79,9 @@
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 30-07-1761"@nl ;
     sdo:familyName "Swanevelt"@nl ;
-    sdo:givenName "Wilhelmus"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-046676>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-046677>,
+        "Wilhelmus"@nl ;
     sdo:name "Wilhelmus Swanevelt"@nl ;
     sdo:parent <https://ex.org/Person:b17e0448-6349-072d-17e6-0d34aaa11c02>,
         <https://ex.org/Person:dcecc531-7c95-f035-0402-0e15f3dba857> .

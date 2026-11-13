@@ -31,7 +31,8 @@
     prov:hadPrimarySource <https://ex.org/Source:ecb08563-3621-6069-8854-2eccd0143bee> ;
     picom:hasRole picot_roles:573 ;
     sdo:familyName "Roerts"@nl ;
-    sdo:givenName "Agnietie"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-001353>,
+        "Agnietie"@nl ;
     sdo:name "Agnietie Roerts"@nl .
 
 <https://ex.org/Person:5b0f3551-0086-31bf-7f56-6e5c5854c74d> a picom:PersonObservation ;
@@ -43,6 +44,7 @@
     sdo:children <https://ex.org/Person:d0ac6d44-cc95-a3b8-d566-9790b15baf19> ;
     sdo:gender sdo:Male ;
     sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024287>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024288>,
         "Jacob"@nl ;
     sdo:knows <https://ex.org/Person:57cc9f45-d21b-42fa-c581-1ff5f83b1195> ;
     sdo:name "Jacob Danielsz"@nl ;
@@ -54,7 +56,8 @@
     picom:hasReligion <https://iisg.amsterdam/resource/TaxonomyOfReligions/Nederduitse-Gereformeerde-Kerk> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 19-10-1662"@nl ;
-    sdo:givenName "Hendrick"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-020790>,
+        "Hendrick"@nl ;
     sdo:name "Hendrick"@nl ;
     sdo:parent <https://ex.org/Person:111bc338-804a-240f-fe90-777eafb684bd>,
         <https://ex.org/Person:5b0f3551-0086-31bf-7f56-6e5c5854c74d> .

@@ -20,6 +20,7 @@
     sdo:children <https://ex.org/Person:d13269eb-82e5-3809-7e05-982a086bd7dc> ;
     sdo:gender sdo:Female ;
     sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-002995>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-201136>,
         "Annetje"@nl ;
     sdo:knows <https://ex.org/Person:9f8daa7e-1865-bf86-811d-c0dba7315453> ;
     sdo:name "Annetje Jacobsdr"@nl ;
@@ -29,7 +30,10 @@
     prov:hadPrimarySource <https://ex.org/Source:52165429-e50a-44d2-99f4-7a8794c75bee> ;
     picom:hasRole picot_roles:573 ;
     sdo:familyName "Elsevier"@nl ;
-    sdo:givenName "Catrijn"@nl,
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-007306>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-032442>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-032443>,
+        "Catrijn"@nl,
         "Marij"@nl,
         "Marij Catrijn"@nl ;
     sdo:name "Marij Catrijn Elsevier"@nl .
@@ -52,7 +56,9 @@
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 10-09-1673"@nl ;
     sdo:familyName "Hofman"@nl ;
-    sdo:givenName "Benjamin"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-005614>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-005615>,
+        "Benjamin"@nl ;
     sdo:name "Benjamin Hofman"@nl ;
     sdo:parent <https://ex.org/Person:125a9d75-d38d-5b9b-bbb8-6b6ffef23b8d>,
         <https://ex.org/Person:b229cd99-aa1c-f291-c4bd-9e1f36f14c2c> .

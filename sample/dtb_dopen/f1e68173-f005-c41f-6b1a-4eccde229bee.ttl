@@ -18,7 +18,9 @@
             pnv:givenName "Anna"@nl ;
             pnv:literalName "Anna Crispijns"@nl ;
             pnv:patronym "Crispijns"@nl ] ;
-    sdo:givenName "Anna"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-002856>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-002857>,
+        "Anna"@nl ;
     sdo:name "Anna Crispijns"@nl .
 
 <https://ex.org/Person:37e70a7f-8c6c-258d-eba8-89e58c97d248> a picom:PersonObservation ;
@@ -30,7 +32,8 @@
             pnv:literalName "Guiljaam van Houtie"@nl ;
             pnv:surnamePrefix "van"@nl ] ;
     sdo:familyName "van Houtie"@nl ;
-    sdo:givenName "Guiljaam"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-019003>,
+        "Guiljaam"@nl ;
     sdo:name "Guiljaam van Houtie"@nl .
 
 <https://ex.org/Person:3a1df625-6da4-1214-7105-9d2a6f2f8ae3> a picom:PersonObservation ;
@@ -43,7 +46,8 @@
     sdo:children <https://ex.org/Person:e208e68a-8952-1c06-bea5-53e313738df7> ;
     sdo:familyName "de Man"@nl ;
     sdo:gender sdo:Female ;
-    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-039965>,
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-039964>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-039965>,
         "Sara"@nl ;
     sdo:knows <https://ex.org/Person:0da74053-1d31-c29e-29b1-7c297cdbaac2>,
         <https://ex.org/Person:37e70a7f-8c6c-258d-eba8-89e58c97d248> ;
@@ -56,6 +60,7 @@
     sdo:familyName "Lens"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-026311>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-026312>,
         "Johannes"@nl ;
     sdo:knows <https://ex.org/Person:0da74053-1d31-c29e-29b1-7c297cdbaac2>,
         <https://ex.org/Person:37e70a7f-8c6c-258d-eba8-89e58c97d248> ;
@@ -69,7 +74,9 @@
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 07-11-1717"@nl ;
     sdo:familyName "Lens"@nl ;
-    sdo:givenName "Anna"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-002856>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-002857>,
+        "Anna"@nl ;
     sdo:name "Anna Lens"@nl ;
     sdo:parent <https://ex.org/Person:3a1df625-6da4-1214-7105-9d2a6f2f8ae3>,
         <https://ex.org/Person:9a8bef8b-70de-82dc-e1ca-415fce02a774> .

@@ -18,7 +18,8 @@
             pnv:givenName "Cnelis"@nl ;
             pnv:literalName "Cnelis Tomisse"@nl ;
             pnv:patronym "Tomisse"@nl ] ;
-    sdo:givenName "Cnelis"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-078890>,
+        "Cnelis"@nl ;
     sdo:name "Cnelis Tomisse"@nl .
 
 <https://ex.org/Person:2a0151c6-035b-317f-4158-664ee97c9255> a picom:PersonObservation ;
@@ -28,7 +29,9 @@
     picom:hasRole picot_roles:575 ;
     sdo:birthPlace "Langeraar"@nl ;
     sdo:description "Spurius<br>Doopdatum: 26-06-1714"@nl ;
-    sdo:givenName "Martinus"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-032905>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-032906>,
+        "Martinus"@nl ;
     sdo:name "Martinus"@nl ;
     sdo:parent <https://ex.org/Person:569e2c6d-60fc-e63d-5e67-d2cf24c689bc>,
         <https://ex.org/Person:99120066-d67e-05da-5dff-0a6f29db73ac> .
@@ -41,7 +44,8 @@
             pnv:patronym "Meertens"@nl ] ;
     sdo:children <https://ex.org/Person:2a0151c6-035b-317f-4158-664ee97c9255> ;
     sdo:gender sdo:Female ;
-    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-032825>,
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-032824>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-032825>,
         "Martie"@nl ;
     sdo:knows <https://ex.org/Person:03611d14-4939-4537-3371-e27ae04990ff>,
         <https://ex.org/Person:df099a9f-537b-9077-52a6-21afd45cbef3> ;
@@ -57,6 +61,7 @@
     sdo:children <https://ex.org/Person:2a0151c6-035b-317f-4158-664ee97c9255> ;
     sdo:gender sdo:Male ;
     sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024647>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024648>,
         "Jan"@nl ;
     sdo:knows <https://ex.org/Person:03611d14-4939-4537-3371-e27ae04990ff>,
         <https://ex.org/Person:df099a9f-537b-9077-52a6-21afd45cbef3> ;
@@ -70,7 +75,9 @@
             pnv:givenName "Anna"@nl ;
             pnv:literalName "Anna Gijse"@nl ;
             pnv:patronym "Gijse"@nl ] ;
-    sdo:givenName "Anna"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-002856>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-002857>,
+        "Anna"@nl ;
     sdo:name "Anna Gijse"@nl .
 
 <https://ex.org/Source:60766a05-9c02-9caa-6c3b-948d568bfbee> a sdo:ArchiveComponent ;

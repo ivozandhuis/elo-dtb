@@ -27,7 +27,9 @@
     prov:hadPrimarySource <https://ex.org/Source:f982aff4-24d7-cecf-b934-b4f2422debee> ;
     picom:hasRole picot_roles:573 ;
     sdo:familyName "Plateau"@nl ;
-    sdo:givenName "Jenne"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-025462>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-025463>,
+        "Jenne"@nl ;
     sdo:name "Jenne Plateau"@nl .
 
 <https://ex.org/Person:4924c457-29a1-5cb9-2021-e7dd3e6f174e> a picom:PersonObservation ;
@@ -44,7 +46,9 @@
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 09-1604"@nl ;
     sdo:familyName "Molon"@nl ;
-    sdo:givenName "Abel"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-000535>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-000536>,
+        "Abel"@nl ;
     sdo:name "Abel Molon"@nl ;
     sdo:parent <https://ex.org/Person:0db9cf8b-158a-64bc-88ea-de9969739657>,
         <https://ex.org/Person:b52420d7-2953-8a12-20c0-aef9f6680905> .
@@ -61,7 +65,8 @@
     prov:hadPrimarySource <https://ex.org/Source:f982aff4-24d7-cecf-b934-b4f2422debee> ;
     picom:hasRole picot_roles:573 ;
     sdo:familyName "Mauris"@nl ;
-    sdo:givenName "Jaques"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-025079>,
+        "Jaques"@nl ;
     sdo:name "Jaques Mauris"@nl .
 
 <https://ex.org/Person:b52420d7-2953-8a12-20c0-aef9f6680905> a picom:PersonObservation ;

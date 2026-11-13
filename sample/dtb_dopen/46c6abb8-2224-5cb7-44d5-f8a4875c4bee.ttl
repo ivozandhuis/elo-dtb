@@ -14,7 +14,9 @@
     prov:hadPrimarySource <https://ex.org/Source:46c6abb8-2224-5cb7-44d5-f8a4875c4bee> ;
     picom:hasRole picot_roles:573 ;
     sdo:familyName "Slooris"@nl ;
-    sdo:givenName "Elisabeth"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-011850>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-011851>,
+        "Elisabeth"@nl ;
     sdo:name "Elisabeth Slooris"@nl .
 
 <https://ex.org/Person:29a32b7b-df77-3076-ecc7-2c4678f2c7fb> a picom:PersonObservation ;
@@ -24,7 +26,9 @@
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 29-08-1760"@nl ;
     sdo:familyName "Wantenaar"@nl ;
-    sdo:givenName "Elisabeth"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-011850>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-011851>,
+        "Elisabeth"@nl ;
     sdo:name "Elisabeth Wantenaar"@nl ;
     sdo:parent <https://ex.org/Person:3ecd4c01-bc17-b654-8d9a-8ca46a350bf7>,
         <https://ex.org/Person:687f7441-9baf-6f0b-9549-570116f2b6f9> .
@@ -47,6 +51,7 @@
     sdo:familyName "Wantenaar"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-047379>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-047380>,
         "Wouter"@nl ;
     sdo:knows <https://ex.org/Person:0a4ee0c7-1ed6-66b8-d1b0-2c40f84c1568>,
         <https://ex.org/Person:6a7d9c2f-745f-3efd-3a95-b3d89546aa2b> ;
@@ -57,7 +62,9 @@
     prov:hadPrimarySource <https://ex.org/Source:46c6abb8-2224-5cb7-44d5-f8a4875c4bee> ;
     picom:hasRole picot_roles:573 ;
     sdo:familyName "Wijngaars"@nl ;
-    sdo:givenName "Jan"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024647>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024648>,
+        "Jan"@nl ;
     sdo:name "Jan Wijngaars"@nl .
 
 <https://ex.org/Source:46c6abb8-2224-5cb7-44d5-f8a4875c4bee> a sdo:ArchiveComponent ;

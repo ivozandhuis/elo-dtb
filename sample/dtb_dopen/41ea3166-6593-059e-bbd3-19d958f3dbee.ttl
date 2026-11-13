@@ -18,7 +18,9 @@
             pnv:givenName "Marijtje"@nl ;
             pnv:literalName "Marijtje Alberts"@nl ;
             pnv:patronym "Alberts"@nl ] ;
-    sdo:givenName "Marijtje"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-032481>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-202530>,
+        "Marijtje"@nl ;
     sdo:name "Marijtje Alberts"@nl .
 
 <https://ex.org/Person:173a5b51-f7d0-543b-fe36-f6040ef6177a> a picom:PersonObservation ;
@@ -27,6 +29,7 @@
     sdo:familyName "Reket"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-002995>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-201136>,
         "Annetje"@nl ;
     sdo:knows <https://ex.org/Person:049349da-e35f-32fe-8feb-f492dd85cdce>,
         <https://ex.org/Person:4cc6c0d5-1a0b-b350-a4ad-434b802894ce> ;
@@ -39,6 +42,7 @@
     sdo:familyName "Andel"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024647>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024648>,
         "Jan"@nl ;
     sdo:knows <https://ex.org/Person:049349da-e35f-32fe-8feb-f492dd85cdce>,
         <https://ex.org/Person:4cc6c0d5-1a0b-b350-a4ad-434b802894ce> ;
@@ -52,7 +56,9 @@
             pnv:givenName "Willemtje"@nl ;
             pnv:literalName "Willemtje Alberts"@nl ;
             pnv:patronym "Alberts"@nl ] ;
-    sdo:givenName "Willemtje"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-046939>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-203258>,
+        "Willemtje"@nl ;
     sdo:name "Willemtje Alberts"@nl .
 
 <https://ex.org/Person:7f6b447b-882b-7ff2-3f11-4fa5fce0a779> a picom:PersonObservation ;
@@ -62,7 +68,9 @@
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 28-08-1685"@nl ;
     sdo:familyName "Andel"@nl ;
-    sdo:givenName "Maria"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-032338>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-032339>,
+        "Maria"@nl ;
     sdo:name "Maria Andel"@nl ;
     sdo:parent <https://ex.org/Person:173a5b51-f7d0-543b-fe36-f6040ef6177a>,
         <https://ex.org/Person:205c37fd-1958-4280-5064-6773d00f5950> .

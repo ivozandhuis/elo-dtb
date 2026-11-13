@@ -14,7 +14,9 @@
     prov:hadPrimarySource <https://ex.org/Source:a9a340be-2824-aec9-1f92-f3cc53153bee> ;
     picom:hasRole picot_roles:573 ;
     sdo:familyName "Stoljon"@nl ;
-    sdo:givenName "Jeanne"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-025221>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-025222>,
+        "Jeanne"@nl ;
     sdo:name "Jeanne Stoljon"@nl .
 
 <https://ex.org/Person:71e5eab2-3a65-b525-b831-4df2684f1e57> a picom:PersonObservation ;
@@ -22,7 +24,8 @@
     sdo:children <https://ex.org/Person:98949c9b-eb6a-746d-3091-b32844574e0c> ;
     sdo:familyName "Provo"@nl ;
     sdo:gender sdo:Female ;
-    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-032339>,
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-032338>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-032339>,
         "Maria"@nl ;
     sdo:knows <https://ex.org/Person:12cae139-82ff-16df-b7d5-dc08937ce97d> ;
     sdo:name "Maria Provo"@nl ;
@@ -34,6 +37,7 @@
     sdo:familyName "Burgers"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-036671>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-036672>,
         "Pieter"@nl ;
     sdo:knows <https://ex.org/Person:12cae139-82ff-16df-b7d5-dc08937ce97d> ;
     sdo:name "Pieter Burgers"@nl ;
@@ -46,7 +50,9 @@
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 26-08-1717"@nl ;
     sdo:familyName "Burgers"@nl ;
-    sdo:givenName "Johannis"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-026348>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-026349>,
+        "Johannis"@nl ;
     sdo:name "Johannis Burgers"@nl ;
     sdo:parent <https://ex.org/Person:71e5eab2-3a65-b525-b831-4df2684f1e57>,
         <https://ex.org/Person:8ffcb0d6-bded-55f8-210f-26ee9d20ae28> .

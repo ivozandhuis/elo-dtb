@@ -18,7 +18,9 @@
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 07-04-1729"@nl ;
     sdo:familyName "Wilingh"@nl ;
-    sdo:givenName "Margaretha"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-032085>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-202508>,
+        "Margaretha"@nl ;
     sdo:name "Margaretha Wilingh"@nl ;
     sdo:parent <https://ex.org/Person:85658363-68b8-2d95-77b3-ef6fe9bcf4c2>,
         <https://ex.org/Person:b24cdb92-342f-0c70-59f2-40faeba88619> .
@@ -27,7 +29,11 @@
     prov:hadPrimarySource <https://ex.org/Source:9686f325-11cb-ed6c-929c-4b8e9d95cbee> ;
     picom:hasRole picot_roles:573 ;
     sdo:familyName "Severijn"@nl ;
-    sdo:givenName "Johanna"@nl,
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-026275>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-026276>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-032085>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-202508>,
+        "Johanna"@nl,
         "Johanna Margaretha"@nl,
         "Margaretha"@nl ;
     sdo:name "Johanna Margaretha Severijn"@nl .
@@ -38,6 +44,7 @@
     sdo:familyName "Wilingh"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-021476>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-021477>,
         "Hermannus"@nl ;
     sdo:knows <https://ex.org/Person:1966ba4e-4dbf-ed50-c779-6def77741e82>,
         <https://ex.org/Person:f391bb9d-2dce-fa6c-d834-a4d17f51e347> ;
@@ -55,6 +62,7 @@
     sdo:familyName "van der Vin"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-040502>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-202967>,
         "Sibilla"@nl ;
     sdo:knows <https://ex.org/Person:1966ba4e-4dbf-ed50-c779-6def77741e82>,
         <https://ex.org/Person:f391bb9d-2dce-fa6c-d834-a4d17f51e347> ;
@@ -70,7 +78,11 @@
             pnv:literalName "Otto Jacobus van der Vin"@nl ;
             pnv:surnamePrefix "van der"@nl ] ;
     sdo:familyName "van der Vin"@nl ;
-    sdo:givenName "Jacobus"@nl,
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024363>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024364>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-035945>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-202722>,
+        "Jacobus"@nl,
         "Otto"@nl,
         "Otto Jacobus"@nl ;
     sdo:name "Otto Jacobus van der Vin"@nl .

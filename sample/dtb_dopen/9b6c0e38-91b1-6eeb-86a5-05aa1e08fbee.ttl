@@ -20,7 +20,9 @@
             pnv:literalName "Jaap de Kooning"@nl ;
             pnv:surnamePrefix "de"@nl ] ;
     sdo:familyName "de Kooning"@nl ;
-    sdo:givenName "Jaap"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024175>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024176>,
+        "Jaap"@nl ;
     sdo:name "Jaap de Kooning"@nl .
 
 <https://ex.org/Person:56d69b9f-c179-f678-acb7-9694ee2a4a7b> a picom:PersonObservation ;
@@ -34,6 +36,7 @@
     sdo:familyName "Koek"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024647>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024648>,
         "Jan"@nl ;
     sdo:knows <https://ex.org/Person:2cddc74d-454a-1455-3028-f2dd8d0c11c8>,
         <https://ex.org/Person:a74ac508-5b27-ea46-7300-7b2e954e16ff> ;
@@ -48,7 +51,8 @@
     sdo:birthPlace "Roelofarendsveen"@nl ;
     sdo:description "Doopdatum: 22-02-1809"@nl ;
     sdo:familyName "Koek"@nl ;
-    sdo:givenName "Jaapik"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024186>,
+        "Jaapik"@nl ;
     sdo:name "Jaapik Koek"@nl ;
     sdo:parent <https://ex.org/Person:56d69b9f-c179-f678-acb7-9694ee2a4a7b>,
         <https://ex.org/Person:c90531a5-a7a8-3e16-19d5-b0818f686641> .
@@ -62,7 +66,9 @@
             pnv:literalName "Jannetje de Kooning"@nl ;
             pnv:surnamePrefix "de"@nl ] ;
     sdo:familyName "de Kooning"@nl ;
-    sdo:givenName "Jannetje"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024809>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024810>,
+        "Jannetje"@nl ;
     sdo:name "Jannetje de Kooning"@nl .
 
 <https://ex.org/Person:c90531a5-a7a8-3e16-19d5-b0818f686641> a picom:PersonObservation ;
@@ -76,6 +82,7 @@
     sdo:familyName "van Tol"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-029028>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-202357>,
         "Leena"@nl ;
     sdo:knows <https://ex.org/Person:2cddc74d-454a-1455-3028-f2dd8d0c11c8>,
         <https://ex.org/Person:a74ac508-5b27-ea46-7300-7b2e954e16ff> ;

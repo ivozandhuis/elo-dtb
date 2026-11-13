@@ -18,7 +18,8 @@
             pnv:givenName "Jannetie"@nl ;
             pnv:literalName "Jannetie Barends"@nl ;
             pnv:patronym "Barends"@nl ] ;
-    sdo:givenName "Jannetie"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024805>,
+        "Jannetie"@nl ;
     sdo:name "Jannetie Barends"@nl .
 
 <https://ex.org/Person:727f21e5-c134-328b-829c-57313a75f19e> a picom:PersonObservation ;
@@ -28,7 +29,8 @@
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 26-04-1722"@nl ;
     sdo:familyName "Schagt"@nl ;
-    sdo:givenName "Jannetie"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024805>,
+        "Jannetie"@nl ;
     sdo:name "Jannetie Schagt"@nl ;
     sdo:parent <https://ex.org/Person:9ffa39ca-4ba9-66e0-1015-18f29073281f>,
         <https://ex.org/Person:c28ef394-8f12-a82e-2c8a-9c2cac8a5a1a> .
@@ -37,7 +39,9 @@
     prov:hadPrimarySource <https://ex.org/Source:e86c1bf4-9eb6-6016-6b62-c9b0b3073bee> ;
     picom:hasRole picot_roles:573 ;
     sdo:familyName "Schagt"@nl ;
-    sdo:givenName "Daniel"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-009072>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-009073>,
+        "Daniel"@nl ;
     sdo:name "Daniel Schagt"@nl .
 
 <https://ex.org/Person:9ffa39ca-4ba9-66e0-1015-18f29073281f> a picom:PersonObservation ;
@@ -46,6 +50,7 @@
     sdo:familyName "Schagt"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-044431>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-044432>,
         "Tomas"@nl ;
     sdo:knows <https://ex.org/Person:28b43f76-e2b7-149d-0470-a655c0261c09>,
         <https://ex.org/Person:9e3131f6-4836-0348-eeef-4017e9e2faaf> ;
@@ -60,7 +65,8 @@
             pnv:patronym "Duif"@nl ] ;
     sdo:children <https://ex.org/Person:727f21e5-c134-328b-829c-57313a75f19e> ;
     sdo:gender sdo:Female ;
-    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-039965>,
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-039964>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-039965>,
         "Sara"@nl ;
     sdo:knows <https://ex.org/Person:28b43f76-e2b7-149d-0470-a655c0261c09>,
         <https://ex.org/Person:9e3131f6-4836-0348-eeef-4017e9e2faaf> ;

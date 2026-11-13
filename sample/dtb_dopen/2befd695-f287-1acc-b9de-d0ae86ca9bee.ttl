@@ -20,6 +20,7 @@
     sdo:children <https://ex.org/Person:575f0b5c-6d1a-ed38-10a0-04c8063f9a1e> ;
     sdo:gender sdo:Female ;
     sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-025039>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-202178>,
         "Japie"@nl ;
     sdo:knows <https://ex.org/Person:202dc5bf-eb8c-616f-7e35-2f6d989f2e43>,
         <https://ex.org/Person:e853203a-0e11-a0df-9c9a-e09f0ac65d7a> ;
@@ -33,7 +34,9 @@
             pnv:givenName "Dirk"@nl ;
             pnv:literalName "Dirk Cornelisse"@nl ;
             pnv:patronym "Cornelisse"@nl ] ;
-    sdo:givenName "Dirk"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-009977>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-009978>,
+        "Dirk"@nl ;
     sdo:name "Dirk Cornelisse"@nl .
 
 <https://ex.org/Person:575f0b5c-6d1a-ed38-10a0-04c8063f9a1e> a picom:PersonObservation ;
@@ -43,7 +46,9 @@
     picom:hasRole picot_roles:575 ;
     sdo:birthPlace "Veene"@nl ;
     sdo:description "Doopdatum: 15-05-1746"@nl ;
-    sdo:givenName "Wilhelma"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-046607>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-046608>,
+        "Wilhelma"@nl ;
     sdo:name "Wilhelma"@nl ;
     sdo:parent <https://ex.org/Person:167ae679-b265-d4ee-cd89-8bf41a2691c6>,
         <https://ex.org/Person:af570615-afa7-72b9-b62b-68823863e769> .
@@ -70,7 +75,8 @@
             pnv:givenName "Lijsbeth"@nl ;
             pnv:literalName "Lijsbeth Dirks"@nl ;
             pnv:patronym "Dirks"@nl ] ;
-    sdo:givenName "Lijsbeth"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-029749>,
+        "Lijsbeth"@nl ;
     sdo:name "Lijsbeth Dirks"@nl .
 
 <https://ex.org/Source:2befd695-f287-1acc-b9de-d0ae86ca9bee> a sdo:ArchiveComponent ;

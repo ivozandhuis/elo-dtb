@@ -17,6 +17,7 @@
     sdo:familyName "Groenlant"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-016137>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-201795>,
         "Geertruij"@nl ;
     sdo:knows <https://ex.org/Person:97415ab1-052f-917d-e994-595b769eec32>,
         <https://ex.org/Person:f6f21365-62a0-a99e-0d5e-cc6a090b794a> ;
@@ -34,6 +35,7 @@
     sdo:familyName "van Gulik"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-014639>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-014640>,
         "Frans"@nl ;
     sdo:knows <https://ex.org/Person:97415ab1-052f-917d-e994-595b769eec32>,
         <https://ex.org/Person:f6f21365-62a0-a99e-0d5e-cc6a090b794a> ;
@@ -52,7 +54,9 @@
             pnv:surnamePrefix "van"@nl ] ;
     sdo:description "Doopdatum: 16-10-1754"@nl ;
     sdo:familyName "van Gulik"@nl ;
-    sdo:givenName "Jacobus"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024363>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024364>,
+        "Jacobus"@nl ;
     sdo:name "Jacobus van Gulik"@nl ;
     sdo:parent <https://ex.org/Person:1b048d8b-5290-098f-9fef-d392f42635cd>,
         <https://ex.org/Person:62cc55b8-34c2-7e5e-d47f-f7021850b8cd> .
@@ -61,7 +65,9 @@
     prov:hadPrimarySource <https://ex.org/Source:bc79377f-a05c-304f-3288-145b8c84fbee> ;
     picom:hasRole picot_roles:573 ;
     sdo:familyName "Groenlant"@nl ;
-    sdo:givenName "Anna"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-002856>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-002857>,
+        "Anna"@nl ;
     sdo:name "Anna Groenlant"@nl .
 
 <https://ex.org/Person:f6f21365-62a0-a99e-0d5e-cc6a090b794a> a picom:PersonObservation ;
@@ -73,7 +79,9 @@
             pnv:literalName "Pieter de Geer"@nl ;
             pnv:surnamePrefix "de"@nl ] ;
     sdo:familyName "de Geer"@nl ;
-    sdo:givenName "Pieter"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-036671>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-036672>,
+        "Pieter"@nl ;
     sdo:name "Pieter de Geer"@nl .
 
 <https://ex.org/Source:bc79377f-a05c-304f-3288-145b8c84fbee> a sdo:ArchiveComponent ;

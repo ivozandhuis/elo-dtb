@@ -15,7 +15,8 @@
     prov:hadPrimarySource <https://ex.org/Source:30d74283-feae-c9cf-0739-c2d9fcc4abee> ;
     picom:hasRole picot_roles:573 ;
     sdo:familyName "Polet"@nl ;
-    sdo:givenName "Catarina"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-007140>,
+        "Catarina"@nl ;
     sdo:name "Catarina Polet"@nl .
 
 <https://ex.org/Person:3f0a2aba-e195-39c7-04ff-fb03ccea8882> a picom:PersonObservation ;
@@ -30,7 +31,9 @@
             pnv:surnamePrefix "de"@nl ] ;
     sdo:description "Doopdatum: 21-02-1700"@nl ;
     sdo:familyName "de Planke"@nl ;
-    sdo:givenName "Rachel"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-037163>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-202792>,
+        "Rachel"@nl ;
     sdo:name "Rachel de Planke"@nl ;
     sdo:parent <https://ex.org/Person:8320311a-6a19-0a70-4596-99eecf1584cb>,
         <https://ex.org/Person:940a63ad-8ef5-cf36-3230-a35fa858bd2f> .
@@ -39,7 +42,9 @@
     prov:hadPrimarySource <https://ex.org/Source:30d74283-feae-c9cf-0739-c2d9fcc4abee> ;
     picom:hasRole picot_roles:573 ;
     sdo:familyName "Planke"@nl ;
-    sdo:givenName "Isaac"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-023888>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-023889>,
+        "Isaac"@nl ;
     sdo:name "Isaac Planke"@nl .
 
 <https://ex.org/Person:8320311a-6a19-0a70-4596-99eecf1584cb> a picom:PersonObservation ;
@@ -53,6 +58,7 @@
     sdo:familyName "de Planke"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024647>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024648>,
         "Jan"@nl ;
     sdo:knows <https://ex.org/Person:09927189-f031-b451-aae0-4a86ed2f302f>,
         <https://ex.org/Person:6028a1a1-3336-4f60-c018-b67de42d43e7> ;
@@ -69,7 +75,8 @@
     sdo:children <https://ex.org/Person:3f0a2aba-e195-39c7-04ff-fb03ccea8882> ;
     sdo:familyName "de Planke"@nl ;
     sdo:gender sdo:Female ;
-    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024810>,
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024809>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024810>,
         "Jannetje"@nl ;
     sdo:knows <https://ex.org/Person:09927189-f031-b451-aae0-4a86ed2f302f>,
         <https://ex.org/Person:6028a1a1-3336-4f60-c018-b67de42d43e7> ;

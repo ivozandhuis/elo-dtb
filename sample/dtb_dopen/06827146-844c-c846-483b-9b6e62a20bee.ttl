@@ -15,7 +15,9 @@
     prov:hadPrimarySource <https://ex.org/Source:06827146-844c-c846-483b-9b6e62a20bee> ;
     picom:hasRole picot_roles:573 ;
     sdo:familyName "Noordeloos"@nl ;
-    sdo:givenName "Hendrik"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-020874>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-020875>,
+        "Hendrik"@nl ;
     sdo:name "Hendrik Noordeloos"@nl .
 
 <https://ex.org/Person:198be1ec-a38b-ce34-16db-0c7cf7656d1a> a picom:PersonObservation ;
@@ -24,6 +26,7 @@
     sdo:familyName "Noordeloos"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-009151>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-009152>,
         "David"@nl ;
     sdo:knows <https://ex.org/Person:07354e5f-15b8-ee7d-5a62-e464aa8a97ac>,
         <https://ex.org/Person:c141428e-ba38-90f1-fb78-d999357d22b4> ;
@@ -37,7 +40,9 @@
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 03-07-1763"@nl ;
     sdo:familyName "Noordeloos"@nl ;
-    sdo:givenName "Josina"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-026743>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-202259>,
+        "Josina"@nl ;
     sdo:name "Josina Noordeloos"@nl ;
     sdo:parent <https://ex.org/Person:198be1ec-a38b-ce34-16db-0c7cf7656d1a>,
         <https://ex.org/Person:cc1f830e-f7d6-4070-5054-6ccd617de7b6> .
@@ -51,7 +56,9 @@
             pnv:literalName "Catrina van Egmont"@nl ;
             pnv:surnamePrefix "van"@nl ] ;
     sdo:familyName "van Egmont"@nl ;
-    sdo:givenName "Catrina"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-007312>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-201358>,
+        "Catrina"@nl ;
     sdo:name "Catrina van Egmont"@nl .
 
 <https://ex.org/Person:cc1f830e-f7d6-4070-5054-6ccd617de7b6> a picom:PersonObservation ;
@@ -64,7 +71,8 @@
     sdo:children <https://ex.org/Person:a94f5866-8dc3-b64d-38c4-ff33addb2d3d> ;
     sdo:familyName "van den Dorp"@nl ;
     sdo:gender sdo:Female ;
-    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-032339>,
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-032338>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-032339>,
         "Maria"@nl ;
     sdo:knows <https://ex.org/Person:07354e5f-15b8-ee7d-5a62-e464aa8a97ac>,
         <https://ex.org/Person:c141428e-ba38-90f1-fb78-d999357d22b4> ;

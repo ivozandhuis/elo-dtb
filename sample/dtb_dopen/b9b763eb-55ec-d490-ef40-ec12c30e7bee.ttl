@@ -17,6 +17,7 @@
     sdo:familyName "Galouis"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-002562>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-002563>,
         "Andries"@nl ;
     sdo:knows <https://ex.org/Person:32c73e73-7785-3200-bcd7-f1d56c8aeab0>,
         <https://ex.org/Person:636aacc6-d66a-2f7f-4819-dc7a18ba6129> ;
@@ -30,14 +31,18 @@
             pnv:givenName "Cornelis"@nl ;
             pnv:literalName "Cornelis Lammens"@nl ;
             pnv:patronym "Lammens"@nl ] ;
-    sdo:givenName "Cornelis"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-008575>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-008576>,
+        "Cornelis"@nl ;
     sdo:name "Cornelis Lammens"@nl .
 
 <https://ex.org/Person:636aacc6-d66a-2f7f-4819-dc7a18ba6129> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:b9b763eb-55ec-d490-ef40-ec12c30e7bee> ;
     picom:hasRole picot_roles:573 ;
     sdo:familyName "Galouis"@nl ;
-    sdo:givenName "Maria"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-032338>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-032339>,
+        "Maria"@nl ;
     sdo:name "Maria Galouis"@nl .
 
 <https://ex.org/Person:76ea5c25-0c5e-4423-e5f5-c12cb5395238> a picom:PersonObservation ;
@@ -50,7 +55,8 @@
     sdo:children <https://ex.org/Person:ec7f88d6-3b6a-60ed-8af8-fe118a6a1de3> ;
     sdo:familyName "van Hoeke"@nl ;
     sdo:gender sdo:Female ;
-    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-002857>,
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-002856>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-002857>,
         "Anna"@nl ;
     sdo:knows <https://ex.org/Person:32c73e73-7785-3200-bcd7-f1d56c8aeab0>,
         <https://ex.org/Person:636aacc6-d66a-2f7f-4819-dc7a18ba6129> ;
@@ -64,7 +70,9 @@
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 10-12-1707"@nl ;
     sdo:familyName "Galouis"@nl ;
-    sdo:givenName "Jacomijntje"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024416>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-202155>,
+        "Jacomijntje"@nl ;
     sdo:name "Jacomijntje Galouis"@nl ;
     sdo:parent <https://ex.org/Person:2eb2bf99-b4ac-0732-e781-06d9c7177f15>,
         <https://ex.org/Person:76ea5c25-0c5e-4423-e5f5-c12cb5395238> .

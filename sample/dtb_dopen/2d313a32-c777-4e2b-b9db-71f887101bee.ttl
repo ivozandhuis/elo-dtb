@@ -17,6 +17,7 @@
     sdo:familyName "Fouschee"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024647>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024648>,
         "Jan"@nl ;
     sdo:knows <https://ex.org/Person:d54aa839-88c2-d7ad-702e-a8e87f286fe1>,
         <https://ex.org/Person:e66650ed-f304-d729-e03b-3e7c44faa6ab> ;
@@ -30,7 +31,8 @@
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 22-12-1726"@nl ;
     sdo:familyName "Fouschee"@nl ;
-    sdo:givenName "Marijtie"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-032480>,
+        "Marijtie"@nl ;
     sdo:name "Marijtie Fouschee"@nl ;
     sdo:parent <https://ex.org/Person:03931ef9-2701-34dd-06b6-3d98c849cde0>,
         <https://ex.org/Person:fa553c4b-bd87-7535-6dea-54d6e88a7aa3> .
@@ -44,14 +46,17 @@
             pnv:literalName "Marijtie de Jager"@nl ;
             pnv:surnamePrefix "de"@nl ] ;
     sdo:familyName "de Jager"@nl ;
-    sdo:givenName "Marijtie"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-032480>,
+        "Marijtie"@nl ;
     sdo:name "Marijtie de Jager"@nl .
 
 <https://ex.org/Person:e66650ed-f304-d729-e03b-3e7c44faa6ab> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:2d313a32-c777-4e2b-b9db-71f887101bee> ;
     picom:hasRole picot_roles:573 ;
     sdo:familyName "Hammet"@nl ;
-    sdo:givenName "Karel"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-027385>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-027386>,
+        "Karel"@nl ;
     sdo:name "Karel Hammet"@nl .
 
 <https://ex.org/Person:fa553c4b-bd87-7535-6dea-54d6e88a7aa3> a picom:PersonObservation ;
@@ -64,7 +69,8 @@
     sdo:children <https://ex.org/Person:7cd7e774-17f5-d2bb-f8a7-ae463131272b> ;
     sdo:familyName "de Just"@nl ;
     sdo:gender sdo:Female ;
-    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-002857>,
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-002856>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-002857>,
         "Anna"@nl ;
     sdo:knows <https://ex.org/Person:d54aa839-88c2-d7ad-702e-a8e87f286fe1>,
         <https://ex.org/Person:e66650ed-f304-d729-e03b-3e7c44faa6ab> ;

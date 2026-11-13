@@ -16,7 +16,8 @@
     picom:hasRole picot_roles:573 ;
     sdo:description "peet"@nl ;
     sdo:familyName "Rodenburg"@nl ;
-    sdo:givenName "Marijtie"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-032480>,
+        "Marijtie"@nl ;
     sdo:name "Marijtie Rodenburg"@nl .
 
 <https://ex.org/Person:e119d7bc-9463-bb95-b14d-1bb8d7c47366> a picom:PersonObservation ;
@@ -24,7 +25,9 @@
     picom:hasRole picot_roles:573 ;
     sdo:description "peetoom"@nl ;
     sdo:familyName "Rodenburg"@nl ;
-    sdo:givenName "Jacob"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024287>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024288>,
+        "Jacob"@nl ;
     sdo:name "Jacob Rodenburg"@nl .
 
 <https://ex.org/Person:e1a50c2a-92e3-00c5-25b3-18d8c9c8f79e> a picom:PersonObservation ;
@@ -39,7 +42,8 @@
             pnv:surnamePrefix "van der"@nl ] ;
     sdo:description "Doopdatum: 23-07-1752"@nl ;
     sdo:familyName "van der Meulen"@nl ;
-    sdo:givenName "Trijntie"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-044630>,
+        "Trijntie"@nl ;
     sdo:name "Trijntie van der Meulen"@nl ;
     sdo:parent <https://ex.org/Person:f1663ca1-3c0c-e3bc-f78d-0173cee0146f>,
         <https://ex.org/Person:ff5e2166-dda9-938a-582c-dfae13088031> .
@@ -50,6 +54,7 @@
     sdo:familyName "Rodenburg"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024188>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-202149>,
         "Jaapje"@nl ;
     sdo:knows <https://ex.org/Person:40db4516-33c3-e4e6-7408-f4275d70808e>,
         <https://ex.org/Person:e119d7bc-9463-bb95-b14d-1bb8d7c47366> ;
@@ -67,6 +72,7 @@
     sdo:familyName "van der Meulen"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-003223>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-003224>,
         "Anthonij"@nl ;
     sdo:knows <https://ex.org/Person:40db4516-33c3-e4e6-7408-f4275d70808e>,
         <https://ex.org/Person:e119d7bc-9463-bb95-b14d-1bb8d7c47366> ;

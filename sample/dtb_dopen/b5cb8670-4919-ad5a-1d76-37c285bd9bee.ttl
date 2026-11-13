@@ -18,7 +18,9 @@
     sdo:birthDate "1799-12"^^xsd:gYearMonth ;
     sdo:description "geboortedatum niet vermeld<br>Doopdatum: 12-1799"@nl ;
     sdo:familyName "Hogervorst"@nl ;
-    sdo:givenName "Pietertje"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-036753>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-036754>,
+        "Pietertje"@nl ;
     sdo:name "Pietertje Hogervorst"@nl ;
     sdo:parent <https://ex.org/Person:4589dda9-7707-6969-df04-54a7510a5997>,
         <https://ex.org/Person:e521881f-7c7c-773e-9019-fa4798941789> .
@@ -29,6 +31,7 @@
     sdo:familyName "Hogervorst"@nl ;
     sdo:gender sdo:Male ;
     sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-008575>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-008576>,
         "Cornelis"@nl ;
     sdo:knows <https://ex.org/Person:790d214a-3844-489f-fd23-ace345878650>,
         <https://ex.org/Person:cf7101c4-1bff-8cd5-2964-1d9935c5ff58> ;
@@ -39,14 +42,18 @@
     prov:hadPrimarySource <https://ex.org/Source:b5cb8670-4919-ad5a-1d76-37c285bd9bee> ;
     picom:hasRole picot_roles:573 ;
     sdo:familyName "Hogervorst"@nl ;
-    sdo:givenName "Jacob"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024287>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024288>,
+        "Jacob"@nl ;
     sdo:name "Jacob Hogervorst"@nl .
 
 <https://ex.org/Person:cf7101c4-1bff-8cd5-2964-1d9935c5ff58> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:b5cb8670-4919-ad5a-1d76-37c285bd9bee> ;
     picom:hasRole picot_roles:573 ;
     sdo:familyName "Ammeraal"@nl ;
-    sdo:givenName "Marretje"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-032660>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-202539>,
+        "Marretje"@nl ;
     sdo:name "Marretje Ammeraal"@nl .
 
 <https://ex.org/Person:e521881f-7c7c-773e-9019-fa4798941789> a picom:PersonObservation ;
@@ -55,6 +62,7 @@
     sdo:familyName "Ammeraal"@nl ;
     sdo:gender sdo:Female ;
     sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-009676>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-201452>,
         "Dieuwertje"@nl ;
     sdo:knows <https://ex.org/Person:790d214a-3844-489f-fd23-ace345878650>,
         <https://ex.org/Person:cf7101c4-1bff-8cd5-2964-1d9935c5ff58> ;

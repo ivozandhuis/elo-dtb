@@ -18,7 +18,8 @@
             pnv:givenName "Aeltje"@nl ;
             pnv:literalName "Aeltje Frans"@nl ;
             pnv:patronym "Frans"@nl ] ;
-    sdo:givenName "Aeltje"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-001150>,
+        "Aeltje"@nl ;
     sdo:name "Aeltje Frans"@nl .
 
 <https://ex.org/Person:4155d9a1-72b8-6d94-c94c-9d1fe175e612> a picom:PersonObservation ;
@@ -30,6 +31,7 @@
     sdo:children <https://ex.org/Person:503e750b-9404-e3fb-3dca-31f0bec5c9b2> ;
     sdo:gender sdo:Female ;
     sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-024416>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-202155>,
         "Jacomijntje"@nl ;
     sdo:knows <https://ex.org/Person:05d69cbb-77f6-8a49-50c2-118e029a45f9>,
         <https://ex.org/Person:782336f9-5ac7-75d1-a0e1-1d6411b975d9>,
@@ -47,6 +49,7 @@
     sdo:children <https://ex.org/Person:503e750b-9404-e3fb-3dca-31f0bec5c9b2> ;
     sdo:gender sdo:Male ;
     sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-014563>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-014564>,
         "Francois"@nl ;
     sdo:knows <https://ex.org/Person:05d69cbb-77f6-8a49-50c2-118e029a45f9>,
         <https://ex.org/Person:782336f9-5ac7-75d1-a0e1-1d6411b975d9>,
@@ -61,7 +64,9 @@
     picom:hasReligion <https://iisg.amsterdam/resource/TaxonomyOfReligions/Nederduitse-Gereformeerde-Kerk> ;
     picom:hasRole picot_roles:575 ;
     sdo:description "Doopdatum: 28-09-1655"@nl ;
-    sdo:givenName "Francois"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-014563>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-014564>,
+        "Francois"@nl ;
     sdo:name "Francois"@nl ;
     sdo:parent <https://ex.org/Person:4155d9a1-72b8-6d94-c94c-9d1fe175e612>,
         <https://ex.org/Person:46714952-9221-e86d-3981-e1bb20f96a6f> .
@@ -73,14 +78,18 @@
             pnv:givenName "Isaac"@nl ;
             pnv:literalName "Isaac Meijndertsz"@nl ;
             pnv:patronym "Meijndertsz"@nl ] ;
-    sdo:givenName "Isaac"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-023888>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-023889>,
+        "Isaac"@nl ;
     sdo:name "Isaac Meijndertsz"@nl .
 
 <https://ex.org/Person:bf22cdb0-3e2e-1cf3-f177-5a7b1a4fa15a> a picom:PersonObservation ;
     prov:hadPrimarySource <https://ex.org/Source:7adcc50e-082b-04b4-8a91-17ea03827bee> ;
     picom:hasRole picot_roles:573 ;
     sdo:familyName "Caljerijn"@nl ;
-    sdo:givenName "Abraham"@nl ;
+    sdo:givenName <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-000606>,
+        <https://linkeddata.cultureelerfgoed.nl/clariahnames/givennames/id/vn-000607>,
+        "Abraham"@nl ;
     sdo:name "Abraham Caljerijn"@nl .
 
 <https://ex.org/Person:e11dd7de-e038-5dc3-87db-317bd7c12758> a picom:PersonObservation ;
