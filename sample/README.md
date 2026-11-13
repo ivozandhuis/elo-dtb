@@ -3,14 +3,14 @@
 This directory contains a sample of the data
 - just to have a quick glance of what the data looks like
 - as a small test set. A matching procedure should match these records:
-   1. [marriage record (1649)](https://github.com/ivozandhuis/elo-dtb/blob/main/sample/fe0bf28c-e481-bdaa-48aa-fd2619b70c35.ttl) op [openarchieven](https://www.openarchieven.nl/elo:fe0bf28c-e481-bdaa-48aa-fd2619b70c35)
-   1. [baptismal record (1651)](https://github.com/ivozandhuis/elo-dtb/blob/main/sample/1c1c97e7-f9a7-40ea-c147-226c6817c9a1.ttl) op [openarchieven](https://www.openarchieven.nl/elo:1c1c97e7-f9a7-40ea-c147-226c6817c9a1)
-   1. [baptismal record (1655)](https://github.com/ivozandhuis/elo-dtb/blob/main/sample/7adcc50e-082b-04b4-8a91-17ea03827bee.ttl) op [openarchieven](https://www.openarchieven.nl/elo:7adcc50e-082b-04b4-8a91-17ea03827bee)
-   1. [marriage record (1656)](https://github.com/ivozandhuis/elo-dtb/blob/main/sample/133850a5-15e2-e703-9e6e-3d538d60a606.ttl) op [openarchieven](https://www.openarchieven.nl/elo:133850a5-15e2-e703-9e6e-3d538d60a606)
-   1. [marriage record (1678)](https://github.com/ivozandhuis/elo-dtb/blob/main/sample/bd9518d5-1d0e-aa7a-3321-904aec5ecf83.ttl) op [openarchieven](https://www.openarchieven.nl/elo:bd9518d5-1d0e-aa7a-3321-904aec5ecf83)
-   1. [marriage record (1687)](https://github.com/ivozandhuis/elo-dtb/blob/main/sample/2ef4776a-5184-a9ef-ec0b-03becba36025.ttl) op [openarchieven](https://www.openarchieven.nl/elo:2ef4776a-5184-a9ef-ec0b-03becba36025)
-   1. [baptismal record (1693)](https://github.com/ivozandhuis/elo-dtb/blob/main/sample/d5eca0c3-248a-729c-9e9d-b9a62a9152d0.ttl) op [openarchieven](https://www.openarchieven.nl/elo:d5eca0c3-248a-729c-9e9d-b9a62a9152d0)
-   1. [burial record (1707)](https://github.com/ivozandhuis/elo-dtb/blob/main/sample/aa78fdb2-66d7-29da-dbcc-6db7661fa5f2.ttl) op [openarchieven](https://www.openarchieven.nl/elo:aa78fdb2-66d7-29da-dbcc-6db7661fa5f2)
+   1. [marriage record (1649)](https://github.com/ivozandhuis/elo-dtb/blob/main/sample/dtb_trouwen/fe0bf28c-e481-bdaa-48aa-fd2619b70c35.ttl) op [openarchieven](https://www.openarchieven.nl/elo:fe0bf28c-e481-bdaa-48aa-fd2619b70c35)
+   1. [baptismal record (1651)](https://github.com/ivozandhuis/elo-dtb/blob/main/sample/dtb_dopen/1c1c97e7-f9a7-40ea-c147-226c6817c9a1.ttl) op [openarchieven](https://www.openarchieven.nl/elo:1c1c97e7-f9a7-40ea-c147-226c6817c9a1)
+   1. [baptismal record (1655)](https://github.com/ivozandhuis/elo-dtb/blob/main/sample/dtb_dopen/7adcc50e-082b-04b4-8a91-17ea03827bee.ttl) op [openarchieven](https://www.openarchieven.nl/elo:7adcc50e-082b-04b4-8a91-17ea03827bee)
+   1. [marriage record (1656)](https://github.com/ivozandhuis/elo-dtb/blob/main/sample/dtb_trouwen/133850a5-15e2-e703-9e6e-3d538d60a606.ttl) op [openarchieven](https://www.openarchieven.nl/elo:133850a5-15e2-e703-9e6e-3d538d60a606)
+   1. [marriage record (1678)](https://github.com/ivozandhuis/elo-dtb/blob/main/sample/dtb_trouwen/bd9518d5-1d0e-aa7a-3321-904aec5ecf83.ttl) op [openarchieven](https://www.openarchieven.nl/elo:bd9518d5-1d0e-aa7a-3321-904aec5ecf83)
+   1. [marriage record (1687)](https://github.com/ivozandhuis/elo-dtb/blob/main/sample/dtb_trouwen/2ef4776a-5184-a9ef-ec0b-03becba36025.ttl) op [openarchieven](https://www.openarchieven.nl/elo:2ef4776a-5184-a9ef-ec0b-03becba36025)
+   1. [baptismal record (1693)](https://github.com/ivozandhuis/elo-dtb/blob/main/sample/dtb_dopen/d5eca0c3-248a-729c-9e9d-b9a62a9152d0.ttl) op [openarchieven](https://www.openarchieven.nl/elo:d5eca0c3-248a-729c-9e9d-b9a62a9152d0)
+   1. [burial record (1707)](https://github.com/ivozandhuis/elo-dtb/blob/main/sample/dtb_begraven/aa78fdb2-66d7-29da-dbcc-6db7661fa5f2.ttl) op [openarchieven](https://www.openarchieven.nl/elo:aa78fdb2-66d7-29da-dbcc-6db7661fa5f2)
 
 Notice that Lydia Thonis, 'moei' of the bride in the marriage (1649), the witness Lydia Teunis at the baptism (1651), the witness Lydia Tonis, moei of the bride, at the marriage (1656) should be flagged as (potential) match.
 
@@ -21,8 +21,8 @@ In the second marriage of Frans Fransz (1687) the father (source states father, 
 Notice that the data about the burial (1707) of Frans Cloek, spinner, is very thin. It should at least be Frans Fransz instead of Frans Pietersz, because Jacomijntje Isaaks, the widow of Frans Pietersz remarried in 1656.
 
 Complete (handmade) reconstructions:
-[Jacomijntje Isaaks](https://www.genealogieonline.nl/kwartierstaten-zandhuis-van-der-sloot-borgman-meijer/I1242.php)
-[Frans Fransz](https://www.genealogieonline.nl/kwartierstaten-zandhuis-van-der-sloot-borgman-meijer/I1233.php)
+- [Jacomijntje Isaaks de Graaf](https://www.genealogieonline.nl/kwartierstaten-zandhuis-van-der-sloot-borgman-meijer/I1242.php)
+- [Frans Fransz Kloek](https://www.genealogieonline.nl/kwartierstaten-zandhuis-van-der-sloot-borgman-meijer/I1233.php)
 
 # data
 For now the data contains
