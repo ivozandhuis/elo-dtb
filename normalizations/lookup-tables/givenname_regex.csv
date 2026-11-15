@@ -7,7 +7,7 @@ Johannes,176846,,jan
 Willem,141696,"^(w|gu)ill?h?(i|e|a|u)*l?m((i|e|u){1,2}s)?$",willem
 Jacob,120956,"^ja(c|k|q){1,2}(o|e|ue|oo)(b|p)?((i|e|u){1,2}s)?$",jacob
 Jacobus,107571,,jacob
-Johanna,104733,^j(o|e)?h?ann?(a|e)(t?(je|c?ke|ge|ie|gie)n?)?$,johanna
+Johanna,104733,"^j(o|e)?h?ann?((a|e)|((s|t)?(je|c?ke|ge|ie|gie)n?)){1,2}$",johanna
 Hendrik,101203,"^h(ie|y|ij|i|eij|ey|ei|e)nd?r(ie|y|ij|i|eij|ey|ei|e)(c|k|q){1,2}((i|e|u){1,2}s)?$",hendrik
 Catharina,89118,^((c|k)a)?(t|th)(a|e)?r(ie|y|ij|i|eij|ey|ei|e)n(a|e)?(t?(je|c?ke|ge|ie|gie)n?)?$,catharina
 Jannetje,88377,,johanna
@@ -19,10 +19,10 @@ Elisabeth,74871,^e?l(ie|y|ij|i|eij|ey|ei)(s|z)(a|e)?(bet)?h?(a|e)?(t?(je|c?ke|ge
 Dirk,67561,"^d(u|i|e)r(c|k|q|){1,2}$",dirk
 Sara,47625,^(s|z)(a|ae)r(a|ae)h?$,sara
 Marijtje,46558,,maria
-Neeltje,44654,"""^(p(i|ie|y|ij|e|ee)te?r?)?n(e|ee)ll?(e|a)?(t?(je|c?ke|ge|ie|gie)n?)?$",neeltje
+Neeltje,44654,"^(p(i|ie|y|ij|e|ee)te?r?o?)?n(e|ee)ll?(e|a)?(t?(je|c?ke|ge|ie|gie)n?)?$",neeltje
 Leendert,35387,"^l(i|ie|y|ij|e|ee)o?n((a|ae|aa)r)?(d|t)?((er(d|t)|(i|e|u){1,2}s))?$",leendert
 Arie,34764,"^ad?r(i|ie|y|ij|e|ee)((aa|a|ae)n)?((i|e|u){1,2}s)?$",arie
-Nicolaas,34520,"^(n(i|ie|y|ij))?(c|k|q){1,2}(o|e)?l(a|ae|aa)s$",nicolaas
+Nicolaas,34520,"^(n(i|ie|y|ij))?(c|k|q){1,2}(o|e)?l(a|ae|aa|ai)s$",nicolaas
 Susanna,33332,^(s|z)uu?(s|z)(a|ae)?n?n?(a|e|i)?(t?(je|c?ke|ge|ie|gie)n?)?$,susanna
 Grietje,33211,^(m(a|ae|e)r)?g(e|a|ae)?r(e|ie|ee)t?h?(a|e)?(t?(je|c?ke|ge|ie|gie)n?)?$,grietje
 Jacoba,30112,"^ja(c|k){1,2}(o|oo)(b|p)(a|(t?(je|c?ke|ge|ie|gie)n?))$",jacoba
@@ -57,9 +57,9 @@ Pierre,17467,,pieter
 Lijsbeth,17337,,elisabeth
 Paulus,17252,"^p(au|ou|)l((i|e|u){1,2}s)?$",paulus
 Teunis,16710,"^(an)?(t|th)(u|ue|o|eu|oo)nn?((i|e|u){1,2}s)$",teunis
-Geertje,16079,,
-David,15752,,
-Jansje,15553,nu niet johanna,
+Geertje,16079,"^gee?rr?h?(e|a|i)?r?(d|t|g)((a|e)|(t?(je|c?ke|ge|ie|gie)n?)){1,2}$",geertje
+David,15752,^d(a|ae|aa|e)(v|f)(i|ie|y|ij|eij|ei)?(d|t)?$,
+Jansje,15553,,johanna
 Christina,15478,,
 Theodorus,15117,,
 Adriaen,14946,,
