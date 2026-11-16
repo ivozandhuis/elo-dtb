@@ -6,7 +6,7 @@ SELECT ?gname (COUNT(?gname) AS ?gnameCount)
 WHERE {
   ?po a picom:PersonObservation ;
       sdo:givenName ?gname .
-  FILTER (REGEX(?gname, "^j(a|e){1,2}(c|q|k){1,2}(|o|e|u){1,2}m(ie|y|ij|i|eij|ey|ei)n(|(a|e){1,2}|(t?(je|c?ke|ge|ie|gie)n?)){1,2}$", "i"))
+  FILTER (REGEX(?gname, "^j(a|e){1,2}(c|q|k){1,2}(|o|e|u){1,2}m(ie|y|ij|i|eij|ey|ei)n(|(a|e){1,2}|(t?(j|c?k|g)?(e|ie)n?)){1,2}$", "i"))
 }
 GROUP BY ?gname
 ORDER BY DESC(?gnameCount)
