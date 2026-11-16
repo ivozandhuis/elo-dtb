@@ -219,7 +219,7 @@ Heyndrick,4037,,
 Lodewijk,4018,,
 Lysbeth,3996,,
 Maertge,3992,,
-Jacomijntje,3966,"^ja(c|q|k){1,2}(o|e|ue|u|oo)m(ie|y|ij|i|eij|ey|ei)n(|(a|e|ae|aa)|(t?(je|c?ke|ge|ie|gie)n?)){1,2}$",jacomijntje
+Jacomijntje,3966,"^j(a|e){1,2}(c|q|k){1,2}(|o|e|u){1,2}m(ie|y|ij|i|eij|ey|ei)n(|(a|e){1,2}|(t?(je|c?ke|ge|ie|gie)n?)){1,2}$",jacomijntje
 Hubertus,3940,,
 Trijntgen,3921,,
 Govert,3890,,
