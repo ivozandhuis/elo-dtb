@@ -7,7 +7,7 @@ Johannes,176846,,jan
 Willem,141696,"^(w|gu)ill?h?(i|e|a|u)*l?m((i|e|u){1,2}s)?$",willem
 Jacob,120956,"^j(a|e){1,2}(c|k|q){1,2}(o|e|ue|oo)(b|p)?((i|e|u){1,2}s)?$",jacob
 Jacobus,107571,,jacob
-Johanna,104733,"^j(o|e)?h?ann?((a|e)|(s|t)?(t?(j|c?k|g)?(e|ie)n?)){1,2}$",johanna
+Johanna,104733,"^j(o|e)?h?ann?((a|e|i)|(s|t)?(t?(j|c?k|g|gh|ch)?(e|ie|i|ij|y)n?)){1,2}$",johanna
 Hendrik,101203,"^h(ie|y|ij|i|eij|ey|ei|e)nd?r(ie|y|ij|i|eij|ey|ei|e)(c|k|q){1,2}((i|e|u){1,2}s)?$",hendrik
 Catharina,89118,"^((c|k)(a|e){1,2})?th?(|a|e){1,2}r(ie|y|ij|i|eij|ey|ei|e)n(|(a|e){1,2}|(t?(j|c?k|g)?(e|ie)n?)){1,2}$",catharina
 Jannetje,88377,,johanna
@@ -146,10 +146,10 @@ Maerten,5830,,martinus
 Lucas,5829,"^l(u|e){1,2}(c|k|q)(a|e){1,2}s$",lucas
 Hendrica,5818,,hendrika
 Henrick,5687,,hendrik
-Elisabet,5677,,
-Apolonia,5661,,
-Floris,5487,,
-Steven,5475,,
+Elisabet,5677,,elisabeth
+Apolonia,5661,"^(a|ae)?pp?(o|e)?l(o|e|u){1,2}n(|(a|e|i){1,2}|(t?(j|c?k|g)?(e|ie)n?)){1,2}$",apolonia
+Floris,5487,"^(f|ph)l(o|oo)r((i|e|u){1,2}s)$",floris
+Steven,5475,"^st(e|ee)(v|f|ph)(a|e){1,2}n((i|e|u){1,2}s)?$",
 Pietertje,5473,,
 Nicolaes,5456,,
 Theodora,5345,,
